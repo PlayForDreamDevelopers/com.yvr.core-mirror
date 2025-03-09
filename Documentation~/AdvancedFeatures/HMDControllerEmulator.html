@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>HMD/Controller Emulator | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="HMD/Controller Emulator | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation~/AdvancedFeatures/HMDControllerEmulator.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="hmdcontroller-emulator">HMD/Controller Emulator</h1>
+
+<p>HMD/Controller Emulator are tools that allow you to use a keyboard and mouse to simulate the behaviour of HMD/controller in Unity Editor, like translating, rotating and clicking.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>HMD/Controller Emulators only works in Unity Editor mode.</p>
+</div>
+<h2 id="hmd-emulator">HMD Emulator</h2>
+<p>While using HMD emulator, you can use keyboard to simulate HMD's translation, and use mouse to simulate HMD's rotation. The HMD emulator can be configured in the Unity Inspector window, the configurable parts are as follows:</p>
+<p><img src="HMDControllerEmulator/2021-04-28-17-07-44.png" alt="HMD Emulator"></p>
+<p>The <code>Activate Keys</code> are the keys to activate HMD emulator. When any one of the <code>Activate Keys</code> is pressed, the HMD emulator is activated. You can simulate the HMD's rotation in Yaw/Pitch axis by moving the mouse horizontally and vertically respectively.</p>
+<p>When the HMD emulator is activated, and you want to rotate the HMD in Roll axis, you need to press any one of the <code>Roll Keys</code>. After that, the horizontal moving of the mouse will rotate the HMD in Roll Axis, and the vertical moving of the mouse will have no effect.</p>
+<p>When the HMD emulator is activated, you can press the <code>Translation Keys</code> to translate the HMD. Under default configuration, keys <code>W</code>, <code>S</code>, <code>A</code>, <code>D</code>, <code>Q</code>, <code>E</code> lead to forward/backward/Left/Right/Up/Down respectively.</p>
+<p>The speed of translation and rotation can be configured by <code>Rotation Sensitivity</code> and <code>Translation Sensitivity</code>.</p>
+<p>After <code>Reset HMD Pose On Release</code> is toggled on, both the rotation and translation of HMD will be reset to <code>0,0,0</code> when the pressed <code>Activate Keys</code> is released.</p>
+<h2 id="controller-emulator">Controller Emulator</h2>
+<p>While using Controller Emulator, you can use keyboard to simulate controllers' click action, and use mouse to simulate controllers' translation and rotation. The controller emulator can be configured in the Unity Inspector window, the configurable parts are as follows:</p>
+<p><img src="HMDControllerEmulator/2021-04-28-17-07-05.png" alt="Controller Emulator"></p>
+<p>The <code>Activate Keys</code> are the keys to activate controller emulator. When any one of the <code>Activate Keys</code> is being pressed, the controller emulator is activated. You can simulator the controller's translation using mouse. The <code>Target Controller</code>'s screen position will be the same with the cursor position on the screen.</p>
+<p>When the controller emulator is activated, and you want to rotate the controller, you need to press any one of the <code>Rotation Keys</code>. After that, the horizontal moving of the mouse will rotate the <code>Target Controller</code> in Yaw Axis, and the vertical moving of the mouse will rotate the <code>Target Controller</code> in Pitch Axis.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>You cannot translate and rotate the controller through the simulator at the same time.</p>
+</div>
+<p>Like the HMD emulator, the rotation speed can be configured by <code>Rotation Sensitivity</code>. However, because of the position of controller is determined by the position of the mouse cursor rather than the mouse movement, there is no concept about <code>Translation Sensitivity</code> in controller emulator.</p>
+<p>When the controller emulator is activated, press the key in <code>Key Mapping</code> will simulate the corresponding key of the controllers. Like in the default configuration, the press of <code>Alpha 1</code> key on the keyboard will simulate the click down action of the <code>Index Trigger</code> key of the left controller.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation~/AdvancedFeatures/HMDControllerEmulator.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

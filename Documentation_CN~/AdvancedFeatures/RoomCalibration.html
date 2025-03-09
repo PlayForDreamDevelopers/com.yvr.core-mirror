@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>房间标定 | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="房间标定 | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN~/AdvancedFeatures/RoomCalibration.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="房间标定">房间标定</h1>
+
+<p>房间标定是玩出梦想提供的系统级应用，用于确保虚拟对象和物理环境的精确对齐，通过房间标定，可以提高虚拟现实程序的真实感和稳定性，为用户提供更具交互性和沉浸感的体验。用户可以通过房间标定应用将现实房间中的墙、门窗、桌椅、沙发等物体标定出来。开发者可以通过SDK获取用户创建的标定数据，并将其使用在自己的应用中。</p>
+<h2 id="要求">要求</h2>
+<p>你可以通过 SDK 接口获取房间标定应用创建的房间信息和标定数据，并将其用于自己的应用中，也可以在应用内创建自己的锚点。</p>
+<ul>
+<li>SDK 版本：Unity SDK 2.8.0 及以上</li>
+<li>设备型号：YVR2</li>
+<li>系统版本：DreamOS 1.3.0 及以上</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>数据修改权限：第三方应用无法创建房间，仅允许房间标定应用修改数据
+<br></li>
+<li>数据读取权限：房间标定应用和第三方应用可以读取房间标定数据</li>
+</ul>
+</div>
+<p>请确保已在 YVRManager 脚本面板上勾选了 Spatial Anchor Support 和 Scene Support 选框。</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>勾选 Spatial Anchor Support 和 Scene Support 选框后，AndroidManifest.xml 文件中会添加锚点对应权限。
+<br>
+<strong>&lt;uses-permission android:name=&quot;com.yvr.permission.USE_ANCHOR_API&quot;\&gt;</strong>
+<br>
+<strong>&lt;uses-permission android:name=&quot;com.yvr.permission.USE_SCENE&quot;\&gt;</strong></p>
+</div>
+<p>com.yvr.permission.USE_SCENE is a runtime permission that allows the application to query spatial data on the user's device only when the user grants the permission. <a href="https://docs.unity3d.com/Manual/android-RequestingPermissions.html">Requesting Android runtime permissions</a> makes a permission request.</p>
+<h2 id="scene-anchors-可以包含的组件类型">Scene Anchors 可以包含的组件类型</h2>
+<p>Scene Anchor 需要组件才能描述标定的环境。因此应用需要通过查询 Scene Anchor 是否支持给定的组件，以及该组件是否已启用，来获取锚点所包含的空间信息</p>
+<ul>
+<li>Locatable：可定位组件，通知系统可以跟踪此定位点，启用后，应用可以持续的查询定位点的位姿信息。</li>
+<li>Storable：可存储组件，启用后，表示锚点可以被保存。</li>
+<li>RoomLayout：房间布局组件，包含对构成房间的墙壁，天花板和地板锚点的引用。</li>
+<li>AnchorContainer：包含对房间内其他物体（沙发，茶几，窗户等）定位点列表的引用。</li>
+<li>Bounded2D：对 2D 平面数据的定位点信息，包含平面的宽高以及相对于锚点x,y 轴上的偏移（或者是非矩形平面的索引三角形网格）。</li>
+<li>Bounded3D：3D 立方体数据，包含长宽高以及此立方体相对于锚点 x,y,z, 轴上的偏移。</li>
+<li>SemanticLabels：锚点的语义标签，此组件可以将锚点分为多个分类，详细信息参考下文。</li>
+</ul>
+<h2 id="常见场景锚点">常见场景锚点</h2>
+<p>房间的场景锚点将具有：</p>
+<ol>
+<li>RoomLayout 组件用于引用天花板、墙壁和地板。</li>
+<li>AnchorContainer 组件用于保存房间内所有的场景锚点。
+<br>
+2D 元素（如墙壁，天花板，地板，窗户等）的场景锚点具有：用户获取锚点位置的 Locatable 组件；SemanticLabels 语义标签组件；Boundary2D 平面尺寸数据。
+<br>
+3D 元素（如沙发，茶几，桌子等）的场景锚点具有：用户获取锚点位置的 Locatable 组件；SemanticLabels 语义标签组件；Bounded3D 立方体信息。 <br></li>
+</ol>
+<p><img src="RoomCalibration/Scene.png" alt="Scene"></p>
+<h2 id="锚点语义分类">锚点语义分类</h2>
+<p>语义分类将 Scene Anchors 分类为预先确定且有系统管理的对象类型列表。语义将对象分隔到其对应的几何描述，以便为应用开发人员提供特定于分类的游戏逻辑。支持的语义标签：</p>
+<table>
+<thead>
+<tr>
+<th><strong>语义类型</strong></th>
+<th><strong>描述</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FLOOR</td>
+<td>地板</td>
+<td>2D</td>
+</tr>
+<tr>
+<td>CEILING</td>
+<td>天花板</td>
+<td>2D</td>
+</tr>
+<tr>
+<td>WALL_FACE</td>
+<td>墙面</td>
+<td>2D</td>
+</tr>
+<tr>
+<td>COUCH</td>
+<td>沙发</td>
+<td>3D</td>
+</tr>
+<tr>
+<td>DOOR_FRAME</td>
+<td>门框</td>
+<td>2D</td>
+</tr>
+<tr>
+<td>WINDOW_FRAME</td>
+<td>窗框</td>
+<td>2D</td>
+</tr>
+<tr>
+<td>OTHER</td>
+<td>窗框</td>
+<td>3D</td>
+</tr>
+<tr>
+<td>TABLE</td>
+<td>桌子</td>
+<td>3D</td>
+</tr>
+<tr>
+<td>BED</td>
+<td>床</td>
+<td>3D</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>此列表标签正在不断发展，因为我们会定期添加对更多 2D 和 3D 对象的支持。</p>
+</div>
+<h2 id="锚点坐标轴">锚点坐标轴</h2>
+<p>房间标定应用创建的 2D 元素和 3D 元素的坐标轴方向与其类型和创建顺序有关，规则如下：</p>
+<h3 id="墙面门窗">墙面、门、窗</h3>
+<p>原点位于墙面中心</p>
+<ul>
+<li>+X：根据左手坐标系，从上往下看，逆时针方向</li>
+<li>+Y：垂直地面向上</li>
+<li>+Z：垂直于墙面向内</li>
+</ul>
+<h3 id="地板">地板</h3>
+<p>原点位于地面的几何中心</p>
+<ul>
+<li>+X：从上往下看，顺时针沿着墙面指向第一个绘制的点的方向</li>
+<li>+Y：根据左手坐标系确定</li>
+<li>+Z：垂直朝上</li>
+</ul>
+<h3 id="天花板">天花板</h3>
+<p>原点位于天花板的几何中心</p>
+<ul>
+<li>+X：地面的 -X 方向</li>
+<li>+Y：根据左手坐标系确定</li>
+<li>+Z：垂直朝下</li>
+</ul>
+<h3 id="沙发床桌子和其他">沙发、床、桌子和其他</h3>
+<p><img src="RoomCalibration/Cube.png" alt="Cube">
+<br></p>
+<p>第一条线 AB 画高度，然后画顶面的两条棱 BC 和 CD。原点位于顶面的中心</p>
+<ul>
+<li>+X：CB 方向</li>
+<li>+Y：根据左手坐标系确定</li>
+<li>+Z：AB方向</li>
+</ul>
+<h2 id="获取房间标定数据接口">获取房间标定数据接口</h2>
+<h3 id="获取锚点的房间布局信息">获取锚点的房间布局信息</h3>
+<p>YVRSceneAnchor.instance.GetAnchorRoomLayout 接口获取锚点的房间布局信息。</p>
+<pre><code class="lang-Csharp">/// &lt;summary&gt;
+/// 获取指定空间锚点的房间布局信息。
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;anchorHandle&quot;&gt;空间锚点的句柄&lt;/param&gt;
+/// &lt;param name=&quot;roomLayout&quot;&gt;返回的房间布局信息&lt;/param&gt;
+/// &lt;returns&gt;如果成功获取房间布局信息，则为 true；否则为 false&lt;/returns&gt;
+public bool GetAnchorRoomLayout(ulong anchorHandle, out YVRRoomLayout roomLayout)
+</code></pre>
+<p>YVRRoomLayout 包含房间地板、天花板、墙壁锚点的 UUID。</p>
+<pre><code class="lang-Csharp">public struct YVRRoomLayout  
+{  
+    // 地板锚点
+    public YVRSpatialAnchorUUID floorUuid;  
+    // 天花板锚点
+    public YVRSpatialAnchorUUID ceilingUuid;  
+    // 墙壁锚点列表
+    public YVRSpatialAnchorUUID[] wallUuids;  
+}
+</code></pre>
+<h3 id="获取锚点的容器信息">获取锚点的容器信息</h3>
+<p>YVRSceneAnchor.instance.GetAnchorContainer 接口获取锚点的容器信息。</p>
+<pre><code class="lang-Csharp">/// &lt;summary&gt;
+/// 获取指定空间锚点的容器信息。
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;anchorHandle&quot;&gt;空间锚点的句柄&lt;/param&gt;
+/// &lt;param name=&quot;containerUuids&quot;&gt;返回的容器 UUID 列表&lt;/param&gt;
+/// &lt;returns&gt;如果成功获取容器信息，则为 true；否则为 false&lt;/returns&gt;
+public bool GetAnchorContainer(ulong anchorHandle, out List&lt;YVRSpatialAnchorUUID&gt; containerUuids)
+</code></pre>
+<h3 id="获取锚点的矩形平面">获取锚点的矩形平面</h3>
+<p>YVRSceneAnchor.instance.GetAnchorBoundingBox2D 接口提供对锚点矩形平面信息的访问。</p>
+<pre><code class="lang-Csharp">/// &lt;summary&gt;
+/// 获取指定空间锚点的二维边界框信息。
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;anchorHandle&quot;&gt;空间锚点的句柄&lt;/param&gt;
+/// &lt;param name=&quot;boundingBox2D&quot;&gt;返回的二维边界框信息&lt;/param&gt;
+/// &lt;returns&gt;如果成功获取边界框信息，则为 true；否则为 false&lt;/returns&gt;
+public bool GetAnchorBoundingBox2D(ulong anchorHandle, out YVRRect2D boundingBox2D)
+</code></pre>
+<p>YVRRect2D 包含平面的宽高以及相对与锚点位姿原点在 x,y 轴上的偏移。</p>
+<pre><code class="lang-Csharp">public struct YVRRect2D  
+{  
+    // 平面相对于锚点在 x,y 轴上的偏移
+    public Vector2 offset;  
+    // 平面的宽高
+    public Vector2 extent;  
+}
+</code></pre>
+<h3 id="获取锚点的三维边界框">获取锚点的三维边界框</h3>
+<p>YVRSceneAnchor.instance.GetAnchorBoundingBox3D 接口提供对锚点 3D 信息的访问。</p>
+<pre><code class="lang-Csharp">/// &lt;summary&gt;/// 获取指定空间锚点的三维边界框信息。/// &lt;/summary&gt;
+/// &lt;param name=&quot;anchorHandle&quot;&gt;空间锚点的句柄&lt;/param&gt;
+/// &lt;param name=&quot;boundingBox3D&quot;&gt;返回的三维边界框信息&lt;/param&gt;
+/// &lt;returns&gt;如果成功获取边界框信息，则为 true；否则为 false&lt;/returns&gt;
+public bool GetAnchorBoundingBox3D(ulong anchorHandle, out YVRRect3D boundingBox3D)
+</code></pre>
+<p>YVRRect3D 包含 3D 对象的长宽高以及相对于锚点位姿原点在 x,y,z 轴上的偏移。</p>
+<pre><code class="lang-Csharp">public struct YVRRect3D {    
+    // 3D 对象相对于锚点原点在 x,y,z 轴上的偏移    
+    public Vector3 offset;    // L3D 对象的长宽高
+    public Vector3 extent;}
+</code></pre>
+<h3 id="获取锚点的不规则平面顶点信息">获取锚点的不规则平面顶点信息</h3>
+<p>YVRSceneAnchor.instance.GetAnchorBoundary2D 接口返回锚点的非矩形平面信息。</p>
+<pre><code class="lang-Csharp">/// &lt;summary&gt;/// 获取锚点的平面顶点信息/// &lt;/summary&gt;
+/// &lt;param name=&quot;anchorHandle&quot;&gt;空间锚点的句柄&lt;/param&gt;
+/// &lt;param name=&quot;boundary&quot;&gt;返回平面的顶点集合&lt;/param&gt;
+/// &lt;returns&gt;如果成功获取边界信息，则为 true；否则为 false&lt;/returns&gt;
+public bool GetAnchorBoundary2D(ulong anchorHandle, out List&lt;Vector2&gt; boundary)
+</code></pre>
+<h3 id="获取锚点的语义标签">获取锚点的语义标签</h3>
+<p>YVRSceneAnchor.instance.GetAnchorSemanticLabels 接口返回锚点的语义标签。</p>
+<pre><code class="lang-Csharp">/// &lt;summary&gt;/// 获取锚点的语义标签信息。/// &lt;/summary&gt;
+/// &lt;param name=&quot;anchorHandle&quot;&gt;空间锚点的句柄&lt;/param&gt;
+/// &lt;param name=&quot;labels&quot;&gt;返回的语义标签字符串&lt;/param&gt;
+/// &lt;returns&gt;如果成功获取语义标签信息，则为 true；否则为 false&lt;/returns&gt;
+public bool GetAnchorSemanticLabels(ulong anchorHandle, out string labels)
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>当锚点支持的组件类型为 <strong>Bounded2D</strong> 类型是，既可以使用 <strong>GetAnchorBoundingBox2D</strong> 接口获取矩形平面数据，也可以使用 <strong>GetAnchorBoundary2D</strong> 获取平面的顶点数据。（若房间标定的平面为非矩形，此时使用 GetAnchorBoundingBox2D 时将根据平面顶点信息返回对应的最小外接矩形。）</p>
+</div>
+<h3 id="启动房间标定应用">启动房间标定应用</h3>
+<p>调用 YVRSceneAnchor.instance.RequestSceneCapture 接口可以启用房间标定引用进行房间标定。</p>
+<h2 id="获取房间标定数据流程">获取房间标定数据流程</h2>
+<p>你可以通过以下流程来检索房间标定数据的内容：</p>
+<ol>
+<li>通过 YVRSpatialAnchor.instance.QuerySpatialAnchor 接口查询具有组件 RoomLayout 的锚点。</li>
+<li>对于查询到的 RoomLayout 组件锚点，通过 YVRSceneAnchor.instance.GetAnchorContainer 接口获取该房间标定下的所有子锚点。</li>
+<li>通过 UUID 使用 YVRSpatialAnchor.instance.QuerySpatialAnchor 接口循环查询到所有子锚点。</li>
+<li>对于查询到的子锚点，调用 YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus 检索其是否支持对应的组件类型。</li>
+<li>如果想要了解尺寸，调用 GetAnchorBoundingBox2D ，GetAnchorBoundary2D 或 GetAnchorBoundingBox3D 返回对应信息，并相应的缩放 Unity 对象。</li>
+</ol>
+<h2 id="代码示例">代码示例</h2>
+<pre><code class="lang-Csharp">private YVRSpatialAnchorResult m_RoomLayoutAnchor;
+private List&lt;YVRSpatialAnchorResult&gt; m_ContainerAnchors = new List&lt;YVRSpatialAnchorResult&gt;();
+// 获取 RoomLayout 组件的锚点
+public void GetRoomLayoutAnchor()
+{
+    YVRSpatialAnchorQueryInfo queryInfo = new YVRSpatialAnchorQueryInfo();  
+    queryInfo.storageLocation = YVRSpatialAnchorStorageLocation.Local;  
+    queryInfo.component = YVRSpatialAnchorComponentType.RoomLayout;  
+    YVRSpatialAnchor.instance.QuerySpatialAnchor(queryInfo, OnQueryRoomLayoutAnchorCallback);
+}
+private void OnQueryRoomLayoutAnchorCallback(List&lt;YVRSpatialAnchorResult&gt; spatialAnchorResults)  
+{  
+    if(spatialAnchorResults != null &amp;&amp; spatialAnchorResults.Count &gt;= 0)
+    {
+        m_RoomLayoutAnchor = spatialAnchorResults.First();
+    }
+    else
+    {
+        // 无标定信息，跳转至房间标定应用进行标定
+        YVRSceneAnchor.instance.RequestSceneCapture(&quot;&quot;);
+    }
+}
+// 获取房间标定下的所有锚点
+public void GetAnchorAontainer()
+{
+    if(m_RoomLayoutAnchor.anchorHandle == 0) return;
+    bool result = YVRSceneAnchor.instance.GetAnchorContainer(m_RoomLayoutAnchor.anchorHandle,  out List&lt;YVRSpatialAnchorUUID&gt; container);  
+    if (!result) return;  
+      
+    YVRSpatialAnchorQueryInfo queryInfo = new YVRSpatialAnchorQueryInfo();  
+    queryInfo.storageLocation = YVRSpatialAnchorStorageLocation.Local;  
+    queryInfo.ids = container.ToArray();  
+    YVRSpatialAnchor.instance.QuerySpatialAnchor(queryInfo, OnQueryContainerCallback);
+}
+private void OnQueryContainerCallback(List&lt;YVRSpatialAnchorResult&gt; spatialAnchorResults)
+{
+    m_ContainerAnchors = spatialAnchorResults;
+}
+// 获取不规则平面顶点信息
+private void GetAnchorBoundary2DData(YVRSpatialAnchorResult anchor)
+{
+    YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus(anchor.anchorHandle, YVRSpatialAnchorComponentType.Bounded2D, out YVRSpatialAnchorComponentStatus status);
+    if(status.enable)
+    {
+        YVRSceneAnchor.instance.GetAnchorBoundary2D(anchor.anchorHandle, out List&lt;Vector2&gt; boundary);  
+    if (boundary!=null)  
+    {  
+        for (int i = 0; i &lt; boundary.Count; i++)  
+        {  
+            Debug.Log($&quot;boundary uuid:{new string(anchor.uuid)} index:{i} x:{boundary[i].x},y:{boundary[i].y}&quot;);  
+        }  
+    }
+    }
+}
+// 获取锚点矩形平面信息   
+private void GetAnchorBoundingBox2DDate(YVRSpatialAnchorResult anchor) 
+{  
+    YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus(anchor.anchorHandle, YVRSpatialAnchorComponentType.Bounded2D, out YVRSpatialAnchorComponentStatus status);  
+    if (status.enable)  
+    {  
+        YVRSceneAnchor.instance.GetAnchorBoundingBox2D(anchor.anchorHandle, out YVRRect2D boundingBox2D);  
+        Debug.Log(  
+            $&quot;box2d uuid:{new string(anchor.uuid)} boundingBox2D offset.x:{boundingBox2D.offset.x},offset.y:{boundingBox2D.offset.y},extent.x:{boundingBox2D.extent.x},extent.y:{boundingBox2D.extent.y}&quot;);  
+    }  
+}
+// 获取锚点 3D 信息
+private void GetAnchorBoundingBox3DDate(YVRSpatialAnchorResult anchor) 
+{  
+    YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus(anchor.anchorHandle, YVRSpatialAnchorComponentType.Bounded3D, out YVRSpatialAnchorComponentStatus status);  
+    if (status.enable)  
+    {  
+        YVRSceneAnchor.instance.GetAnchorBoundingBox3D(anchor.anchorHandle, out YVRRect3D boundingBox3D);  
+        Debug.Log(  
+            $&quot;box3d uuid:{new string(anchor.uuid)} boundingBox3D offset.x:{boundingBox3D.offset.x},offset.y:{boundingBox3D.offset.y},offset.z:{boundingBox3D.offset.z},extent.x:{boundingBox3D.extent.x},extent.y:{boundingBox3D.extent.y},extent.z:{boundingBox3D.extent.z}&quot;);  
+    }  
+}
+// 获取锚点语义标签信息  
+private void GetAnchorSemanticLabelsDate(YVRSpatialAnchorResult anchor)  
+{  
+    YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus(anchor.anchorHandle, YVRSpatialAnchorComponentType.SemanticLabels, out YVRSpatialAnchorComponentStatus status);  
+    if (status.enable)  
+    {  
+        YVRSceneAnchor.instance.GetAnchorSemanticLabels(anchor.anchorHandle, out string semanticLabels);  
+        Debug.Log($&quot;semanticLabel anchor uuid:{new string(anchor.uuid)} semanticLabels:{semanticLabels}&quot;);  
+    }  
+}
+private void GetAnchoComponentData()  
+{  
+    foreach (var anchor in m_ContainerAnchors)  
+    {  
+        GetAnchorBoundary2DData(anchor);  
+        GetAnchorBoundingBox2DDate(anchor);  
+        GetAnchorBoundingBox3DDate(anchor);  
+        GetAnchorSemanticLabelsDate(anchor);  
+    }  
+}
+</code></pre>
+<h2 id="示例工程">示例工程</h2>
+<p>更多详情，请参考 <a href="https://github.com/YVRDeveloper/SceneAnchorSample">Scene Anchor Sample</a>。</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN~/AdvancedFeatures/RoomCalibration.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

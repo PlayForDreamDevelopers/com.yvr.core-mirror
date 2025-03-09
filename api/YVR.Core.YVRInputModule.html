@@ -1,0 +1,792 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class YVRInputModule | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class YVRInputModule | Core ">
+      
+      <meta name="description" content="Override PointerInputModule to allow UI to interact with custom ray">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YVR.Core.YVRInputModule">
+
+
+
+  <h1 id="YVR_Core_YVRInputModule" data-uid="YVR.Core.YVRInputModule" class="text-break">
+Class YVRInputModule  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YVR.html">YVR</a>.<a class="xref" href="YVR.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>YVR.Core.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Override PointerInputModule to allow UI to interact with custom ray</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class YVRInputModule : PointerInputModule</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">UIBehaviour</span></div>
+      <div><span class="xref">BaseInputModule</span></div>
+      <div><span class="xref">PointerInputModule</span></div>
+      <div><span class="xref">YVRInputModule</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">PointerInputModule.kMouseLeftId</span>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.kMouseRightId</span>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.kMouseMiddleId</span>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.kFakeTouchesId</span>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.m_PointerData</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">PointerInputModule.GetPointerData(int, out PointerEventData, bool)</a>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.RemovePointerData(PointerEventData)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">PointerInputModule.GetTouchPointerEventData(Touch, out bool, out bool)</a>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.CopyFromTo(PointerEventData, PointerEventData)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">PointerInputModule.StateForMouseButton(int)</a>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.GetMousePointerEventData()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">PointerInputModule.GetMousePointerEventData(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">PointerInputModule.GetLastPointerEventData(int)</a>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.ProcessDrag(PointerEventData)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">PointerInputModule.IsPointerOverGameObject(int)</a>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.ClearSelection()</span>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">PointerInputModule.DeselectIfSelectionChanged(GameObject, BaseEventData)</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.m_RaycastResultCache</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.m_InputOverride</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.OnEnable()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.OnDisable()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">BaseInputModule.FindFirstRaycast(List&lt;RaycastResult&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">BaseInputModule.DetermineMoveDirection(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">BaseInputModule.DetermineMoveDirection(float, float, float)</a>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.FindCommonRoot(GameObject, GameObject)</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.HandlePointerExitAndEnter(PointerEventData, GameObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">BaseInputModule.GetAxisEventData(float, float, float)</a>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.GetBaseEventData()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.ShouldActivateModule()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.DeactivateModule()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.ActivateModule()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.UpdateModule()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.IsModuleSupported()</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.ConvertUIToolkitPointerId(PointerEventData)</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.input</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.inputOverride</span>
+    </div>
+    <div>
+      <span class="xref">BaseInputModule.eventSystem</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.Awake()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.IsActive()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnValidate()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnRectTransformDimensionsChange()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnBeforeTransformParentChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnTransformParentChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnDidApplyAnimationProperties()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnCanvasGroupChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.OnCanvasHierarchyChanged()</span>
+    </div>
+    <div>
+      <span class="xref">UIBehaviour.IsDestroyed()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.customProvider.html">customProvider</a></dt>
+    <dd><p>Customized input data provider</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.disableModuleOnFocusLost.html">disableModuleOnFocusLost</a></dt>
+    <dd><p>Disable YVRInputModule when losing focus</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.dragAngleThreshold.html">dragAngleThreshold</a></dt>
+    <dd><p>Minimum drag threshold in degree</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.enableHMDRayAgent.html">enableHMDRayAgent</a></dt>
+    <dd><p>Whether use HMD as ray transform when both controller is disconnected</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.Instance.html#YVR_Core_YVRInputModule_Instance">Instance</a></dt>
+    <dd><p>Get Instance of YVRInputModule</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.eventData.html#YVR_Core_YVRInputModule_eventData">eventData</a></dt>
+    <dd><p>The event data set from input module to event system</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.inputDataProvider.html#YVR_Core_YVRInputModule_inputDataProvider">inputDataProvider</a></dt>
+    <dd><p>Current using input data provider</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.inputDataProviderSource.html#YVR_Core_YVRInputModule_inputDataProviderSource">inputDataProviderSource</a></dt>
+    <dd><p>current using input data provider source</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.rayTransform.html#YVR_Core_YVRInputModule_rayTransform">rayTransform</a></dt>
+    <dd><p>Transform that decide ray's origin and direction</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.raycastGameObject.html#YVR_Core_YVRInputModule_raycastGameObject">raycastGameObject</a></dt>
+    <dd><p>The ray casting game object of this frame</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.raycastResult.html#YVR_Core_YVRInputModule_raycastResult">raycastResult</a></dt>
+    <dd><p>The raycast result of this frame</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.GetFirstRaycast.html#YVR_Core_YVRInputModule_GetFirstRaycast_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector2_System_Collections_Generic_List_UnityEngine_EventSystems_RaycastResult__">GetFirstRaycast(Vector3, Vector3, Vector2, List&lt;RaycastResult&gt;)</a></dt>
+    <dd><p>Use event system to get first raycast result</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.GetSimulatedButtonState.html#YVR_Core_YVRInputModule_GetSimulatedButtonState">GetSimulatedButtonState()</a></dt>
+    <dd><p>Get the simulate button state (press / released or not) in this frame</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.GetSimulatedMouseState.html#YVR_Core_YVRInputModule_GetSimulatedMouseState">GetSimulatedMouseState()</a></dt>
+    <dd><p>Get the simulated mouse state which override the default mouse state required by PointerInputModule</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.OnDestroy.html#YVR_Core_YVRInputModule_OnDestroy">OnDestroy()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.Process.html#YVR_Core_YVRInputModule_Process">Process()</a></dt>
+    <dd><p>Override PointerInputModule.Process to handle custom input events</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.ProcessDrag.html#YVR_Core_YVRInputModule_ProcessDrag_UnityEngine_EventSystems_PointerInputModule_MouseButtonEventData_">ProcessDrag(MouseButtonEventData)</a></dt>
+    <dd><p>Process the simulated mouse drag state</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.ProcessMousePress.html#YVR_Core_YVRInputModule_ProcessMousePress_UnityEngine_EventSystems_PointerInputModule_MouseButtonEventData_">ProcessMousePress(MouseButtonEventData)</a></dt>
+    <dd><p>Process the simulated mouse button press state</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.ProcessMouseState.html#YVR_Core_YVRInputModule_ProcessMouseState_UnityEngine_EventSystems_PointerInputModule_MouseState_">ProcessMouseState(MouseState)</a></dt>
+    <dd><p>Process the simulated mouse state</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.ProcessMove.html#YVR_Core_YVRInputModule_ProcessMove_UnityEngine_EventSystems_PointerEventData_">ProcessMove(PointerEventData)</a></dt>
+    <dd><p>Process the simulated mouse move state</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.ProcessScroll.html#YVR_Core_YVRInputModule_ProcessScroll_UnityEngine_EventSystems_PointerInputModule_MouseButtonEventData_">ProcessScroll(MouseButtonEventData)</a></dt>
+    <dd><p>Process the simulated mouse scroll state</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.SetInputDataProvider.html#YVR_Core_YVRInputModule_SetInputDataProvider_YVR_Core_DataProviderSource_">SetInputDataProvider(DataProviderSource)</a></dt>
+    <dd><p>Set the currently used data provider</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.Start.html#YVR_Core_YVRInputModule_Start">Start()</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h2 class="section" id="events">Events
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.onInputDataProviderChanged.html">onInputDataProviderChanged</a></dt>
+    <dd><p>Callback when module input changed</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRInputModule.onRaycastHit.html">onRaycastHit</a></dt>
+    <dd><p>Callback when raycast hit sth</p>
+</dd>
+  </dl>
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="YVR.Core.YVRGraphicRaycaster.html">YVRGraphicRaycaster</a></div>
+      <div><a class="xref" href="YVR.Core.YVRPhysicsRaycaster.html">YVRPhysicsRaycaster</a></div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

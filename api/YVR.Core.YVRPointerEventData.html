@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class YVRPointerEventData | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class YVRPointerEventData | Core ">
+      
+      <meta name="description" content="Almost the same with UnityEngin.EventSystems.PointerEventData, expects that a new Ray fields indicates the ray used for interacting">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YVR.Core.YVRPointerEventData">
+
+
+
+  <h1 id="YVR_Core_YVRPointerEventData" data-uid="YVR.Core.YVRPointerEventData" class="text-break">
+Class YVRPointerEventData  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YVR.html">YVR</a>.<a class="xref" href="YVR.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>YVR.Core.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Almost the same with UnityEngin.EventSystems.PointerEventData,
+expects that a new Ray fields indicates the ray used for interacting</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class YVRPointerEventData : PointerEventData</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AbstractEventData</span></div>
+      <div><span class="xref">BaseEventData</span></div>
+      <div><span class="xref">PointerEventData</span></div>
+      <div><span class="xref">YVRPointerEventData</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">PointerEventData.hovered</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.IsPointerMoving()</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.IsScrolling()</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerEnter</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.lastPress</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.rawPointerPress</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerDrag</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerClick</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerCurrentRaycast</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerPressRaycast</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.eligibleForClick</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.displayIndex</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerId</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.position</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.delta</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pressPosition</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.worldPosition</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.worldNormal</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.clickTime</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.clickCount</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.scrollDelta</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.useDragThreshold</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.dragging</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.button</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pressure</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.tangentialPressure</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.altitudeAngle</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.azimuthAngle</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.twist</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.tilt</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.penStatus</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.radius</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.radiusVariance</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.fullyExited</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.reentered</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.enterEventCamera</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pressEventCamera</span>
+    </div>
+    <div>
+      <span class="xref">PointerEventData.pointerPress</span>
+    </div>
+    <div>
+      <span class="xref">BaseEventData.currentInputModule</span>
+    </div>
+    <div>
+      <span class="xref">BaseEventData.selectedObject</span>
+    </div>
+    <div>
+      <span class="xref">AbstractEventData.m_Used</span>
+    </div>
+    <div>
+      <span class="xref">AbstractEventData.Reset()</span>
+    </div>
+    <div>
+      <span class="xref">AbstractEventData.Use()</span>
+    </div>
+    <div>
+      <span class="xref">AbstractEventData.used</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPointerEventData.-ctor.html#YVR_Core_YVRPointerEventData__ctor_UnityEngine_EventSystems_EventSystem_">YVRPointerEventData(EventSystem)</a></dt>
+    <dd><p>Default Constructor</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPointerEventData.worldSpaceRay.html">worldSpaceRay</a></dt>
+    <dd><p>Indicating the ray used for interaction</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class YVRPluginWin | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class YVRPluginWin | Core ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YVR.Core.YVRPluginWin">
+
+
+
+  <h1 id="YVR_Core_YVRPluginWin" data-uid="YVR.Core.YVRPluginWin" class="text-break">
+Class YVRPluginWin  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YVR.html">YVR</a>.<a class="xref" href="YVR.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>YVR.Core.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public class YVRPluginWin : YVRPlugin</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="YVR.Core.YVRPlugin.html">YVRPlugin</a></div>
+      <div><span class="xref">YVRPluginWin</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.Instance.html#YVR_Core_YVRPlugin_Instance">YVRPlugin.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetTrackingSpace.html#YVR_Core_YVRPlugin_SetTrackingSpace_YVR_Core_YVRTrackingStateManager_TrackingSpace_">YVRPlugin.SetTrackingSpace(YVRTrackingStateManager.TrackingSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.RecenterTracking.html#YVR_Core_YVRPlugin_RecenterTracking">YVRPlugin.RecenterTracking()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetControllerVibration.html#YVR_Core_YVRPlugin_SetControllerVibration_System_UInt32_System_Single_System_Single_">YVRPlugin.SetControllerVibration(uint, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetControllerVibration.html#YVR_Core_YVRPlugin_SetControllerVibration_System_UInt32_System_Single_System_Single_System_Single_">YVRPlugin.SetControllerVibration(uint, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBatteryLevel.html#YVR_Core_YVRPlugin_GetBatteryLevel">YVRPlugin.GetBatteryLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBatteryTemperature.html#YVR_Core_YVRPlugin_GetBatteryTemperature">YVRPlugin.GetBatteryTemperature()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBatteryStatus.html#YVR_Core_YVRPlugin_GetBatteryStatus">YVRPlugin.GetBatteryStatus()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetVolumeLevel.html#YVR_Core_YVRPlugin_GetVolumeLevel">YVRPlugin.GetVolumeLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetGPUUtilLevel.html#YVR_Core_YVRPlugin_GetGPUUtilLevel">YVRPlugin.GetGPUUtilLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetCPUUtilLevel.html#YVR_Core_YVRPlugin_GetCPUUtilLevel">YVRPlugin.GetCPUUtilLevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetCPULevel.html#YVR_Core_YVRPlugin_GetCPULevel">YVRPlugin.GetCPULevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetGPULevel.html#YVR_Core_YVRPlugin_GetGPULevel">YVRPlugin.GetGPULevel()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetPerformanceLevel.html#YVR_Core_YVRPlugin_SetPerformanceLevel_System_Int32_System_Int32_">YVRPlugin.SetPerformanceLevel(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.IsUserPresent.html#YVR_Core_YVRPlugin_IsUserPresent">YVRPlugin.IsUserPresent()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetPassthrough.html#YVR_Core_YVRPlugin_SetPassthrough_System_Boolean_">YVRPlugin.SetPassthrough(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetPassthroughProviderEnable.html#YVR_Core_YVRPlugin_SetPassthroughProviderEnable_System_Boolean_">YVRPlugin.SetPassthroughProviderEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.IsFocusing.html#YVR_Core_YVRPlugin_IsFocusing">YVRPlugin.IsFocusing()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.IsVisible.html#YVR_Core_YVRPlugin_IsVisible">YVRPlugin.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetEventCallback.html#YVR_Core_YVRPlugin_SetEventCallback_System_Action_System_Int32__">YVRPlugin.SetEventCallback(Action&lt;int&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetDisplayFrequency.html#YVR_Core_YVRPlugin_GetDisplayFrequency">YVRPlugin.GetDisplayFrequency()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetStereoRenderingMode.html#YVR_Core_YVRPlugin_GetStereoRenderingMode">YVRPlugin.GetStereoRenderingMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetDisplayFrequency.html#YVR_Core_YVRPlugin_SetDisplayFrequency_System_Single_">YVRPlugin.SetDisplayFrequency(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetDisplayFrequenciesAvailable.html#YVR_Core_YVRPlugin_GetDisplayFrequenciesAvailable">YVRPlugin.GetDisplayFrequenciesAvailable()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBoundaryConfigured.html#YVR_Core_YVRPlugin_GetBoundaryConfigured">YVRPlugin.GetBoundaryConfigured()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.TestBoundaryNode.html#YVR_Core_YVRPlugin_TestBoundaryNode_YVR_Core_YVRBoundary_BoundaryNode_YVR_Core_YVRBoundary_BoundaryTestResult__">YVRPlugin.TestBoundaryNode(YVRBoundary.BoundaryNode, ref YVRBoundary.BoundaryTestResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.TestBoundaryPoint.html#YVR_Core_YVRPlugin_TestBoundaryPoint_UnityEngine_Vector3_YVR_Core_YVRBoundary_BoundaryTestResult__">YVRPlugin.TestBoundaryPoint(Vector3, ref YVRBoundary.BoundaryTestResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBoundaryDimensions.html#YVR_Core_YVRPlugin_GetBoundaryDimensions">YVRPlugin.GetBoundaryDimensions()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBoundaryVisible.html#YVR_Core_YVRPlugin_GetBoundaryVisible">YVRPlugin.GetBoundaryVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetBoundaryVisible.html#YVR_Core_YVRPlugin_SetBoundaryVisible_System_Boolean_">YVRPlugin.SetBoundaryVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetBoundaryDetectionEnable.html#YVR_Core_YVRPlugin_SetBoundaryDetectionEnable_System_Boolean_">YVRPlugin.SetBoundaryDetectionEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBoundaryGeometry.html#YVR_Core_YVRPlugin_GetBoundaryGeometry">YVRPlugin.GetBoundaryGeometry()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetFoveation.html#YVR_Core_YVRPlugin_SetFoveation_System_Int32_System_Int32_">YVRPlugin.SetFoveation(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAppSWEnable.html#YVR_Core_YVRPlugin_SetAppSWEnable_System_Boolean_">YVRPlugin.SetAppSWEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetAppSWEnable.html#YVR_Core_YVRPlugin_GetAppSWEnable">YVRPlugin.GetAppSWEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAppSWSwitch.html#YVR_Core_YVRPlugin_SetAppSWSwitch_System_Boolean_">YVRPlugin.SetAppSWSwitch(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetAppSWSwitch.html#YVR_Core_YVRPlugin_GetAppSWSwitch">YVRPlugin.GetAppSWSwitch()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetEyeBufferLayerSettings.html#YVR_Core_YVRPlugin_SetEyeBufferLayerSettings_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">YVRPlugin.SetEyeBufferLayerSettings(bool, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetPrimaryController.html#YVR_Core_YVRPlugin_GetPrimaryController_System_UInt32__">YVRPlugin.GetPrimaryController(ref uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetPrimaryController.html#YVR_Core_YVRPlugin_SetPrimaryController_System_UInt32_">YVRPlugin.SetPrimaryController(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable">YVRPlugin.GetHandEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetHandAutoActivateTime.html#YVR_Core_YVRPlugin_GetHandAutoActivateTime">YVRPlugin.GetHandAutoActivateTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAPPHandEnable.html#YVR_Core_YVRPlugin_SetAPPHandEnable_System_Boolean_">YVRPlugin.SetAPPHandEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAPPControllerEnable.html#YVR_Core_YVRPlugin_SetAPPControllerEnable_System_Boolean_">YVRPlugin.SetAPPControllerEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAppSpacePosition.html#YVR_Core_YVRPlugin_SetAppSpacePosition_System_Single_System_Single_System_Single_">YVRPlugin.SetAppSpacePosition(float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAppSpaceRotation.html#YVR_Core_YVRPlugin_SetAppSpaceRotation_System_Single_System_Single_System_Single_System_Single_">YVRPlugin.SetAppSpaceRotation(float, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.CreateSpatialAnchor.html#YVR_Core_YVRPlugin_CreateSpatialAnchor_UnityEngine_Vector3_UnityEngine_Quaternion_System_UInt64__">YVRPlugin.CreateSpatialAnchor(Vector3, Quaternion, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SaveSpatialAnchor.html#YVR_Core_YVRPlugin_SaveSpatialAnchor_YVR_Core_YVRSpatialAnchorSaveInfo_System_UInt64__">YVRPlugin.SaveSpatialAnchor(YVRSpatialAnchorSaveInfo, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.QuerySpatialAnchor.html#YVR_Core_YVRPlugin_QuerySpatialAnchor_YVR_Core_YVRSpatialAnchorQueryInfo_System_UInt64__">YVRPlugin.QuerySpatialAnchor(YVRSpatialAnchorQueryInfo, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.DestroySpatialAnchor.html#YVR_Core_YVRPlugin_DestroySpatialAnchor_System_UInt64_YVR_Core_YVRSpatialAnchorStorageLocation_System_UInt64__">YVRPlugin.DestroySpatialAnchor(ulong, YVRSpatialAnchorStorageLocation, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpatialAnchorPose.html#YVR_Core_YVRPlugin_GetSpatialAnchorPose_System_UInt64_UnityEngine_Vector3__UnityEngine_Quaternion__YVR_Core_YVRAnchorLocationFlags__">YVRPlugin.GetSpatialAnchorPose(ulong, ref Vector3, ref Quaternion, ref YVRAnchorLocationFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetCreateSpatialAnchorCallback.html#YVR_Core_YVRPlugin_SetCreateSpatialAnchorCallback_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__">YVRPlugin.SetCreateSpatialAnchorCallback(Action&lt;YVRSpatialAnchorResult, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetQuerySpatialAnchorCallback.html#YVR_Core_YVRPlugin_SetQuerySpatialAnchorCallback_System_Action_YVR_Core_YVRQuerySpatialAnchorResult_System_UInt64__">YVRPlugin.SetQuerySpatialAnchorCallback(Action&lt;YVRQuerySpatialAnchorResult, ulong&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetEraseSpatialAnchorCallback.html#YVR_Core_YVRPlugin_SetEraseSpatialAnchorCallback_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__">YVRPlugin.SetEraseSpatialAnchorCallback(Action&lt;YVRSpatialAnchorResult, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpatialAnchorEnumerateSupported.html#YVR_Core_YVRPlugin_GetSpatialAnchorEnumerateSupported_System_UInt64_YVR_Core_YVRSpatialAnchorSupportedComponent__">YVRPlugin.GetSpatialAnchorEnumerateSupported(ulong, ref YVRSpatialAnchorSupportedComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetSpatialAnchorComponentStatus.html#YVR_Core_YVRPlugin_SetSpatialAnchorComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentStatusSetInfo_System_UInt64__">YVRPlugin.SetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentStatusSetInfo, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpatialAnchorComponentStatus.html#YVR_Core_YVRPlugin_GetSpatialAnchorComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentType_YVR_Core_YVRSpatialAnchorComponentStatus__">YVRPlugin.GetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentType, ref YVRSpatialAnchorComponentStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.CreateSpatialAnchorUserHandle.html#YVR_Core_YVRPlugin_CreateSpatialAnchorUserHandle_System_UInt64_System_UInt64__">YVRPlugin.CreateSpatialAnchorUserHandle(ulong, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.ShareSpatialAnchor.html#YVR_Core_YVRPlugin_ShareSpatialAnchor_YVR_Core_YVRSpatialAnchorShareInfo_System_UInt64__">YVRPlugin.ShareSpatialAnchor(YVRSpatialAnchorShareInfo, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpatialAnchorUserId.html#YVR_Core_YVRPlugin_GetSpatialAnchorUserId_System_UInt64_System_UInt64__">YVRPlugin.GetSpatialAnchorUserId(ulong, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetSpatialAnchorShareCompleteCallback.html#YVR_Core_YVRPlugin_SetSpatialAnchorShareCompleteCallback_System_Action_System_Boolean_System_UInt64__">YVRPlugin.SetSpatialAnchorShareCompleteCallback(Action&lt;bool, ulong&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetSpatialAnchorSaveCompleteCallback.html#YVR_Core_YVRPlugin_SetSpatialAnchorSaveCompleteCallback_System_Action_YVR_Core_YVRSpatialAnchorSaveCompleteInfo_System_Boolean__">YVRPlugin.SetSpatialAnchorSaveCompleteCallback(Action&lt;YVRSpatialAnchorSaveCompleteInfo, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetSpatialAnchorSaveListCompleteCallback.html#YVR_Core_YVRPlugin_SetSpatialAnchorSaveListCompleteCallback_System_Action_System_Boolean_System_UInt64__">YVRPlugin.SetSpatialAnchorSaveListCompleteCallback(Action&lt;bool, ulong&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetSpatialAnchorStatusCompleteCallback.html#YVR_Core_YVRPlugin_SetSpatialAnchorStatusCompleteCallback_System_Action_YVR_Core_YVRSpatialAnchorSetStatusCompleteInfo_System_Boolean__">YVRPlugin.SetSpatialAnchorStatusCompleteCallback(Action&lt;YVRSpatialAnchorSetStatusCompleteInfo, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SaveSpatialAnchorList.html#YVR_Core_YVRPlugin_SaveSpatialAnchorList_YVR_Core_YVRSpatialAnchorListSaveInfo_System_UInt64__">YVRPlugin.SaveSpatialAnchorList(YVRSpatialAnchorListSaveInfo, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpatialAnchorUUID.html#YVR_Core_YVRPlugin_GetSpatialAnchorUUID_System_UInt64_YVR_Core_YVRSpatialAnchorUUID__">YVRPlugin.GetSpatialAnchorUUID(ulong, ref YVRSpatialAnchorUUID)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.CreatePlaneDetection.html#YVR_Core_YVRPlugin_CreatePlaneDetection">YVRPlugin.CreatePlaneDetection()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetPlaneDetectionsCallback.html#YVR_Core_YVRPlugin_SetPlaneDetectionsCallback_System_Action_YVR_Core_YVRPlaneDetectorLocationsInternal__">YVRPlugin.SetPlaneDetectionsCallback(Action&lt;YVRPlaneDetectorLocationsInternal&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetPolygonBuffer.html#YVR_Core_YVRPlugin_GetPolygonBuffer_System_UInt64_System_UInt32_">YVRPlugin.GetPolygonBuffer(ulong, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.EndPlaneDetection.html#YVR_Core_YVRPlugin_EndPlaneDetection">YVRPlugin.EndPlaneDetection()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetEyeTrackingSupportes.html#YVR_Core_YVRPlugin_GetEyeTrackingSupportes">YVRPlugin.GetEyeTrackingSupportes()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.CreateEyeTracker.html#YVR_Core_YVRPlugin_CreateEyeTracker">YVRPlugin.CreateEyeTracker()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.DestroyEyeTracker.html#YVR_Core_YVRPlugin_DestroyEyeTracker">YVRPlugin.DestroyEyeTracker()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetEyeTrackingEnable.html#YVR_Core_YVRPlugin_GetEyeTrackingEnable">YVRPlugin.GetEyeTrackingEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetEyeGazes.html#YVR_Core_YVRPlugin_GetEyeGazes_YVR_Core_EyeTrackingData_EyeGazesState__">YVRPlugin.GetEyeGazes(ref EyeTrackingData.EyeGazesState)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetEyeGazePose.html#YVR_Core_YVRPlugin_GetEyeGazePose_YVR_Core_EyeTrackingData_EyeGazePose__">YVRPlugin.GetEyeGazePose(ref EyeTrackingData.EyeGazePose)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceBoundingBox2D.html#YVR_Core_YVRPlugin_GetSpaceBoundingBox2D_System_UInt64_YVR_Core_YVRRect2D__">YVRPlugin.GetSpaceBoundingBox2D(ulong, ref YVRRect2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceBoundingBox3D.html#YVR_Core_YVRPlugin_GetSpaceBoundingBox3D_System_UInt64_YVR_Core_YVRRect3D__">YVRPlugin.GetSpaceBoundingBox3D(ulong, ref YVRRect3D)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceBoundary2D.html#YVR_Core_YVRPlugin_GetSpaceBoundary2D_System_UInt64_YVR_Core_YVRBoundary2D__">YVRPlugin.GetSpaceBoundary2D(ulong, ref YVRBoundary2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceSemanticLabels.html#YVR_Core_YVRPlugin_GetSpaceSemanticLabels_System_UInt64_YVR_Core_YVRAnchorSemanticLabel__">YVRPlugin.GetSpaceSemanticLabels(ulong, ref YVRAnchorSemanticLabel)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceRoomLayout.html#YVR_Core_YVRPlugin_GetSpaceRoomLayout_System_UInt64_YVR_Core_YVRRoomLayout__">YVRPlugin.GetSpaceRoomLayout(ulong, ref YVRRoomLayout)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceContainer.html#YVR_Core_YVRPlugin_GetSpaceContainer_System_UInt64_YVR_Core_YVRSceneAnchorContainer__">YVRPlugin.GetSpaceContainer(ulong, ref YVRSceneAnchorContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.RequestSceneCapture.html#YVR_Core_YVRPlugin_RequestSceneCapture_YVR_Core_YVRSceneCaptureRequest__System_UInt64__">YVRPlugin.RequestSceneCapture(ref YVRSceneCaptureRequest, ref ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetSceneCaptureCallback.html#YVR_Core_YVRPlugin_SetSceneCaptureCallback_System_Action_System_UInt64_System_Boolean__">YVRPlugin.SetSceneCaptureCallback(Action&lt;ulong, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetSpaceTriangleMesh.html#YVR_Core_YVRPlugin_GetSpaceTriangleMesh_System_UInt64_YVR_Core_YVRAnchorTriangleMeshInternal__">YVRPlugin.GetSpaceTriangleMesh(ulong, ref YVRAnchorTriangleMeshInternal)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetRecommendedResolution.html#YVR_Core_YVRPlugin_GetRecommendedResolution_YVR_Core_YVRExtent2DInt__">YVRPlugin.GetRecommendedResolution(ref YVRExtent2DInt)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetAdapterResolutionPolicy.html#YVR_Core_YVRPlugin_SetAdapterResolutionPolicy_YVR_Core_YVRQualityManager_AdapterResolutionPolicy_">YVRPlugin.SetAdapterResolutionPolicy(YVRQualityManager.AdapterResolutionPolicy)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.CreateMeshDetector.html#YVR_Core_YVRPlugin_CreateMeshDetector">YVRPlugin.CreateMeshDetector()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.DestroyMeshDetector.html#YVR_Core_YVRPlugin_DestroyMeshDetector">YVRPlugin.DestroyMeshDetector()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetMeshBlockUpdateCallback.html#YVR_Core_YVRPlugin_SetMeshBlockUpdateCallback_System_Action_System_UInt64_YVR_Core_YVRMeshBlockChangeState__">YVRPlugin.SetMeshBlockUpdateCallback(Action&lt;ulong, YVRMeshBlockChangeState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetPassthroughSwapchainImageIndex.html#YVR_Core_YVRPlugin_GetPassthroughSwapchainImageIndex">YVRPlugin.GetPassthroughSwapchainImageIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetPassthroughSwapchainImageValid.html#YVR_Core_YVRPlugin_GetPassthroughSwapchainImageValid">YVRPlugin.GetPassthroughSwapchainImageValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetPassthroughImageDiffRotation.html#YVR_Core_YVRPlugin_GetPassthroughImageDiffRotation_System_Int32_">YVRPlugin.GetPassthroughImageDiffRotation(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.SetBlockInteractionData.html#YVR_Core_YVRPlugin_SetBlockInteractionData_System_Boolean_">YVRPlugin.SetBlockInteractionData(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.GetBlockInteractionData.html#YVR_Core_YVRPlugin_GetBlockInteractionData">YVRPlugin.GetBlockInteractionData()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginWin.Create.html#YVR_Core_YVRPluginWin_Create">Create()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginWin.GetCurrentInputDevice.html#YVR_Core_YVRPluginWin_GetCurrentInputDevice_YVR_Core_ActiveInputDevice__">GetCurrentInputDevice(ref ActiveInputDevice)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginWin.GetEyeFov.html#YVR_Core_YVRPluginWin_GetEyeFov_System_Int32_YVR_Core_YVRCameraRenderer_EyeFov__">GetEyeFov(int, ref EyeFov)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginWin.GetEyeResolution.html#YVR_Core_YVRPluginWin_GetEyeResolution_UnityEngine_Vector2__">GetEyeResolution(ref Vector2)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginWin.GetHandJointLocations.html#YVR_Core_YVRPluginWin_GetHandJointLocations_YVR_Core_HandType_YVR_Core_HandJointLocations__">GetHandJointLocations(HandType, ref HandJointLocations)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginWin.SetVSyncCount.html#YVR_Core_YVRPluginWin_SetVSyncCount_YVR_Core_YVRQualityManager_VSyncCount_">SetVSyncCount(VSyncCount)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

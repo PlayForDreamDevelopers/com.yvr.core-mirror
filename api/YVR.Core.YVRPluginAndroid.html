@@ -1,0 +1,808 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class YVRPluginAndroid | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class YVRPluginAndroid | Core ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YVR.Core.YVRPluginAndroid">
+
+
+
+  <h1 id="YVR_Core_YVRPluginAndroid" data-uid="YVR.Core.YVRPluginAndroid" class="text-break">
+Class YVRPluginAndroid  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YVR.html">YVR</a>.<a class="xref" href="YVR.Core.html">Core</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>YVR.Core.Runtime.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public class YVRPluginAndroid : YVRPlugin</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="YVR.Core.YVRPlugin.html">YVRPlugin</a></div>
+      <div><span class="xref">YVRPluginAndroid</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="YVR.Core.YVRPlugin.Instance.html#YVR_Core_YVRPlugin_Instance">YVRPlugin.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.Create.html#YVR_Core_YVRPluginAndroid_Create">Create()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.CreateEyeTracker.html#YVR_Core_YVRPluginAndroid_CreateEyeTracker">CreateEyeTracker()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.CreateMeshDetector.html#YVR_Core_YVRPluginAndroid_CreateMeshDetector">CreateMeshDetector()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.CreatePlaneDetection.html#YVR_Core_YVRPluginAndroid_CreatePlaneDetection">CreatePlaneDetection()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.CreateSpatialAnchor.html#YVR_Core_YVRPluginAndroid_CreateSpatialAnchor_UnityEngine_Vector3_UnityEngine_Quaternion_System_UInt64__">CreateSpatialAnchor(Vector3, Quaternion, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.CreateSpatialAnchorUserHandle.html#YVR_Core_YVRPluginAndroid_CreateSpatialAnchorUserHandle_System_UInt64_System_UInt64__">CreateSpatialAnchorUserHandle(ulong, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.DestroyEyeTracker.html#YVR_Core_YVRPluginAndroid_DestroyEyeTracker">DestroyEyeTracker()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.DestroyMeshDetector.html#YVR_Core_YVRPluginAndroid_DestroyMeshDetector">DestroyMeshDetector()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.DestroySpatialAnchor.html#YVR_Core_YVRPluginAndroid_DestroySpatialAnchor_System_UInt64_YVR_Core_YVRSpatialAnchorStorageLocation_System_UInt64__">DestroySpatialAnchor(ulong, YVRSpatialAnchorStorageLocation, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.EndPlaneDetection.html#YVR_Core_YVRPluginAndroid_EndPlaneDetection">EndPlaneDetection()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetAppSWEnable.html#YVR_Core_YVRPluginAndroid_GetAppSWEnable">GetAppSWEnable()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetAppSWSwitch.html#YVR_Core_YVRPluginAndroid_GetAppSWSwitch">GetAppSWSwitch()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBatteryLevel.html#YVR_Core_YVRPluginAndroid_GetBatteryLevel">GetBatteryLevel()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBatteryStatus.html#YVR_Core_YVRPluginAndroid_GetBatteryStatus">GetBatteryStatus()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBatteryTemperature.html#YVR_Core_YVRPluginAndroid_GetBatteryTemperature">GetBatteryTemperature()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBlockInteractionData.html#YVR_Core_YVRPluginAndroid_GetBlockInteractionData">GetBlockInteractionData()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBoundaryConfigured.html#YVR_Core_YVRPluginAndroid_GetBoundaryConfigured">GetBoundaryConfigured()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBoundaryDimensions.html#YVR_Core_YVRPluginAndroid_GetBoundaryDimensions">GetBoundaryDimensions()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBoundaryGeometry.html#YVR_Core_YVRPluginAndroid_GetBoundaryGeometry">GetBoundaryGeometry()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetBoundaryVisible.html#YVR_Core_YVRPluginAndroid_GetBoundaryVisible">GetBoundaryVisible()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetCPULevel.html#YVR_Core_YVRPluginAndroid_GetCPULevel">GetCPULevel()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetCPUUtilLevel.html#YVR_Core_YVRPluginAndroid_GetCPUUtilLevel">GetCPUUtilLevel()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetCurrentInputDevice.html#YVR_Core_YVRPluginAndroid_GetCurrentInputDevice_YVR_Core_ActiveInputDevice__">GetCurrentInputDevice(ref ActiveInputDevice)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetDisplayFrequenciesAvailable.html#YVR_Core_YVRPluginAndroid_GetDisplayFrequenciesAvailable">GetDisplayFrequenciesAvailable()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetDisplayFrequency.html#YVR_Core_YVRPluginAndroid_GetDisplayFrequency">GetDisplayFrequency()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetEyeFov.html#YVR_Core_YVRPluginAndroid_GetEyeFov_System_Int32_YVR_Core_YVRCameraRenderer_EyeFov__">GetEyeFov(int, ref EyeFov)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetEyeGazePose.html#YVR_Core_YVRPluginAndroid_GetEyeGazePose_YVR_Core_EyeTrackingData_EyeGazePose__">GetEyeGazePose(ref EyeGazePose)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetEyeGazes.html#YVR_Core_YVRPluginAndroid_GetEyeGazes_YVR_Core_EyeTrackingData_EyeGazesState__">GetEyeGazes(ref EyeGazesState)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetEyeResolution.html#YVR_Core_YVRPluginAndroid_GetEyeResolution_UnityEngine_Vector2__">GetEyeResolution(ref Vector2)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetEyeTrackingEnable.html#YVR_Core_YVRPluginAndroid_GetEyeTrackingEnable">GetEyeTrackingEnable()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetEyeTrackingSupportes.html#YVR_Core_YVRPluginAndroid_GetEyeTrackingSupportes">GetEyeTrackingSupportes()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetGPULevel.html#YVR_Core_YVRPluginAndroid_GetGPULevel">GetGPULevel()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetGPUUtilLevel.html#YVR_Core_YVRPluginAndroid_GetGPUUtilLevel">GetGPUUtilLevel()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetHandAutoActivateTime.html#YVR_Core_YVRPluginAndroid_GetHandAutoActivateTime">GetHandAutoActivateTime()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetHandEnable.html#YVR_Core_YVRPluginAndroid_GetHandEnable">GetHandEnable()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetHandJointLocations.html#YVR_Core_YVRPluginAndroid_GetHandJointLocations_YVR_Core_HandType_YVR_Core_HandJointLocations__">GetHandJointLocations(HandType, ref HandJointLocations)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetPassthroughImageDiffRotation.html#YVR_Core_YVRPluginAndroid_GetPassthroughImageDiffRotation_System_Int32_">GetPassthroughImageDiffRotation(int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetPassthroughSwapchainImageIndex.html#YVR_Core_YVRPluginAndroid_GetPassthroughSwapchainImageIndex">GetPassthroughSwapchainImageIndex()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetPassthroughSwapchainImageValid.html#YVR_Core_YVRPluginAndroid_GetPassthroughSwapchainImageValid">GetPassthroughSwapchainImageValid()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetPolygonBuffer.html#YVR_Core_YVRPluginAndroid_GetPolygonBuffer_System_UInt64_System_UInt32_">GetPolygonBuffer(ulong, uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetPrimaryController.html#YVR_Core_YVRPluginAndroid_GetPrimaryController_System_UInt32__">GetPrimaryController(ref uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetRecommendedResolution.html#YVR_Core_YVRPluginAndroid_GetRecommendedResolution_YVR_Core_YVRExtent2DInt__">GetRecommendedResolution(ref YVRExtent2DInt)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceBoundary2D.html#YVR_Core_YVRPluginAndroid_GetSpaceBoundary2D_System_UInt64_YVR_Core_YVRBoundary2D__">GetSpaceBoundary2D(ulong, ref YVRBoundary2D)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceBoundingBox2D.html#YVR_Core_YVRPluginAndroid_GetSpaceBoundingBox2D_System_UInt64_YVR_Core_YVRRect2D__">GetSpaceBoundingBox2D(ulong, ref YVRRect2D)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceBoundingBox3D.html#YVR_Core_YVRPluginAndroid_GetSpaceBoundingBox3D_System_UInt64_YVR_Core_YVRRect3D__">GetSpaceBoundingBox3D(ulong, ref YVRRect3D)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceContainer.html#YVR_Core_YVRPluginAndroid_GetSpaceContainer_System_UInt64_YVR_Core_YVRSceneAnchorContainer__">GetSpaceContainer(ulong, ref YVRSceneAnchorContainer)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceRoomLayout.html#YVR_Core_YVRPluginAndroid_GetSpaceRoomLayout_System_UInt64_YVR_Core_YVRRoomLayout__">GetSpaceRoomLayout(ulong, ref YVRRoomLayout)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceSemanticLabels.html#YVR_Core_YVRPluginAndroid_GetSpaceSemanticLabels_System_UInt64_YVR_Core_YVRAnchorSemanticLabel__">GetSpaceSemanticLabels(ulong, ref YVRAnchorSemanticLabel)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpaceTriangleMesh.html#YVR_Core_YVRPluginAndroid_GetSpaceTriangleMesh_System_UInt64_YVR_Core_YVRAnchorTriangleMeshInternal__">GetSpaceTriangleMesh(ulong, ref YVRAnchorTriangleMeshInternal)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpatialAnchorComponentStatus.html#YVR_Core_YVRPluginAndroid_GetSpatialAnchorComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentType_YVR_Core_YVRSpatialAnchorComponentStatus__">GetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentType, ref YVRSpatialAnchorComponentStatus)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpatialAnchorEnumerateSupported.html#YVR_Core_YVRPluginAndroid_GetSpatialAnchorEnumerateSupported_System_UInt64_YVR_Core_YVRSpatialAnchorSupportedComponent__">GetSpatialAnchorEnumerateSupported(ulong, ref YVRSpatialAnchorSupportedComponent)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpatialAnchorPose.html#YVR_Core_YVRPluginAndroid_GetSpatialAnchorPose_System_UInt64_UnityEngine_Vector3__UnityEngine_Quaternion__YVR_Core_YVRAnchorLocationFlags__">GetSpatialAnchorPose(ulong, ref Vector3, ref Quaternion, ref YVRAnchorLocationFlags)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpatialAnchorUUID.html#YVR_Core_YVRPluginAndroid_GetSpatialAnchorUUID_System_UInt64_YVR_Core_YVRSpatialAnchorUUID__">GetSpatialAnchorUUID(ulong, ref YVRSpatialAnchorUUID)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetSpatialAnchorUserId.html#YVR_Core_YVRPluginAndroid_GetSpatialAnchorUserId_System_UInt64_System_UInt64__">GetSpatialAnchorUserId(ulong, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetStereoRenderingMode.html#YVR_Core_YVRPluginAndroid_GetStereoRenderingMode">GetStereoRenderingMode()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.GetVolumeLevel.html#YVR_Core_YVRPluginAndroid_GetVolumeLevel">GetVolumeLevel()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.IsFocusing.html#YVR_Core_YVRPluginAndroid_IsFocusing">IsFocusing()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.IsUserPresent.html#YVR_Core_YVRPluginAndroid_IsUserPresent">IsUserPresent()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.IsVisible.html#YVR_Core_YVRPluginAndroid_IsVisible">IsVisible()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.QuerySpatialAnchor.html#YVR_Core_YVRPluginAndroid_QuerySpatialAnchor_YVR_Core_YVRSpatialAnchorQueryInfo_System_UInt64__">QuerySpatialAnchor(YVRSpatialAnchorQueryInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.RecenterTracking.html#YVR_Core_YVRPluginAndroid_RecenterTracking">RecenterTracking()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.RequestSceneCapture.html#YVR_Core_YVRPluginAndroid_RequestSceneCapture_YVR_Core_YVRSceneCaptureRequest__System_UInt64__">RequestSceneCapture(ref YVRSceneCaptureRequest, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SaveSpatialAnchor.html#YVR_Core_YVRPluginAndroid_SaveSpatialAnchor_YVR_Core_YVRSpatialAnchorSaveInfo_System_UInt64__">SaveSpatialAnchor(YVRSpatialAnchorSaveInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SaveSpatialAnchorList.html#YVR_Core_YVRPluginAndroid_SaveSpatialAnchorList_YVR_Core_YVRSpatialAnchorListSaveInfo_System_UInt64__">SaveSpatialAnchorList(YVRSpatialAnchorListSaveInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAPPControllerEnable.html#YVR_Core_YVRPluginAndroid_SetAPPControllerEnable_System_Boolean_">SetAPPControllerEnable(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAPPHandEnable.html#YVR_Core_YVRPluginAndroid_SetAPPHandEnable_System_Boolean_">SetAPPHandEnable(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAdapterResolutionPolicy.html#YVR_Core_YVRPluginAndroid_SetAdapterResolutionPolicy_YVR_Core_YVRQualityManager_AdapterResolutionPolicy_">SetAdapterResolutionPolicy(AdapterResolutionPolicy)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAppSWEnable.html#YVR_Core_YVRPluginAndroid_SetAppSWEnable_System_Boolean_">SetAppSWEnable(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAppSWSwitch.html#YVR_Core_YVRPluginAndroid_SetAppSWSwitch_System_Boolean_">SetAppSWSwitch(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAppSpacePosition.html#YVR_Core_YVRPluginAndroid_SetAppSpacePosition_System_Single_System_Single_System_Single_">SetAppSpacePosition(float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetAppSpaceRotation.html#YVR_Core_YVRPluginAndroid_SetAppSpaceRotation_System_Single_System_Single_System_Single_System_Single_">SetAppSpaceRotation(float, float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetBlockInteractionData.html#YVR_Core_YVRPluginAndroid_SetBlockInteractionData_System_Boolean_">SetBlockInteractionData(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetBoundaryDetectionEnable.html#YVR_Core_YVRPluginAndroid_SetBoundaryDetectionEnable_System_Boolean_">SetBoundaryDetectionEnable(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetBoundaryVisible.html#YVR_Core_YVRPluginAndroid_SetBoundaryVisible_System_Boolean_">SetBoundaryVisible(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetControllerVibration.html#YVR_Core_YVRPluginAndroid_SetControllerVibration_System_UInt32_System_Single_System_Single_">SetControllerVibration(uint, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetControllerVibration.html#YVR_Core_YVRPluginAndroid_SetControllerVibration_System_UInt32_System_Single_System_Single_System_Single_">SetControllerVibration(uint, float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetCreateSpatialAnchorCallback.html#YVR_Core_YVRPluginAndroid_SetCreateSpatialAnchorCallback_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__">SetCreateSpatialAnchorCallback(Action&lt;YVRSpatialAnchorResult, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetDisplayFrequency.html#YVR_Core_YVRPluginAndroid_SetDisplayFrequency_System_Single_">SetDisplayFrequency(float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetEraseSpatialAnchorCallback.html#YVR_Core_YVRPluginAndroid_SetEraseSpatialAnchorCallback_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__">SetEraseSpatialAnchorCallback(Action&lt;YVRSpatialAnchorResult, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetEventCallback.html#YVR_Core_YVRPluginAndroid_SetEventCallback_System_Action_System_Int32__">SetEventCallback(Action&lt;int&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetEyeBufferLayerSettings.html#YVR_Core_YVRPluginAndroid_SetEyeBufferLayerSettings_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">SetEyeBufferLayerSettings(bool, bool, bool, bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetFoveation.html#YVR_Core_YVRPluginAndroid_SetFoveation_System_Int32_System_Int32_">SetFoveation(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetMeshBlockUpdateCallback.html#YVR_Core_YVRPluginAndroid_SetMeshBlockUpdateCallback_System_Action_System_UInt64_YVR_Core_YVRMeshBlockChangeState__">SetMeshBlockUpdateCallback(Action&lt;ulong, YVRMeshBlockChangeState&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetPassthrough.html#YVR_Core_YVRPluginAndroid_SetPassthrough_System_Boolean_">SetPassthrough(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetPassthroughProviderEnable.html#YVR_Core_YVRPluginAndroid_SetPassthroughProviderEnable_System_Boolean_">SetPassthroughProviderEnable(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetPerformanceLevel.html#YVR_Core_YVRPluginAndroid_SetPerformanceLevel_System_Int32_System_Int32_">SetPerformanceLevel(int, int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetPlaneDetectionsCallback.html#YVR_Core_YVRPluginAndroid_SetPlaneDetectionsCallback_System_Action_YVR_Core_YVRPlaneDetectorLocationsInternal__">SetPlaneDetectionsCallback(Action&lt;YVRPlaneDetectorLocationsInternal&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetPrimaryController.html#YVR_Core_YVRPluginAndroid_SetPrimaryController_System_UInt32_">SetPrimaryController(uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetQuerySpatialAnchorCallback.html#YVR_Core_YVRPluginAndroid_SetQuerySpatialAnchorCallback_System_Action_YVR_Core_YVRQuerySpatialAnchorResult_System_UInt64__">SetQuerySpatialAnchorCallback(Action&lt;YVRQuerySpatialAnchorResult, ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetSceneCaptureCallback.html#YVR_Core_YVRPluginAndroid_SetSceneCaptureCallback_System_Action_System_UInt64_System_Boolean__">SetSceneCaptureCallback(Action&lt;ulong, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetSpatialAnchorComponentStatus.html#YVR_Core_YVRPluginAndroid_SetSpatialAnchorComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentStatusSetInfo_System_UInt64__">SetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentStatusSetInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetSpatialAnchorSaveCompleteCallback.html#YVR_Core_YVRPluginAndroid_SetSpatialAnchorSaveCompleteCallback_System_Action_YVR_Core_YVRSpatialAnchorSaveCompleteInfo_System_Boolean__">SetSpatialAnchorSaveCompleteCallback(Action&lt;YVRSpatialAnchorSaveCompleteInfo, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetSpatialAnchorSaveListCompleteCallback.html#YVR_Core_YVRPluginAndroid_SetSpatialAnchorSaveListCompleteCallback_System_Action_System_Boolean_System_UInt64__">SetSpatialAnchorSaveListCompleteCallback(Action&lt;bool, ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetSpatialAnchorShareCompleteCallback.html#YVR_Core_YVRPluginAndroid_SetSpatialAnchorShareCompleteCallback_System_Action_System_Boolean_System_UInt64__">SetSpatialAnchorShareCompleteCallback(Action&lt;bool, ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetSpatialAnchorStatusCompleteCallback.html#YVR_Core_YVRPluginAndroid_SetSpatialAnchorStatusCompleteCallback_System_Action_YVR_Core_YVRSpatialAnchorSetStatusCompleteInfo_System_Boolean__">SetSpatialAnchorStatusCompleteCallback(Action&lt;YVRSpatialAnchorSetStatusCompleteInfo, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetTrackingSpace.html#YVR_Core_YVRPluginAndroid_SetTrackingSpace_YVR_Core_YVRTrackingStateManager_TrackingSpace_">SetTrackingSpace(TrackingSpace)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.SetVSyncCount.html#YVR_Core_YVRPluginAndroid_SetVSyncCount_YVR_Core_YVRQualityManager_VSyncCount_">SetVSyncCount(VSyncCount)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.ShareSpatialAnchor.html#YVR_Core_YVRPluginAndroid_ShareSpatialAnchor_YVR_Core_YVRSpatialAnchorShareInfo_System_UInt64__">ShareSpatialAnchor(YVRSpatialAnchorShareInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.TestBoundaryNode.html#YVR_Core_YVRPluginAndroid_TestBoundaryNode_YVR_Core_YVRBoundary_BoundaryNode_YVR_Core_YVRBoundary_BoundaryTestResult__">TestBoundaryNode(BoundaryNode, ref BoundaryTestResult)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.TestBoundaryPoint.html#YVR_Core_YVRPluginAndroid_TestBoundaryPoint_UnityEngine_Vector3_YVR_Core_YVRBoundary_BoundaryTestResult__">TestBoundaryPoint(Vector3, ref BoundaryTestResult)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRCreateEyeTracker.html#YVR_Core_YVRPluginAndroid_YVRCreateEyeTracker">YVRCreateEyeTracker()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRCreateMeshDetector.html#YVR_Core_YVRPluginAndroid_YVRCreateMeshDetector">YVRCreateMeshDetector()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRCreatePlaneDetection.html#YVR_Core_YVRPluginAndroid_YVRCreatePlaneDetection">YVRCreatePlaneDetection()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRCreateSpaceUser.html#YVR_Core_YVRPluginAndroid_YVRCreateSpaceUser_System_UInt64_System_UInt64__">YVRCreateSpaceUser(ulong, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRCreateSpatialAnchor.html#YVR_Core_YVRPluginAndroid_YVRCreateSpatialAnchor_UnityEngine_Vector3_UnityEngine_Quaternion_System_UInt64__">YVRCreateSpatialAnchor(Vector3, Quaternion, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRDeletePlanePtr.html#YVR_Core_YVRPluginAndroid_YVRDeletePlanePtr">YVRDeletePlanePtr()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRDestroyEyeTracker.html#YVR_Core_YVRPluginAndroid_YVRDestroyEyeTracker">YVRDestroyEyeTracker()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRDestroyMeshDetector.html#YVR_Core_YVRPluginAndroid_YVRDestroyMeshDetector">YVRDestroyMeshDetector()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRDestroySpatialAnchor.html#YVR_Core_YVRPluginAndroid_YVRDestroySpatialAnchor_System_UInt64_YVR_Core_YVRSpatialAnchorStorageLocation_System_UInt64__">YVRDestroySpatialAnchor(ulong, YVRSpatialAnchorStorageLocation, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVREndPlaneDetection.html#YVR_Core_YVRPluginAndroid_YVREndPlaneDetection">YVREndPlaneDetection()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetActualStereoRenderingMode.html#YVR_Core_YVRPluginAndroid_YVRGetActualStereoRenderingMode">YVRGetActualStereoRenderingMode()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetAppSWSwitch.html#YVR_Core_YVRPluginAndroid_YVRGetAppSWSwitch">YVRGetAppSWSwitch()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetEnumerateSpaceSupported.html#YVR_Core_YVRPluginAndroid_YVRGetEnumerateSpaceSupported_System_UInt64_YVR_Core_YVRSpatialAnchorSupportedComponent__">YVRGetEnumerateSpaceSupported(ulong, ref YVRSpatialAnchorSupportedComponent)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetEyeGazePose.html#YVR_Core_YVRPluginAndroid_YVRGetEyeGazePose_YVR_Core_EyeTrackingData_EyeGazePose__">YVRGetEyeGazePose(ref EyeGazePose)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetEyeGazes.html#YVR_Core_YVRPluginAndroid_YVRGetEyeGazes_YVR_Core_EyeTrackingData_EyeGazesState__">YVRGetEyeGazes(ref EyeGazesState)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetEyeTrackingEnable.html#YVR_Core_YVRPluginAndroid_YVRGetEyeTrackingEnable">YVRGetEyeTrackingEnable()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetEyeTrackingSupports.html#YVR_Core_YVRPluginAndroid_YVRGetEyeTrackingSupports">YVRGetEyeTrackingSupports()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetPassthroughImageDiffRotation.html#YVR_Core_YVRPluginAndroid_YVRGetPassthroughImageDiffRotation_System_Int32_">YVRGetPassthroughImageDiffRotation(int)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetPassthroughSwapchainImageIndex.html#YVR_Core_YVRPluginAndroid_YVRGetPassthroughSwapchainImageIndex">YVRGetPassthroughSwapchainImageIndex()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetPassthroughSwapchainImageValid.html#YVR_Core_YVRPluginAndroid_YVRGetPassthroughSwapchainImageValid">YVRGetPassthroughSwapchainImageValid()</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetPolygonBuffer.html#YVR_Core_YVRPluginAndroid_YVRGetPolygonBuffer_System_UInt64_System_UInt32_">YVRGetPolygonBuffer(ulong, uint)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetRecommendedResolution.html#YVR_Core_YVRPluginAndroid_YVRGetRecommendedResolution_YVR_Core_YVRExtent2DInt__">YVRGetRecommendedResolution(ref YVRExtent2DInt)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceBoundary2D.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceBoundary2D_System_UInt64_YVR_Core_YVRBoundary2D__">YVRGetSpaceBoundary2D(ulong, ref YVRBoundary2D)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceBoundingBox2D.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceBoundingBox2D_System_UInt64_YVR_Core_YVRRect2D__">YVRGetSpaceBoundingBox2D(ulong, ref YVRRect2D)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceBoundingBox3D.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceBoundingBox3D_System_UInt64_YVR_Core_YVRRect3D__">YVRGetSpaceBoundingBox3D(ulong, ref YVRRect3D)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceComponentStatus.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentType_YVR_Core_YVRSpatialAnchorComponentStatus__">YVRGetSpaceComponentStatus(ulong, YVRSpatialAnchorComponentType, ref YVRSpatialAnchorComponentStatus)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceContainer.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceContainer_System_UInt64_YVR_Core_YVRSceneAnchorContainer__">YVRGetSpaceContainer(ulong, ref YVRSceneAnchorContainer)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceHandleUuid.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceHandleUuid_System_UInt64_YVR_Core_YVRSpatialAnchorUUID__">YVRGetSpaceHandleUuid(ulong, ref YVRSpatialAnchorUUID)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceRoomLayout.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceRoomLayout_System_UInt64_YVR_Core_YVRRoomLayout__">YVRGetSpaceRoomLayout(ulong, ref YVRRoomLayout)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceSemanticLabels.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceSemanticLabels_System_UInt64_YVR_Core_YVRAnchorSemanticLabel__">YVRGetSpaceSemanticLabels(ulong, ref YVRAnchorSemanticLabel)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceTriangleMesh.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceTriangleMesh_System_UInt64_YVR_Core_YVRAnchorTriangleMeshInternal__">YVRGetSpaceTriangleMesh(ulong, ref YVRAnchorTriangleMeshInternal)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpaceUserId.html#YVR_Core_YVRPluginAndroid_YVRGetSpaceUserId_System_UInt64_System_UInt64__">YVRGetSpaceUserId(ulong, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRGetSpatialAnchorPose.html#YVR_Core_YVRPluginAndroid_YVRGetSpatialAnchorPose_System_UInt64_UnityEngine_Vector3__UnityEngine_Quaternion__YVR_Core_YVRAnchorLocationFlags__">YVRGetSpatialAnchorPose(ulong, ref Vector3, ref Quaternion, ref YVRAnchorLocationFlags)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRQuerySpaces.html#YVR_Core_YVRPluginAndroid_YVRQuerySpaces_YVR_Core_YVRSpatialAnchorQueryInfo_System_UInt64__">YVRQuerySpaces(YVRSpatialAnchorQueryInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRRequestSceneCapture.html#YVR_Core_YVRPluginAndroid_YVRRequestSceneCapture_YVR_Core_YVRSceneCaptureRequest__System_UInt64__">YVRRequestSceneCapture(ref YVRSceneCaptureRequest, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSaveSpaceList.html#YVR_Core_YVRPluginAndroid_YVRSaveSpaceList_YVR_Core_YVRSpatialAnchorListSaveInfo_System_UInt64__">YVRSaveSpaceList(YVRSpatialAnchorListSaveInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSaveSpatialAnchor.html#YVR_Core_YVRPluginAndroid_YVRSaveSpatialAnchor_YVR_Core_YVRSpatialAnchorSaveInfo_System_UInt64__">YVRSaveSpatialAnchor(YVRSpatialAnchorSaveInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetAdapterResolutionPolicy.html#YVR_Core_YVRPluginAndroid_YVRSetAdapterResolutionPolicy_YVR_Core_YVRQualityManager_AdapterResolutionPolicy_">YVRSetAdapterResolutionPolicy(AdapterResolutionPolicy)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetAppSWSwitch.html#YVR_Core_YVRPluginAndroid_YVRSetAppSWSwitch_System_Boolean_">YVRSetAppSWSwitch(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetAppSpacePosition.html#YVR_Core_YVRPluginAndroid_YVRSetAppSpacePosition_System_Single_System_Single_System_Single_">YVRSetAppSpacePosition(float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetAppSpaceRotation.html#YVR_Core_YVRPluginAndroid_YVRSetAppSpaceRotation_System_Single_System_Single_System_Single_System_Single_">YVRSetAppSpaceRotation(float, float, float, float)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetCreateSpatialAnchorCallback.html#YVR_Core_YVRPluginAndroid_YVRSetCreateSpatialAnchorCallback_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__">YVRSetCreateSpatialAnchorCallback(Action&lt;YVRSpatialAnchorResult, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetEraseSpatialAnchorCallback.html#YVR_Core_YVRPluginAndroid_YVRSetEraseSpatialAnchorCallback_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__">YVRSetEraseSpatialAnchorCallback(Action&lt;YVRSpatialAnchorResult, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetMeshBlockUpdateCallback.html#YVR_Core_YVRPluginAndroid_YVRSetMeshBlockUpdateCallback_System_Action_System_UInt64_YVR_Core_YVRMeshBlockChangeState__">YVRSetMeshBlockUpdateCallback(Action&lt;ulong, YVRMeshBlockChangeState&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetPassthroughProviderEnable.html#YVR_Core_YVRPluginAndroid_YVRSetPassthroughProviderEnable_System_Boolean_">YVRSetPassthroughProviderEnable(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetPassthroughVisible.html#YVR_Core_YVRPluginAndroid_YVRSetPassthroughVisible_System_Boolean_">YVRSetPassthroughVisible(bool)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetPlaneDetectionsCallback.html#YVR_Core_YVRPluginAndroid_YVRSetPlaneDetectionsCallback_System_Action_YVR_Core_YVRPlaneDetectorLocationsInternal__">YVRSetPlaneDetectionsCallback(Action&lt;YVRPlaneDetectorLocationsInternal&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetQuerySpatialAnchorCallback.html#YVR_Core_YVRPluginAndroid_YVRSetQuerySpatialAnchorCallback_System_Action_YVR_Core_YVRQuerySpatialAnchorResult_System_UInt64__">YVRSetQuerySpatialAnchorCallback(Action&lt;YVRQuerySpatialAnchorResult, ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetRequestSceneCaptureCallback.html#YVR_Core_YVRPluginAndroid_YVRSetRequestSceneCaptureCallback_System_Action_System_UInt64_System_Boolean__">YVRSetRequestSceneCaptureCallback(Action&lt;ulong, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetSpaceComponentStatus.html#YVR_Core_YVRPluginAndroid_YVRSetSpaceComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentStatusSetInfo_System_UInt64__">YVRSetSpaceComponentStatus(ulong, YVRSpatialAnchorComponentStatusSetInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetSpaceListSaveCompleteCallback.html#YVR_Core_YVRPluginAndroid_YVRSetSpaceListSaveCompleteCallback_System_Action_System_Boolean_System_UInt64__">YVRSetSpaceListSaveCompleteCallback(Action&lt;bool, ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetSpaceSaveCompleteCallback.html#YVR_Core_YVRPluginAndroid_YVRSetSpaceSaveCompleteCallback_System_Action_YVR_Core_YVRSpatialAnchorSaveCompleteInfo_System_Boolean__">YVRSetSpaceSaveCompleteCallback(Action&lt;YVRSpatialAnchorSaveCompleteInfo, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetSpaceSetStatusCompleteCallback.html#YVR_Core_YVRPluginAndroid_YVRSetSpaceSetStatusCompleteCallback_System_Action_YVR_Core_YVRSpatialAnchorSetStatusCompleteInfo_System_Boolean__">YVRSetSpaceSetStatusCompleteCallback(Action&lt;YVRSpatialAnchorSetStatusCompleteInfo, bool&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRSetSpaceShareCompleteCallback.html#YVR_Core_YVRPluginAndroid_YVRSetSpaceShareCompleteCallback_System_Action_System_Boolean_System_UInt64__">YVRSetSpaceShareCompleteCallback(Action&lt;bool, ulong&gt;)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.YVRShareSpace.html#YVR_Core_YVRPluginAndroid_YVRShareSpace_YVR_Core_YVRSpatialAnchorShareInfo_System_UInt64__">YVRShareSpace(YVRSpatialAnchorShareInfo, ref ulong)</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="YVR.Core.YVRPluginAndroid.yvrSetEyeBufferSettings.html#YVR_Core_YVRPluginAndroid_yvrSetEyeBufferSettings_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">yvrSetEyeBufferSettings(bool, bool, bool, bool)</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

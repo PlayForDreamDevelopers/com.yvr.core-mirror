@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>超采样和锐化 | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="超采样和锐化 | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN~/AdvancedFeatures/SupersamplingAndSharpening.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="超采样和锐化">超采样和锐化</h1>
+
+<p>启用超采样或锐化功能可以提高图像质量。超采样可以让画面质量进一步提升，适用于解决下采样时的闪烁及摩尔纹等问题。锐化可以提升清晰度，改善上采样时的图像模糊问题。</p>
+<h2 id="开启超采样功能">开启超采样功能</h2>
+<p>使用合成层选择超采样类型：</p>
+<ol>
+<li>在 <strong>Compositor Layer</strong> 设置中，
+<br>
+<img src="SupersamplingAndSharpening/CompositorLayer.png" alt="CompositorLayer">
+<br>
+选择 <strong>Super Sampling Type</strong>：
+- <strong>None</strong>
+- <strong>Normal</strong>
+- <strong>Quality</strong></li>
+</ol>
+<h2 id="开启锐化功能">开启锐化功能</h2>
+<p>使用 YVR 管理器选择锐化类型：</p>
+<ol>
+<li>在 <strong>YVR Manager</strong> 设置中，
+<br>
+<img src="SupersamplingAndSharpening/YVRManager.png" alt="YVRManager">
+<br>
+选择 <strong>Sharpen Type</strong>：
+- <strong>None</strong>
+- <strong>Normal</strong>
+- <strong>Quality</strong></li>
+</ol>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li>使用锐化时，申请的 swapchain 请开启多层 mipmap，并在提交前为其每层 mipmap 生成纹理数据。</li>
+<li>在 OpenXR 中，所有设置都只是建议，合成器可以根据需要启用或禁用它们。</li>
+<li>合成图层过滤需要更多的 GPU 资源。对于锐化和超采样算法尤其如此，在开发时，您应该权衡增加的视觉保真度与提供最佳 VR 用户体验所需的额外 GPU 资源。</li>
+</ul>
+<h2 id="示例">示例</h2>
+<p>请参考以下示例项目。</p>
+<ol>
+<li><p>打开一个新项目或当前项目。</p>
+</li>
+<li><p>导入最新版 SDK。</p>
+</li>
+<li><p>在 Project 面板下，选择 <strong>Pacakages</strong> &gt; <strong>YVR Core</strong> &gt; <strong>Scenes</strong> &gt; <strong>CompositeLayer</strong>。</p>
+</li>
+<li><p>在 CompositeLayer 文件夹中，选择 <strong>CompositeLayerSuperSamplingSharpen.unity</strong> 打开该场景。</p>
+</li>
+<li><p>在 <strong>File</strong> &gt; <strong>Build Settings...</strong> 下，选择 <strong>Add Open Scenes</strong>。</p>
+</li>
+<li><p>选择 <strong>Build</strong> 并为文件命名。</p>
+</li>
+<li><p>在设备上安装 APK 文件。</p>
+</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN~/AdvancedFeatures/SupersamplingAndSharpening.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

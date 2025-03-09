@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>手柄 | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="手柄 | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN~/CoreDevelopmentBlocks/Controllers.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="手柄">手柄</h1>
+
+<p><code>YVRInput</code> 和 <code>YVRControllerRig</code> 是获取手柄数据的两个入口。<code>YVRInput</code> 实现了所有与手柄输入状态相关的功能，而 <code>YVRControllerRig</code> 则封装了所有与手柄刚性相关的操作和信息。</p>
+<p>了解更多信息，请参考 <a class="xref" href="../../api/YVR.Core.YVRInput.html">YVRInput</a> 和 <a class="xref" href="../../api/YVR.Core.YVRControllerRig.html">YVRControllerRig</a>。</p>
+<h2 id="yvr-触摸追踪">YVR 触摸追踪</h2>
+<p><a class="xref" href="../../api/YVR.Core.YVRControllerRig.html">YVRControllerRig</a> 通过 <a class="xref" href="../../api/YVR.Core.YVRControllerRig.GetPosition.html#YVR_Core_YVRControllerRig_GetPosition_YVR_Core_ControllerType_">GetPosition</a> 和 <a class="xref" href="../../api/YVR.Core.YVRControllerRig.GetRotation.html#YVR_Core_YVRControllerRig_GetRotation_YVR_Core_ControllerType_">GetRotation</a> 提供触摸位置和方向数据。其他数据，如速度、角速度、加速度和角加速度也可以从 <a class="xref" href="../../api/YVR.Core.YVRControllerRig.html">YVRControllerRig</a> 获得。</p>
+<h2 id="yvrinput-用途">YVRInput 用途</h2>
+<p><a class="xref" href="../../api/YVR.Core.YVRInput.html">YVRInput</a> 的主要用途是通过 <code>Get()</code>、<code>GetDown()</code> 和 <code>GetUp()</code> 访问手柄输入状态。并且设置手柄的振幅和时长。</p>
+<ul>
+<li><code>Get()</code>：查询一个控制器的当前状态。</li>
+<li><code>GetDown()</code>：查询该帧中是否有按钮（触摸）被按下。</li>
+<li><code>GetUp()</code>：查询这一帧是否有按钮（触摸）被释放。</li>
+<li><code>SetControllerVibration()</code>：设置手柄振幅与时长。</li>
+</ul>
+<h3 id="控制输入枚举">控制输入枚举</h3>
+<p>对于 <code>Get()</code>、<code>GetDown()</code> 和 <code>GetUp()</code> 函数，有多种变化以提供对不同控件集的不同访问。这些控制集被分为两类：<code>Virtual Mapping</code> 和 <code>Raw Mapping</code>，并都是通过枚举暴露的。在 <code>Virtual Mapping</code> 中定义的枚举类别如下：</p>
+<ul>
+<li><code>VirtualButton</code>：YVR Touches 上的传统按钮。</li>
+<li><code>VirtualTouch</code>：YVR Touches 上的电容感应控制面。</li>
+<li><code>VirtualAxis1D</code>：报告 <code>float</code> 状态的一维控件。</li>
+<li><code>VirtualAxis2D</code>：报告 <code>Vector2</code> 状态的二维控件。</li>
+</ul>
+<p><code>Raw Mapping</code> 类别中定义的枚举与 <code>Virtual Mapping</code> 中的枚举高度相关，如下所示：</p>
+<ul>
+<li><code>RawButton</code></li>
+<li><code>RawTouch</code></li>
+<li><code>VirtualAxis1D</code></li>
+<li><code>VirtualAxis2D</code></li>
+</ul>
+<p><code>Raw Mapping</code> 和 <code>Virtual Mapping</code> 之间的转换，请参考以下部分。</p>
+<h3 id="touch-input-mapping">Touch Input Mapping</h3>
+<p><img src="Controllers/2021-12-14-15-41-15.png" alt="Touch Input"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN~/CoreDevelopmentBlocks/Controllers.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

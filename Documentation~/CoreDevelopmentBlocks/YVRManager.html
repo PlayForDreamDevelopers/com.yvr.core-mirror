@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>YVR Manager | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="YVR Manager | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation~/CoreDevelopmentBlocks/YVRManager.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="yvr-manager">YVR Manager</h1>
+
+<p>The script <a class="xref" href="../../api/YVR.Core.YVRManager.html">YVRManager</a> is the core manager of the whole SDK, which controls the execution of VR event functions and offers different settings for rendering quality, tracking mode, performance, etc.</p>
+<h2 id="configure-settings">Configure Settings</h2>
+<p>The settings in terms of rendering quality, tracking space, performance, etc. can be set via the Inspector panel of <a class="xref" href="../../api/YVR.Core.YVRManager.html">YVRManager</a>.</p>
+<p><img src="YVRManager/2022-04-18-19-31-07.png" alt="YVRManager Inspector"></p>
+<h3 id="quality">Quality</h3>
+<ul>
+<li><code>VSync Count</code>: The number of VSyncs that should pass between each frame.</li>
+<li><code>Fixed Foveated Rendering Level</code>: the level for fixed foveated rendering. The higher the value, the more blurred the edges of the picture, but the better the performance.</li>
+<li><code>UseRecommendMSAALevel</code>: Whether to use recommend MSAA level.</li>
+</ul>
+<h3 id="tracking">Tracking</h3>
+<ul>
+<li><code>Tracking Space</code>: The tracking space of the rigid poses.
+<ul>
+<li><code>Eye Level</code>: HMD pose will not consider ground height.</li>
+<li><code>Floor Level</code>: Mode used in most cases, which will consider ground height and recenter state.</li>
+<li><code>Stage</code>: HMD pose will not consider recenter state.</li>
+</ul>
+</li>
+</ul>
+<h2 id="events">Events</h2>
+<p>The events happened at runtime are all managed in <a class="xref" href="../../api/YVR.Core.YVREventsManager.html">YVRManager.instance.eventsManager</a>, including:</p>
+<ol>
+<li><code>onTrackingAcquired</code>: Occurs when head gained tracking.</li>
+<li><code>onTrackingLost</code>: Occurs when head lost tracking.</li>
+<li><code>onHMDMounted</code>: Occurs when an HMD is put on the user's head.</li>
+<li><code>onHMDUnMounted</code>: Occurs when an HMD is taken off the user's head.</li>
+<li><code>onRecenterOccurred</code>: Occurs when recenter occurred.</li>
+<li><code>onFocusGained</code>: Occurs when application focus gained.</li>
+<li><code>onFocusLost</code>: Occurs when application focus lost.</li>
+<li><code>onVisibilityGained</code>: Occurs when application is visible</li>
+<li><code>onVisibilityLost</code>: Occurs when application is completely obscured by other content.</li>
+<li><code>onUpdate</code>: Occurs at the update function of every frame.</li>
+<li><code>onPreSubmitGfx</code>: Occurs just before current frame is submitted to native, which will be triggered in rendering thread.</li>
+<li><code>onPostSubmitGfx</code>: Occurs just after current frame is submitted to native, which will be triggered in rendering thread.</li>
+</ol>
+<h2 id="device-state">Device state</h2>
+<p>Device state can be quired in <a class="xref" href="../../api/YVR.Core.YVRHMDManager.html">YVRManager.instance.hmdManager</a>, e.g. battery level, battery temperature, volume level.</p>
+<h2 id="boundary-state">Boundary state</h2>
+<p>All boundary state can be quired in <a class="xref" href="../../api/YVR.Core.YVRBoundary.html">YVRManager.instance.boundary</a>, e.g. boundary dimensions, boundary visibility. Also, <a class="xref" href="../../api/YVR.Core.YVRBoundary.html">YVRManager.instance.boundary</a> provide several APIs for querying intersections state with boundary.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation~/CoreDevelopmentBlocks/YVRManager.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
