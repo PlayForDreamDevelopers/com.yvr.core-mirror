@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Camera Rig | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Camera Rig | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/CoreDevelopmentBlocks/CameraRig.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="camera-rig">Camera Rig</h1>
+
+<p>YVR Unity 软件包包含一个预制件，<code>YVRCameraRig</code>，它是整个 SDK 的核心。它还提供了对 <a href="YVRManager.html">YVRManager</a> 的访问，它是 VR 功能的主要入口。</p>
+<p><code>YVRCameraRig</code> 包含一个名为 <code>TrackingSpace</code> 的游戏对象，它被设计用来微调头部跟踪参考框架和你的世界之间的关系。</p>
+<p>在 <code>TrackingSpace</code> 下，你会发现一个 <code>CenterEyeAnchor</code> 的游戏对象，它被标记为主要的 Unity 摄像机，每只眼睛有两个固定的游戏对象，分别命名为 <code>LeftEyeAnchor</code> 和 <code>RightEyeAnchor</code>，以及两个手柄的锚定对象，分别命名为 <code>LeftControllerAnchor</code> 和 <code>RightControllerAnchor</code>。</p>
+<p><img src="CameraRig/2021-03-01-16-59-40.png" alt="YVR 摄像机"></p>
+<h2 id="了解摄像机的行为">了解摄像机的行为</h2>
+<p>当 YVR Unity 包被导入 Unity 时，你的头戴式设备会自动将头部和手柄的跟踪参考传递给 Unity，这使 Unity 摄像机的位置和方向与你在现实世界的位置和方向相匹配。</p>
+<p>在一些游戏中，你可能需要控制玩家角色（由摄像机识别）的移动。在这种情况下，你可以让 <code>YVRCameraRig</code> 成为一个游戏对象的子对象，并创建一个脚本来控制该游戏对象的行动。</p>
+<h2 id="在场景中添加-yvrcamerarig">在场景中添加 YVRCameraRig</h2>
+<p><code>YVRCameraRig</code> 是 Unity 主摄像机的替代品，这意味着在 YVR 设备上构建应用程序时，应从 Hierarchy 视图中删除 Unity 的 <code>Main Camera</code> 而使用 <code>YVRCameraRig</code>。</p>
+<p>执行以下步骤以此替换 Unity 的主摄像机 为 <code>YVRCameraRig</code>：</p>
+<ol>
+<li>在 Hierarchy 窗口中右击 Main Camera 游戏对象，并点击 Delete。</li>
+<li>进入 Project 选项，展开 <code>Packages -&gt; YVR Core -&gt; Prefabs</code> 文件夹，将 <code>YVRCameraRig</code> 预制件拖入 Hierarchy 面板。</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/CoreDevelopmentBlocks/CameraRig.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

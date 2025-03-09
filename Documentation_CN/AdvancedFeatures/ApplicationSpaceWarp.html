@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>应用空间扭曲 | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="应用空间扭曲 | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/AdvancedFeatures/ApplicationSpaceWarp.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="应用空间扭曲">应用空间扭曲</h1>
+
+<p>应用空间扭曲（AppSW）是一种面向开发者的优化技术，允许应用以实际显示刷新率的一半进行渲染，从而为合适的内容释放额外的计算能力。据测试使用，AppSW 最高可为应用提供了70%的额外算力，而且几乎没有可感知的瑕疵。开发者在开发和设计阶段开启 AppSW 功能后，系统会基于应用内原始数据的运动矢量和深度信息进行帧外推和重投影，将一帧原始渲染图像自动合成多个新帧，以降低设备原始输出帧率、降低设备负载和功耗，最终突破算力限制，在 YVR 设备上实现接近 PCVR 更逼真、更优秀的画面表现。</p>
+<h2 id="环境要求">环境要求</h2>
+<ul>
+<li><p>设备版本： YVR1 或 YVR2</p>
+</li>
+<li><p>SDK 版本： 2.4.0 及以上</p>
+</li>
+<li><p>系统版本 1.2.5.x</p>
+</li>
+</ul>
+<h2 id="开启-appsw">开启 AppSW</h2>
+<p>请参考以下步骤启用 AppSW 功能。</p>
+<ol>
+<li><p>克隆 <a href="https://github.com/YVRDeveloper/Unity-Graphics">Unity-Graphics</a> 仓库。在项目中导入以下三个 package.json 文件。从上方菜单栏处，选择 <strong>Window</strong> &gt; <strong>Pacakge Manager</strong> &gt; <strong>Add package from disk...</strong> 并安装以下软件包：</p>
+<ul>
+<li>Core RP Library</li>
+<li>Shader Graph</li>
+<li>Universal RP
+<br>
+<img src="ApplicationSpaceWarp/PackageManager.png" alt="PackageManager"></li>
+</ul>
+</li>
+<li><p>如果使用自定义 shader，则需要在 AppSW 物体 Shader 中添加 <code>Motion Vector Pass</code>。</p>
+<p><img src="ApplicationSpaceWarp/MotionVectorPass.png" alt="MotionVectorPass"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>如果使用 URP Lit 或 SimpleLit，则无需修改 Shader。</li>
+<li>只有不透明的物体需要添加此 <code>Motion Vector Pass</code>，透明物体无需添加。</li>
+<li>接近于不透明的物体(如 Alpha 接近于1)，也可以根据情况添加。</li>
+</ul>
+</div>
+</li>
+<li><p>从上方菜单栏处，选择 <strong>Edit</strong> &gt; <strong>Project Settings</strong>。在左侧栏，选择 <strong>Player</strong> &gt; <strong>Android settings</strong> &gt; <strong>Other Settings</strong>。在 <strong>Rendering</strong> 部分，将 <strong>Vulkan</strong> 添加至 <strong>Graphics APIs</strong>。
+<br>
+<img src="ApplicationSpaceWarp/VulkanAPI.png" alt="VulkanAPI"></p>
+</li>
+<li><p>从上方菜单栏处，选择 <strong>Edit</strong> &gt; <strong>Project Settings</strong>。 在左侧栏，选择 <strong>XR Plug-in Management</strong> &gt; <strong>YVR</strong>，完成以下设置：
+<br></p>
+<ul>
+<li>勾选 <strong>Use AppSW</strong></li>
+<li>在 <strong>Stereo Rendering Mode</strong> 里，选择 <strong>Multiview</strong>
+<br>
+<img src="ApplicationSpaceWarp/XRPluginManagement.png" alt="XRPluginManagement"></li>
+</ul>
+</li>
+<li><p>输入以下代码启用 AppSW。</p>
+<pre><code>YVRManager.instance.SetAppSWEnable(true);
+</code></pre>
+</li>
+<li><p>假设你应用的当前帧率为90帧，开启AppSW功能时，应用会以45帧渲染画面，但仍可以达到90帧的效果。若需要对比<code>开启 AppSW + 45帧</code>和<code>关闭 AppSW + 45帧</code>渲染的效果：在 <strong>YVR Manager</strong> 下，选择 <strong>Quality Manager</strong> &gt; <strong>V Sync Count: K2</strong> 进行对比。
+<br>
+<img src="ApplicationSpaceWarp/VSyncCount.png" alt="VSyncCount"></p>
+</li>
+</ol>
+<h2 id="已知问题">已知问题</h2>
+<p>在使用 AppSW 功能时，你的应用可能会出现一些渲染问题。请参考以下场景和说明来解决问题：</p>
+<ul>
+<li><p>若场景内的背景十分简洁，并且包含直线、网格等元素，AppSW 可能会导致图像失真，例如：直线扭曲。若出现图像失真情况，可不断进行调试并调整背景，直到达到满意的效果。
+<br><br></p>
+</li>
+<li><p>若场景内包含一些高速旋转的物体，开启 AppSW 后，物体周围可能会出现失真伪影，可通过降低物体的旋转速度来解决该问题。
+<br><br></p>
+</li>
+<li><p>若场景中个别元素有意外停顿或画面上有波纹，这一般是因为运动矢量的数据不够准确，具体原因为：</p>
+<ul>
+<li><p>如果运动矢量缓冲区没有显示场景中移动部分的运动，就会造成停顿，因为移动的物体在合成帧中似乎保持在原地。</p>
+</li>
+<li><p>如果运动矢量缓冲区显示场景中不动的部分有运动，就会产生波纹，因为静止的物体在合成帧中会发生移动。</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/AdvancedFeatures/ApplicationSpaceWarp.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

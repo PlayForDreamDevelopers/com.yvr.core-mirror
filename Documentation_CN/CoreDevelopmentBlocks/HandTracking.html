@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>手势追踪 | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="手势追踪 | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/CoreDevelopmentBlocks/HandTracking.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="手势追踪">手势追踪</h1>
+
+<h2 id="配置开发环境">配置开发环境</h2>
+<h3 id="设备">设备</h3>
+<ul>
+<li>YVR2</li>
+</ul>
+<h3 id="设备系统版本">设备系统版本</h3>
+<ul>
+<li>1.2.2.209 及以上</li>
+</ul>
+<h3 id="unity-版本">Unity 版本</h3>
+<ul>
+<li>LTS 版本</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>与实时预览工具 3.1 及以上版本兼容。</p>
+</div>
+<h2 id="配置流程">配置流程</h2>
+<ol>
+<li><p>在设备的系统实验室下打开<strong>手部追踪</strong>功能。</p>
+</li>
+<li><p>导入 YVR 软件包。</p>
+</li>
+<li><p>在 Unity 编辑器中创建一个场景或打开已有的场景。</p>
+</li>
+<li><p>将 <code>com.yvr.core/Prefabs/</code> 目录下的 <code>YVRCameraRig</code> 拖拽至 <code>Hierarchy</code> 面板中。</p>
+</li>
+<li><p>选中 <code>YVRCameraRig</code>， 在 <code>YVRManager</code> 组件中从 <code>Hand Tracking Support</code> 里选择是否支持手势追踪或手柄，为应用启动手势追踪或手柄能力。
+<img src="HandTracking/HandTracking.png" alt="HandTracking"></p>
+</li>
+<li><p>构建该场景，然后在设备上运行。</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>具体接口请查看代码注释。</p>
+</div>
+<h2 id="获取手势追踪数据">获取手势追踪数据</h2>
+<p>你可以通过调用 SDK 提供的接口来获取手势追踪相关信息，包括功能启用状态、追踪精确度、手势数据、手部交互状态。</p>
+<h3 id="功能启用状态">功能启用状态</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>接口</strong></th>
+<th style="text-align: left;"><strong>功能启用状态</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">YVRHandManager.GetHandTrackingEnable</td>
+<td style="text-align: left;">来获取手势追踪功能的启用状态。请求将返回一个布尔值，<code>true</code> 表示“启用”，<code>false</code> 表示“未启用”。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="追踪精确度--手势数据">追踪精确度 &amp; 手势数据</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>接口</strong></th>
+<th style="text-align: left;"><strong>手势数据</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">YVRHandManager.leftHandData / YVRHandManager.rightHandData</td>
+<td style="text-align: left;">获取手势数据，包括关节数量、手部尺寸、关节方向和位置，以及手部交互状态，包括射线交互的姿态，以及各个手指是否捏合和具体的捏合力度。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="手部交互状态">手部交互状态</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>接口</strong></th>
+<th style="text-align: left;"><strong>手部交互状态</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">YVRHandManger.GetFingerPinchStrength</td>
+<td style="text-align: left;">获取其他手指与大拇指的捏合强度。</td>
+</tr>
+<tr>
+<td style="text-align: left;">YVRHandManager.GetPinch</td>
+<td style="text-align: left;">获取手指是否正在捏合。</td>
+</tr>
+<tr>
+<td style="text-align: left;">YVRHandManager.GetPinchDown</td>
+<td style="text-align: left;">获取当前帧手指是否触发捏合。</td>
+</tr>
+<tr>
+<td style="text-align: left;">YVRHandManager.GetPinchUp</td>
+<td style="text-align: left;">获取当前帧手指是否触发取消捏合。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="手柄输入与手势输入切换">手柄输入与手势输入切换</h3>
+<p>在设备开启了手势追踪能力后，</p>
+<ul>
+<li>手柄切换手势输入的条件为：手柄未连接或已连接的手柄静置 5 秒，开启手势追踪</li>
+<li>手势输入切换手柄的条件为：手柄开机或已连接的休眠手柄有按键触发</li>
+</ul>
+<p><strong>切换设备输入流程</strong></p>
+<ol>
+<li>监听 YVRManager.instance.eventsManager.onInputDeviceChange 事件</li>
+<li>调用 YVRPlugin.Instance.GetCurrentInputDevice(ref ActiveInputDevice inputDevice) 查询当前输入设备</li>
+<li>设置当前输入设备为 UI 交互输入，YVRInputModule.Instance.SetInputDataProvider(DataProviderSource source)</li>
+<li>显示与隐藏对应的设备对象</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>交互工具包推荐采用 <a href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.3/manual/samples.html#hands-interaction-demo">Samples | XR Interaction Toolkit | 2.3.1</a></p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/CoreDevelopmentBlocks/HandTracking.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
