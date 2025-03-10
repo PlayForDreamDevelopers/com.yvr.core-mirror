@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Spatial Anchors | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Spatial Anchors | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation/SpatialSensing/SpatialAnchor.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="spatial-anchors">Spatial Anchors</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Spatial Anchors are key points used for positioning and tracking objects or scenes in virtual or augmented reality environments. They can be used to achieve stable placement of virtual objects, environmental understanding, shared virtual scenes, and other functions. Spatial Anchors are a technology jointly implemented by software and hardware, capable of associating virtual content with specific locations or objects in the real world.</p>
+<h2 id="basic-concepts">Basic Concepts</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UUID</td>
+<td>The unique identifier of the anchor, returned when the anchor is created</td>
+</tr>
+<tr>
+<td>anchorHandle</td>
+<td>The handle of the anchor, the identifier in the application's memory</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enabling-spatial-anchor-permissions-for-the-application">Enabling Spatial Anchor Permissions for the Application</h2>
+<ol>
+<li>Open the project in Unity</li>
+<li>Add XR Origin to the scene</li>
+<li>Add the YVRManager script</li>
+<li>Check the Enable SpatialAnchorSupport option in the YVRManager script panel</li>
+</ol>
+<pre><code class="lang-ad-note">After checking the SpatialAnchorSupport checkbox, the corresponding permission will be added to the AndroidManifest.xml file 
+**\&lt;uses-permission android:name=&quot;com.yvr.permission.USE_ANCHOR_API&quot;\\&gt;**
+</code></pre>
+<h2 id="spatial-anchor-interface">Spatial Anchor Interface</h2>
+<h3 id="creating-an-anchor">Creating an Anchor</h3>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Creates a spatial anchor using the given position and rotation.  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;position&quot;&gt;Anchor position&lt;/param&gt;  
+/// &lt;param name=&quot;rotation&quot;&gt;Anchor rotation&lt;/param&gt;  
+/// &lt;param name=&quot;result&quot;&gt;Callback for the anchor creation interface&lt;/param&gt;
+public void CreateSpatialAnchor(Vector3 position, Quaternion rotation, Action&lt;YVRSpatialAnchorResult,bool&gt; result) 
+</code></pre>
+<p>After creating the anchor, the <strong>Action&lt;YVRSpatialAnchorResult,bool&gt;</strong> callback will be triggered. YVRSpatialAnchorResult returns anchor information, and bool indicates whether the anchor creation was successful.</p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorResult  
+{  
+    // Task Id
+    public ulong requestId;  
+    // Anchor handle
+    public ulong anchorHandle;  
+    // Anchor unique identifier
+    public Char[] uuid;  
+}
+</code></pre>
+<p>Code example</p>
+<pre><code class="lang-CSharp">public void CreateSpatialAnchor(Transform transform)  
+{  
+    YVRSpatialAnchor.instance.CreateSpatialAnchor(transform.position, transform.rotation, OnCreateSpatialAnchor);  
+}  
+  
+private void OnCreateSpatialAnchor(YVRSpatialAnchorResult result, bool success)  
+{  
+    if(!success)  
+    {  
+        Debug.LogError(&quot;Create spatial anchor failed!&quot; );  
+        return;    
+    }  
+    
+    Debug.Log(&quot;Create spatial anchor success&quot;);
+    //TODO Custom logic
+}
+</code></pre>
+<h3 id="saving-an-anchor">Saving an Anchor</h3>
+<p>Call the <strong>YVRSpatialAnchor.instance.SaveSpatialAnchor</strong> interface to save the anchor. The anchor can be saved on the local device or in the cloud. <strong>Saving the anchor in the cloud requires the user to be logged into the device account and the device to be connected to the internet</strong></p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Saves the spatial anchor using the provided save information  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;saveInfo&quot;&gt;Save information&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;Save result callback&lt;/param&gt;  
+public void SaveSpatialAnchor(YVRSpatialAnchorSaveInfo saveInfo, Action&lt;YVRSpatialAnchorSaveCompleteInfo,bool&gt; callback)
+</code></pre>
+<p>Save anchor parameter information <strong>YVRSpatialAnchorSaveInfo</strong></p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorSaveInfo  
+{  
+    // Handle of the anchor to be saved
+    public ulong anchorHandle;  
+    // Save location Local: Local memory, Cloud: Cloud
+    public YVRSpatialAnchorStorageLocation storageLocation; 
+}
+</code></pre>
+<p>Save result callback <strong>Action&lt;YVRSpatialAnchorSaveCompleteInfo,bool&gt;</strong>
+YVRSpatialAnchorSaveCompleteInfo save result information, bool indicates whether the save was successful</p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorSaveCompleteInfo  
+{  
+    // Task Id
+    public ulong requestId;  
+    // Result code
+    public int resultCode;
+    // Saved anchor handle
+    public ulong anchorHandle;  
+    // Saved anchor UUID
+    public char[] uuid;  
+    // Save location
+    public YVRSpatialAnchorStorageLocation location;  
+}
+</code></pre>
+<p>Code example:</p>
+<pre><code class="lang-CSharp">private void SaveAnchor(ulong anchorHandle)
+{
+    YVRSpatialAnchorSaveInfo saveInfo = new YVRSpatialAnchorSaveInfo();  
+    saveInfo.anchorHandle = anchorHandle;  
+    // Save to local
+    saveInfo.storageLocation = YVRSpatialAnchorStorageLocation.Local; 
+    // Save to cloud
+    //saveInfo.storageLocation = YVRSpatialAnchorStorageLocation.Cloud;   
+    YVRSpatialAnchor.instance.SaveSpatialAnchor(saveInfo, OnSaveCompleteCallback);
+}
+
+private void OnSaveCompleteCallback(YVRSpatialAnchorSaveCompleteInfo saveResult,bool success)  
+{  
+    Debug.Log(&quot;Save anchor result:&quot; + success); 
+}
+</code></pre>
+<h3 id="deleting-an-anchor">Deleting an Anchor</h3>
+<p>Call the <strong>YVRSpatialAnchor.instance.EraseSpatialAnchor()</strong> interface to delete the specified anchor at the specified location</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Deletes the corresponding spatial anchor based on the anchor handle and storage location  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;Handle of the anchor to be deleted&lt;/param&gt;  
+/// &lt;param name=&quot;location&quot;&gt;Storage location of the anchor&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;Callback for the delete result&lt;/param&gt;  
+public void EraseSpatialAnchor(UInt64 anchorHandle, YVRSpatialAnchorStorageLocation location,Action&lt;YVRSpatialAnchorResult,bool&gt; callback)
+</code></pre>
+<p>Delete result callback <strong>Action&lt;YVRSpatialAnchorResult,bool&gt;</strong> YVRSpatialAnchorResult deleted anchor, bool indicates whether the deletion was successful</p>
+<p>Code example:</p>
+<pre><code class="lang-CSharp">private void EraseSpatialAnchor()
+{
+    YVRSpatialAnchor.instance.EraseSpatialAnchor(m_spatialAnchor.spaceHandle, YVRSpatialAnchorStorageLocation.Local,  
+    OnEraseCompleteCallback);
+}
+
+private void OnEraseCompleteCallback(YVRSpatialAnchorResult result,bool success)
+{
+    Debug.Log($&quot;Erase anchor:{result.anchorHandle}, uuid:{new string(result.uuid)} {success}&quot;);
+}
+</code></pre>
+<h3 id="querying-an-anchor">Querying an Anchor</h3>
+<p>Call the <strong>YVRSpatialAnchor.instance.QuerySpatialAnchor</strong> to query the anchor</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Queries the spatial anchor based on the provided query information  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;queryInfo&quot;&gt;Query information&lt;/param&gt;  
+/// &lt;param name=&quot;queryCallback&quot;&gt;Query result&lt;/param&gt;  
+public void QuerySpatialAnchor(YVRSpatialAnchorQueryInfo queryInfo , Action&lt;List&lt;YVRSpatialAnchorResult&gt;&gt; queryCallback)
+</code></pre>
+<p>YVRSpatialAnchorQueryInfo query information, supports querying by uuid or component type</p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorQueryInfo  
+{  
+    // Maximum number of anchors to return in the query (default is zero, meaning no limit)
+    public uint MaxQuerySpaces;
+    // Query timeout (default is zero, meaning no timeout)
+    public double Timeout;
+    // Query location
+    public YVRSpatialAnchorStorageLocation storageLocation; 
+    // Component type of the anchor to query
+    public YVRSpatialAnchorComponentType component;
+    // Number of uuids to query
+    public int numIds;  
+    // List of uuids to query
+    public YVRSpatialAnchorUUID[] ids;  
+}
+</code></pre>
+<p>Code example:</p>
+<pre><code class="lang-CSharp">// Query all local anchors saved on this device
+private void QueryAllLocalAnchor()
+{
+    YVRSpatialAnchorQueryInfo queryInfo = new YVRSpatialAnchorQueryInfo();  
+    queryInfo.storageLocation = YVRSpatialAnchorStorageLocation.Local;
+    YVRSpatialAnchor.instance.QuerySpatialAnchor(queryInfo, QuerySpatialAnchorComplete);
+}
+
+// Query anchors previously saved in the cloud using uuids
+private void QuerryUUIDsAnchor(List&lt;char[]&gt; uuids)
+{
+    YVRSpatialAnchorQueryInfo queryInfo = new YVRSpatialAnchorQueryInfo();  
+    queryInfo.storageLocation = YVRSpatialAnchorStorageLocation.Cloud;  
+    queryInfo.ids = new YVRSpatialAnchorUUID[uuids.Count];
+    for(int i = 0; i &lt; uuids.Count; i++)
+    {
+        queryInfo.ids[i] = new YVRSpatialAnchorUUID();  
+        queryInfo.ids[i].Id = uuids[i];
+    }
+    
+    YVRSpatialAnchor.instance.QuerySpatialAnchor(queryInfo, QuerySpatialAnchorComplete);
+}
+
+// Query result
+private void QuerySpatialAnchorComplete(List&lt;YVRSpatialAnchorResult&gt; results)
+{
+    Debug.Log(&quot;QuerySpacesComplete count:&quot; + results.Count);
+}
+</code></pre>
+<pre><code class="lang-ad-note">When querying saved anchors in the same area, you may not find the anchors. Try walking around to collect more point cloud data and then call the query again. The frequency of interface calls can be decided by yourself, **it is recommended to call once every second**
+</code></pre>
+<h3 id="getting-the-real-time-pose-of-an-anchor">Getting the Real-time Pose of an Anchor</h3>
+<p>Call the <strong>YVRSpatialAnchor.instance.GetSpatialAnchorPose</strong> interface to get the real-time position of the anchor, keeping the anchor's position fixed. If not obtained, the anchor's position may shift when the user moves in the scene or performs recentering. It supports calling every frame.</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Gets the pose of the anchor  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;Anchor handle&lt;/param&gt;  
+/// &lt;param name=&quot;position&quot;&gt;Returns the position of the anchor&lt;/param&gt;  
+/// &lt;param name=&quot;rotation&quot;&gt;Returns the rotation of the anchor&lt;/param&gt;  
+/// &lt;param name=&quot;locationFlags&quot;&gt;Anchor location status&lt;/param&gt;  
+/// &lt;returns&gt;&lt;/returns&gt;  
+public bool GetSpatialAnchorPose(ulong anchorHandle, out Vector3 position, out Quaternion rotation,out YVRAnchorLocationFlags locationFlags)
+</code></pre>
+<pre><code class="lang-ad-note">When the method to get the anchor pose returns false, or the location status is not tracked, it means the current map has switched. At this time, the anchor becomes invalid, and the returned pose may be incorrect. You need to wait for the user to return to the map where the anchor was created, or when the map where the anchor was created merges with other maps, the anchor will become valid again.
+</code></pre>
+<h3 id="getting-supported-component-types-of-an-anchor">Getting Supported Component Types of an Anchor</h3>
+<p>Call <strong>YVRSpatialAnchor.instance.GetSpatialAnchorEnumerateSupported</strong> to get the supported component types of the specified anchor. Currently, anchors created by third-party references only support pose (Locatable), storage (Storable), and sharing (Sharable).</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Gets the supported component types of the anchor  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;Anchor handle&lt;/param&gt;  
+/// &lt;param name=&quot;components&quot;&gt;Supported component types&lt;/param&gt;
+public void GetSpatialAnchorEnumerateSupported(ulong anchorHandle, out YVRSpatialAnchorSupportedComponent components)
+</code></pre>
+<h3 id="setting-the-component-status-of-an-anchor">Setting the Component Status of an Anchor</h3>
+<p>Call <strong>YVRSpatialAnchor.instance.SetSpatialAnchorComponentStatus()</strong> to set the component status of the anchor. The created anchor by default includes pose (Locatable), storage (Storable), and sharing (Sharable).</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Sets the component status of the anchor  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;Anchor handle&lt;/param&gt;  
+/// &lt;param name=&quot;setInfo&quot;&gt;Status information&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;Callback for setting the anchor status&lt;/param&gt;  
+/// &lt;returns&gt;&lt;/returns&gt;  
+public bool SetSpatialAnchorComponentStatus(ulong anchorHandle, YVRSpatialAnchorComponentStatusSetInfo setInfo,  
+    Action&lt;YVRSpatialAnchorSetStatusCompleteInfo,bool&gt; callback)
+</code></pre>
+<p>Code example:</p>
+<pre><code class="lang-CSharp">private void DisableAnchorStorableState(ulong anchorHandle)
+{
+    YVRSpatialAnchorComponentStatusSetInfo componentStatusSetInfo = new YVRSpatialAnchorComponentStatusSetInfo();  
+    componentStatusSetInfo.component = YVRSpatialAnchorComponentType.Storable;
+    // When setting the Storable of the created anchor to false, the anchor cannot be saved.
+    componentStatusSetInfo.enable = false;    
+    YVRSpatialAnchor.instance.SetSpatialAnchorComponentStatus(result.anchorHandle, componentStatusSetInfo,null);
+}
+</code></pre>
+<pre><code class="lang-ad-note">The code example above disables the storage permission of the anchor
+</code></pre>
+<h3 id="getting-the-component-status-of-an-anchor">Getting the Component Status of an Anchor</h3>
+<p>Call <strong>YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus</strong> to get the status of the specified component of the anchor</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Gets the status of the specified component of the anchor  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;Anchor handle&lt;/param&gt;  
+/// &lt;param name=&quot;componentType&quot;&gt;Component type&lt;/param&gt;  
+/// &lt;param name=&quot;status&quot;&gt;Returned status information&lt;/param&gt;  
+public void GetSpatialAnchorComponentStatus(ulong anchorHandle, YVRSpatialAnchorComponentType componentType, out YVRSpatialAnchorComponentStatus status)
+</code></pre>
+<h3 id="batch-saving-anchors">Batch Saving Anchors</h3>
+<p><strong>YVRSpatialAnchor.instance.SaveSpatialAnchorList</strong> saves multiple anchors at once</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Batch saves anchors  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;spatialAnchorHandleList&quot;&gt;List of anchor handles&lt;/param&gt;  
+/// &lt;param name=&quot;location&quot;&gt;Save location&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;Save result callback&lt;/param&gt;  
+public void SaveSpatialAnchorList(List&lt;ulong&gt; spatialAnchorHandleList, YVRSpatialAnchorStorageLocation location,  
+    Action&lt;bool&gt; callback)
+</code></pre>
+<h3 id="getting-anchor-uuid-by-anchorhandle">Getting Anchor UUID by anchorHandle</h3>
+<p>Call <strong>YVRSpatialAnchor.instance.GetSpatialAnchorUUIDForHandle</strong> to get the unique identifier of the anchor by the anchor handle</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// Gets the unique identifier of the anchor by the anchor handle  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;Anchor handle&lt;/param&gt;  
+/// &lt;param name=&quot;uuid&quot;&gt;Anchor unique identifier&lt;/param&gt;  
+public void GetSpatialAnchorUUIDForHandle(ulong anchorHandle, out YVRSpatialAnchorUUID uuid)
+</code></pre>
+<h2 id="getting-spatial-calibration-anchor-information">Getting Spatial Calibration Anchor Information</h2>
+<p>Only anchors created by the <strong>Spatial Calibration</strong> application in the system support setting calibration information, including anchor components, semantic tags, plane information, and cube information. You can use the <strong>Spatial Calibration</strong> interface to get the calibration information of the anchor and then use it in your own reference. For details, refer to the <strong>Spatial Calibration</strong> documentation.</p>
+<h2 id="demo">Demo</h2>
+<p><a href="https://github.com/YVRDeveloper/SpatialAnchorSample-Unity">SpatialAnchorSample</a> demonstrates the related functions of spatial anchors, including creating anchors, saving anchors, deleting anchors, querying anchors, sharing anchors, etc. When demonstrating the sharing function, you need to manually configure your own photon id and service.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation/SpatialSensing/SpatialAnchor.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

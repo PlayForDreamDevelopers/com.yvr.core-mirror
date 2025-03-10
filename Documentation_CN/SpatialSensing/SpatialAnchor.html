@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>空间锚点 | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="空间锚点 | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/SpatialSensing/SpatialAnchor.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="空间锚点">空间锚点</h1>
+
+<h2 id="介绍">介绍</h2>
+<p>空间锚点(Spatial Anchors)是在虚拟或增强现实环境中用于定位和跟踪物体或场景的关键点。它们可以被用来实现虚拟物体的稳定放置、环境理解、共享虚拟场景等功能。空间锚点是一种由软件和硬件共同实现的技术，能够将虚拟内容与现实世界中的特定位置或物体相对应起来。</p>
+<h2 id="基本概念">基本概念</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UUID</td>
+<td>锚点的唯一标识码，在创建锚点时返回</td>
+</tr>
+<tr>
+<td>anchorHandle</td>
+<td>锚点的句柄，在应用内存中的标识</td>
+</tr>
+</tbody>
+</table>
+<h2 id="为应用开启空间锚点权限">为应用开启空间锚点权限</h2>
+<ol>
+<li>在 Unity 中打开项目</li>
+<li>为场景添加 XR Origin</li>
+<li>添加 YVRManager 脚本</li>
+<li>在 YVRManager 脚本面板上勾选启用 SpatialAnchorSupport</li>
+</ol>
+<pre><code class="lang-ad-note">勾选 SpatialAnchorSupport 选框后，AndroidManifest.xml 文件中会添加锚点对应权限 
+**\&lt;uses-permission android:name=&quot;com.yvr.permission.USE_ANCHOR_API&quot;\\&gt;**
+</code></pre>
+<h2 id="空间锚点接口">空间锚点接口</h2>
+<h3 id="创建锚点">创建锚点</h3>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 使用给定的位置和旋转创建空间锚点。  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;position&quot;&gt;锚点位置&lt;/param&gt;  
+/// &lt;param name=&quot;rotation&quot;&gt;锚点旋转&lt;/param&gt;  
+/// &lt;param name=&quot;result&quot;&gt;创建锚点的接口回调&lt;/param&gt;
+public void CreateSpatialAnchor(Vector3 position, Quaternion rotation, Action&lt;YVRSpatialAnchorResult,bool&gt; result) 
+</code></pre>
+<p>创建锚点后会响应 <strong>Action&lt;YVRSpatialAnchorResult,bool&gt;</strong> 回调，YVRSpatialAnchorResult 返回锚点信息，bool 表示锚点创建是否成功。</p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorResult  
+{  
+    //任务 Id
+    public ulong requestId;  
+    //锚点的句柄
+    public ulong anchorHandle;  
+    //锚点的唯一标识码
+    public Char[] uuid;  
+}
+</code></pre>
+<p>代码示例</p>
+<pre><code class="lang-CSharp">public void CreateSpatialAnchor(Transform transform)  
+{  
+    YVRSpatialAnchor.instance.CreateSpatialAnchor(transform.position, transform.rotation, OnCreateSpatialAnchor);  
+}  
+  
+private void OnCreateSpatialAnchor(YVRSpatialAnchorResult result, bool success)  
+{  
+    if(!success)  
+    {  
+        Debug.LogError(&quot;Create spatial anchor failed!&quot; );  
+        return;    
+    }  
+    
+    Debug.Log(&quot;Create spatial anchor success&quot;);
+    //TODO 自定义逻辑
+}
+</code></pre>
+<h3 id="保存锚点">保存锚点</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.SaveSpatialAnchor</strong> 接口保存锚点，可以将锚点保存在本地设备中或保存在云端，<strong>将锚点保存在云端需要用户已登陆设备账号并且设备联网</strong></p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 使用提供的保存信息保存空间锚点  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;saveInfo&quot;&gt;保存信息&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;保存结果回调&lt;/param&gt;  
+public void SaveSpatialAnchor(YVRSpatialAnchorSaveInfo saveInfo, Action&lt;YVRSpatialAnchorSaveCompleteInfo,bool&gt; callback)
+</code></pre>
+<p>保存锚点参数信息 <strong>YVRSpatialAnchorSaveInfo</strong></p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorSaveInfo  
+{  
+    // 需要保存锚点的句柄
+    public ulong anchorHandle;  
+    // 保存位置 Local: 本地内存，Cloud: 云端
+    public YVRSpatialAnchorStorageLocation storageLocation; 
+}
+</code></pre>
+<p>保存结果的回调 <strong>Action&lt;YVRSpatialAnchorSaveCompleteInfo,bool&gt;</strong>
+YVRSpatialAnchorSaveCompleteInfo 保存结果信息，bool 保存是否成功</p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorSaveCompleteInfo  
+{  
+    // 任务 Id
+    public ulong requestId;  
+    // 返回结果码
+    public int resultCode;
+    // 保存的锚点句柄
+    public ulong anchorHandle;  
+    // 保存的锚点 UUID
+    public char[] uuid;  
+    // 保存的位置
+    public YVRSpatialAnchorStorageLocation location;  
+}
+</code></pre>
+<p>代码示例：</p>
+<pre><code class="lang-CSharp">private void SaveAnchor(ulong anchorHandle)
+{
+    YVRSpatialAnchorSaveInfo saveInfo = new YVRSpatialAnchorSaveInfo();  
+    saveInfo.anchorHandle = anchorHandle;  
+    // 保存至本地
+    saveInfo.storageLocation = YVRSpatialAnchorStorageLocation.Local; 
+    // 保存至云端
+    //saveInfo.storageLocation = YVRSpatialAnchorStorageLocation.Cloud;   
+    YVRSpatialAnchor.instance.SaveSpatialAnchor(saveInfo, OnSaveCompleteCallback);
+}
+
+private void OnSaveCompleteCallback(YVRSpatialAnchorSaveCompleteInfo saveResult,bool success)  
+{  
+    Debug.Log(&quot;Save anchor result:&quot; + success); 
+}
+</code></pre>
+<h3 id="删除锚点">删除锚点</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.EraseSpatialAnchor()</strong> 接口删除指定位置指定锚点</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 根据锚点句柄和存储位置删除对应的空间锚点  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;需要删除的锚点句柄&lt;/param&gt;  
+/// &lt;param name=&quot;location&quot;&gt;锚点的存储位置&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;删除结果的回调&lt;/param&gt;  
+public void EraseSpatialAnchor(UInt64 anchorHandle, YVRSpatialAnchorStorageLocation location,Action&lt;YVRSpatialAnchorResult,bool&gt; callback)
+</code></pre>
+<p>删除结果回调 <strong>Action&lt;YVRSpatialAnchorResult,bool&gt;</strong> YVRSpatialAnchorResult 删除的锚点，bool 是否成功</p>
+<p>代码示例：</p>
+<pre><code class="lang-CSharp">private void EraseSpatialAnchor()
+{
+    YVRSpatialAnchor.instance.EraseSpatialAnchor(m_spatialAnchor.spaceHandle, YVRSpatialAnchorStorageLocation.Local,  
+    OnEraseCompleteCallback);
+}
+
+private void OnEraseCompleteCallback(YVRSpatialAnchorResult result,bool success)
+{
+    Debug.Log($&quot;Erase anchor:{result.anchorHandle}, uuid:{new string(result.uuid)} {success}&quot;);
+}
+</code></pre>
+<h3 id="查询锚点">查询锚点</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.QuerySpatialAnchor</strong> 查询锚点</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 根据提供的查询信息查询空间锚点  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;queryInfo&quot;&gt;查询信息&lt;/param&gt;  
+/// &lt;param name=&quot;queryCallback&quot;&gt;查询结果&lt;/param&gt;  
+public void QuerySpatialAnchor(YVRSpatialAnchorQueryInfo queryInfo , Action&lt;List&lt;YVRSpatialAnchorResult&gt;&gt; queryCallback)
+</code></pre>
+<p>YVRSpatialAnchorQueryInfo 查询信息，支持通过 uuid 查询，或者 component 类型查询</p>
+<pre><code class="lang-CSharp">public struct YVRSpatialAnchorQueryInfo  
+{  
+    // 查询返回最多锚点个数(默认为零，表示不限制查询返回个数)
+    public uint MaxQuerySpaces;
+    // 查询超时时间(默认为零，表示不设置超时时间)
+    public double Timeout;
+    // 查询位置
+    public YVRSpatialAnchorStorageLocation storageLocation; 
+    // 查询锚点的组件类型
+    public YVRSpatialAnchorComponentType component;
+    // 使用 uuid 查询锚点时 uuid 个数
+    public int numIds;  
+    // uuid 查询列表
+    public YVRSpatialAnchorUUID[] ids;  
+}
+</code></pre>
+<p>代码示例：</p>
+<pre><code class="lang-CSharp">// 查询当前引用在这台设备中保存的所有本地锚点
+private void QueryAllLocalAnchor()
+{
+    YVRSpatialAnchorQueryInfo queryInfo = new YVRSpatialAnchorQueryInfo();  
+    queryInfo.storageLocation = YVRSpatialAnchorStorageLocation.Local;
+    YVRSpatialAnchor.instance.QuerySpatialAnchor(queryInfo, QuerySpatialAnchorComplete);
+}
+
+// 通过 uuids 查询之前保存在云端的锚点
+private void QuerryUUIDsAnchor(List&lt;char[]&gt; uuids)
+{
+    YVRSpatialAnchorQueryInfo queryInfo = new YVRSpatialAnchorQueryInfo();  
+    queryInfo.storageLocation = YVRSpatialAnchorStorageLocation.Cloud;  
+    queryInfo.ids = new YVRSpatialAnchorUUID[uuids.Count];
+    for(int i = 0; i &lt; uuids.Count; i++)
+    {
+        queryInfo.ids[i] = new YVRSpatialAnchorUUID();  
+        queryInfo.ids[i].Id = uuids[i];
+    }
+    
+    YVRSpatialAnchor.instance.QuerySpatialAnchor(queryInfo, QuerySpatialAnchorComplete);
+}
+
+// 查询结果
+private void QuerySpatialAnchorComplete(List&lt;YVRSpatialAnchorResult&gt; results)
+{
+    Debug.Log(&quot;QuerySpacesComplete count:&quot; + results.Count);
+}
+</code></pre>
+<pre><code class="lang-ad-note">在同一片区域查询已保存过的锚点时，可能会查询不到锚点，可以尝试在周围进行走动，采集更多点云数据后再次调用查询，接口调用频率可自行决定，**建议 1 秒左右调用一次**
+</code></pre>
+<h3 id="获取锚点的实时位姿">获取锚点的实时位姿</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.GetSpatialAnchorPose</strong> 接口获取锚点的实时位置，保持锚点的位置始终固定，若不获取，当用户在场景内移动或者进行 recenter 时，锚点的位置可能会发生偏移，支持每帧调用。</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 获取锚点位姿  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;锚点句柄&lt;/param&gt;  
+/// &lt;param name=&quot;position&quot;&gt;返回锚点的位置&lt;/param&gt;  
+/// &lt;param name=&quot;rotation&quot;&gt;返回锚点的旋转&lt;/param&gt;  
+/// &lt;param name=&quot;locationFlags&quot;&gt;锚点的位置状态&lt;/param&gt;  
+/// &lt;returns&gt;&lt;/returns&gt;  
+public bool GetSpatialAnchorPose(ulong anchorHandle, out Vector3 position, out Quaternion rotation,out YVRAnchorLocationFlags locationFlags)
+</code></pre>
+<pre><code class="lang-ad-note">当获取锚点位姿方法返回失败，或位置状态为未追踪时，表示当前地图发生了切换，此时锚点变为失效，返回的位姿可能是错误的，需要等用户回到创建锚点的地图下，或创建锚点的地图和其他地图融合时，锚点会再次有效。
+</code></pre>
+<h3 id="获取锚点支持的-component-枚举类型">获取锚点支持的 component 枚举类型</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.GetSpatialAnchorEnumerateSupported</strong> 可以获取指定锚点支持的 component 类型，目前第三方引用创建的锚点仅支持位姿(Locatable)、存储(Storable)、分享(Sharable)。</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 获取锚点支持的 component 枚举类型  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;锚点的句柄&lt;/param&gt;  
+/// &lt;param name=&quot;components&quot;&gt;支持的 component 类型&lt;/param&gt;
+public void GetSpatialAnchorEnumerateSupported(ulong anchorHandle, out YVRSpatialAnchorSupportedComponent components)
+</code></pre>
+<h3 id="设置锚点的-component-状态">设置锚点的 component 状态</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.SetSpatialAnchorComponentStatus()</strong> 方法可以锚点的 component 状态。创建的锚点默认包含位姿(Locatable)，存储(Storable)，分享(Sharable).</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 设置锚点的 component 状态  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;锚点句柄&lt;/param&gt;  
+/// &lt;param name=&quot;setInfo&quot;&gt;状态信息&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;设置锚点状态的回调&lt;/param&gt;  
+/// &lt;returns&gt;&lt;/returns&gt;  
+public bool SetSpatialAnchorComponentStatus(ulong anchorHandle, YVRSpatialAnchorComponentStatusSetInfo setInfo,  
+    Action&lt;YVRSpatialAnchorSetStatusCompleteInfo,bool&gt; callback)
+</code></pre>
+<p>代码示例：</p>
+<pre><code class="lang-CSharp">private void DisableAnchorStorableState(ulong anchorHandle)
+{
+    YVRSpatialAnchorComponentStatusSetInfo componentStatusSetInfo = new YVRSpatialAnchorComponentStatusSetInfo();  
+    componentStatusSetInfo.component = YVRSpatialAnchorComponentType.Storable;
+    //将创建锚点的 Storable 设置为 false 时，锚点将不能被保存。
+    componentStatusSetInfo.enable = false;    YVRSpatialAnchor.instance.SetSpatialAnchorComponentStatus(result.anchorHandle, componentStatusSetInfo,null);
+}
+</code></pre>
+<pre><code class="lang-ad-note">上面示例中代码将关闭锚点的存储权限
+</code></pre>
+<h3 id="获取锚点指定-component-状态">获取锚点指定 component 状态</h3>
+<p>通过调用 <strong>YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus</strong> 可以获取锚点对应组件状态</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 获取锚点指定 component 状态  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;锚点句柄&lt;/param&gt;  
+/// &lt;param name=&quot;componentType&quot;&gt;组件类型&lt;/param&gt;  
+/// &lt;param name=&quot;status&quot;&gt;返回的状态信息&lt;/param&gt;  
+public void GetSpatialAnchorComponentStatus(ulong anchorHandle, YVRSpatialAnchorComponentType componentType, out YVRSpatialAnchorComponentStatus status)
+</code></pre>
+<h3 id="批量保存锚点">批量保存锚点</h3>
+<p><strong>YVRSpatialAnchor.instance.SaveSpatialAnchorList</strong> 一次保存多个锚点</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 批量保存锚点  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;spatialAnchorHandleList&quot;&gt;锚点句柄集合&lt;/param&gt;  
+/// &lt;param name=&quot;location&quot;&gt;保存位置&lt;/param&gt;  
+/// &lt;param name=&quot;callback&quot;&gt;保存结果回调&lt;/param&gt;  
+public void SaveSpatialAnchorList(List&lt;ulong&gt; spatialAnchorHandleList, YVRSpatialAnchorStorageLocation location,  
+    Action&lt;bool&gt; callback)
+</code></pre>
+<h3 id="通过-anchorhandle-获取锚点-uuid">通过 anchorHandle 获取锚点 UUID</h3>
+<p>调用 <strong>YVRSpatialAnchor.instance.GetSpatialAnchorUUIDForHandle</strong> 通过锚点句柄获取锚点的唯一标识</p>
+<pre><code class="lang-CSharp">/// &lt;summary&gt;  
+/// 通过锚点句柄获取锚点的唯一标识  
+/// &lt;/summary&gt;  
+/// &lt;param name=&quot;anchorHandle&quot;&gt;锚点句柄&lt;/param&gt;  
+/// &lt;param name=&quot;uuid&quot;&gt;锚点唯一标识&lt;/param&gt;  
+public void GetSpatialAnchorUUIDForHandle(ulong anchorHandle, out YVRSpatialAnchorUUID uuid)
+</code></pre>
+<h2 id="获取空间标定锚点信息">获取空间标定锚点信息</h2>
+<p>只有系统中的 <strong>空间标定</strong> 应用创建的锚点才支持设置标定信息，包括锚点组件，语义标签，平面信息，立方体信息。你可以使用 <strong>空间标定</strong> 接口获取锚点的标定信息，然后在自己的引用内使用，详情参考 <strong>空间标定</strong> 文档。</p>
+<h2 id="demo">Demo</h2>
+<p><a href="https://github.com/YVRDeveloper/SpatialAnchorSample-Unity">SpatialAnchorSample</a> 示例展示空间锚点的相关功能，包括创建锚点，保存锚点，删除锚点，查询锚点，分享锚点等功能。当演示分享功能时，需要你手动配置自己的 photon id 及服务。</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation_CN/SpatialSensing/SpatialAnchor.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

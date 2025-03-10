@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Third-Party Hand Gesture Recognition Limitations | Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Third-Party Hand Gesture Recognition Limitations | Core ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation/MultiModalInteraction/HandGestureLimitation.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Core">
+            Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="third-party-hand-gesture-recognition-limitations">Third-Party Hand Gesture Recognition Limitations</h1>
+
+<p>This document outlines some constraints on the application of hand gestures in recognition to avoid common recognition errors. It is divided into three parts:</p>
+<ul>
+<li>Part One: Static Hand Gestures, explaining static hand gestures, including recommended and not recommended hand gestures;</li>
+<li>Part Two: Dynamic Hand Gestures, explaining the boundaries of different types of movements for hand gestures;</li>
+<li>Part Three: YVR Control Gestures, recommending third-party applications to avoid using these gestures to prevent accidental triggers during application runtime.</li>
+</ul>
+<h2 id="static-hand-gestures">Static Hand Gestures</h2>
+<p>It is recommended to use hand gestures that users can perform naturally and comfortably, which are more ergonomic. In terms of gesture recognition, it is suggested to use:</p>
+<ul>
+<li>Hand gestures with <strong>more visible features</strong>, i.e., gestures where more hand features can be seen</li>
+<li>Preferably use the <strong>right hand</strong></li>
+<li>The following image is only a partial illustration
+<br><br>
+<img src="HandTracking/StablePose.png" alt="StablePose"></li>
+</ul>
+<br>
+Twisted, awkward, and unnatural gestures are not recommended. Additionally, in terms of algorithms, it is not suggested to use:
+<ul>
+<li>Hand gestures with <strong>fewer visible features</strong>, i.e., gestures where fewer hand features can be seen</li>
+<li>Avoid using <strong>overlapping hands</strong> gestures, such as crossed hands</li>
+<li>The following image is only a partial illustration, similar <strong>gestures (left/right) are not recommended</strong>
+<br><br>
+<img src="HandTracking/UnstablePose.png" alt="UnstablePose"></li>
+</ul>
+<h2 id="dynamic-hand-gestures">Dynamic Hand Gestures</h2>
+<p>Dynamic hand gestures can be understood as: static hand gestures + time duration judgment. Therefore, combined with the usage recommendations for static hand gestures, it is not recommended to use fast-moving gestures:</p>
+<ul>
+<li>Fast <strong>waving</strong> of various hand gestures, such as quickly waving the palm, fist, etc.</li>
+<li>Fast <strong>rotating</strong> of various hand gestures, such as quickly rotating the wrist, etc.</li>
+<li>Fast execution of <strong>dynamic gestures</strong>, such as quickly making a fist, quickly pinching, etc.</li>
+<li>Fast <strong>moving</strong> of various hand gestures, such as quickly moving various hand gestures in different directions</li>
+</ul>
+<h2 id="control-gestures">Control Gestures</h2>
+<p>The following are YVR's control system gestures. It is recommended to avoid using these gestures for game interaction in third-party applications to prevent accidental triggering of the system menu. The current version includes the following control gestures:</p>
+<ul>
+<li>Initialization: Palm facing yourself, fingertips pointing upwards</li>
+<li>Activation: When the wrist is in position and the system icon appears, activation is successful</li>
+<li>Menu selection: Use the pinching gesture and move the hand to select the menu</li>
+<li>Command execution: Hover over the button, separate the index finger and thumb, the secondary menu fades out, only the function button is displayed (disappears after flashing for a certain time) and responds to its corresponding function</li>
+</ul>
+<p><img src="HandTracking/SystemGesture.png" alt="SystemGesture"></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/PlayForDreamDevelopers/com.yvr.core-mirror/blob/main/com.yvr.core/Documentation/MultiModalInteraction/HandGestureLimitation.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
