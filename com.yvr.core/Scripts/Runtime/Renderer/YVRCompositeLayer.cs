@@ -16,9 +16,11 @@ namespace YVR.Core
         private static readonly Dictionary<YVRRenderLayerType, ILayerShapeHandler> s_ShapeHandlerDic
             = new Dictionary<YVRRenderLayerType, ILayerShapeHandler>()
             {
-                {YVRRenderLayerType.Quad, new QuadShapeHandler()},
-                {YVRRenderLayerType.Cylinder, new CylinderShapeHandler()},
-                {YVRRenderLayerType.Equirect, new Equirect2ShapeHandler()},
+                { YVRRenderLayerType.Quad, new QuadShapeHandler() },
+                { YVRRenderLayerType.Cylinder, new CylinderShapeHandler() },
+                { YVRRenderLayerType.Equirect, new Equirect2ShapeHandler() },
+                { YVRRenderLayerType.CubeProjection, new CubeShapeHandler() },
+                { YVRRenderLayerType.Projection, new ProjectionHandler() }
             };
 
         public Action onRegenerateHole;
@@ -82,7 +84,7 @@ namespace YVR.Core
         }
 
         public bool isExternalTexture = false;
-
+        public bool protectedContent = false;
         /// <summary>
         /// The displayed texture on composite layer
         /// </summary>
@@ -365,7 +367,7 @@ namespace YVR.Core
 
         protected virtual void LateUpdate()
         {
-            if (!requireToForceUpdateContent || !isDynamic) return;
+            if (!requireToForceUpdateContent && !isDynamic) return;
             UpdateCompositeLayerContent();
         }
 
@@ -377,7 +379,32 @@ namespace YVR.Core
         {
             if (depth != int.MinValue) compositionDepth = depth;
 
-            var layerCreateInfo = new YVRLayerCreateInfo(compositionDepth, width, height, swapChainBufferCount, m_Shape, -1, separateLayer ? YVRRenderLayerEyeMask.kEyeMaskLeft : YVRRenderLayerEyeMask.kEyeMaskBoth, isExternalTexture, isActiveAndEnabled);
+            int layerWidth = width;
+            int layerHeight = height;
+            var separate = separateSwapChain;
+            if (m_Shape == YVRRenderLayerType.Projection)
+            {
+                Vector2 resolution = default;
+                YVRPlugin.Instance.GetEyeResolution(ref resolution);
+                layerWidth = (int)resolution.x;
+                layerHeight = (int)resolution.y;
+                separate = true;
+            }
+            var layerCreateInfo = new YVRLayerCreateInfo(
+                compositionDepth,
+                layerWidth,
+                layerHeight,
+                swapChainBufferCount,
+                0,
+                2,
+                separate,
+                isActiveAndEnabled,
+                isExternalTexture,
+                m_Shape,
+                separateLayer ? YVRRenderLayerEyeMask.kEyeMaskLeft : YVRRenderLayerEyeMask.kEyeMaskBoth,
+                -1,
+                protectedContent ? 1 : 0
+            );
             layerHandler.PrepareCreateLayerAsync(() =>
             {
                 if (renderLayerId != -1) return;
@@ -546,25 +573,40 @@ namespace YVR.Core
             if (renderLayerId == -1 || m_IsRecreatingLayer) return;
 
             ILayerShapeHandler layerShapeHandler = GetLayerShapeHandler();
-            layerShapeHandler?.HandleLayerPose(layerHandler, renderLayerId, m_Transform, yvrManager, m_CylinderAngle, DestRectLeft);
+            LayerShapeData data = default;
+            data.destRect = DestRectLeft;
+            data.renderLayerId = renderLayerId;
+            data.layerTransform = m_Transform;
+            data.yvrManager = yvrManager;
+            data.centralAngle = m_CylinderAngle;
+            layerShapeHandler?.HandleLayerPose(layerHandler, data);
             if (separateLayer)
-                layerShapeHandler?.HandleLayerPose(layerHandler, rightEyeRenderLayerId, m_Transform, yvrManager, m_CylinderAngle, DestRectRight);
+            {
+                data.renderLayerId = rightEyeRenderLayerId;
+                data.destRect = DestRectRight;
+                layerShapeHandler?.HandleLayerPose(layerHandler, data);
+            }
 
-            UpdateLayerShape();
+            UpdateLayerShape(data);
         }
 
-        private void UpdateLayerShape()
+        private void UpdateLayerShape(LayerShapeData data)
         {
             if (m_Transform == null) return;
             if (renderLayerId == -1 || m_IsRecreatingLayer) return;
 
             ILayerShapeHandler layerShapeHandler = GetLayerShapeHandler();
             layerHandler.SetLayerImageRect(renderLayerId, SourceRectLeft);
-            layerShapeHandler?.HandleLayerShape(layerHandler, renderLayerId, m_Transform, m_CylinderAngle, m_Radius, DestRectLeft);
+            data.renderLayerId = renderLayerId;
+            data.radius = m_Radius;
+            data.destRect = destRectLeft;
+            layerShapeHandler?.HandleLayerShape(layerHandler, data);
             if (separateLayer)
             {
                 layerHandler.SetLayerImageRect(rightEyeRenderLayerId, SourceRectRight);
-                layerShapeHandler?.HandleLayerShape(layerHandler, rightEyeRenderLayerId, m_Transform, m_CylinderAngle, m_Radius, DestRectRight);
+                data.renderLayerId = rightEyeRenderLayerId;
+                data.destRect = DestRectRight;
+                layerShapeHandler?.HandleLayerShape(layerHandler, data);
             }
         }
 
@@ -641,15 +683,48 @@ namespace YVR.Core
 
         protected virtual void CopyTextureToColorHandle()
         {
-            int destTextureId = layerHandler.GetLayerColorHandle(renderLayerId, -1);
-            CopyTexture(textureHandle, destTextureId, alpha);
-            if (separateSwapChain)
+
+            if (m_Shape == YVRRenderLayerType.CubeProjection)
             {
-                destTextureId = layerHandler.GetLayerColorHandle(rightEyeRenderLayerId, -1);
-                CopyTexture(rightEyeTextureHandle, destTextureId, alpha);
+                UnityCopyTexture();
+            }
+            else
+            {
+                for (int i = 0; i < swapChainBufferCount; i++)
+                {
+                    if (textureHandle == 0) return;
+                    int destTextureId = layerHandler.GetLayerColorHandle(renderLayerId,
+                        YVRRenderLayerEyeMask.kEyeMaskBoth, i % swapChainBufferCount);
+                    CopyTexture(textureHandle, destTextureId, alpha);
+                    if (m_Shape == YVRRenderLayerType.Projection)
+                    {
+                        destTextureId = layerHandler.GetLayerColorHandle(renderLayerId,
+                            YVRRenderLayerEyeMask.kEyeMaskRight, i % swapChainBufferCount);
+                        CopyTexture(textureHandle, destTextureId, alpha);
+                    }
+                    if (separateLayer)
+                    {
+                        destTextureId = layerHandler.GetLayerColorHandle(rightEyeRenderLayerId, YVRRenderLayerEyeMask.kEyeMaskRight,i % swapChainBufferCount);
+                        CopyTexture(rightEyeTextureHandle, destTextureId, alpha);
+                    }
+                }
+
             }
 
             requireToForceUpdateContent = false;
+        }
+
+        private void UnityCopyTexture()
+        {
+            for (int i = 0; i < swapChainBufferCount; i++)
+            {
+                if (textureHandle == 0) return;
+                int destTextureId = layerHandler.GetLayerColorHandle(renderLayerId,
+                    YVRRenderLayerEyeMask.kEyeMaskBoth, i % swapChainBufferCount);
+                var destTexture =
+                    Cubemap.CreateExternalTexture(width, TextureFormat.RGBA32, false, (IntPtr)destTextureId);
+                Graphics.CopyTexture(texture, destTexture);
+            }
         }
 
         private void CopyTexture(int sourceTextureId, int destTextureId, float alpha)

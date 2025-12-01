@@ -20,11 +20,6 @@ namespace YVR.Core
         {
             var nextStyleHandler = GetStyleHandler(type);
 
-            if (nextStyleHandler == currentStyleHandler)
-            {
-                return;
-            }
-
             if (currentStyleHandler != null)
             {
                 currentStyleHandler.Clear();

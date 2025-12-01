@@ -24,6 +24,11 @@ using YVR.Core.ARFoundation.Session;
 using YVR.Core.ARFoundation.ImageTracking;
 #endif
 
+#if XR_COMPOSITION_LAYERS
+using YVR.Core.XRCompositionLayers;
+using Unity.XR.CompositionLayers.Services;
+#endif
+
 namespace YVR.Core.XR
 {
     public class YVRXRLoader : XRLoaderHelper
@@ -97,7 +102,9 @@ namespace YVR.Core.XR
             CreateSubsystem<XRPlaneSubsystemDescriptor, XRPlaneSubsystem>(planeSubsystemDescriptors, YVRPlaneSubsystem.k_SubsystemId);
             CreateSubsystem<XRImageTrackingSubsystemDescriptor, XRImageTrackingSubsystem>(imageTrackingSubsystemDescriptors, YVRImageTrackingSubsystem.k_SubsystemId);
 #endif
-
+# if XR_COMPOSITION_LAYERS
+            CompositionLayerManager.Instance.LayerProvider = new YVRCompositionLayerProvider();
+#endif
             return true;
         }
 

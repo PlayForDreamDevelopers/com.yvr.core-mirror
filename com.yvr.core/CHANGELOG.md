@@ -1,5 +1,89 @@
 # Changelog
 
+## [1.28.25] - 2025-11-26
+
+### Added
+
+- 关闭手势自标定接口
+
+## [1.28.24] - 2025-11-24
+
+### Added
+
+- 添加设置锐化接口
+
+## [1.28.23] - 2025-11-06
+
+### Added
+
+- 添加高分辨率 passthrough 流
+
+## [1.28.22] - 2025-10-16
+
+### Added
+
+- 添加通过 passthrough layer 显示 vst 接口
+
+## [1.28.21] - 2025-10-13
+
+### Changed
+
+- compositionLayer 支持创建 protectedContent 类型的 swapChain
+
+## [1.28.20] - 2025-09-17
+
+### Changed
+
+- 始终更新手势射线数据
+
+## [1.28.19] - 2025-09-11
+
+### Added
+
+- 添加旅行模式接口
+
+## [1.28.18] - 2025-09-02
+
+### Changed
+
+- 默认为 manifest 元素添加 vr_only
+
+## [1.28.17] - 2025-07-18
+
+### Changed
+
+- 销毁 passthrouth layer 前先暂停
+
+## [1.28.16] - 2025-07-16
+
+### Fixed
+
+- 修复应用恢复时崩溃
+
+## [1.28.15] - 2025-07-16
+
+### Changed
+
+- 销毁 passthrough layer 时，submit frame 时不再提交对应 layer
+
+## [1.28.14] - 2025-07-14
+
+### Fixed
+
+- 修复关闭 VST 时闪退
+
+## [1.28.13] - 2025-07-14
+
+### Fixed
+
+- 修复设置 LUT 风格时失败
+
+## [1.28.12] - 2025-07-03
+
+### Changed
+
+- 移除 XR_YVR_passthrough 拓展接口，使用 XR_FB_passthrough 替换
+
 ## [1.28.11] - 2025-06-20
 
 ### Added

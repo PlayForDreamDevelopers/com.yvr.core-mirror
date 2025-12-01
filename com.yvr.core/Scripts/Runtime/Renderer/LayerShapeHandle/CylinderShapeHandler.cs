@@ -8,51 +8,34 @@ namespace YVR.Core
 {
     public class CylinderShapeHandler : ILayerShapeHandler
     {
-        public void HandleLayerPose(IYVRLayerHandle layerHandle, params object[] data)
+        public static InputDevice centerEyeDevice => InputDevices.GetDeviceAtXRNode(XRNode.Head);
+        public void HandleLayerPose(IYVRLayerHandle layerHandle, LayerShapeData data)
         {
-            int renderLayerId = (int) data[0];
-            Transform transform = data[1] as Transform;
-            YVRManager yvrManager = data[2] as YVRManager;
-            float angle = (float) data[3];
-
+            int renderLayerId = data.renderLayerId;
+            Transform transform = data.layerTransform;
+            float angle = data.centralAngle;
+            Transform camera = Camera.main.transform;
             float radius = CalculateRadius(angle, transform.lossyScale.x);
-
             Vector3 origin = transform.position - (transform.forward * radius);
             XRPose originPose = new XRPose() {orientation = transform.rotation, position = origin};
-
             XRPose xrHeadPose = XRPose.identity;
-            YVRCameraRig.centerEyeDevice.TryGetFeatureValue(CommonUsages.centerEyePosition, out xrHeadPose.position);
-            YVRCameraRig.centerEyeDevice.TryGetFeatureValue(CommonUsages.centerEyeRotation, out xrHeadPose.orientation);
-
+            centerEyeDevice.TryGetFeatureValue(CommonUsages.centerEyePosition, out xrHeadPose.position);
+            centerEyeDevice.TryGetFeatureValue(CommonUsages.centerEyeRotation, out xrHeadPose.orientation);
             XRPose pose = new XRPose();
-
-#if XR_CORE_UTILS
-        if (GameObject.FindObjectOfType<XROrigin>() != null)
-        {
-            pose =
- xrHeadPose * GameObject.FindObjectOfType<XROrigin>().Camera.transform.ToYVRPose().Inverse() * originPose;
-        }
-        else
-        {
-            pose = xrHeadPose * yvrManager.cameraRenderer.centerEyeCamera.transform.ToYVRPose().Inverse() * originPose;
-        }
-#else
-            pose = xrHeadPose * yvrManager.cameraRenderer.centerEyeCamera.transform.ToYVRPose().Inverse() * originPose;
-#endif
-
+            pose = xrHeadPose * camera.ToYVRPose().Inverse() * originPose;
             layerHandle.SetLayerPose(renderLayerId, pose);
         }
 
-        public void HandleLayerShape(IYVRLayerHandle layerHandle, params object[] data)
+        public void HandleLayerShape(IYVRLayerHandle layerHandle, LayerShapeData data)
         {
-            int renderLayerId = (int) data[0];
-            Transform transform = data[1] as Transform;
-            float angle = (float) data[2];
+            int renderLayerId = (int) data.renderLayerId;
+            Transform transform = data.layerTransform;
+            float angle = data.centralAngle;
 
             float radius = CalculateRadius(angle, transform.lossyScale.x);
             float ratio = transform.lossyScale.x / transform.lossyScale.y;
-
-            layerHandle.SetLayerCylinderParam(renderLayerId, radius, angle * Mathf.Deg2Rad, ratio);
+            float centralAngle = angle * Mathf.Deg2Rad;
+            layerHandle.SetLayerCylinderParam(renderLayerId, radius, centralAngle, ratio);
         }
 
         private float CalculateRadius(float angle, float arcLength)

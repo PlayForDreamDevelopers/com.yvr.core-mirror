@@ -823,8 +823,6 @@ namespace YVR.Core
             YVRSetImageTrackingUpdateCallback(callback);
         }
 
-        public override bool IsPassthroughInitialized() { return YVRIsPassthroughInitialized(); }
-
         public override bool SetPassthroughStyle(PassthroughStyle style)
         {
             return IsSuccess(YVRSetPassthroughStyle(ref style));

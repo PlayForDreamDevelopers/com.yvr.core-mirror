@@ -16,6 +16,8 @@ namespace YVR.Core.Editor.Packing
 
         public override string manifestElementName => "org.khronos.openxr.intent.category.IMMERSIVE_HMD";
 
+        private  string applicationModeName => "com.yvr.application.mode";
+
         public override void HandleManifestElementInfo()
         {
             var info = new ManifestTagInfo("/manifest/application/activity/intent-filter",
@@ -23,6 +25,18 @@ namespace YVR.Core.Editor.Packing
                                            manifestElementName);
 
             AndroidManifestHandler.UpdateManifestElement(manifestElementName, info);
+            RequireVROnly();
+        }
+
+        private void RequireVROnly()
+        {
+            var info = new ManifestTagInfo("/manifest/application",
+                                           "meta-data", "name",
+                                           applicationModeName,
+                                           new[] {"value", "vr_only"},
+                                           true);
+
+            AndroidManifestHandler.UpdateManifestElement(applicationModeName, info);
         }
     }
 }

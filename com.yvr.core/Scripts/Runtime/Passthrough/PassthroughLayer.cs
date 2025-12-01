@@ -77,6 +77,19 @@ namespace YVR.Core
 
     #endregion
 
+        void Start()
+        {
+            m_StylesHandler.SetStyleHandler(colorMapType);
+
+            if (HasControlsBasedColorMap())
+            {
+                // Compute initial color map from controls
+                UpdateColorMapFromControls(true);
+            }
+
+            // Flag style to be re-applied in LateUpdate()
+            styleDirty = true;
+        }
 
         void LateUpdate()
         {
@@ -155,22 +168,5 @@ namespace YVR.Core
 
             return weight;
         }
-
-        void OnEnable()
-        {
-            YVRPlugin.Instance.SetPassthrough(true);
-
-            m_StylesHandler.SetStyleHandler(colorMapType);
-
-            if (HasControlsBasedColorMap())
-            {
-                // Compute initial color map from controls
-                UpdateColorMapFromControls(true);
-            }
-
-            // Flag style to be re-applied in LateUpdate()
-            styleDirty = true;
-        }
-
     }
 }

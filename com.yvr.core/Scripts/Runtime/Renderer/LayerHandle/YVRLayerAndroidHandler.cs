@@ -94,7 +94,7 @@ namespace YVR.Core
             Action<IntPtr> onLayerPreSubmitCallback);
 
         [DllImport("yvrplugin")]
-        private static extern int yvrGetLayerColorHandle(int layerId, int index);
+        private static extern int yvrGetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask, int index);
 
         [DllImport("yvrplugin")]
         private static extern IntPtr yvrGetLayerSurface(int layerId);
@@ -274,8 +274,8 @@ namespace YVR.Core
 
         public int GetEyeBufferLayerId() { return yvrGetEyeBufferLayerId(); }
 
-        public int GetLayerColorHandle(int layerId, int index) { return yvrGetLayerColorHandle(layerId, index); }
-        public int GetLayerColorHandle(int layerId) { return yvrGetLayerColorHandle(layerId, -1); }
+        public int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask, int index) { return yvrGetLayerColorHandle(layerId, eyeMask, index); }
+        public int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask) { return yvrGetLayerColorHandle(layerId, eyeMask,-1); }
 
         public int GetLayersCount() { return yvrGetLayersCount(); }
 

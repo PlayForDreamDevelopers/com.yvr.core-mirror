@@ -14,9 +14,11 @@ namespace YVR.Core
     [Serializable]
     public enum YVRRenderLayerType
     {
+        Projection,
         Quad = 1,
         Cylinder,
         Equirect,
+        CubeProjection
     }
 
     public struct YVRLayerCreateInfo
@@ -33,13 +35,20 @@ namespace YVR.Core
         [MarshalAs(UnmanagedType.U1)] public bool isSurfaceSwapChain;
         public YVRRenderLayerType renderLayerType;
         public YVRRenderLayerEyeMask renderLayerEyeMask;
+        public int protectedContent;
 
         public YVRLayerCreateInfo(int depth, int width, int height, int swapChainBufferCount,
-                                  YVRRenderLayerType renderLayerType, int batchedLayerId = -1, YVRRenderLayerEyeMask renderLayerEyeMask = YVRRenderLayerEyeMask.kEyeMaskBoth, bool isSurfaceSwapChain = false, bool autoShowAfterCreated = true)
-            : this(depth, width, height, swapChainBufferCount, 0, 2, false, autoShowAfterCreated, isSurfaceSwapChain, renderLayerType, renderLayerEyeMask, batchedLayerId) { }
+            YVRRenderLayerType renderLayerType, int batchedLayerId = -1,
+            YVRRenderLayerEyeMask renderLayerEyeMask = YVRRenderLayerEyeMask.kEyeMaskBoth,
+            bool isSurfaceSwapChain = false, bool autoShowAfterCreated = true,int protectedContent = 0)
+            : this(depth, width, height, swapChainBufferCount, 0, 2, false, autoShowAfterCreated, isSurfaceSwapChain,
+                renderLayerType, renderLayerEyeMask, batchedLayerId, protectedContent)
+        {
+        }
 
         public YVRLayerCreateInfo(int depth, int width, int height, int swapChainBufferCount, int textureType,
-                                  int layerFlags, bool separateSwapChain, bool autoShowAfterCreated, bool isSurfaceSwapChain, YVRRenderLayerType renderLayerType, YVRRenderLayerEyeMask renderLayerEyeMask, int batchedLayerId)
+            int layerFlags, bool separateSwapChain, bool autoShowAfterCreated, bool isSurfaceSwapChain,
+            YVRRenderLayerType renderLayerType, YVRRenderLayerEyeMask renderLayerEyeMask, int batchedLayerId,int protectedContent)
         {
             this.depth = depth;
             this.width = width;
@@ -53,6 +62,7 @@ namespace YVR.Core
             this.renderLayerType = renderLayerType;
             this.renderLayerEyeMask = renderLayerEyeMask;
             this.batchedLayerId = batchedLayerId;
+            this.protectedContent = protectedContent;
         }
     }
 }

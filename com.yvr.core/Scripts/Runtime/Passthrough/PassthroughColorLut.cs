@@ -337,14 +337,7 @@ namespace YVR.Core
         private void Create(PassthroughColorLutData lutData)
         {
             m_LutData = lutData;
-            if (YVRPlugin.Instance.IsPassthroughInitialized())
-            {
-                InternalCreate();
-            }
-            else
-            {
-                m_CreateState = CreateState.Pending;
-            }
+            InternalCreate();
         }
 
         private void RefreshIfInitialized(bool isInitialized)

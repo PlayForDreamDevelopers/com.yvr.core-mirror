@@ -82,8 +82,8 @@ namespace YVR.Core
         void SetSurfaceDimensions(int layerId, int width, int height);
         IntPtr GetLayerSurface(int layerId);
         int GetEyeBufferLayerId();
-        int GetLayerColorHandle(int layerId, int index);
-        int GetLayerColorHandle(int layerId);
+        int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask, int index);
+        int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask);
         int[] GetAlLayersColorHandle();
         int GetLayersCount();
         void SetLayerPreSubmitCallback(Action onLayerPreSubmit);

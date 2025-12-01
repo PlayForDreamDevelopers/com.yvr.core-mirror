@@ -22,20 +22,20 @@ namespace YVR.Core
 #if XR_CORE_UTILS
                     s_CenterCamera = Object.FindObjectOfType<XROrigin>()?.Camera;
 #endif
-                    s_CenterCamera ??= Object.FindObjectOfType<YVRManager>().cameraRenderer.centerEyeCamera;
+                    s_CenterCamera ??= Camera.main;
                 }
 
                 return s_CenterCamera;
             }
         }
 
-        public void HandleLayerPose(IYVRLayerHandle layerHandle, params object[] data)
+        public void HandleLayerPose(IYVRLayerHandle layerHandle, LayerShapeData data)
         {
             using (s_HandleQuadLayerPoseMarker.Auto())
             {
-                int renderLayerId = (int) data[0];
-                Transform transform = data[1] as Transform;
-                Rect destRect = (Rect) data[4];
+                int renderLayerId = data.renderLayerId;
+                Transform transform = data.layerTransform;
+                Rect destRect = data.destRect;
 
                 destRect.width = Mathf.Clamp(destRect.width, 0f, 1f - destRect.x);
                 destRect.height = Mathf.Clamp(destRect.height, 0f, 1f - destRect.y);
@@ -55,12 +55,11 @@ namespace YVR.Core
             }
         }
 
-        public void HandleLayerShape(IYVRLayerHandle layerHandle, params object[] data)
+        public void HandleLayerShape(IYVRLayerHandle layerHandle, LayerShapeData data)
         {
-            int renderLayerId = (int) data[0];
-            Transform transform = data[1] as Transform;
-            Rect destRect = (Rect) data[4];
-
+            int renderLayerId = data.renderLayerId;
+            Transform transform = data.layerTransform;
+            Rect destRect = data.destRect;
             destRect.width = Mathf.Clamp(destRect.width, 0f, 1f - destRect.x);
             destRect.height = Mathf.Clamp(destRect.height, 0f, 1f - destRect.y);
 

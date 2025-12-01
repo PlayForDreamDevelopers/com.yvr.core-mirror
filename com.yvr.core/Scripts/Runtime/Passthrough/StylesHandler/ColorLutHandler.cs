@@ -41,11 +41,8 @@ namespace YVR.Core
 
             if (lastTexture != newTexture || m_CurrentFlipLutY != flipY)
             {
-                if (lut != null)
-                {
-                    lut.Dispose();
-                }
-
+                lut?.Dispose();
+                lut = null;
                 lastTexture = newTexture;
                 m_CurrentFlipLutY = flipY;
                 var colorLut = new PassthroughColorLut(newTexture, m_CurrentFlipLutY);
@@ -64,7 +61,6 @@ namespace YVR.Core
             else
             {
                 isValid = true;
-                Lut?.Dispose();
                 Lut = lut;
                 this.weight = weight;
             }

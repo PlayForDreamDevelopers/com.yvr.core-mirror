@@ -281,8 +281,6 @@ namespace YVR.Core
         public virtual void UnRegisterImageTemplate(string imageId) { }
         public virtual void SetImageTrackingUpdateCallback(Action<TrackedImageInfo> callback) { }
 
-        public virtual bool IsPassthroughInitialized() { return true; }
-
         public virtual bool SetPassthroughStyle(PassthroughStyle style) { return true; }
 
         public virtual bool CreatePassthroughColorLut(PassthroughColorLutChannels channels, UInt32 resolution,

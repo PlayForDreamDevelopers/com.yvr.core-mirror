@@ -103,12 +103,6 @@ namespace YVR.Core.XR.InputDevices
         private const string k_YVRAimHandDeviceManufacturerName = "YVR Aim";
 
         private HandType m_Handedness;
-        private YVRAimFlags m_PreviousFlags;
-        private bool m_WasIndexPressed;
-        private bool m_WasLittlePressed;
-        private bool m_WasMiddlePressed;
-        private bool m_WasRingPressed;
-        private bool m_WasTracked;
 
         static YVRAimHand() { RegisterLayout(); }
 
@@ -393,39 +387,19 @@ namespace YVR.Core.XR.InputDevices
             float pinchRing,
             float pinchLittle)
         {
-            if (aimFlags != m_PreviousFlags)
-            {
-                InputSystem.QueueDeltaStateEvent(this.aimFlags, (int) aimFlags);
-                m_PreviousFlags = aimFlags;
-            }
+            InputSystem.QueueDeltaStateEvent(this.aimFlags, (int)aimFlags);
 
             var isIndexPressed = aimFlags.HasFlag(YVRAimFlags.IndexPinching);
-            if (isIndexPressed != m_WasIndexPressed)
-            {
-                InputSystem.QueueDeltaStateEvent(indexPressed, isIndexPressed);
-                m_WasIndexPressed = isIndexPressed;
-            }
+            InputSystem.QueueDeltaStateEvent(indexPressed, isIndexPressed);
 
             var isMiddlePressed = aimFlags.HasFlag(YVRAimFlags.MiddlePinching);
-            if (isMiddlePressed != m_WasMiddlePressed)
-            {
-                InputSystem.QueueDeltaStateEvent(middlePressed, isMiddlePressed);
-                m_WasMiddlePressed = isMiddlePressed;
-            }
+            InputSystem.QueueDeltaStateEvent(middlePressed, isMiddlePressed);
 
             var isRingPressed = aimFlags.HasFlag(YVRAimFlags.RingPinching);
-            if (isRingPressed != m_WasRingPressed)
-            {
-                InputSystem.QueueDeltaStateEvent(ringPressed, isRingPressed);
-                m_WasRingPressed = isRingPressed;
-            }
+            InputSystem.QueueDeltaStateEvent(ringPressed, isRingPressed);
 
             var isLittlePressed = aimFlags.HasFlag(YVRAimFlags.LittlePinching);
-            if (isLittlePressed != m_WasLittlePressed)
-            {
-                InputSystem.QueueDeltaStateEvent(littlePressed, isLittlePressed);
-                m_WasLittlePressed = isLittlePressed;
-            }
+            InputSystem.QueueDeltaStateEvent(littlePressed, isLittlePressed);
 
             InputSystem.QueueDeltaStateEvent(pinchStrengthIndex, pinchIndex);
             InputSystem.QueueDeltaStateEvent(pinchStrengthMiddle, pinchMiddle);
@@ -433,23 +407,12 @@ namespace YVR.Core.XR.InputDevices
             InputSystem.QueueDeltaStateEvent(pinchStrengthLittle, pinchLittle);
             InputSystem.QueueDeltaStateEvent(devicePosition, aimPose.position);
             InputSystem.QueueDeltaStateEvent(deviceRotation, aimPose.rotation);
-            if ((aimFlags & YVRAimFlags.Computed) != YVRAimFlags.None)
-            {
-                if (!m_WasTracked)
-                {
-                    InputSystem.QueueDeltaStateEvent(trackingState,
-                                                     InputTrackingState.Position | InputTrackingState.Rotation);
-                    InputSystem.QueueDeltaStateEvent(isTracked, true);
-                }
-
-                m_WasTracked = true;
-            }
-            else if (m_WasTracked)
-            {
-                InputSystem.QueueDeltaStateEvent(trackingState, InputTrackingState.None);
-                InputSystem.QueueDeltaStateEvent(isTracked, false);
-                m_WasTracked = false;
-            }
+            var aimTracked = (aimFlags & YVRAimFlags.Computed) != YVRAimFlags.None;
+            InputSystem.QueueDeltaStateEvent(isTracked, aimTracked);
+            var inputTrackingState = aimTracked
+                ? InputTrackingState.Position | InputTrackingState.Rotation
+                : InputTrackingState.None;
+            InputSystem.QueueDeltaStateEvent(trackingState, inputTrackingState);
         }
 
         internal void UpdateHand(bool isLeft)

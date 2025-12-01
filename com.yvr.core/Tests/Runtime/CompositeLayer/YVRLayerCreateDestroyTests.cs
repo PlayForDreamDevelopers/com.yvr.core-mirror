@@ -142,7 +142,7 @@ namespace YVR.Core.Test
 
                 for (int i = 0; i < swapBufferCount * 2; i++)
                 {
-                    colorHandlesArray[i] = m_AndroidHandler.GetLayerColorHandle(m_LayerId, i % swapBufferCount);
+                    colorHandlesArray[i] = m_AndroidHandler.GetLayerColorHandle(m_LayerId, YVRRenderLayerEyeMask.kEyeMaskBoth, i % swapBufferCount);
                 }
 
                 for (int i = 0; i < swapBufferCount; i++)

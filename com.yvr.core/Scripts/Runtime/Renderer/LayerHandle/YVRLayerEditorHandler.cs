@@ -23,8 +23,8 @@ namespace YVR.Core
         public void SwapBufferLayer(int layerId) { }
         public int GetEyeBufferLayerId() { return 0; }
 
-        public int GetLayerColorHandle(int layerId, int index) { return 0; }
-        public int GetLayerColorHandle(int layerId) { return 0; }
+        public int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask, int index) { return 0; }
+        public int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask) { return 0; }
 
         public void SetLayerPose(in int layerId, in XRPose pose) { }
         public void SetLayerSize(in int layerId, XRSize size) { }
