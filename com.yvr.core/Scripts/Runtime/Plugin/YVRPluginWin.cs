@@ -82,10 +82,6 @@ namespace YVR.Core
             jointLocations.jointCount = handData.jointCount;
             jointLocations.handScale = handData.handScale;
             jointLocations.isActive = handData.isActive;
-            for (int i = 0; i < jointLocations.jointLocations.Length; i++)
-            {
-                jointLocations.jointLocations[i].pose.ToJointPosef(handType);
-            }
 
             if (handType == HandType.HandLeft)
             {

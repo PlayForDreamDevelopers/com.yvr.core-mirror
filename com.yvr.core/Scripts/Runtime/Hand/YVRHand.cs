@@ -37,7 +37,6 @@ namespace YVR.Core
                 for (int i = 0; i < handJoints.Count; ++i)
                 {
                     if (handJoints[i] == null) continue;
-                    m_HandJointLocations.jointLocations[i].pose.ToJointPosef(handType);
                     if (i == (int)HandJoint.JointWrist)
                     {
 #if UNITY_2022_1_OR_NEWER

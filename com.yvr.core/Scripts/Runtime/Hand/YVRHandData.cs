@@ -102,13 +102,6 @@ namespace YVR.Core
                                  orientation.x, orientation.y, orientation.z, orientation.w,
                                  position.x, position.y, position.z);
         }
-
-        public void ToJointPosef(HandType hand)
-        {
-            Quaternion rot = orientation;
-            rot *=  Quaternion.AngleAxis(180f, Vector3.up);
-            orientation = rot;
-        }
     }
 
     public struct HandJointLocation
