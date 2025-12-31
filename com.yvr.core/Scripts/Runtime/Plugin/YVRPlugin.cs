@@ -295,5 +295,7 @@ namespace YVR.Core
         public virtual bool UpdatePassthroughColorLut(ulong colorLut, PassthroughColorLutData data) { return true; }
 
         public virtual float GetIPD() { return 0.0f; }
+
+        public virtual void SetColorSpace(ColorSpaceType colorSpaceType) { }
     }
 }

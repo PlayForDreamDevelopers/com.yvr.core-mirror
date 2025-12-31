@@ -368,6 +368,8 @@ namespace YVR.Core
         [DllImport("yvrplugin")]
         private static extern float YVRGetIPD();
 
+        [DllImport("yvrplugin")]
+        private static extern void YVRSetColorSpace(ColorSpaceType colorSpaceType);
 
         //---------------------------------------------------------------------------------------------
         public static bool IsSuccess(int result) => result >= 0;
@@ -846,5 +848,7 @@ namespace YVR.Core
         }
 
         public override float GetIPD() { return YVRGetIPD(); }
+
+        public override void SetColorSpace(ColorSpaceType colorSpaceType) { YVRSetColorSpace(colorSpaceType); }
     }
 }
