@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Equirect2ShapeHandler
+  commentId: T:YVR.Core.Equirect2ShapeHandler
+  id: Equirect2ShapeHandler
+  parent: YVR.Core
+  children:
+  - YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  - YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: Equirect2ShapeHandler
+  nameWithType: Equirect2ShapeHandler
+  fullName: YVR.Core.Equirect2ShapeHandler
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Equirect2ShapeHandler
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public class Equirect2ShapeHandler : ILayerShapeHandler'
+    content.vb: Public Class Equirect2ShapeHandler Implements ILayerShapeHandler
+  inheritance:
+  - System.Object
+  implements:
+  - YVR.Core.ILayerShapeHandler
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  commentId: M:YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  id: HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  parent: YVR.Core.Equirect2ShapeHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleLayerPose(IYVRLayerHandle, params object[])
+  nameWithType: Equirect2ShapeHandler.HandleLayerPose(IYVRLayerHandle, params object[])
+  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, params object[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandleLayerPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void HandleLayerPose(IYVRLayerHandle layerHandle, params object[] data)
+    parameters:
+    - id: layerHandle
+      type: YVR.Core.IYVRLayerHandle
+    - id: data
+      type: System.Object[]
+    content.vb: Public Sub HandleLayerPose(layerHandle As IYVRLayerHandle, ParamArray data As Object())
+  overload: YVR.Core.Equirect2ShapeHandler.HandleLayerPose*
+  implements:
+  - YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  nameWithType.vb: Equirect2ShapeHandler.HandleLayerPose(IYVRLayerHandle, ParamArray Object())
+  fullName.vb: YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, ParamArray Object())
+  name.vb: HandleLayerPose(IYVRLayerHandle, ParamArray Object())
+- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  commentId: M:YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  id: HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  parent: YVR.Core.Equirect2ShapeHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleLayerShape(IYVRLayerHandle, params object[])
+  nameWithType: Equirect2ShapeHandler.HandleLayerShape(IYVRLayerHandle, params object[])
+  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, params object[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandleLayerShape
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+    startLine: 34
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void HandleLayerShape(IYVRLayerHandle layerHandle, params object[] data)
+    parameters:
+    - id: layerHandle
+      type: YVR.Core.IYVRLayerHandle
+    - id: data
+      type: System.Object[]
+    content.vb: Public Sub HandleLayerShape(layerHandle As IYVRLayerHandle, ParamArray data As Object())
+  overload: YVR.Core.Equirect2ShapeHandler.HandleLayerShape*
+  implements:
+  - YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  nameWithType.vb: Equirect2ShapeHandler.HandleLayerShape(IYVRLayerHandle, ParamArray Object())
+  fullName.vb: YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, ParamArray Object())
+  name.vb: HandleLayerShape(IYVRLayerHandle, ParamArray Object())
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YVR.Core.ILayerShapeHandler
+  commentId: T:YVR.Core.ILayerShapeHandler
+  parent: YVR.Core
+  href: YVR.Core.ILayerShapeHandler.html
+  name: ILayerShapeHandler
+  nameWithType: ILayerShapeHandler
+  fullName: YVR.Core.ILayerShapeHandler
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerPose*
+  commentId: Overload:YVR.Core.Equirect2ShapeHandler.HandleLayerPose
+  href: YVR.Core.Equirect2ShapeHandler.HandleLayerPose.html#YVR_Core_Equirect2ShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_System_Object___
+  name: HandleLayerPose
+  nameWithType: Equirect2ShapeHandler.HandleLayerPose
+  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerPose
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  parent: YVR.Core.ILayerShapeHandler
+  isExternal: true
+  href: YVR.Core.ILayerShapeHandler.HandleLayerPose.html#YVR_Core_ILayerShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_System_Object___
+  name: HandleLayerPose(IYVRLayerHandle, params object[])
+  nameWithType: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, params object[])
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, params object[])
+  nameWithType.vb: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, ParamArray Object())
+  fullName.vb: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, ParamArray Object())
+  name.vb: HandleLayerPose(IYVRLayerHandle, ParamArray Object())
+  spec.csharp:
+  - uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+    name: HandleLayerPose
+    href: YVR.Core.ILayerShapeHandler.HandleLayerPose.html#YVR_Core_ILayerShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_System_Object___
+  - name: (
+  - uid: YVR.Core.IYVRLayerHandle
+    name: IYVRLayerHandle
+    href: YVR.Core.IYVRLayerHandle.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+    name: HandleLayerPose
+    href: YVR.Core.ILayerShapeHandler.HandleLayerPose.html#YVR_Core_ILayerShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_System_Object___
+  - name: (
+  - uid: YVR.Core.IYVRLayerHandle
+    name: IYVRLayerHandle
+    href: YVR.Core.IYVRLayerHandle.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+- uid: YVR.Core.IYVRLayerHandle
+  commentId: T:YVR.Core.IYVRLayerHandle
+  parent: YVR.Core
+  href: YVR.Core.IYVRLayerHandle.html
+  name: IYVRLayerHandle
+  nameWithType: IYVRLayerHandle
+  fullName: YVR.Core.IYVRLayerHandle
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerShape*
+  commentId: Overload:YVR.Core.Equirect2ShapeHandler.HandleLayerShape
+  href: YVR.Core.Equirect2ShapeHandler.HandleLayerShape.html#YVR_Core_Equirect2ShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_System_Object___
+  name: HandleLayerShape
+  nameWithType: Equirect2ShapeHandler.HandleLayerShape
+  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerShape
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  parent: YVR.Core.ILayerShapeHandler
+  isExternal: true
+  href: YVR.Core.ILayerShapeHandler.HandleLayerShape.html#YVR_Core_ILayerShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_System_Object___
+  name: HandleLayerShape(IYVRLayerHandle, params object[])
+  nameWithType: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, params object[])
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, params object[])
+  nameWithType.vb: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, ParamArray Object())
+  fullName.vb: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, ParamArray Object())
+  name.vb: HandleLayerShape(IYVRLayerHandle, ParamArray Object())
+  spec.csharp:
+  - uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+    name: HandleLayerShape
+    href: YVR.Core.ILayerShapeHandler.HandleLayerShape.html#YVR_Core_ILayerShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_System_Object___
+  - name: (
+  - uid: YVR.Core.IYVRLayerHandle
+    name: IYVRLayerHandle
+    href: YVR.Core.IYVRLayerHandle.html
+  - name: ','
+  - name: " "
+  - name: params
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+    name: HandleLayerShape
+    href: YVR.Core.ILayerShapeHandler.HandleLayerShape.html#YVR_Core_ILayerShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_System_Object___
+  - name: (
+  - uid: YVR.Core.IYVRLayerHandle
+    name: IYVRLayerHandle
+    href: YVR.Core.IYVRLayerHandle.html
+  - name: ','
+  - name: " "
+  - name: ParamArray
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+  - name: )
+memberLayout: SeparatePages

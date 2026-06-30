@@ -1,0 +1,538 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ImageTracking.TrackedImageInfo
+  commentId: T:YVR.Core.ImageTracking.TrackedImageInfo
+  id: TrackedImageInfo
+  parent: YVR.Core.ImageTracking
+  children:
+  - YVR.Core.ImageTracking.TrackedImageInfo.confidence
+  - YVR.Core.ImageTracking.TrackedImageInfo.imageId
+  - YVR.Core.ImageTracking.TrackedImageInfo.isActive
+  - YVR.Core.ImageTracking.TrackedImageInfo.pose
+  - YVR.Core.ImageTracking.TrackedImageInfo.size
+  - YVR.Core.ImageTracking.TrackedImageInfo.timestamp
+  langs:
+  - csharp
+  - vb
+  name: TrackedImageInfo
+  nameWithType: TrackedImageInfo
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TrackedImageInfo
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public struct TrackedImageInfo
+    content.vb: Public Structure TrackedImageInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.ImageTracking.TrackedImageInfo.pose
+  commentId: F:YVR.Core.ImageTracking.TrackedImageInfo.pose
+  id: pose
+  parent: YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: pose
+  nameWithType: TrackedImageInfo.pose
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo.pose
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: pose
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public XRPose pose
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public pose As XRPose
+- uid: YVR.Core.ImageTracking.TrackedImageInfo.imageId
+  commentId: F:YVR.Core.ImageTracking.TrackedImageInfo.imageId
+  id: imageId
+  parent: YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: imageId
+  nameWithType: TrackedImageInfo.imageId
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo.imageId
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: imageId
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public string imageId
+    return:
+      type: System.String
+    content.vb: Public imageId As String
+- uid: YVR.Core.ImageTracking.TrackedImageInfo.isActive
+  commentId: F:YVR.Core.ImageTracking.TrackedImageInfo.isActive
+  id: isActive
+  parent: YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: isActive
+  nameWithType: TrackedImageInfo.isActive
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo.isActive
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isActive
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public int isActive
+    return:
+      type: System.Int32
+    content.vb: Public isActive As Integer
+- uid: YVR.Core.ImageTracking.TrackedImageInfo.confidence
+  commentId: F:YVR.Core.ImageTracking.TrackedImageInfo.confidence
+  id: confidence
+  parent: YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: confidence
+  nameWithType: TrackedImageInfo.confidence
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo.confidence
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: confidence
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public float confidence
+    return:
+      type: System.Single
+    content.vb: Public confidence As Single
+- uid: YVR.Core.ImageTracking.TrackedImageInfo.timestamp
+  commentId: F:YVR.Core.ImageTracking.TrackedImageInfo.timestamp
+  id: timestamp
+  parent: YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: timestamp
+  nameWithType: TrackedImageInfo.timestamp
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo.timestamp
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: timestamp
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public long timestamp
+    return:
+      type: System.Int64
+    content.vb: Public timestamp As Long
+- uid: YVR.Core.ImageTracking.TrackedImageInfo.size
+  commentId: F:YVR.Core.ImageTracking.TrackedImageInfo.size
+  id: size
+  parent: YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: size
+  nameWithType: TrackedImageInfo.size
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo.size
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: size
+    path: ../com.yvr.core/Scripts/Runtime/ImageTracking/TrackedImageInfo.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.ImageTracking
+  syntax:
+    content: public Vector2 size
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public size As Vector2
+references:
+- uid: YVR.Core.ImageTracking
+  commentId: N:YVR.Core.ImageTracking
+  href: YVR.html
+  name: YVR.Core.ImageTracking
+  nameWithType: YVR.Core.ImageTracking
+  fullName: YVR.Core.ImageTracking
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.ImageTracking
+    name: ImageTracking
+    href: YVR.Core.ImageTracking.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.ImageTracking
+    name: ImageTracking
+    href: YVR.Core.ImageTracking.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  parent: YVR.Core
+  href: YVR.Core.XRPose.html
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+memberLayout: SeparatePages

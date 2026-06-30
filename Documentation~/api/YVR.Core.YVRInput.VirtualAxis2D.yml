@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.VirtualAxis2D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis2D
+  id: YVRInput.VirtualAxis2D
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.VirtualAxis2D.None
+  - YVR.Core.YVRInput.VirtualAxis2D.Thumbstick
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.VirtualAxis2D
+  nameWithType: YVRInput.VirtualAxis2D
+  fullName: YVR.Core.YVRInput.VirtualAxis2D
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VirtualAxis2D
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 457
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Virtual 2D Axis mapping for controllers
+  example: []
+  syntax:
+    content: public enum YVRInput.VirtualAxis2D
+    content.vb: Public Enum YVRInput.VirtualAxis2D
+- uid: YVR.Core.YVRInput.VirtualAxis2D.None
+  commentId: F:YVR.Core.YVRInput.VirtualAxis2D.None
+  id: None
+  parent: YVR.Core.YVRInput.VirtualAxis2D
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.VirtualAxis2D.None
+  fullName: YVR.Core.YVRInput.VirtualAxis2D.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 462
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a virtual 2D Axis
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.VirtualAxis2D
+- uid: YVR.Core.YVRInput.VirtualAxis2D.Thumbstick
+  commentId: F:YVR.Core.YVRInput.VirtualAxis2D.Thumbstick
+  id: Thumbstick
+  parent: YVR.Core.YVRInput.VirtualAxis2D
+  langs:
+  - csharp
+  - vb
+  name: Thumbstick
+  nameWithType: YVRInput.VirtualAxis2D.Thumbstick
+  fullName: YVR.Core.YVRInput.VirtualAxis2D.Thumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Thumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 466
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick 2D Axis
+  example: []
+  syntax:
+    content: Thumbstick = 2
+    return:
+      type: YVR.Core.YVRInput.VirtualAxis2D
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.VirtualAxis2D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis2D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualAxis2D
+  nameWithType: YVRInput.VirtualAxis2D
+  fullName: YVR.Core.YVRInput.VirtualAxis2D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: VirtualAxis2D
+    href: YVR.Core.YVRInput.VirtualAxis2D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: VirtualAxis2D
+    href: YVR.Core.YVRInput.VirtualAxis2D.html
+memberLayout: SeparatePages

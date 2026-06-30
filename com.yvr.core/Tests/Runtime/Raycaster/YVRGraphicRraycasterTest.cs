@@ -31,7 +31,11 @@ namespace YVR.Core.Test
             Screen.SetResolution(GraphicsTestUtil.GetGraphicsTestSetting.ImageComparisonSettings.TargetWidth,
                 GraphicsTestUtil.GetGraphicsTestSetting.ImageComparisonSettings.TargetHeight, false);
             GraphicsTestUtil.YVRStartReplay(recordPath);
-            RaycastTest raycastTest = GameObject.FindObjectOfType<RaycastTest>();
+#if UNITY_2023_1_OR_NEWER
+            RaycastTest raycastTest = Object.FindAnyObjectByType<RaycastTest>();
+#else
+            RaycastTest raycastTest = Object.FindObjectOfType<RaycastTest>();
+#endif
             yield return new WaitUntil(() => { return raycastTest.clickMark; });
             Debug.Log("ButtonClickTest start");
             GraphicsTestUtil.ComparedGraphics(referenceImagePath);
@@ -46,7 +50,11 @@ namespace YVR.Core.Test
         [TestCaseSource(nameof(s_SliderDragTestParm))]
         public IEnumerator SliderDragTest(string referenceImagePath)
         {
-            RaycastTest raycastTest = GameObject.FindObjectOfType<RaycastTest>();
+#if UNITY_2023_1_OR_NEWER
+            RaycastTest raycastTest = Object.FindAnyObjectByType<RaycastTest>();
+#else
+            RaycastTest raycastTest = Object.FindObjectOfType<RaycastTest>();
+#endif
             yield return new WaitUntil(() => { return raycastTest.sliderDrag.value==1; });
             GraphicsTestUtil.ComparedGraphics(referenceImagePath);
         }
@@ -60,7 +68,11 @@ namespace YVR.Core.Test
         [TestCaseSource(nameof(s_ScrollViewDragTestParm))]
         public IEnumerator ScrollViewDragTest(string referenceImagePath)
         {
-            RaycastTest raycastTest = GameObject.FindObjectOfType<RaycastTest>();
+#if UNITY_2023_1_OR_NEWER
+            RaycastTest raycastTest = Object.FindAnyObjectByType<RaycastTest>();
+#else
+            RaycastTest raycastTest = Object.FindObjectOfType<RaycastTest>();
+#endif
             yield return new WaitUntil(() => { return raycastTest.scrollRect.verticalScrollbar.value == 0; });
             GraphicsTestUtil.ComparedGraphics(referenceImagePath);
         }
@@ -74,7 +86,11 @@ namespace YVR.Core.Test
         [TestCaseSource(nameof(s_RaycastHitGameObjectTestParm))]
         public IEnumerator RaycastHitGameObjectTest(string referenceImagePath)
         {
-            RaycastTest raycastTest = GameObject.FindObjectOfType<RaycastTest>();
+#if UNITY_2023_1_OR_NEWER
+            RaycastTest raycastTest = Object.FindAnyObjectByType<RaycastTest>();
+#else
+            RaycastTest raycastTest = Object.FindObjectOfType<RaycastTest>();
+#endif
             yield return new WaitUntil(() => { return raycastTest.RaycastHitGameObject(); });
             GraphicsTestUtil.ComparedGraphics(referenceImagePath);
         }

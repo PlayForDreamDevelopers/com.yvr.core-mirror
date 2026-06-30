@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.RawTouch
+  commentId: T:YVR.Core.YVRInput.RawTouch
+  id: YVRInput.RawTouch
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.RawTouch.A
+  - YVR.Core.YVRInput.RawTouch.All
+  - YVR.Core.YVRInput.RawTouch.B
+  - YVR.Core.YVRInput.RawTouch.LIndexTrigger
+  - YVR.Core.YVRInput.RawTouch.LThumbstick
+  - YVR.Core.YVRInput.RawTouch.None
+  - YVR.Core.YVRInput.RawTouch.RIndexTrigger
+  - YVR.Core.YVRInput.RawTouch.RThumbstick
+  - YVR.Core.YVRInput.RawTouch.X
+  - YVR.Core.YVRInput.RawTouch.Y
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.RawTouch
+  nameWithType: YVRInput.RawTouch
+  fullName: YVR.Core.YVRInput.RawTouch
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RawTouch
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 327
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Raw touch mapping for controllers
+  example: []
+  syntax:
+    content: 'public enum YVRInput.RawTouch : uint'
+    content.vb: Public Enum YVRInput.RawTouch As UInteger
+- uid: YVR.Core.YVRInput.RawTouch.None
+  commentId: F:YVR.Core.YVRInput.RawTouch.None
+  id: None
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.RawTouch.None
+  fullName: YVR.Core.YVRInput.RawTouch.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 332
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a touch
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.A
+  commentId: F:YVR.Core.YVRInput.RawTouch.A
+  id: A
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: YVRInput.RawTouch.A
+  fullName: YVR.Core.YVRInput.RawTouch.A
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: A
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 336
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: A Touch on right controller
+  example: []
+  syntax:
+    content: A = 1
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.B
+  commentId: F:YVR.Core.YVRInput.RawTouch.B
+  id: B
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: YVRInput.RawTouch.B
+  fullName: YVR.Core.YVRInput.RawTouch.B
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: B
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 340
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: B Touch on right controller
+  example: []
+  syntax:
+    content: B = 2
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.X
+  commentId: F:YVR.Core.YVRInput.RawTouch.X
+  id: X
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: YVRInput.RawTouch.X
+  fullName: YVR.Core.YVRInput.RawTouch.X
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: X
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 344
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: X Touch on left controller
+  example: []
+  syntax:
+    content: X = 4
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.Y
+  commentId: F:YVR.Core.YVRInput.RawTouch.Y
+  id: Y
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: YVRInput.RawTouch.Y
+  fullName: YVR.Core.YVRInput.RawTouch.Y
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Y
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 348
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Y Touch on right controller
+  example: []
+  syntax:
+    content: Y = 8
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.LIndexTrigger
+  commentId: F:YVR.Core.YVRInput.RawTouch.LIndexTrigger
+  id: LIndexTrigger
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: LIndexTrigger
+  nameWithType: YVRInput.RawTouch.LIndexTrigger
+  fullName: YVR.Core.YVRInput.RawTouch.LIndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LIndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 352
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger Touch on left controller
+  example: []
+  syntax:
+    content: LIndexTrigger = 64
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.RIndexTrigger
+  commentId: F:YVR.Core.YVRInput.RawTouch.RIndexTrigger
+  id: RIndexTrigger
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: RIndexTrigger
+  nameWithType: YVRInput.RawTouch.RIndexTrigger
+  fullName: YVR.Core.YVRInput.RawTouch.RIndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RIndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 356
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger Touch on right controller
+  example: []
+  syntax:
+    content: RIndexTrigger = 128
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.LThumbstick
+  commentId: F:YVR.Core.YVRInput.RawTouch.LThumbstick
+  id: LThumbstick
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: LThumbstick
+  nameWithType: YVRInput.RawTouch.LThumbstick
+  fullName: YVR.Core.YVRInput.RawTouch.LThumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 360
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Touch on left controller
+  example: []
+  syntax:
+    content: LThumbstick = 1024
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.RThumbstick
+  commentId: F:YVR.Core.YVRInput.RawTouch.RThumbstick
+  id: RThumbstick
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: RThumbstick
+  nameWithType: YVRInput.RawTouch.RThumbstick
+  fullName: YVR.Core.YVRInput.RawTouch.RThumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 364
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Touch on right controller
+  example: []
+  syntax:
+    content: RThumbstick = 2048
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+- uid: YVR.Core.YVRInput.RawTouch.All
+  commentId: F:YVR.Core.YVRInput.RawTouch.All
+  id: All
+  parent: YVR.Core.YVRInput.RawTouch
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: YVRInput.RawTouch.All
+  fullName: YVR.Core.YVRInput.RawTouch.All
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: All
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 368
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: All touches on both controllers
+  example: []
+  syntax:
+    content: All = 4294967295
+    return:
+      type: YVR.Core.YVRInput.RawTouch
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.RawTouch
+  commentId: T:YVR.Core.YVRInput.RawTouch
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawTouch
+  nameWithType: YVRInput.RawTouch
+  fullName: YVR.Core.YVRInput.RawTouch
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: RawTouch
+    href: YVR.Core.YVRInput.RawTouch.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: RawTouch
+    href: YVR.Core.YVRInput.RawTouch.html
+memberLayout: SeparatePages

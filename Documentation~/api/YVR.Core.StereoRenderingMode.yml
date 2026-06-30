@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.StereoRenderingMode
+  commentId: T:YVR.Core.StereoRenderingMode
+  id: StereoRenderingMode
+  parent: YVR.Core
+  children:
+  - YVR.Core.StereoRenderingMode.MultiPass
+  - YVR.Core.StereoRenderingMode.Multiview
+  - YVR.Core.StereoRenderingMode.QuadViews
+  langs:
+  - csharp
+  - vb
+  name: StereoRenderingMode
+  nameWithType: StereoRenderingMode
+  fullName: YVR.Core.StereoRenderingMode
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: StereoRenderingMode
+    path: ../com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum StereoRenderingMode
+    content.vb: Public Enum StereoRenderingMode
+- uid: YVR.Core.StereoRenderingMode.MultiPass
+  commentId: F:YVR.Core.StereoRenderingMode.MultiPass
+  id: MultiPass
+  parent: YVR.Core.StereoRenderingMode
+  langs:
+  - csharp
+  - vb
+  name: MultiPass
+  nameWithType: StereoRenderingMode.MultiPass
+  fullName: YVR.Core.StereoRenderingMode.MultiPass
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: MultiPass
+    path: ../com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: MultiPass = 0
+    return:
+      type: YVR.Core.StereoRenderingMode
+- uid: YVR.Core.StereoRenderingMode.Multiview
+  commentId: F:YVR.Core.StereoRenderingMode.Multiview
+  id: Multiview
+  parent: YVR.Core.StereoRenderingMode
+  langs:
+  - csharp
+  - vb
+  name: Multiview
+  nameWithType: StereoRenderingMode.Multiview
+  fullName: YVR.Core.StereoRenderingMode.Multiview
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Multiview
+    path: ../com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Multiview = 2
+    return:
+      type: YVR.Core.StereoRenderingMode
+- uid: YVR.Core.StereoRenderingMode.QuadViews
+  commentId: F:YVR.Core.StereoRenderingMode.QuadViews
+  id: QuadViews
+  parent: YVR.Core.StereoRenderingMode
+  langs:
+  - csharp
+  - vb
+  name: QuadViews
+  nameWithType: StereoRenderingMode.QuadViews
+  fullName: YVR.Core.StereoRenderingMode.QuadViews
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: QuadViews
+    path: ../com.yvr.core/Scripts/Runtime/XR/StereoRenderingMode.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: QuadViews = 3
+    return:
+      type: YVR.Core.StereoRenderingMode
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.StereoRenderingMode
+  commentId: T:YVR.Core.StereoRenderingMode
+  parent: YVR.Core
+  href: YVR.Core.StereoRenderingMode.html
+  name: StereoRenderingMode
+  nameWithType: StereoRenderingMode
+  fullName: YVR.Core.StereoRenderingMode
+memberLayout: SeparatePages

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad64e553785be0f4889c034e5d8b4bd0, type: 3}
+  m_Name: ToTrackImagesCollectionSO
+  m_EditorClassIdentifier: 
+  toTrackImages:
+  - imageId: jetPost
+    image: {fileID: 2800000, guid: fcf76ef17798f1f44b95c4d7a5cb9990, type: 3}
+    size: {x: 0.594, y: 0.841}
+    imageFilePath: it_AWE_JetPost.jpg
+  - imageId: whatif
+    image: {fileID: 2800000, guid: f772bb60aee373844a2ffd67ff188e10, type: 3}
+    size: {x: 0.21, y: 0.297}
+    imageFilePath: it_whatif.jpg
+  - imageId: 0001
+    image: {fileID: 2800000, guid: e6033854471238e449514d0c46470709, type: 3}
+    size: {x: 0.841, y: 1.189}
+    imageFilePath: it_0001_size@0.841x1.189_id@0001.png
+  - imageId: dronePost
+    image: {fileID: 2800000, guid: 93940716a71de6c458a542375bfefdcc, type: 3}
+    size: {x: 0.841, y: 1.189}
+    imageFilePath: it_AWE_DronePost.png

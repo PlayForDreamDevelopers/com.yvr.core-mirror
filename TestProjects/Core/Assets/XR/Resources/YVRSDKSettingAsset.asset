@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2226f49630b27a41b028afb9af4b81d, type: 3}
+  m_Name: YVRSDKSettingAsset
+  m_EditorClassIdentifier: 
+  ignoreSDKSetting: 1
+  appIDChecked: 1
+  manifestTagInfosList:
+  - nodePath: /manifest/application
+    tag: meta-data
+    attrName: name
+    attrValue: yvr.sdk.version
+    attrs:
+    - value
+    - Unity_core_1.28.26|Unity_utilities_0.15.14
+    required: 1
+  - nodePath: /manifest
+    tag: uses-feature
+    attrName: name
+    attrValue: android.hardware.vr.headtracking
+    attrs:
+    - version
+    - 1
+    - required
+    - true
+    required: 1
+  - nodePath: /manifest
+    tag: uses-feature
+    attrName: name
+    attrValue: yvr.software.quadviews
+    attrs:
+    - required
+    - false
+    required: 0
+  - nodePath: /manifest
+    tag: uses-permission
+    attrName: name
+    attrValue: com.yvr.permission.USE_SCENE
+    attrs: []
+    required: 0
+  - nodePath: /manifest/application/activity/intent-filter
+    tag: category
+    attrName: name
+    attrValue: org.khronos.openxr.intent.category.IMMERSIVE_HMD
+    attrs: []
+    required: 1
+  - nodePath: /manifest/application
+    tag: meta-data
+    attrName: name
+    attrValue: com.yvr.application.mode
+    attrs:
+    - value
+    - vr_only
+    required: 1
+  - nodePath: /manifest
+    tag: uses-permission
+    attrName: name
+    attrValue: org.khronos.openxr.permission.OPENXR_SYSTEM
+    attrs: []
+    required: 1
+  - nodePath: /manifest
+    tag: uses-permission
+    attrName: name
+    attrValue: org.khronos.openxr.permission.OPENXR
+    attrs: []
+    required: 1
+  - nodePath: /manifest/queries
+    tag: provider
+    attrName: authorities
+    attrValue: org.khronos.openxr.runtime_broker;org.khronos.openxr.system_runtime_broker
+    attrs: []
+    required: 1
+  - nodePath: /manifest/queries
+    tag: intent/action
+    attrName: name
+    attrValue: org.khronos.openxr.OpenXRRuntimeService
+    attrs: []
+    required: 1
+  - nodePath: /manifest/queries
+    tag: intent/action
+    attrName: name
+    attrValue: org.khronos.openxr.OpenXRApiLayerService
+    attrs: []
+    required: 1
+  - nodePath: /manifest
+    tag: uses-permission
+    attrName: name
+    attrValue: com.yvr.permission.EYE_TRACKING
+    attrs: []
+    required: 1
+  - nodePath: /manifest
+    tag: uses-feature
+    attrName: name
+    attrValue: yvr.software.eye_tracking
+    attrs:
+    - required
+    - true
+    required: 1
+  - nodePath: /manifest
+    tag: uses-feature
+    attrName: name
+    attrValue: yvr.software.largespace
+    attrs:
+    - required
+    - false
+    required: 0
+  - nodePath: /manifest
+    tag: uses-permission
+    attrName: name
+    attrValue: com.yvr.handtracking.permission.HAND_TRACKING
+    attrs: []
+    required: 1
+  - nodePath: /manifest
+    tag: uses-feature
+    attrName: name
+    attrValue: yvr.software.handtracking
+    attrs:
+    - required
+    - false
+    required: 1
+  - nodePath: /manifest/application
+    tag: meta-data
+    attrName: name
+    attrValue: com.yvr.ossplash
+    attrs:
+    - value
+    - true
+    required: 1
+  - nodePath: /manifest
+    tag: uses-permission
+    attrName: name
+    attrValue: com.yvr.permission.USE_ANCHOR_API
+    attrs: []
+    required: 0
+  packingAssetInfoList:
+  - unityAssetPath: Assets/Scenes/TestImageTracking/AWE_JetPost.jpg
+    usage: ImageTracking
+  - unityAssetPath: Assets/Scenes/TestImageTracking/whatif.jpg
+    usage: ImageTracking
+  - unityAssetPath: Assets/Scenes/TestImageTracking/0001_size@0.841x1.189_id@0001.png
+    usage: ImageTracking
+  - unityAssetPath: Assets/Scenes/TestImageTracking/AWE_DronePost.png
+    usage: ImageTracking
+  - unityAssetPath: Packages/com.unity.render-pipelines.core/Editor/Lighting/Icons/Advanced_Pressed_mini.png
+    usage: Splash
+  toDeletePackingAssetList: []

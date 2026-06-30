@@ -1,0 +1,1732 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRSpatialAnchor
+  commentId: T:YVR.Core.YVRSpatialAnchor
+  id: YVRSpatialAnchor
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor(UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  - YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor(System.UInt64,YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  - YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentType,YVR.Core.YVRSpatialAnchorComponentStatus@)
+  - YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(System.UInt64,YVR.Core.YVRSpatialAnchorSupportedComponent@)
+  - YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose(System.UInt64,UnityEngine.Vector3@,UnityEngine.Quaternion@,YVR.Core.YVRAnchorLocationFlags@)
+  - YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(System.UInt64,YVR.Core.YVRSpatialAnchorUUID@)
+  - YVR.Core.YVRSpatialAnchor.IsOrientationTracked(YVR.Core.YVRAnchorLocationFlags)
+  - YVR.Core.YVRSpatialAnchor.IsOrientationValid(YVR.Core.YVRAnchorLocationFlags)
+  - YVR.Core.YVRSpatialAnchor.IsPositionTracked(YVR.Core.YVRAnchorLocationFlags)
+  - YVR.Core.YVRSpatialAnchor.IsPositionValid(YVR.Core.YVRAnchorLocationFlags)
+  - YVR.Core.YVRSpatialAnchor.OnInit
+  - YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor(YVR.Core.YVRSpatialAnchorQueryInfo,System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}})
+  - YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor(YVR.Core.YVRSpatialAnchorSaveInfo,System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean})
+  - YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList(System.Collections.Generic.List{System.UInt64},YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{System.Boolean})
+  - YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  - YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentStatusSetInfo,System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean})
+  - YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  langs:
+  - csharp
+  - vb
+  name: YVRSpatialAnchor
+  nameWithType: YVRSpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRSpatialAnchor
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public class YVRSpatialAnchor : Singleton<YVRSpatialAnchor>'
+    content.vb: Public Class YVRSpatialAnchor Inherits Singleton(Of YVRSpatialAnchor)
+  inheritance:
+  - System.Object
+  - YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  inheritedMembers:
+  - YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.instance
+  - YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.createdInstance
+  - YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.Reset
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRSpatialAnchor.OnInit
+  commentId: M:YVR.Core.YVRSpatialAnchor.OnInit
+  id: OnInit
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: OnInit()
+  nameWithType: YVRSpatialAnchor.OnInit()
+  fullName: YVR.Core.YVRSpatialAnchor.OnInit()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: OnInit
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 115
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: protected override void OnInit()
+    content.vb: Protected Overrides Sub OnInit()
+  overridden: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.OnInit
+  overload: YVR.Core.YVRSpatialAnchor.OnInit*
+- uid: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor(UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor(UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  id: CreateSpatialAnchor(UnityEngine.Vector3,UnityEngine.Quaternion,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: CreateSpatialAnchor(Vector3, Quaternion, Action<YVRSpatialAnchorResult, bool>)
+  nameWithType: YVRSpatialAnchor.CreateSpatialAnchor(Vector3, Quaternion, Action<YVRSpatialAnchorResult, bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor(UnityEngine.Vector3, UnityEngine.Quaternion, System.Action<YVR.Core.YVRSpatialAnchorResult, bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CreateSpatialAnchor
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 132
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Creates a spatial anchor using the provided position and rotation.
+  example: []
+  syntax:
+    content: public void CreateSpatialAnchor(Vector3 position, Quaternion rotation, Action<YVRSpatialAnchorResult, bool> result)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position of the anchor
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: The rotation of the anchor
+    - id: result
+      type: System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean}
+      description: Callback for handling the result of the anchor creation process
+    content.vb: Public Sub CreateSpatialAnchor(position As Vector3, rotation As Quaternion, result As Action(Of YVRSpatialAnchorResult, Boolean))
+  overload: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor*
+  nameWithType.vb: YVRSpatialAnchor.CreateSpatialAnchor(Vector3, Quaternion, Action(Of YVRSpatialAnchorResult, Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor(UnityEngine.Vector3, UnityEngine.Quaternion, System.Action(Of YVR.Core.YVRSpatialAnchorResult, Boolean))
+  name.vb: CreateSpatialAnchor(Vector3, Quaternion, Action(Of YVRSpatialAnchorResult, Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor(YVR.Core.YVRSpatialAnchorSaveInfo,System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor(YVR.Core.YVRSpatialAnchorSaveInfo,System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean})
+  id: SaveSpatialAnchor(YVR.Core.YVRSpatialAnchorSaveInfo,System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: SaveSpatialAnchor(YVRSpatialAnchorSaveInfo, Action<YVRSpatialAnchorSaveCompleteInfo, bool>)
+  nameWithType: YVRSpatialAnchor.SaveSpatialAnchor(YVRSpatialAnchorSaveInfo, Action<YVRSpatialAnchorSaveCompleteInfo, bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor(YVR.Core.YVRSpatialAnchorSaveInfo, System.Action<YVR.Core.YVRSpatialAnchorSaveCompleteInfo, bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SaveSpatialAnchor
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 145
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Saves a spatial anchor using the provided save information.
+  example: []
+  syntax:
+    content: public void SaveSpatialAnchor(YVRSpatialAnchorSaveInfo saveInfo, Action<YVRSpatialAnchorSaveCompleteInfo, bool> callback)
+    parameters:
+    - id: saveInfo
+      type: YVR.Core.YVRSpatialAnchorSaveInfo
+      description: Information about the spatial anchor to be saved
+    - id: callback
+      type: System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean}
+      description: Callback for handling the completion of the spatial anchor save process
+    content.vb: Public Sub SaveSpatialAnchor(saveInfo As YVRSpatialAnchorSaveInfo, callback As Action(Of YVRSpatialAnchorSaveCompleteInfo, Boolean))
+  overload: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor*
+  nameWithType.vb: YVRSpatialAnchor.SaveSpatialAnchor(YVRSpatialAnchorSaveInfo, Action(Of YVRSpatialAnchorSaveCompleteInfo, Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor(YVR.Core.YVRSpatialAnchorSaveInfo, System.Action(Of YVR.Core.YVRSpatialAnchorSaveCompleteInfo, Boolean))
+  name.vb: SaveSpatialAnchor(YVRSpatialAnchorSaveInfo, Action(Of YVRSpatialAnchorSaveCompleteInfo, Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor(System.UInt64,YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor(System.UInt64,YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  id: EraseSpatialAnchor(System.UInt64,YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: EraseSpatialAnchor(ulong, YVRSpatialAnchorStorageLocation, Action<YVRSpatialAnchorResult, bool>)
+  nameWithType: YVRSpatialAnchor.EraseSpatialAnchor(ulong, YVRSpatialAnchorStorageLocation, Action<YVRSpatialAnchorResult, bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor(ulong, YVR.Core.YVRSpatialAnchorStorageLocation, System.Action<YVR.Core.YVRSpatialAnchorResult, bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EraseSpatialAnchor
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 161
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Erases a spatial anchor from the specified storage location.
+  example: []
+  syntax:
+    content: public void EraseSpatialAnchor(ulong anchorHandle, YVRSpatialAnchorStorageLocation location, Action<YVRSpatialAnchorResult, bool> callback)
+    parameters:
+    - id: anchorHandle
+      type: System.UInt64
+      description: The handle of the spatial anchor to be erased
+    - id: location
+      type: YVR.Core.YVRSpatialAnchorStorageLocation
+      description: The storage location from which the spatial anchor should be erased
+    - id: callback
+      type: System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean}
+      description: Callback for handling the result of the spatial anchor erasure process
+    content.vb: Public Sub EraseSpatialAnchor(anchorHandle As ULong, location As YVRSpatialAnchorStorageLocation, callback As Action(Of YVRSpatialAnchorResult, Boolean))
+  overload: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor*
+  nameWithType.vb: YVRSpatialAnchor.EraseSpatialAnchor(ULong, YVRSpatialAnchorStorageLocation, Action(Of YVRSpatialAnchorResult, Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor(ULong, YVR.Core.YVRSpatialAnchorStorageLocation, System.Action(Of YVR.Core.YVRSpatialAnchorResult, Boolean))
+  name.vb: EraseSpatialAnchor(ULong, YVRSpatialAnchorStorageLocation, Action(Of YVRSpatialAnchorResult, Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor(YVR.Core.YVRSpatialAnchorQueryInfo,System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}})
+  commentId: M:YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor(YVR.Core.YVRSpatialAnchorQueryInfo,System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}})
+  id: QuerySpatialAnchor(YVR.Core.YVRSpatialAnchorQueryInfo,System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: QuerySpatialAnchor(YVRSpatialAnchorQueryInfo, Action<List<YVRSpatialAnchorResult>>)
+  nameWithType: YVRSpatialAnchor.QuerySpatialAnchor(YVRSpatialAnchorQueryInfo, Action<List<YVRSpatialAnchorResult>>)
+  fullName: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor(YVR.Core.YVRSpatialAnchorQueryInfo, System.Action<System.Collections.Generic.List<YVR.Core.YVRSpatialAnchorResult>>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: QuerySpatialAnchor
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 174
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Queries spatial anchors based on the provided query information.
+  example: []
+  syntax:
+    content: public void QuerySpatialAnchor(YVRSpatialAnchorQueryInfo queryInfo, Action<List<YVRSpatialAnchorResult>> queryCallback)
+    parameters:
+    - id: queryInfo
+      type: YVR.Core.YVRSpatialAnchorQueryInfo
+      description: Information for the spatial anchor query
+    - id: queryCallback
+      type: System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}}
+      description: Callback for handling the results of the spatial anchor query
+    content.vb: Public Sub QuerySpatialAnchor(queryInfo As YVRSpatialAnchorQueryInfo, queryCallback As Action(Of List(Of YVRSpatialAnchorResult)))
+  overload: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor*
+  nameWithType.vb: YVRSpatialAnchor.QuerySpatialAnchor(YVRSpatialAnchorQueryInfo, Action(Of List(Of YVRSpatialAnchorResult)))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor(YVR.Core.YVRSpatialAnchorQueryInfo, System.Action(Of System.Collections.Generic.List(Of YVR.Core.YVRSpatialAnchorResult)))
+  name.vb: QuerySpatialAnchor(YVRSpatialAnchorQueryInfo, Action(Of List(Of YVRSpatialAnchorResult)))
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose(System.UInt64,UnityEngine.Vector3@,UnityEngine.Quaternion@,YVR.Core.YVRAnchorLocationFlags@)
+  commentId: M:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose(System.UInt64,UnityEngine.Vector3@,UnityEngine.Quaternion@,YVR.Core.YVRAnchorLocationFlags@)
+  id: GetSpatialAnchorPose(System.UInt64,UnityEngine.Vector3@,UnityEngine.Quaternion@,YVR.Core.YVRAnchorLocationFlags@)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialAnchorPose(ulong, out Vector3, out Quaternion, out YVRAnchorLocationFlags)
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorPose(ulong, out Vector3, out Quaternion, out YVRAnchorLocationFlags)
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose(ulong, out UnityEngine.Vector3, out UnityEngine.Quaternion, out YVR.Core.YVRAnchorLocationFlags)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetSpatialAnchorPose
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 207
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Retrieves the pose of a spatial anchor identified by the given handle.
+  example: []
+  syntax:
+    content: public bool GetSpatialAnchorPose(ulong anchorHandle, out Vector3 position, out Quaternion rotation, out YVRAnchorLocationFlags locationFlags)
+    parameters:
+    - id: anchorHandle
+      type: System.UInt64
+      description: The handle of the spatial anchor
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position of the spatial anchor
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: The rotation of the spatial anchor
+    - id: locationFlags
+      type: YVR.Core.YVRAnchorLocationFlags
+      description: Flags indicating the location of the spatial anchor
+    return:
+      type: System.Boolean
+      description: True if the spatial anchor pose was successfully retrieved; otherwise, false
+    content.vb: Public Function GetSpatialAnchorPose(anchorHandle As ULong, position As Vector3, rotation As Quaternion, locationFlags As YVRAnchorLocationFlags) As Boolean
+  overload: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose*
+  nameWithType.vb: YVRSpatialAnchor.GetSpatialAnchorPose(ULong, Vector3, Quaternion, YVRAnchorLocationFlags)
+  fullName.vb: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose(ULong, UnityEngine.Vector3, UnityEngine.Quaternion, YVR.Core.YVRAnchorLocationFlags)
+  name.vb: GetSpatialAnchorPose(ULong, Vector3, Quaternion, YVRAnchorLocationFlags)
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(System.UInt64,YVR.Core.YVRSpatialAnchorSupportedComponent@)
+  commentId: M:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(System.UInt64,YVR.Core.YVRSpatialAnchorSupportedComponent@)
+  id: GetSpatialAnchorEnumerateSupported(System.UInt64,YVR.Core.YVRSpatialAnchorSupportedComponent@)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialAnchorEnumerateSupported(ulong, out YVRSpatialAnchorSupportedComponent)
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(ulong, out YVRSpatialAnchorSupportedComponent)
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(ulong, out YVR.Core.YVRSpatialAnchorSupportedComponent)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetSpatialAnchorEnumerateSupported
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 227
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Retrieves the supported components of a spatial anchor identified by the given handle.
+  example: []
+  syntax:
+    content: public void GetSpatialAnchorEnumerateSupported(ulong anchorHandle, out YVRSpatialAnchorSupportedComponent components)
+    parameters:
+    - id: anchorHandle
+      type: System.UInt64
+      description: The handle of the spatial anchor
+    - id: components
+      type: YVR.Core.YVRSpatialAnchorSupportedComponent
+      description: Supported components of the spatial anchor
+    content.vb: Public Sub GetSpatialAnchorEnumerateSupported(anchorHandle As ULong, components As YVRSpatialAnchorSupportedComponent)
+  overload: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported*
+  nameWithType.vb: YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(ULong, YVRSpatialAnchorSupportedComponent)
+  fullName.vb: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported(ULong, YVR.Core.YVRSpatialAnchorSupportedComponent)
+  name.vb: GetSpatialAnchorEnumerateSupported(ULong, YVRSpatialAnchorSupportedComponent)
+- uid: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentStatusSetInfo,System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentStatusSetInfo,System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean})
+  id: SetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentStatusSetInfo,System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: SetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentStatusSetInfo, Action<YVRSpatialAnchorSetStatusCompleteInfo, bool>)
+  nameWithType: YVRSpatialAnchor.SetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentStatusSetInfo, Action<YVRSpatialAnchorSetStatusCompleteInfo, bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus(ulong, YVR.Core.YVRSpatialAnchorComponentStatusSetInfo, System.Action<YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo, bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetSpatialAnchorComponentStatus
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 240
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Sets the status of a component for a specific spatial anchor.
+  example: []
+  syntax:
+    content: public bool SetSpatialAnchorComponentStatus(ulong anchorHandle, YVRSpatialAnchorComponentStatusSetInfo setInfo, Action<YVRSpatialAnchorSetStatusCompleteInfo, bool> callback)
+    parameters:
+    - id: anchorHandle
+      type: System.UInt64
+      description: The handle of the spatial anchor
+    - id: setInfo
+      type: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+      description: Information for setting the status of the spatial anchor component
+    - id: callback
+      type: System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean}
+      description: Callback for handling the completion of the status setting process
+    return:
+      type: System.Boolean
+      description: True if setting the spatial anchor component status was successful; otherwise, false
+    content.vb: Public Function SetSpatialAnchorComponentStatus(anchorHandle As ULong, setInfo As YVRSpatialAnchorComponentStatusSetInfo, callback As Action(Of YVRSpatialAnchorSetStatusCompleteInfo, Boolean)) As Boolean
+  overload: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus*
+  nameWithType.vb: YVRSpatialAnchor.SetSpatialAnchorComponentStatus(ULong, YVRSpatialAnchorComponentStatusSetInfo, Action(Of YVRSpatialAnchorSetStatusCompleteInfo, Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus(ULong, YVR.Core.YVRSpatialAnchorComponentStatusSetInfo, System.Action(Of YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo, Boolean))
+  name.vb: SetSpatialAnchorComponentStatus(ULong, YVRSpatialAnchorComponentStatusSetInfo, Action(Of YVRSpatialAnchorSetStatusCompleteInfo, Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentType,YVR.Core.YVRSpatialAnchorComponentStatus@)
+  commentId: M:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentType,YVR.Core.YVRSpatialAnchorComponentStatus@)
+  id: GetSpatialAnchorComponentStatus(System.UInt64,YVR.Core.YVRSpatialAnchorComponentType,YVR.Core.YVRSpatialAnchorComponentStatus@)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentType, out YVRSpatialAnchorComponentStatus)
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorComponentStatus(ulong, YVRSpatialAnchorComponentType, out YVRSpatialAnchorComponentStatus)
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus(ulong, YVR.Core.YVRSpatialAnchorComponentType, out YVR.Core.YVRSpatialAnchorComponentStatus)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetSpatialAnchorComponentStatus
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 259
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Retrieves the status of a specific component for a spatial anchor identified by the given handle.
+  example: []
+  syntax:
+    content: public void GetSpatialAnchorComponentStatus(ulong anchorHandle, YVRSpatialAnchorComponentType componentType, out YVRSpatialAnchorComponentStatus status)
+    parameters:
+    - id: anchorHandle
+      type: System.UInt64
+      description: The handle of the spatial anchor
+    - id: componentType
+      type: YVR.Core.YVRSpatialAnchorComponentType
+      description: The type of the spatial anchor component
+    - id: status
+      type: YVR.Core.YVRSpatialAnchorComponentStatus
+      description: The status of the component for the spatial anchor
+    content.vb: Public Sub GetSpatialAnchorComponentStatus(anchorHandle As ULong, componentType As YVRSpatialAnchorComponentType, status As YVRSpatialAnchorComponentStatus)
+  overload: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus*
+  nameWithType.vb: YVRSpatialAnchor.GetSpatialAnchorComponentStatus(ULong, YVRSpatialAnchorComponentType, YVRSpatialAnchorComponentStatus)
+  fullName.vb: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus(ULong, YVR.Core.YVRSpatialAnchorComponentType, YVR.Core.YVRSpatialAnchorComponentStatus)
+  name.vb: GetSpatialAnchorComponentStatus(ULong, YVRSpatialAnchorComponentType, YVRSpatialAnchorComponentStatus)
+- uid: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  id: ShareSpatialAnchor(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: ShareSpatialAnchor(YVRSpatialAnchorShareInfo, Action<bool>)
+  nameWithType: YVRSpatialAnchor.ShareSpatialAnchor(YVRSpatialAnchorShareInfo, Action<bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor(YVR.Core.YVRSpatialAnchorShareInfo, System.Action<bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ShareSpatialAnchor
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 270
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Shares a spatial anchor with specified users.
+  example: []
+  syntax:
+    content: public void ShareSpatialAnchor(YVRSpatialAnchorShareInfo shareInfo, Action<bool> callback)
+    parameters:
+    - id: shareInfo
+      type: YVR.Core.YVRSpatialAnchorShareInfo
+      description: Information about the spatial anchor to be shared and the users it will be shared with
+    - id: callback
+      type: System.Action{System.Boolean}
+      description: Callback for handling the result of the sharing process
+    content.vb: Public Sub ShareSpatialAnchor(shareInfo As YVRSpatialAnchorShareInfo, callback As Action(Of Boolean))
+  overload: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor*
+  nameWithType.vb: YVRSpatialAnchor.ShareSpatialAnchor(YVRSpatialAnchorShareInfo, Action(Of Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor(YVR.Core.YVRSpatialAnchorShareInfo, System.Action(Of Boolean))
+  name.vb: ShareSpatialAnchor(YVRSpatialAnchorShareInfo, Action(Of Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  id: SaveToCloudThenShare(YVR.Core.YVRSpatialAnchorShareInfo,System.Action{System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: SaveToCloudThenShare(YVRSpatialAnchorShareInfo, Action<bool>)
+  nameWithType: YVRSpatialAnchor.SaveToCloudThenShare(YVRSpatialAnchorShareInfo, Action<bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare(YVR.Core.YVRSpatialAnchorShareInfo, System.Action<bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SaveToCloudThenShare
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 320
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Saves the spatial anchor list to the cloud and then shares it with specified users.
+  example: []
+  syntax:
+    content: public void SaveToCloudThenShare(YVRSpatialAnchorShareInfo shareInfo, Action<bool> callback)
+    parameters:
+    - id: shareInfo
+      type: YVR.Core.YVRSpatialAnchorShareInfo
+      description: Information about the spatial anchor list to be shared and the users with whom it will be shared
+    - id: callback
+      type: System.Action{System.Boolean}
+      description: Callback for handling the result of the combined save and share process
+    content.vb: Public Sub SaveToCloudThenShare(shareInfo As YVRSpatialAnchorShareInfo, callback As Action(Of Boolean))
+  overload: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare*
+  nameWithType.vb: YVRSpatialAnchor.SaveToCloudThenShare(YVRSpatialAnchorShareInfo, Action(Of Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare(YVR.Core.YVRSpatialAnchorShareInfo, System.Action(Of Boolean))
+  name.vb: SaveToCloudThenShare(YVRSpatialAnchorShareInfo, Action(Of Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList(System.Collections.Generic.List{System.UInt64},YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{System.Boolean})
+  commentId: M:YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList(System.Collections.Generic.List{System.UInt64},YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{System.Boolean})
+  id: SaveSpatialAnchorList(System.Collections.Generic.List{System.UInt64},YVR.Core.YVRSpatialAnchorStorageLocation,System.Action{System.Boolean})
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: SaveSpatialAnchorList(List<ulong>, YVRSpatialAnchorStorageLocation, Action<bool>)
+  nameWithType: YVRSpatialAnchor.SaveSpatialAnchorList(List<ulong>, YVRSpatialAnchorStorageLocation, Action<bool>)
+  fullName: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList(System.Collections.Generic.List<ulong>, YVR.Core.YVRSpatialAnchorStorageLocation, System.Action<bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SaveSpatialAnchorList
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 355
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Saves a list of spatial anchors to the specified storage location.
+  example: []
+  syntax:
+    content: public void SaveSpatialAnchorList(List<ulong> spatialAnchorHandleList, YVRSpatialAnchorStorageLocation location, Action<bool> callback)
+    parameters:
+    - id: spatialAnchorHandleList
+      type: System.Collections.Generic.List{System.UInt64}
+      description: The list of spatial anchor handles to be saved
+    - id: location
+      type: YVR.Core.YVRSpatialAnchorStorageLocation
+      description: The storage location for saving the spatial anchor list
+    - id: callback
+      type: System.Action{System.Boolean}
+      description: Callback for handling the result of the spatial anchor list save process
+    content.vb: Public Sub SaveSpatialAnchorList(spatialAnchorHandleList As List(Of ULong), location As YVRSpatialAnchorStorageLocation, callback As Action(Of Boolean))
+  overload: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList*
+  nameWithType.vb: YVRSpatialAnchor.SaveSpatialAnchorList(List(Of ULong), YVRSpatialAnchorStorageLocation, Action(Of Boolean))
+  fullName.vb: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList(System.Collections.Generic.List(Of ULong), YVR.Core.YVRSpatialAnchorStorageLocation, System.Action(Of Boolean))
+  name.vb: SaveSpatialAnchorList(List(Of ULong), YVRSpatialAnchorStorageLocation, Action(Of Boolean))
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(System.UInt64,YVR.Core.YVRSpatialAnchorUUID@)
+  commentId: M:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(System.UInt64,YVR.Core.YVRSpatialAnchorUUID@)
+  id: GetSpatialAnchorUUIDForHandle(System.UInt64,YVR.Core.YVRSpatialAnchorUUID@)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialAnchorUUIDForHandle(ulong, out YVRSpatialAnchorUUID)
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(ulong, out YVRSpatialAnchorUUID)
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(ulong, out YVR.Core.YVRSpatialAnchorUUID)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetSpatialAnchorUUIDForHandle
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 391
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Retrieves the UUID for a spatial anchor identified by the given handle.
+  example: []
+  syntax:
+    content: public void GetSpatialAnchorUUIDForHandle(ulong anchorHandle, out YVRSpatialAnchorUUID uuid)
+    parameters:
+    - id: anchorHandle
+      type: System.UInt64
+      description: The handle of the spatial anchor
+    - id: uuid
+      type: YVR.Core.YVRSpatialAnchorUUID
+      description: The UUID of the spatial anchor
+    content.vb: Public Sub GetSpatialAnchorUUIDForHandle(anchorHandle As ULong, uuid As YVRSpatialAnchorUUID)
+  overload: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle*
+  nameWithType.vb: YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(ULong, YVRSpatialAnchorUUID)
+  fullName.vb: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle(ULong, YVR.Core.YVRSpatialAnchorUUID)
+  name.vb: GetSpatialAnchorUUIDForHandle(ULong, YVRSpatialAnchorUUID)
+- uid: YVR.Core.YVRSpatialAnchor.IsPositionValid(YVR.Core.YVRAnchorLocationFlags)
+  commentId: M:YVR.Core.YVRSpatialAnchor.IsPositionValid(YVR.Core.YVRAnchorLocationFlags)
+  id: IsPositionValid(YVR.Core.YVRAnchorLocationFlags)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: IsPositionValid(YVRAnchorLocationFlags)
+  nameWithType: YVRSpatialAnchor.IsPositionValid(YVRAnchorLocationFlags)
+  fullName: YVR.Core.YVRSpatialAnchor.IsPositionValid(YVR.Core.YVRAnchorLocationFlags)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsPositionValid
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 402
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Checks if the position is valid based on the specified location flags.
+  example: []
+  syntax:
+    content: public bool IsPositionValid(YVRAnchorLocationFlags value)
+    parameters:
+    - id: value
+      type: YVR.Core.YVRAnchorLocationFlags
+      description: The anchor location flags to be evaluated
+    return:
+      type: System.Boolean
+      description: True if the position is valid; otherwise, false
+    content.vb: Public Function IsPositionValid(value As YVRAnchorLocationFlags) As Boolean
+  overload: YVR.Core.YVRSpatialAnchor.IsPositionValid*
+- uid: YVR.Core.YVRSpatialAnchor.IsOrientationValid(YVR.Core.YVRAnchorLocationFlags)
+  commentId: M:YVR.Core.YVRSpatialAnchor.IsOrientationValid(YVR.Core.YVRAnchorLocationFlags)
+  id: IsOrientationValid(YVR.Core.YVRAnchorLocationFlags)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: IsOrientationValid(YVRAnchorLocationFlags)
+  nameWithType: YVRSpatialAnchor.IsOrientationValid(YVRAnchorLocationFlags)
+  fullName: YVR.Core.YVRSpatialAnchor.IsOrientationValid(YVR.Core.YVRAnchorLocationFlags)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsOrientationValid
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 410
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Checks if the orientation is valid based on the specified location flags.
+  example: []
+  syntax:
+    content: public bool IsOrientationValid(YVRAnchorLocationFlags value)
+    parameters:
+    - id: value
+      type: YVR.Core.YVRAnchorLocationFlags
+      description: The anchor location flags to be evaluated
+    return:
+      type: System.Boolean
+      description: True if the orientation is valid; otherwise, false
+    content.vb: Public Function IsOrientationValid(value As YVRAnchorLocationFlags) As Boolean
+  overload: YVR.Core.YVRSpatialAnchor.IsOrientationValid*
+- uid: YVR.Core.YVRSpatialAnchor.IsPositionTracked(YVR.Core.YVRAnchorLocationFlags)
+  commentId: M:YVR.Core.YVRSpatialAnchor.IsPositionTracked(YVR.Core.YVRAnchorLocationFlags)
+  id: IsPositionTracked(YVR.Core.YVRAnchorLocationFlags)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: IsPositionTracked(YVRAnchorLocationFlags)
+  nameWithType: YVRSpatialAnchor.IsPositionTracked(YVRAnchorLocationFlags)
+  fullName: YVR.Core.YVRSpatialAnchor.IsPositionTracked(YVR.Core.YVRAnchorLocationFlags)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsPositionTracked
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 418
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool IsPositionTracked(YVRAnchorLocationFlags value)
+    parameters:
+    - id: value
+      type: YVR.Core.YVRAnchorLocationFlags
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsPositionTracked(value As YVRAnchorLocationFlags) As Boolean
+  overload: YVR.Core.YVRSpatialAnchor.IsPositionTracked*
+- uid: YVR.Core.YVRSpatialAnchor.IsOrientationTracked(YVR.Core.YVRAnchorLocationFlags)
+  commentId: M:YVR.Core.YVRSpatialAnchor.IsOrientationTracked(YVR.Core.YVRAnchorLocationFlags)
+  id: IsOrientationTracked(YVR.Core.YVRAnchorLocationFlags)
+  parent: YVR.Core.YVRSpatialAnchor
+  langs:
+  - csharp
+  - vb
+  name: IsOrientationTracked(YVRAnchorLocationFlags)
+  nameWithType: YVRSpatialAnchor.IsOrientationTracked(YVRAnchorLocationFlags)
+  fullName: YVR.Core.YVRSpatialAnchor.IsOrientationTracked(YVR.Core.YVRAnchorLocationFlags)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsOrientationTracked
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
+    startLine: 426
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Checks if the orientation is tracked based on the specified location flags.
+  example: []
+  syntax:
+    content: public bool IsOrientationTracked(YVRAnchorLocationFlags value)
+    parameters:
+    - id: value
+      type: YVR.Core.YVRAnchorLocationFlags
+      description: The anchor location flags to be evaluated
+    return:
+      type: System.Boolean
+      description: True if the orientation is tracked; otherwise, false
+    content.vb: Public Function IsOrientationTracked(value As YVRAnchorLocationFlags) As Boolean
+  overload: YVR.Core.YVRSpatialAnchor.IsOrientationTracked*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  commentId: T:YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  parent: YVR.Utilities
+  definition: YVR.Utilities.Singleton`1
+  href: YVR.Core.YVRSpatialAnchor.html
+  name: Singleton<YVRSpatialAnchor>
+  nameWithType: Singleton<YVRSpatialAnchor>
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRSpatialAnchor>
+  nameWithType.vb: Singleton(Of YVRSpatialAnchor)
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRSpatialAnchor)
+  name.vb: Singleton(Of YVRSpatialAnchor)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - uid: YVR.Core.YVRSpatialAnchor
+    name: YVRSpatialAnchor
+    href: YVR.Core.YVRSpatialAnchor.html
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRSpatialAnchor
+    name: YVRSpatialAnchor
+    href: YVR.Core.YVRSpatialAnchor.html
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.instance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.instance
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  definition: YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<YVRSpatialAnchor>.instance
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRSpatialAnchor>.instance
+  nameWithType.vb: Singleton(Of YVRSpatialAnchor).instance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRSpatialAnchor).instance
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.createdInstance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.createdInstance
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  definition: YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<YVRSpatialAnchor>.createdInstance
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRSpatialAnchor>.createdInstance
+  nameWithType.vb: Singleton(Of YVRSpatialAnchor).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRSpatialAnchor).createdInstance
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.Reset
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.Reset
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  definition: YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<YVRSpatialAnchor>.Reset()
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRSpatialAnchor>.Reset()
+  nameWithType.vb: Singleton(Of YVRSpatialAnchor).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRSpatialAnchor).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Utilities.Singleton`1
+  commentId: T:YVR.Utilities.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: YVR.Utilities.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: YVR.Utilities.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Utilities
+  commentId: N:YVR.Utilities
+  name: YVR.Utilities
+  nameWithType: YVR.Utilities
+  fullName: YVR.Utilities
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+  spec.vb:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+- uid: YVR.Utilities.Singleton`1.instance
+  commentId: P:YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<T>.instance
+  fullName: YVR.Utilities.Singleton<T>.instance
+  nameWithType.vb: Singleton(Of T).instance
+  fullName.vb: YVR.Utilities.Singleton(Of T).instance
+- uid: YVR.Utilities.Singleton`1.createdInstance
+  commentId: P:YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<T>.createdInstance
+  fullName: YVR.Utilities.Singleton<T>.createdInstance
+  nameWithType.vb: Singleton(Of T).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of T).createdInstance
+- uid: YVR.Utilities.Singleton`1.Reset
+  commentId: M:YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<T>.Reset()
+  fullName: YVR.Utilities.Singleton<T>.Reset()
+  nameWithType.vb: Singleton(Of T).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of T).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.OnInit
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.OnInit
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}
+  definition: YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<YVRSpatialAnchor>.OnInit()
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRSpatialAnchor>.OnInit()
+  nameWithType.vb: Singleton(Of YVRSpatialAnchor).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRSpatialAnchor).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRSpatialAnchor}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.OnInit*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.OnInit
+  href: YVR.Core.YVRSpatialAnchor.OnInit.html#YVR_Core_YVRSpatialAnchor_OnInit
+  name: OnInit
+  nameWithType: YVRSpatialAnchor.OnInit
+  fullName: YVR.Core.YVRSpatialAnchor.OnInit
+- uid: YVR.Utilities.Singleton`1.OnInit
+  commentId: M:YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<T>.OnInit()
+  fullName: YVR.Utilities.Singleton<T>.OnInit()
+  nameWithType.vb: Singleton(Of T).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of T).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor
+  href: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor.html#YVR_Core_YVRSpatialAnchor_CreateSpatialAnchor_UnityEngine_Vector3_UnityEngine_Quaternion_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__
+  name: CreateSpatialAnchor
+  nameWithType: YVRSpatialAnchor.CreateSpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor.CreateSpatialAnchor
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean}
+  commentId: T:System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<YVRSpatialAnchorResult, bool>
+  nameWithType: Action<YVRSpatialAnchorResult, bool>
+  fullName: System.Action<YVR.Core.YVRSpatialAnchorResult, bool>
+  nameWithType.vb: Action(Of YVRSpatialAnchorResult, Boolean)
+  fullName.vb: System.Action(Of YVR.Core.YVRSpatialAnchorResult, Boolean)
+  name.vb: Action(Of YVRSpatialAnchorResult, Boolean)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: YVR.Core.YVRSpatialAnchorResult
+    name: YVRSpatialAnchorResult
+    href: YVR.Core.YVRSpatialAnchorResult.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRSpatialAnchorResult
+    name: YVRSpatialAnchorResult
+    href: YVR.Core.YVRSpatialAnchorResult.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor
+  href: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor.html#YVR_Core_YVRSpatialAnchor_SaveSpatialAnchor_YVR_Core_YVRSpatialAnchorSaveInfo_System_Action_YVR_Core_YVRSpatialAnchorSaveCompleteInfo_System_Boolean__
+  name: SaveSpatialAnchor
+  nameWithType: YVRSpatialAnchor.SaveSpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchor
+- uid: YVR.Core.YVRSpatialAnchorSaveInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorSaveInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorSaveInfo.html
+  name: YVRSpatialAnchorSaveInfo
+  nameWithType: YVRSpatialAnchorSaveInfo
+  fullName: YVR.Core.YVRSpatialAnchorSaveInfo
+- uid: System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean}
+  commentId: T:System.Action{YVR.Core.YVRSpatialAnchorSaveCompleteInfo,System.Boolean}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<YVRSpatialAnchorSaveCompleteInfo, bool>
+  nameWithType: Action<YVRSpatialAnchorSaveCompleteInfo, bool>
+  fullName: System.Action<YVR.Core.YVRSpatialAnchorSaveCompleteInfo, bool>
+  nameWithType.vb: Action(Of YVRSpatialAnchorSaveCompleteInfo, Boolean)
+  fullName.vb: System.Action(Of YVR.Core.YVRSpatialAnchorSaveCompleteInfo, Boolean)
+  name.vb: Action(Of YVRSpatialAnchorSaveCompleteInfo, Boolean)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+    name: YVRSpatialAnchorSaveCompleteInfo
+    href: YVR.Core.YVRSpatialAnchorSaveCompleteInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+    name: YVRSpatialAnchorSaveCompleteInfo
+    href: YVR.Core.YVRSpatialAnchorSaveCompleteInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor
+  href: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor.html#YVR_Core_YVRSpatialAnchor_EraseSpatialAnchor_System_UInt64_YVR_Core_YVRSpatialAnchorStorageLocation_System_Action_YVR_Core_YVRSpatialAnchorResult_System_Boolean__
+  name: EraseSpatialAnchor
+  nameWithType: YVRSpatialAnchor.EraseSpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor.EraseSpatialAnchor
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation
+  commentId: T:YVR.Core.YVRSpatialAnchorStorageLocation
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorStorageLocation.html
+  name: YVRSpatialAnchorStorageLocation
+  nameWithType: YVRSpatialAnchorStorageLocation
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation
+- uid: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor
+  href: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor.html#YVR_Core_YVRSpatialAnchor_QuerySpatialAnchor_YVR_Core_YVRSpatialAnchorQueryInfo_System_Action_System_Collections_Generic_List_YVR_Core_YVRSpatialAnchorResult___
+  name: QuerySpatialAnchor
+  nameWithType: YVRSpatialAnchor.QuerySpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor.QuerySpatialAnchor
+- uid: YVR.Core.YVRSpatialAnchorQueryInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorQueryInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorQueryInfo.html
+  name: YVRSpatialAnchorQueryInfo
+  nameWithType: YVRSpatialAnchorQueryInfo
+  fullName: YVR.Core.YVRSpatialAnchorQueryInfo
+- uid: System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}}
+  commentId: T:System.Action{System.Collections.Generic.List{YVR.Core.YVRSpatialAnchorResult}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<List<YVRSpatialAnchorResult>>
+  nameWithType: Action<List<YVRSpatialAnchorResult>>
+  fullName: System.Action<System.Collections.Generic.List<YVR.Core.YVRSpatialAnchorResult>>
+  nameWithType.vb: Action(Of List(Of YVRSpatialAnchorResult))
+  fullName.vb: System.Action(Of System.Collections.Generic.List(Of YVR.Core.YVRSpatialAnchorResult))
+  name.vb: Action(Of List(Of YVRSpatialAnchorResult))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: YVR.Core.YVRSpatialAnchorResult
+    name: YVRSpatialAnchorResult
+    href: YVR.Core.YVRSpatialAnchorResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRSpatialAnchorResult
+    name: YVRSpatialAnchorResult
+    href: YVR.Core.YVRSpatialAnchorResult.html
+  - name: )
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose
+  href: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose.html#YVR_Core_YVRSpatialAnchor_GetSpatialAnchorPose_System_UInt64_UnityEngine_Vector3__UnityEngine_Quaternion__YVR_Core_YVRAnchorLocationFlags__
+  name: GetSpatialAnchorPose
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorPose
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorPose
+- uid: YVR.Core.YVRAnchorLocationFlags
+  commentId: T:YVR.Core.YVRAnchorLocationFlags
+  parent: YVR.Core
+  href: YVR.Core.YVRAnchorLocationFlags.html
+  name: YVRAnchorLocationFlags
+  nameWithType: YVRAnchorLocationFlags
+  fullName: YVR.Core.YVRAnchorLocationFlags
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported
+  href: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported.html#YVR_Core_YVRSpatialAnchor_GetSpatialAnchorEnumerateSupported_System_UInt64_YVR_Core_YVRSpatialAnchorSupportedComponent__
+  name: GetSpatialAnchorEnumerateSupported
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorEnumerateSupported
+- uid: YVR.Core.YVRSpatialAnchorSupportedComponent
+  commentId: T:YVR.Core.YVRSpatialAnchorSupportedComponent
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorSupportedComponent.html
+  name: YVRSpatialAnchorSupportedComponent
+  nameWithType: YVRSpatialAnchorSupportedComponent
+  fullName: YVR.Core.YVRSpatialAnchorSupportedComponent
+- uid: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus
+  href: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus.html#YVR_Core_YVRSpatialAnchor_SetSpatialAnchorComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentStatusSetInfo_System_Action_YVR_Core_YVRSpatialAnchorSetStatusCompleteInfo_System_Boolean__
+  name: SetSpatialAnchorComponentStatus
+  nameWithType: YVRSpatialAnchor.SetSpatialAnchorComponentStatus
+  fullName: YVR.Core.YVRSpatialAnchor.SetSpatialAnchorComponentStatus
+- uid: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo.html
+  name: YVRSpatialAnchorComponentStatusSetInfo
+  nameWithType: YVRSpatialAnchorComponentStatusSetInfo
+  fullName: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+- uid: System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean}
+  commentId: T:System.Action{YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo,System.Boolean}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<YVRSpatialAnchorSetStatusCompleteInfo, bool>
+  nameWithType: Action<YVRSpatialAnchorSetStatusCompleteInfo, bool>
+  fullName: System.Action<YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo, bool>
+  nameWithType.vb: Action(Of YVRSpatialAnchorSetStatusCompleteInfo, Boolean)
+  fullName.vb: System.Action(Of YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo, Boolean)
+  name.vb: Action(Of YVRSpatialAnchorSetStatusCompleteInfo, Boolean)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+    name: YVRSpatialAnchorSetStatusCompleteInfo
+    href: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+    name: YVRSpatialAnchorSetStatusCompleteInfo
+    href: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus
+  href: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus.html#YVR_Core_YVRSpatialAnchor_GetSpatialAnchorComponentStatus_System_UInt64_YVR_Core_YVRSpatialAnchorComponentType_YVR_Core_YVRSpatialAnchorComponentStatus__
+  name: GetSpatialAnchorComponentStatus
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorComponentStatus
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorComponentStatus
+- uid: YVR.Core.YVRSpatialAnchorComponentType
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentType
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentType.html
+  name: YVRSpatialAnchorComponentType
+  nameWithType: YVRSpatialAnchorComponentType
+  fullName: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentStatus
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentStatus
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentStatus.html
+  name: YVRSpatialAnchorComponentStatus
+  nameWithType: YVRSpatialAnchorComponentStatus
+  fullName: YVR.Core.YVRSpatialAnchorComponentStatus
+- uid: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor
+  href: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor.html#YVR_Core_YVRSpatialAnchor_ShareSpatialAnchor_YVR_Core_YVRSpatialAnchorShareInfo_System_Action_System_Boolean__
+  name: ShareSpatialAnchor
+  nameWithType: YVRSpatialAnchor.ShareSpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor.ShareSpatialAnchor
+- uid: YVR.Core.YVRSpatialAnchorShareInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorShareInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorShareInfo.html
+  name: YVRSpatialAnchorShareInfo
+  nameWithType: YVRSpatialAnchorShareInfo
+  fullName: YVR.Core.YVRSpatialAnchorShareInfo
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<bool>
+  nameWithType: Action<bool>
+  fullName: System.Action<bool>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare
+  href: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare.html#YVR_Core_YVRSpatialAnchor_SaveToCloudThenShare_YVR_Core_YVRSpatialAnchorShareInfo_System_Action_System_Boolean__
+  name: SaveToCloudThenShare
+  nameWithType: YVRSpatialAnchor.SaveToCloudThenShare
+  fullName: YVR.Core.YVRSpatialAnchor.SaveToCloudThenShare
+- uid: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList
+  href: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList.html#YVR_Core_YVRSpatialAnchor_SaveSpatialAnchorList_System_Collections_Generic_List_System_UInt64__YVR_Core_YVRSpatialAnchorStorageLocation_System_Action_System_Boolean__
+  name: SaveSpatialAnchorList
+  nameWithType: YVRSpatialAnchor.SaveSpatialAnchorList
+  fullName: YVR.Core.YVRSpatialAnchor.SaveSpatialAnchorList
+- uid: System.Collections.Generic.List{System.UInt64}
+  commentId: T:System.Collections.Generic.List{System.UInt64}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ulong>
+  nameWithType: List<ulong>
+  fullName: System.Collections.Generic.List<ulong>
+  nameWithType.vb: List(Of ULong)
+  fullName.vb: System.Collections.Generic.List(Of ULong)
+  name.vb: List(Of ULong)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle
+  href: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle.html#YVR_Core_YVRSpatialAnchor_GetSpatialAnchorUUIDForHandle_System_UInt64_YVR_Core_YVRSpatialAnchorUUID__
+  name: GetSpatialAnchorUUIDForHandle
+  nameWithType: YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle
+  fullName: YVR.Core.YVRSpatialAnchor.GetSpatialAnchorUUIDForHandle
+- uid: YVR.Core.YVRSpatialAnchorUUID
+  commentId: T:YVR.Core.YVRSpatialAnchorUUID
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorUUID.html
+  name: YVRSpatialAnchorUUID
+  nameWithType: YVRSpatialAnchorUUID
+  fullName: YVR.Core.YVRSpatialAnchorUUID
+- uid: YVR.Core.YVRSpatialAnchor.IsPositionValid*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.IsPositionValid
+  href: YVR.Core.YVRSpatialAnchor.IsPositionValid.html#YVR_Core_YVRSpatialAnchor_IsPositionValid_YVR_Core_YVRAnchorLocationFlags_
+  name: IsPositionValid
+  nameWithType: YVRSpatialAnchor.IsPositionValid
+  fullName: YVR.Core.YVRSpatialAnchor.IsPositionValid
+- uid: YVR.Core.YVRSpatialAnchor.IsOrientationValid*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.IsOrientationValid
+  href: YVR.Core.YVRSpatialAnchor.IsOrientationValid.html#YVR_Core_YVRSpatialAnchor_IsOrientationValid_YVR_Core_YVRAnchorLocationFlags_
+  name: IsOrientationValid
+  nameWithType: YVRSpatialAnchor.IsOrientationValid
+  fullName: YVR.Core.YVRSpatialAnchor.IsOrientationValid
+- uid: YVR.Core.YVRSpatialAnchor.IsPositionTracked*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.IsPositionTracked
+  href: YVR.Core.YVRSpatialAnchor.IsPositionTracked.html#YVR_Core_YVRSpatialAnchor_IsPositionTracked_YVR_Core_YVRAnchorLocationFlags_
+  name: IsPositionTracked
+  nameWithType: YVRSpatialAnchor.IsPositionTracked
+  fullName: YVR.Core.YVRSpatialAnchor.IsPositionTracked
+- uid: YVR.Core.YVRSpatialAnchor.IsOrientationTracked*
+  commentId: Overload:YVR.Core.YVRSpatialAnchor.IsOrientationTracked
+  href: YVR.Core.YVRSpatialAnchor.IsOrientationTracked.html#YVR_Core_YVRSpatialAnchor_IsOrientationTracked_YVR_Core_YVRAnchorLocationFlags_
+  name: IsOrientationTracked
+  nameWithType: YVRSpatialAnchor.IsOrientationTracked
+  fullName: YVR.Core.YVRSpatialAnchor.IsOrientationTracked
+memberLayout: SeparatePages

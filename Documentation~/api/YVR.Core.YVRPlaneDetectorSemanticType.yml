@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPlaneDetectorSemanticType
+  commentId: T:YVR.Core.YVRPlaneDetectorSemanticType
+  id: YVRPlaneDetectorSemanticType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  - YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  - YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  - YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  - YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  - YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  langs:
+  - csharp
+  - vb
+  name: YVRPlaneDetectorSemanticType
+  nameWithType: YVRPlaneDetectorSemanticType
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPlaneDetectorSemanticType
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRPlaneDetectorSemanticType
+    content.vb: Public Enum YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  parent: YVR.Core.YVRPlaneDetectorSemanticType
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  nameWithType: YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_SEMANTIC_TYPE_UNDEFINED_EXT = 0
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  parent: YVR.Core.YVRPlaneDetectorSemanticType
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  nameWithType: YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_SEMANTIC_TYPE_CEILING_EXT = 1
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  parent: YVR.Core.YVRPlaneDetectorSemanticType
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  nameWithType: YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_SEMANTIC_TYPE_FLOOR_EXT = 2
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  parent: YVR.Core.YVRPlaneDetectorSemanticType
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  nameWithType: YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_SEMANTIC_TYPE_WALL_EXT = 3
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  parent: YVR.Core.YVRPlaneDetectorSemanticType
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  nameWithType: YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_SEMANTIC_TYPE_PLATFORM_EXT = 4
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  parent: YVR.Core.YVRPlaneDetectorSemanticType
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  nameWithType: YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType.XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorSemanticType.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_SEMANTIC_TYPE_MAX_ENUM_EXT = 2147483647
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRPlaneDetectorSemanticType
+  commentId: T:YVR.Core.YVRPlaneDetectorSemanticType
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorSemanticType.html
+  name: YVRPlaneDetectorSemanticType
+  nameWithType: YVRPlaneDetectorSemanticType
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType
+memberLayout: SeparatePages

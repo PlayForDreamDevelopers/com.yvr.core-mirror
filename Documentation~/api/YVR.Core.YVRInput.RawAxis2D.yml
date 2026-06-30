@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.RawAxis2D
+  commentId: T:YVR.Core.YVRInput.RawAxis2D
+  id: YVRInput.RawAxis2D
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.RawAxis2D.LThumbstick
+  - YVR.Core.YVRInput.RawAxis2D.None
+  - YVR.Core.YVRInput.RawAxis2D.RThumbstick
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.RawAxis2D
+  nameWithType: YVRInput.RawAxis2D
+  fullName: YVR.Core.YVRInput.RawAxis2D
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RawAxis2D
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 472
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Raw 2D Axis mapping for controllers
+  example: []
+  syntax:
+    content: public enum YVRInput.RawAxis2D
+    content.vb: Public Enum YVRInput.RawAxis2D
+- uid: YVR.Core.YVRInput.RawAxis2D.None
+  commentId: F:YVR.Core.YVRInput.RawAxis2D.None
+  id: None
+  parent: YVR.Core.YVRInput.RawAxis2D
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.RawAxis2D.None
+  fullName: YVR.Core.YVRInput.RawAxis2D.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 477
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a 2D Axis
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.RawAxis2D
+- uid: YVR.Core.YVRInput.RawAxis2D.LThumbstick
+  commentId: F:YVR.Core.YVRInput.RawAxis2D.LThumbstick
+  id: LThumbstick
+  parent: YVR.Core.YVRInput.RawAxis2D
+  langs:
+  - csharp
+  - vb
+  name: LThumbstick
+  nameWithType: YVRInput.RawAxis2D.LThumbstick
+  fullName: YVR.Core.YVRInput.RawAxis2D.LThumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 481
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick 2D Axis on left controller
+  example: []
+  syntax:
+    content: LThumbstick = 1
+    return:
+      type: YVR.Core.YVRInput.RawAxis2D
+- uid: YVR.Core.YVRInput.RawAxis2D.RThumbstick
+  commentId: F:YVR.Core.YVRInput.RawAxis2D.RThumbstick
+  id: RThumbstick
+  parent: YVR.Core.YVRInput.RawAxis2D
+  langs:
+  - csharp
+  - vb
+  name: RThumbstick
+  nameWithType: YVRInput.RawAxis2D.RThumbstick
+  fullName: YVR.Core.YVRInput.RawAxis2D.RThumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 485
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick 2D Axis on right controller
+  example: []
+  syntax:
+    content: RThumbstick = 2
+    return:
+      type: YVR.Core.YVRInput.RawAxis2D
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.RawAxis2D
+  commentId: T:YVR.Core.YVRInput.RawAxis2D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawAxis2D
+  nameWithType: YVRInput.RawAxis2D
+  fullName: YVR.Core.YVRInput.RawAxis2D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: RawAxis2D
+    href: YVR.Core.YVRInput.RawAxis2D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: RawAxis2D
+    href: YVR.Core.YVRInput.RawAxis2D.html
+memberLayout: SeparatePages

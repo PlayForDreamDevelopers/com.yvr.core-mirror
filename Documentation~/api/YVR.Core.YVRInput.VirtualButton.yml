@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.VirtualButton
+  commentId: T:YVR.Core.YVRInput.VirtualButton
+  id: YVRInput.VirtualButton
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.VirtualButton.Any
+  - YVR.Core.YVRInput.VirtualButton.HandTrigger
+  - YVR.Core.YVRInput.VirtualButton.IndexTrigger
+  - YVR.Core.YVRInput.VirtualButton.None
+  - YVR.Core.YVRInput.VirtualButton.One
+  - YVR.Core.YVRInput.VirtualButton.Start
+  - YVR.Core.YVRInput.VirtualButton.ThumbDown
+  - YVR.Core.YVRInput.VirtualButton.ThumbLeft
+  - YVR.Core.YVRInput.VirtualButton.ThumbRight
+  - YVR.Core.YVRInput.VirtualButton.ThumbStick
+  - YVR.Core.YVRInput.VirtualButton.ThumbUp
+  - YVR.Core.YVRInput.VirtualButton.Two
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.VirtualButton
+  nameWithType: YVRInput.VirtualButton
+  fullName: YVR.Core.YVRInput.VirtualButton
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VirtualButton
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 99
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Virtual button mapping for controllers
+  example: []
+  syntax:
+    content: 'public enum YVRInput.VirtualButton : uint'
+    content.vb: Public Enum YVRInput.VirtualButton As UInteger
+- uid: YVR.Core.YVRInput.VirtualButton.None
+  commentId: F:YVR.Core.YVRInput.VirtualButton.None
+  id: None
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.VirtualButton.None
+  fullName: YVR.Core.YVRInput.VirtualButton.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 104
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a button
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.One
+  commentId: F:YVR.Core.YVRInput.VirtualButton.One
+  id: One
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: YVRInput.VirtualButton.One
+  fullName: YVR.Core.YVRInput.VirtualButton.One
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: One
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 108
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: One Button
+  example: []
+  syntax:
+    content: One = 1
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.Two
+  commentId: F:YVR.Core.YVRInput.VirtualButton.Two
+  id: Two
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: YVRInput.VirtualButton.Two
+  fullName: YVR.Core.YVRInput.VirtualButton.Two
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Two
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 112
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Two Button
+  example: []
+  syntax:
+    content: Two = 2
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.Start
+  commentId: F:YVR.Core.YVRInput.VirtualButton.Start
+  id: Start
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: YVRInput.VirtualButton.Start
+  fullName: YVR.Core.YVRInput.VirtualButton.Start
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Start
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 116
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Start Button
+  example: []
+  syntax:
+    content: Start = 4
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.IndexTrigger
+  commentId: F:YVR.Core.YVRInput.VirtualButton.IndexTrigger
+  id: IndexTrigger
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: IndexTrigger
+  nameWithType: YVRInput.VirtualButton.IndexTrigger
+  fullName: YVR.Core.YVRInput.VirtualButton.IndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 120
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger Button
+  example: []
+  syntax:
+    content: IndexTrigger = 8
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.HandTrigger
+  commentId: F:YVR.Core.YVRInput.VirtualButton.HandTrigger
+  id: HandTrigger
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: HandTrigger
+  nameWithType: YVRInput.VirtualButton.HandTrigger
+  fullName: YVR.Core.YVRInput.VirtualButton.HandTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 124
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Hand Trigger Button
+  example: []
+  syntax:
+    content: HandTrigger = 16
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.ThumbStick
+  commentId: F:YVR.Core.YVRInput.VirtualButton.ThumbStick
+  id: ThumbStick
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: ThumbStick
+  nameWithType: YVRInput.VirtualButton.ThumbStick
+  fullName: YVR.Core.YVRInput.VirtualButton.ThumbStick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ThumbStick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 128
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Button
+  example: []
+  syntax:
+    content: ThumbStick = 32
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.ThumbUp
+  commentId: F:YVR.Core.YVRInput.VirtualButton.ThumbUp
+  id: ThumbUp
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: ThumbUp
+  nameWithType: YVRInput.VirtualButton.ThumbUp
+  fullName: YVR.Core.YVRInput.VirtualButton.ThumbUp
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ThumbUp
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 132
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Up Button
+  example: []
+  syntax:
+    content: ThumbUp = 64
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.ThumbDown
+  commentId: F:YVR.Core.YVRInput.VirtualButton.ThumbDown
+  id: ThumbDown
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: ThumbDown
+  nameWithType: YVRInput.VirtualButton.ThumbDown
+  fullName: YVR.Core.YVRInput.VirtualButton.ThumbDown
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ThumbDown
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 136
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Down Button
+  example: []
+  syntax:
+    content: ThumbDown = 128
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.ThumbLeft
+  commentId: F:YVR.Core.YVRInput.VirtualButton.ThumbLeft
+  id: ThumbLeft
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: ThumbLeft
+  nameWithType: YVRInput.VirtualButton.ThumbLeft
+  fullName: YVR.Core.YVRInput.VirtualButton.ThumbLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ThumbLeft
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 140
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Left Button
+  example: []
+  syntax:
+    content: ThumbLeft = 256
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.ThumbRight
+  commentId: F:YVR.Core.YVRInput.VirtualButton.ThumbRight
+  id: ThumbRight
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: ThumbRight
+  nameWithType: YVRInput.VirtualButton.ThumbRight
+  fullName: YVR.Core.YVRInput.VirtualButton.ThumbRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ThumbRight
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 144
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Right Button
+  example: []
+  syntax:
+    content: ThumbRight = 512
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+- uid: YVR.Core.YVRInput.VirtualButton.Any
+  commentId: F:YVR.Core.YVRInput.VirtualButton.Any
+  id: Any
+  parent: YVR.Core.YVRInput.VirtualButton
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: YVRInput.VirtualButton.Any
+  fullName: YVR.Core.YVRInput.VirtualButton.Any
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Any
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 148
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Any Button
+  example: []
+  syntax:
+    content: Any = 4294967295
+    return:
+      type: YVR.Core.YVRInput.VirtualButton
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.VirtualButton
+  commentId: T:YVR.Core.YVRInput.VirtualButton
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualButton
+  nameWithType: YVRInput.VirtualButton
+  fullName: YVR.Core.YVRInput.VirtualButton
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: VirtualButton
+    href: YVR.Core.YVRInput.VirtualButton.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: VirtualButton
+    href: YVR.Core.YVRInput.VirtualButton.html
+memberLayout: SeparatePages

@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  id: YVRInputModule.YVRInputDataBaseProvider
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit(UnityEngine.GameObject)
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  langs:
+  - csharp
+  - vb
+  name: YVRInputModule.YVRInputDataBaseProvider
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRInputDataBaseProvider
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The base class of the input data provider
+  example: []
+  syntax:
+    content: public abstract class YVRInputModule.YVRInputDataBaseProvider
+    content.vb: Public MustInherit Class YVRInputModule.YVRInputDataBaseProvider
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+  - YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+  - YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+  - YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+  - YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+  - YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  id: rayTransform
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: rayTransform
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: rayTransform
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    The origin point of the ray is rayTransform.position.
+
+    The direction of the ray is rayTransform.forward.
+  example: []
+  syntax:
+    content: public abstract Transform rayTransform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public MustOverride ReadOnly Property rayTransform As Transform
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  id: rayDirection
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: rayDirection
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: rayDirection
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The direction of the ray.
+  example: []
+  syntax:
+    content: public virtual Vector3 rayDirection { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable ReadOnly Property rayDirection As Vector3
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  id: rayOrigin
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: rayOrigin
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: rayOrigin
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 26
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The origin point of the ray.
+  example: []
+  syntax:
+    content: public virtual Vector3 rayOrigin { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Overridable ReadOnly Property rayOrigin As Vector3
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData
+  id: scrollData
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: scrollData
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.scrollData
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: scrollData
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 30
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The data of scroll
+  example: []
+  syntax:
+    content: public abstract Vector2 scrollData { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public MustOverride ReadOnly Property scrollData As Vector2
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed
+  id: pressed
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: pressed
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.pressed
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: pressed
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 34
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Pressed or not
+  example: []
+  syntax:
+    content: public abstract bool pressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property pressed As Boolean
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released
+  id: released
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: released
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.released
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: released
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 38
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Released or not
+  example: []
+  syntax:
+    content: public abstract bool released { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property released As Boolean
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed
+  id: longPressed
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: longPressed
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.longPressed
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: longPressed
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 42
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether to press for a long time
+  example: []
+  syntax:
+    content: public abstract bool longPressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property longPressed As Boolean
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  id: thumbStickUp
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: thumbStickUp
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: thumbStickUp
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 46
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether thumbStick up
+  example: []
+  syntax:
+    content: public abstract bool thumbStickUp { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property thumbStickUp As Boolean
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  commentId: P:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  id: thumbStickDown
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: thumbStickDown
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: thumbStickDown
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 50
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether thumbStick down
+  example: []
+  syntax:
+    content: public abstract bool thumbStickDown { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property thumbStickDown As Boolean
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown*
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit(UnityEngine.GameObject)
+  commentId: M:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit(UnityEngine.GameObject)
+  id: onRaycastHit(UnityEngine.GameObject)
+  parent: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  langs:
+  - csharp
+  - vb
+  name: onRaycastHit(GameObject)
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.onRaycastHit(GameObject)
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onRaycastHit
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputDataBaseProvider.cs
+    startLine: 56
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Result detection of each frame of ray detection
+  example: []
+  syntax:
+    content: public virtual void onRaycastHit(GameObject go)
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+      description: the object the raycast hit
+    content.vb: Public Overridable Sub onRaycastHit(go As GameObject)
+  overload: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_rayTransform
+  name: rayTransform
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.rayTransform
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayTransform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_rayDirection
+  name: rayDirection
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.rayDirection
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayDirection
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_rayOrigin
+  name: rayOrigin
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.rayOrigin
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_scrollData
+  name: scrollData
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.scrollData
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.scrollData
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_pressed
+  name: pressed
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.pressed
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.pressed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_released
+  name: released
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.released
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.released
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_longPressed
+  name: longPressed
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.longPressed
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.longPressed
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_thumbStickUp
+  name: thumbStickUp
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickUp
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_thumbStickDown
+  name: thumbStickDown
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.thumbStickDown
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit*
+  commentId: Overload:YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit
+  href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit.html#YVR_Core_YVRInputModule_YVRInputDataBaseProvider_onRaycastHit_UnityEngine_GameObject_
+  name: onRaycastHit
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider.onRaycastHit
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.onRaycastHit
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+memberLayout: SeparatePages

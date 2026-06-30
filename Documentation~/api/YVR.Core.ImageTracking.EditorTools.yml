@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ImageTracking.EditorTools
+  commentId: N:YVR.Core.ImageTracking.EditorTools
+  id: YVR.Core.ImageTracking.EditorTools
+  children:
+  - YVR.Core.ImageTracking.EditorTools.ToTrackImageListDrawer
+  langs:
+  - csharp
+  - vb
+  name: YVR.Core.ImageTracking.EditorTools
+  nameWithType: YVR.Core.ImageTracking.EditorTools
+  fullName: YVR.Core.ImageTracking.EditorTools
+  type: Namespace
+  assemblies:
+  - YVR.Core.Editor
+references:
+- uid: YVR.Core.ImageTracking.EditorTools.ToTrackImageListDrawer
+  commentId: T:YVR.Core.ImageTracking.EditorTools.ToTrackImageListDrawer
+  href: YVR.Core.ImageTracking.EditorTools.ToTrackImageListDrawer.html
+  name: ToTrackImageListDrawer
+  nameWithType: ToTrackImageListDrawer
+  fullName: YVR.Core.ImageTracking.EditorTools.ToTrackImageListDrawer
+memberLayout: SeparatePages

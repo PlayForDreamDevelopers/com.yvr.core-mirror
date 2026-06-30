@@ -109,9 +109,10 @@ namespace YVR.Core
             for (int i = 0; i < handJoints.Length; i++)
             {
                 int index = (i == 0) ? 1 : (i == 1) ? 0 : i;
-                Pose pose = new Pose();
-                pose.position = handJointLocations.jointLocations[index].pose.position;
-                pose.rotation = handJointLocations.jointLocations[index].pose.orientation;
+                Pose pose = new Pose(
+                    handJointLocations.jointLocations[index].pose.position,
+                    handJointLocations.jointLocations[index].pose.orientation
+                );
                 handJoints[i] = XRHandProviderUtility.CreateJoint(
                     Handedness.Left,
                     handJointLocations.isActive == 1

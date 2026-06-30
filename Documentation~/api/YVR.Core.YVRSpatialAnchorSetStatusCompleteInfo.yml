@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  id: YVRSpatialAnchorSetStatusCompleteInfo
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.anchorHandle
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.componentType
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.enabled
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.requestId
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.resultCode
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.uuid
+  langs:
+  - csharp
+  - vb
+  name: YVRSpatialAnchorSetStatusCompleteInfo
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRSpatialAnchorSetStatusCompleteInfo
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public struct YVRSpatialAnchorSetStatusCompleteInfo
+    content.vb: Public Structure YVRSpatialAnchorSetStatusCompleteInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.requestId
+  commentId: F:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.requestId
+  id: requestId
+  parent: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  langs:
+  - csharp
+  - vb
+  name: requestId
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo.requestId
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.requestId
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: requestId
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public ulong requestId
+    return:
+      type: System.UInt64
+    content.vb: Public requestId As ULong
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.resultCode
+  commentId: F:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.resultCode
+  id: resultCode
+  parent: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  langs:
+  - csharp
+  - vb
+  name: resultCode
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo.resultCode
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.resultCode
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: resultCode
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public int resultCode
+    return:
+      type: System.Int32
+    content.vb: Public resultCode As Integer
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.anchorHandle
+  commentId: F:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.anchorHandle
+  id: anchorHandle
+  parent: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  langs:
+  - csharp
+  - vb
+  name: anchorHandle
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo.anchorHandle
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.anchorHandle
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: anchorHandle
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public ulong anchorHandle
+    return:
+      type: System.UInt64
+    content.vb: Public anchorHandle As ULong
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.uuid
+  commentId: F:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.uuid
+  id: uuid
+  parent: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  langs:
+  - csharp
+  - vb
+  name: uuid
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo.uuid
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.uuid
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: uuid
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public char[] uuid
+    return:
+      type: System.Char[]
+    content.vb: Public uuid As Char()
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.componentType
+  commentId: F:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.componentType
+  id: componentType
+  parent: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  langs:
+  - csharp
+  - vb
+  name: componentType
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo.componentType
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.componentType
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: componentType
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public YVRSpatialAnchorComponentType componentType
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+    content.vb: Public componentType As YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.enabled
+  commentId: F:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.enabled
+  id: enabled
+  parent: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo.enabled
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.enabled
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: enabled
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorSetStatusCompleteInfo.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool enabled
+    return:
+      type: System.Boolean
+    content.vb: Public enabled As Boolean
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRSpatialAnchorComponentType
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentType
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentType.html
+  name: YVRSpatialAnchorComponentType
+  nameWithType: YVRSpatialAnchorComponentType
+  fullName: YVR.Core.YVRSpatialAnchorComponentType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+memberLayout: SeparatePages

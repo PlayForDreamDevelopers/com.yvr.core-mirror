@@ -40,7 +40,13 @@ namespace YVR.Core
         /// This method returns a boolean value indicating whether hand tracking is enabled or not
         /// </summary>
         /// <returns></returns>
-        public bool GetHandTrackingEnable() { return YVRPlugin.Instance.GetHandEnable(); }
+        public bool GetHandTrackingEnable()
+        {
+            #if UNITY_EDITOR && !UNITY_EDITOR_WIN
+            return false;
+            #endif
+            return YVRPlugin.Instance.GetHandEnable();
+        }
 
         /// <summary>
         /// Returns the pinch strength of the specified finger for the given hand type.
@@ -138,6 +144,11 @@ namespace YVR.Core
 
         private void UpdateHandData()
         {
+            // Skip hand tracking updates in editor on non-Windows platforms to avoid DllNotFoundException
+            #if UNITY_EDITOR && !UNITY_EDITOR_WIN
+            return;
+            #endif
+
             if (YVRXRSettings.instance.handTrackingSupport == HandTrackingSupport.ControllersOnly) return;
 
             m_PreLeftHandStatus = leftHandData.aimState.status;
@@ -162,6 +173,10 @@ namespace YVR.Core
 
         public ActiveInputDevice GetInputDevice()
         {
+            #if UNITY_EDITOR && !UNITY_EDITOR_WIN
+            return ActiveInputDevice.ControllerActive;
+            #endif
+
             ActiveInputDevice activeInputDevice = ActiveInputDevice.ControllerActive;
             YVRPlugin.Instance.GetCurrentInputDevice(ref activeInputDevice);
             return activeInputDevice;

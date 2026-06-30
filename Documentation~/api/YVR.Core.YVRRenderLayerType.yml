@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRRenderLayerType
+  commentId: T:YVR.Core.YVRRenderLayerType
+  id: YVRRenderLayerType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRRenderLayerType.Cylinder
+  - YVR.Core.YVRRenderLayerType.Equirect
+  - YVR.Core.YVRRenderLayerType.Quad
+  langs:
+  - csharp
+  - vb
+  name: YVRRenderLayerType
+  nameWithType: YVRRenderLayerType
+  fullName: YVR.Core.YVRRenderLayerType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRRenderLayerType
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum YVRRenderLayerType
+    content.vb: >-
+      <Serializable>
+
+      Public Enum YVRRenderLayerType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRRenderLayerType.Quad
+  commentId: F:YVR.Core.YVRRenderLayerType.Quad
+  id: Quad
+  parent: YVR.Core.YVRRenderLayerType
+  langs:
+  - csharp
+  - vb
+  name: Quad
+  nameWithType: YVRRenderLayerType.Quad
+  fullName: YVR.Core.YVRRenderLayerType.Quad
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Quad
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Quad = 1
+    return:
+      type: YVR.Core.YVRRenderLayerType
+- uid: YVR.Core.YVRRenderLayerType.Cylinder
+  commentId: F:YVR.Core.YVRRenderLayerType.Cylinder
+  id: Cylinder
+  parent: YVR.Core.YVRRenderLayerType
+  langs:
+  - csharp
+  - vb
+  name: Cylinder
+  nameWithType: YVRRenderLayerType.Cylinder
+  fullName: YVR.Core.YVRRenderLayerType.Cylinder
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Cylinder
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Cylinder = 2
+    return:
+      type: YVR.Core.YVRRenderLayerType
+- uid: YVR.Core.YVRRenderLayerType.Equirect
+  commentId: F:YVR.Core.YVRRenderLayerType.Equirect
+  id: Equirect
+  parent: YVR.Core.YVRRenderLayerType
+  langs:
+  - csharp
+  - vb
+  name: Equirect
+  nameWithType: YVRRenderLayerType.Equirect
+  fullName: YVR.Core.YVRRenderLayerType.Equirect
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Equirect
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Equirect = 3
+    return:
+      type: YVR.Core.YVRRenderLayerType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRRenderLayerType
+  commentId: T:YVR.Core.YVRRenderLayerType
+  parent: YVR.Core
+  href: YVR.Core.YVRRenderLayerType.html
+  name: YVRRenderLayerType
+  nameWithType: YVRRenderLayerType
+  fullName: YVR.Core.YVRRenderLayerType
+memberLayout: SeparatePages

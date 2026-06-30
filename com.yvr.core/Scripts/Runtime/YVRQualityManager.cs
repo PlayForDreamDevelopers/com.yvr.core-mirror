@@ -12,6 +12,9 @@ namespace YVR.Core
     [Serializable]
     public partial class YVRQualityManager
     {
+        // Cached WaitForSeconds to reduce GC allocations
+        private static readonly WaitForSecondsRealtime s_WaitOneSecond = new WaitForSecondsRealtime(1.0f);
+
         [Tooltip("K1: VSync every frame.K2: VSync two frame.")]
         [SerializeField] private VSyncCount _vSyncCount = VSyncCount.k1;
 
@@ -233,7 +236,7 @@ namespace YVR.Core
         {
             ApplyVSyncCount(vSyncCount);
             ApplyPowerSetting(powerSetting);
-            yield return new WaitForSecondsRealtime(1.0f);
+            yield return s_WaitOneSecond;
             ApplyFFR(fixedFoveatedRenderingLevel, fixedFoveatedRenderingDynamic);
             ApplySharpen(sharpenType);
         }

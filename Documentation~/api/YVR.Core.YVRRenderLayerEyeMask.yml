@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRRenderLayerEyeMask
+  commentId: T:YVR.Core.YVRRenderLayerEyeMask
+  id: YVRRenderLayerEyeMask
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRRenderLayerEyeMask.kEyeMaskBoth
+  - YVR.Core.YVRRenderLayerEyeMask.kEyeMaskLeft
+  - YVR.Core.YVRRenderLayerEyeMask.kEyeMaskRight
+  langs:
+  - csharp
+  - vb
+  name: YVRRenderLayerEyeMask
+  nameWithType: YVRRenderLayerEyeMask
+  fullName: YVR.Core.YVRRenderLayerEyeMask
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRRenderLayerEyeMask
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum YVRRenderLayerEyeMask
+    content.vb: >-
+      <Serializable>
+
+      Public Enum YVRRenderLayerEyeMask
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRRenderLayerEyeMask.kEyeMaskLeft
+  commentId: F:YVR.Core.YVRRenderLayerEyeMask.kEyeMaskLeft
+  id: kEyeMaskLeft
+  parent: YVR.Core.YVRRenderLayerEyeMask
+  langs:
+  - csharp
+  - vb
+  name: kEyeMaskLeft
+  nameWithType: YVRRenderLayerEyeMask.kEyeMaskLeft
+  fullName: YVR.Core.YVRRenderLayerEyeMask.kEyeMaskLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: kEyeMaskLeft
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: kEyeMaskLeft = 1
+    return:
+      type: YVR.Core.YVRRenderLayerEyeMask
+- uid: YVR.Core.YVRRenderLayerEyeMask.kEyeMaskRight
+  commentId: F:YVR.Core.YVRRenderLayerEyeMask.kEyeMaskRight
+  id: kEyeMaskRight
+  parent: YVR.Core.YVRRenderLayerEyeMask
+  langs:
+  - csharp
+  - vb
+  name: kEyeMaskRight
+  nameWithType: YVRRenderLayerEyeMask.kEyeMaskRight
+  fullName: YVR.Core.YVRRenderLayerEyeMask.kEyeMaskRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: kEyeMaskRight
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: kEyeMaskRight = 2
+    return:
+      type: YVR.Core.YVRRenderLayerEyeMask
+- uid: YVR.Core.YVRRenderLayerEyeMask.kEyeMaskBoth
+  commentId: F:YVR.Core.YVRRenderLayerEyeMask.kEyeMaskBoth
+  id: kEyeMaskBoth
+  parent: YVR.Core.YVRRenderLayerEyeMask
+  langs:
+  - csharp
+  - vb
+  name: kEyeMaskBoth
+  nameWithType: YVRRenderLayerEyeMask.kEyeMaskBoth
+  fullName: YVR.Core.YVRRenderLayerEyeMask.kEyeMaskBoth
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: kEyeMaskBoth
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: kEyeMaskBoth = 3
+    return:
+      type: YVR.Core.YVRRenderLayerEyeMask
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRRenderLayerEyeMask
+  commentId: T:YVR.Core.YVRRenderLayerEyeMask
+  parent: YVR.Core
+  href: YVR.Core.YVRRenderLayerEyeMask.html
+  name: YVRRenderLayerEyeMask
+  nameWithType: YVRRenderLayerEyeMask
+  fullName: YVR.Core.YVRRenderLayerEyeMask
+memberLayout: SeparatePages

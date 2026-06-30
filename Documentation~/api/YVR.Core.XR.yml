@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.XR
+  commentId: N:YVR.Core.XR
+  id: YVR.Core.XR
+  children:
+  - YVR.Core.XR.YVRFeatureSupport
+  - YVR.Core.XR.YVRPlatformSetting
+  - YVR.Core.XR.YVRPlatformSettingEditor
+  - YVR.Core.XR.YVRQualityManagerDrawer
+  - YVR.Core.XR.YVRSDKSettingsWindow
+  - YVR.Core.XR.YVRSettingMessageBoxEditor
+  - YVR.Core.XR.YVRXRBuildProcess
+  - YVR.Core.XR.YVRXRLoader
+  - YVR.Core.XR.YVRXRMetaData
+  - YVR.Core.XR.YVRXRSettings
+  - YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: YVR.Core.XR
+  nameWithType: YVR.Core.XR
+  fullName: YVR.Core.XR
+  type: Namespace
+  assemblies:
+  - YVR.Core.Runtime
+references:
+- uid: YVR.Core.XR.YVRXRSettings
+  commentId: T:YVR.Core.XR.YVRXRSettings
+  parent: YVR.Core.XR
+  href: YVR.Core.XR.YVRXRSettings.html
+  name: YVRXRSettings
+  nameWithType: YVRXRSettings
+  fullName: YVR.Core.XR.YVRXRSettings
+- uid: YVR.Core.XR.YVRPlatformSetting
+  commentId: T:YVR.Core.XR.YVRPlatformSetting
+  parent: YVR.Core.XR
+  href: YVR.Core.XR.YVRPlatformSetting.html
+  name: YVRPlatformSetting
+  nameWithType: YVRPlatformSetting
+  fullName: YVR.Core.XR.YVRPlatformSetting
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings
+  commentId: T:YVR.Core.XR.YVRXRUserDefinedSettings
+  parent: YVR.Core.XR
+  href: YVR.Core.XR.YVRXRUserDefinedSettings.html
+  name: YVRXRUserDefinedSettings
+  nameWithType: YVRXRUserDefinedSettings
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings
+- uid: YVR.Core.XR.YVRFeatureSupport
+  commentId: T:YVR.Core.XR.YVRFeatureSupport
+  parent: YVR.Core.XR
+  href: YVR.Core.XR.YVRFeatureSupport.html
+  name: YVRFeatureSupport
+  nameWithType: YVRFeatureSupport
+  fullName: YVR.Core.XR.YVRFeatureSupport
+- uid: YVR.Core.XR.YVRXRLoader
+  commentId: T:YVR.Core.XR.YVRXRLoader
+  href: YVR.Core.XR.YVRXRLoader.html
+  name: YVRXRLoader
+  nameWithType: YVRXRLoader
+  fullName: YVR.Core.XR.YVRXRLoader
+- uid: YVR.Core.XR.YVRSettingMessageBoxEditor
+  commentId: T:YVR.Core.XR.YVRSettingMessageBoxEditor
+  href: YVR.Core.XR.YVRSettingMessageBoxEditor.html
+  name: YVRSettingMessageBoxEditor
+  nameWithType: YVRSettingMessageBoxEditor
+  fullName: YVR.Core.XR.YVRSettingMessageBoxEditor
+- uid: YVR.Core.XR.YVRQualityManagerDrawer
+  commentId: T:YVR.Core.XR.YVRQualityManagerDrawer
+  href: YVR.Core.XR.YVRQualityManagerDrawer.html
+  name: YVRQualityManagerDrawer
+  nameWithType: YVRQualityManagerDrawer
+  fullName: YVR.Core.XR.YVRQualityManagerDrawer
+- uid: YVR.Core.XR.YVRSDKSettingsWindow
+  commentId: T:YVR.Core.XR.YVRSDKSettingsWindow
+  parent: YVR.Core.XR
+  href: YVR.Core.XR.YVRSDKSettingsWindow.html
+  name: YVRSDKSettingsWindow
+  nameWithType: YVRSDKSettingsWindow
+  fullName: YVR.Core.XR.YVRSDKSettingsWindow
+- uid: YVR.Core.XR.YVRXRMetaData
+  commentId: T:YVR.Core.XR.YVRXRMetaData
+  href: YVR.Core.XR.YVRXRMetaData.html
+  name: YVRXRMetaData
+  nameWithType: YVRXRMetaData
+  fullName: YVR.Core.XR.YVRXRMetaData
+- uid: YVR.Core.XR.YVRXRBuildProcess
+  commentId: T:YVR.Core.XR.YVRXRBuildProcess
+  href: YVR.Core.XR.YVRXRBuildProcess.html
+  name: YVRXRBuildProcess
+  nameWithType: YVRXRBuildProcess
+  fullName: YVR.Core.XR.YVRXRBuildProcess
+- uid: YVR.Core.XR.YVRPlatformSettingEditor
+  commentId: T:YVR.Core.XR.YVRPlatformSettingEditor
+  href: YVR.Core.XR.YVRPlatformSettingEditor.html
+  name: YVRPlatformSettingEditor
+  nameWithType: YVRPlatformSettingEditor
+  fullName: YVR.Core.XR.YVRPlatformSettingEditor
+- uid: YVR.Core.XR
+  commentId: N:YVR.Core.XR
+  href: YVR.html
+  name: YVR.Core.XR
+  nameWithType: YVR.Core.XR
+  fullName: YVR.Core.XR
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.XR
+    name: XR
+    href: YVR.Core.XR.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.XR
+    name: XR
+    href: YVR.Core.XR.html
+memberLayout: SeparatePages

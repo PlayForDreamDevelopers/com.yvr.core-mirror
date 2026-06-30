@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ILayerShapeHandler
+  commentId: T:YVR.Core.ILayerShapeHandler
+  id: ILayerShapeHandler
+  parent: YVR.Core
+  children:
+  - YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  - YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: ILayerShapeHandler
+  nameWithType: ILayerShapeHandler
+  fullName: YVR.Core.ILayerShapeHandler
+  type: Interface
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/ILayerShapeHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ILayerShapeHandler
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/ILayerShapeHandler.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public interface ILayerShapeHandler
+    content.vb: Public Interface ILayerShapeHandler
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  id: HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+  parent: YVR.Core.ILayerShapeHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleLayerPose(IYVRLayerHandle, params object[])
+  nameWithType: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, params object[])
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, params object[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/ILayerShapeHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandleLayerPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/ILayerShapeHandler.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void HandleLayerPose(IYVRLayerHandle layerHandle, params object[] data)
+    parameters:
+    - id: layerHandle
+      type: YVR.Core.IYVRLayerHandle
+    - id: data
+      type: System.Object[]
+    content.vb: Sub HandleLayerPose(layerHandle As IYVRLayerHandle, ParamArray data As Object())
+  overload: YVR.Core.ILayerShapeHandler.HandleLayerPose*
+  nameWithType.vb: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, ParamArray Object())
+  fullName.vb: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, ParamArray Object())
+  name.vb: HandleLayerPose(IYVRLayerHandle, ParamArray Object())
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  id: HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  parent: YVR.Core.ILayerShapeHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleLayerShape(IYVRLayerHandle, params object[])
+  nameWithType: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, params object[])
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, params object[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/ILayerShapeHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandleLayerShape
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/ILayerShapeHandler.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void HandleLayerShape(IYVRLayerHandle layerHandle, params object[] data)
+    parameters:
+    - id: layerHandle
+      type: YVR.Core.IYVRLayerHandle
+    - id: data
+      type: System.Object[]
+    content.vb: Sub HandleLayerShape(layerHandle As IYVRLayerHandle, ParamArray data As Object())
+  overload: YVR.Core.ILayerShapeHandler.HandleLayerShape*
+  nameWithType.vb: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, ParamArray Object())
+  fullName.vb: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, ParamArray Object())
+  name.vb: HandleLayerShape(IYVRLayerHandle, ParamArray Object())
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerPose*
+  commentId: Overload:YVR.Core.ILayerShapeHandler.HandleLayerPose
+  href: YVR.Core.ILayerShapeHandler.HandleLayerPose.html#YVR_Core_ILayerShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_System_Object___
+  name: HandleLayerPose
+  nameWithType: ILayerShapeHandler.HandleLayerPose
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerPose
+- uid: YVR.Core.IYVRLayerHandle
+  commentId: T:YVR.Core.IYVRLayerHandle
+  parent: YVR.Core
+  href: YVR.Core.IYVRLayerHandle.html
+  name: IYVRLayerHandle
+  nameWithType: IYVRLayerHandle
+  fullName: YVR.Core.IYVRLayerHandle
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerShape*
+  commentId: Overload:YVR.Core.ILayerShapeHandler.HandleLayerShape
+  href: YVR.Core.ILayerShapeHandler.HandleLayerShape.html#YVR_Core_ILayerShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_System_Object___
+  name: HandleLayerShape
+  nameWithType: ILayerShapeHandler.HandleLayerShape
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerShape
+memberLayout: SeparatePages

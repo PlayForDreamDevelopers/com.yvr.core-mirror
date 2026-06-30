@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings
+  commentId: T:YVR.Core.XR.YVRXRUserDefinedSettings
+  id: YVRXRUserDefinedSettings
+  parent: YVR.Core.XR
+  children:
+  - YVR.Core.XR.YVRXRUserDefinedSettings.autoResolve
+  - YVR.Core.XR.YVRXRUserDefinedSettings.enablePassthroughProvider
+  - YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPass
+  - YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPassDepth
+  - YVR.Core.XR.YVRXRUserDefinedSettings.innerExtraPassRenderScale
+  - YVR.Core.XR.YVRXRUserDefinedSettings.innerPassRenderScale
+  - YVR.Core.XR.YVRXRUserDefinedSettings.isP3
+  - YVR.Core.XR.YVRXRUserDefinedSettings.optimizeBufferDiscards
+  - YVR.Core.XR.YVRXRUserDefinedSettings.outerExtraPassRenderScale
+  - YVR.Core.XR.YVRXRUserDefinedSettings.outerPassRenderScale
+  - YVR.Core.XR.YVRXRUserDefinedSettings.stereoRenderingMode
+  - YVR.Core.XR.YVRXRUserDefinedSettings.use16BitDepthBuffer
+  - YVR.Core.XR.YVRXRUserDefinedSettings.useAppSW
+  - YVR.Core.XR.YVRXRUserDefinedSettings.useLinearColorSpace
+  - YVR.Core.XR.YVRXRUserDefinedSettings.useMonoscopic
+  langs:
+  - csharp
+  - vb
+  name: YVRXRUserDefinedSettings
+  nameWithType: YVRXRUserDefinedSettings
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRXRUserDefinedSettings
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public struct YVRXRUserDefinedSettings
+    content.vb: Public Structure YVRXRUserDefinedSettings
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.use16BitDepthBuffer
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.use16BitDepthBuffer
+  id: use16BitDepthBuffer
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: use16BitDepthBuffer
+  nameWithType: YVRXRUserDefinedSettings.use16BitDepthBuffer
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.use16BitDepthBuffer
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: use16BitDepthBuffer
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool use16BitDepthBuffer
+    return:
+      type: System.Boolean
+    content.vb: Public use16BitDepthBuffer As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.useMonoscopic
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.useMonoscopic
+  id: useMonoscopic
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: useMonoscopic
+  nameWithType: YVRXRUserDefinedSettings.useMonoscopic
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.useMonoscopic
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: useMonoscopic
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool useMonoscopic
+    return:
+      type: System.Boolean
+    content.vb: Public useMonoscopic As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.useLinearColorSpace
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.useLinearColorSpace
+  id: useLinearColorSpace
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: useLinearColorSpace
+  nameWithType: YVRXRUserDefinedSettings.useLinearColorSpace
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.useLinearColorSpace
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: useLinearColorSpace
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool useLinearColorSpace
+    return:
+      type: System.Boolean
+    content.vb: Public useLinearColorSpace As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.useAppSW
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.useAppSW
+  id: useAppSW
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: useAppSW
+  nameWithType: YVRXRUserDefinedSettings.useAppSW
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.useAppSW
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: useAppSW
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool useAppSW
+    return:
+      type: System.Boolean
+    content.vb: Public useAppSW As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.optimizeBufferDiscards
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.optimizeBufferDiscards
+  id: optimizeBufferDiscards
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: optimizeBufferDiscards
+  nameWithType: YVRXRUserDefinedSettings.optimizeBufferDiscards
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.optimizeBufferDiscards
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: optimizeBufferDiscards
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool optimizeBufferDiscards
+    return:
+      type: System.Boolean
+    content.vb: Public optimizeBufferDiscards As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.enablePassthroughProvider
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.enablePassthroughProvider
+  id: enablePassthroughProvider
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: enablePassthroughProvider
+  nameWithType: YVRXRUserDefinedSettings.enablePassthroughProvider
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.enablePassthroughProvider
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: enablePassthroughProvider
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool enablePassthroughProvider
+    return:
+      type: System.Boolean
+    content.vb: Public enablePassthroughProvider As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.autoResolve
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.autoResolve
+  id: autoResolve
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: autoResolve
+  nameWithType: YVRXRUserDefinedSettings.autoResolve
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.autoResolve
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: autoResolve
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool autoResolve
+    return:
+      type: System.Boolean
+    content.vb: Public autoResolve As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPass
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPass
+  id: extraRenderPass
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: extraRenderPass
+  nameWithType: YVRXRUserDefinedSettings.extraRenderPass
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPass
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: extraRenderPass
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool extraRenderPass
+    return:
+      type: System.Boolean
+    content.vb: Public extraRenderPass As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.isP3
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.isP3
+  id: isP3
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: isP3
+  nameWithType: YVRXRUserDefinedSettings.isP3
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.isP3
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isP3
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public bool isP3
+    return:
+      type: System.Boolean
+    content.vb: Public isP3 As Boolean
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPassDepth
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPassDepth
+  id: extraRenderPassDepth
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: extraRenderPassDepth
+  nameWithType: YVRXRUserDefinedSettings.extraRenderPassDepth
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.extraRenderPassDepth
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: extraRenderPassDepth
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 25
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public int extraRenderPassDepth
+    return:
+      type: System.Int32
+    content.vb: Public extraRenderPassDepth As Integer
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.stereoRenderingMode
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.stereoRenderingMode
+  id: stereoRenderingMode
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: stereoRenderingMode
+  nameWithType: YVRXRUserDefinedSettings.stereoRenderingMode
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.stereoRenderingMode
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: stereoRenderingMode
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 26
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public ushort stereoRenderingMode
+    return:
+      type: System.UInt16
+    content.vb: Public stereoRenderingMode As UShort
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.outerPassRenderScale
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.outerPassRenderScale
+  id: outerPassRenderScale
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: outerPassRenderScale
+  nameWithType: YVRXRUserDefinedSettings.outerPassRenderScale
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.outerPassRenderScale
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: outerPassRenderScale
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 27
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public float outerPassRenderScale
+    return:
+      type: System.Single
+    content.vb: Public outerPassRenderScale As Single
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.innerPassRenderScale
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.innerPassRenderScale
+  id: innerPassRenderScale
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: innerPassRenderScale
+  nameWithType: YVRXRUserDefinedSettings.innerPassRenderScale
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.innerPassRenderScale
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: innerPassRenderScale
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 28
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public float innerPassRenderScale
+    return:
+      type: System.Single
+    content.vb: Public innerPassRenderScale As Single
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.outerExtraPassRenderScale
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.outerExtraPassRenderScale
+  id: outerExtraPassRenderScale
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: outerExtraPassRenderScale
+  nameWithType: YVRXRUserDefinedSettings.outerExtraPassRenderScale
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.outerExtraPassRenderScale
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: outerExtraPassRenderScale
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public float outerExtraPassRenderScale
+    return:
+      type: System.Single
+    content.vb: Public outerExtraPassRenderScale As Single
+- uid: YVR.Core.XR.YVRXRUserDefinedSettings.innerExtraPassRenderScale
+  commentId: F:YVR.Core.XR.YVRXRUserDefinedSettings.innerExtraPassRenderScale
+  id: innerExtraPassRenderScale
+  parent: YVR.Core.XR.YVRXRUserDefinedSettings
+  langs:
+  - csharp
+  - vb
+  name: innerExtraPassRenderScale
+  nameWithType: YVRXRUserDefinedSettings.innerExtraPassRenderScale
+  fullName: YVR.Core.XR.YVRXRUserDefinedSettings.innerExtraPassRenderScale
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: innerExtraPassRenderScale
+    path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRUserDefineSettings.cs
+    startLine: 30
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core.XR
+  syntax:
+    content: public float innerExtraPassRenderScale
+    return:
+      type: System.Single
+    content.vb: Public innerExtraPassRenderScale As Single
+references:
+- uid: YVR.Core.XR
+  commentId: N:YVR.Core.XR
+  href: YVR.html
+  name: YVR.Core.XR
+  nameWithType: YVR.Core.XR
+  fullName: YVR.Core.XR
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.XR
+    name: XR
+    href: YVR.Core.XR.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.XR
+    name: XR
+    href: YVR.Core.XR.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+memberLayout: SeparatePages

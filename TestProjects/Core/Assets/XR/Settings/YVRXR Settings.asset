@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb27561930c19f43a46e51ea1200e86, type: 3}
+  m_Name: YVRXR Settings
+  m_EditorClassIdentifier: 
+  use16BitDepthBuffer: 0
+  useMonoscopic: 0
+  optimizeBufferDiscards: 0
+  useAppSW: 0
+  stereoRenderingMode: 2
+  outerPassRenderScale: 1
+  innerPassRenderScale: 1
+  OSSplashScreen: {fileID: 2800000, guid: c1d870384c7ed3c49b30d01278bf3949, type: 3}
+  passthroughProvider: 0
+  autoResolve: 1
+  extraRenderPass: 0
+  extraRenderPassDepth: -1
+  outerExtraPassRenderScale: 1
+  innerExtraPassRenderScale: 1
+  isP3: 0
+  require6Dof: 1
+  handTrackingSupport: 1
+  eyeTrackingSupport: 2
+  requireSpatialAnchor: 0
+  requireSceneAnchor: 0
+  LBESupport: 0

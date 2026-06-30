@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  commentId: T:YVR.Core.YVRGraphicRaycaster.RaycastHit
+  id: YVRGraphicRaycaster.RaycastHit
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRGraphicRaycaster.RaycastHit.#ctor(UnityEngine.UI.Graphic,UnityEngine.Vector3)
+  - YVR.Core.YVRGraphicRaycaster.RaycastHit.graphic
+  - YVR.Core.YVRGraphicRaycaster.RaycastHit.hitPointWorldPos
+  langs:
+  - csharp
+  - vb
+  name: YVRGraphicRaycaster.RaycastHit
+  nameWithType: YVRGraphicRaycaster.RaycastHit
+  fullName: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RaycastHit
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: protected readonly struct YVRGraphicRaycaster.RaycastHit
+    content.vb: Protected Structure YVRGraphicRaycaster.RaycastHit
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.YVRGraphicRaycaster.RaycastHit.graphic
+  commentId: F:YVR.Core.YVRGraphicRaycaster.RaycastHit.graphic
+  id: graphic
+  parent: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  langs:
+  - csharp
+  - vb
+  name: graphic
+  nameWithType: YVRGraphicRaycaster.RaycastHit.graphic
+  fullName: YVR.Core.YVRGraphicRaycaster.RaycastHit.graphic
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: graphic
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public readonly Graphic graphic
+    return:
+      type: UnityEngine.UI.Graphic
+    content.vb: Public ReadOnly graphic As Graphic
+- uid: YVR.Core.YVRGraphicRaycaster.RaycastHit.hitPointWorldPos
+  commentId: F:YVR.Core.YVRGraphicRaycaster.RaycastHit.hitPointWorldPos
+  id: hitPointWorldPos
+  parent: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  langs:
+  - csharp
+  - vb
+  name: hitPointWorldPos
+  nameWithType: YVRGraphicRaycaster.RaycastHit.hitPointWorldPos
+  fullName: YVR.Core.YVRGraphicRaycaster.RaycastHit.hitPointWorldPos
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: hitPointWorldPos
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+    startLine: 19
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public readonly Vector3 hitPointWorldPos
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly hitPointWorldPos As Vector3
+- uid: YVR.Core.YVRGraphicRaycaster.RaycastHit.#ctor(UnityEngine.UI.Graphic,UnityEngine.Vector3)
+  commentId: M:YVR.Core.YVRGraphicRaycaster.RaycastHit.#ctor(UnityEngine.UI.Graphic,UnityEngine.Vector3)
+  id: '#ctor(UnityEngine.UI.Graphic,UnityEngine.Vector3)'
+  parent: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  langs:
+  - csharp
+  - vb
+  name: RaycastHit(Graphic, Vector3)
+  nameWithType: YVRGraphicRaycaster.RaycastHit.RaycastHit(Graphic, Vector3)
+  fullName: YVR.Core.YVRGraphicRaycaster.RaycastHit.RaycastHit(UnityEngine.UI.Graphic, UnityEngine.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRGraphicRaycaster.cs
+    startLine: 21
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public RaycastHit(Graphic graphic, Vector3 hitPointWorldPos)
+    parameters:
+    - id: graphic
+      type: UnityEngine.UI.Graphic
+    - id: hitPointWorldPos
+      type: UnityEngine.Vector3
+    content.vb: Public Sub New(graphic As Graphic, hitPointWorldPos As Vector3)
+  overload: YVR.Core.YVRGraphicRaycaster.RaycastHit.#ctor*
+  nameWithType.vb: YVRGraphicRaycaster.RaycastHit.New(Graphic, Vector3)
+  fullName.vb: YVR.Core.YVRGraphicRaycaster.RaycastHit.New(UnityEngine.UI.Graphic, UnityEngine.Vector3)
+  name.vb: New(Graphic, Vector3)
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.Graphic
+  commentId: T:UnityEngine.UI.Graphic
+  parent: UnityEngine.UI
+  name: Graphic
+  nameWithType: Graphic
+  fullName: UnityEngine.UI.Graphic
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRGraphicRaycaster.RaycastHit.#ctor*
+  commentId: Overload:YVR.Core.YVRGraphicRaycaster.RaycastHit.#ctor
+  href: YVR.Core.YVRGraphicRaycaster.RaycastHit.-ctor.html#YVR_Core_YVRGraphicRaycaster_RaycastHit__ctor_UnityEngine_UI_Graphic_UnityEngine_Vector3_
+  name: RaycastHit
+  nameWithType: YVRGraphicRaycaster.RaycastHit.RaycastHit
+  fullName: YVR.Core.YVRGraphicRaycaster.RaycastHit.RaycastHit
+  nameWithType.vb: YVRGraphicRaycaster.RaycastHit.New
+  fullName.vb: YVR.Core.YVRGraphicRaycaster.RaycastHit.New
+  name.vb: New
+memberLayout: SeparatePages

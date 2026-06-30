@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRAnchorLocationFlags
+  commentId: T:YVR.Core.YVRAnchorLocationFlags
+  id: YVRAnchorLocationFlags
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRAnchorLocationFlags.LocationOrientationTracked
+  - YVR.Core.YVRAnchorLocationFlags.LocationOrientationValid
+  - YVR.Core.YVRAnchorLocationFlags.LocationPositionTracked
+  - YVR.Core.YVRAnchorLocationFlags.LocationPositionValid
+  langs:
+  - csharp
+  - vb
+  name: YVRAnchorLocationFlags
+  nameWithType: YVRAnchorLocationFlags
+  fullName: YVR.Core.YVRAnchorLocationFlags
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRAnchorLocationFlags
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRAnchorLocationFlags
+    content.vb: Public Enum YVRAnchorLocationFlags
+- uid: YVR.Core.YVRAnchorLocationFlags.LocationOrientationValid
+  commentId: F:YVR.Core.YVRAnchorLocationFlags.LocationOrientationValid
+  id: LocationOrientationValid
+  parent: YVR.Core.YVRAnchorLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: LocationOrientationValid
+  nameWithType: YVRAnchorLocationFlags.LocationOrientationValid
+  fullName: YVR.Core.YVRAnchorLocationFlags.LocationOrientationValid
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LocationOrientationValid
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: LocationOrientationValid = 1
+    return:
+      type: YVR.Core.YVRAnchorLocationFlags
+- uid: YVR.Core.YVRAnchorLocationFlags.LocationPositionValid
+  commentId: F:YVR.Core.YVRAnchorLocationFlags.LocationPositionValid
+  id: LocationPositionValid
+  parent: YVR.Core.YVRAnchorLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: LocationPositionValid
+  nameWithType: YVRAnchorLocationFlags.LocationPositionValid
+  fullName: YVR.Core.YVRAnchorLocationFlags.LocationPositionValid
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LocationPositionValid
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: LocationPositionValid = 2
+    return:
+      type: YVR.Core.YVRAnchorLocationFlags
+- uid: YVR.Core.YVRAnchorLocationFlags.LocationOrientationTracked
+  commentId: F:YVR.Core.YVRAnchorLocationFlags.LocationOrientationTracked
+  id: LocationOrientationTracked
+  parent: YVR.Core.YVRAnchorLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: LocationOrientationTracked
+  nameWithType: YVRAnchorLocationFlags.LocationOrientationTracked
+  fullName: YVR.Core.YVRAnchorLocationFlags.LocationOrientationTracked
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LocationOrientationTracked
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: LocationOrientationTracked = 4
+    return:
+      type: YVR.Core.YVRAnchorLocationFlags
+- uid: YVR.Core.YVRAnchorLocationFlags.LocationPositionTracked
+  commentId: F:YVR.Core.YVRAnchorLocationFlags.LocationPositionTracked
+  id: LocationPositionTracked
+  parent: YVR.Core.YVRAnchorLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: LocationPositionTracked
+  nameWithType: YVRAnchorLocationFlags.LocationPositionTracked
+  fullName: YVR.Core.YVRAnchorLocationFlags.LocationPositionTracked
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LocationPositionTracked
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRAnchorLocationFlags.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: LocationPositionTracked = 8
+    return:
+      type: YVR.Core.YVRAnchorLocationFlags
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRAnchorLocationFlags
+  commentId: T:YVR.Core.YVRAnchorLocationFlags
+  parent: YVR.Core
+  href: YVR.Core.YVRAnchorLocationFlags.html
+  name: YVRAnchorLocationFlags
+  nameWithType: YVRAnchorLocationFlags
+  fullName: YVR.Core.YVRAnchorLocationFlags
+memberLayout: SeparatePages

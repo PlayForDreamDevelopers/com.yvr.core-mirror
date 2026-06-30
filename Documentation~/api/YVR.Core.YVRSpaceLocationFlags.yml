@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRSpaceLocationFlags
+  commentId: T:YVR.Core.YVRSpaceLocationFlags
+  id: YVRSpaceLocationFlags
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  - YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  - YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  - YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_VALID_BIT
+  langs:
+  - csharp
+  - vb
+  name: YVRSpaceLocationFlags
+  nameWithType: YVRSpaceLocationFlags
+  fullName: YVR.Core.YVRSpaceLocationFlags
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRSpaceLocationFlags
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public enum YVRSpaceLocationFlags : ulong'
+    content.vb: Public Enum YVRSpaceLocationFlags As ULong
+- uid: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  commentId: F:YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  id: XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  parent: YVR.Core.YVRSpaceLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  nameWithType: YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  fullName: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_SPACE_LOCATION_ORIENTATION_VALID_BIT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_SPACE_LOCATION_ORIENTATION_VALID_BIT = 1
+    return:
+      type: YVR.Core.YVRSpaceLocationFlags
+- uid: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_VALID_BIT
+  commentId: F:YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_VALID_BIT
+  id: XR_SPACE_LOCATION_POSITION_VALID_BIT
+  parent: YVR.Core.YVRSpaceLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: XR_SPACE_LOCATION_POSITION_VALID_BIT
+  nameWithType: YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_VALID_BIT
+  fullName: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_VALID_BIT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_SPACE_LOCATION_POSITION_VALID_BIT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_SPACE_LOCATION_POSITION_VALID_BIT = 2
+    return:
+      type: YVR.Core.YVRSpaceLocationFlags
+- uid: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  commentId: F:YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  id: XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  parent: YVR.Core.YVRSpaceLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  nameWithType: YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  fullName: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_SPACE_LOCATION_ORIENTATION_TRACKED_BIT = 4
+    return:
+      type: YVR.Core.YVRSpaceLocationFlags
+- uid: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  commentId: F:YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  id: XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  parent: YVR.Core.YVRSpaceLocationFlags
+  langs:
+  - csharp
+  - vb
+  name: XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  nameWithType: YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  fullName: YVR.Core.YVRSpaceLocationFlags.XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_SPACE_LOCATION_POSITION_TRACKED_BIT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRSpaceLocationFlags.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_SPACE_LOCATION_POSITION_TRACKED_BIT = 8
+    return:
+      type: YVR.Core.YVRSpaceLocationFlags
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRSpaceLocationFlags
+  commentId: T:YVR.Core.YVRSpaceLocationFlags
+  parent: YVR.Core
+  href: YVR.Core.YVRSpaceLocationFlags.html
+  name: YVRSpaceLocationFlags
+  nameWithType: YVRSpaceLocationFlags
+  fullName: YVR.Core.YVRSpaceLocationFlags
+memberLayout: SeparatePages

@@ -1,0 +1,25 @@
+diff a/native.core/src/main/cpp/YVRUnityPlugin.h b/native.core/src/main/cpp/YVRUnityPlugin.h	(rejected hunks)
+@@ -16,6 +16,7 @@
+ #include "YVRModuleMgrs/YVRUnityXRProviderMgr.h"
+ 
+ #include "VRApiHandlers/VRApiHandlersMgr.h"
++#include "YVRModuleMgrs/YVRHandMgr.h"
+ 
+ class YVRUnityPlugin
+ {
+@@ -26,6 +27,7 @@ class YVRUnityPlugin
+     YVREventsMgr *eventsMgr;
+     YVRUnityXRProviderMgr *unityXRProviderMgr;
+     GfxTasksMgr *gfxTasksMgr;
++    YVRHandMgr *handMgr;
+ 
+   public:
+     YVRUnityPlugin()
+@@ -36,6 +38,7 @@ class YVRUnityPlugin
+         eventsMgr = new YVREventsMgr();
+         unityXRProviderMgr = new YVRUnityXRProviderMgr();
+         gfxTasksMgr = new GfxTasksMgr();
++        handMgr = new YVRHandMgr();
+     }
+ };
+ 

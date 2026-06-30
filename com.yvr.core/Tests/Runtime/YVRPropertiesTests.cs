@@ -9,6 +9,9 @@ namespace YVR.Core.Test
     [TestFixture]
     public class YVRPropertiesTests
     {
+        // Cached WaitForSeconds to reduce GC allocations in tests
+        private static readonly WaitForSecondsRealtime s_WaitOneSecond = new WaitForSecondsRealtime(1);
+
         [OneTimeSetUp]
         public void Init() { }
 
@@ -119,7 +122,7 @@ namespace YVR.Core.Test
             int targetRate)
         {
             YVRManager.instance.cameraRenderer.displayFrequency = targetRate;
-            yield return new WaitForSecondsRealtime(1);
+            yield return s_WaitOneSecond;
             Assert.That(Math.Abs(targetRate - YVRManager.instance.cameraRenderer.displayFrequency) < 0.01f);
         }
 

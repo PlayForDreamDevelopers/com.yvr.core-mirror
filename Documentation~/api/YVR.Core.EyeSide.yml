@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.EyeSide
+  commentId: T:YVR.Core.EyeSide
+  id: EyeSide
+  parent: YVR.Core
+  children:
+  - YVR.Core.EyeSide.Both
+  - YVR.Core.EyeSide.Left
+  - YVR.Core.EyeSide.Right
+  langs:
+  - csharp
+  - vb
+  name: EyeSide
+  nameWithType: EyeSide
+  fullName: YVR.Core.EyeSide
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EyeSide
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public enum EyeSide
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Enum EyeSide
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.EyeSide.Left
+  commentId: F:YVR.Core.EyeSide.Left
+  id: Left
+  parent: YVR.Core.EyeSide
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: EyeSide.Left
+  fullName: YVR.Core.EyeSide.Left
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Left
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Left = 1
+    return:
+      type: YVR.Core.EyeSide
+- uid: YVR.Core.EyeSide.Right
+  commentId: F:YVR.Core.EyeSide.Right
+  id: Right
+  parent: YVR.Core.EyeSide
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: EyeSide.Right
+  fullName: YVR.Core.EyeSide.Right
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Right
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Right = 2
+    return:
+      type: YVR.Core.EyeSide
+- uid: YVR.Core.EyeSide.Both
+  commentId: F:YVR.Core.EyeSide.Both
+  id: Both
+  parent: YVR.Core.EyeSide
+  langs:
+  - csharp
+  - vb
+  name: Both
+  nameWithType: EyeSide.Both
+  fullName: YVR.Core.EyeSide.Both
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Both
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerData.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Both = 3
+    return:
+      type: YVR.Core.EyeSide
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.EyeSide
+  commentId: T:YVR.Core.EyeSide
+  parent: YVR.Core
+  href: YVR.Core.EyeSide.html
+  name: EyeSide
+  nameWithType: EyeSide
+  fullName: YVR.Core.EyeSide
+memberLayout: SeparatePages

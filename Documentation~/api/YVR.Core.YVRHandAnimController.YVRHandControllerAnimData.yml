@@ -1,0 +1,629 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  commentId: T:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  id: YVRHandAnimController.YVRHandControllerAnimData
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.defaultBlendButton
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.handTriggerBlend
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.indexTriggerBlend
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.isIndexTriggerTouch
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.joy
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.onePressBlend
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.oneTouchBlend
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.thumbstickTouchBlend
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.touchStickBlendButton
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoPressBlend
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoTouchBlend
+  langs:
+  - csharp
+  - vb
+  name: YVRHandAnimController.YVRHandControllerAnimData
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRHandControllerAnimData
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 36
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public struct YVRHandAnimController.YVRHandControllerAnimData
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Structure YVRHandAnimController.YVRHandControllerAnimData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.thumbstickTouchBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.thumbstickTouchBlend
+  id: thumbstickTouchBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: thumbstickTouchBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.thumbstickTouchBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.thumbstickTouchBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: thumbstickTouchBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 39
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float thumbstickTouchBlend
+    return:
+      type: System.Single
+    content.vb: Public thumbstickTouchBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.joy
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.joy
+  id: joy
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: joy
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.joy
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.joy
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: joy
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 40
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public Vector2 joy
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public joy As Vector2
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.oneTouchBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.oneTouchBlend
+  id: oneTouchBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: oneTouchBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.oneTouchBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.oneTouchBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: oneTouchBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 41
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float oneTouchBlend
+    return:
+      type: System.Single
+    content.vb: Public oneTouchBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoTouchBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoTouchBlend
+  id: twoTouchBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: twoTouchBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.twoTouchBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoTouchBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: twoTouchBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 42
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float twoTouchBlend
+    return:
+      type: System.Single
+    content.vb: Public twoTouchBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.onePressBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.onePressBlend
+  id: onePressBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: onePressBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.onePressBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.onePressBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onePressBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 43
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float onePressBlend
+    return:
+      type: System.Single
+    content.vb: Public onePressBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoPressBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoPressBlend
+  id: twoPressBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: twoPressBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.twoPressBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.twoPressBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: twoPressBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 44
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float twoPressBlend
+    return:
+      type: System.Single
+    content.vb: Public twoPressBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.indexTriggerBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.indexTriggerBlend
+  id: indexTriggerBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: indexTriggerBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.indexTriggerBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.indexTriggerBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: indexTriggerBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 45
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float indexTriggerBlend
+    return:
+      type: System.Single
+    content.vb: Public indexTriggerBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.handTriggerBlend
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.handTriggerBlend
+  id: handTriggerBlend
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: handTriggerBlend
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.handTriggerBlend
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.handTriggerBlend
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: handTriggerBlend
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 46
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float handTriggerBlend
+    return:
+      type: System.Single
+    content.vb: Public handTriggerBlend As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.defaultBlendButton
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.defaultBlendButton
+  id: defaultBlendButton
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: defaultBlendButton
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.defaultBlendButton
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.defaultBlendButton
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: defaultBlendButton
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 47
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float defaultBlendButton
+    return:
+      type: System.Single
+    content.vb: Public defaultBlendButton As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.touchStickBlendButton
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.touchStickBlendButton
+  id: touchStickBlendButton
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: touchStickBlendButton
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.touchStickBlendButton
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.touchStickBlendButton
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: touchStickBlendButton
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 48
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float touchStickBlendButton
+    return:
+      type: System.Single
+    content.vb: Public touchStickBlendButton As Single
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.isIndexTriggerTouch
+  commentId: F:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.isIndexTriggerTouch
+  id: isIndexTriggerTouch
+  parent: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  langs:
+  - csharp
+  - vb
+  name: isIndexTriggerTouch
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData.isIndexTriggerTouch
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.isIndexTriggerTouch
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isIndexTriggerTouch
+    path: ../com.yvr.core/Scripts/Runtime/AnimController/YVRHandAnimData.cs
+    startLine: 49
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool isIndexTriggerTouch
+    return:
+      type: System.Boolean
+    content.vb: Public isIndexTriggerTouch As Boolean
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+memberLayout: SeparatePages

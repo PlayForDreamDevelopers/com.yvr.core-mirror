@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ActiveInputDevice
+  commentId: T:YVR.Core.ActiveInputDevice
+  id: ActiveInputDevice
+  parent: YVR.Core
+  children:
+  - YVR.Core.ActiveInputDevice.ControllerActive
+  - YVR.Core.ActiveInputDevice.HandTrackingActive
+  - YVR.Core.ActiveInputDevice.None
+  langs:
+  - csharp
+  - vb
+  name: ActiveInputDevice
+  nameWithType: ActiveInputDevice
+  fullName: YVR.Core.ActiveInputDevice
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ActiveInputDevice
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public enum ActiveInputDevice : ulong'
+    content.vb: Public Enum ActiveInputDevice As ULong
+- uid: YVR.Core.ActiveInputDevice.None
+  commentId: F:YVR.Core.ActiveInputDevice.None
+  id: None
+  parent: YVR.Core.ActiveInputDevice
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ActiveInputDevice.None
+  fullName: YVR.Core.ActiveInputDevice.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.ActiveInputDevice
+- uid: YVR.Core.ActiveInputDevice.ControllerActive
+  commentId: F:YVR.Core.ActiveInputDevice.ControllerActive
+  id: ControllerActive
+  parent: YVR.Core.ActiveInputDevice
+  langs:
+  - csharp
+  - vb
+  name: ControllerActive
+  nameWithType: ActiveInputDevice.ControllerActive
+  fullName: YVR.Core.ActiveInputDevice.ControllerActive
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllerActive
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: ControllerActive = 1
+    return:
+      type: YVR.Core.ActiveInputDevice
+- uid: YVR.Core.ActiveInputDevice.HandTrackingActive
+  commentId: F:YVR.Core.ActiveInputDevice.HandTrackingActive
+  id: HandTrackingActive
+  parent: YVR.Core.ActiveInputDevice
+  langs:
+  - csharp
+  - vb
+  name: HandTrackingActive
+  nameWithType: ActiveInputDevice.HandTrackingActive
+  fullName: YVR.Core.ActiveInputDevice.HandTrackingActive
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandTrackingActive
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HandTrackingActive = 2
+    return:
+      type: YVR.Core.ActiveInputDevice
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.ActiveInputDevice
+  commentId: T:YVR.Core.ActiveInputDevice
+  parent: YVR.Core
+  href: YVR.Core.ActiveInputDevice.html
+  name: ActiveInputDevice
+  nameWithType: ActiveInputDevice
+  fullName: YVR.Core.ActiveInputDevice
+memberLayout: SeparatePages

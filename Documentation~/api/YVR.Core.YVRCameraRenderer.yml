@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRCameraRenderer
+  commentId: T:YVR.Core.YVRCameraRenderer
+  id: YVRCameraRenderer
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRCameraRenderer.GetEyeRenderDesc(YVR.Core.EyeSide)
+  - YVR.Core.YVRCameraRenderer.Initialize(YVR.Core.YVRManager)
+  - YVR.Core.YVRCameraRenderer.centerEyeCamera
+  - YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable
+  - YVR.Core.YVRCameraRenderer.displayFrequency
+  - YVR.Core.YVRCameraRenderer.isFocusing
+  - YVR.Core.YVRCameraRenderer.isVisible
+  - YVR.Core.YVRCameraRenderer.leftEyeCamera
+  - YVR.Core.YVRCameraRenderer.rightEyeCamera
+  - YVR.Core.YVRCameraRenderer.stereoRenderingMode
+  langs:
+  - csharp
+  - vb
+  name: YVRCameraRenderer
+  nameWithType: YVRCameraRenderer
+  fullName: YVR.Core.YVRCameraRenderer
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRendererData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRCameraRenderer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRendererData.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Encapsulate all rendering related operation and data
+  example: []
+  syntax:
+    content: public class YVRCameraRenderer
+    content.vb: Public Class YVRCameraRenderer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRCameraRenderer.centerEyeCamera
+  commentId: P:YVR.Core.YVRCameraRenderer.centerEyeCamera
+  id: centerEyeCamera
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: centerEyeCamera
+  nameWithType: YVRCameraRenderer.centerEyeCamera
+  fullName: YVR.Core.YVRCameraRenderer.centerEyeCamera
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: centerEyeCamera
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The camera of center eye
+  example: []
+  syntax:
+    content: public Camera centerEyeCamera { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public Property centerEyeCamera As Camera
+  overload: YVR.Core.YVRCameraRenderer.centerEyeCamera*
+- uid: YVR.Core.YVRCameraRenderer.leftEyeCamera
+  commentId: P:YVR.Core.YVRCameraRenderer.leftEyeCamera
+  id: leftEyeCamera
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: leftEyeCamera
+  nameWithType: YVRCameraRenderer.leftEyeCamera
+  fullName: YVR.Core.YVRCameraRenderer.leftEyeCamera
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: leftEyeCamera
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The camera of left eye
+  example: []
+  syntax:
+    content: public Camera leftEyeCamera { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public Property leftEyeCamera As Camera
+  overload: YVR.Core.YVRCameraRenderer.leftEyeCamera*
+- uid: YVR.Core.YVRCameraRenderer.rightEyeCamera
+  commentId: P:YVR.Core.YVRCameraRenderer.rightEyeCamera
+  id: rightEyeCamera
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: rightEyeCamera
+  nameWithType: YVRCameraRenderer.rightEyeCamera
+  fullName: YVR.Core.YVRCameraRenderer.rightEyeCamera
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: rightEyeCamera
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The camera of right eye
+  example: []
+  syntax:
+    content: public Camera rightEyeCamera { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public Property rightEyeCamera As Camera
+  overload: YVR.Core.YVRCameraRenderer.rightEyeCamera*
+- uid: YVR.Core.YVRCameraRenderer.GetEyeRenderDesc(YVR.Core.EyeSide)
+  commentId: M:YVR.Core.YVRCameraRenderer.GetEyeRenderDesc(YVR.Core.EyeSide)
+  id: GetEyeRenderDesc(YVR.Core.EyeSide)
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetEyeRenderDesc(EyeSide)
+  nameWithType: YVRCameraRenderer.GetEyeRenderDesc(EyeSide)
+  fullName: YVR.Core.YVRCameraRenderer.GetEyeRenderDesc(YVR.Core.EyeSide)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetEyeRenderDesc
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 28
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Gets the resolution and field of view for the given eye.
+  example: []
+  syntax:
+    content: public YVRCameraRenderer.EyeRenderDescription GetEyeRenderDesc(EyeSide eye)
+    parameters:
+    - id: eye
+      type: YVR.Core.EyeSide
+    return:
+      type: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+    content.vb: Public Function GetEyeRenderDesc(eye As EyeSide) As YVRCameraRenderer.EyeRenderDescription
+  overload: YVR.Core.YVRCameraRenderer.GetEyeRenderDesc*
+- uid: YVR.Core.YVRCameraRenderer.displayFrequency
+  commentId: P:YVR.Core.YVRCameraRenderer.displayFrequency
+  id: displayFrequency
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: displayFrequency
+  nameWithType: YVRCameraRenderer.displayFrequency
+  fullName: YVR.Core.YVRCameraRenderer.displayFrequency
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: displayFrequency
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 36
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get or Set the current display frequency.
+  example: []
+  syntax:
+    content: public float displayFrequency { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property displayFrequency As Single
+  overload: YVR.Core.YVRCameraRenderer.displayFrequency*
+- uid: YVR.Core.YVRCameraRenderer.stereoRenderingMode
+  commentId: P:YVR.Core.YVRCameraRenderer.stereoRenderingMode
+  id: stereoRenderingMode
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: stereoRenderingMode
+  nameWithType: YVRCameraRenderer.stereoRenderingMode
+  fullName: YVR.Core.YVRCameraRenderer.stereoRenderingMode
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: stereoRenderingMode
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 46
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    The actual used rendering mode, which may be different from the mode in settings in some case
+
+    i.e. set to QuadViews when the hardware doesn't support QuadViews will be changed to MultiView
+  example: []
+  syntax:
+    content: public StereoRenderingMode stereoRenderingMode { get; }
+    parameters: []
+    return:
+      type: YVR.Core.StereoRenderingMode
+    content.vb: Public ReadOnly Property stereoRenderingMode As StereoRenderingMode
+  overload: YVR.Core.YVRCameraRenderer.stereoRenderingMode*
+- uid: YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable
+  commentId: P:YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable
+  id: displayFrequenciesAvailable
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: displayFrequenciesAvailable
+  nameWithType: YVRCameraRenderer.displayFrequenciesAvailable
+  fullName: YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: displayFrequenciesAvailable
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 51
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Gets the list of available display frequencies supported by this hardware.
+  example: []
+  syntax:
+    content: public float[] displayFrequenciesAvailable { get; }
+    parameters: []
+    return:
+      type: System.Single[]
+    content.vb: Public ReadOnly Property displayFrequenciesAvailable As Single()
+  overload: YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable*
+- uid: YVR.Core.YVRCameraRenderer.isFocusing
+  commentId: P:YVR.Core.YVRCameraRenderer.isFocusing
+  id: isFocusing
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: isFocusing
+  nameWithType: YVRCameraRenderer.isFocusing
+  fullName: YVR.Core.YVRCameraRenderer.isFocusing
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isFocusing
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 56
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the application is displayed in focus.
+  example: []
+  syntax:
+    content: public bool isFocusing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property isFocusing As Boolean
+  overload: YVR.Core.YVRCameraRenderer.isFocusing*
+- uid: YVR.Core.YVRCameraRenderer.isVisible
+  commentId: P:YVR.Core.YVRCameraRenderer.isVisible
+  id: isVisible
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: isVisible
+  nameWithType: YVRCameraRenderer.isVisible
+  fullName: YVR.Core.YVRCameraRenderer.isVisible
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isVisible
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 61
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the app is currently visible.
+  example: []
+  syntax:
+    content: public bool isVisible { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property isVisible As Boolean
+  overload: YVR.Core.YVRCameraRenderer.isVisible*
+- uid: YVR.Core.YVRCameraRenderer.Initialize(YVR.Core.YVRManager)
+  commentId: M:YVR.Core.YVRCameraRenderer.Initialize(YVR.Core.YVRManager)
+  id: Initialize(YVR.Core.YVRManager)
+  parent: YVR.Core.YVRCameraRenderer
+  langs:
+  - csharp
+  - vb
+  name: Initialize(YVRManager)
+  nameWithType: YVRCameraRenderer.Initialize(YVRManager)
+  fullName: YVR.Core.YVRCameraRenderer.Initialize(YVR.Core.YVRManager)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Initialize
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCameraRenderer.cs
+    startLine: 70
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Initialize function
+  example: []
+  syntax:
+    content: public void Initialize(YVRManager yvrManager)
+    parameters:
+    - id: yvrManager
+      type: YVR.Core.YVRManager
+    content.vb: Public Sub Initialize(yvrManager As YVRManager)
+  overload: YVR.Core.YVRCameraRenderer.Initialize*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRCameraRenderer.centerEyeCamera*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.centerEyeCamera
+  href: YVR.Core.YVRCameraRenderer.centerEyeCamera.html#YVR_Core_YVRCameraRenderer_centerEyeCamera
+  name: centerEyeCamera
+  nameWithType: YVRCameraRenderer.centerEyeCamera
+  fullName: YVR.Core.YVRCameraRenderer.centerEyeCamera
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRCameraRenderer.leftEyeCamera*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.leftEyeCamera
+  href: YVR.Core.YVRCameraRenderer.leftEyeCamera.html#YVR_Core_YVRCameraRenderer_leftEyeCamera
+  name: leftEyeCamera
+  nameWithType: YVRCameraRenderer.leftEyeCamera
+  fullName: YVR.Core.YVRCameraRenderer.leftEyeCamera
+- uid: YVR.Core.YVRCameraRenderer.rightEyeCamera*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.rightEyeCamera
+  href: YVR.Core.YVRCameraRenderer.rightEyeCamera.html#YVR_Core_YVRCameraRenderer_rightEyeCamera
+  name: rightEyeCamera
+  nameWithType: YVRCameraRenderer.rightEyeCamera
+  fullName: YVR.Core.YVRCameraRenderer.rightEyeCamera
+- uid: YVR.Core.YVRCameraRenderer.GetEyeRenderDesc*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.GetEyeRenderDesc
+  href: YVR.Core.YVRCameraRenderer.GetEyeRenderDesc.html#YVR_Core_YVRCameraRenderer_GetEyeRenderDesc_YVR_Core_EyeSide_
+  name: GetEyeRenderDesc
+  nameWithType: YVRCameraRenderer.GetEyeRenderDesc
+  fullName: YVR.Core.YVRCameraRenderer.GetEyeRenderDesc
+- uid: YVR.Core.EyeSide
+  commentId: T:YVR.Core.EyeSide
+  parent: YVR.Core
+  href: YVR.Core.EyeSide.html
+  name: EyeSide
+  nameWithType: EyeSide
+  fullName: YVR.Core.EyeSide
+- uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  commentId: T:YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  parent: YVR.Core
+  href: YVR.Core.YVRCameraRenderer.html
+  name: YVRCameraRenderer.EyeRenderDescription
+  nameWithType: YVRCameraRenderer.EyeRenderDescription
+  fullName: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  spec.csharp:
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    href: YVR.Core.YVRCameraRenderer.html
+  - name: .
+  - uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+    name: EyeRenderDescription
+    href: YVR.Core.YVRCameraRenderer.EyeRenderDescription.html
+  spec.vb:
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    href: YVR.Core.YVRCameraRenderer.html
+  - name: .
+  - uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+    name: EyeRenderDescription
+    href: YVR.Core.YVRCameraRenderer.EyeRenderDescription.html
+- uid: YVR.Core.YVRCameraRenderer.displayFrequency*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.displayFrequency
+  href: YVR.Core.YVRCameraRenderer.displayFrequency.html#YVR_Core_YVRCameraRenderer_displayFrequency
+  name: displayFrequency
+  nameWithType: YVRCameraRenderer.displayFrequency
+  fullName: YVR.Core.YVRCameraRenderer.displayFrequency
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.YVRCameraRenderer.stereoRenderingMode*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.stereoRenderingMode
+  href: YVR.Core.YVRCameraRenderer.stereoRenderingMode.html#YVR_Core_YVRCameraRenderer_stereoRenderingMode
+  name: stereoRenderingMode
+  nameWithType: YVRCameraRenderer.stereoRenderingMode
+  fullName: YVR.Core.YVRCameraRenderer.stereoRenderingMode
+- uid: YVR.Core.StereoRenderingMode
+  commentId: T:YVR.Core.StereoRenderingMode
+  parent: YVR.Core
+  href: YVR.Core.StereoRenderingMode.html
+  name: StereoRenderingMode
+  nameWithType: StereoRenderingMode
+  fullName: YVR.Core.StereoRenderingMode
+- uid: YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable
+  href: YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable.html#YVR_Core_YVRCameraRenderer_displayFrequenciesAvailable
+  name: displayFrequenciesAvailable
+  nameWithType: YVRCameraRenderer.displayFrequenciesAvailable
+  fullName: YVR.Core.YVRCameraRenderer.displayFrequenciesAvailable
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRCameraRenderer.isFocusing*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.isFocusing
+  href: YVR.Core.YVRCameraRenderer.isFocusing.html#YVR_Core_YVRCameraRenderer_isFocusing
+  name: isFocusing
+  nameWithType: YVRCameraRenderer.isFocusing
+  fullName: YVR.Core.YVRCameraRenderer.isFocusing
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRCameraRenderer.isVisible*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.isVisible
+  href: YVR.Core.YVRCameraRenderer.isVisible.html#YVR_Core_YVRCameraRenderer_isVisible
+  name: isVisible
+  nameWithType: YVRCameraRenderer.isVisible
+  fullName: YVR.Core.YVRCameraRenderer.isVisible
+- uid: YVR.Core.YVRCameraRenderer.Initialize*
+  commentId: Overload:YVR.Core.YVRCameraRenderer.Initialize
+  href: YVR.Core.YVRCameraRenderer.Initialize.html#YVR_Core_YVRCameraRenderer_Initialize_YVR_Core_YVRManager_
+  name: Initialize
+  nameWithType: YVRCameraRenderer.Initialize
+  fullName: YVR.Core.YVRCameraRenderer.Initialize
+- uid: YVR.Core.YVRManager
+  commentId: T:YVR.Core.YVRManager
+  parent: YVR.Core
+  href: YVR.Core.YVRManager.html
+  name: YVRManager
+  nameWithType: YVRManager
+  fullName: YVR.Core.YVRManager
+memberLayout: SeparatePages

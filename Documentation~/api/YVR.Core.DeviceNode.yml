@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.DeviceNode
+  commentId: T:YVR.Core.DeviceNode
+  id: DeviceNode
+  parent: YVR.Core
+  children:
+  - YVR.Core.DeviceNode.ControllerLeft
+  - YVR.Core.DeviceNode.ControllerRight
+  - YVR.Core.DeviceNode.Count
+  - YVR.Core.DeviceNode.EyeCenter
+  - YVR.Core.DeviceNode.EyeLeft
+  - YVR.Core.DeviceNode.EyeRight
+  - YVR.Core.DeviceNode.None
+  langs:
+  - csharp
+  - vb
+  name: DeviceNode
+  nameWithType: DeviceNode
+  fullName: YVR.Core.DeviceNode
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DeviceNode
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public enum DeviceNode
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Enum DeviceNode
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.DeviceNode.None
+  commentId: F:YVR.Core.DeviceNode.None
+  id: None
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DeviceNode.None
+  fullName: YVR.Core.DeviceNode.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: ''
+  example: []
+  syntax:
+    content: None = -1
+    return:
+      type: YVR.Core.DeviceNode
+- uid: YVR.Core.DeviceNode.ControllerLeft
+  commentId: F:YVR.Core.DeviceNode.ControllerLeft
+  id: ControllerLeft
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: ControllerLeft
+  nameWithType: DeviceNode.ControllerLeft
+  fullName: YVR.Core.DeviceNode.ControllerLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllerLeft
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Node representing the left hand.
+  example: []
+  syntax:
+    content: ControllerLeft = 0
+    return:
+      type: YVR.Core.DeviceNode
+- uid: YVR.Core.DeviceNode.ControllerRight
+  commentId: F:YVR.Core.DeviceNode.ControllerRight
+  id: ControllerRight
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: ControllerRight
+  nameWithType: DeviceNode.ControllerRight
+  fullName: YVR.Core.DeviceNode.ControllerRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllerRight
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 25
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Node representing the right hand.
+  example: []
+  syntax:
+    content: ControllerRight = 1
+    return:
+      type: YVR.Core.DeviceNode
+- uid: YVR.Core.DeviceNode.EyeCenter
+  commentId: F:YVR.Core.DeviceNode.EyeCenter
+  id: EyeCenter
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: EyeCenter
+  nameWithType: DeviceNode.EyeCenter
+  fullName: YVR.Core.DeviceNode.EyeCenter
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EyeCenter
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 30
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Node representing a point between the left and right eyes.
+  example: []
+  syntax:
+    content: EyeCenter = 2
+    return:
+      type: YVR.Core.DeviceNode
+- uid: YVR.Core.DeviceNode.EyeLeft
+  commentId: F:YVR.Core.DeviceNode.EyeLeft
+  id: EyeLeft
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: EyeLeft
+  nameWithType: DeviceNode.EyeLeft
+  fullName: YVR.Core.DeviceNode.EyeLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EyeLeft
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 35
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Node representing the left eye.
+  example: []
+  syntax:
+    content: EyeLeft = 3
+    return:
+      type: YVR.Core.DeviceNode
+- uid: YVR.Core.DeviceNode.EyeRight
+  commentId: F:YVR.Core.DeviceNode.EyeRight
+  id: EyeRight
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: EyeRight
+  nameWithType: DeviceNode.EyeRight
+  fullName: YVR.Core.DeviceNode.EyeRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EyeRight
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 40
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Node representing the right eye.
+  example: []
+  syntax:
+    content: EyeRight = 4
+    return:
+      type: YVR.Core.DeviceNode
+- uid: YVR.Core.DeviceNode.Count
+  commentId: F:YVR.Core.DeviceNode.Count
+  id: Count
+  parent: YVR.Core.DeviceNode
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: DeviceNode.Count
+  fullName: YVR.Core.DeviceNode.Count
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Count
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 45
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The Count of DeviceNode
+  example: []
+  syntax:
+    content: Count = 5
+    return:
+      type: YVR.Core.DeviceNode
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.DeviceNode
+  commentId: T:YVR.Core.DeviceNode
+  parent: YVR.Core
+  href: YVR.Core.DeviceNode.html
+  name: DeviceNode
+  nameWithType: DeviceNode
+  fullName: YVR.Core.DeviceNode
+memberLayout: SeparatePages

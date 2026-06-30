@@ -1,0 +1,675 @@
+### YamlMime:TableOfContent
+items:
+- uid: YVR.Core
+  name: YVR.Core
+  type: Namespace
+  items:
+  - uid: YVR.Core.ActiveInputDevice
+    name: ActiveInputDevice
+    type: Enum
+  - uid: YVR.Core.Colorf
+    name: Colorf
+    type: Struct
+  - uid: YVR.Core.ControllerType
+    name: ControllerType
+    type: Enum
+  - uid: YVR.Core.CylinderShapeHandler
+    name: CylinderShapeHandler
+    type: Class
+  - uid: YVR.Core.DataProviderSource
+    name: DataProviderSource
+    type: Enum
+  - uid: YVR.Core.DeviceNode
+    name: DeviceNode
+    type: Enum
+  - uid: YVR.Core.EmulatorRotationSensitivity
+    name: EmulatorRotationSensitivity
+    type: Struct
+  - uid: YVR.Core.EmulatorTranslationSensitivity
+    name: EmulatorTranslationSensitivity
+    type: Struct
+  - uid: YVR.Core.Equirect2ShapeHandler
+    name: Equirect2ShapeHandler
+    type: Class
+  - uid: YVR.Core.EquirectShapeHandler
+    name: EquirectShapeHandler
+    type: Class
+  - uid: YVR.Core.ExtendUsages
+    name: ExtendUsages
+    type: Class
+  - uid: YVR.Core.EyeSide
+    name: EyeSide
+    type: Enum
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    type: Class
+  - uid: YVR.Core.EyeTrackingData.EyeGazePose
+    name: EyeTrackingData.EyeGazePose
+    type: Struct
+  - uid: YVR.Core.EyeTrackingData.EyeGazeState
+    name: EyeTrackingData.EyeGazeState
+    type: Struct
+  - uid: YVR.Core.EyeTrackingData.EyeGazesState
+    name: EyeTrackingData.EyeGazesState
+    type: Struct
+  - uid: YVR.Core.HandData
+    name: HandData
+    type: Struct
+  - uid: YVR.Core.HandInteractEffectController
+    name: HandInteractEffectController
+    type: Class
+  - uid: YVR.Core.HandJoint
+    name: HandJoint
+    type: Enum
+  - uid: YVR.Core.HandJointLocation
+    name: HandJointLocation
+    type: Struct
+  - uid: YVR.Core.HandJointLocations
+    name: HandJointLocations
+    type: Struct
+  - uid: YVR.Core.HandJointVelocity
+    name: HandJointVelocity
+    type: Struct
+  - uid: YVR.Core.HandStatus
+    name: HandStatus
+    type: Enum
+  - uid: YVR.Core.HandTrackingAimState
+    name: HandTrackingAimState
+    type: Struct
+  - uid: YVR.Core.HandTrackingSupport
+    name: HandTrackingSupport
+    type: Enum
+  - uid: YVR.Core.HandType
+    name: HandType
+    type: Enum
+  - uid: YVR.Core.ILayerShapeHandler
+    name: ILayerShapeHandler
+    type: Interface
+  - uid: YVR.Core.IYVRLayerHandle
+    name: IYVRLayerHandle
+    type: Interface
+  - uid: YVR.Core.InputDeviceTest
+    name: InputDeviceTest
+    type: Class
+  - uid: YVR.Core.PassthroughColorLut
+    name: PassthroughColorLut
+    type: Class
+  - uid: YVR.Core.PassthroughColorLutChannels
+    name: PassthroughColorLutChannels
+    type: Enum
+  - uid: YVR.Core.PassthroughColorLutData
+    name: PassthroughColorLutData
+    type: Struct
+  - uid: YVR.Core.PassthroughColorMapType
+    name: PassthroughColorMapType
+    type: Enum
+  - uid: YVR.Core.PassthroughLayer
+    name: PassthroughLayer
+    type: Class
+  - uid: YVR.Core.PassthroughStyle
+    name: PassthroughStyle
+    type: Struct
+  - uid: YVR.Core.PassthroughStyleFlags
+    name: PassthroughStyleFlags
+    type: Enum
+  - uid: YVR.Core.PoseData
+    name: PoseData
+    type: Struct
+  - uid: YVR.Core.Posef
+    name: Posef
+    type: Struct
+  - uid: YVR.Core.QuadShapeHandler
+    name: QuadShapeHandler
+    type: Class
+  - uid: YVR.Core.StereoRenderingMode
+    name: StereoRenderingMode
+    type: Enum
+  - uid: YVR.Core.VRApiHandlersTrigger
+    name: VRApiHandlersTrigger
+    type: Class
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    type: Enum
+  - uid: YVR.Core.XRPose
+    name: XRPose
+    type: Struct
+  - uid: YVR.Core.XRSize
+    name: XRSize
+    type: Struct
+  - uid: YVR.Core.YVRAnchorLocationFlags
+    name: YVRAnchorLocationFlags
+    type: Enum
+  - uid: YVR.Core.YVRAnchorSemanticLabel
+    name: YVRAnchorSemanticLabel
+    type: Struct
+  - uid: YVR.Core.YVRAnchorTriangleMeshInternal
+    name: YVRAnchorTriangleMeshInternal
+    type: Struct
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    type: Class
+  - uid: YVR.Core.YVRBaseRig.RigUpdateType
+    name: YVRBaseRig.RigUpdateType
+    type: Enum
+  - uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+    name: YVRBaseRig.YVRXRDeviceNode
+    type: Enum
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    type: Class
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: YVRBoundary.BoundaryNode
+    type: Enum
+  - uid: YVR.Core.YVRBoundary.BoundaryTestResult
+    name: YVRBoundary.BoundaryTestResult
+    type: Struct
+  - uid: YVR.Core.YVRBoundary2D
+    name: YVRBoundary2D
+    type: Struct
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    type: Class
+  - uid: YVR.Core.YVRCameraRenderer.EyeFov
+    name: YVRCameraRenderer.EyeFov
+    type: Struct
+  - uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+    name: YVRCameraRenderer.EyeRenderDescription
+    type: Struct
+  - uid: YVR.Core.YVRCameraRig
+    name: YVRCameraRig
+    type: Class
+  - uid: YVR.Core.YVRCompositeLayer
+    name: YVRCompositeLayer
+    type: Class
+  - uid: YVR.Core.YVRCompositeLayerEditor
+    name: YVRCompositeLayerEditor
+    type: Class
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    type: Class
+  - uid: YVR.Core.YVRControllerEmulator.EmulateController
+    name: YVRControllerEmulator.EmulateController
+    type: Enum
+  - uid: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+    name: YVRControllerEmulator.EmulatorKeyMapping
+    type: Struct
+  - uid: YVR.Core.YVRControllerRig
+    name: YVRControllerRig
+    type: Class
+  - uid: YVR.Core.YVRCurvedUIRaycaster
+    name: YVRCurvedUIRaycaster
+    type: Class
+  - uid: YVR.Core.YVRDebugHub
+    name: YVRDebugHub
+    type: Class
+  - uid: YVR.Core.YVREventTracking
+    name: YVREventTracking
+    type: Class
+  - uid: YVR.Core.YVREventType
+    name: YVREventType
+    type: Enum
+  - uid: YVR.Core.YVREventsManager
+    name: YVREventsManager
+    type: Class
+  - uid: YVR.Core.YVRExtent2DInt
+    name: YVRExtent2DInt
+    type: Struct
+  - uid: YVR.Core.YVRGraphicRaycaster
+    name: YVRGraphicRaycaster
+    type: Class
+  - uid: YVR.Core.YVRGraphicRaycaster.RaycastHit
+    name: YVRGraphicRaycaster.RaycastHit
+    type: Struct
+  - uid: YVR.Core.YVRHMDEmulator
+    name: YVRHMDEmulator
+    type: Class
+  - uid: YVR.Core.YVRHMDEmulator.TranslationKeys
+    name: YVRHMDEmulator.TranslationKeys
+    type: Struct
+  - uid: YVR.Core.YVRHMDManager
+    name: YVRHMDManager
+    type: Class
+  - uid: YVR.Core.YVRHand
+    name: YVRHand
+    type: Class
+  - uid: YVR.Core.YVRHandAnimController
+    name: YVRHandAnimController
+    type: Class
+  - uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+    name: YVRHandAnimController.YVRHandControllerAnimData
+    type: Struct
+  - uid: YVR.Core.YVRHandManager
+    name: YVRHandManager
+    type: Class
+  - uid: YVR.Core.YVRHandUtility
+    name: YVRHandUtility
+    type: Class
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    type: Class
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: YVRInput.RawAxis1D
+    type: Enum
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: YVRInput.RawAxis2D
+    type: Enum
+  - uid: YVR.Core.YVRInput.RawButton
+    name: YVRInput.RawButton
+    type: Enum
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: YVRInput.RawTouch
+    type: Enum
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: YVRInput.VirtualAxis1D
+    type: Enum
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: YVRInput.VirtualAxis2D
+    type: Enum
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: YVRInput.VirtualButton
+    type: Enum
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: YVRInput.VirtualTouch
+    type: Enum
+  - uid: YVR.Core.YVRInputDebug
+    name: YVRInputDebug
+    type: Class
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+    name: YVRInputModule.YVRInputDataBaseProvider
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+    name: YVRInputModule.YVRInputDataDummyProvider
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+    name: YVRInputModule.YVRInputDataHMDProvider
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+    name: YVRInputModule.YVRInputDataLControllerProvider
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+    name: YVRInputModule.YVRInputDataLHandTrackingProvider
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+    name: YVRInputModule.YVRInputDataRControllerProvider
+    type: Class
+  - uid: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+    name: YVRInputModule.YVRInputDataRHandTrackingProvider
+    type: Class
+  - uid: YVR.Core.YVRLayerAndroidHandler
+    name: YVRLayerAndroidHandler
+    type: Class
+  - uid: YVR.Core.YVRLayerCreateInfo
+    name: YVRLayerCreateInfo
+    type: Struct
+  - uid: YVR.Core.YVRLayerEditorHandle
+    name: YVRLayerEditorHandle
+    type: Class
+  - uid: YVR.Core.YVRManager
+    name: YVRManager
+    type: Class
+  - uid: YVR.Core.YVRMeshBlockChangeState
+    name: YVRMeshBlockChangeState
+    type: Enum
+  - uid: YVR.Core.YVRMeshTracking
+    name: YVRMeshTracking
+    type: Class
+  - uid: YVR.Core.YVRNativeLog2YLogLoggerAdapter
+    name: YVRNativeLog2YLogLoggerAdapter
+    type: Class
+  - uid: YVR.Core.YVRPerformanceManager
+    name: YVRPerformanceManager
+    type: Class
+  - uid: YVR.Core.YVRPhysicsRaycaster
+    name: YVRPhysicsRaycaster
+    type: Class
+  - uid: YVR.Core.YVRPlaneChangeState
+    name: YVRPlaneChangeState
+    type: Enum
+  - uid: YVR.Core.YVRPlaneDetectorLocation
+    name: YVRPlaneDetectorLocation
+    type: Struct
+  - uid: YVR.Core.YVRPlaneDetectorLocationsInternal
+    name: YVRPlaneDetectorLocationsInternal
+    type: Struct
+  - uid: YVR.Core.YVRPlaneDetectorMgr
+    name: YVRPlaneDetectorMgr
+    type: Class
+  - uid: YVR.Core.YVRPlaneDetectorOrientation
+    name: YVRPlaneDetectorOrientation
+    type: Enum
+  - uid: YVR.Core.YVRPlaneDetectorPolygonBuffer
+    name: YVRPlaneDetectorPolygonBuffer
+    type: Struct
+  - uid: YVR.Core.YVRPlaneDetectorPolygonBufferInternal
+    name: YVRPlaneDetectorPolygonBufferInternal
+    type: Struct
+  - uid: YVR.Core.YVRPlaneDetectorPolygonBuffersInternal
+    name: YVRPlaneDetectorPolygonBuffersInternal
+    type: Struct
+  - uid: YVR.Core.YVRPlaneDetectorSemanticType
+    name: YVRPlaneDetectorSemanticType
+    type: Enum
+  - uid: YVR.Core.YVRPlaneDetectorState
+    name: YVRPlaneDetectorState
+    type: Enum
+  - uid: YVR.Core.YVRPlugin
+    name: YVRPlugin
+    type: Class
+  - uid: YVR.Core.YVRPlugin.ControllerState
+    name: YVRPlugin.ControllerState
+    type: Struct
+  - uid: YVR.Core.YVRPluginAndroid
+    name: YVRPluginAndroid
+    type: Class
+  - uid: YVR.Core.YVRPluginWin
+    name: YVRPluginWin
+    type: Class
+  - uid: YVR.Core.YVRPointerEventData
+    name: YVRPointerEventData
+    type: Class
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    type: Class
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: YVRQualityManager.AdapterResolutionPolicy
+    type: Enum
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: YVRQualityManager.FixedFoveatedRenderingDynamic
+    type: Enum
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: YVRQualityManager.FixedFoveatedRenderingLevel
+    type: Enum
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: YVRQualityManager.LayerSettingsType
+    type: Enum
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: YVRQualityManager.VSyncCount
+    type: Enum
+  - uid: YVR.Core.YVRQuerySpatialAnchorResult
+    name: YVRQuerySpatialAnchorResult
+    type: Struct
+  - uid: YVR.Core.YVRRaycastLaserBeam
+    name: YVRRaycastLaserBeam
+    type: Class
+  - uid: YVR.Core.YVRRect2D
+    name: YVRRect2D
+    type: Struct
+  - uid: YVR.Core.YVRRect3D
+    name: YVRRect3D
+    type: Struct
+  - uid: YVR.Core.YVRRenderLayerExtensions
+    name: YVRRenderLayerExtensions
+    type: Class
+  - uid: YVR.Core.YVRRenderLayerEyeMask
+    name: YVRRenderLayerEyeMask
+    type: Enum
+  - uid: YVR.Core.YVRRenderLayerType
+    name: YVRRenderLayerType
+    type: Enum
+  - uid: YVR.Core.YVRRoomLayout
+    name: YVRRoomLayout
+    type: Struct
+  - uid: YVR.Core.YVRSDKSettingAsset
+    name: YVRSDKSettingAsset
+    type: Class
+  - uid: YVR.Core.YVRSceneAnchor
+    name: YVRSceneAnchor
+    type: Class
+  - uid: YVR.Core.YVRSceneAnchorContainer
+    name: YVRSceneAnchorContainer
+    type: Struct
+  - uid: YVR.Core.YVRSceneCaptureRequest
+    name: YVRSceneCaptureRequest
+    type: Struct
+  - uid: YVR.Core.YVRSemanticClassification
+    name: YVRSemanticClassification
+    type: Class
+  - uid: YVR.Core.YVRSpaceLocationFlags
+    name: YVRSpaceLocationFlags
+    type: Enum
+  - uid: YVR.Core.YVRSpatialAnchor
+    name: YVRSpatialAnchor
+    type: Class
+  - uid: YVR.Core.YVRSpatialAnchorComponentStatus
+    name: YVRSpatialAnchorComponentStatus
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+    name: YVRSpatialAnchorComponentStatusSetInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorComponentType
+    name: YVRSpatialAnchorComponentType
+    type: Enum
+  - uid: YVR.Core.YVRSpatialAnchorListSaveInfo
+    name: YVRSpatialAnchorListSaveInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorQueryInfo
+    name: YVRSpatialAnchorQueryInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorQueryType
+    name: YVRSpatialAnchorQueryType
+    type: Enum
+  - uid: YVR.Core.YVRSpatialAnchorResult
+    name: YVRSpatialAnchorResult
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+    name: YVRSpatialAnchorSaveCompleteInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorSaveInfo
+    name: YVRSpatialAnchorSaveInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+    name: YVRSpatialAnchorSetStatusCompleteInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorShareInfo
+    name: YVRSpatialAnchorShareInfo
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorStorageLocation
+    name: YVRSpatialAnchorStorageLocation
+    type: Enum
+  - uid: YVR.Core.YVRSpatialAnchorSupportedComponent
+    name: YVRSpatialAnchorSupportedComponent
+    type: Struct
+  - uid: YVR.Core.YVRSpatialAnchorUUID
+    name: YVRSpatialAnchorUUID
+    type: Struct
+  - uid: YVR.Core.YVRTrackingDebug
+    name: YVRTrackingDebug
+    type: Class
+  - uid: YVR.Core.YVRTrackingStateManager
+    name: YVRTrackingStateManager
+    type: Class
+  - uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+    name: YVRTrackingStateManager.TrackingSpace
+    type: Enum
+  - uid: YVR.Core.YVRTriangleMesh
+    name: YVRTriangleMesh
+    type: Struct
+- uid: YVR.Core.Editor
+  name: YVR.Core.Editor
+  type: Namespace
+  items:
+  - uid: YVR.Core.Editor.CorePackageVersionEditor
+    name: CorePackageVersionEditor
+    type: Class
+  - uid: YVR.Core.Editor.YVRConfigurationSummary
+    name: YVRConfigurationSummary
+    type: Class
+  - uid: YVR.Core.Editor.YVRConfigurationTask
+    name: YVRConfigurationTask
+    type: Class
+  - uid: YVR.Core.Editor.YVRConfigurationTaskProcessor
+    name: YVRConfigurationTaskProcessor
+    type: Class
+  - uid: YVR.Core.Editor.YVRConfigurationTaskRegistry
+    name: YVRConfigurationTaskRegistry
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: YVRProjectSetup.TaskCategory
+    type: Enum
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: YVRProjectSetup.TaskGroup
+    type: Enum
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: YVRProjectSetup.TaskLevel
+    type: Enum
+  - uid: YVR.Core.Editor.YVRProjectSetupCompatibilityTasks
+    name: YVRProjectSetupCompatibilityTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupEditorWindow
+    name: YVRProjectSetupEditorWindow
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupItem
+    name: YVRProjectSetupItem
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupItemPool
+    name: YVRProjectSetupItemPool
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupPhysicsTasks
+    name: YVRProjectSetupPhysicsTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupPortingTasks
+    name: YVRProjectSetupPortingTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupQualityTasks
+    name: YVRProjectSetupQualityTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupRenderingTasks
+    name: YVRProjectSetupRenderingTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+    name: YVRProjectSetupResourcesLoader
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupRuntimeTasks
+    name: YVRProjectSetupRuntimeTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupSceneTasks
+    name: YVRProjectSetupSceneTasks
+    type: Class
+  - uid: YVR.Core.Editor.YVRProjectSetupStatusIcon
+    name: YVRProjectSetupStatusIcon
+    type: Class
+- uid: YVR.Core.Editor.Packing
+  name: YVR.Core.Editor.Packing
+  type: Namespace
+  items:
+  - uid: YVR.Core.Editor.Packing.AndroidManifestHandler
+    name: AndroidManifestHandler
+    type: Class
+  - uid: YVR.Core.Editor.Packing.EyeTrackingManifestElementInfoProvider
+    name: EyeTrackingManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.HandTrackingManifestElementInfoProvider
+    name: HandTrackingManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.ImageTrackingAssetInfoProvider
+    name: ImageTrackingAssetInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.LargeSpaceManifestElementInfoProvider
+    name: LargeSpaceManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.ManifestElementInfoProvider
+    name: ManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.OpenXRLoaderManifestElementInfoProvider
+    name: OpenXRLoaderManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.PackagesVersionManifestElementInfoProvider
+    name: PackagesVersionManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.PackingAssetHandler
+    name: PackingAssetHandler
+    type: Class
+  - uid: YVR.Core.Editor.Packing.PackingAssetsInfoProvider
+    name: PackingAssetsInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.RenderingModeManifestElementInfoProvider
+    name: RenderingModeManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.ScreenSplashAssetsInfoProvider
+    name: ScreenSplashAssetsInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.ScreenSplashManifestElementInfoProvider
+    name: ScreenSplashManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.SpatialAnchorManifestElementInfoProvider
+    name: SpatialAnchorManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.SpatialSceneManifestElementInfoProvider
+    name: SpatialSceneManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.XRDofManifestElementInfoProvider
+    name: XRDofManifestElementInfoProvider
+    type: Class
+  - uid: YVR.Core.Editor.Packing.XRModeManifestElementInfoProvider
+    name: XRModeManifestElementInfoProvider
+    type: Class
+- uid: YVR.Core.ImageTracking
+  name: YVR.Core.ImageTracking
+  type: Namespace
+  items:
+  - uid: YVR.Core.ImageTracking.ImageTemplateInfo
+    name: ImageTemplateInfo
+    type: Struct
+  - uid: YVR.Core.ImageTracking.ImageTrackingMgr
+    name: ImageTrackingMgr
+    type: Class
+  - uid: YVR.Core.ImageTracking.ToTrackImage
+    name: ToTrackImage
+    type: Struct
+  - uid: YVR.Core.ImageTracking.ToTrackImagesCollectionSO
+    name: ToTrackImagesCollectionSO
+    type: Class
+  - uid: YVR.Core.ImageTracking.TrackedImageInfo
+    name: TrackedImageInfo
+    type: Struct
+- uid: YVR.Core.ImageTracking.EditorTools
+  name: YVR.Core.ImageTracking.EditorTools
+  type: Namespace
+  items:
+  - uid: YVR.Core.ImageTracking.EditorTools.ToTrackImageListDrawer
+    name: ToTrackImageListDrawer
+    type: Class
+- uid: YVR.Core.XR
+  name: YVR.Core.XR
+  type: Namespace
+  items:
+  - uid: YVR.Core.XR.YVRFeatureSupport
+    name: YVRFeatureSupport
+    type: Enum
+  - uid: YVR.Core.XR.YVRPlatformSetting
+    name: YVRPlatformSetting
+    type: Class
+  - uid: YVR.Core.XR.YVRPlatformSettingEditor
+    name: YVRPlatformSettingEditor
+    type: Class
+  - uid: YVR.Core.XR.YVRQualityManagerDrawer
+    name: YVRQualityManagerDrawer
+    type: Class
+  - uid: YVR.Core.XR.YVRSDKSettingsWindow
+    name: YVRSDKSettingsWindow
+    type: Class
+  - uid: YVR.Core.XR.YVRSettingMessageBoxEditor
+    name: YVRSettingMessageBoxEditor
+    type: Class
+  - uid: YVR.Core.XR.YVRXRBuildProcess
+    name: YVRXRBuildProcess
+    type: Class
+  - uid: YVR.Core.XR.YVRXRLoader
+    name: YVRXRLoader
+    type: Class
+  - uid: YVR.Core.XR.YVRXRMetaData
+    name: YVRXRMetaData
+    type: Class
+  - uid: YVR.Core.XR.YVRXRSettings
+    name: YVRXRSettings
+    type: Class
+  - uid: YVR.Core.XR.YVRXRUserDefinedSettings
+    name: YVRXRUserDefinedSettings
+    type: Struct
+memberLayout: SeparatePages

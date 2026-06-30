@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  id: YVRQualityManager.FixedFoveatedRenderingLevel
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.High
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Low
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Medium
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Off
+  langs:
+  - csharp
+  - vb
+  name: YVRQualityManager.FixedFoveatedRenderingLevel
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: FixedFoveatedRenderingLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 28
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The level of fixed foveated rendering
+  example: []
+  syntax:
+    content: public enum YVRQualityManager.FixedFoveatedRenderingLevel
+    content.vb: Public Enum YVRQualityManager.FixedFoveatedRenderingLevel
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Off
+  commentId: F:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Off
+  id: Off
+  parent: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  langs:
+  - csharp
+  - vb
+  name: Off
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel.Off
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Off
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Off
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 33
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Disable fixed foveated rendering.
+  example: []
+  syntax:
+    content: Off = 0
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Low
+  commentId: F:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Low
+  id: Low
+  parent: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  langs:
+  - csharp
+  - vb
+  name: Low
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel.Low
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Low
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Low
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 37
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The lowest level of fixed foveated rendering
+  example: []
+  syntax:
+    content: Low = 1
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Medium
+  commentId: F:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Medium
+  id: Medium
+  parent: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  langs:
+  - csharp
+  - vb
+  name: Medium
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel.Medium
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.Medium
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Medium
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 41
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The Medium level of fixed foveated rendering
+  example: []
+  syntax:
+    content: Medium = 2
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.High
+  commentId: F:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.High
+  id: High
+  parent: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  langs:
+  - csharp
+  - vb
+  name: High
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel.High
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.High
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: High
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 45
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The High level of fixed foveated rendering
+  example: []
+  syntax:
+    content: High = 3
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.FixedFoveatedRenderingLevel
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+memberLayout: SeparatePages

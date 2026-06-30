@@ -20,7 +20,11 @@ namespace YVR.Core
                 if (s_CenterCamera == null)
                 {
 #if XR_CORE_UTILS
+#if UNITY_2023_1_OR_NEWER
+                    s_CenterCamera = Object.FindAnyObjectByType<XROrigin>()?.Camera;
+#else
                     s_CenterCamera = Object.FindObjectOfType<XROrigin>()?.Camera;
+#endif
 #endif
                     s_CenterCamera ??= Camera.main;
                 }

@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  id: YVRProjectSetup.TaskGroup
+  parent: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.All
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Compatibility
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Features
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Miscellaneous
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Packages
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Physics
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Quality
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup.Rendering
+  langs:
+  - csharp
+  - vb
+  name: YVRProjectSetup.TaskGroup
+  nameWithType: YVRProjectSetup.TaskGroup
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TaskGroup
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public enum YVRProjectSetup.TaskGroup
+    content.vb: Public Enum YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.All
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.All
+  id: All
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: YVRProjectSetup.TaskGroup.All
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.All
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: All
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 19
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: All = 0
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Compatibility
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Compatibility
+  id: Compatibility
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Compatibility
+  nameWithType: YVRProjectSetup.TaskGroup.Compatibility
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Compatibility
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Compatibility
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Compatibility = 1
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Rendering
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Rendering
+  id: Rendering
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Rendering
+  nameWithType: YVRProjectSetup.TaskGroup.Rendering
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Rendering
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rendering
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 21
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Rendering = 2
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Quality
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Quality
+  id: Quality
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Quality
+  nameWithType: YVRProjectSetup.TaskGroup.Quality
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Quality
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Quality
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Quality = 3
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Physics
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Physics
+  id: Physics
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Physics
+  nameWithType: YVRProjectSetup.TaskGroup.Physics
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Physics
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Physics
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Physics = 4
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Packages
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Packages
+  id: Packages
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Packages
+  nameWithType: YVRProjectSetup.TaskGroup.Packages
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Packages
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Packages
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Packages = 5
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Features
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Features
+  id: Features
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Features
+  nameWithType: YVRProjectSetup.TaskGroup.Features
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Features
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Features
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 25
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Features = 6
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Miscellaneous
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskGroup.Miscellaneous
+  id: Miscellaneous
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  langs:
+  - csharp
+  - vb
+  name: Miscellaneous
+  nameWithType: YVRProjectSetup.TaskGroup.Miscellaneous
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup.Miscellaneous
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Miscellaneous
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 26
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Miscellaneous = 7
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+references:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskGroup
+  nameWithType: YVRProjectSetup.TaskGroup
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: TaskGroup
+    href: YVR.Core.Editor.YVRProjectSetup.TaskGroup.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: TaskGroup
+    href: YVR.Core.Editor.YVRProjectSetup.TaskGroup.html
+memberLayout: SeparatePages

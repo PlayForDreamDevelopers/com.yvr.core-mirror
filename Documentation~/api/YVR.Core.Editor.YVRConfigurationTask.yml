@@ -1,0 +1,1041 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.YVRConfigurationTask
+  commentId: T:YVR.Core.Editor.YVRConfigurationTask
+  id: YVRConfigurationTask
+  parent: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.YVRConfigurationTask.#ctor(YVR.Core.Editor.YVRProjectSetup.TaskGroup,YVR.Core.Editor.YVRProjectSetup.TaskLevel,YVR.Core.Editor.YVRProjectSetup.TaskCategory,System.Func{System.Boolean},System.Action,System.String,System.String,System.String)
+  - YVR.Core.Editor.YVRConfigurationTask.Fix
+  - YVR.Core.Editor.YVRConfigurationTask.SetIgnore(System.Boolean)
+  - YVR.Core.Editor.YVRConfigurationTask.Uid
+  - YVR.Core.Editor.YVRConfigurationTask.documentationUrl
+  - YVR.Core.Editor.YVRConfigurationTask.fixAction
+  - YVR.Core.Editor.YVRConfigurationTask.fixedMessage
+  - YVR.Core.Editor.YVRConfigurationTask.ignore
+  - YVR.Core.Editor.YVRConfigurationTask.isDone
+  - YVR.Core.Editor.YVRConfigurationTask.issueMessage
+  - YVR.Core.Editor.YVRConfigurationTask.stackTrace
+  - YVR.Core.Editor.YVRConfigurationTask.taskCategory
+  - YVR.Core.Editor.YVRConfigurationTask.taskGroup
+  - YVR.Core.Editor.YVRConfigurationTask.taskLevel
+  langs:
+  - csharp
+  - vb
+  name: YVRConfigurationTask
+  nameWithType: YVRConfigurationTask
+  fullName: YVR.Core.Editor.YVRConfigurationTask
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRConfigurationTask
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public class YVRConfigurationTask
+    content.vb: Public Class YVRConfigurationTask
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.Editor.YVRConfigurationTask.Uid
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.Uid
+  id: Uid
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: Uid
+  nameWithType: YVRConfigurationTask.Uid
+  fullName: YVR.Core.Editor.YVRConfigurationTask.Uid
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Uid
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public Hash128 Uid { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Hash128
+    content.vb: Public ReadOnly Property Uid As Hash128
+  overload: YVR.Core.Editor.YVRConfigurationTask.Uid*
+- uid: YVR.Core.Editor.YVRConfigurationTask.taskGroup
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.taskGroup
+  id: taskGroup
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: taskGroup
+  nameWithType: YVRConfigurationTask.taskGroup
+  fullName: YVR.Core.Editor.YVRConfigurationTask.taskGroup
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: taskGroup
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public YVRProjectSetup.TaskGroup taskGroup { get; }
+    parameters: []
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    content.vb: Public ReadOnly Property taskGroup As YVRProjectSetup.TaskGroup
+  overload: YVR.Core.Editor.YVRConfigurationTask.taskGroup*
+- uid: YVR.Core.Editor.YVRConfigurationTask.taskLevel
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.taskLevel
+  id: taskLevel
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: taskLevel
+  nameWithType: YVRConfigurationTask.taskLevel
+  fullName: YVR.Core.Editor.YVRConfigurationTask.taskLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: taskLevel
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public YVRProjectSetup.TaskLevel taskLevel { get; }
+    parameters: []
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    content.vb: Public ReadOnly Property taskLevel As YVRProjectSetup.TaskLevel
+  overload: YVR.Core.Editor.YVRConfigurationTask.taskLevel*
+- uid: YVR.Core.Editor.YVRConfigurationTask.taskCategory
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.taskCategory
+  id: taskCategory
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: taskCategory
+  nameWithType: YVRConfigurationTask.taskCategory
+  fullName: YVR.Core.Editor.YVRConfigurationTask.taskCategory
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: taskCategory
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public YVRProjectSetup.TaskCategory taskCategory { get; }
+    parameters: []
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    content.vb: Public ReadOnly Property taskCategory As YVRProjectSetup.TaskCategory
+  overload: YVR.Core.Editor.YVRConfigurationTask.taskCategory*
+- uid: YVR.Core.Editor.YVRConfigurationTask.isDone
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.isDone
+  id: isDone
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: isDone
+  nameWithType: YVRConfigurationTask.isDone
+  fullName: YVR.Core.Editor.YVRConfigurationTask.isDone
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isDone
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public Func<bool> isDone { get; }
+    parameters: []
+    return:
+      type: System.Func{System.Boolean}
+    content.vb: Public ReadOnly Property isDone As Func(Of Boolean)
+  overload: YVR.Core.Editor.YVRConfigurationTask.isDone*
+- uid: YVR.Core.Editor.YVRConfigurationTask.fixAction
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.fixAction
+  id: fixAction
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: fixAction
+  nameWithType: YVRConfigurationTask.fixAction
+  fullName: YVR.Core.Editor.YVRConfigurationTask.fixAction
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: fixAction
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public Action fixAction { get; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public ReadOnly Property fixAction As Action
+  overload: YVR.Core.Editor.YVRConfigurationTask.fixAction*
+- uid: YVR.Core.Editor.YVRConfigurationTask.issueMessage
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.issueMessage
+  id: issueMessage
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: issueMessage
+  nameWithType: YVRConfigurationTask.issueMessage
+  fullName: YVR.Core.Editor.YVRConfigurationTask.issueMessage
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: issueMessage
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public string issueMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property issueMessage As String
+  overload: YVR.Core.Editor.YVRConfigurationTask.issueMessage*
+- uid: YVR.Core.Editor.YVRConfigurationTask.fixedMessage
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.fixedMessage
+  id: fixedMessage
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: fixedMessage
+  nameWithType: YVRConfigurationTask.fixedMessage
+  fullName: YVR.Core.Editor.YVRConfigurationTask.fixedMessage
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: fixedMessage
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public string fixedMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property fixedMessage As String
+  overload: YVR.Core.Editor.YVRConfigurationTask.fixedMessage*
+- uid: YVR.Core.Editor.YVRConfigurationTask.documentationUrl
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.documentationUrl
+  id: documentationUrl
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: documentationUrl
+  nameWithType: YVRConfigurationTask.documentationUrl
+  fullName: YVR.Core.Editor.YVRConfigurationTask.documentationUrl
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: documentationUrl
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 19
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public string documentationUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property documentationUrl As String
+  overload: YVR.Core.Editor.YVRConfigurationTask.documentationUrl*
+- uid: YVR.Core.Editor.YVRConfigurationTask.ignore
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.ignore
+  id: ignore
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: ignore
+  nameWithType: YVRConfigurationTask.ignore
+  fullName: YVR.Core.Editor.YVRConfigurationTask.ignore
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ignore
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public bool ignore { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ignore As Boolean
+  overload: YVR.Core.Editor.YVRConfigurationTask.ignore*
+- uid: YVR.Core.Editor.YVRConfigurationTask.stackTrace
+  commentId: P:YVR.Core.Editor.YVRConfigurationTask.stackTrace
+  id: stackTrace
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: stackTrace
+  nameWithType: YVRConfigurationTask.stackTrace
+  fullName: YVR.Core.Editor.YVRConfigurationTask.stackTrace
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: stackTrace
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public StackTrace stackTrace { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.StackTrace
+    content.vb: Public ReadOnly Property stackTrace As StackTrace
+  overload: YVR.Core.Editor.YVRConfigurationTask.stackTrace*
+- uid: YVR.Core.Editor.YVRConfigurationTask.#ctor(YVR.Core.Editor.YVRProjectSetup.TaskGroup,YVR.Core.Editor.YVRProjectSetup.TaskLevel,YVR.Core.Editor.YVRProjectSetup.TaskCategory,System.Func{System.Boolean},System.Action,System.String,System.String,System.String)
+  commentId: M:YVR.Core.Editor.YVRConfigurationTask.#ctor(YVR.Core.Editor.YVRProjectSetup.TaskGroup,YVR.Core.Editor.YVRProjectSetup.TaskLevel,YVR.Core.Editor.YVRProjectSetup.TaskCategory,System.Func{System.Boolean},System.Action,System.String,System.String,System.String)
+  id: '#ctor(YVR.Core.Editor.YVRProjectSetup.TaskGroup,YVR.Core.Editor.YVRProjectSetup.TaskLevel,YVR.Core.Editor.YVRProjectSetup.TaskCategory,System.Func{System.Boolean},System.Action,System.String,System.String,System.String)'
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: YVRConfigurationTask(TaskGroup, TaskLevel, TaskCategory, Func<bool>, Action, string, string, string)
+  nameWithType: YVRConfigurationTask.YVRConfigurationTask(YVRProjectSetup.TaskGroup, YVRProjectSetup.TaskLevel, YVRProjectSetup.TaskCategory, Func<bool>, Action, string, string, string)
+  fullName: YVR.Core.Editor.YVRConfigurationTask.YVRConfigurationTask(YVR.Core.Editor.YVRProjectSetup.TaskGroup, YVR.Core.Editor.YVRProjectSetup.TaskLevel, YVR.Core.Editor.YVRProjectSetup.TaskCategory, System.Func<bool>, System.Action, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public YVRConfigurationTask(YVRProjectSetup.TaskGroup taskGroup, YVRProjectSetup.TaskLevel taskLevel, YVRProjectSetup.TaskCategory taskCategory, Func<bool> isDone, Action fixAction, string issueMessage, string fixedMessage, string documentationUrl)
+    parameters:
+    - id: taskGroup
+      type: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    - id: taskLevel
+      type: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    - id: taskCategory
+      type: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    - id: isDone
+      type: System.Func{System.Boolean}
+    - id: fixAction
+      type: System.Action
+    - id: issueMessage
+      type: System.String
+    - id: fixedMessage
+      type: System.String
+    - id: documentationUrl
+      type: System.String
+    content.vb: Public Sub New(taskGroup As YVRProjectSetup.TaskGroup, taskLevel As YVRProjectSetup.TaskLevel, taskCategory As YVRProjectSetup.TaskCategory, isDone As Func(Of Boolean), fixAction As Action, issueMessage As String, fixedMessage As String, documentationUrl As String)
+  overload: YVR.Core.Editor.YVRConfigurationTask.#ctor*
+  nameWithType.vb: YVRConfigurationTask.New(YVRProjectSetup.TaskGroup, YVRProjectSetup.TaskLevel, YVRProjectSetup.TaskCategory, Func(Of Boolean), Action, String, String, String)
+  fullName.vb: YVR.Core.Editor.YVRConfigurationTask.New(YVR.Core.Editor.YVRProjectSetup.TaskGroup, YVR.Core.Editor.YVRProjectSetup.TaskLevel, YVR.Core.Editor.YVRProjectSetup.TaskCategory, System.Func(Of Boolean), System.Action, String, String, String)
+  name.vb: New(TaskGroup, TaskLevel, TaskCategory, Func(Of Boolean), Action, String, String, String)
+- uid: YVR.Core.Editor.YVRConfigurationTask.Fix
+  commentId: M:YVR.Core.Editor.YVRConfigurationTask.Fix
+  id: Fix
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: Fix()
+  nameWithType: YVRConfigurationTask.Fix()
+  fullName: YVR.Core.Editor.YVRConfigurationTask.Fix()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Fix
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 44
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public void Fix()
+    content.vb: Public Sub Fix()
+  overload: YVR.Core.Editor.YVRConfigurationTask.Fix*
+- uid: YVR.Core.Editor.YVRConfigurationTask.SetIgnore(System.Boolean)
+  commentId: M:YVR.Core.Editor.YVRConfigurationTask.SetIgnore(System.Boolean)
+  id: SetIgnore(System.Boolean)
+  parent: YVR.Core.Editor.YVRConfigurationTask
+  langs:
+  - csharp
+  - vb
+  name: SetIgnore(bool)
+  nameWithType: YVRConfigurationTask.SetIgnore(bool)
+  fullName: YVR.Core.Editor.YVRConfigurationTask.SetIgnore(bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetIgnore
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTask.cs
+    startLine: 56
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public void SetIgnore(bool ignore)
+    parameters:
+    - id: ignore
+      type: System.Boolean
+    content.vb: Public Sub SetIgnore(ignore As Boolean)
+  overload: YVR.Core.Editor.YVRConfigurationTask.SetIgnore*
+  nameWithType.vb: YVRConfigurationTask.SetIgnore(Boolean)
+  fullName.vb: YVR.Core.Editor.YVRConfigurationTask.SetIgnore(Boolean)
+  name.vb: SetIgnore(Boolean)
+references:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.Editor.YVRConfigurationTask.Uid*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.Uid
+  href: YVR.Core.Editor.YVRConfigurationTask.Uid.html#YVR_Core_Editor_YVRConfigurationTask_Uid
+  name: Uid
+  nameWithType: YVRConfigurationTask.Uid
+  fullName: YVR.Core.Editor.YVRConfigurationTask.Uid
+- uid: UnityEngine.Hash128
+  commentId: T:UnityEngine.Hash128
+  parent: UnityEngine
+  isExternal: true
+  name: Hash128
+  nameWithType: Hash128
+  fullName: UnityEngine.Hash128
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.Editor.YVRConfigurationTask.taskGroup*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.taskGroup
+  href: YVR.Core.Editor.YVRConfigurationTask.taskGroup.html#YVR_Core_Editor_YVRConfigurationTask_taskGroup
+  name: taskGroup
+  nameWithType: YVRConfigurationTask.taskGroup
+  fullName: YVR.Core.Editor.YVRConfigurationTask.taskGroup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskGroup
+  nameWithType: YVRProjectSetup.TaskGroup
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: TaskGroup
+    href: YVR.Core.Editor.YVRProjectSetup.TaskGroup.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: TaskGroup
+    href: YVR.Core.Editor.YVRProjectSetup.TaskGroup.html
+- uid: YVR.Core.Editor.YVRConfigurationTask.taskLevel*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.taskLevel
+  href: YVR.Core.Editor.YVRConfigurationTask.taskLevel.html#YVR_Core_Editor_YVRConfigurationTask_taskLevel
+  name: taskLevel
+  nameWithType: YVRConfigurationTask.taskLevel
+  fullName: YVR.Core.Editor.YVRConfigurationTask.taskLevel
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskLevel
+  nameWithType: YVRProjectSetup.TaskLevel
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: TaskLevel
+    href: YVR.Core.Editor.YVRProjectSetup.TaskLevel.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: TaskLevel
+    href: YVR.Core.Editor.YVRProjectSetup.TaskLevel.html
+- uid: YVR.Core.Editor.YVRConfigurationTask.taskCategory*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.taskCategory
+  href: YVR.Core.Editor.YVRConfigurationTask.taskCategory.html#YVR_Core_Editor_YVRConfigurationTask_taskCategory
+  name: taskCategory
+  nameWithType: YVRConfigurationTask.taskCategory
+  fullName: YVR.Core.Editor.YVRConfigurationTask.taskCategory
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskCategory
+  nameWithType: YVRProjectSetup.TaskCategory
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: TaskCategory
+    href: YVR.Core.Editor.YVRProjectSetup.TaskCategory.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: TaskCategory
+    href: YVR.Core.Editor.YVRProjectSetup.TaskCategory.html
+- uid: YVR.Core.Editor.YVRConfigurationTask.isDone*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.isDone
+  href: YVR.Core.Editor.YVRConfigurationTask.isDone.html#YVR_Core_Editor_YVRConfigurationTask_isDone
+  name: isDone
+  nameWithType: YVRConfigurationTask.isDone
+  fullName: YVR.Core.Editor.YVRConfigurationTask.isDone
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<bool>
+  nameWithType: Func<bool>
+  fullName: System.Func<bool>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: YVR.Core.Editor.YVRConfigurationTask.fixAction*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.fixAction
+  href: YVR.Core.Editor.YVRConfigurationTask.fixAction.html#YVR_Core_Editor_YVRConfigurationTask_fixAction
+  name: fixAction
+  nameWithType: YVRConfigurationTask.fixAction
+  fullName: YVR.Core.Editor.YVRConfigurationTask.fixAction
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: YVR.Core.Editor.YVRConfigurationTask.issueMessage*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.issueMessage
+  href: YVR.Core.Editor.YVRConfigurationTask.issueMessage.html#YVR_Core_Editor_YVRConfigurationTask_issueMessage
+  name: issueMessage
+  nameWithType: YVRConfigurationTask.issueMessage
+  fullName: YVR.Core.Editor.YVRConfigurationTask.issueMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: YVR.Core.Editor.YVRConfigurationTask.fixedMessage*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.fixedMessage
+  href: YVR.Core.Editor.YVRConfigurationTask.fixedMessage.html#YVR_Core_Editor_YVRConfigurationTask_fixedMessage
+  name: fixedMessage
+  nameWithType: YVRConfigurationTask.fixedMessage
+  fullName: YVR.Core.Editor.YVRConfigurationTask.fixedMessage
+- uid: YVR.Core.Editor.YVRConfigurationTask.documentationUrl*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.documentationUrl
+  href: YVR.Core.Editor.YVRConfigurationTask.documentationUrl.html#YVR_Core_Editor_YVRConfigurationTask_documentationUrl
+  name: documentationUrl
+  nameWithType: YVRConfigurationTask.documentationUrl
+  fullName: YVR.Core.Editor.YVRConfigurationTask.documentationUrl
+- uid: YVR.Core.Editor.YVRConfigurationTask.ignore*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.ignore
+  href: YVR.Core.Editor.YVRConfigurationTask.ignore.html#YVR_Core_Editor_YVRConfigurationTask_ignore
+  name: ignore
+  nameWithType: YVRConfigurationTask.ignore
+  fullName: YVR.Core.Editor.YVRConfigurationTask.ignore
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.Editor.YVRConfigurationTask.stackTrace*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.stackTrace
+  href: YVR.Core.Editor.YVRConfigurationTask.stackTrace.html#YVR_Core_Editor_YVRConfigurationTask_stackTrace
+  name: stackTrace
+  nameWithType: YVRConfigurationTask.stackTrace
+  fullName: YVR.Core.Editor.YVRConfigurationTask.stackTrace
+- uid: System.Diagnostics.StackTrace
+  commentId: T:System.Diagnostics.StackTrace
+  parent: System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.diagnostics.stacktrace
+  name: StackTrace
+  nameWithType: StackTrace
+  fullName: System.Diagnostics.StackTrace
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: YVR.Core.Editor.YVRConfigurationTask.#ctor*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.#ctor
+  href: YVR.Core.Editor.YVRConfigurationTask.-ctor.html#YVR_Core_Editor_YVRConfigurationTask__ctor_YVR_Core_Editor_YVRProjectSetup_TaskGroup_YVR_Core_Editor_YVRProjectSetup_TaskLevel_YVR_Core_Editor_YVRProjectSetup_TaskCategory_System_Func_System_Boolean__System_Action_System_String_System_String_System_String_
+  name: YVRConfigurationTask
+  nameWithType: YVRConfigurationTask.YVRConfigurationTask
+  fullName: YVR.Core.Editor.YVRConfigurationTask.YVRConfigurationTask
+  nameWithType.vb: YVRConfigurationTask.New
+  fullName.vb: YVR.Core.Editor.YVRConfigurationTask.New
+  name.vb: New
+- uid: YVR.Core.Editor.YVRConfigurationTask.Fix*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.Fix
+  href: YVR.Core.Editor.YVRConfigurationTask.Fix.html#YVR_Core_Editor_YVRConfigurationTask_Fix
+  name: Fix
+  nameWithType: YVRConfigurationTask.Fix
+  fullName: YVR.Core.Editor.YVRConfigurationTask.Fix
+- uid: YVR.Core.Editor.YVRConfigurationTask.SetIgnore*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTask.SetIgnore
+  href: YVR.Core.Editor.YVRConfigurationTask.SetIgnore.html#YVR_Core_Editor_YVRConfigurationTask_SetIgnore_System_Boolean_
+  name: SetIgnore
+  nameWithType: YVRConfigurationTask.SetIgnore
+  fullName: YVR.Core.Editor.YVRConfigurationTask.SetIgnore
+memberLayout: SeparatePages

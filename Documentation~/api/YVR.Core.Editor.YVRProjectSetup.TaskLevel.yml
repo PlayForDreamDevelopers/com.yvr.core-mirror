@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  id: YVRProjectSetup.TaskLevel
+  parent: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.YVRProjectSetup.TaskLevel.Optional
+  - YVR.Core.Editor.YVRProjectSetup.TaskLevel.Recommended
+  - YVR.Core.Editor.YVRProjectSetup.TaskLevel.Required
+  langs:
+  - csharp
+  - vb
+  name: YVRProjectSetup.TaskLevel
+  nameWithType: YVRProjectSetup.TaskLevel
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TaskLevel
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public enum YVRProjectSetup.TaskLevel
+    content.vb: Public Enum YVRProjectSetup.TaskLevel
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel.Optional
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskLevel.Optional
+  id: Optional
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  langs:
+  - csharp
+  - vb
+  name: Optional
+  nameWithType: YVRProjectSetup.TaskLevel.Optional
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel.Optional
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Optional
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Optional = 0
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel.Recommended
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskLevel.Recommended
+  id: Recommended
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  langs:
+  - csharp
+  - vb
+  name: Recommended
+  nameWithType: YVRProjectSetup.TaskLevel.Recommended
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel.Recommended
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Recommended
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Recommended = 1
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel.Required
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskLevel.Required
+  id: Required
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: YVRProjectSetup.TaskLevel.Required
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel.Required
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Required
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Required = 2
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+references:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskLevel
+  nameWithType: YVRProjectSetup.TaskLevel
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: TaskLevel
+    href: YVR.Core.Editor.YVRProjectSetup.TaskLevel.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: TaskLevel
+    href: YVR.Core.Editor.YVRProjectSetup.TaskLevel.html
+memberLayout: SeparatePages

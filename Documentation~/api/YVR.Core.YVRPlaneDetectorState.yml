@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPlaneDetectorState
+  commentId: T:YVR.Core.YVRPlaneDetectorState
+  id: YVRPlaneDetectorState
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_DONE_EXT
+  - YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_ERROR_EXT
+  - YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_FATAL_EXT
+  - YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  - YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_NONE_EXT
+  - YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_PENDING_EXT
+  langs:
+  - csharp
+  - vb
+  name: YVRPlaneDetectorState
+  nameWithType: YVRPlaneDetectorState
+  fullName: YVR.Core.YVRPlaneDetectorState
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPlaneDetectorState
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRPlaneDetectorState
+    content.vb: Public Enum YVRPlaneDetectorState
+- uid: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_NONE_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_NONE_EXT
+  id: XR_PLANE_DETECTION_STATE_NONE_EXT
+  parent: YVR.Core.YVRPlaneDetectorState
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTION_STATE_NONE_EXT
+  nameWithType: YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_NONE_EXT
+  fullName: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_NONE_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTION_STATE_NONE_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTION_STATE_NONE_EXT = 0
+    return:
+      type: YVR.Core.YVRPlaneDetectorState
+- uid: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_PENDING_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_PENDING_EXT
+  id: XR_PLANE_DETECTION_STATE_PENDING_EXT
+  parent: YVR.Core.YVRPlaneDetectorState
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTION_STATE_PENDING_EXT
+  nameWithType: YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_PENDING_EXT
+  fullName: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_PENDING_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTION_STATE_PENDING_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTION_STATE_PENDING_EXT = 1
+    return:
+      type: YVR.Core.YVRPlaneDetectorState
+- uid: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_DONE_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_DONE_EXT
+  id: XR_PLANE_DETECTION_STATE_DONE_EXT
+  parent: YVR.Core.YVRPlaneDetectorState
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTION_STATE_DONE_EXT
+  nameWithType: YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_DONE_EXT
+  fullName: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_DONE_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTION_STATE_DONE_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTION_STATE_DONE_EXT = 2
+    return:
+      type: YVR.Core.YVRPlaneDetectorState
+- uid: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_ERROR_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_ERROR_EXT
+  id: XR_PLANE_DETECTION_STATE_ERROR_EXT
+  parent: YVR.Core.YVRPlaneDetectorState
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTION_STATE_ERROR_EXT
+  nameWithType: YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_ERROR_EXT
+  fullName: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_ERROR_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTION_STATE_ERROR_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTION_STATE_ERROR_EXT = 3
+    return:
+      type: YVR.Core.YVRPlaneDetectorState
+- uid: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_FATAL_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_FATAL_EXT
+  id: XR_PLANE_DETECTION_STATE_FATAL_EXT
+  parent: YVR.Core.YVRPlaneDetectorState
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTION_STATE_FATAL_EXT
+  nameWithType: YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_FATAL_EXT
+  fullName: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_FATAL_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTION_STATE_FATAL_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTION_STATE_FATAL_EXT = 4
+    return:
+      type: YVR.Core.YVRPlaneDetectorState
+- uid: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  id: XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  parent: YVR.Core.YVRPlaneDetectorState
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  nameWithType: YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  fullName: YVR.Core.YVRPlaneDetectorState.XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorState.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTION_STATE_MAX_ENUM_EXT = 2147483647
+    return:
+      type: YVR.Core.YVRPlaneDetectorState
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRPlaneDetectorState
+  commentId: T:YVR.Core.YVRPlaneDetectorState
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorState.html
+  name: YVRPlaneDetectorState
+  nameWithType: YVRPlaneDetectorState
+  fullName: YVR.Core.YVRPlaneDetectorState
+memberLayout: SeparatePages

@@ -1,0 +1,8 @@
+apiRules:
+- exclude:
+    uidRegex: ^System
+- exclude:
+    uidRegex: ^UnityEngine
+- exclude:
+    hasAttribute:
+      uid: Global.ExcludeFromDocsAttribute

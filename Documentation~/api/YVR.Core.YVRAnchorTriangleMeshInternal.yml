@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal
+  commentId: T:YVR.Core.YVRAnchorTriangleMeshInternal
+  id: YVRAnchorTriangleMeshInternal
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRAnchorTriangleMeshInternal.indexCapacityInput
+  - YVR.Core.YVRAnchorTriangleMeshInternal.indexCountOutput
+  - YVR.Core.YVRAnchorTriangleMeshInternal.indicesIntPtr
+  - YVR.Core.YVRAnchorTriangleMeshInternal.vertexCapacityInput
+  - YVR.Core.YVRAnchorTriangleMeshInternal.vertexCountOutput
+  - YVR.Core.YVRAnchorTriangleMeshInternal.verticesIntPtr
+  langs:
+  - csharp
+  - vb
+  name: YVRAnchorTriangleMeshInternal
+  nameWithType: YVRAnchorTriangleMeshInternal
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRAnchorTriangleMeshInternal
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public struct YVRAnchorTriangleMeshInternal
+    content.vb: Public Structure YVRAnchorTriangleMeshInternal
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal.vertexCapacityInput
+  commentId: F:YVR.Core.YVRAnchorTriangleMeshInternal.vertexCapacityInput
+  id: vertexCapacityInput
+  parent: YVR.Core.YVRAnchorTriangleMeshInternal
+  langs:
+  - csharp
+  - vb
+  name: vertexCapacityInput
+  nameWithType: YVRAnchorTriangleMeshInternal.vertexCapacityInput
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal.vertexCapacityInput
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: vertexCapacityInput
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public int vertexCapacityInput
+    return:
+      type: System.Int32
+    content.vb: Public vertexCapacityInput As Integer
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal.vertexCountOutput
+  commentId: F:YVR.Core.YVRAnchorTriangleMeshInternal.vertexCountOutput
+  id: vertexCountOutput
+  parent: YVR.Core.YVRAnchorTriangleMeshInternal
+  langs:
+  - csharp
+  - vb
+  name: vertexCountOutput
+  nameWithType: YVRAnchorTriangleMeshInternal.vertexCountOutput
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal.vertexCountOutput
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: vertexCountOutput
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public int vertexCountOutput
+    return:
+      type: System.Int32
+    content.vb: Public vertexCountOutput As Integer
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal.verticesIntPtr
+  commentId: F:YVR.Core.YVRAnchorTriangleMeshInternal.verticesIntPtr
+  id: verticesIntPtr
+  parent: YVR.Core.YVRAnchorTriangleMeshInternal
+  langs:
+  - csharp
+  - vb
+  name: verticesIntPtr
+  nameWithType: YVRAnchorTriangleMeshInternal.verticesIntPtr
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal.verticesIntPtr
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: verticesIntPtr
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public IntPtr verticesIntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public verticesIntPtr As IntPtr
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal.indexCapacityInput
+  commentId: F:YVR.Core.YVRAnchorTriangleMeshInternal.indexCapacityInput
+  id: indexCapacityInput
+  parent: YVR.Core.YVRAnchorTriangleMeshInternal
+  langs:
+  - csharp
+  - vb
+  name: indexCapacityInput
+  nameWithType: YVRAnchorTriangleMeshInternal.indexCapacityInput
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal.indexCapacityInput
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: indexCapacityInput
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public int indexCapacityInput
+    return:
+      type: System.Int32
+    content.vb: Public indexCapacityInput As Integer
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal.indexCountOutput
+  commentId: F:YVR.Core.YVRAnchorTriangleMeshInternal.indexCountOutput
+  id: indexCountOutput
+  parent: YVR.Core.YVRAnchorTriangleMeshInternal
+  langs:
+  - csharp
+  - vb
+  name: indexCountOutput
+  nameWithType: YVRAnchorTriangleMeshInternal.indexCountOutput
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal.indexCountOutput
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: indexCountOutput
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public int indexCountOutput
+    return:
+      type: System.Int32
+    content.vb: Public indexCountOutput As Integer
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal.indicesIntPtr
+  commentId: F:YVR.Core.YVRAnchorTriangleMeshInternal.indicesIntPtr
+  id: indicesIntPtr
+  parent: YVR.Core.YVRAnchorTriangleMeshInternal
+  langs:
+  - csharp
+  - vb
+  name: indicesIntPtr
+  nameWithType: YVRAnchorTriangleMeshInternal.indicesIntPtr
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal.indicesIntPtr
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: indicesIntPtr
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRAnchorTriangleMeshInternal.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public IntPtr indicesIntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public indicesIntPtr As IntPtr
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+memberLayout: SeparatePages

@@ -1,0 +1,314 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.XRHandFingerID
+  commentId: T:YVR.Core.XRHandFingerID
+  id: XRHandFingerID
+  parent: YVR.Core
+  children:
+  - YVR.Core.XRHandFingerID.Index
+  - YVR.Core.XRHandFingerID.Little
+  - YVR.Core.XRHandFingerID.Middle
+  - YVR.Core.XRHandFingerID.Ring
+  - YVR.Core.XRHandFingerID.Thumb
+  langs:
+  - csharp
+  - vb
+  name: XRHandFingerID
+  nameWithType: XRHandFingerID
+  fullName: YVR.Core.XRHandFingerID
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XRHandFingerID
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 34
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum XRHandFingerID
+    content.vb: Public Enum XRHandFingerID
+  extensionMethods:
+  - YVR.Core.XRHandFingerID.YVR.Core.YVRHandUtility.GetBackJointID
+  - YVR.Core.XRHandFingerID.YVR.Core.YVRHandUtility.GetFrontJointID
+- uid: YVR.Core.XRHandFingerID.Thumb
+  commentId: F:YVR.Core.XRHandFingerID.Thumb
+  id: Thumb
+  parent: YVR.Core.XRHandFingerID
+  langs:
+  - csharp
+  - vb
+  name: Thumb
+  nameWithType: XRHandFingerID.Thumb
+  fullName: YVR.Core.XRHandFingerID.Thumb
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Thumb
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 39
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Represents the thumb.
+  example: []
+  syntax:
+    content: Thumb = 0
+    return:
+      type: YVR.Core.XRHandFingerID
+- uid: YVR.Core.XRHandFingerID.Index
+  commentId: F:YVR.Core.XRHandFingerID.Index
+  id: Index
+  parent: YVR.Core.XRHandFingerID
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: XRHandFingerID.Index
+  fullName: YVR.Core.XRHandFingerID.Index
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Index
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 44
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Represents the index finger.
+  example: []
+  syntax:
+    content: Index = 1
+    return:
+      type: YVR.Core.XRHandFingerID
+- uid: YVR.Core.XRHandFingerID.Middle
+  commentId: F:YVR.Core.XRHandFingerID.Middle
+  id: Middle
+  parent: YVR.Core.XRHandFingerID
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: XRHandFingerID.Middle
+  fullName: YVR.Core.XRHandFingerID.Middle
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Middle
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 49
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Represents the middle finger.
+  example: []
+  syntax:
+    content: Middle = 2
+    return:
+      type: YVR.Core.XRHandFingerID
+- uid: YVR.Core.XRHandFingerID.Ring
+  commentId: F:YVR.Core.XRHandFingerID.Ring
+  id: Ring
+  parent: YVR.Core.XRHandFingerID
+  langs:
+  - csharp
+  - vb
+  name: Ring
+  nameWithType: XRHandFingerID.Ring
+  fullName: YVR.Core.XRHandFingerID.Ring
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Ring
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 54
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Represents the ring finger.
+  example: []
+  syntax:
+    content: Ring = 3
+    return:
+      type: YVR.Core.XRHandFingerID
+- uid: YVR.Core.XRHandFingerID.Little
+  commentId: F:YVR.Core.XRHandFingerID.Little
+  id: Little
+  parent: YVR.Core.XRHandFingerID
+  langs:
+  - csharp
+  - vb
+  name: Little
+  nameWithType: XRHandFingerID.Little
+  fullName: YVR.Core.XRHandFingerID.Little
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Little
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 59
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Represents the little finger.
+  example: []
+  syntax:
+    content: Little = 4
+    return:
+      type: YVR.Core.XRHandFingerID
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.XRHandFingerID.YVR.Core.YVRHandUtility.GetBackJointID
+  commentId: M:YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+  parent: YVR.Core.YVRHandUtility
+  definition: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+  href: YVR.Core.YVRHandUtility.GetBackJointID.html#YVR_Core_YVRHandUtility_GetBackJointID_YVR_Core_XRHandFingerID_
+  name: GetBackJointID(XRHandFingerID)
+  nameWithType: YVRHandUtility.GetBackJointID(XRHandFingerID)
+  fullName: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+  spec.csharp:
+  - uid: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+    name: GetBackJointID
+    href: YVR.Core.YVRHandUtility.GetBackJointID.html#YVR_Core_YVRHandUtility_GetBackJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+    name: GetBackJointID
+    href: YVR.Core.YVRHandUtility.GetBackJointID.html#YVR_Core_YVRHandUtility_GetBackJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+- uid: YVR.Core.XRHandFingerID.YVR.Core.YVRHandUtility.GetFrontJointID
+  commentId: M:YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+  parent: YVR.Core.YVRHandUtility
+  definition: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+  href: YVR.Core.YVRHandUtility.GetFrontJointID.html#YVR_Core_YVRHandUtility_GetFrontJointID_YVR_Core_XRHandFingerID_
+  name: GetFrontJointID(XRHandFingerID)
+  nameWithType: YVRHandUtility.GetFrontJointID(XRHandFingerID)
+  fullName: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+  spec.csharp:
+  - uid: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+    name: GetFrontJointID
+    href: YVR.Core.YVRHandUtility.GetFrontJointID.html#YVR_Core_YVRHandUtility_GetFrontJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+    name: GetFrontJointID
+    href: YVR.Core.YVRHandUtility.GetFrontJointID.html#YVR_Core_YVRHandUtility_GetFrontJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+- uid: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+  commentId: M:YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+  href: YVR.Core.YVRHandUtility.GetBackJointID.html#YVR_Core_YVRHandUtility_GetBackJointID_YVR_Core_XRHandFingerID_
+  name: GetBackJointID(XRHandFingerID)
+  nameWithType: YVRHandUtility.GetBackJointID(XRHandFingerID)
+  fullName: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+  spec.csharp:
+  - uid: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+    name: GetBackJointID
+    href: YVR.Core.YVRHandUtility.GetBackJointID.html#YVR_Core_YVRHandUtility_GetBackJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.YVRHandUtility.GetBackJointID(YVR.Core.XRHandFingerID)
+    name: GetBackJointID
+    href: YVR.Core.YVRHandUtility.GetBackJointID.html#YVR_Core_YVRHandUtility_GetBackJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+- uid: YVR.Core.YVRHandUtility
+  commentId: T:YVR.Core.YVRHandUtility
+  parent: YVR.Core
+  href: YVR.Core.YVRHandUtility.html
+  name: YVRHandUtility
+  nameWithType: YVRHandUtility
+  fullName: YVR.Core.YVRHandUtility
+- uid: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+  commentId: M:YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+  href: YVR.Core.YVRHandUtility.GetFrontJointID.html#YVR_Core_YVRHandUtility_GetFrontJointID_YVR_Core_XRHandFingerID_
+  name: GetFrontJointID(XRHandFingerID)
+  nameWithType: YVRHandUtility.GetFrontJointID(XRHandFingerID)
+  fullName: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+  spec.csharp:
+  - uid: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+    name: GetFrontJointID
+    href: YVR.Core.YVRHandUtility.GetFrontJointID.html#YVR_Core_YVRHandUtility_GetFrontJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.YVRHandUtility.GetFrontJointID(YVR.Core.XRHandFingerID)
+    name: GetFrontJointID
+    href: YVR.Core.YVRHandUtility.GetFrontJointID.html#YVR_Core_YVRHandUtility_GetFrontJointID_YVR_Core_XRHandFingerID_
+  - name: (
+  - uid: YVR.Core.XRHandFingerID
+    name: XRHandFingerID
+    href: YVR.Core.XRHandFingerID.html
+  - name: )
+- uid: YVR.Core.XRHandFingerID
+  commentId: T:YVR.Core.XRHandFingerID
+  parent: YVR.Core
+  href: YVR.Core.XRHandFingerID.html
+  name: XRHandFingerID
+  nameWithType: XRHandFingerID
+  fullName: YVR.Core.XRHandFingerID
+memberLayout: SeparatePages

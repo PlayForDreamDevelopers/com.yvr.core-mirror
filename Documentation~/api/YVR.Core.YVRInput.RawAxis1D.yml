@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.RawAxis1D
+  commentId: T:YVR.Core.YVRInput.RawAxis1D
+  id: YVRInput.RawAxis1D
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.RawAxis1D.LIndexTrigger
+  - YVR.Core.YVRInput.RawAxis1D.None
+  - YVR.Core.YVRInput.RawAxis1D.RIndexTrigger
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.RawAxis1D
+  nameWithType: YVRInput.RawAxis1D
+  fullName: YVR.Core.YVRInput.RawAxis1D
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RawAxis1D
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 420
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Raw 1D Axis mapping for controller
+  example: []
+  syntax:
+    content: public enum YVRInput.RawAxis1D
+    content.vb: Public Enum YVRInput.RawAxis1D
+- uid: YVR.Core.YVRInput.RawAxis1D.None
+  commentId: F:YVR.Core.YVRInput.RawAxis1D.None
+  id: None
+  parent: YVR.Core.YVRInput.RawAxis1D
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.RawAxis1D.None
+  fullName: YVR.Core.YVRInput.RawAxis1D.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 425
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a 1D Axis
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.RawAxis1D
+- uid: YVR.Core.YVRInput.RawAxis1D.LIndexTrigger
+  commentId: F:YVR.Core.YVRInput.RawAxis1D.LIndexTrigger
+  id: LIndexTrigger
+  parent: YVR.Core.YVRInput.RawAxis1D
+  langs:
+  - csharp
+  - vb
+  name: LIndexTrigger
+  nameWithType: YVRInput.RawAxis1D.LIndexTrigger
+  fullName: YVR.Core.YVRInput.RawAxis1D.LIndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LIndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 429
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger 1D Axis on left controller
+  example: []
+  syntax:
+    content: LIndexTrigger = 1
+    return:
+      type: YVR.Core.YVRInput.RawAxis1D
+- uid: YVR.Core.YVRInput.RawAxis1D.RIndexTrigger
+  commentId: F:YVR.Core.YVRInput.RawAxis1D.RIndexTrigger
+  id: RIndexTrigger
+  parent: YVR.Core.YVRInput.RawAxis1D
+  langs:
+  - csharp
+  - vb
+  name: RIndexTrigger
+  nameWithType: YVRInput.RawAxis1D.RIndexTrigger
+  fullName: YVR.Core.YVRInput.RawAxis1D.RIndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RIndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 433
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger 1D Axis on right controller
+  example: []
+  syntax:
+    content: RIndexTrigger = 2
+    return:
+      type: YVR.Core.YVRInput.RawAxis1D
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.RawAxis1D
+  commentId: T:YVR.Core.YVRInput.RawAxis1D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawAxis1D
+  nameWithType: YVRInput.RawAxis1D
+  fullName: YVR.Core.YVRInput.RawAxis1D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: RawAxis1D
+    href: YVR.Core.YVRInput.RawAxis1D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: RawAxis1D
+    href: YVR.Core.YVRInput.RawAxis1D.html
+memberLayout: SeparatePages

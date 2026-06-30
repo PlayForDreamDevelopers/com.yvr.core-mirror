@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRQualityManager.VSyncCount
+  commentId: T:YVR.Core.YVRQualityManager.VSyncCount
+  id: YVRQualityManager.VSyncCount
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRQualityManager.VSyncCount.k1
+  - YVR.Core.YVRQualityManager.VSyncCount.k2
+  langs:
+  - csharp
+  - vb
+  name: YVRQualityManager.VSyncCount
+  nameWithType: YVRQualityManager.VSyncCount
+  fullName: YVR.Core.YVRQualityManager.VSyncCount
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VSyncCount
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: VSync count every frame.
+  example: []
+  syntax:
+    content: public enum YVRQualityManager.VSyncCount
+    content.vb: Public Enum YVRQualityManager.VSyncCount
+- uid: YVR.Core.YVRQualityManager.VSyncCount.k1
+  commentId: F:YVR.Core.YVRQualityManager.VSyncCount.k1
+  id: k1
+  parent: YVR.Core.YVRQualityManager.VSyncCount
+  langs:
+  - csharp
+  - vb
+  name: k1
+  nameWithType: YVRQualityManager.VSyncCount.k1
+  fullName: YVR.Core.YVRQualityManager.VSyncCount.k1
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: k1
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: VSync every frame
+  example: []
+  syntax:
+    content: k1 = 1
+    return:
+      type: YVR.Core.YVRQualityManager.VSyncCount
+- uid: YVR.Core.YVRQualityManager.VSyncCount.k2
+  commentId: F:YVR.Core.YVRQualityManager.VSyncCount.k2
+  id: k2
+  parent: YVR.Core.YVRQualityManager.VSyncCount
+  langs:
+  - csharp
+  - vb
+  name: k2
+  nameWithType: YVRQualityManager.VSyncCount.k2
+  fullName: YVR.Core.YVRQualityManager.VSyncCount.k2
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: k2
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: VSync every two frame,FPS reduced to half.
+  example: []
+  syntax:
+    content: k2 = 2
+    return:
+      type: YVR.Core.YVRQualityManager.VSyncCount
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRQualityManager.VSyncCount
+  commentId: T:YVR.Core.YVRQualityManager.VSyncCount
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.VSyncCount
+  nameWithType: YVRQualityManager.VSyncCount
+  fullName: YVR.Core.YVRQualityManager.VSyncCount
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+memberLayout: SeparatePages

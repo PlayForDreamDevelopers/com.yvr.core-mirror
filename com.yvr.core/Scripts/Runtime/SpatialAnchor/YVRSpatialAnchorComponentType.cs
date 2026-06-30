@@ -11,5 +11,6 @@ namespace YVR.Core
         SemanticLabels = 5,
         RoomLayout = 6,
         SpaceContainer = 7,
+        TriangleMesh = 1000269000
     }
 }

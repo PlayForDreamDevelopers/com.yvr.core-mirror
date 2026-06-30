@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.HandType
+  commentId: T:YVR.Core.HandType
+  id: HandType
+  parent: YVR.Core
+  children:
+  - YVR.Core.HandType.HandLeft
+  - YVR.Core.HandType.HandRight
+  - YVR.Core.HandType.None
+  langs:
+  - csharp
+  - vb
+  name: HandType
+  nameWithType: HandType
+  fullName: YVR.Core.HandType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandType
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum HandType
+    content.vb: Public Enum HandType
+- uid: YVR.Core.HandType.None
+  commentId: F:YVR.Core.HandType.None
+  id: None
+  parent: YVR.Core.HandType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: HandType.None
+  fullName: YVR.Core.HandType.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.HandType
+- uid: YVR.Core.HandType.HandLeft
+  commentId: F:YVR.Core.HandType.HandLeft
+  id: HandLeft
+  parent: YVR.Core.HandType
+  langs:
+  - csharp
+  - vb
+  name: HandLeft
+  nameWithType: HandType.HandLeft
+  fullName: YVR.Core.HandType.HandLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandLeft
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HandLeft = 1
+    return:
+      type: YVR.Core.HandType
+- uid: YVR.Core.HandType.HandRight
+  commentId: F:YVR.Core.HandType.HandRight
+  id: HandRight
+  parent: YVR.Core.HandType
+  langs:
+  - csharp
+  - vb
+  name: HandRight
+  nameWithType: HandType.HandRight
+  fullName: YVR.Core.HandType.HandRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandRight
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HandRight = 2
+    return:
+      type: YVR.Core.HandType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.HandType
+  commentId: T:YVR.Core.HandType
+  parent: YVR.Core
+  href: YVR.Core.HandType.html
+  name: HandType
+  nameWithType: HandType
+  fullName: YVR.Core.HandType
+memberLayout: SeparatePages

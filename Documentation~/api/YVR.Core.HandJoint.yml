@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.HandJoint
+  commentId: T:YVR.Core.HandJoint
+  id: HandJoint
+  parent: YVR.Core
+  children:
+  - YVR.Core.HandJoint.JointIndexDistal
+  - YVR.Core.HandJoint.JointIndexIntermediate
+  - YVR.Core.HandJoint.JointIndexMetacarpal
+  - YVR.Core.HandJoint.JointIndexProximal
+  - YVR.Core.HandJoint.JointIndexTip
+  - YVR.Core.HandJoint.JointLittleDistal
+  - YVR.Core.HandJoint.JointLittleIntermediate
+  - YVR.Core.HandJoint.JointLittleMetacarpal
+  - YVR.Core.HandJoint.JointLittleProximal
+  - YVR.Core.HandJoint.JointLittleTip
+  - YVR.Core.HandJoint.JointMax
+  - YVR.Core.HandJoint.JointMiddleDistal
+  - YVR.Core.HandJoint.JointMiddleIntermediate
+  - YVR.Core.HandJoint.JointMiddleMetacarpal
+  - YVR.Core.HandJoint.JointMiddleProximal
+  - YVR.Core.HandJoint.JointMiddleTip
+  - YVR.Core.HandJoint.JointPalm
+  - YVR.Core.HandJoint.JointRingDistal
+  - YVR.Core.HandJoint.JointRingIntermediate
+  - YVR.Core.HandJoint.JointRingMetacarpal
+  - YVR.Core.HandJoint.JointRingProximal
+  - YVR.Core.HandJoint.JointRingTip
+  - YVR.Core.HandJoint.JointThumbDistal
+  - YVR.Core.HandJoint.JointThumbMetacarpal
+  - YVR.Core.HandJoint.JointThumbProximal
+  - YVR.Core.HandJoint.JointThumbTip
+  - YVR.Core.HandJoint.JointWrist
+  langs:
+  - csharp
+  - vb
+  name: HandJoint
+  nameWithType: HandJoint
+  fullName: YVR.Core.HandJoint
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandJoint
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 62
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum HandJoint
+    content.vb: Public Enum HandJoint
+- uid: YVR.Core.HandJoint.JointPalm
+  commentId: F:YVR.Core.HandJoint.JointPalm
+  id: JointPalm
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointPalm
+  nameWithType: HandJoint.JointPalm
+  fullName: YVR.Core.HandJoint.JointPalm
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointPalm
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 64
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointPalm = 0
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointWrist
+  commentId: F:YVR.Core.HandJoint.JointWrist
+  id: JointWrist
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointWrist
+  nameWithType: HandJoint.JointWrist
+  fullName: YVR.Core.HandJoint.JointWrist
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointWrist
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 65
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointWrist = 1
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointThumbMetacarpal
+  commentId: F:YVR.Core.HandJoint.JointThumbMetacarpal
+  id: JointThumbMetacarpal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointThumbMetacarpal
+  nameWithType: HandJoint.JointThumbMetacarpal
+  fullName: YVR.Core.HandJoint.JointThumbMetacarpal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointThumbMetacarpal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 66
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointThumbMetacarpal = 2
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointThumbProximal
+  commentId: F:YVR.Core.HandJoint.JointThumbProximal
+  id: JointThumbProximal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointThumbProximal
+  nameWithType: HandJoint.JointThumbProximal
+  fullName: YVR.Core.HandJoint.JointThumbProximal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointThumbProximal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 67
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointThumbProximal = 3
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointThumbDistal
+  commentId: F:YVR.Core.HandJoint.JointThumbDistal
+  id: JointThumbDistal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointThumbDistal
+  nameWithType: HandJoint.JointThumbDistal
+  fullName: YVR.Core.HandJoint.JointThumbDistal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointThumbDistal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 68
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointThumbDistal = 4
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointThumbTip
+  commentId: F:YVR.Core.HandJoint.JointThumbTip
+  id: JointThumbTip
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointThumbTip
+  nameWithType: HandJoint.JointThumbTip
+  fullName: YVR.Core.HandJoint.JointThumbTip
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointThumbTip
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 69
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointThumbTip = 5
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointIndexMetacarpal
+  commentId: F:YVR.Core.HandJoint.JointIndexMetacarpal
+  id: JointIndexMetacarpal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointIndexMetacarpal
+  nameWithType: HandJoint.JointIndexMetacarpal
+  fullName: YVR.Core.HandJoint.JointIndexMetacarpal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointIndexMetacarpal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 70
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointIndexMetacarpal = 6
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointIndexProximal
+  commentId: F:YVR.Core.HandJoint.JointIndexProximal
+  id: JointIndexProximal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointIndexProximal
+  nameWithType: HandJoint.JointIndexProximal
+  fullName: YVR.Core.HandJoint.JointIndexProximal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointIndexProximal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 71
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointIndexProximal = 7
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointIndexIntermediate
+  commentId: F:YVR.Core.HandJoint.JointIndexIntermediate
+  id: JointIndexIntermediate
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointIndexIntermediate
+  nameWithType: HandJoint.JointIndexIntermediate
+  fullName: YVR.Core.HandJoint.JointIndexIntermediate
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointIndexIntermediate
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 72
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointIndexIntermediate = 8
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointIndexDistal
+  commentId: F:YVR.Core.HandJoint.JointIndexDistal
+  id: JointIndexDistal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointIndexDistal
+  nameWithType: HandJoint.JointIndexDistal
+  fullName: YVR.Core.HandJoint.JointIndexDistal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointIndexDistal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointIndexDistal = 9
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointIndexTip
+  commentId: F:YVR.Core.HandJoint.JointIndexTip
+  id: JointIndexTip
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointIndexTip
+  nameWithType: HandJoint.JointIndexTip
+  fullName: YVR.Core.HandJoint.JointIndexTip
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointIndexTip
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 74
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointIndexTip = 10
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointMiddleMetacarpal
+  commentId: F:YVR.Core.HandJoint.JointMiddleMetacarpal
+  id: JointMiddleMetacarpal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointMiddleMetacarpal
+  nameWithType: HandJoint.JointMiddleMetacarpal
+  fullName: YVR.Core.HandJoint.JointMiddleMetacarpal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointMiddleMetacarpal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 75
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointMiddleMetacarpal = 11
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointMiddleProximal
+  commentId: F:YVR.Core.HandJoint.JointMiddleProximal
+  id: JointMiddleProximal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointMiddleProximal
+  nameWithType: HandJoint.JointMiddleProximal
+  fullName: YVR.Core.HandJoint.JointMiddleProximal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointMiddleProximal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 76
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointMiddleProximal = 12
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointMiddleIntermediate
+  commentId: F:YVR.Core.HandJoint.JointMiddleIntermediate
+  id: JointMiddleIntermediate
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointMiddleIntermediate
+  nameWithType: HandJoint.JointMiddleIntermediate
+  fullName: YVR.Core.HandJoint.JointMiddleIntermediate
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointMiddleIntermediate
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 77
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointMiddleIntermediate = 13
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointMiddleDistal
+  commentId: F:YVR.Core.HandJoint.JointMiddleDistal
+  id: JointMiddleDistal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointMiddleDistal
+  nameWithType: HandJoint.JointMiddleDistal
+  fullName: YVR.Core.HandJoint.JointMiddleDistal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointMiddleDistal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 78
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointMiddleDistal = 14
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointMiddleTip
+  commentId: F:YVR.Core.HandJoint.JointMiddleTip
+  id: JointMiddleTip
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointMiddleTip
+  nameWithType: HandJoint.JointMiddleTip
+  fullName: YVR.Core.HandJoint.JointMiddleTip
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointMiddleTip
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 79
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointMiddleTip = 15
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointRingMetacarpal
+  commentId: F:YVR.Core.HandJoint.JointRingMetacarpal
+  id: JointRingMetacarpal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointRingMetacarpal
+  nameWithType: HandJoint.JointRingMetacarpal
+  fullName: YVR.Core.HandJoint.JointRingMetacarpal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointRingMetacarpal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 80
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointRingMetacarpal = 16
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointRingProximal
+  commentId: F:YVR.Core.HandJoint.JointRingProximal
+  id: JointRingProximal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointRingProximal
+  nameWithType: HandJoint.JointRingProximal
+  fullName: YVR.Core.HandJoint.JointRingProximal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointRingProximal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 81
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointRingProximal = 17
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointRingIntermediate
+  commentId: F:YVR.Core.HandJoint.JointRingIntermediate
+  id: JointRingIntermediate
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointRingIntermediate
+  nameWithType: HandJoint.JointRingIntermediate
+  fullName: YVR.Core.HandJoint.JointRingIntermediate
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointRingIntermediate
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 82
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointRingIntermediate = 18
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointRingDistal
+  commentId: F:YVR.Core.HandJoint.JointRingDistal
+  id: JointRingDistal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointRingDistal
+  nameWithType: HandJoint.JointRingDistal
+  fullName: YVR.Core.HandJoint.JointRingDistal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointRingDistal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 83
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointRingDistal = 19
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointRingTip
+  commentId: F:YVR.Core.HandJoint.JointRingTip
+  id: JointRingTip
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointRingTip
+  nameWithType: HandJoint.JointRingTip
+  fullName: YVR.Core.HandJoint.JointRingTip
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointRingTip
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 84
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointRingTip = 20
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointLittleMetacarpal
+  commentId: F:YVR.Core.HandJoint.JointLittleMetacarpal
+  id: JointLittleMetacarpal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointLittleMetacarpal
+  nameWithType: HandJoint.JointLittleMetacarpal
+  fullName: YVR.Core.HandJoint.JointLittleMetacarpal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointLittleMetacarpal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 85
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointLittleMetacarpal = 21
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointLittleProximal
+  commentId: F:YVR.Core.HandJoint.JointLittleProximal
+  id: JointLittleProximal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointLittleProximal
+  nameWithType: HandJoint.JointLittleProximal
+  fullName: YVR.Core.HandJoint.JointLittleProximal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointLittleProximal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 86
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointLittleProximal = 22
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointLittleIntermediate
+  commentId: F:YVR.Core.HandJoint.JointLittleIntermediate
+  id: JointLittleIntermediate
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointLittleIntermediate
+  nameWithType: HandJoint.JointLittleIntermediate
+  fullName: YVR.Core.HandJoint.JointLittleIntermediate
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointLittleIntermediate
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 87
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointLittleIntermediate = 23
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointLittleDistal
+  commentId: F:YVR.Core.HandJoint.JointLittleDistal
+  id: JointLittleDistal
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointLittleDistal
+  nameWithType: HandJoint.JointLittleDistal
+  fullName: YVR.Core.HandJoint.JointLittleDistal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointLittleDistal
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 88
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointLittleDistal = 24
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointLittleTip
+  commentId: F:YVR.Core.HandJoint.JointLittleTip
+  id: JointLittleTip
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointLittleTip
+  nameWithType: HandJoint.JointLittleTip
+  fullName: YVR.Core.HandJoint.JointLittleTip
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointLittleTip
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 89
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointLittleTip = 25
+    return:
+      type: YVR.Core.HandJoint
+- uid: YVR.Core.HandJoint.JointMax
+  commentId: F:YVR.Core.HandJoint.JointMax
+  id: JointMax
+  parent: YVR.Core.HandJoint
+  langs:
+  - csharp
+  - vb
+  name: JointMax
+  nameWithType: HandJoint.JointMax
+  fullName: YVR.Core.HandJoint.JointMax
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: JointMax
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 90
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: JointMax = 26
+    return:
+      type: YVR.Core.HandJoint
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.HandJoint
+  commentId: T:YVR.Core.HandJoint
+  parent: YVR.Core
+  href: YVR.Core.HandJoint.html
+  name: HandJoint
+  nameWithType: HandJoint
+  fullName: YVR.Core.HandJoint
+memberLayout: SeparatePages

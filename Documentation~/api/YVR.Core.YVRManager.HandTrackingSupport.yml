@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRManager.HandTrackingSupport
+  commentId: T:YVR.Core.YVRManager.HandTrackingSupport
+  id: YVRManager.HandTrackingSupport
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRManager.HandTrackingSupport.ControllersAndHands
+  - YVR.Core.YVRManager.HandTrackingSupport.ControllersOnly
+  - YVR.Core.YVRManager.HandTrackingSupport.HandsOnly
+  langs:
+  - csharp
+  - vb
+  name: YVRManager.HandTrackingSupport
+  nameWithType: YVRManager.HandTrackingSupport
+  fullName: YVR.Core.YVRManager.HandTrackingSupport
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandTrackingSupport
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRManager.HandTrackingSupport
+    content.vb: Public Enum YVRManager.HandTrackingSupport
+- uid: YVR.Core.YVRManager.HandTrackingSupport.ControllersOnly
+  commentId: F:YVR.Core.YVRManager.HandTrackingSupport.ControllersOnly
+  id: ControllersOnly
+  parent: YVR.Core.YVRManager.HandTrackingSupport
+  langs:
+  - csharp
+  - vb
+  name: ControllersOnly
+  nameWithType: YVRManager.HandTrackingSupport.ControllersOnly
+  fullName: YVR.Core.YVRManager.HandTrackingSupport.ControllersOnly
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllersOnly
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: ControllersOnly = 0
+    return:
+      type: YVR.Core.YVRManager.HandTrackingSupport
+- uid: YVR.Core.YVRManager.HandTrackingSupport.ControllersAndHands
+  commentId: F:YVR.Core.YVRManager.HandTrackingSupport.ControllersAndHands
+  id: ControllersAndHands
+  parent: YVR.Core.YVRManager.HandTrackingSupport
+  langs:
+  - csharp
+  - vb
+  name: ControllersAndHands
+  nameWithType: YVRManager.HandTrackingSupport.ControllersAndHands
+  fullName: YVR.Core.YVRManager.HandTrackingSupport.ControllersAndHands
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllersAndHands
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: ControllersAndHands = 1
+    return:
+      type: YVR.Core.YVRManager.HandTrackingSupport
+- uid: YVR.Core.YVRManager.HandTrackingSupport.HandsOnly
+  commentId: F:YVR.Core.YVRManager.HandTrackingSupport.HandsOnly
+  id: HandsOnly
+  parent: YVR.Core.YVRManager.HandTrackingSupport
+  langs:
+  - csharp
+  - vb
+  name: HandsOnly
+  nameWithType: YVRManager.HandTrackingSupport.HandsOnly
+  fullName: YVR.Core.YVRManager.HandTrackingSupport.HandsOnly
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandsOnly
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HandsOnly = 2
+    return:
+      type: YVR.Core.YVRManager.HandTrackingSupport
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRManager.HandTrackingSupport
+  commentId: T:YVR.Core.YVRManager.HandTrackingSupport
+  parent: YVR.Core
+  href: YVR.Core.YVRManager.html
+  name: YVRManager.HandTrackingSupport
+  nameWithType: YVRManager.HandTrackingSupport
+  fullName: YVR.Core.YVRManager.HandTrackingSupport
+  spec.csharp:
+  - uid: YVR.Core.YVRManager
+    name: YVRManager
+    href: YVR.Core.YVRManager.html
+  - name: .
+  - uid: YVR.Core.YVRManager.HandTrackingSupport
+    name: HandTrackingSupport
+    href: YVR.Core.YVRManager.HandTrackingSupport.html
+  spec.vb:
+  - uid: YVR.Core.YVRManager
+    name: YVRManager
+    href: YVR.Core.YVRManager.html
+  - name: .
+  - uid: YVR.Core.YVRManager.HandTrackingSupport
+    name: HandTrackingSupport
+    href: YVR.Core.YVRManager.HandTrackingSupport.html
+memberLayout: SeparatePages

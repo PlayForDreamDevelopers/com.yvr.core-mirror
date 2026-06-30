@@ -1,0 +1,77 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "../TestProjects/Core",
+                    "files": [
+                        "YVR.Core.Runtime.csproj"
+                    ]
+                },
+                {
+                    "src": "../TestProjects/Core",
+                    "files": [
+                        "YVR.Core.Editor.csproj"
+                    ]
+                }
+            ],
+            "dest": "api",
+            "memberLayout": "separatePages",
+            "properties": {
+                "ProduceReferenceAssembly": "true"
+            }
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "**/*.{md,yml}"
+                ],
+                "exclude": [
+                    "_site/**"
+                ]
+            },
+            {
+                "src": "../com.yvr.core/",
+                "files": [
+                    "Documentation~/**.md",
+                    "Documentation~/**/**/toc.yml",
+                    "Documentation_CN~/**.md",
+                    "Documentation_CN~/**/**/toc.yml"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "Internal/**.png",
+                    "Internal/**.jpg",
+                    "Internal/**.svg"
+                ]
+            },
+            {
+                "src": "../com.yvr.core/",
+                "files": [
+                    "Documentation~/**.png",
+                    "Documentation~/**.jpg",
+                    "Documentation~/**.svg",
+                    "Documentation_CN~/**.png",
+                    "Documentation_CN~/**.jpg",
+                    "Documentation_CN~/**.svg"
+                ]
+            }
+        ],
+        "output": "_site",
+        "template": [
+            "default",
+            "modern"
+        ],
+        "globalMetadata": {
+            "_appName": "Core",
+            "_appTitle": "Core",
+            "_enableSearch": true,
+            "pdf": false
+        }
+    }
+}

@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.PassthroughColorLutChannels
+  commentId: T:YVR.Core.PassthroughColorLutChannels
+  id: PassthroughColorLutChannels
+  parent: YVR.Core
+  children:
+  - YVR.Core.PassthroughColorLutChannels.Rgb
+  - YVR.Core.PassthroughColorLutChannels.Rgba
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorLutChannels
+  nameWithType: PassthroughColorLutChannels
+  fullName: YVR.Core.PassthroughColorLutChannels
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLutChannels.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PassthroughColorLutChannels
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLutChannels.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum PassthroughColorLutChannels
+    content.vb: Public Enum PassthroughColorLutChannels
+- uid: YVR.Core.PassthroughColorLutChannels.Rgb
+  commentId: F:YVR.Core.PassthroughColorLutChannels.Rgb
+  id: Rgb
+  parent: YVR.Core.PassthroughColorLutChannels
+  langs:
+  - csharp
+  - vb
+  name: Rgb
+  nameWithType: PassthroughColorLutChannels.Rgb
+  fullName: YVR.Core.PassthroughColorLutChannels.Rgb
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLutChannels.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rgb
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLutChannels.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Rgb = 1
+    return:
+      type: YVR.Core.PassthroughColorLutChannels
+- uid: YVR.Core.PassthroughColorLutChannels.Rgba
+  commentId: F:YVR.Core.PassthroughColorLutChannels.Rgba
+  id: Rgba
+  parent: YVR.Core.PassthroughColorLutChannels
+  langs:
+  - csharp
+  - vb
+  name: Rgba
+  nameWithType: PassthroughColorLutChannels.Rgba
+  fullName: YVR.Core.PassthroughColorLutChannels.Rgba
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLutChannels.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rgba
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLutChannels.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Rgba = 2
+    return:
+      type: YVR.Core.PassthroughColorLutChannels
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.PassthroughColorLutChannels
+  commentId: T:YVR.Core.PassthroughColorLutChannels
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorLutChannels.html
+  name: PassthroughColorLutChannels
+  nameWithType: PassthroughColorLutChannels
+  fullName: YVR.Core.PassthroughColorLutChannels
+memberLayout: SeparatePages

@@ -1,0 +1,1161 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRQualityManager
+  commentId: T:YVR.Core.YVRQualityManager
+  id: YVRQualityManager
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRQualityManager.Initialize
+  - YVR.Core.YVRQualityManager.Update
+  - YVR.Core.YVRQualityManager.enableDynamicResolution
+  - YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic
+  - YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel
+  - YVR.Core.YVRQualityManager.maxDynamicResolutionScale
+  - YVR.Core.YVRQualityManager.minDynamicResolutionScale
+  - YVR.Core.YVRQualityManager.onFFRChanged
+  - YVR.Core.YVRQualityManager.onSharpenTypeChanged
+  - YVR.Core.YVRQualityManager.onVSyncCountChanged
+  - YVR.Core.YVRQualityManager.powerSetting
+  - YVR.Core.YVRQualityManager.recommendAntiAlisingLevel
+  - YVR.Core.YVRQualityManager.sharpenType
+  - YVR.Core.YVRQualityManager.useRecommendedMSAALevel
+  - YVR.Core.YVRQualityManager.vSyncCount
+  langs:
+  - csharp
+  - vb
+  name: YVRQualityManager
+  nameWithType: YVRQualityManager
+  fullName: YVR.Core.YVRQualityManager
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRQualityManager
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Manager for rendering quality
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class YVRQualityManager
+    content.vb: >-
+      <Serializable>
+
+      Public Class YVRQualityManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRQualityManager.onVSyncCountChanged
+  commentId: E:YVR.Core.YVRQualityManager.onVSyncCountChanged
+  id: onVSyncCountChanged
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: onVSyncCountChanged
+  nameWithType: YVRQualityManager.onVSyncCountChanged
+  fullName: YVR.Core.YVRQualityManager.onVSyncCountChanged
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onVSyncCountChanged
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 43
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The event which will be triggered when vSync count changed
+  example: []
+  syntax:
+    content: public event Action<YVRQualityManager.VSyncCount> onVSyncCountChanged
+    return:
+      type: System.Action{YVR.Core.YVRQualityManager.VSyncCount}
+    content.vb: Public Event onVSyncCountChanged As Action(Of YVRQualityManager.VSyncCount)
+- uid: YVR.Core.YVRQualityManager.onFFRChanged
+  commentId: E:YVR.Core.YVRQualityManager.onFFRChanged
+  id: onFFRChanged
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: onFFRChanged
+  nameWithType: YVRQualityManager.onFFRChanged
+  fullName: YVR.Core.YVRQualityManager.onFFRChanged
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onFFRChanged
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 48
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The event which will be triggered when ffr level changed
+  example: []
+  syntax:
+    content: public event Action<YVRQualityManager.FixedFoveatedRenderingLevel, YVRQualityManager.FixedFoveatedRenderingDynamic> onFFRChanged
+    return:
+      type: System.Action{YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel,YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic}
+    content.vb: Public Event onFFRChanged As Action(Of YVRQualityManager.FixedFoveatedRenderingLevel, YVRQualityManager.FixedFoveatedRenderingDynamic)
+- uid: YVR.Core.YVRQualityManager.onSharpenTypeChanged
+  commentId: E:YVR.Core.YVRQualityManager.onSharpenTypeChanged
+  id: onSharpenTypeChanged
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: onSharpenTypeChanged
+  nameWithType: YVRQualityManager.onSharpenTypeChanged
+  fullName: YVR.Core.YVRQualityManager.onSharpenTypeChanged
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onSharpenTypeChanged
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 53
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The event which will be triggered when sharpen type changed
+  example: []
+  syntax:
+    content: public event Action<YVRQualityManager.LayerSettingsType> onSharpenTypeChanged
+    return:
+      type: System.Action{YVR.Core.YVRQualityManager.LayerSettingsType}
+    content.vb: Public Event onSharpenTypeChanged As Action(Of YVRQualityManager.LayerSettingsType)
+- uid: YVR.Core.YVRQualityManager.vSyncCount
+  commentId: P:YVR.Core.YVRQualityManager.vSyncCount
+  id: vSyncCount
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: vSyncCount
+  nameWithType: YVRQualityManager.vSyncCount
+  fullName: YVR.Core.YVRQualityManager.vSyncCount
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: vSyncCount
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 58
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set or get current vSync count
+  example: []
+  syntax:
+    content: public YVRQualityManager.VSyncCount vSyncCount { get; set; }
+    parameters: []
+    return:
+      type: YVR.Core.YVRQualityManager.VSyncCount
+    content.vb: Public Property vSyncCount As YVRQualityManager.VSyncCount
+  overload: YVR.Core.YVRQualityManager.vSyncCount*
+- uid: YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel
+  commentId: P:YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel
+  id: fixedFoveatedRenderingLevel
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: fixedFoveatedRenderingLevel
+  nameWithType: YVRQualityManager.fixedFoveatedRenderingLevel
+  fullName: YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: fixedFoveatedRenderingLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set or get current fixed foveated rendering level
+  example: []
+  syntax:
+    content: public YVRQualityManager.FixedFoveatedRenderingLevel fixedFoveatedRenderingLevel { get; set; }
+    parameters: []
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    content.vb: Public Property fixedFoveatedRenderingLevel As YVRQualityManager.FixedFoveatedRenderingLevel
+  overload: YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel*
+- uid: YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic
+  commentId: P:YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic
+  id: fixedFoveatedRenderingDynamic
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: fixedFoveatedRenderingDynamic
+  nameWithType: YVRQualityManager.fixedFoveatedRenderingDynamic
+  fullName: YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: fixedFoveatedRenderingDynamic
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 88
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set or get current fixed foveated rendering dynamic
+  example: []
+  syntax:
+    content: public bool fixedFoveatedRenderingDynamic { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property fixedFoveatedRenderingDynamic As Boolean
+  overload: YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic*
+- uid: YVR.Core.YVRQualityManager.sharpenType
+  commentId: P:YVR.Core.YVRQualityManager.sharpenType
+  id: sharpenType
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: sharpenType
+  nameWithType: YVRQualityManager.sharpenType
+  fullName: YVR.Core.YVRQualityManager.sharpenType
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: sharpenType
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 103
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set or get current eyebuffer sharpenType
+  example: []
+  syntax:
+    content: public YVRQualityManager.LayerSettingsType sharpenType { get; set; }
+    parameters: []
+    return:
+      type: YVR.Core.YVRQualityManager.LayerSettingsType
+    content.vb: Public Property sharpenType As YVRQualityManager.LayerSettingsType
+  overload: YVR.Core.YVRQualityManager.sharpenType*
+- uid: YVR.Core.YVRQualityManager.recommendAntiAlisingLevel
+  commentId: P:YVR.Core.YVRQualityManager.recommendAntiAlisingLevel
+  id: recommendAntiAlisingLevel
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: recommendAntiAlisingLevel
+  nameWithType: YVRQualityManager.recommendAntiAlisingLevel
+  fullName: YVR.Core.YVRQualityManager.recommendAntiAlisingLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: recommendAntiAlisingLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 117
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Gets the recommended MSAA level for optimal quality/performance the current device.
+  example: []
+  syntax:
+    content: public int recommendAntiAlisingLevel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property recommendAntiAlisingLevel As Integer
+  overload: YVR.Core.YVRQualityManager.recommendAntiAlisingLevel*
+- uid: YVR.Core.YVRQualityManager.useRecommendedMSAALevel
+  commentId: F:YVR.Core.YVRQualityManager.useRecommendedMSAALevel
+  id: useRecommendedMSAALevel
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: useRecommendedMSAALevel
+  nameWithType: YVRQualityManager.useRecommendedMSAALevel
+  fullName: YVR.Core.YVRQualityManager.useRecommendedMSAALevel
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: useRecommendedMSAALevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 122
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether to use recommend MSAA level, if true, the value of @YVR.Core.YVRQualityManager.antiAliasing will be ignored
+  example: []
+  syntax:
+    content: public bool useRecommendedMSAALevel
+    return:
+      type: System.Boolean
+    content.vb: Public useRecommendedMSAALevel As Boolean
+- uid: YVR.Core.YVRQualityManager.enableDynamicResolution
+  commentId: P:YVR.Core.YVRQualityManager.enableDynamicResolution
+  id: enableDynamicResolution
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: enableDynamicResolution
+  nameWithType: YVRQualityManager.enableDynamicResolution
+  fullName: YVR.Core.YVRQualityManager.enableDynamicResolution
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: enableDynamicResolution
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 124
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool enableDynamicResolution { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property enableDynamicResolution As Boolean
+  overload: YVR.Core.YVRQualityManager.enableDynamicResolution*
+- uid: YVR.Core.YVRQualityManager.minDynamicResolutionScale
+  commentId: P:YVR.Core.YVRQualityManager.minDynamicResolutionScale
+  id: minDynamicResolutionScale
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: minDynamicResolutionScale
+  nameWithType: YVRQualityManager.minDynamicResolutionScale
+  fullName: YVR.Core.YVRQualityManager.minDynamicResolutionScale
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: minDynamicResolutionScale
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 134
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float minDynamicResolutionScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property minDynamicResolutionScale As Single
+  overload: YVR.Core.YVRQualityManager.minDynamicResolutionScale*
+- uid: YVR.Core.YVRQualityManager.maxDynamicResolutionScale
+  commentId: P:YVR.Core.YVRQualityManager.maxDynamicResolutionScale
+  id: maxDynamicResolutionScale
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: maxDynamicResolutionScale
+  nameWithType: YVRQualityManager.maxDynamicResolutionScale
+  fullName: YVR.Core.YVRQualityManager.maxDynamicResolutionScale
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: maxDynamicResolutionScale
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 144
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float maxDynamicResolutionScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property maxDynamicResolutionScale As Single
+  overload: YVR.Core.YVRQualityManager.maxDynamicResolutionScale*
+- uid: YVR.Core.YVRQualityManager.powerSetting
+  commentId: P:YVR.Core.YVRQualityManager.powerSetting
+  id: powerSetting
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: powerSetting
+  nameWithType: YVRQualityManager.powerSetting
+  fullName: YVR.Core.YVRQualityManager.powerSetting
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: powerSetting
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 154
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public YVRQualityManager.AdapterResolutionPolicy powerSetting { get; set; }
+    parameters: []
+    return:
+      type: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    content.vb: Public Property powerSetting As YVRQualityManager.AdapterResolutionPolicy
+  overload: YVR.Core.YVRQualityManager.powerSetting*
+- uid: YVR.Core.YVRQualityManager.Initialize
+  commentId: M:YVR.Core.YVRQualityManager.Initialize
+  id: Initialize
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: YVRQualityManager.Initialize()
+  fullName: YVR.Core.YVRQualityManager.Initialize()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Initialize
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 170
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Using the data from unity Inspector panel to initialize vSync count and ffr level
+  example: []
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
+  overload: YVR.Core.YVRQualityManager.Initialize*
+- uid: YVR.Core.YVRQualityManager.Update
+  commentId: M:YVR.Core.YVRQualityManager.Update
+  id: Update
+  parent: YVR.Core.YVRQualityManager
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: YVRQualityManager.Update()
+  fullName: YVR.Core.YVRQualityManager.Update()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Update
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
+    startLine: 179
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: YVR.Core.YVRQualityManager.Update*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{YVR.Core.YVRQualityManager.VSyncCount}
+  commentId: T:System.Action{YVR.Core.YVRQualityManager.VSyncCount}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<YVRQualityManager.VSyncCount>
+  nameWithType: Action<YVRQualityManager.VSyncCount>
+  fullName: System.Action<YVR.Core.YVRQualityManager.VSyncCount>
+  nameWithType.vb: Action(Of YVRQualityManager.VSyncCount)
+  fullName.vb: System.Action(Of YVR.Core.YVRQualityManager.VSyncCount)
+  name.vb: Action(Of YVRQualityManager.VSyncCount)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel,YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic}
+  commentId: T:System.Action{YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel,YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<YVRQualityManager.FixedFoveatedRenderingLevel, YVRQualityManager.FixedFoveatedRenderingDynamic>
+  nameWithType: Action<YVRQualityManager.FixedFoveatedRenderingLevel, YVRQualityManager.FixedFoveatedRenderingDynamic>
+  fullName: System.Action<YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel, YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic>
+  nameWithType.vb: Action(Of YVRQualityManager.FixedFoveatedRenderingLevel, YVRQualityManager.FixedFoveatedRenderingDynamic)
+  fullName.vb: System.Action(Of YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel, YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic)
+  name.vb: Action(Of YVRQualityManager.FixedFoveatedRenderingLevel, YVRQualityManager.FixedFoveatedRenderingDynamic)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: FixedFoveatedRenderingDynamic
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: FixedFoveatedRenderingDynamic
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.html
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Action{YVR.Core.YVRQualityManager.LayerSettingsType}
+  commentId: T:System.Action{YVR.Core.YVRQualityManager.LayerSettingsType}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<YVRQualityManager.LayerSettingsType>
+  nameWithType: Action<YVRQualityManager.LayerSettingsType>
+  fullName: System.Action<YVR.Core.YVRQualityManager.LayerSettingsType>
+  nameWithType.vb: Action(Of YVRQualityManager.LayerSettingsType)
+  fullName.vb: System.Action(Of YVR.Core.YVRQualityManager.LayerSettingsType)
+  name.vb: Action(Of YVRQualityManager.LayerSettingsType)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+  - name: )
+- uid: YVR.Core.YVRQualityManager.vSyncCount*
+  commentId: Overload:YVR.Core.YVRQualityManager.vSyncCount
+  href: YVR.Core.YVRQualityManager.vSyncCount.html#YVR_Core_YVRQualityManager_vSyncCount
+  name: vSyncCount
+  nameWithType: YVRQualityManager.vSyncCount
+  fullName: YVR.Core.YVRQualityManager.vSyncCount
+- uid: YVR.Core.YVRQualityManager.VSyncCount
+  commentId: T:YVR.Core.YVRQualityManager.VSyncCount
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.VSyncCount
+  nameWithType: YVRQualityManager.VSyncCount
+  fullName: YVR.Core.YVRQualityManager.VSyncCount
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+- uid: YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel*
+  commentId: Overload:YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel
+  href: YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel.html#YVR_Core_YVRQualityManager_fixedFoveatedRenderingLevel
+  name: fixedFoveatedRenderingLevel
+  nameWithType: YVRQualityManager.fixedFoveatedRenderingLevel
+  fullName: YVR.Core.YVRQualityManager.fixedFoveatedRenderingLevel
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.FixedFoveatedRenderingLevel
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+- uid: YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic*
+  commentId: Overload:YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic
+  href: YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic.html#YVR_Core_YVRQualityManager_fixedFoveatedRenderingDynamic
+  name: fixedFoveatedRenderingDynamic
+  nameWithType: YVRQualityManager.fixedFoveatedRenderingDynamic
+  fullName: YVR.Core.YVRQualityManager.fixedFoveatedRenderingDynamic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRQualityManager.sharpenType*
+  commentId: Overload:YVR.Core.YVRQualityManager.sharpenType
+  href: YVR.Core.YVRQualityManager.sharpenType.html#YVR_Core_YVRQualityManager_sharpenType
+  name: sharpenType
+  nameWithType: YVRQualityManager.sharpenType
+  fullName: YVR.Core.YVRQualityManager.sharpenType
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType
+  commentId: T:YVR.Core.YVRQualityManager.LayerSettingsType
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.LayerSettingsType
+  nameWithType: YVRQualityManager.LayerSettingsType
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+- uid: YVR.Core.YVRQualityManager.recommendAntiAlisingLevel*
+  commentId: Overload:YVR.Core.YVRQualityManager.recommendAntiAlisingLevel
+  href: YVR.Core.YVRQualityManager.recommendAntiAlisingLevel.html#YVR_Core_YVRQualityManager_recommendAntiAlisingLevel
+  name: recommendAntiAlisingLevel
+  nameWithType: YVRQualityManager.recommendAntiAlisingLevel
+  fullName: YVR.Core.YVRQualityManager.recommendAntiAlisingLevel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: YVR.Core.YVRQualityManager.enableDynamicResolution*
+  commentId: Overload:YVR.Core.YVRQualityManager.enableDynamicResolution
+  href: YVR.Core.YVRQualityManager.enableDynamicResolution.html#YVR_Core_YVRQualityManager_enableDynamicResolution
+  name: enableDynamicResolution
+  nameWithType: YVRQualityManager.enableDynamicResolution
+  fullName: YVR.Core.YVRQualityManager.enableDynamicResolution
+- uid: YVR.Core.YVRQualityManager.minDynamicResolutionScale*
+  commentId: Overload:YVR.Core.YVRQualityManager.minDynamicResolutionScale
+  href: YVR.Core.YVRQualityManager.minDynamicResolutionScale.html#YVR_Core_YVRQualityManager_minDynamicResolutionScale
+  name: minDynamicResolutionScale
+  nameWithType: YVRQualityManager.minDynamicResolutionScale
+  fullName: YVR.Core.YVRQualityManager.minDynamicResolutionScale
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.YVRQualityManager.maxDynamicResolutionScale*
+  commentId: Overload:YVR.Core.YVRQualityManager.maxDynamicResolutionScale
+  href: YVR.Core.YVRQualityManager.maxDynamicResolutionScale.html#YVR_Core_YVRQualityManager_maxDynamicResolutionScale
+  name: maxDynamicResolutionScale
+  nameWithType: YVRQualityManager.maxDynamicResolutionScale
+  fullName: YVR.Core.YVRQualityManager.maxDynamicResolutionScale
+- uid: YVR.Core.YVRQualityManager.powerSetting*
+  commentId: Overload:YVR.Core.YVRQualityManager.powerSetting
+  href: YVR.Core.YVRQualityManager.powerSetting.html#YVR_Core_YVRQualityManager_powerSetting
+  name: powerSetting
+  nameWithType: YVRQualityManager.powerSetting
+  fullName: YVR.Core.YVRQualityManager.powerSetting
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  commentId: T:YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.AdapterResolutionPolicy
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: AdapterResolutionPolicy
+    href: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: AdapterResolutionPolicy
+    href: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.html
+- uid: YVR.Core.YVRQualityManager.Initialize*
+  commentId: Overload:YVR.Core.YVRQualityManager.Initialize
+  href: YVR.Core.YVRQualityManager.Initialize.html#YVR_Core_YVRQualityManager_Initialize
+  name: Initialize
+  nameWithType: YVRQualityManager.Initialize
+  fullName: YVR.Core.YVRQualityManager.Initialize
+- uid: YVR.Core.YVRQualityManager.Update*
+  commentId: Overload:YVR.Core.YVRQualityManager.Update
+  href: YVR.Core.YVRQualityManager.Update.html#YVR_Core_YVRQualityManager_Update
+  name: Update
+  nameWithType: YVRQualityManager.Update
+  fullName: YVR.Core.YVRQualityManager.Update
+memberLayout: SeparatePages

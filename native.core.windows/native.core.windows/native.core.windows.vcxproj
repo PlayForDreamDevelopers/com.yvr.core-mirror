@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c2e11059-84c3-47bd-b1df-078b5f2d57f8}</ProjectGuid>
+    <RootNamespace>DisplayProviderSample</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>native.core.windows</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../packages/directxtk_desktop_win10.2022.5.10.4/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../packages/directxtk_desktop_win10.2022.5.10.4/native/lib/x64/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DisplayCaptor.lib;nvencodeapi.lib;d3d11.lib;dxgi.lib;DirectXTK.lib;libcrypto.lib;libssl.lib;pthreadVC2.lib;srtp2.lib;YVRTCCore.lib;YVRTCEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>./Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>net_asio.lib;spdlog.lib;spdlog_log.lib;yvrnetwork.lib;proxy.lib
+;logger.lib
+;libboost_atomic-vc143-mt-x64-1_81.lib
+;libboost_chrono-vc143-mt-x64-1_81.lib
+;libboost_filesystem-vc143-mt-x64-1_81.lib
+;libboost_log_setup-vc143-mt-x64-1_81.lib
+;libboost_log-vc143-mt-x64-1_81.lib
+;libboost_regex-vc143-mt-x64-1_81.lib
+;libboost_thread-vc143-mt-x64-1_81.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\binder\IBinder.h" />
+    <ClInclude Include="Headers\binder\IServiceConnection.h" />
+    <ClInclude Include="Headers\display_captor.h" />
+    <ClInclude Include="Headers\interface\IPreviewToolService.h" />
+    <ClInclude Include="Headers\IUnityGraphics.h" />
+    <ClInclude Include="Headers\IUnityGraphicsD3D11.h" />
+    <ClInclude Include="Headers\IUnityInterface.h" />
+    <ClInclude Include="Headers\IUnityRenderingExtensions.h" />
+    <ClInclude Include="Headers\openxr\openxr.h" />
+    <ClInclude Include="Headers\openxr\openxr_platform.h" />
+    <ClInclude Include="Headers\openxr\openxr_platform_defines.h" />
+    <ClInclude Include="Headers\openxr\openxr_reflection.h" />
+    <ClInclude Include="Headers\openxr\openxr_reflection_parent_structs.h" />
+    <ClInclude Include="Headers\openxr\openxr_reflection_structs.h" />
+    <ClInclude Include="Headers\proxy\ProxyService.h" />
+    <ClInclude Include="Headers\pthread.h" />
+    <ClInclude Include="Headers\sched.h" />
+    <ClInclude Include="Headers\XR\IUnityGraphics.h" />
+    <ClInclude Include="Headers\XR\IUnityGraphicsD3D11.h" />
+    <ClInclude Include="Headers\XR\IUnityInterface.h" />
+    <ClInclude Include="Headers\XR\IUnityRenderingExtensions.h" />
+    <ClInclude Include="Headers\XR\IUnitySubsystemExample.h" />
+    <ClInclude Include="Headers\XR\IUnityXRAudio.h" />
+    <ClInclude Include="Headers\XR\IUnityXRDisplay.h" />
+    <ClInclude Include="Headers\XR\IUnityXRDisplayShadingRateExt.h" />
+    <ClInclude Include="Headers\XR\IUnityXRInput.h" />
+    <ClInclude Include="Headers\XR\IUnityXRMeshing.h" />
+    <ClInclude Include="Headers\XR\IUnityXRPreInit.h" />
+    <ClInclude Include="Headers\XR\IUnityXRStats.h" />
+    <ClInclude Include="Headers\XR\IUnityXRTrace.h" />
+    <ClInclude Include="Headers\XR\UnitySubsystemTypes.h" />
+    <ClInclude Include="Headers\XR\UnityTypes.h" />
+    <ClInclude Include="Headers\XR\UnityXRDisplayStats.h" />
+    <ClInclude Include="Headers\XR\UnityXRSubsystemTypes.h" />
+    <ClInclude Include="Headers\XR\UnityXRTypes.h" />
+    <ClInclude Include="Headers\yvrtc_interface.h" />
+    <ClInclude Include="Module\Hand\YVRHandMgr.h" />
+    <ClInclude Include="ProviderContext.h" />
+    <ClInclude Include="ServiceConnection.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="WriteLog.h" />
+    <ClInclude Include="YVRDisplayProvider.h" />
+    <ClInclude Include="YVRInputProvider.h" />
+    <ClInclude Include="YVRMath.h" />
+    <ClInclude Include="YVRRenderConfigsMgr.h" />
+    <ClInclude Include="YVRTrackingMgr.h" />
+    <ClInclude Include="YVRUnityPlugin.h" />
+    <ClInclude Include="YVR_Lib_Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Module\Hand\YVRHandMgr.cpp" />
+    <ClCompile Include="PreviewToolService.cpp" />
+    <ClCompile Include="PreviewToolService.h" />
+    <ClCompile Include="ServiceConnection.cpp" />
+    <ClCompile Include="WriteLog.cpp" />
+    <ClCompile Include="YVRDisplayProvider.cpp" />
+    <ClCompile Include="YVRInputProvider.cpp" />
+    <ClCompile Include="YVRRenderConfigsMgr.cpp" />
+    <ClCompile Include="YVRTrackingMgr.cpp" />
+    <ClCompile Include="YVRUnityExportAPI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\libboost_atomic-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\libboost_chrono-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\libboost_filesystem-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\libboost_log-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\libboost_log_setup-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\libboost_regex-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\libboost_thread-vc143-mt-x64-1_81.lib" />
+    <Library Include="lib\logger.lib" />
+    <Library Include="lib\net_asio.lib" />
+    <Library Include="lib\proxy.lib" />
+    <Library Include="lib\spdlog.lib" />
+    <Library Include="lib\spdlog_log.lib" />
+    <Library Include="lib\yvrnetwork.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\directxtk_desktop_win10.2022.5.10.4\build\native\directxtk_desktop_win10.targets" Condition="Exists('..\packages\directxtk_desktop_win10.2022.5.10.4\build\native\directxtk_desktop_win10.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\directxtk_desktop_win10.2022.5.10.4\build\native\directxtk_desktop_win10.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\directxtk_desktop_win10.2022.5.10.4\build\native\directxtk_desktop_win10.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys
+  commentId: T:YVR.Core.YVRHMDEmulator.TranslationKeys
+  id: YVRHMDEmulator.TranslationKeys
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.#ctor(UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode)
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.backward
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.down
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.forward
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.left
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.right
+  - YVR.Core.YVRHMDEmulator.TranslationKeys.up
+  langs:
+  - csharp
+  - vb
+  name: YVRHMDEmulator.TranslationKeys
+  nameWithType: YVRHMDEmulator.TranslationKeys
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TranslationKeys
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 66
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      [Serializable]
+
+      public struct YVRHMDEmulator.TranslationKeys
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      <Serializable>
+
+      Public Structure YVRHMDEmulator.TranslationKeys
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.forward
+  commentId: F:YVR.Core.YVRHMDEmulator.TranslationKeys.forward
+  id: forward
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: forward
+  nameWithType: YVRHMDEmulator.TranslationKeys.forward
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.forward
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: forward
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 70
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public KeyCode forward
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public forward As KeyCode
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.backward
+  commentId: F:YVR.Core.YVRHMDEmulator.TranslationKeys.backward
+  id: backward
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: backward
+  nameWithType: YVRHMDEmulator.TranslationKeys.backward
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.backward
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: backward
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 71
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public KeyCode backward
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public backward As KeyCode
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.left
+  commentId: F:YVR.Core.YVRHMDEmulator.TranslationKeys.left
+  id: left
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: left
+  nameWithType: YVRHMDEmulator.TranslationKeys.left
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.left
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: left
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 72
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public KeyCode left
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public left As KeyCode
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.right
+  commentId: F:YVR.Core.YVRHMDEmulator.TranslationKeys.right
+  id: right
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: right
+  nameWithType: YVRHMDEmulator.TranslationKeys.right
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.right
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: right
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public KeyCode right
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public right As KeyCode
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.up
+  commentId: F:YVR.Core.YVRHMDEmulator.TranslationKeys.up
+  id: up
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: up
+  nameWithType: YVRHMDEmulator.TranslationKeys.up
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.up
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: up
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 74
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public KeyCode up
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public up As KeyCode
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.down
+  commentId: F:YVR.Core.YVRHMDEmulator.TranslationKeys.down
+  id: down
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: down
+  nameWithType: YVRHMDEmulator.TranslationKeys.down
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.down
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: down
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 75
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public KeyCode down
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public down As KeyCode
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.#ctor(UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode)
+  commentId: M:YVR.Core.YVRHMDEmulator.TranslationKeys.#ctor(UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode)
+  id: '#ctor(UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode,UnityEngine.KeyCode)'
+  parent: YVR.Core.YVRHMDEmulator.TranslationKeys
+  langs:
+  - csharp
+  - vb
+  name: TranslationKeys(KeyCode, KeyCode, KeyCode, KeyCode, KeyCode, KeyCode)
+  nameWithType: YVRHMDEmulator.TranslationKeys.TranslationKeys(KeyCode, KeyCode, KeyCode, KeyCode, KeyCode, KeyCode)
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.TranslationKeys(UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 77
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public TranslationKeys(KeyCode front, KeyCode back, KeyCode left, KeyCode right, KeyCode up, KeyCode down)
+    parameters:
+    - id: front
+      type: UnityEngine.KeyCode
+    - id: back
+      type: UnityEngine.KeyCode
+    - id: left
+      type: UnityEngine.KeyCode
+    - id: right
+      type: UnityEngine.KeyCode
+    - id: up
+      type: UnityEngine.KeyCode
+    - id: down
+      type: UnityEngine.KeyCode
+    content.vb: Public Sub New(front As KeyCode, back As KeyCode, left As KeyCode, right As KeyCode, up As KeyCode, down As KeyCode)
+  overload: YVR.Core.YVRHMDEmulator.TranslationKeys.#ctor*
+  nameWithType.vb: YVRHMDEmulator.TranslationKeys.New(KeyCode, KeyCode, KeyCode, KeyCode, KeyCode, KeyCode)
+  fullName.vb: YVR.Core.YVRHMDEmulator.TranslationKeys.New(UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode, UnityEngine.KeyCode)
+  name.vb: New(KeyCode, KeyCode, KeyCode, KeyCode, KeyCode, KeyCode)
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys.#ctor*
+  commentId: Overload:YVR.Core.YVRHMDEmulator.TranslationKeys.#ctor
+  href: YVR.Core.YVRHMDEmulator.TranslationKeys.-ctor.html#YVR_Core_YVRHMDEmulator_TranslationKeys__ctor_UnityEngine_KeyCode_UnityEngine_KeyCode_UnityEngine_KeyCode_UnityEngine_KeyCode_UnityEngine_KeyCode_UnityEngine_KeyCode_
+  name: TranslationKeys
+  nameWithType: YVRHMDEmulator.TranslationKeys.TranslationKeys
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys.TranslationKeys
+  nameWithType.vb: YVRHMDEmulator.TranslationKeys.New
+  fullName.vb: YVR.Core.YVRHMDEmulator.TranslationKeys.New
+  name.vb: New
+memberLayout: SeparatePages

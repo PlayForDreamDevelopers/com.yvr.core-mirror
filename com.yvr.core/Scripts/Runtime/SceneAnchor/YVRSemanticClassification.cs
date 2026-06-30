@@ -31,5 +31,9 @@ namespace YVR.Core
         public const string k_Plant = "PLANT";
 
         public const string k_Table = "TABLE";
+
+        public const string k_MeshBoundary = "MESH_BOUNDARY";
+
+        public const string k_SafetyBoundary = "SAFETY_BOUNDARY";
     }
 }

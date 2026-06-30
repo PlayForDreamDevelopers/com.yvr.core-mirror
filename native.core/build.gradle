@@ -1,0 +1,82 @@
+buildscript {
+    repositories {
+		google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+		google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        minSdkVersion 25
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        setProperty("archivesBaseName", "yvrUnity")
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
+    flavorDimensions "abi"
+
+    productFlavors {
+        v8a{
+            dimension "abi"
+            ndk {
+                abiFilters 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable = true
+            jniDebuggable = true
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly files('libs/classes.jar')
+}
+
+android.libraryVariants.all { variant ->
+    variant.outputs.all { output ->
+        if( output.outputFile.name.contains("v8a"))
+        outputFileName = output.outputFile.name.replace("v8a-", "")
+    }
+}

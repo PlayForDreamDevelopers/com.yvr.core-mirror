@@ -1,0 +1,27 @@
+diff a/native.core/src/main/jni/Android.mk b/native.core/src/main/jni/Android.mk	(rejected hunks)
+@@ -17,7 +17,8 @@ LOCAL_MODULE    := yvrplugin
+ 
+ LOCAL_SRC_FILES := ../cpp/YVRUnityExportAPI.cpp \
+                ../cpp/YVRLayerApisExport.cpp \
+-               ../cpp/YVRUnityExportAPI_Internal.cpp\
++               ../cpp/YVRUnityExportAPI_Internal.cpp \
++               ../cpp/YVRHandApisExport.cpp \
+                ../cpp/Utilities/YVRDebug.cpp \
+                ../cpp/Utilities/YVRLog.cpp \
+                ../cpp/Utilities/YVRGL.cpp \
+@@ -31,6 +32,7 @@ LOCAL_SRC_FILES := ../cpp/YVRUnityExportAPI.cpp \
+                ../cpp/YVRUnityXR/YVRDisplayProvider.cpp \
+                ../cpp/YVRUnityXR/YVRInputProvider.cpp \
+                ../cpp/YVRModuleMgrs/YVRTrackingMgr.cpp \
++                ../cpp/YVRModuleMgrs/YVRHandMgr.cpp \
+                ../cpp/YVRModuleMgrs/Render/YVRRenderMgr.cpp \
+                ../cpp/YVRModuleMgrs/Render/YVRRenderLayer.cpp \
+                ../cpp/YVRModuleMgrs/Render/YVRCompositeRenderLayer.cpp \
+@@ -51,6 +53,7 @@ LOCAL_SRC_FILES := ../cpp/YVRUnityExportAPI.cpp \
+                ../cpp/YVRModuleMgrs/Render/RenderTasks/SetLayerDepthTask.cpp \
+ 
+ 
++
+ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../ApiLibs/YvrLib/inc \
+                     $(LOCAL_PATH)/../../../ApiLibs/YvrLib_Internal/inc \
+ 

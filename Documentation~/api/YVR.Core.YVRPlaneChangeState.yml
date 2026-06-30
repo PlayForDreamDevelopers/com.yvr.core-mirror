@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPlaneChangeState
+  commentId: T:YVR.Core.YVRPlaneChangeState
+  id: YVRPlaneChangeState
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPlaneChangeState.Added
+  - YVR.Core.YVRPlaneChangeState.Removed
+  - YVR.Core.YVRPlaneChangeState.UnChanged
+  - YVR.Core.YVRPlaneChangeState.Update
+  langs:
+  - csharp
+  - vb
+  name: YVRPlaneChangeState
+  nameWithType: YVRPlaneChangeState
+  fullName: YVR.Core.YVRPlaneChangeState
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPlaneChangeState
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRPlaneChangeState
+    content.vb: Public Enum YVRPlaneChangeState
+- uid: YVR.Core.YVRPlaneChangeState.Added
+  commentId: F:YVR.Core.YVRPlaneChangeState.Added
+  id: Added
+  parent: YVR.Core.YVRPlaneChangeState
+  langs:
+  - csharp
+  - vb
+  name: Added
+  nameWithType: YVRPlaneChangeState.Added
+  fullName: YVR.Core.YVRPlaneChangeState.Added
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Added
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Added = 0
+    return:
+      type: YVR.Core.YVRPlaneChangeState
+- uid: YVR.Core.YVRPlaneChangeState.Update
+  commentId: F:YVR.Core.YVRPlaneChangeState.Update
+  id: Update
+  parent: YVR.Core.YVRPlaneChangeState
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: YVRPlaneChangeState.Update
+  fullName: YVR.Core.YVRPlaneChangeState.Update
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Update
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Update = 1
+    return:
+      type: YVR.Core.YVRPlaneChangeState
+- uid: YVR.Core.YVRPlaneChangeState.Removed
+  commentId: F:YVR.Core.YVRPlaneChangeState.Removed
+  id: Removed
+  parent: YVR.Core.YVRPlaneChangeState
+  langs:
+  - csharp
+  - vb
+  name: Removed
+  nameWithType: YVRPlaneChangeState.Removed
+  fullName: YVR.Core.YVRPlaneChangeState.Removed
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Removed
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Removed = 2
+    return:
+      type: YVR.Core.YVRPlaneChangeState
+- uid: YVR.Core.YVRPlaneChangeState.UnChanged
+  commentId: F:YVR.Core.YVRPlaneChangeState.UnChanged
+  id: UnChanged
+  parent: YVR.Core.YVRPlaneChangeState
+  langs:
+  - csharp
+  - vb
+  name: UnChanged
+  nameWithType: YVRPlaneChangeState.UnChanged
+  fullName: YVR.Core.YVRPlaneChangeState.UnChanged
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UnChanged
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneChangeState.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: UnChanged = 3
+    return:
+      type: YVR.Core.YVRPlaneChangeState
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRPlaneChangeState
+  commentId: T:YVR.Core.YVRPlaneChangeState
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneChangeState.html
+  name: YVRPlaneChangeState
+  nameWithType: YVRPlaneChangeState
+  fullName: YVR.Core.YVRPlaneChangeState
+memberLayout: SeparatePages

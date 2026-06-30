@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  commentId: T:YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  id: YVRQualityManager.AdapterResolutionPolicy
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BALANCED
+  - YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BATTERY_SAVING
+  - YVR.Core.YVRQualityManager.AdapterResolutionPolicy.HIGH_QUALITY
+  langs:
+  - csharp
+  - vb
+  name: YVRQualityManager.AdapterResolutionPolicy
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: AdapterResolutionPolicy
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 76
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRQualityManager.AdapterResolutionPolicy
+    content.vb: Public Enum YVRQualityManager.AdapterResolutionPolicy
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.HIGH_QUALITY
+  commentId: F:YVR.Core.YVRQualityManager.AdapterResolutionPolicy.HIGH_QUALITY
+  id: HIGH_QUALITY
+  parent: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  langs:
+  - csharp
+  - vb
+  name: HIGH_QUALITY
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy.HIGH_QUALITY
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.HIGH_QUALITY
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HIGH_QUALITY
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 78
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HIGH_QUALITY = 0
+    return:
+      type: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BALANCED
+  commentId: F:YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BALANCED
+  id: BALANCED
+  parent: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  langs:
+  - csharp
+  - vb
+  name: BALANCED
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy.BALANCED
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BALANCED
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: BALANCED
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 79
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: BALANCED = 1
+    return:
+      type: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BATTERY_SAVING
+  commentId: F:YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BATTERY_SAVING
+  id: BATTERY_SAVING
+  parent: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  langs:
+  - csharp
+  - vb
+  name: BATTERY_SAVING
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy.BATTERY_SAVING
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.BATTERY_SAVING
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: BATTERY_SAVING
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 80
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: BATTERY_SAVING = 2
+    return:
+      type: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  commentId: T:YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.AdapterResolutionPolicy
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: AdapterResolutionPolicy
+    href: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: AdapterResolutionPolicy
+    href: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.html
+memberLayout: SeparatePages

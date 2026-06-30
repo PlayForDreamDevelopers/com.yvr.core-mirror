@@ -1,0 +1,1850 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  id: YVR.Core
+  children:
+  - YVR.Core.ActiveInputDevice
+  - YVR.Core.Colorf
+  - YVR.Core.ControllerType
+  - YVR.Core.CylinderShapeHandler
+  - YVR.Core.DataProviderSource
+  - YVR.Core.DeviceNode
+  - YVR.Core.EmulatorRotationSensitivity
+  - YVR.Core.EmulatorTranslationSensitivity
+  - YVR.Core.Equirect2ShapeHandler
+  - YVR.Core.EquirectShapeHandler
+  - YVR.Core.ExtendUsages
+  - YVR.Core.EyeSide
+  - YVR.Core.EyeTrackingData
+  - YVR.Core.EyeTrackingData.EyeGazePose
+  - YVR.Core.EyeTrackingData.EyeGazeState
+  - YVR.Core.EyeTrackingData.EyeGazesState
+  - YVR.Core.HandData
+  - YVR.Core.HandInteractEffectController
+  - YVR.Core.HandJoint
+  - YVR.Core.HandJointLocation
+  - YVR.Core.HandJointLocations
+  - YVR.Core.HandJointVelocity
+  - YVR.Core.HandStatus
+  - YVR.Core.HandTrackingAimState
+  - YVR.Core.HandTrackingSupport
+  - YVR.Core.HandType
+  - YVR.Core.ILayerShapeHandler
+  - YVR.Core.IYVRLayerHandle
+  - YVR.Core.InputDeviceTest
+  - YVR.Core.PassthroughColorLut
+  - YVR.Core.PassthroughColorLutChannels
+  - YVR.Core.PassthroughColorLutData
+  - YVR.Core.PassthroughColorMapType
+  - YVR.Core.PassthroughLayer
+  - YVR.Core.PassthroughStyle
+  - YVR.Core.PassthroughStyleFlags
+  - YVR.Core.PoseData
+  - YVR.Core.Posef
+  - YVR.Core.QuadShapeHandler
+  - YVR.Core.StereoRenderingMode
+  - YVR.Core.VRApiHandlersTrigger
+  - YVR.Core.XRHandFingerID
+  - YVR.Core.XRPose
+  - YVR.Core.XRSize
+  - YVR.Core.YVRAnchorLocationFlags
+  - YVR.Core.YVRAnchorSemanticLabel
+  - YVR.Core.YVRAnchorTriangleMeshInternal
+  - YVR.Core.YVRBaseRig
+  - YVR.Core.YVRBaseRig.RigUpdateType
+  - YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  - YVR.Core.YVRBoundary
+  - YVR.Core.YVRBoundary.BoundaryNode
+  - YVR.Core.YVRBoundary.BoundaryTestResult
+  - YVR.Core.YVRBoundary2D
+  - YVR.Core.YVRCameraRenderer
+  - YVR.Core.YVRCameraRenderer.EyeFov
+  - YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  - YVR.Core.YVRCameraRig
+  - YVR.Core.YVRCompositeLayer
+  - YVR.Core.YVRCompositeLayerEditor
+  - YVR.Core.YVRControllerEmulator
+  - YVR.Core.YVRControllerEmulator.EmulateController
+  - YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+  - YVR.Core.YVRControllerRig
+  - YVR.Core.YVRCurvedUIRaycaster
+  - YVR.Core.YVRDebugHub
+  - YVR.Core.YVREventTracking
+  - YVR.Core.YVREventType
+  - YVR.Core.YVREventsManager
+  - YVR.Core.YVRExtent2DInt
+  - YVR.Core.YVRGraphicRaycaster
+  - YVR.Core.YVRGraphicRaycaster.RaycastHit
+  - YVR.Core.YVRHMDEmulator
+  - YVR.Core.YVRHMDEmulator.TranslationKeys
+  - YVR.Core.YVRHMDManager
+  - YVR.Core.YVRHand
+  - YVR.Core.YVRHandAnimController
+  - YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  - YVR.Core.YVRHandManager
+  - YVR.Core.YVRHandUtility
+  - YVR.Core.YVRInput
+  - YVR.Core.YVRInput.RawAxis1D
+  - YVR.Core.YVRInput.RawAxis2D
+  - YVR.Core.YVRInput.RawButton
+  - YVR.Core.YVRInput.RawTouch
+  - YVR.Core.YVRInput.VirtualAxis1D
+  - YVR.Core.YVRInput.VirtualAxis2D
+  - YVR.Core.YVRInput.VirtualButton
+  - YVR.Core.YVRInput.VirtualTouch
+  - YVR.Core.YVRInputDebug
+  - YVR.Core.YVRInputModule
+  - YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  - YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+  - YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+  - YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+  - YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+  - YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+  - YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+  - YVR.Core.YVRLayerAndroidHandler
+  - YVR.Core.YVRLayerCreateInfo
+  - YVR.Core.YVRLayerEditorHandle
+  - YVR.Core.YVRManager
+  - YVR.Core.YVRMeshBlockChangeState
+  - YVR.Core.YVRMeshTracking
+  - YVR.Core.YVRNativeLog2YLogLoggerAdapter
+  - YVR.Core.YVRPerformanceManager
+  - YVR.Core.YVRPhysicsRaycaster
+  - YVR.Core.YVRPlaneChangeState
+  - YVR.Core.YVRPlaneDetectorLocation
+  - YVR.Core.YVRPlaneDetectorLocationsInternal
+  - YVR.Core.YVRPlaneDetectorMgr
+  - YVR.Core.YVRPlaneDetectorOrientation
+  - YVR.Core.YVRPlaneDetectorPolygonBuffer
+  - YVR.Core.YVRPlaneDetectorPolygonBufferInternal
+  - YVR.Core.YVRPlaneDetectorPolygonBuffersInternal
+  - YVR.Core.YVRPlaneDetectorSemanticType
+  - YVR.Core.YVRPlaneDetectorState
+  - YVR.Core.YVRPlugin
+  - YVR.Core.YVRPlugin.ControllerState
+  - YVR.Core.YVRPluginAndroid
+  - YVR.Core.YVRPluginWin
+  - YVR.Core.YVRPointerEventData
+  - YVR.Core.YVRQualityManager
+  - YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  - YVR.Core.YVRQualityManager.LayerSettingsType
+  - YVR.Core.YVRQualityManager.VSyncCount
+  - YVR.Core.YVRQuerySpatialAnchorResult
+  - YVR.Core.YVRRaycastLaserBeam
+  - YVR.Core.YVRRect2D
+  - YVR.Core.YVRRect3D
+  - YVR.Core.YVRRenderLayerExtensions
+  - YVR.Core.YVRRenderLayerEyeMask
+  - YVR.Core.YVRRenderLayerType
+  - YVR.Core.YVRRoomLayout
+  - YVR.Core.YVRSDKSettingAsset
+  - YVR.Core.YVRSceneAnchor
+  - YVR.Core.YVRSceneAnchorContainer
+  - YVR.Core.YVRSceneCaptureRequest
+  - YVR.Core.YVRSemanticClassification
+  - YVR.Core.YVRSpaceLocationFlags
+  - YVR.Core.YVRSpatialAnchor
+  - YVR.Core.YVRSpatialAnchorComponentStatus
+  - YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+  - YVR.Core.YVRSpatialAnchorComponentType
+  - YVR.Core.YVRSpatialAnchorListSaveInfo
+  - YVR.Core.YVRSpatialAnchorQueryInfo
+  - YVR.Core.YVRSpatialAnchorQueryType
+  - YVR.Core.YVRSpatialAnchorResult
+  - YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+  - YVR.Core.YVRSpatialAnchorSaveInfo
+  - YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  - YVR.Core.YVRSpatialAnchorShareInfo
+  - YVR.Core.YVRSpatialAnchorStorageLocation
+  - YVR.Core.YVRSpatialAnchorSupportedComponent
+  - YVR.Core.YVRSpatialAnchorUUID
+  - YVR.Core.YVRTrackingDebug
+  - YVR.Core.YVRTrackingStateManager
+  - YVR.Core.YVRTrackingStateManager.TrackingSpace
+  - YVR.Core.YVRTriangleMesh
+  langs:
+  - csharp
+  - vb
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  type: Namespace
+  assemblies:
+  - YVR.Core.Runtime
+references:
+- uid: YVR.Core.YVRCameraRig
+  commentId: T:YVR.Core.YVRCameraRig
+  parent: YVR.Core
+  href: YVR.Core.YVRCameraRig.html
+  name: YVRCameraRig
+  nameWithType: YVRCameraRig
+  fullName: YVR.Core.YVRCameraRig
+- uid: YVR.Core.YVRRaycastLaserBeam
+  commentId: T:YVR.Core.YVRRaycastLaserBeam
+  href: YVR.Core.YVRRaycastLaserBeam.html
+  name: YVRRaycastLaserBeam
+  nameWithType: YVRRaycastLaserBeam
+  fullName: YVR.Core.YVRRaycastLaserBeam
+- uid: YVR.Core.YVRHand
+  commentId: T:YVR.Core.YVRHand
+  parent: YVR.Core
+  href: YVR.Core.YVRHand.html
+  name: YVRHand
+  nameWithType: YVRHand
+  fullName: YVR.Core.YVRHand
+- uid: YVR.Core.YVRSpatialAnchorSupportedComponent
+  commentId: T:YVR.Core.YVRSpatialAnchorSupportedComponent
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorSupportedComponent.html
+  name: YVRSpatialAnchorSupportedComponent
+  nameWithType: YVRSpatialAnchorSupportedComponent
+  fullName: YVR.Core.YVRSpatialAnchorSupportedComponent
+- uid: YVR.Core.YVRBoundary
+  commentId: T:YVR.Core.YVRBoundary
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary.html
+  name: YVRBoundary
+  nameWithType: YVRBoundary
+  fullName: YVR.Core.YVRBoundary
+- uid: YVR.Core.YVRBoundary.BoundaryNode
+  commentId: T:YVR.Core.YVRBoundary.BoundaryNode
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary.html
+  name: YVRBoundary.BoundaryNode
+  nameWithType: YVRBoundary.BoundaryNode
+  fullName: YVR.Core.YVRBoundary.BoundaryNode
+  spec.csharp:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: BoundaryNode
+    href: YVR.Core.YVRBoundary.BoundaryNode.html
+  spec.vb:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: BoundaryNode
+    href: YVR.Core.YVRBoundary.BoundaryNode.html
+- uid: YVR.Core.YVRBoundary.BoundaryTestResult
+  commentId: T:YVR.Core.YVRBoundary.BoundaryTestResult
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary.html
+  name: YVRBoundary.BoundaryTestResult
+  nameWithType: YVRBoundary.BoundaryTestResult
+  fullName: YVR.Core.YVRBoundary.BoundaryTestResult
+  spec.csharp:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryTestResult
+    name: BoundaryTestResult
+    href: YVR.Core.YVRBoundary.BoundaryTestResult.html
+  spec.vb:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryTestResult
+    name: BoundaryTestResult
+    href: YVR.Core.YVRBoundary.BoundaryTestResult.html
+- uid: YVR.Core.YVRSceneAnchorContainer
+  commentId: T:YVR.Core.YVRSceneAnchorContainer
+  parent: YVR.Core
+  href: YVR.Core.YVRSceneAnchorContainer.html
+  name: YVRSceneAnchorContainer
+  nameWithType: YVRSceneAnchorContainer
+  fullName: YVR.Core.YVRSceneAnchorContainer
+- uid: YVR.Core.YVRLayerEditorHandle
+  commentId: T:YVR.Core.YVRLayerEditorHandle
+  href: YVR.Core.YVRLayerEditorHandle.html
+  name: YVRLayerEditorHandle
+  nameWithType: YVRLayerEditorHandle
+  fullName: YVR.Core.YVRLayerEditorHandle
+- uid: YVR.Core.YVRPluginWin
+  commentId: T:YVR.Core.YVRPluginWin
+  parent: YVR.Core
+  href: YVR.Core.YVRPluginWin.html
+  name: YVRPluginWin
+  nameWithType: YVRPluginWin
+  fullName: YVR.Core.YVRPluginWin
+- uid: YVR.Core.YVRSpatialAnchorQueryType
+  commentId: T:YVR.Core.YVRSpatialAnchorQueryType
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorQueryType.html
+  name: YVRSpatialAnchorQueryType
+  nameWithType: YVRSpatialAnchorQueryType
+  fullName: YVR.Core.YVRSpatialAnchorQueryType
+- uid: YVR.Core.YVRPlugin
+  commentId: T:YVR.Core.YVRPlugin
+  parent: YVR.Core
+  href: YVR.Core.YVRPlugin.html
+  name: YVRPlugin
+  nameWithType: YVRPlugin
+  fullName: YVR.Core.YVRPlugin
+- uid: YVR.Core.YVRPlugin.ControllerState
+  commentId: T:YVR.Core.YVRPlugin.ControllerState
+  parent: YVR.Core
+  href: YVR.Core.YVRPlugin.html
+  name: YVRPlugin.ControllerState
+  nameWithType: YVRPlugin.ControllerState
+  fullName: YVR.Core.YVRPlugin.ControllerState
+  spec.csharp:
+  - uid: YVR.Core.YVRPlugin
+    name: YVRPlugin
+    href: YVR.Core.YVRPlugin.html
+  - name: .
+  - uid: YVR.Core.YVRPlugin.ControllerState
+    name: ControllerState
+    href: YVR.Core.YVRPlugin.ControllerState.html
+  spec.vb:
+  - uid: YVR.Core.YVRPlugin
+    name: YVRPlugin
+    href: YVR.Core.YVRPlugin.html
+  - name: .
+  - uid: YVR.Core.YVRPlugin.ControllerState
+    name: ControllerState
+    href: YVR.Core.YVRPlugin.ControllerState.html
+- uid: YVR.Core.YVRControllerRig
+  commentId: T:YVR.Core.YVRControllerRig
+  parent: YVR.Core
+  href: YVR.Core.YVRControllerRig.html
+  name: YVRControllerRig
+  nameWithType: YVRControllerRig
+  fullName: YVR.Core.YVRControllerRig
+- uid: YVR.Core.YVRInput
+  commentId: T:YVR.Core.YVRInput
+  href: YVR.Core.YVRInput.html
+  name: YVRInput
+  nameWithType: YVRInput
+  fullName: YVR.Core.YVRInput
+- uid: YVR.Core.YVRInput.VirtualButton
+  commentId: T:YVR.Core.YVRInput.VirtualButton
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualButton
+  nameWithType: YVRInput.VirtualButton
+  fullName: YVR.Core.YVRInput.VirtualButton
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: VirtualButton
+    href: YVR.Core.YVRInput.VirtualButton.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: VirtualButton
+    href: YVR.Core.YVRInput.VirtualButton.html
+- uid: YVR.Core.YVRInput.RawButton
+  commentId: T:YVR.Core.YVRInput.RawButton
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawButton
+  nameWithType: YVRInput.RawButton
+  fullName: YVR.Core.YVRInput.RawButton
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawButton
+    name: RawButton
+    href: YVR.Core.YVRInput.RawButton.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawButton
+    name: RawButton
+    href: YVR.Core.YVRInput.RawButton.html
+- uid: YVR.Core.YVRInput.VirtualTouch
+  commentId: T:YVR.Core.YVRInput.VirtualTouch
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualTouch
+  nameWithType: YVRInput.VirtualTouch
+  fullName: YVR.Core.YVRInput.VirtualTouch
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: VirtualTouch
+    href: YVR.Core.YVRInput.VirtualTouch.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: VirtualTouch
+    href: YVR.Core.YVRInput.VirtualTouch.html
+- uid: YVR.Core.YVRInput.RawTouch
+  commentId: T:YVR.Core.YVRInput.RawTouch
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawTouch
+  nameWithType: YVRInput.RawTouch
+  fullName: YVR.Core.YVRInput.RawTouch
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: RawTouch
+    href: YVR.Core.YVRInput.RawTouch.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: RawTouch
+    href: YVR.Core.YVRInput.RawTouch.html
+- uid: YVR.Core.YVRInput.VirtualAxis1D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis1D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualAxis1D
+  nameWithType: YVRInput.VirtualAxis1D
+  fullName: YVR.Core.YVRInput.VirtualAxis1D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: VirtualAxis1D
+    href: YVR.Core.YVRInput.VirtualAxis1D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: VirtualAxis1D
+    href: YVR.Core.YVRInput.VirtualAxis1D.html
+- uid: YVR.Core.YVRInput.RawAxis1D
+  commentId: T:YVR.Core.YVRInput.RawAxis1D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawAxis1D
+  nameWithType: YVRInput.RawAxis1D
+  fullName: YVR.Core.YVRInput.RawAxis1D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: RawAxis1D
+    href: YVR.Core.YVRInput.RawAxis1D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: RawAxis1D
+    href: YVR.Core.YVRInput.RawAxis1D.html
+- uid: YVR.Core.YVRInput.VirtualAxis2D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis2D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualAxis2D
+  nameWithType: YVRInput.VirtualAxis2D
+  fullName: YVR.Core.YVRInput.VirtualAxis2D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: VirtualAxis2D
+    href: YVR.Core.YVRInput.VirtualAxis2D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: VirtualAxis2D
+    href: YVR.Core.YVRInput.VirtualAxis2D.html
+- uid: YVR.Core.YVRInput.RawAxis2D
+  commentId: T:YVR.Core.YVRInput.RawAxis2D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawAxis2D
+  nameWithType: YVRInput.RawAxis2D
+  fullName: YVR.Core.YVRInput.RawAxis2D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: RawAxis2D
+    href: YVR.Core.YVRInput.RawAxis2D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: RawAxis2D
+    href: YVR.Core.YVRInput.RawAxis2D.html
+- uid: YVR.Core.YVRQuerySpatialAnchorResult
+  commentId: T:YVR.Core.YVRQuerySpatialAnchorResult
+  href: YVR.Core.YVRQuerySpatialAnchorResult.html
+  name: YVRQuerySpatialAnchorResult
+  nameWithType: YVRQuerySpatialAnchorResult
+  fullName: YVR.Core.YVRQuerySpatialAnchorResult
+- uid: YVR.Core.YVRSpatialAnchorListSaveInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorListSaveInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorListSaveInfo.html
+  name: YVRSpatialAnchorListSaveInfo
+  nameWithType: YVRSpatialAnchorListSaveInfo
+  fullName: YVR.Core.YVRSpatialAnchorListSaveInfo
+- uid: YVR.Core.YVRQualityManager
+  commentId: T:YVR.Core.YVRQualityManager
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager
+  nameWithType: YVRQualityManager
+  fullName: YVR.Core.YVRQualityManager
+- uid: YVR.Core.YVRQualityManager.VSyncCount
+  commentId: T:YVR.Core.YVRQualityManager.VSyncCount
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.VSyncCount
+  nameWithType: YVRQualityManager.VSyncCount
+  fullName: YVR.Core.YVRQualityManager.VSyncCount
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.VSyncCount
+    name: VSyncCount
+    href: YVR.Core.YVRQualityManager.VSyncCount.html
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.FixedFoveatedRenderingLevel
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingLevel
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel
+    name: FixedFoveatedRenderingLevel
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingLevel.html
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.FixedFoveatedRenderingDynamic
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingDynamic
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: FixedFoveatedRenderingDynamic
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: FixedFoveatedRenderingDynamic
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.html
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType
+  commentId: T:YVR.Core.YVRQualityManager.LayerSettingsType
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.LayerSettingsType
+  nameWithType: YVRQualityManager.LayerSettingsType
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+- uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  commentId: T:YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.AdapterResolutionPolicy
+  nameWithType: YVRQualityManager.AdapterResolutionPolicy
+  fullName: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: AdapterResolutionPolicy
+    href: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.AdapterResolutionPolicy
+    name: AdapterResolutionPolicy
+    href: YVR.Core.YVRQualityManager.AdapterResolutionPolicy.html
+- uid: YVR.Core.YVRTriangleMesh
+  commentId: T:YVR.Core.YVRTriangleMesh
+  parent: YVR.Core
+  href: YVR.Core.YVRTriangleMesh.html
+  name: YVRTriangleMesh
+  nameWithType: YVRTriangleMesh
+  fullName: YVR.Core.YVRTriangleMesh
+- uid: YVR.Core.InputDeviceTest
+  commentId: T:YVR.Core.InputDeviceTest
+  href: YVR.Core.InputDeviceTest.html
+  name: InputDeviceTest
+  nameWithType: InputDeviceTest
+  fullName: YVR.Core.InputDeviceTest
+- uid: YVR.Core.ControllerType
+  commentId: T:YVR.Core.ControllerType
+  parent: YVR.Core
+  href: YVR.Core.ControllerType.html
+  name: ControllerType
+  nameWithType: ControllerType
+  fullName: YVR.Core.ControllerType
+- uid: YVR.Core.DataProviderSource
+  commentId: T:YVR.Core.DataProviderSource
+  parent: YVR.Core
+  href: YVR.Core.DataProviderSource.html
+  name: DataProviderSource
+  nameWithType: DataProviderSource
+  fullName: YVR.Core.DataProviderSource
+- uid: YVR.Core.HandInteractEffectController
+  commentId: T:YVR.Core.HandInteractEffectController
+  href: YVR.Core.HandInteractEffectController.html
+  name: HandInteractEffectController
+  nameWithType: HandInteractEffectController
+  fullName: YVR.Core.HandInteractEffectController
+- uid: YVR.Core.YVRAnchorLocationFlags
+  commentId: T:YVR.Core.YVRAnchorLocationFlags
+  parent: YVR.Core
+  href: YVR.Core.YVRAnchorLocationFlags.html
+  name: YVRAnchorLocationFlags
+  nameWithType: YVRAnchorLocationFlags
+  fullName: YVR.Core.YVRAnchorLocationFlags
+- uid: YVR.Core.YVRSpatialAnchorUUID
+  commentId: T:YVR.Core.YVRSpatialAnchorUUID
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorUUID.html
+  name: YVRSpatialAnchorUUID
+  nameWithType: YVRSpatialAnchorUUID
+  fullName: YVR.Core.YVRSpatialAnchorUUID
+- uid: YVR.Core.PassthroughColorLutChannels
+  commentId: T:YVR.Core.PassthroughColorLutChannels
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorLutChannels.html
+  name: PassthroughColorLutChannels
+  nameWithType: PassthroughColorLutChannels
+  fullName: YVR.Core.PassthroughColorLutChannels
+- uid: YVR.Core.YVRCurvedUIRaycaster
+  commentId: T:YVR.Core.YVRCurvedUIRaycaster
+  href: YVR.Core.YVRCurvedUIRaycaster.html
+  name: YVRCurvedUIRaycaster
+  nameWithType: YVRCurvedUIRaycaster
+  fullName: YVR.Core.YVRCurvedUIRaycaster
+- uid: YVR.Core.PassthroughLayer
+  commentId: T:YVR.Core.PassthroughLayer
+  href: YVR.Core.PassthroughLayer.html
+  name: PassthroughLayer
+  nameWithType: PassthroughLayer
+  fullName: YVR.Core.PassthroughLayer
+- uid: YVR.Core.YVRSceneCaptureRequest
+  commentId: T:YVR.Core.YVRSceneCaptureRequest
+  parent: YVR.Core
+  href: YVR.Core.YVRSceneCaptureRequest.html
+  name: YVRSceneCaptureRequest
+  nameWithType: YVRSceneCaptureRequest
+  fullName: YVR.Core.YVRSceneCaptureRequest
+- uid: YVR.Core.PassthroughColorLutData
+  commentId: T:YVR.Core.PassthroughColorLutData
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorLutData.html
+  name: PassthroughColorLutData
+  nameWithType: PassthroughColorLutData
+  fullName: YVR.Core.PassthroughColorLutData
+- uid: YVR.Core.YVRSpatialAnchorComponentType
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentType
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentType.html
+  name: YVRSpatialAnchorComponentType
+  nameWithType: YVRSpatialAnchorComponentType
+  fullName: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRHMDManager
+  commentId: T:YVR.Core.YVRHMDManager
+  parent: YVR.Core
+  href: YVR.Core.YVRHMDManager.html
+  name: YVRHMDManager
+  nameWithType: YVRHMDManager
+  fullName: YVR.Core.YVRHMDManager
+- uid: YVR.Core.YVRRoomLayout
+  commentId: T:YVR.Core.YVRRoomLayout
+  parent: YVR.Core
+  href: YVR.Core.YVRRoomLayout.html
+  name: YVRRoomLayout
+  nameWithType: YVRRoomLayout
+  fullName: YVR.Core.YVRRoomLayout
+- uid: YVR.Core.YVRAnchorTriangleMeshInternal
+  commentId: T:YVR.Core.YVRAnchorTriangleMeshInternal
+  parent: YVR.Core
+  href: YVR.Core.YVRAnchorTriangleMeshInternal.html
+  name: YVRAnchorTriangleMeshInternal
+  nameWithType: YVRAnchorTriangleMeshInternal
+  fullName: YVR.Core.YVRAnchorTriangleMeshInternal
+- uid: YVR.Core.YVRManager
+  commentId: T:YVR.Core.YVRManager
+  parent: YVR.Core
+  href: YVR.Core.YVRManager.html
+  name: YVRManager
+  nameWithType: YVRManager
+  fullName: YVR.Core.YVRManager
+- uid: YVR.Core.YVRLayerAndroidHandler
+  commentId: T:YVR.Core.YVRLayerAndroidHandler
+  href: YVR.Core.YVRLayerAndroidHandler.html
+  name: YVRLayerAndroidHandler
+  nameWithType: YVRLayerAndroidHandler
+  fullName: YVR.Core.YVRLayerAndroidHandler
+- uid: YVR.Core.YVRHMDEmulator
+  commentId: T:YVR.Core.YVRHMDEmulator
+  href: YVR.Core.YVRHMDEmulator.html
+  name: YVRHMDEmulator
+  nameWithType: YVRHMDEmulator
+  fullName: YVR.Core.YVRHMDEmulator
+- uid: YVR.Core.YVRHMDEmulator.TranslationKeys
+  commentId: T:YVR.Core.YVRHMDEmulator.TranslationKeys
+  parent: YVR.Core
+  href: YVR.Core.YVRHMDEmulator.html
+  name: YVRHMDEmulator.TranslationKeys
+  nameWithType: YVRHMDEmulator.TranslationKeys
+  fullName: YVR.Core.YVRHMDEmulator.TranslationKeys
+  spec.csharp:
+  - uid: YVR.Core.YVRHMDEmulator
+    name: YVRHMDEmulator
+    href: YVR.Core.YVRHMDEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRHMDEmulator.TranslationKeys
+    name: TranslationKeys
+    href: YVR.Core.YVRHMDEmulator.TranslationKeys.html
+  spec.vb:
+  - uid: YVR.Core.YVRHMDEmulator
+    name: YVRHMDEmulator
+    href: YVR.Core.YVRHMDEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRHMDEmulator.TranslationKeys
+    name: TranslationKeys
+    href: YVR.Core.YVRHMDEmulator.TranslationKeys.html
+- uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+  href: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.html
+  name: YVRSpatialAnchorSetStatusCompleteInfo
+  nameWithType: YVRSpatialAnchorSetStatusCompleteInfo
+  fullName: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
+- uid: YVR.Core.EmulatorRotationSensitivity
+  commentId: T:YVR.Core.EmulatorRotationSensitivity
+  parent: YVR.Core
+  href: YVR.Core.EmulatorRotationSensitivity.html
+  name: EmulatorRotationSensitivity
+  nameWithType: EmulatorRotationSensitivity
+  fullName: YVR.Core.EmulatorRotationSensitivity
+- uid: YVR.Core.EmulatorTranslationSensitivity
+  commentId: T:YVR.Core.EmulatorTranslationSensitivity
+  parent: YVR.Core
+  href: YVR.Core.EmulatorTranslationSensitivity.html
+  name: EmulatorTranslationSensitivity
+  nameWithType: EmulatorTranslationSensitivity
+  fullName: YVR.Core.EmulatorTranslationSensitivity
+- uid: YVR.Core.YVRControllerEmulator
+  commentId: T:YVR.Core.YVRControllerEmulator
+  href: YVR.Core.YVRControllerEmulator.html
+  name: YVRControllerEmulator
+  nameWithType: YVRControllerEmulator
+  fullName: YVR.Core.YVRControllerEmulator
+- uid: YVR.Core.YVRControllerEmulator.EmulateController
+  commentId: T:YVR.Core.YVRControllerEmulator.EmulateController
+  parent: YVR.Core
+  href: YVR.Core.YVRControllerEmulator.html
+  name: YVRControllerEmulator.EmulateController
+  nameWithType: YVRControllerEmulator.EmulateController
+  fullName: YVR.Core.YVRControllerEmulator.EmulateController
+  spec.csharp:
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    href: YVR.Core.YVRControllerEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRControllerEmulator.EmulateController
+    name: EmulateController
+    href: YVR.Core.YVRControllerEmulator.EmulateController.html
+  spec.vb:
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    href: YVR.Core.YVRControllerEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRControllerEmulator.EmulateController
+    name: EmulateController
+    href: YVR.Core.YVRControllerEmulator.EmulateController.html
+- uid: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+  commentId: T:YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+  parent: YVR.Core
+  href: YVR.Core.YVRControllerEmulator.html
+  name: YVRControllerEmulator.EmulatorKeyMapping
+  nameWithType: YVRControllerEmulator.EmulatorKeyMapping
+  fullName: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+  spec.csharp:
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    href: YVR.Core.YVRControllerEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+    name: EmulatorKeyMapping
+    href: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping.html
+  spec.vb:
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    href: YVR.Core.YVRControllerEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping
+    name: EmulatorKeyMapping
+    href: YVR.Core.YVRControllerEmulator.EmulatorKeyMapping.html
+- uid: YVR.Core.YVRNativeLog2YLogLoggerAdapter
+  commentId: T:YVR.Core.YVRNativeLog2YLogLoggerAdapter
+  href: YVR.Core.YVRNativeLog2YLogLoggerAdapter.html
+  name: YVRNativeLog2YLogLoggerAdapter
+  nameWithType: YVRNativeLog2YLogLoggerAdapter
+  fullName: YVR.Core.YVRNativeLog2YLogLoggerAdapter
+- uid: YVR.Core.YVRGraphicRaycaster
+  commentId: T:YVR.Core.YVRGraphicRaycaster
+  parent: YVR.Core
+  href: YVR.Core.YVRGraphicRaycaster.html
+  name: YVRGraphicRaycaster
+  nameWithType: YVRGraphicRaycaster
+  fullName: YVR.Core.YVRGraphicRaycaster
+- uid: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  commentId: T:YVR.Core.YVRGraphicRaycaster.RaycastHit
+  href: YVR.Core.YVRGraphicRaycaster.html
+  name: YVRGraphicRaycaster.RaycastHit
+  nameWithType: YVRGraphicRaycaster.RaycastHit
+  fullName: YVR.Core.YVRGraphicRaycaster.RaycastHit
+  spec.csharp:
+  - uid: YVR.Core.YVRGraphicRaycaster
+    name: YVRGraphicRaycaster
+    href: YVR.Core.YVRGraphicRaycaster.html
+  - name: .
+  - uid: YVR.Core.YVRGraphicRaycaster.RaycastHit
+    name: RaycastHit
+    href: YVR.Core.YVRGraphicRaycaster.RaycastHit.html
+  spec.vb:
+  - uid: YVR.Core.YVRGraphicRaycaster
+    name: YVRGraphicRaycaster
+    href: YVR.Core.YVRGraphicRaycaster.html
+  - name: .
+  - uid: YVR.Core.YVRGraphicRaycaster.RaycastHit
+    name: RaycastHit
+    href: YVR.Core.YVRGraphicRaycaster.RaycastHit.html
+- uid: YVR.Core.YVRTrackingStateManager
+  commentId: T:YVR.Core.YVRTrackingStateManager
+  parent: YVR.Core
+  href: YVR.Core.YVRTrackingStateManager.html
+  name: YVRTrackingStateManager
+  nameWithType: YVRTrackingStateManager
+  fullName: YVR.Core.YVRTrackingStateManager
+- uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  commentId: T:YVR.Core.YVRTrackingStateManager.TrackingSpace
+  parent: YVR.Core
+  href: YVR.Core.YVRTrackingStateManager.html
+  name: YVRTrackingStateManager.TrackingSpace
+  nameWithType: YVRTrackingStateManager.TrackingSpace
+  fullName: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  spec.csharp:
+  - uid: YVR.Core.YVRTrackingStateManager
+    name: YVRTrackingStateManager
+    href: YVR.Core.YVRTrackingStateManager.html
+  - name: .
+  - uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+    name: TrackingSpace
+    href: YVR.Core.YVRTrackingStateManager.TrackingSpace.html
+  spec.vb:
+  - uid: YVR.Core.YVRTrackingStateManager
+    name: YVRTrackingStateManager
+    href: YVR.Core.YVRTrackingStateManager.html
+  - name: .
+  - uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+    name: TrackingSpace
+    href: YVR.Core.YVRTrackingStateManager.TrackingSpace.html
+- uid: YVR.Core.YVRPlaneDetectorOrientation
+  commentId: T:YVR.Core.YVRPlaneDetectorOrientation
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorOrientation.html
+  name: YVRPlaneDetectorOrientation
+  nameWithType: YVRPlaneDetectorOrientation
+  fullName: YVR.Core.YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRInputModule
+  commentId: T:YVR.Core.YVRInputModule
+  parent: YVR.Core
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule
+  nameWithType: YVRInputModule
+  fullName: YVR.Core.YVRInputModule
+- uid: YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataDummyProvider
+  nameWithType: YVRInputModule.YVRInputDataDummyProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+    name: YVRInputDataDummyProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataDummyProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataDummyProvider
+    name: YVRInputDataDummyProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataDummyProvider.html
+- uid: YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataHMDProvider
+  nameWithType: YVRInputModule.YVRInputDataHMDProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+    name: YVRInputDataHMDProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataHMDProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataHMDProvider
+    name: YVRInputDataHMDProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataHMDProvider.html
+- uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  parent: YVR.Core
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataBaseProvider
+  nameWithType: YVRInputModule.YVRInputDataBaseProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+    name: YVRInputDataBaseProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataBaseProvider
+    name: YVRInputDataBaseProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataBaseProvider.html
+- uid: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataLHandTrackingProvider
+  nameWithType: YVRInputModule.YVRInputDataLHandTrackingProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+    name: YVRInputDataLHandTrackingProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider
+    name: YVRInputDataLHandTrackingProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataLHandTrackingProvider.html
+- uid: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataRHandTrackingProvider
+  nameWithType: YVRInputModule.YVRInputDataRHandTrackingProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+    name: YVRInputDataRHandTrackingProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider
+    name: YVRInputDataRHandTrackingProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataRHandTrackingProvider.html
+- uid: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataLControllerProvider
+  nameWithType: YVRInputModule.YVRInputDataLControllerProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+    name: YVRInputDataLControllerProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider
+    name: YVRInputDataLControllerProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataLControllerProvider.html
+- uid: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+  commentId: T:YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+  href: YVR.Core.YVRInputModule.html
+  name: YVRInputModule.YVRInputDataRControllerProvider
+  nameWithType: YVRInputModule.YVRInputDataRControllerProvider
+  fullName: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+  spec.csharp:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+    name: YVRInputDataRControllerProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider.html
+  spec.vb:
+  - uid: YVR.Core.YVRInputModule
+    name: YVRInputModule
+    href: YVR.Core.YVRInputModule.html
+  - name: .
+  - uid: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider
+    name: YVRInputDataRControllerProvider
+    href: YVR.Core.YVRInputModule.YVRInputDataRControllerProvider.html
+- uid: YVR.Core.YVRRenderLayerEyeMask
+  commentId: T:YVR.Core.YVRRenderLayerEyeMask
+  parent: YVR.Core
+  href: YVR.Core.YVRRenderLayerEyeMask.html
+  name: YVRRenderLayerEyeMask
+  nameWithType: YVRRenderLayerEyeMask
+  fullName: YVR.Core.YVRRenderLayerEyeMask
+- uid: YVR.Core.YVRRenderLayerType
+  commentId: T:YVR.Core.YVRRenderLayerType
+  parent: YVR.Core
+  href: YVR.Core.YVRRenderLayerType.html
+  name: YVRRenderLayerType
+  nameWithType: YVRRenderLayerType
+  fullName: YVR.Core.YVRRenderLayerType
+- uid: YVR.Core.YVRLayerCreateInfo
+  commentId: T:YVR.Core.YVRLayerCreateInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRLayerCreateInfo.html
+  name: YVRLayerCreateInfo
+  nameWithType: YVRLayerCreateInfo
+  fullName: YVR.Core.YVRLayerCreateInfo
+- uid: YVR.Core.YVRSpatialAnchorResult
+  commentId: T:YVR.Core.YVRSpatialAnchorResult
+  href: YVR.Core.YVRSpatialAnchorResult.html
+  name: YVRSpatialAnchorResult
+  nameWithType: YVRSpatialAnchorResult
+  fullName: YVR.Core.YVRSpatialAnchorResult
+- uid: YVR.Core.YVRPlaneDetectorPolygonBuffer
+  commentId: T:YVR.Core.YVRPlaneDetectorPolygonBuffer
+  href: YVR.Core.YVRPlaneDetectorPolygonBuffer.html
+  name: YVRPlaneDetectorPolygonBuffer
+  nameWithType: YVRPlaneDetectorPolygonBuffer
+  fullName: YVR.Core.YVRPlaneDetectorPolygonBuffer
+- uid: YVR.Core.YVRPlaneDetectorPolygonBufferInternal
+  commentId: T:YVR.Core.YVRPlaneDetectorPolygonBufferInternal
+  href: YVR.Core.YVRPlaneDetectorPolygonBufferInternal.html
+  name: YVRPlaneDetectorPolygonBufferInternal
+  nameWithType: YVRPlaneDetectorPolygonBufferInternal
+  fullName: YVR.Core.YVRPlaneDetectorPolygonBufferInternal
+- uid: YVR.Core.YVRPlaneDetectorPolygonBuffersInternal
+  commentId: T:YVR.Core.YVRPlaneDetectorPolygonBuffersInternal
+  href: YVR.Core.YVRPlaneDetectorPolygonBuffersInternal.html
+  name: YVRPlaneDetectorPolygonBuffersInternal
+  nameWithType: YVRPlaneDetectorPolygonBuffersInternal
+  fullName: YVR.Core.YVRPlaneDetectorPolygonBuffersInternal
+- uid: YVR.Core.YVREventsManager
+  commentId: T:YVR.Core.YVREventsManager
+  parent: YVR.Core
+  href: YVR.Core.YVREventsManager.html
+  name: YVREventsManager
+  nameWithType: YVREventsManager
+  fullName: YVR.Core.YVREventsManager
+- uid: YVR.Core.CylinderShapeHandler
+  commentId: T:YVR.Core.CylinderShapeHandler
+  href: YVR.Core.CylinderShapeHandler.html
+  name: CylinderShapeHandler
+  nameWithType: CylinderShapeHandler
+  fullName: YVR.Core.CylinderShapeHandler
+- uid: YVR.Core.YVRSpatialAnchorShareInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorShareInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorShareInfo.html
+  name: YVRSpatialAnchorShareInfo
+  nameWithType: YVRSpatialAnchorShareInfo
+  fullName: YVR.Core.YVRSpatialAnchorShareInfo
+- uid: YVR.Core.YVRSpaceLocationFlags
+  commentId: T:YVR.Core.YVRSpaceLocationFlags
+  parent: YVR.Core
+  href: YVR.Core.YVRSpaceLocationFlags.html
+  name: YVRSpaceLocationFlags
+  nameWithType: YVRSpaceLocationFlags
+  fullName: YVR.Core.YVRSpaceLocationFlags
+- uid: YVR.Core.StereoRenderingMode
+  commentId: T:YVR.Core.StereoRenderingMode
+  parent: YVR.Core
+  href: YVR.Core.StereoRenderingMode.html
+  name: StereoRenderingMode
+  nameWithType: StereoRenderingMode
+  fullName: YVR.Core.StereoRenderingMode
+- uid: YVR.Core.Equirect2ShapeHandler
+  commentId: T:YVR.Core.Equirect2ShapeHandler
+  href: YVR.Core.Equirect2ShapeHandler.html
+  name: Equirect2ShapeHandler
+  nameWithType: Equirect2ShapeHandler
+  fullName: YVR.Core.Equirect2ShapeHandler
+- uid: YVR.Core.YVRHandAnimController
+  commentId: T:YVR.Core.YVRHandAnimController
+  href: YVR.Core.YVRHandAnimController.html
+  name: YVRHandAnimController
+  nameWithType: YVRHandAnimController
+  fullName: YVR.Core.YVRHandAnimController
+- uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  commentId: T:YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  href: YVR.Core.YVRHandAnimController.html
+  name: YVRHandAnimController.YVRHandControllerAnimData
+  nameWithType: YVRHandAnimController.YVRHandControllerAnimData
+  fullName: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+  spec.csharp:
+  - uid: YVR.Core.YVRHandAnimController
+    name: YVRHandAnimController
+    href: YVR.Core.YVRHandAnimController.html
+  - name: .
+  - uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+    name: YVRHandControllerAnimData
+    href: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.html
+  spec.vb:
+  - uid: YVR.Core.YVRHandAnimController
+    name: YVRHandAnimController
+    href: YVR.Core.YVRHandAnimController.html
+  - name: .
+  - uid: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData
+    name: YVRHandControllerAnimData
+    href: YVR.Core.YVRHandAnimController.YVRHandControllerAnimData.html
+- uid: YVR.Core.YVRInputDebug
+  commentId: T:YVR.Core.YVRInputDebug
+  href: YVR.Core.YVRInputDebug.html
+  name: YVRInputDebug
+  nameWithType: YVRInputDebug
+  fullName: YVR.Core.YVRInputDebug
+- uid: YVR.Core.HandType
+  commentId: T:YVR.Core.HandType
+  parent: YVR.Core
+  href: YVR.Core.HandType.html
+  name: HandType
+  nameWithType: HandType
+  fullName: YVR.Core.HandType
+- uid: YVR.Core.ActiveInputDevice
+  commentId: T:YVR.Core.ActiveInputDevice
+  parent: YVR.Core
+  href: YVR.Core.ActiveInputDevice.html
+  name: ActiveInputDevice
+  nameWithType: ActiveInputDevice
+  fullName: YVR.Core.ActiveInputDevice
+- uid: YVR.Core.HandStatus
+  commentId: T:YVR.Core.HandStatus
+  parent: YVR.Core
+  href: YVR.Core.HandStatus.html
+  name: HandStatus
+  nameWithType: HandStatus
+  fullName: YVR.Core.HandStatus
+- uid: YVR.Core.XRHandFingerID
+  commentId: T:YVR.Core.XRHandFingerID
+  parent: YVR.Core
+  href: YVR.Core.XRHandFingerID.html
+  name: XRHandFingerID
+  nameWithType: XRHandFingerID
+  fullName: YVR.Core.XRHandFingerID
+- uid: YVR.Core.HandJoint
+  commentId: T:YVR.Core.HandJoint
+  parent: YVR.Core
+  href: YVR.Core.HandJoint.html
+  name: HandJoint
+  nameWithType: HandJoint
+  fullName: YVR.Core.HandJoint
+- uid: YVR.Core.Posef
+  commentId: T:YVR.Core.Posef
+  parent: YVR.Core
+  href: YVR.Core.Posef.html
+  name: Posef
+  nameWithType: Posef
+  fullName: YVR.Core.Posef
+- uid: YVR.Core.HandJointLocation
+  commentId: T:YVR.Core.HandJointLocation
+  href: YVR.Core.HandJointLocation.html
+  name: HandJointLocation
+  nameWithType: HandJointLocation
+  fullName: YVR.Core.HandJointLocation
+- uid: YVR.Core.HandJointVelocity
+  commentId: T:YVR.Core.HandJointVelocity
+  href: YVR.Core.HandJointVelocity.html
+  name: HandJointVelocity
+  nameWithType: HandJointVelocity
+  fullName: YVR.Core.HandJointVelocity
+- uid: YVR.Core.HandJointLocations
+  commentId: T:YVR.Core.HandJointLocations
+  parent: YVR.Core
+  href: YVR.Core.HandJointLocations.html
+  name: HandJointLocations
+  nameWithType: HandJointLocations
+  fullName: YVR.Core.HandJointLocations
+- uid: YVR.Core.HandData
+  commentId: T:YVR.Core.HandData
+  href: YVR.Core.HandData.html
+  name: HandData
+  nameWithType: HandData
+  fullName: YVR.Core.HandData
+- uid: YVR.Core.HandTrackingAimState
+  commentId: T:YVR.Core.HandTrackingAimState
+  parent: YVR.Core
+  href: YVR.Core.HandTrackingAimState.html
+  name: HandTrackingAimState
+  nameWithType: HandTrackingAimState
+  fullName: YVR.Core.HandTrackingAimState
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation
+  commentId: T:YVR.Core.YVRSpatialAnchorStorageLocation
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorStorageLocation.html
+  name: YVRSpatialAnchorStorageLocation
+  nameWithType: YVRSpatialAnchorStorageLocation
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation
+- uid: YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+  href: YVR.Core.YVRSpatialAnchorSaveCompleteInfo.html
+  name: YVRSpatialAnchorSaveCompleteInfo
+  nameWithType: YVRSpatialAnchorSaveCompleteInfo
+  fullName: YVR.Core.YVRSpatialAnchorSaveCompleteInfo
+- uid: YVR.Core.YVRPerformanceManager
+  commentId: T:YVR.Core.YVRPerformanceManager
+  href: YVR.Core.YVRPerformanceManager.html
+  name: YVRPerformanceManager
+  nameWithType: YVRPerformanceManager
+  fullName: YVR.Core.YVRPerformanceManager
+- uid: YVR.Core.PassthroughStyleFlags
+  commentId: T:YVR.Core.PassthroughStyleFlags
+  parent: YVR.Core
+  href: YVR.Core.PassthroughStyleFlags.html
+  name: PassthroughStyleFlags
+  nameWithType: PassthroughStyleFlags
+  fullName: YVR.Core.PassthroughStyleFlags
+- uid: YVR.Core.YVRDebugHub
+  commentId: T:YVR.Core.YVRDebugHub
+  parent: YVR.Core
+  href: YVR.Core.YVRDebugHub.html
+  name: YVRDebugHub
+  nameWithType: YVRDebugHub
+  fullName: YVR.Core.YVRDebugHub
+- uid: YVR.Core.EyeTrackingData
+  commentId: T:YVR.Core.EyeTrackingData
+  href: YVR.Core.EyeTrackingData.html
+  name: EyeTrackingData
+  nameWithType: EyeTrackingData
+  fullName: YVR.Core.EyeTrackingData
+- uid: YVR.Core.EyeTrackingData.EyeGazesState
+  commentId: T:YVR.Core.EyeTrackingData.EyeGazesState
+  href: YVR.Core.EyeTrackingData.html
+  name: EyeTrackingData.EyeGazesState
+  nameWithType: EyeTrackingData.EyeGazesState
+  fullName: YVR.Core.EyeTrackingData.EyeGazesState
+  spec.csharp:
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    href: YVR.Core.EyeTrackingData.html
+  - name: .
+  - uid: YVR.Core.EyeTrackingData.EyeGazesState
+    name: EyeGazesState
+    href: YVR.Core.EyeTrackingData.EyeGazesState.html
+  spec.vb:
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    href: YVR.Core.EyeTrackingData.html
+  - name: .
+  - uid: YVR.Core.EyeTrackingData.EyeGazesState
+    name: EyeGazesState
+    href: YVR.Core.EyeTrackingData.EyeGazesState.html
+- uid: YVR.Core.EyeTrackingData.EyeGazeState
+  commentId: T:YVR.Core.EyeTrackingData.EyeGazeState
+  parent: YVR.Core
+  href: YVR.Core.EyeTrackingData.html
+  name: EyeTrackingData.EyeGazeState
+  nameWithType: EyeTrackingData.EyeGazeState
+  fullName: YVR.Core.EyeTrackingData.EyeGazeState
+  spec.csharp:
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    href: YVR.Core.EyeTrackingData.html
+  - name: .
+  - uid: YVR.Core.EyeTrackingData.EyeGazeState
+    name: EyeGazeState
+    href: YVR.Core.EyeTrackingData.EyeGazeState.html
+  spec.vb:
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    href: YVR.Core.EyeTrackingData.html
+  - name: .
+  - uid: YVR.Core.EyeTrackingData.EyeGazeState
+    name: EyeGazeState
+    href: YVR.Core.EyeTrackingData.EyeGazeState.html
+- uid: YVR.Core.EyeTrackingData.EyeGazePose
+  commentId: T:YVR.Core.EyeTrackingData.EyeGazePose
+  href: YVR.Core.EyeTrackingData.html
+  name: EyeTrackingData.EyeGazePose
+  nameWithType: EyeTrackingData.EyeGazePose
+  fullName: YVR.Core.EyeTrackingData.EyeGazePose
+  spec.csharp:
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    href: YVR.Core.EyeTrackingData.html
+  - name: .
+  - uid: YVR.Core.EyeTrackingData.EyeGazePose
+    name: EyeGazePose
+    href: YVR.Core.EyeTrackingData.EyeGazePose.html
+  spec.vb:
+  - uid: YVR.Core.EyeTrackingData
+    name: EyeTrackingData
+    href: YVR.Core.EyeTrackingData.html
+  - name: .
+  - uid: YVR.Core.EyeTrackingData.EyeGazePose
+    name: EyeGazePose
+    href: YVR.Core.EyeTrackingData.EyeGazePose.html
+- uid: YVR.Core.YVRMeshTracking
+  commentId: T:YVR.Core.YVRMeshTracking
+  href: YVR.Core.YVRMeshTracking.html
+  name: YVRMeshTracking
+  nameWithType: YVRMeshTracking
+  fullName: YVR.Core.YVRMeshTracking
+- uid: YVR.Core.YVRPointerEventData
+  commentId: T:YVR.Core.YVRPointerEventData
+  parent: YVR.Core
+  href: YVR.Core.YVRPointerEventData.html
+  name: YVRPointerEventData
+  nameWithType: YVRPointerEventData
+  fullName: YVR.Core.YVRPointerEventData
+- uid: YVR.Core.YVREventTracking
+  commentId: T:YVR.Core.YVREventTracking
+  href: YVR.Core.YVREventTracking.html
+  name: YVREventTracking
+  nameWithType: YVREventTracking
+  fullName: YVR.Core.YVREventTracking
+- uid: YVR.Core.VRApiHandlersTrigger
+  commentId: T:YVR.Core.VRApiHandlersTrigger
+  href: YVR.Core.VRApiHandlersTrigger.html
+  name: VRApiHandlersTrigger
+  nameWithType: VRApiHandlersTrigger
+  fullName: YVR.Core.VRApiHandlersTrigger
+- uid: YVR.Core.DeviceNode
+  commentId: T:YVR.Core.DeviceNode
+  parent: YVR.Core
+  href: YVR.Core.DeviceNode.html
+  name: DeviceNode
+  nameWithType: DeviceNode
+  fullName: YVR.Core.DeviceNode
+- uid: YVR.Core.PoseData
+  commentId: T:YVR.Core.PoseData
+  parent: YVR.Core
+  href: YVR.Core.PoseData.html
+  name: PoseData
+  nameWithType: PoseData
+  fullName: YVR.Core.PoseData
+- uid: YVR.Core.YVREventType
+  commentId: T:YVR.Core.YVREventType
+  parent: YVR.Core
+  href: YVR.Core.YVREventType.html
+  name: YVREventType
+  nameWithType: YVREventType
+  fullName: YVR.Core.YVREventType
+- uid: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo.html
+  name: YVRSpatialAnchorComponentStatusSetInfo
+  nameWithType: YVRSpatialAnchorComponentStatusSetInfo
+  fullName: YVR.Core.YVRSpatialAnchorComponentStatusSetInfo
+- uid: YVR.Core.EquirectShapeHandler
+  commentId: T:YVR.Core.EquirectShapeHandler
+  href: YVR.Core.EquirectShapeHandler.html
+  name: EquirectShapeHandler
+  nameWithType: EquirectShapeHandler
+  fullName: YVR.Core.EquirectShapeHandler
+- uid: YVR.Core.YVRTrackingDebug
+  commentId: T:YVR.Core.YVRTrackingDebug
+  href: YVR.Core.YVRTrackingDebug.html
+  name: YVRTrackingDebug
+  nameWithType: YVRTrackingDebug
+  fullName: YVR.Core.YVRTrackingDebug
+- uid: YVR.Core.YVRSemanticClassification
+  commentId: T:YVR.Core.YVRSemanticClassification
+  href: YVR.Core.YVRSemanticClassification.html
+  name: YVRSemanticClassification
+  nameWithType: YVRSemanticClassification
+  fullName: YVR.Core.YVRSemanticClassification
+- uid: YVR.Core.YVRSpatialAnchorQueryInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorQueryInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorQueryInfo.html
+  name: YVRSpatialAnchorQueryInfo
+  nameWithType: YVRSpatialAnchorQueryInfo
+  fullName: YVR.Core.YVRSpatialAnchorQueryInfo
+- uid: YVR.Core.YVRBaseRig
+  commentId: T:YVR.Core.YVRBaseRig
+  parent: YVR.Core
+  href: YVR.Core.YVRBaseRig.html
+  name: YVRBaseRig
+  nameWithType: YVRBaseRig
+  fullName: YVR.Core.YVRBaseRig
+- uid: YVR.Core.YVRBaseRig.RigUpdateType
+  commentId: T:YVR.Core.YVRBaseRig.RigUpdateType
+  parent: YVR.Core
+  href: YVR.Core.YVRBaseRig.html
+  name: YVRBaseRig.RigUpdateType
+  nameWithType: YVRBaseRig.RigUpdateType
+  fullName: YVR.Core.YVRBaseRig.RigUpdateType
+  spec.csharp:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.RigUpdateType
+    name: RigUpdateType
+    href: YVR.Core.YVRBaseRig.RigUpdateType.html
+  spec.vb:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.RigUpdateType
+    name: RigUpdateType
+    href: YVR.Core.YVRBaseRig.RigUpdateType.html
+- uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  commentId: T:YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  parent: YVR.Core
+  href: YVR.Core.YVRBaseRig.html
+  name: YVRBaseRig.YVRXRDeviceNode
+  nameWithType: YVRBaseRig.YVRXRDeviceNode
+  fullName: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  spec.csharp:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+    name: YVRXRDeviceNode
+    href: YVR.Core.YVRBaseRig.YVRXRDeviceNode.html
+  spec.vb:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+    name: YVRXRDeviceNode
+    href: YVR.Core.YVRBaseRig.YVRXRDeviceNode.html
+- uid: YVR.Core.YVRPlaneDetectorLocationsInternal
+  commentId: T:YVR.Core.YVRPlaneDetectorLocationsInternal
+  href: YVR.Core.YVRPlaneDetectorLocationsInternal.html
+  name: YVRPlaneDetectorLocationsInternal
+  nameWithType: YVRPlaneDetectorLocationsInternal
+  fullName: YVR.Core.YVRPlaneDetectorLocationsInternal
+- uid: YVR.Core.YVRPluginAndroid
+  commentId: T:YVR.Core.YVRPluginAndroid
+  parent: YVR.Core
+  href: YVR.Core.YVRPluginAndroid.html
+  name: YVRPluginAndroid
+  nameWithType: YVRPluginAndroid
+  fullName: YVR.Core.YVRPluginAndroid
+- uid: YVR.Core.YVRRect3D
+  commentId: T:YVR.Core.YVRRect3D
+  parent: YVR.Core
+  href: YVR.Core.YVRRect3D.html
+  name: YVRRect3D
+  nameWithType: YVRRect3D
+  fullName: YVR.Core.YVRRect3D
+- uid: YVR.Core.QuadShapeHandler
+  commentId: T:YVR.Core.QuadShapeHandler
+  href: YVR.Core.QuadShapeHandler.html
+  name: QuadShapeHandler
+  nameWithType: QuadShapeHandler
+  fullName: YVR.Core.QuadShapeHandler
+- uid: YVR.Core.YVRCameraRenderer
+  commentId: T:YVR.Core.YVRCameraRenderer
+  parent: YVR.Core
+  href: YVR.Core.YVRCameraRenderer.html
+  name: YVRCameraRenderer
+  nameWithType: YVRCameraRenderer
+  fullName: YVR.Core.YVRCameraRenderer
+- uid: YVR.Core.YVRCameraRenderer.EyeFov
+  commentId: T:YVR.Core.YVRCameraRenderer.EyeFov
+  parent: YVR.Core
+  href: YVR.Core.YVRCameraRenderer.html
+  name: YVRCameraRenderer.EyeFov
+  nameWithType: YVRCameraRenderer.EyeFov
+  fullName: YVR.Core.YVRCameraRenderer.EyeFov
+  spec.csharp:
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    href: YVR.Core.YVRCameraRenderer.html
+  - name: .
+  - uid: YVR.Core.YVRCameraRenderer.EyeFov
+    name: EyeFov
+    href: YVR.Core.YVRCameraRenderer.EyeFov.html
+  spec.vb:
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    href: YVR.Core.YVRCameraRenderer.html
+  - name: .
+  - uid: YVR.Core.YVRCameraRenderer.EyeFov
+    name: EyeFov
+    href: YVR.Core.YVRCameraRenderer.EyeFov.html
+- uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  commentId: T:YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  parent: YVR.Core
+  href: YVR.Core.YVRCameraRenderer.html
+  name: YVRCameraRenderer.EyeRenderDescription
+  nameWithType: YVRCameraRenderer.EyeRenderDescription
+  fullName: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+  spec.csharp:
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    href: YVR.Core.YVRCameraRenderer.html
+  - name: .
+  - uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+    name: EyeRenderDescription
+    href: YVR.Core.YVRCameraRenderer.EyeRenderDescription.html
+  spec.vb:
+  - uid: YVR.Core.YVRCameraRenderer
+    name: YVRCameraRenderer
+    href: YVR.Core.YVRCameraRenderer.html
+  - name: .
+  - uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
+    name: EyeRenderDescription
+    href: YVR.Core.YVRCameraRenderer.EyeRenderDescription.html
+- uid: YVR.Core.PassthroughColorLut
+  commentId: T:YVR.Core.PassthroughColorLut
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorLut.html
+  name: PassthroughColorLut
+  nameWithType: PassthroughColorLut
+  fullName: YVR.Core.PassthroughColorLut
+- uid: YVR.Core.Colorf
+  commentId: T:YVR.Core.Colorf
+  href: YVR.Core.Colorf.html
+  name: Colorf
+  nameWithType: Colorf
+  fullName: YVR.Core.Colorf
+- uid: YVR.Core.YVRBoundary2D
+  commentId: T:YVR.Core.YVRBoundary2D
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary2D.html
+  name: YVRBoundary2D
+  nameWithType: YVRBoundary2D
+  fullName: YVR.Core.YVRBoundary2D
+- uid: YVR.Core.YVRSpatialAnchorComponentStatus
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentStatus
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentStatus.html
+  name: YVRSpatialAnchorComponentStatus
+  nameWithType: YVRSpatialAnchorComponentStatus
+  fullName: YVR.Core.YVRSpatialAnchorComponentStatus
+- uid: YVR.Core.HandTrackingSupport
+  commentId: T:YVR.Core.HandTrackingSupport
+  parent: YVR.Core
+  href: YVR.Core.HandTrackingSupport.html
+  name: HandTrackingSupport
+  nameWithType: HandTrackingSupport
+  fullName: YVR.Core.HandTrackingSupport
+- uid: YVR.Core.YVRRenderLayerExtensions
+  commentId: T:YVR.Core.YVRRenderLayerExtensions
+  href: YVR.Core.YVRRenderLayerExtensions.html
+  name: YVRRenderLayerExtensions
+  nameWithType: YVRRenderLayerExtensions
+  fullName: YVR.Core.YVRRenderLayerExtensions
+- uid: YVR.Core.YVRPlaneChangeState
+  commentId: T:YVR.Core.YVRPlaneChangeState
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneChangeState.html
+  name: YVRPlaneChangeState
+  nameWithType: YVRPlaneChangeState
+  fullName: YVR.Core.YVRPlaneChangeState
+- uid: YVR.Core.YVRExtent2DInt
+  commentId: T:YVR.Core.YVRExtent2DInt
+  parent: YVR.Core
+  href: YVR.Core.YVRExtent2DInt.html
+  name: YVRExtent2DInt
+  nameWithType: YVRExtent2DInt
+  fullName: YVR.Core.YVRExtent2DInt
+- uid: YVR.Core.YVRAnchorSemanticLabel
+  commentId: T:YVR.Core.YVRAnchorSemanticLabel
+  parent: YVR.Core
+  href: YVR.Core.YVRAnchorSemanticLabel.html
+  name: YVRAnchorSemanticLabel
+  nameWithType: YVRAnchorSemanticLabel
+  fullName: YVR.Core.YVRAnchorSemanticLabel
+- uid: YVR.Core.ILayerShapeHandler
+  commentId: T:YVR.Core.ILayerShapeHandler
+  parent: YVR.Core
+  href: YVR.Core.ILayerShapeHandler.html
+  name: ILayerShapeHandler
+  nameWithType: ILayerShapeHandler
+  fullName: YVR.Core.ILayerShapeHandler
+- uid: YVR.Core.YVRPlaneDetectorSemanticType
+  commentId: T:YVR.Core.YVRPlaneDetectorSemanticType
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorSemanticType.html
+  name: YVRPlaneDetectorSemanticType
+  nameWithType: YVRPlaneDetectorSemanticType
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.XRSize
+  commentId: T:YVR.Core.XRSize
+  parent: YVR.Core
+  href: YVR.Core.XRSize.html
+  name: XRSize
+  nameWithType: XRSize
+  fullName: YVR.Core.XRSize
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  parent: YVR.Core
+  href: YVR.Core.XRPose.html
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+- uid: YVR.Core.IYVRLayerHandle
+  commentId: T:YVR.Core.IYVRLayerHandle
+  parent: YVR.Core
+  href: YVR.Core.IYVRLayerHandle.html
+  name: IYVRLayerHandle
+  nameWithType: IYVRLayerHandle
+  fullName: YVR.Core.IYVRLayerHandle
+- uid: YVR.Core.YVRMeshBlockChangeState
+  commentId: T:YVR.Core.YVRMeshBlockChangeState
+  parent: YVR.Core
+  href: YVR.Core.YVRMeshBlockChangeState.html
+  name: YVRMeshBlockChangeState
+  nameWithType: YVRMeshBlockChangeState
+  fullName: YVR.Core.YVRMeshBlockChangeState
+- uid: YVR.Core.YVRSpatialAnchor
+  commentId: T:YVR.Core.YVRSpatialAnchor
+  href: YVR.Core.YVRSpatialAnchor.html
+  name: YVRSpatialAnchor
+  nameWithType: YVRSpatialAnchor
+  fullName: YVR.Core.YVRSpatialAnchor
+- uid: YVR.Core.ExtendUsages
+  commentId: T:YVR.Core.ExtendUsages
+  href: YVR.Core.ExtendUsages.html
+  name: ExtendUsages
+  nameWithType: ExtendUsages
+  fullName: YVR.Core.ExtendUsages
+- uid: YVR.Core.EyeSide
+  commentId: T:YVR.Core.EyeSide
+  parent: YVR.Core
+  href: YVR.Core.EyeSide.html
+  name: EyeSide
+  nameWithType: EyeSide
+  fullName: YVR.Core.EyeSide
+- uid: YVR.Core.YVRHandUtility
+  commentId: T:YVR.Core.YVRHandUtility
+  parent: YVR.Core
+  href: YVR.Core.YVRHandUtility.html
+  name: YVRHandUtility
+  nameWithType: YVRHandUtility
+  fullName: YVR.Core.YVRHandUtility
+- uid: YVR.Core.YVRCompositeLayer
+  commentId: T:YVR.Core.YVRCompositeLayer
+  parent: YVR.Core
+  href: YVR.Core.YVRCompositeLayer.html
+  name: YVRCompositeLayer
+  nameWithType: YVRCompositeLayer
+  fullName: YVR.Core.YVRCompositeLayer
+- uid: YVR.Core.YVRPlaneDetectorLocation
+  commentId: T:YVR.Core.YVRPlaneDetectorLocation
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorLocation.html
+  name: YVRPlaneDetectorLocation
+  nameWithType: YVRPlaneDetectorLocation
+  fullName: YVR.Core.YVRPlaneDetectorLocation
+- uid: YVR.Core.YVRPlaneDetectorMgr
+  commentId: T:YVR.Core.YVRPlaneDetectorMgr
+  href: YVR.Core.YVRPlaneDetectorMgr.html
+  name: YVRPlaneDetectorMgr
+  nameWithType: YVRPlaneDetectorMgr
+  fullName: YVR.Core.YVRPlaneDetectorMgr
+- uid: YVR.Core.YVRRect2D
+  commentId: T:YVR.Core.YVRRect2D
+  parent: YVR.Core
+  href: YVR.Core.YVRRect2D.html
+  name: YVRRect2D
+  nameWithType: YVRRect2D
+  fullName: YVR.Core.YVRRect2D
+- uid: YVR.Core.YVRPhysicsRaycaster
+  commentId: T:YVR.Core.YVRPhysicsRaycaster
+  href: YVR.Core.YVRPhysicsRaycaster.html
+  name: YVRPhysicsRaycaster
+  nameWithType: YVRPhysicsRaycaster
+  fullName: YVR.Core.YVRPhysicsRaycaster
+- uid: YVR.Core.YVRSpatialAnchorSaveInfo
+  commentId: T:YVR.Core.YVRSpatialAnchorSaveInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorSaveInfo.html
+  name: YVRSpatialAnchorSaveInfo
+  nameWithType: YVRSpatialAnchorSaveInfo
+  fullName: YVR.Core.YVRSpatialAnchorSaveInfo
+- uid: YVR.Core.YVRPlaneDetectorState
+  commentId: T:YVR.Core.YVRPlaneDetectorState
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorState.html
+  name: YVRPlaneDetectorState
+  nameWithType: YVRPlaneDetectorState
+  fullName: YVR.Core.YVRPlaneDetectorState
+- uid: YVR.Core.YVRHandManager
+  commentId: T:YVR.Core.YVRHandManager
+  parent: YVR.Core
+  href: YVR.Core.YVRHandManager.html
+  name: YVRHandManager
+  nameWithType: YVRHandManager
+  fullName: YVR.Core.YVRHandManager
+- uid: YVR.Core.PassthroughStyle
+  commentId: T:YVR.Core.PassthroughStyle
+  parent: YVR.Core
+  href: YVR.Core.PassthroughStyle.html
+  name: PassthroughStyle
+  nameWithType: PassthroughStyle
+  fullName: YVR.Core.PassthroughStyle
+- uid: YVR.Core.YVRSceneAnchor
+  commentId: T:YVR.Core.YVRSceneAnchor
+  href: YVR.Core.YVRSceneAnchor.html
+  name: YVRSceneAnchor
+  nameWithType: YVRSceneAnchor
+  fullName: YVR.Core.YVRSceneAnchor
+- uid: YVR.Core.PassthroughColorMapType
+  commentId: T:YVR.Core.PassthroughColorMapType
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorMapType.html
+  name: PassthroughColorMapType
+  nameWithType: PassthroughColorMapType
+  fullName: YVR.Core.PassthroughColorMapType
+- uid: YVR.Core.YVRSDKSettingAsset
+  commentId: T:YVR.Core.YVRSDKSettingAsset
+  parent: YVR.Core
+  href: YVR.Core.YVRSDKSettingAsset.html
+  name: YVRSDKSettingAsset
+  nameWithType: YVRSDKSettingAsset
+  fullName: YVR.Core.YVRSDKSettingAsset
+- uid: YVR.Core.YVRCompositeLayerEditor
+  commentId: T:YVR.Core.YVRCompositeLayerEditor
+  href: YVR.Core.YVRCompositeLayerEditor.html
+  name: YVRCompositeLayerEditor
+  nameWithType: YVRCompositeLayerEditor
+  fullName: YVR.Core.YVRCompositeLayerEditor
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+memberLayout: SeparatePages

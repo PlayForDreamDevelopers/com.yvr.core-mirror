@@ -1,0 +1,1068 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.PassthroughColorLut
+  commentId: T:YVR.Core.PassthroughColorLut
+  id: PassthroughColorLut
+  parent: YVR.Core
+  children:
+  - YVR.Core.PassthroughColorLut.#ctor(System.Byte[],YVR.Core.PassthroughColorLutChannels)
+  - YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Color32[],YVR.Core.PassthroughColorLutChannels)
+  - YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Color[],YVR.Core.PassthroughColorLutChannels)
+  - YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Texture2D,System.Boolean)
+  - YVR.Core.PassthroughColorLut.Channels
+  - YVR.Core.PassthroughColorLut.Dispose
+  - YVR.Core.PassthroughColorLut.Finalize
+  - YVR.Core.PassthroughColorLut.IsTextureSupported(UnityEngine.Texture2D,System.String@)
+  - YVR.Core.PassthroughColorLut.IsValid
+  - YVR.Core.PassthroughColorLut.Resolution
+  - YVR.Core.PassthroughColorLut.UpdateFrom(System.Byte[])
+  - YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color32[])
+  - YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color[])
+  - YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Texture2D,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorLut
+  nameWithType: PassthroughColorLut
+  fullName: YVR.Core.PassthroughColorLut
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PassthroughColorLut
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public class PassthroughColorLut : IDisposable'
+    content.vb: Public Class PassthroughColorLut Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.PassthroughColorLut.Resolution
+  commentId: P:YVR.Core.PassthroughColorLut.Resolution
+  id: Resolution
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: Resolution
+  nameWithType: PassthroughColorLut.Resolution
+  fullName: YVR.Core.PassthroughColorLut.Resolution
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Resolution
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    The size of one edge of the color cube spanned by the LUT. For example, a resolution of 16
+
+    means that the LUT encompasses 16 * 16 * 16 colors.
+
+    This property is defined at construction time and cannot be modified.
+  example: []
+  syntax:
+    content: public uint Resolution { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property Resolution As UInteger
+  overload: YVR.Core.PassthroughColorLut.Resolution*
+- uid: YVR.Core.PassthroughColorLut.Channels
+  commentId: P:YVR.Core.PassthroughColorLut.Channels
+  id: Channels
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: PassthroughColorLut.Channels
+  fullName: YVR.Core.PassthroughColorLut.Channels
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Channels
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 27
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    The color channels contained in each of the resulting colors. Can be `ColorChannels.Rgb` or
+
+    `ColorChannels.Rgba`.
+
+    This property is defined at construction time and cannot be modified.
+  example: []
+  syntax:
+    content: public PassthroughColorLutChannels Channels { get; }
+    parameters: []
+    return:
+      type: YVR.Core.PassthroughColorLutChannels
+    content.vb: Public Property Channels As PassthroughColorLutChannels
+  overload: YVR.Core.PassthroughColorLut.Channels*
+- uid: YVR.Core.PassthroughColorLut.IsValid
+  commentId: P:YVR.Core.PassthroughColorLut.IsValid
+  id: IsValid
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: PassthroughColorLut.IsValid
+  fullName: YVR.Core.PassthroughColorLut.IsValid
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsValid
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool IsValid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsValid As Boolean
+  overload: YVR.Core.PassthroughColorLut.IsValid*
+- uid: YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Texture2D,System.Boolean)
+  commentId: M:YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Texture2D,System.Boolean)
+  id: '#ctor(UnityEngine.Texture2D,System.Boolean)'
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorLut(Texture2D, bool)
+  nameWithType: PassthroughColorLut.PassthroughColorLut(Texture2D, bool)
+  fullName: YVR.Core.PassthroughColorLut.PassthroughColorLut(UnityEngine.Texture2D, bool)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 48
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Initialize the color LUT data from a texture. Color channels are inferred from texture format.
+
+    Use `UpdateFrom()` to update LUT data after construction.
+  example: []
+  syntax:
+    content: public PassthroughColorLut(Texture2D initialLutTexture, bool flipY = true)
+    parameters:
+    - id: initialLutTexture
+      type: UnityEngine.Texture2D
+      description: Texture to initialize the LUT from
+    - id: flipY
+      type: System.Boolean
+      description: >-
+        Flag to inform whether the LUT texture should be flipped vertically. This is needed for LUT images which have color (0, 0, 0)
+            in the top-left corner. Some color grading systems, e.g. Unity post-processing, have color (0, 0, 0) in the bottom-left corner,
+            in which case flipping is not needed.
+    content.vb: Public Sub New(initialLutTexture As Texture2D, flipY As Boolean = True)
+  overload: YVR.Core.PassthroughColorLut.#ctor*
+  nameWithType.vb: PassthroughColorLut.New(Texture2D, Boolean)
+  fullName.vb: YVR.Core.PassthroughColorLut.New(UnityEngine.Texture2D, Boolean)
+  name.vb: New(Texture2D, Boolean)
+- uid: YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Color[],YVR.Core.PassthroughColorLutChannels)
+  commentId: M:YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Color[],YVR.Core.PassthroughColorLutChannels)
+  id: '#ctor(UnityEngine.Color[],YVR.Core.PassthroughColorLutChannels)'
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorLut(Color[], PassthroughColorLutChannels)
+  nameWithType: PassthroughColorLut.PassthroughColorLut(Color[], PassthroughColorLutChannels)
+  fullName: YVR.Core.PassthroughColorLut.PassthroughColorLut(UnityEngine.Color[], YVR.Core.PassthroughColorLutChannels)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 63
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Set the color LUT data from an array of `Color`. The resolution is
+
+    inferred from the array size, thus the size needs to be a result of
+
+    `resolution = size ^ 3 * numColorChannels`, where `numColorChannels` depends
+
+    on `channels`.
+
+    Use `UpdateFrom()` to update color LUT data after construction.
+  example: []
+  syntax:
+    content: public PassthroughColorLut(Color[] initialColorLut, PassthroughColorLutChannels channels)
+    parameters:
+    - id: initialColorLut
+      type: UnityEngine.Color[]
+      description: Color array to initialize the LUT from
+    - id: channels
+      type: YVR.Core.PassthroughColorLutChannels
+      description: Color channels for one color LUT entry
+    content.vb: Public Sub New(initialColorLut As Color(), channels As PassthroughColorLutChannels)
+  overload: YVR.Core.PassthroughColorLut.#ctor*
+  nameWithType.vb: PassthroughColorLut.New(Color(), PassthroughColorLutChannels)
+  fullName.vb: YVR.Core.PassthroughColorLut.New(UnityEngine.Color(), YVR.Core.PassthroughColorLutChannels)
+  name.vb: New(Color(), PassthroughColorLutChannels)
+- uid: YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Color32[],YVR.Core.PassthroughColorLutChannels)
+  commentId: M:YVR.Core.PassthroughColorLut.#ctor(UnityEngine.Color32[],YVR.Core.PassthroughColorLutChannels)
+  id: '#ctor(UnityEngine.Color32[],YVR.Core.PassthroughColorLutChannels)'
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorLut(Color32[], PassthroughColorLutChannels)
+  nameWithType: PassthroughColorLut.PassthroughColorLut(Color32[], PassthroughColorLutChannels)
+  fullName: YVR.Core.PassthroughColorLut.PassthroughColorLut(UnityEngine.Color32[], YVR.Core.PassthroughColorLutChannels)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 78
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Set the color LUT data from an array of `Color`. The resolution is
+
+    inferred from the array size, thus the size needs to be a result of
+
+    `resolution = size ^ 3 * numColorChannels`, where `numColorChannels` depends
+
+    on `channels`.
+
+    Use `UpdateFrom()` to update color LUT data after construction.
+  example: []
+  syntax:
+    content: public PassthroughColorLut(Color32[] initialColorLut, PassthroughColorLutChannels channels)
+    parameters:
+    - id: initialColorLut
+      type: UnityEngine.Color32[]
+      description: Color32 array to initialize the LUT from
+    - id: channels
+      type: YVR.Core.PassthroughColorLutChannels
+      description: Color channels for one color LUT entry
+    content.vb: Public Sub New(initialColorLut As Color32(), channels As PassthroughColorLutChannels)
+  overload: YVR.Core.PassthroughColorLut.#ctor*
+  nameWithType.vb: PassthroughColorLut.New(Color32(), PassthroughColorLutChannels)
+  fullName.vb: YVR.Core.PassthroughColorLut.New(UnityEngine.Color32(), YVR.Core.PassthroughColorLutChannels)
+  name.vb: New(Color32(), PassthroughColorLutChannels)
+- uid: YVR.Core.PassthroughColorLut.#ctor(System.Byte[],YVR.Core.PassthroughColorLutChannels)
+  commentId: M:YVR.Core.PassthroughColorLut.#ctor(System.Byte[],YVR.Core.PassthroughColorLutChannels)
+  id: '#ctor(System.Byte[],YVR.Core.PassthroughColorLutChannels)'
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorLut(byte[], PassthroughColorLutChannels)
+  nameWithType: PassthroughColorLut.PassthroughColorLut(byte[], PassthroughColorLutChannels)
+  fullName: YVR.Core.PassthroughColorLut.PassthroughColorLut(byte[], YVR.Core.PassthroughColorLutChannels)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 93
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Set the color LUT data from an array of `Color`. The resolution is
+
+    inferred from the array size, thus the size needs to be a result of
+
+    `resolution = size ^ 3 * numColorChannels`, where `numColorChannels` depends
+
+    on `channels`.
+
+    Use `UpdateFrom()` to update color LUT data after construction.
+  example: []
+  syntax:
+    content: public PassthroughColorLut(byte[] initialColorLut, PassthroughColorLutChannels channels)
+    parameters:
+    - id: initialColorLut
+      type: System.Byte[]
+      description: Color byte array to initialize the LUT from
+    - id: channels
+      type: YVR.Core.PassthroughColorLutChannels
+      description: Color channels for one color LUT entry
+    content.vb: Public Sub New(initialColorLut As Byte(), channels As PassthroughColorLutChannels)
+  overload: YVR.Core.PassthroughColorLut.#ctor*
+  nameWithType.vb: PassthroughColorLut.New(Byte(), PassthroughColorLutChannels)
+  fullName.vb: YVR.Core.PassthroughColorLut.New(Byte(), YVR.Core.PassthroughColorLutChannels)
+  name.vb: New(Byte(), PassthroughColorLutChannels)
+- uid: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color[])
+  commentId: M:YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color[])
+  id: UpdateFrom(UnityEngine.Color[])
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: UpdateFrom(Color[])
+  nameWithType: PassthroughColorLut.UpdateFrom(Color[])
+  fullName: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UpdateFrom
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 105
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Updates color LUT data from an array of `Color`.
+
+    The resolution (number of colors) must match the original specification at construction
+
+    time. The alpha value is ignored if `ColorChannels` was set to `Rgb`.
+  example: []
+  syntax:
+    content: public void UpdateFrom(Color[] colors)
+    parameters:
+    - id: colors
+      type: UnityEngine.Color[]
+      description: Color array
+    content.vb: Public Sub UpdateFrom(colors As Color())
+  overload: YVR.Core.PassthroughColorLut.UpdateFrom*
+  nameWithType.vb: PassthroughColorLut.UpdateFrom(Color())
+  fullName.vb: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color())
+  name.vb: UpdateFrom(Color())
+- uid: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color32[])
+  commentId: M:YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color32[])
+  id: UpdateFrom(UnityEngine.Color32[])
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: UpdateFrom(Color32[])
+  nameWithType: PassthroughColorLut.UpdateFrom(Color32[])
+  fullName: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color32[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UpdateFrom
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 120
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Updates color LUT data from an array of `Color32`.
+
+    The resolution (number of colors) must match the original specification at construction
+
+    time. The alpha value is ignored if `ColorChannels` was set to `Rgb`.
+  example: []
+  syntax:
+    content: public void UpdateFrom(Color32[] colors)
+    parameters:
+    - id: colors
+      type: UnityEngine.Color32[]
+      description: Color array
+    content.vb: Public Sub UpdateFrom(colors As Color32())
+  overload: YVR.Core.PassthroughColorLut.UpdateFrom*
+  nameWithType.vb: PassthroughColorLut.UpdateFrom(Color32())
+  fullName.vb: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Color32())
+  name.vb: UpdateFrom(Color32())
+- uid: YVR.Core.PassthroughColorLut.UpdateFrom(System.Byte[])
+  commentId: M:YVR.Core.PassthroughColorLut.UpdateFrom(System.Byte[])
+  id: UpdateFrom(System.Byte[])
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: UpdateFrom(byte[])
+  nameWithType: PassthroughColorLut.UpdateFrom(byte[])
+  fullName: YVR.Core.PassthroughColorLut.UpdateFrom(byte[])
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UpdateFrom
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 136
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Updates color LUT data from an array of RGB(A) values.
+
+    The resolution (number of colors) must match the original specification at construction
+
+    time. The expected number of bytes per color is 3 if `ColorChannels` was set to `Rgb`, 4 if
+
+    it was set to `Rgba`.
+  example: []
+  syntax:
+    content: public void UpdateFrom(byte[] colors)
+    parameters:
+    - id: colors
+      type: System.Byte[]
+      description: Array of consecutive RGB(A) color tuples
+    content.vb: Public Sub UpdateFrom(colors As Byte())
+  overload: YVR.Core.PassthroughColorLut.UpdateFrom*
+  nameWithType.vb: PassthroughColorLut.UpdateFrom(Byte())
+  fullName.vb: YVR.Core.PassthroughColorLut.UpdateFrom(Byte())
+  name.vb: UpdateFrom(Byte())
+- uid: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Texture2D,System.Boolean)
+  commentId: M:YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Texture2D,System.Boolean)
+  id: UpdateFrom(UnityEngine.Texture2D,System.Boolean)
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: UpdateFrom(Texture2D, bool)
+  nameWithType: PassthroughColorLut.UpdateFrom(Texture2D, bool)
+  fullName: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Texture2D, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UpdateFrom
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 153
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Update color LUT data from a texture.
+
+    Color channels and resolution must match the original.
+  example: []
+  syntax:
+    content: public void UpdateFrom(Texture2D lutTexture, bool flipY = true)
+    parameters:
+    - id: lutTexture
+      type: UnityEngine.Texture2D
+      description: Color LUT texture
+    - id: flipY
+      type: System.Boolean
+      description: >-
+        Flag to inform whether the LUT texture should be flipped vertically. This is needed for LUT images which have color (0, 0, 0)
+            in the top-left corner. Some color grading systems, e.g. Unity post-processing, have color (0, 0, 0) in the bottom-left corner,
+            in which case flipping is not needed.
+    content.vb: Public Sub UpdateFrom(lutTexture As Texture2D, flipY As Boolean = True)
+  overload: YVR.Core.PassthroughColorLut.UpdateFrom*
+  nameWithType.vb: PassthroughColorLut.UpdateFrom(Texture2D, Boolean)
+  fullName.vb: YVR.Core.PassthroughColorLut.UpdateFrom(UnityEngine.Texture2D, Boolean)
+  name.vb: UpdateFrom(Texture2D, Boolean)
+- uid: YVR.Core.PassthroughColorLut.Dispose
+  commentId: M:YVR.Core.PassthroughColorLut.Dispose
+  id: Dispose
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: PassthroughColorLut.Dispose()
+  fullName: YVR.Core.PassthroughColorLut.Dispose()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Dispose
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 162
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: YVR.Core.PassthroughColorLut.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: YVR.Core.PassthroughColorLut.IsTextureSupported(UnityEngine.Texture2D,System.String@)
+  commentId: M:YVR.Core.PassthroughColorLut.IsTextureSupported(UnityEngine.Texture2D,System.String@)
+  id: IsTextureSupported(UnityEngine.Texture2D,System.String@)
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: IsTextureSupported(Texture2D, out string)
+  nameWithType: PassthroughColorLut.IsTextureSupported(Texture2D, out string)
+  fullName: YVR.Core.PassthroughColorLut.IsTextureSupported(UnityEngine.Texture2D, out string)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsTextureSupported
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 182
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Check if the given texture is formatted correctly for the use as color LUT.
+  example: []
+  syntax:
+    content: public static bool IsTextureSupported(Texture2D texture, out string errorMessage)
+    parameters:
+    - id: texture
+      type: UnityEngine.Texture2D
+      description: Texture to check
+    - id: errorMessage
+      type: System.String
+      description: Error message describing acceptance fail reason
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsTextureSupported(texture As Texture2D, errorMessage As String) As Boolean
+  overload: YVR.Core.PassthroughColorLut.IsTextureSupported*
+  nameWithType.vb: PassthroughColorLut.IsTextureSupported(Texture2D, String)
+  fullName.vb: YVR.Core.PassthroughColorLut.IsTextureSupported(UnityEngine.Texture2D, String)
+  name.vb: IsTextureSupported(Texture2D, String)
+- uid: YVR.Core.PassthroughColorLut.Finalize
+  commentId: M:YVR.Core.PassthroughColorLut.Finalize
+  id: Finalize
+  parent: YVR.Core.PassthroughColorLut
+  langs:
+  - csharp
+  - vb
+  name: ~PassthroughColorLut()
+  nameWithType: PassthroughColorLut.~PassthroughColorLut()
+  fullName: YVR.Core.PassthroughColorLut.~PassthroughColorLut()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Finalize
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
+    startLine: 444
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: protected ~PassthroughColorLut()
+    content.vb: 'Protected '
+  overload: YVR.Core.PassthroughColorLut.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.PassthroughColorLut.Resolution*
+  commentId: Overload:YVR.Core.PassthroughColorLut.Resolution
+  href: YVR.Core.PassthroughColorLut.Resolution.html#YVR_Core_PassthroughColorLut_Resolution
+  name: Resolution
+  nameWithType: PassthroughColorLut.Resolution
+  fullName: YVR.Core.PassthroughColorLut.Resolution
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: YVR.Core.PassthroughColorLut.Channels*
+  commentId: Overload:YVR.Core.PassthroughColorLut.Channels
+  href: YVR.Core.PassthroughColorLut.Channels.html#YVR_Core_PassthroughColorLut_Channels
+  name: Channels
+  nameWithType: PassthroughColorLut.Channels
+  fullName: YVR.Core.PassthroughColorLut.Channels
+- uid: YVR.Core.PassthroughColorLutChannels
+  commentId: T:YVR.Core.PassthroughColorLutChannels
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorLutChannels.html
+  name: PassthroughColorLutChannels
+  nameWithType: PassthroughColorLutChannels
+  fullName: YVR.Core.PassthroughColorLutChannels
+- uid: YVR.Core.PassthroughColorLut.IsValid*
+  commentId: Overload:YVR.Core.PassthroughColorLut.IsValid
+  href: YVR.Core.PassthroughColorLut.IsValid.html#YVR_Core_PassthroughColorLut_IsValid
+  name: IsValid
+  nameWithType: PassthroughColorLut.IsValid
+  fullName: YVR.Core.PassthroughColorLut.IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.PassthroughColorLut.#ctor*
+  commentId: Overload:YVR.Core.PassthroughColorLut.#ctor
+  href: YVR.Core.PassthroughColorLut.-ctor.html#YVR_Core_PassthroughColorLut__ctor_UnityEngine_Texture2D_System_Boolean_
+  name: PassthroughColorLut
+  nameWithType: PassthroughColorLut.PassthroughColorLut
+  fullName: YVR.Core.PassthroughColorLut.PassthroughColorLut
+  nameWithType.vb: PassthroughColorLut.New
+  fullName.vb: YVR.Core.PassthroughColorLut.New
+  name.vb: New
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Color[]
+  isExternal: true
+  name: Color[]
+  nameWithType: Color[]
+  fullName: UnityEngine.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: UnityEngine.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Color32[]
+  isExternal: true
+  name: Color32[]
+  nameWithType: Color32[]
+  fullName: UnityEngine.Color32[]
+  nameWithType.vb: Color32()
+  fullName.vb: UnityEngine.Color32()
+  name.vb: Color32()
+  spec.csharp:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: YVR.Core.PassthroughColorLut.UpdateFrom*
+  commentId: Overload:YVR.Core.PassthroughColorLut.UpdateFrom
+  href: YVR.Core.PassthroughColorLut.UpdateFrom.html#YVR_Core_PassthroughColorLut_UpdateFrom_UnityEngine_Color___
+  name: UpdateFrom
+  nameWithType: PassthroughColorLut.UpdateFrom
+  fullName: YVR.Core.PassthroughColorLut.UpdateFrom
+- uid: YVR.Core.PassthroughColorLut.Dispose*
+  commentId: Overload:YVR.Core.PassthroughColorLut.Dispose
+  href: YVR.Core.PassthroughColorLut.Dispose.html#YVR_Core_PassthroughColorLut_Dispose
+  name: Dispose
+  nameWithType: PassthroughColorLut.Dispose
+  fullName: YVR.Core.PassthroughColorLut.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: YVR.Core.PassthroughColorLut.IsTextureSupported*
+  commentId: Overload:YVR.Core.PassthroughColorLut.IsTextureSupported
+  href: YVR.Core.PassthroughColorLut.IsTextureSupported.html#YVR_Core_PassthroughColorLut_IsTextureSupported_UnityEngine_Texture2D_System_String__
+  name: IsTextureSupported
+  nameWithType: PassthroughColorLut.IsTextureSupported
+  fullName: YVR.Core.PassthroughColorLut.IsTextureSupported
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: YVR.Core.PassthroughColorLut.Finalize*
+  commentId: Overload:YVR.Core.PassthroughColorLut.Finalize
+  href: YVR.Core.PassthroughColorLut.Finalize.html#YVR_Core_PassthroughColorLut_Finalize
+  name: ~PassthroughColorLut
+  nameWithType: PassthroughColorLut.~PassthroughColorLut
+  fullName: YVR.Core.PassthroughColorLut.~PassthroughColorLut
+  spec.csharp:
+  - name: "~"
+  - uid: YVR.Core.PassthroughColorLut.Finalize*
+    name: PassthroughColorLut
+    href: YVR.Core.PassthroughColorLut.Finalize.html#YVR_Core_PassthroughColorLut_Finalize
+memberLayout: SeparatePages

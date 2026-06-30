@@ -1,0 +1,666 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRBoundary
+  commentId: T:YVR.Core.YVRBoundary
+  id: YVRBoundary
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRBoundary.GetConfigured
+  - YVR.Core.YVRBoundary.GetDimensions
+  - YVR.Core.YVRBoundary.GetGeometry
+  - YVR.Core.YVRBoundary.GetVisible
+  - YVR.Core.YVRBoundary.SetVisible(System.Boolean)
+  - YVR.Core.YVRBoundary.TestNode(YVR.Core.YVRBoundary.BoundaryNode)
+  - YVR.Core.YVRBoundary.TestPoint(UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: YVRBoundary
+  nameWithType: YVRBoundary
+  fullName: YVR.Core.YVRBoundary
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRBoundary
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Provides access to the boundary system.
+  example: []
+  syntax:
+    content: public class YVRBoundary
+    content.vb: Public Class YVRBoundary
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRBoundary.GetConfigured
+  commentId: M:YVR.Core.YVRBoundary.GetConfigured
+  id: GetConfigured
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: GetConfigured()
+  nameWithType: YVRBoundary.GetConfigured()
+  fullName: YVR.Core.YVRBoundary.GetConfigured()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetConfigured
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 60
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Returns true if the boundary system is currently configured with valid boundary data.
+  example: []
+  syntax:
+    content: public bool GetConfigured()
+    return:
+      type: System.Boolean
+      description: Is the boundary data valid
+    content.vb: Public Function GetConfigured() As Boolean
+  overload: YVR.Core.YVRBoundary.GetConfigured*
+- uid: YVR.Core.YVRBoundary.TestNode(YVR.Core.YVRBoundary.BoundaryNode)
+  commentId: M:YVR.Core.YVRBoundary.TestNode(YVR.Core.YVRBoundary.BoundaryNode)
+  id: TestNode(YVR.Core.YVRBoundary.BoundaryNode)
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: TestNode(BoundaryNode)
+  nameWithType: YVRBoundary.TestNode(YVRBoundary.BoundaryNode)
+  fullName: YVR.Core.YVRBoundary.TestNode(YVR.Core.YVRBoundary.BoundaryNode)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TestNode
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 66
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Returns the results of testing a tracked node
+  example: []
+  syntax:
+    content: public YVRBoundary.BoundaryTestResult TestNode(YVRBoundary.BoundaryNode node)
+    parameters:
+    - id: node
+      type: YVR.Core.YVRBoundary.BoundaryNode
+    return:
+      type: YVR.Core.YVRBoundary.BoundaryTestResult
+      description: The test results of boundary system queries.
+    content.vb: Public Function TestNode(node As YVRBoundary.BoundaryNode) As YVRBoundary.BoundaryTestResult
+  overload: YVR.Core.YVRBoundary.TestNode*
+- uid: YVR.Core.YVRBoundary.TestPoint(UnityEngine.Vector3)
+  commentId: M:YVR.Core.YVRBoundary.TestPoint(UnityEngine.Vector3)
+  id: TestPoint(UnityEngine.Vector3)
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: TestPoint(Vector3)
+  nameWithType: YVRBoundary.TestPoint(Vector3)
+  fullName: YVR.Core.YVRBoundary.TestPoint(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TestPoint
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 77
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Returns the results of testing a 3d point
+  example: []
+  syntax:
+    content: public YVRBoundary.BoundaryTestResult TestPoint(Vector3 point)
+    parameters:
+    - id: point
+      type: UnityEngine.Vector3
+    return:
+      type: YVR.Core.YVRBoundary.BoundaryTestResult
+      description: The test results of boundary system queries.
+    content.vb: Public Function TestPoint(point As Vector3) As YVRBoundary.BoundaryTestResult
+  overload: YVR.Core.YVRBoundary.TestPoint*
+- uid: YVR.Core.YVRBoundary.GetDimensions
+  commentId: M:YVR.Core.YVRBoundary.GetDimensions
+  id: GetDimensions
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: GetDimensions()
+  nameWithType: YVRBoundary.GetDimensions()
+  fullName: YVR.Core.YVRBoundary.GetDimensions()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetDimensions
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 87
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Returns a vector that indicates the spatial dimensions
+  example: []
+  syntax:
+    content: public Vector3 GetDimensions()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function GetDimensions() As Vector3
+  overload: YVR.Core.YVRBoundary.GetDimensions*
+- uid: YVR.Core.YVRBoundary.GetVisible
+  commentId: M:YVR.Core.YVRBoundary.GetVisible
+  id: GetVisible
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: GetVisible()
+  nameWithType: YVRBoundary.GetVisible()
+  fullName: YVR.Core.YVRBoundary.GetVisible()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetVisible
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 92
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Returns true if the boundary system is currently visible.
+  example: []
+  syntax:
+    content: public bool GetVisible()
+    return:
+      type: System.Boolean
+    content.vb: Public Function GetVisible() As Boolean
+  overload: YVR.Core.YVRBoundary.GetVisible*
+- uid: YVR.Core.YVRBoundary.SetVisible(System.Boolean)
+  commentId: M:YVR.Core.YVRBoundary.SetVisible(System.Boolean)
+  id: SetVisible(System.Boolean)
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: SetVisible(bool)
+  nameWithType: YVRBoundary.SetVisible(bool)
+  fullName: YVR.Core.YVRBoundary.SetVisible(bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetVisible
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 97
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Requests the boundary system visibility to be set to the specified value.
+  example: []
+  syntax:
+    content: public void SetVisible(bool visible)
+    parameters:
+    - id: visible
+      type: System.Boolean
+    content.vb: Public Sub SetVisible(visible As Boolean)
+  overload: YVR.Core.YVRBoundary.SetVisible*
+  nameWithType.vb: YVRBoundary.SetVisible(Boolean)
+  fullName.vb: YVR.Core.YVRBoundary.SetVisible(Boolean)
+  name.vb: SetVisible(Boolean)
+- uid: YVR.Core.YVRBoundary.GetGeometry
+  commentId: M:YVR.Core.YVRBoundary.GetGeometry
+  id: GetGeometry
+  parent: YVR.Core.YVRBoundary
+  langs:
+  - csharp
+  - vb
+  name: GetGeometry()
+  nameWithType: YVRBoundary.GetGeometry()
+  fullName: YVR.Core.YVRBoundary.GetGeometry()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetGeometry
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 106
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Returns an array of 3d points (in clockwise order) that define the specified boundary type.
+
+    The points must add the offset of the camera root node when moving the root node.
+  example: []
+  syntax:
+    content: public Vector3[] GetGeometry()
+    return:
+      type: UnityEngine.Vector3[]
+    content.vb: Public Function GetGeometry() As Vector3()
+  overload: YVR.Core.YVRBoundary.GetGeometry*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRBoundary.GetConfigured*
+  commentId: Overload:YVR.Core.YVRBoundary.GetConfigured
+  href: YVR.Core.YVRBoundary.GetConfigured.html#YVR_Core_YVRBoundary_GetConfigured
+  name: GetConfigured
+  nameWithType: YVRBoundary.GetConfigured
+  fullName: YVR.Core.YVRBoundary.GetConfigured
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRBoundary.TestNode*
+  commentId: Overload:YVR.Core.YVRBoundary.TestNode
+  href: YVR.Core.YVRBoundary.TestNode.html#YVR_Core_YVRBoundary_TestNode_YVR_Core_YVRBoundary_BoundaryNode_
+  name: TestNode
+  nameWithType: YVRBoundary.TestNode
+  fullName: YVR.Core.YVRBoundary.TestNode
+- uid: YVR.Core.YVRBoundary.BoundaryNode
+  commentId: T:YVR.Core.YVRBoundary.BoundaryNode
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary.html
+  name: YVRBoundary.BoundaryNode
+  nameWithType: YVRBoundary.BoundaryNode
+  fullName: YVR.Core.YVRBoundary.BoundaryNode
+  spec.csharp:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: BoundaryNode
+    href: YVR.Core.YVRBoundary.BoundaryNode.html
+  spec.vb:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: BoundaryNode
+    href: YVR.Core.YVRBoundary.BoundaryNode.html
+- uid: YVR.Core.YVRBoundary.BoundaryTestResult
+  commentId: T:YVR.Core.YVRBoundary.BoundaryTestResult
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary.html
+  name: YVRBoundary.BoundaryTestResult
+  nameWithType: YVRBoundary.BoundaryTestResult
+  fullName: YVR.Core.YVRBoundary.BoundaryTestResult
+  spec.csharp:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryTestResult
+    name: BoundaryTestResult
+    href: YVR.Core.YVRBoundary.BoundaryTestResult.html
+  spec.vb:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryTestResult
+    name: BoundaryTestResult
+    href: YVR.Core.YVRBoundary.BoundaryTestResult.html
+- uid: YVR.Core.YVRBoundary.TestPoint*
+  commentId: Overload:YVR.Core.YVRBoundary.TestPoint
+  href: YVR.Core.YVRBoundary.TestPoint.html#YVR_Core_YVRBoundary_TestPoint_UnityEngine_Vector3_
+  name: TestPoint
+  nameWithType: YVRBoundary.TestPoint
+  fullName: YVR.Core.YVRBoundary.TestPoint
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRBoundary.GetDimensions*
+  commentId: Overload:YVR.Core.YVRBoundary.GetDimensions
+  href: YVR.Core.YVRBoundary.GetDimensions.html#YVR_Core_YVRBoundary_GetDimensions
+  name: GetDimensions
+  nameWithType: YVRBoundary.GetDimensions
+  fullName: YVR.Core.YVRBoundary.GetDimensions
+- uid: YVR.Core.YVRBoundary.GetVisible*
+  commentId: Overload:YVR.Core.YVRBoundary.GetVisible
+  href: YVR.Core.YVRBoundary.GetVisible.html#YVR_Core_YVRBoundary_GetVisible
+  name: GetVisible
+  nameWithType: YVRBoundary.GetVisible
+  fullName: YVR.Core.YVRBoundary.GetVisible
+- uid: YVR.Core.YVRBoundary.SetVisible*
+  commentId: Overload:YVR.Core.YVRBoundary.SetVisible
+  href: YVR.Core.YVRBoundary.SetVisible.html#YVR_Core_YVRBoundary_SetVisible_System_Boolean_
+  name: SetVisible
+  nameWithType: YVRBoundary.SetVisible
+  fullName: YVR.Core.YVRBoundary.SetVisible
+- uid: YVR.Core.YVRBoundary.GetGeometry*
+  commentId: Overload:YVR.Core.YVRBoundary.GetGeometry
+  href: YVR.Core.YVRBoundary.GetGeometry.html#YVR_Core_YVRBoundary_GetGeometry
+  name: GetGeometry
+  nameWithType: YVRBoundary.GetGeometry
+  fullName: YVR.Core.YVRBoundary.GetGeometry
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+memberLayout: SeparatePages

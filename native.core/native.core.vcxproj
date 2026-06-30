@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{B6522E9E-1634-4C90-ABFF-2EBE3DC6EF3F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>native.core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>../BuildNative.bat debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>
+    </NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>XR_USE_TIMESPEC;XR_USE_GRAPHICS_API_VULKAN;_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;$(NMakePreprocessorDefinitions);__ANDROID_API__=21</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);$(ProjectDir)OpenXRLoader\openxr_loader\include\openxr;$(ProjectDir)OpenXRLoader\openxr_loader\include\pfdm_openxr_preview;$(ANDROID_NDK_HOME)\sysroot\usr\include</IncludePath>
+    <NMakeIncludeSearchPath>$(IncludePath);$(ProjectDir)OpenXRLoader\openxr_loader\include\openxr;$(ProjectDir)OpenXRLoader\openxr_loader\include\pfdm_openxr_preview;$(ANDROID_NDK_HOME)\sysroot\usr\include;$(ProjectDir)OpenXRLoader\openxr_loader\include;$(ANDROID_NDK_HOME)\sysroot\usr\include\android</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>
+    </NMakeForcedIncludes>
+    <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID;-D__ANDROID_API__=21</AdditionalOptions>
+    <ExternalIncludePath></ExternalIncludePath>
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>../BuildAAR.bat 0</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>../BuildAAR.bat 0</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>../BuildAAR.bat 0</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>../BuildAAR.bat 0</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>../BuildNative.bat release</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>
+    </NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>NDEBUG;XR_USE_PLATFORM_ANDROID;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(ProjectDir)ApiLibs\YvrLib\inc;$(ProjectDir)ApiLibs\YvrLib_Internal\inc;$(IncludePath);$(ProjectDir)OpenXRLoader\openxr_loader\Include;</IncludePath>
+    <NMakeIncludeSearchPath>$(ProjectDir)ApiLibs\YvrLib\inc;$(ProjectDir)OpenXR\Include;$(ProjectDir)ApiLibs\YvrLib_Internal\inc;$(ANDROID_NDK_HOME)\sysroot\usr\include\;$(ANDROID_NDK_HOME)\sysroot\usr\include\aarch64-linux-android\asm\;$(IncludePath);$(ProjectDir)Utilities\inc</NMakeIncludeSearchPath>
+    <AdditionalOptions>
+    </AdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr_loader_negotiation.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr_platform.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr_platform_defines.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr_reflection.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr_reflection_parent_structs.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\openxr\openxr_reflection_structs.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\pfdm_openxr_preview\openxr_extension_helpers.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\pfdm_openxr_preview\openxr_yvr.h" />
+    <ClInclude Include="OpenXRLoader\openxr_loader\Include\pfdm_openxr_preview\openxr_yvr_private.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\IUnityProfiler.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRCoordinateConverter.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRMath.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRProfiler.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRTime.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRTypeConverter.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Events\YVREventsMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Events\YVREventType.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\Controllers\ControllerXRActionContext.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\Controllers\YVRControllersMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\EyeTracking\EyeXRActionContext.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\EyeTracking\YVREyeTrackingMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\Handness.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\XRHandJointLocation.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\YVRHandCalibrationMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\YVRHandMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\HMD\YVRHMDMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\XRMotionData.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Inputs\YVRInputMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\MixedReality\ImageTracking\ToTrackImageInfo.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\MixedReality\ImageTracking\TrackedImageInfo.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\MixedReality\ImageTracking\YVRImageTrackingMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\PrepareHandleLayerTask.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\Common.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\GraphicsPlugin\GraphicsPluginOpenGLES.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\GraphicsPlugin\GraphicsPluginVulkan.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\GraphicsPlugin\GraphicsPluginBase.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\OpenXRAndroidPlatformPlugin.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\OpenXRExtMgr.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\OpenXRProgram.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\OpenXRSwapchain.h" />
+    <ClInclude Include="src\main\cpp\OpenXR\pch.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\IUnityGraphics.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\IUnityGraphicsVulkan.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\IUnityInterface.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\IUnityRenderingExtensions.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnitySubsystemExample.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRAudio.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRDisplay.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRDisplayShadingRateExt.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRInput.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRMeshing.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRPreInit.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRStats.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\IUnityXRTrace.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\UnitySubsystemTypes.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\UnityTypes.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\UnityXRDisplayStats.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\UnityXRSubsystemTypes.h" />
+    <ClInclude Include="src\main\cpp\UnityHeader\XR\UnityXRTypes.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRDebug.h" />
+    <ClInclude Include="src\main\cpp\Utilities\YVRLog.h" />
+    <ClInclude Include="src\main\cpp\XRData.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVREquirect2RenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRProjectionRenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRInternalAPIMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRLargeSpatialMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRMeshMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVROpenXRMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\AddActiveLayerTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\CreateRenderLayerTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\DestroyRenderLayerTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\GfxTasksMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\RemoveActiveLayerTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\SetFoveationDataEventTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\SwapLayerBufferTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\TaskBase.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\TaskQueue.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\TriggerLayerPreSubmitCallbackTask.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRQuadRenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderConfigsMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderLayersMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRLifecycleMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRPlaneDetectionMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRSceneMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRSpatialAnchorMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRUnityXRProviderMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityPlugin.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\InputDevices\ControllerInputDevice.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\InputDevices\EyeTrackingInputDevice.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\InputDevices\HMDInputDevice.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\InputDevices\InputDeviceBase.cpp" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\InputDevices\InputDeviceBase.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\YVRDisplayProvider.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\YVRInputProvider.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\YVRMeshingProvider.h" />
+    <ClInclude Include="src\main\cpp\YVRUnityXR\YVRProviderBase.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRCylinderRenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRExtRenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVREquirectRenderLayer.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderSwapchainMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRPassthroughProviderMgr.h" />
+    <ClInclude Include="src\main\cpp\YVRModuleMgrs\YVRPassthroughMeshMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Events\YVREventsMgr.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>native.core\x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>native.core\x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>
+    </ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>native.core\x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>native.core\x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>native.core\x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>native.core\x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>native.core\x64\Debug\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>native.core\x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>native.core\x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID;-D__ANDROID_API__=21</AdditionalOptions>
+      <PreprocessorDefinitions>XR_USE_TIMESPEC;XR_USE_GRAPHICS_API_VULKAN;_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;;__ANDROID_API__=21</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\Controllers\YVRControllersMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\EyeTracking\YVREyeTrackingMgr.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>native.core\x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>native.core\x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>
+    </ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>native.core\x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>native.core\x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>native.core\x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>native.core\x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>native.core\x64\Debug\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>native.core\x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>native.core\x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID;-D__ANDROID_API__=21</AdditionalOptions>
+      <PreprocessorDefinitions>XR_USE_TIMESPEC;XR_USE_GRAPHICS_API_VULKAN;_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;;__ANDROID_API__=21</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\XRHandData.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\YVRHandCalibrationMgr.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>native.core\x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>native.core\x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>
+    </ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>native.core\x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>native.core\x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>native.core\x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>native.core\x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>native.core\x64\Debug\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>native.core\x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>native.core\x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID;-D__ANDROID_API__=21</AdditionalOptions>
+      <PreprocessorDefinitions>XR_USE_TIMESPEC;XR_USE_GRAPHICS_API_VULKAN;_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;;__ANDROID_API__=21</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\YVRHandMgr.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>native.core\x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>native.core\x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>
+    </ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>native.core\x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>native.core\x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>native.core\x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>native.core\x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>native.core\x64\Debug\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>native.core\x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>native.core\x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID;-D__ANDROID_API__=21</AdditionalOptions>
+      <PreprocessorDefinitions>XR_USE_TIMESPEC;XR_USE_GRAPHICS_API_VULKAN;_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;;__ANDROID_API__=21</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\HMD\YVRHMDMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\XRMotionData.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Inputs\YVRInputMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\MixedReality\ImageTracking\YVRImageTrackingMgr.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>native.core\x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>native.core\x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>
+    </ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>native.core\x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>native.core\x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>native.core\x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>native.core\x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>native.core\x64\Debug\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>native.core\x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>native.core\x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID;-D__ANDROID_API__=21</AdditionalOptions>
+      <PreprocessorDefinitions>XR_USE_TIMESPEC;XR_USE_GRAPHICS_API_VULKAN;_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;;__ANDROID_API__=21</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\PrepareHandleLayerTask.cpp" />
+    <ClCompile Include="src\main\cpp\OpenXR\Common.cpp">
+      <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Debug\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Debug\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Debug\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Debug\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>x64\Debug\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Debug\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Debug\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Debug\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>x64\Debug\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>/DXR_USE_PLATFORM_ANDROID</AdditionalOptions>
+      <PreprocessorDefinitions>_DEBUG;XR_USE_GRAPHICS_API_OPENGL_ES;XR_USE_PLATFORM_ANDROID;</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\OpenXR\GraphicsPlugin\GraphicsPluginBase.cpp" />
+    <ClCompile Include="src\main\cpp\OpenXR\GraphicsPlugin\GraphicsPluginOpenGLES.cpp" />
+    <ClCompile Include="src\main\cpp\OpenXR\GraphicsPlugin\GraphicsPluginVulkan.cpp" />
+    <ClCompile Include="src\main\cpp\OpenXR\OpenXRAndroidPlatformPlugin.cpp" />
+    <ClCompile Include="src\main\cpp\OpenXR\OpenXRExtMgr.cpp" />
+    <ClCompile Include="src\main\cpp\OpenXR\OpenXRProgram.cpp" />
+    <ClCompile Include="src\main\cpp\Utilities\YVRDebug.cpp" />
+    <ClCompile Include="src\main\cpp\Utilities\YVRLog.cpp" />
+    <ClCompile Include="src\main\cpp\YVRLayerApisExport.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVREquirect2RenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRProjectionRenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRInternalAPIMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRLargeSpatialMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRMeshMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVROpenXRMgr.cpp">
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>x64\Release\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>x64\Release\</BrowseInformationFile>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>Default</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>Default</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>x64\Release\</ModuleDependenciesFile>
+      <ModuleOutputFile>x64\Release\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>MaxSpeed</Optimization>
+      <ObjectFileName>x64\Release\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>x64\Release\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>x64\Release\native.core.pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>x64\Release\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level1</WarningLevel>
+      <XMLDocumentationFileName>x64\Release\</XMLDocumentationFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PreprocessorDefinitions>NDEBUG;</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\AddActiveLayerTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\CreateRenderLayerTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\DestroyRenderLayerTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\GfxTasksMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\RemoveActiveLayerTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\SetFoveationDataEventTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\SwapLayerBufferTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\TaskBase.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\RenderTasks\TriggerLayerPreSubmitCallbackTask.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRQuadRenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderConfigsMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderLayersMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRLifecycleMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRPlaneDetectionMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRSceneMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRSpatialAnchorMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRUnityXRProviderMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityExportAPI.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityExportAPI_Internal.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\InputDevices\ControllerInputDevice.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\InputDevices\EyeTrackingInputDevice.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\InputDevices\HMDInputDevice.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\YVRDisplayProvider.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\YVRInputProvider.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\YVRMeshingProvider.cpp" />
+    <ClCompile Include="src\main\cpp\YVRUnityXR\YVRProviderBase.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRCylinderRenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRExtRenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVREquirectRenderLayer.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\Render\YVRRenderSwapchainMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRPassthroughProviderMgr.cpp" />
+    <ClCompile Include="src\main\cpp\YVRModuleMgrs\YVRPassthroughMeshMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\main\jni\Android.mk" />
+    <None Include="src\main\jni\Application.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OpenXRLoader\.git" />
+    <Content Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\XRHandData.h" />
+    <Content Include="src\main\cpp\YVRModuleMgrs\Inputs\Hands\XRHandTrackingAimState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OpenXRLoader\openxr_loader\Libs\" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

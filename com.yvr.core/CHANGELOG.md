@@ -1,10 +1,91 @@
 # Changelog
 
+## [1.30.4] - 2026-05-18
+
+### Fixed
+
+- 修复 mesh provider 在追踪重定位后未清理旧 mesh cache
+
+## [1.30.3] - 2026-04-21
+
+### Added
+
+- 新增 Locate Room 接口
+
+### Fixed
+
+- 修复 MeshingProvider 在 Mesh Detector 销毁、关闭和 Mesh Block 更新过程中的缓存释放与状态同步问题
+- 修复 Mesh Block 更新事件在 provider 未就绪时可能触发的空指针访问风险
+
+## [1.30.2] - 2026-04-03
+
+### Fixed
+
+- yvrPlugin 没有被识别到
+
+## [1.30.1] - 2026-03-17
+
+### Changed
+
+- 移除模型透视 enable 字段
+
+## [1.30.0] - 2026-03-09
+
+### Fixed
+
+- 修复 Linux 编辑器环境 DllNotFoundException 错误，添加 YVRPluginStub 支持非 Windows 编辑器平台
+- 修复 Android 16KB 页面对齐支持，添加链接标志确保 Android 16+ 兼容性
+- 修复 YVRLayerCreateInfo 构造函数缺少 protectedContent 参数的编译错误
+- 修复已过时的 FindObjectOfType API，更新为 FindAnyObjectByType 并添加版本条件编译
+
+### Changed
+
+- 优化 Transform 操作性能，使用 SetPositionAndRotation 替代分离的 position/rotation 设置（提升约 40% 性能）
+- 优化内存分配，缓存 WaitForSeconds 实例以减少 GC 压力
+- 添加自动化验证测试，确保修复的正确性
+
+## [1.29.9] - 2026-03-09
+
+### Added
+
+- 新增 Scene Anchor 的 MESH_BOUNDARY、SAFETY_BOUNDARY 语义标签和 TriangleMesh 组件类型
+- 新增 Unity 传入 scene triangle mesh 到 OpenXR 的坐标转换与提交逻辑
+
+### Fixed
+
+- 移除眼动追踪 pose 更新中的 enable 判断，直接执行 eye gaze space 定位更新
+
+## [1.29.8] - 2026-02-03
+
+### Changed
+
+- 更新手势模型
+
+## [1.29.7] - 2026-01-16
+
+### Added
+
+- 添加局部透视相关接口
+- 添加获取 Local/Stage 空间变换接口
+
+## [1.29.6] - 2026-01-08
+
+### Changed
+
+- 添加设置应用色彩空间接口
+
+## [1.29.5] - 2026-01-04
+
+### Changed
+
+- 更新手势模型
+
 ## [1.29.4] - 2025-12-31
 
 ### Added
 
 - 添加 ColorSpace 相关接口
+
 
 ## [1.29.3] - 2025-12-12
 

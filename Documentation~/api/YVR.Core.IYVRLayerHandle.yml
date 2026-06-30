@@ -1,0 +1,1541 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.IYVRLayerHandle
+  commentId: T:YVR.Core.IYVRLayerHandle
+  id: IYVRLayerHandle
+  parent: YVR.Core
+  children:
+  - YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+  - YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+  - YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  - YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  - YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+  - YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  - YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+  - YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  - YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+  - YVR.Core.IYVRLayerHandle.GetLayersCount
+  - YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  - YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  - YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  - YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  - YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+  - YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+  - YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+  - YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  - YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  - YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  - YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  - YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  - YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  - YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  - YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  - YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  - YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+  - YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  - YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IYVRLayerHandle
+  nameWithType: IYVRLayerHandle
+  fullName: YVR.Core.IYVRLayerHandle
+  type: Interface
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IYVRLayerHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 56
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public interface IYVRLayerHandle
+    content.vb: Public Interface IYVRLayerHandle
+- uid: YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  commentId: M:YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  id: CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: CreateLayer(YVRLayerCreateInfo)
+  nameWithType: IYVRLayerHandle.CreateLayer(YVRLayerCreateInfo)
+  fullName: YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CreateLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 58
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: int CreateLayer(YVRLayerCreateInfo layerCreateInfo)
+    parameters:
+    - id: layerCreateInfo
+      type: YVR.Core.YVRLayerCreateInfo
+    return:
+      type: System.Int32
+    content.vb: Function CreateLayer(layerCreateInfo As YVRLayerCreateInfo) As Integer
+  overload: YVR.Core.IYVRLayerHandle.CreateLayer*
+- uid: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  id: PrepareCreateLayerAsync(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: PrepareCreateLayerAsync(Action)
+  nameWithType: IYVRLayerHandle.PrepareCreateLayerAsync(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareCreateLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 59
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void PrepareCreateLayerAsync(Action onCreateLayerPrepared = null)
+    parameters:
+    - id: onCreateLayerPrepared
+      type: System.Action
+    content.vb: Sub PrepareCreateLayerAsync(onCreateLayerPrepared As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync*
+- uid: YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+  commentId: M:YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+  id: DestroyLayer(System.Int32,System.Boolean)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: DestroyLayer(int, bool)
+  nameWithType: IYVRLayerHandle.DestroyLayer(int, bool)
+  fullName: YVR.Core.IYVRLayerHandle.DestroyLayer(int, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DestroyLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 60
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void DestroyLayer(int layer, bool destroyImmediate)
+    parameters:
+    - id: layer
+      type: System.Int32
+    - id: destroyImmediate
+      type: System.Boolean
+    content.vb: Sub DestroyLayer(layer As Integer, destroyImmediate As Boolean)
+  overload: YVR.Core.IYVRLayerHandle.DestroyLayer*
+  nameWithType.vb: IYVRLayerHandle.DestroyLayer(Integer, Boolean)
+  fullName.vb: YVR.Core.IYVRLayerHandle.DestroyLayer(Integer, Boolean)
+  name.vb: DestroyLayer(Integer, Boolean)
+- uid: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  id: PrepareDestroyLayerAsync(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: PrepareDestroyLayerAsync(Action)
+  nameWithType: IYVRLayerHandle.PrepareDestroyLayerAsync(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareDestroyLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 61
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void PrepareDestroyLayerAsync(Action onPrepareDestroyLayer = null)
+    parameters:
+    - id: onPrepareDestroyLayer
+      type: System.Action
+    content.vb: Sub PrepareDestroyLayerAsync(onPrepareDestroyLayer As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync*
+- uid: YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+  id: AddLayer(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: AddLayer(int)
+  nameWithType: IYVRLayerHandle.AddLayer(int)
+  fullName: YVR.Core.IYVRLayerHandle.AddLayer(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: AddLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 62
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void AddLayer(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    content.vb: Sub AddLayer(layerId As Integer)
+  overload: YVR.Core.IYVRLayerHandle.AddLayer*
+  nameWithType.vb: IYVRLayerHandle.AddLayer(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.AddLayer(Integer)
+  name.vb: AddLayer(Integer)
+- uid: YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  id: PrepareAddLayer(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: PrepareAddLayer(Action)
+  nameWithType: IYVRLayerHandle.PrepareAddLayer(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareAddLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 63
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void PrepareAddLayer(Action onPrepareAddLayer = null)
+    parameters:
+    - id: onPrepareAddLayer
+      type: System.Action
+    content.vb: Sub PrepareAddLayer(onPrepareAddLayer As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.PrepareAddLayer*
+- uid: YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+  id: RemoveLayer(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: RemoveLayer(int)
+  nameWithType: IYVRLayerHandle.RemoveLayer(int)
+  fullName: YVR.Core.IYVRLayerHandle.RemoveLayer(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RemoveLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 64
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void RemoveLayer(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    content.vb: Sub RemoveLayer(layerId As Integer)
+  overload: YVR.Core.IYVRLayerHandle.RemoveLayer*
+  nameWithType.vb: IYVRLayerHandle.RemoveLayer(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.RemoveLayer(Integer)
+  name.vb: RemoveLayer(Integer)
+- uid: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  id: PrepareRemoveLayer(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: PrepareRemoveLayer(Action)
+  nameWithType: IYVRLayerHandle.PrepareRemoveLayer(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareRemoveLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 65
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void PrepareRemoveLayer(Action onPrepareRemoveLayer = null)
+    parameters:
+    - id: onPrepareRemoveLayer
+      type: System.Action
+    content.vb: Sub PrepareRemoveLayer(onPrepareRemoveLayer As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer*
+- uid: YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+  id: SetLayerVisible(System.Int32,System.Boolean)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerVisible(int, bool)
+  nameWithType: IYVRLayerHandle.SetLayerVisible(int, bool)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerVisible(int, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerVisible
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 66
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerVisible(int layerId, bool visible)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: visible
+      type: System.Boolean
+    content.vb: Sub SetLayerVisible(layerId As Integer, visible As Boolean)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerVisible*
+  nameWithType.vb: IYVRLayerHandle.SetLayerVisible(Integer, Boolean)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerVisible(Integer, Boolean)
+  name.vb: SetLayerVisible(Integer, Boolean)
+- uid: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+  id: PrepareSetLayerVisible(System.Boolean,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: PrepareSetLayerVisible(bool, Action)
+  nameWithType: IYVRLayerHandle.PrepareSetLayerVisible(bool, Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(bool, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareSetLayerVisible
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 67
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void PrepareSetLayerVisible(bool visible, Action onPrepareSetLayerVisible = null)
+    parameters:
+    - id: visible
+      type: System.Boolean
+    - id: onPrepareSetLayerVisible
+      type: System.Action
+    content.vb: Sub PrepareSetLayerVisible(visible As Boolean, onPrepareSetLayerVisible As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible*
+  nameWithType.vb: IYVRLayerHandle.PrepareSetLayerVisible(Boolean, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(Boolean, System.Action)
+  name.vb: PrepareSetLayerVisible(Boolean, Action)
+- uid: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  commentId: M:YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  id: CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: CreateLayerAsync(YVRLayerCreateInfo, Action<int>)
+  nameWithType: IYVRLayerHandle.CreateLayerAsync(YVRLayerCreateInfo, Action<int>)
+  fullName: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo, System.Action<int>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CreateLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 68
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void CreateLayerAsync(YVRLayerCreateInfo layerCreateInfo, Action<int> onLayerCreated = null)
+    parameters:
+    - id: layerCreateInfo
+      type: YVR.Core.YVRLayerCreateInfo
+    - id: onLayerCreated
+      type: System.Action{System.Int32}
+    content.vb: Sub CreateLayerAsync(layerCreateInfo As YVRLayerCreateInfo, onLayerCreated As Action(Of Integer) = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.CreateLayerAsync*
+  nameWithType.vb: IYVRLayerHandle.CreateLayerAsync(YVRLayerCreateInfo, Action(Of Integer))
+  fullName.vb: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo, System.Action(Of Integer))
+  name.vb: CreateLayerAsync(YVRLayerCreateInfo, Action(Of Integer))
+- uid: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  id: DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: DestroyLayerAsync(int, bool, Action)
+  nameWithType: IYVRLayerHandle.DestroyLayerAsync(int, bool, Action)
+  fullName: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(int, bool, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DestroyLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 69
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void DestroyLayerAsync(int layerId, bool destroyImmediate, Action onLayerDestroyed = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: destroyImmediate
+      type: System.Boolean
+    - id: onLayerDestroyed
+      type: System.Action
+    content.vb: Sub DestroyLayerAsync(layerId As Integer, destroyImmediate As Boolean, onLayerDestroyed As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.DestroyLayerAsync*
+  nameWithType.vb: IYVRLayerHandle.DestroyLayerAsync(Integer, Boolean, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(Integer, Boolean, System.Action)
+  name.vb: DestroyLayerAsync(Integer, Boolean, Action)
+- uid: YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+  id: AddLayerAsync(System.Int32,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: AddLayerAsync(int, Action)
+  nameWithType: IYVRLayerHandle.AddLayerAsync(int, Action)
+  fullName: YVR.Core.IYVRLayerHandle.AddLayerAsync(int, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: AddLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 70
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void AddLayerAsync(int layerId, Action onLayerAdded = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: onLayerAdded
+      type: System.Action
+    content.vb: Sub AddLayerAsync(layerId As Integer, onLayerAdded As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.AddLayerAsync*
+  nameWithType.vb: IYVRLayerHandle.AddLayerAsync(Integer, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.AddLayerAsync(Integer, System.Action)
+  name.vb: AddLayerAsync(Integer, Action)
+- uid: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+  id: RemoveLayerAsync(System.Int32,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: RemoveLayerAsync(int, Action)
+  nameWithType: IYVRLayerHandle.RemoveLayerAsync(int, Action)
+  fullName: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(int, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RemoveLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 71
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void RemoveLayerAsync(int layerId, Action onLayerAdded = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: onLayerAdded
+      type: System.Action
+    content.vb: Sub RemoveLayerAsync(layerId As Integer, onLayerAdded As Action = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.RemoveLayerAsync*
+  nameWithType.vb: IYVRLayerHandle.RemoveLayerAsync(Integer, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(Integer, System.Action)
+  name.vb: RemoveLayerAsync(Integer, Action)
+- uid: YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+  id: SwapBufferLayer(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SwapBufferLayer(int)
+  nameWithType: IYVRLayerHandle.SwapBufferLayer(int)
+  fullName: YVR.Core.IYVRLayerHandle.SwapBufferLayer(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SwapBufferLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 72
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SwapBufferLayer(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    content.vb: Sub SwapBufferLayer(layerId As Integer)
+  overload: YVR.Core.IYVRLayerHandle.SwapBufferLayer*
+  nameWithType.vb: IYVRLayerHandle.SwapBufferLayer(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SwapBufferLayer(Integer)
+  name.vb: SwapBufferLayer(Integer)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  id: SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerPose(in int, in XRPose)
+  nameWithType: IYVRLayerHandle.SetLayerPose(in int, in XRPose)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerPose(in int, in YVR.Core.XRPose)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerPose(in int layerId, in XRPose pose)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: pose
+      type: YVR.Core.XRPose
+    content.vb: Sub SetLayerPose(layerId As Integer, pose As XRPose)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerPose*
+  nameWithType.vb: IYVRLayerHandle.SetLayerPose(Integer, XRPose)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerPose(Integer, YVR.Core.XRPose)
+  name.vb: SetLayerPose(Integer, XRPose)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  id: SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerSize(in int, XRSize)
+  nameWithType: IYVRLayerHandle.SetLayerSize(in int, XRSize)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerSize(in int, YVR.Core.XRSize)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerSize
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 74
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerSize(in int layerId, XRSize size)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: size
+      type: YVR.Core.XRSize
+    content.vb: Sub SetLayerSize(layerId As Integer, size As XRSize)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerSize*
+  nameWithType.vb: IYVRLayerHandle.SetLayerSize(Integer, XRSize)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerSize(Integer, YVR.Core.XRSize)
+  name.vb: SetLayerSize(Integer, XRSize)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  id: SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerCylinderParam(in int, in float, in float, in float)
+  nameWithType: IYVRLayerHandle.SetLayerCylinderParam(in int, in float, in float, in float)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(in int, in float, in float, in float)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerCylinderParam
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 75
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerCylinderParam(in int layerId, in float radius, in float centralAngle, in float aspectRatio)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: radius
+      type: System.Single
+    - id: centralAngle
+      type: System.Single
+    - id: aspectRatio
+      type: System.Single
+    content.vb: Sub SetLayerCylinderParam(layerId As Integer, radius As Single, centralAngle As Single, aspectRatio As Single)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam*
+  nameWithType.vb: IYVRLayerHandle.SetLayerCylinderParam(Integer, Single, Single, Single)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(Integer, Single, Single, Single)
+  name.vb: SetLayerCylinderParam(Integer, Single, Single, Single)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  id: SetLayerEquirectRadius(System.Int32@,System.Single@)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerEquirectRadius(in int, in float)
+  nameWithType: IYVRLayerHandle.SetLayerEquirectRadius(in int, in float)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(in int, in float)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerEquirectRadius
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 76
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerEquirectRadius(in int layerId, in float radius)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: radius
+      type: System.Single
+    content.vb: Sub SetLayerEquirectRadius(layerId As Integer, radius As Single)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius*
+  nameWithType.vb: IYVRLayerHandle.SetLayerEquirectRadius(Integer, Single)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(Integer, Single)
+  name.vb: SetLayerEquirectRadius(Integer, Single)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  id: SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerEquirectOffset(in int, in Rect)
+  nameWithType: IYVRLayerHandle.SetLayerEquirectOffset(in int, in Rect)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(in int, in UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerEquirectOffset
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 77
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerEquirectOffset(in int layerId, in Rect rect)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: rect
+      type: UnityEngine.Rect
+    content.vb: Sub SetLayerEquirectOffset(layerId As Integer, rect As Rect)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset*
+  nameWithType.vb: IYVRLayerHandle.SetLayerEquirectOffset(Integer, Rect)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(Integer, UnityEngine.Rect)
+  name.vb: SetLayerEquirectOffset(Integer, Rect)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  id: SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  nameWithType: IYVRLayerHandle.SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerEquirect2Param
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 78
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerEquirect2Param(in int layerId, in float radius, in float centralHorizontalAngle, in float upperVerticalAngle, in float lowerVerticalAngle)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: radius
+      type: System.Single
+    - id: centralHorizontalAngle
+      type: System.Single
+    - id: upperVerticalAngle
+      type: System.Single
+    - id: lowerVerticalAngle
+      type: System.Single
+    content.vb: Sub SetLayerEquirect2Param(layerId As Integer, radius As Single, centralHorizontalAngle As Single, upperVerticalAngle As Single, lowerVerticalAngle As Single)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param*
+  nameWithType.vb: IYVRLayerHandle.SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  name.vb: SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerSettings(int, bool, bool, bool, bool)
+  nameWithType: IYVRLayerHandle.SetLayerSettings(int, bool, bool, bool, bool)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerSettings(int, bool, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerSettings
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 79
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerSettings(int layerId, bool enableSuperSample, bool expensiveSuperSample, bool enableSharpen, bool expensiveSharpen)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: enableSuperSample
+      type: System.Boolean
+    - id: expensiveSuperSample
+      type: System.Boolean
+    - id: enableSharpen
+      type: System.Boolean
+    - id: expensiveSharpen
+      type: System.Boolean
+    content.vb: Sub SetLayerSettings(layerId As Integer, enableSuperSample As Boolean, expensiveSuperSample As Boolean, enableSharpen As Boolean, expensiveSharpen As Boolean)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerSettings*
+  nameWithType.vb: IYVRLayerHandle.SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  name.vb: SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+- uid: YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  id: SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerImageRect(int, Rect)
+  nameWithType: IYVRLayerHandle.SetLayerImageRect(int, Rect)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerImageRect(int, UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerImageRect
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 80
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerImageRect(int layerId, Rect rect)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: rect
+      type: UnityEngine.Rect
+    content.vb: Sub SetLayerImageRect(layerId As Integer, rect As Rect)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerImageRect*
+  nameWithType.vb: IYVRLayerHandle.SetLayerImageRect(Integer, Rect)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerImageRect(Integer, UnityEngine.Rect)
+  name.vb: SetLayerImageRect(Integer, Rect)
+- uid: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  id: SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetSurfaceDimensions(int, int, int)
+  nameWithType: IYVRLayerHandle.SetSurfaceDimensions(int, int, int)
+  fullName: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetSurfaceDimensions
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 81
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetSurfaceDimensions(int layerId, int width, int height)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Sub SetSurfaceDimensions(layerId As Integer, width As Integer, height As Integer)
+  overload: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions*
+  nameWithType.vb: IYVRLayerHandle.SetSurfaceDimensions(Integer, Integer, Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(Integer, Integer, Integer)
+  name.vb: SetSurfaceDimensions(Integer, Integer, Integer)
+- uid: YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+  id: GetLayerSurface(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: GetLayerSurface(int)
+  nameWithType: IYVRLayerHandle.GetLayerSurface(int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerSurface(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayerSurface
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 82
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: IntPtr GetLayerSurface(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Function GetLayerSurface(layerId As Integer) As IntPtr
+  overload: YVR.Core.IYVRLayerHandle.GetLayerSurface*
+  nameWithType.vb: IYVRLayerHandle.GetLayerSurface(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerSurface(Integer)
+  name.vb: GetLayerSurface(Integer)
+- uid: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+  commentId: M:YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+  id: GetEyeBufferLayerId
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: GetEyeBufferLayerId()
+  nameWithType: IYVRLayerHandle.GetEyeBufferLayerId()
+  fullName: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetEyeBufferLayerId
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 83
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: int GetEyeBufferLayerId()
+    return:
+      type: System.Int32
+    content.vb: Function GetEyeBufferLayerId() As Integer
+  overload: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId*
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  id: GetLayerColorHandle(System.Int32,System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: GetLayerColorHandle(int, int)
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int, int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int, int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayerColorHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 84
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: int GetLayerColorHandle(int layerId, int index)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function GetLayerColorHandle(layerId As Integer, index As Integer) As Integer
+  overload: YVR.Core.IYVRLayerHandle.GetLayerColorHandle*
+  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer, Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer, Integer)
+  name.vb: GetLayerColorHandle(Integer, Integer)
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  id: GetLayerColorHandle(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: GetLayerColorHandle(int)
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayerColorHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 85
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: int GetLayerColorHandle(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function GetLayerColorHandle(layerId As Integer) As Integer
+  overload: YVR.Core.IYVRLayerHandle.GetLayerColorHandle*
+  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer)
+  name.vb: GetLayerColorHandle(Integer)
+- uid: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+  commentId: M:YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+  id: GetAlLayersColorHandle
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: GetAlLayersColorHandle()
+  nameWithType: IYVRLayerHandle.GetAlLayersColorHandle()
+  fullName: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetAlLayersColorHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 86
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: int[] GetAlLayersColorHandle()
+    return:
+      type: System.Int32[]
+    content.vb: Function GetAlLayersColorHandle() As Integer()
+  overload: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle*
+- uid: YVR.Core.IYVRLayerHandle.GetLayersCount
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayersCount
+  id: GetLayersCount
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: GetLayersCount()
+  nameWithType: IYVRLayerHandle.GetLayersCount()
+  fullName: YVR.Core.IYVRLayerHandle.GetLayersCount()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayersCount
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 87
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: int GetLayersCount()
+    return:
+      type: System.Int32
+    content.vb: Function GetLayersCount() As Integer
+  overload: YVR.Core.IYVRLayerHandle.GetLayersCount*
+- uid: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  id: SetLayerPreSubmitCallback(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerPreSubmitCallback(Action)
+  nameWithType: IYVRLayerHandle.SetLayerPreSubmitCallback(Action)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerPreSubmitCallback
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 88
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerPreSubmitCallback(Action onLayerPreSubmit)
+    parameters:
+    - id: onLayerPreSubmit
+      type: System.Action
+    content.vb: Sub SetLayerPreSubmitCallback(onLayerPreSubmit As Action)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback*
+- uid: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  id: SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  parent: YVR.Core.IYVRLayerHandle
+  langs:
+  - csharp
+  - vb
+  name: SetLayerDepthAsync(int, int, Action<bool>)
+  nameWithType: IYVRLayerHandle.SetLayerDepthAsync(int, int, Action<bool>)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(int, int, System.Action<bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerDepthAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 89
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: void SetLayerDepthAsync(int layerId, int depth, Action<bool> onLayerDepthSet = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: onLayerDepthSet
+      type: System.Action{System.Boolean}
+    content.vb: Sub SetLayerDepthAsync(layerId As Integer, depth As Integer, onLayerDepthSet As Action(Of Boolean) = Nothing)
+  overload: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync*
+  nameWithType.vb: IYVRLayerHandle.SetLayerDepthAsync(Integer, Integer, Action(Of Boolean))
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(Integer, Integer, System.Action(Of Boolean))
+  name.vb: SetLayerDepthAsync(Integer, Integer, Action(Of Boolean))
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.IYVRLayerHandle.CreateLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.CreateLayer
+  href: YVR.Core.IYVRLayerHandle.CreateLayer.html#YVR_Core_IYVRLayerHandle_CreateLayer_YVR_Core_YVRLayerCreateInfo_
+  name: CreateLayer
+  nameWithType: IYVRLayerHandle.CreateLayer
+  fullName: YVR.Core.IYVRLayerHandle.CreateLayer
+- uid: YVR.Core.YVRLayerCreateInfo
+  commentId: T:YVR.Core.YVRLayerCreateInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRLayerCreateInfo.html
+  name: YVRLayerCreateInfo
+  nameWithType: YVRLayerCreateInfo
+  fullName: YVR.Core.YVRLayerCreateInfo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync
+  href: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareCreateLayerAsync_System_Action_
+  name: PrepareCreateLayerAsync
+  nameWithType: IYVRLayerHandle.PrepareCreateLayerAsync
+  fullName: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: YVR.Core.IYVRLayerHandle.DestroyLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.DestroyLayer
+  href: YVR.Core.IYVRLayerHandle.DestroyLayer.html#YVR_Core_IYVRLayerHandle_DestroyLayer_System_Int32_System_Boolean_
+  name: DestroyLayer
+  nameWithType: IYVRLayerHandle.DestroyLayer
+  fullName: YVR.Core.IYVRLayerHandle.DestroyLayer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync
+  href: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareDestroyLayerAsync_System_Action_
+  name: PrepareDestroyLayerAsync
+  nameWithType: IYVRLayerHandle.PrepareDestroyLayerAsync
+  fullName: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.AddLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.AddLayer
+  href: YVR.Core.IYVRLayerHandle.AddLayer.html#YVR_Core_IYVRLayerHandle_AddLayer_System_Int32_
+  name: AddLayer
+  nameWithType: IYVRLayerHandle.AddLayer
+  fullName: YVR.Core.IYVRLayerHandle.AddLayer
+- uid: YVR.Core.IYVRLayerHandle.PrepareAddLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.PrepareAddLayer
+  href: YVR.Core.IYVRLayerHandle.PrepareAddLayer.html#YVR_Core_IYVRLayerHandle_PrepareAddLayer_System_Action_
+  name: PrepareAddLayer
+  nameWithType: IYVRLayerHandle.PrepareAddLayer
+  fullName: YVR.Core.IYVRLayerHandle.PrepareAddLayer
+- uid: YVR.Core.IYVRLayerHandle.RemoveLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.RemoveLayer
+  href: YVR.Core.IYVRLayerHandle.RemoveLayer.html#YVR_Core_IYVRLayerHandle_RemoveLayer_System_Int32_
+  name: RemoveLayer
+  nameWithType: IYVRLayerHandle.RemoveLayer
+  fullName: YVR.Core.IYVRLayerHandle.RemoveLayer
+- uid: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.PrepareRemoveLayer
+  href: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer.html#YVR_Core_IYVRLayerHandle_PrepareRemoveLayer_System_Action_
+  name: PrepareRemoveLayer
+  nameWithType: IYVRLayerHandle.PrepareRemoveLayer
+  fullName: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer
+- uid: YVR.Core.IYVRLayerHandle.SetLayerVisible*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerVisible
+  href: YVR.Core.IYVRLayerHandle.SetLayerVisible.html#YVR_Core_IYVRLayerHandle_SetLayerVisible_System_Int32_System_Boolean_
+  name: SetLayerVisible
+  nameWithType: IYVRLayerHandle.SetLayerVisible
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerVisible
+- uid: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible
+  href: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible.html#YVR_Core_IYVRLayerHandle_PrepareSetLayerVisible_System_Boolean_System_Action_
+  name: PrepareSetLayerVisible
+  nameWithType: IYVRLayerHandle.PrepareSetLayerVisible
+  fullName: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible
+- uid: YVR.Core.IYVRLayerHandle.CreateLayerAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.CreateLayerAsync
+  href: YVR.Core.IYVRLayerHandle.CreateLayerAsync.html#YVR_Core_IYVRLayerHandle_CreateLayerAsync_YVR_Core_YVRLayerCreateInfo_System_Action_System_Int32__
+  name: CreateLayerAsync
+  nameWithType: IYVRLayerHandle.CreateLayerAsync
+  fullName: YVR.Core.IYVRLayerHandle.CreateLayerAsync
+- uid: System.Action{System.Int32}
+  commentId: T:System.Action{System.Int32}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<int>
+  nameWithType: Action<int>
+  fullName: System.Action<int>
+  nameWithType.vb: Action(Of Integer)
+  fullName.vb: System.Action(Of Integer)
+  name.vb: Action(Of Integer)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Core.IYVRLayerHandle.DestroyLayerAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.DestroyLayerAsync
+  href: YVR.Core.IYVRLayerHandle.DestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_DestroyLayerAsync_System_Int32_System_Boolean_System_Action_
+  name: DestroyLayerAsync
+  nameWithType: IYVRLayerHandle.DestroyLayerAsync
+  fullName: YVR.Core.IYVRLayerHandle.DestroyLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.AddLayerAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.AddLayerAsync
+  href: YVR.Core.IYVRLayerHandle.AddLayerAsync.html#YVR_Core_IYVRLayerHandle_AddLayerAsync_System_Int32_System_Action_
+  name: AddLayerAsync
+  nameWithType: IYVRLayerHandle.AddLayerAsync
+  fullName: YVR.Core.IYVRLayerHandle.AddLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.RemoveLayerAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.RemoveLayerAsync
+  href: YVR.Core.IYVRLayerHandle.RemoveLayerAsync.html#YVR_Core_IYVRLayerHandle_RemoveLayerAsync_System_Int32_System_Action_
+  name: RemoveLayerAsync
+  nameWithType: IYVRLayerHandle.RemoveLayerAsync
+  fullName: YVR.Core.IYVRLayerHandle.RemoveLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.SwapBufferLayer*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SwapBufferLayer
+  href: YVR.Core.IYVRLayerHandle.SwapBufferLayer.html#YVR_Core_IYVRLayerHandle_SwapBufferLayer_System_Int32_
+  name: SwapBufferLayer
+  nameWithType: IYVRLayerHandle.SwapBufferLayer
+  fullName: YVR.Core.IYVRLayerHandle.SwapBufferLayer
+- uid: YVR.Core.IYVRLayerHandle.SetLayerPose*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerPose
+  href: YVR.Core.IYVRLayerHandle.SetLayerPose.html#YVR_Core_IYVRLayerHandle_SetLayerPose_System_Int32__YVR_Core_XRPose__
+  name: SetLayerPose
+  nameWithType: IYVRLayerHandle.SetLayerPose
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerPose
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  parent: YVR.Core
+  href: YVR.Core.XRPose.html
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+- uid: YVR.Core.IYVRLayerHandle.SetLayerSize*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerSize
+  href: YVR.Core.IYVRLayerHandle.SetLayerSize.html#YVR_Core_IYVRLayerHandle_SetLayerSize_System_Int32__YVR_Core_XRSize_
+  name: SetLayerSize
+  nameWithType: IYVRLayerHandle.SetLayerSize
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerSize
+- uid: YVR.Core.XRSize
+  commentId: T:YVR.Core.XRSize
+  parent: YVR.Core
+  href: YVR.Core.XRSize.html
+  name: XRSize
+  nameWithType: XRSize
+  fullName: YVR.Core.XRSize
+- uid: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerCylinderParam
+  href: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam.html#YVR_Core_IYVRLayerHandle_SetLayerCylinderParam_System_Int32__System_Single__System_Single__System_Single__
+  name: SetLayerCylinderParam
+  nameWithType: IYVRLayerHandle.SetLayerCylinderParam
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius
+  href: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectRadius_System_Int32__System_Single__
+  name: SetLayerEquirectRadius
+  nameWithType: IYVRLayerHandle.SetLayerEquirectRadius
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset
+  href: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectOffset_System_Int32__UnityEngine_Rect__
+  name: SetLayerEquirectOffset
+  nameWithType: IYVRLayerHandle.SetLayerEquirectOffset
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param
+  href: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param.html#YVR_Core_IYVRLayerHandle_SetLayerEquirect2Param_System_Int32__System_Single__System_Single__System_Single__System_Single__
+  name: SetLayerEquirect2Param
+  nameWithType: IYVRLayerHandle.SetLayerEquirect2Param
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param
+- uid: YVR.Core.IYVRLayerHandle.SetLayerSettings*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerSettings
+  href: YVR.Core.IYVRLayerHandle.SetLayerSettings.html#YVR_Core_IYVRLayerHandle_SetLayerSettings_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: SetLayerSettings
+  nameWithType: IYVRLayerHandle.SetLayerSettings
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerSettings
+- uid: YVR.Core.IYVRLayerHandle.SetLayerImageRect*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerImageRect
+  href: YVR.Core.IYVRLayerHandle.SetLayerImageRect.html#YVR_Core_IYVRLayerHandle_SetLayerImageRect_System_Int32_UnityEngine_Rect_
+  name: SetLayerImageRect
+  nameWithType: IYVRLayerHandle.SetLayerImageRect
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerImageRect
+- uid: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetSurfaceDimensions
+  href: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions.html#YVR_Core_IYVRLayerHandle_SetSurfaceDimensions_System_Int32_System_Int32_System_Int32_
+  name: SetSurfaceDimensions
+  nameWithType: IYVRLayerHandle.SetSurfaceDimensions
+  fullName: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions
+- uid: YVR.Core.IYVRLayerHandle.GetLayerSurface*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.GetLayerSurface
+  href: YVR.Core.IYVRLayerHandle.GetLayerSurface.html#YVR_Core_IYVRLayerHandle_GetLayerSurface_System_Int32_
+  name: GetLayerSurface
+  nameWithType: IYVRLayerHandle.GetLayerSurface
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerSurface
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+  href: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId.html#YVR_Core_IYVRLayerHandle_GetEyeBufferLayerId
+  name: GetEyeBufferLayerId
+  nameWithType: IYVRLayerHandle.GetEyeBufferLayerId
+  fullName: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.GetLayerColorHandle
+  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
+  name: GetLayerColorHandle
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle
+- uid: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+  href: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle.html#YVR_Core_IYVRLayerHandle_GetAlLayersColorHandle
+  name: GetAlLayersColorHandle
+  nameWithType: IYVRLayerHandle.GetAlLayersColorHandle
+  fullName: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: YVR.Core.IYVRLayerHandle.GetLayersCount*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.GetLayersCount
+  href: YVR.Core.IYVRLayerHandle.GetLayersCount.html#YVR_Core_IYVRLayerHandle_GetLayersCount
+  name: GetLayersCount
+  nameWithType: IYVRLayerHandle.GetLayersCount
+  fullName: YVR.Core.IYVRLayerHandle.GetLayersCount
+- uid: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback
+  href: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback.html#YVR_Core_IYVRLayerHandle_SetLayerPreSubmitCallback_System_Action_
+  name: SetLayerPreSubmitCallback
+  nameWithType: IYVRLayerHandle.SetLayerPreSubmitCallback
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback
+- uid: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync*
+  commentId: Overload:YVR.Core.IYVRLayerHandle.SetLayerDepthAsync
+  href: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync.html#YVR_Core_IYVRLayerHandle_SetLayerDepthAsync_System_Int32_System_Int32_System_Action_System_Boolean__
+  name: SetLayerDepthAsync
+  nameWithType: IYVRLayerHandle.SetLayerDepthAsync
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<bool>
+  nameWithType: Action<bool>
+  fullName: System.Action<bool>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+memberLayout: SeparatePages

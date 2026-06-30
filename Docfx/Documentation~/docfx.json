@@ -1,0 +1,43 @@
+{
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "UserManual/**.md",
+                    "UserManual/**/**/toc.yml"
+                ]
+            },
+            {
+                "files": [
+                    "toc.yml",
+                    "index.md"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "UserManual/**.png",
+                    "UserManual/**.jpg"
+                ]
+            }
+        ],
+        "dest": "_site",
+        "globalMetadata": {
+            "_enableSearch": true
+        },
+        "template": [
+            "../DefaultTemplate",
+            "../Plugins/memberpage.2.56.6/content",
+            "../Plugins/Custom/",
+            "../Plugins/DocFx.Plugins.PlantUml/template",
+            "../Plugins/mermaid"
+        ],
+        "markdownEngineProperties": {
+            "plantUml.localPlantUmlPath": "../../DocFx/plantuml.jar",
+            "plantUml.outputFormat": "svg",
+            "plantUml.remoteUrl": "http://www.plantuml.com/plantuml/",
+            "plantUml.renderingMode": "remote"
+        }
+    }
+}

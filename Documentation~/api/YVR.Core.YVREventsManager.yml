@@ -1,0 +1,774 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVREventsManager
+  commentId: T:YVR.Core.YVREventsManager
+  id: YVREventsManager
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVREventsManager.Initialize
+  - YVR.Core.YVREventsManager.Update
+  - YVR.Core.YVREventsManager.onFocusGained
+  - YVR.Core.YVREventsManager.onFocusLost
+  - YVR.Core.YVREventsManager.onHMDMounted
+  - YVR.Core.YVREventsManager.onHMDUnMounted
+  - YVR.Core.YVREventsManager.onInputDeviceChange
+  - YVR.Core.YVREventsManager.onRecenterOccurred
+  - YVR.Core.YVREventsManager.onTrackingAcquired
+  - YVR.Core.YVREventsManager.onTrackingLost
+  - YVR.Core.YVREventsManager.onUpdate
+  - YVR.Core.YVREventsManager.onVisibilityGained
+  - YVR.Core.YVREventsManager.onVisibilityLost
+  langs:
+  - csharp
+  - vb
+  name: YVREventsManager
+  nameWithType: YVREventsManager
+  fullName: YVR.Core.YVREventsManager
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVREventsManager
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The manager for events
+  example: []
+  syntax:
+    content: public class YVREventsManager
+    content.vb: Public Class YVREventsManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVREventsManager.onTrackingAcquired
+  commentId: E:YVR.Core.YVREventsManager.onTrackingAcquired
+  id: onTrackingAcquired
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onTrackingAcquired
+  nameWithType: YVREventsManager.onTrackingAcquired
+  fullName: YVR.Core.YVREventsManager.onTrackingAcquired
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onTrackingAcquired
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when head gained tracking.
+  example: []
+  syntax:
+    content: public event Action onTrackingAcquired
+    return:
+      type: System.Action
+    content.vb: Public Event onTrackingAcquired As Action
+- uid: YVR.Core.YVREventsManager.onTrackingLost
+  commentId: E:YVR.Core.YVREventsManager.onTrackingLost
+  id: onTrackingLost
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onTrackingLost
+  nameWithType: YVREventsManager.onTrackingLost
+  fullName: YVR.Core.YVREventsManager.onTrackingLost
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onTrackingLost
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when head lost tracking.
+  example: []
+  syntax:
+    content: public event Action onTrackingLost
+    return:
+      type: System.Action
+    content.vb: Public Event onTrackingLost As Action
+- uid: YVR.Core.YVREventsManager.onHMDMounted
+  commentId: E:YVR.Core.YVREventsManager.onHMDMounted
+  id: onHMDMounted
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onHMDMounted
+  nameWithType: YVREventsManager.onHMDMounted
+  fullName: YVR.Core.YVREventsManager.onHMDMounted
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onHMDMounted
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 25
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when an HMD is put on the user's head.
+  example: []
+  syntax:
+    content: public event Action onHMDMounted
+    return:
+      type: System.Action
+    content.vb: Public Event onHMDMounted As Action
+- uid: YVR.Core.YVREventsManager.onHMDUnMounted
+  commentId: E:YVR.Core.YVREventsManager.onHMDUnMounted
+  id: onHMDUnMounted
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onHMDUnMounted
+  nameWithType: YVREventsManager.onHMDUnMounted
+  fullName: YVR.Core.YVREventsManager.onHMDUnMounted
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onHMDUnMounted
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 30
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when an HMD is taken off the user's head.
+  example: []
+  syntax:
+    content: public event Action onHMDUnMounted
+    return:
+      type: System.Action
+    content.vb: Public Event onHMDUnMounted As Action
+- uid: YVR.Core.YVREventsManager.onRecenterOccurred
+  commentId: E:YVR.Core.YVREventsManager.onRecenterOccurred
+  id: onRecenterOccurred
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onRecenterOccurred
+  nameWithType: YVREventsManager.onRecenterOccurred
+  fullName: YVR.Core.YVREventsManager.onRecenterOccurred
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onRecenterOccurred
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 35
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when recenter occurred
+  example: []
+  syntax:
+    content: public event Action onRecenterOccurred
+    return:
+      type: System.Action
+    content.vb: Public Event onRecenterOccurred As Action
+- uid: YVR.Core.YVREventsManager.onFocusGained
+  commentId: E:YVR.Core.YVREventsManager.onFocusGained
+  id: onFocusGained
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onFocusGained
+  nameWithType: YVREventsManager.onFocusGained
+  fullName: YVR.Core.YVREventsManager.onFocusGained
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onFocusGained
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 40
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when application focus gained
+  example: []
+  syntax:
+    content: public event Action onFocusGained
+    return:
+      type: System.Action
+    content.vb: Public Event onFocusGained As Action
+- uid: YVR.Core.YVREventsManager.onFocusLost
+  commentId: E:YVR.Core.YVREventsManager.onFocusLost
+  id: onFocusLost
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onFocusLost
+  nameWithType: YVREventsManager.onFocusLost
+  fullName: YVR.Core.YVREventsManager.onFocusLost
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onFocusLost
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 45
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when application focus lost
+  example: []
+  syntax:
+    content: public event Action onFocusLost
+    return:
+      type: System.Action
+    content.vb: Public Event onFocusLost As Action
+- uid: YVR.Core.YVREventsManager.onVisibilityGained
+  commentId: E:YVR.Core.YVREventsManager.onVisibilityGained
+  id: onVisibilityGained
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onVisibilityGained
+  nameWithType: YVREventsManager.onVisibilityGained
+  fullName: YVR.Core.YVREventsManager.onVisibilityGained
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onVisibilityGained
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 50
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when application is visible
+  example: []
+  syntax:
+    content: public event Action onVisibilityGained
+    return:
+      type: System.Action
+    content.vb: Public Event onVisibilityGained As Action
+- uid: YVR.Core.YVREventsManager.onVisibilityLost
+  commentId: E:YVR.Core.YVREventsManager.onVisibilityLost
+  id: onVisibilityLost
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onVisibilityLost
+  nameWithType: YVREventsManager.onVisibilityLost
+  fullName: YVR.Core.YVREventsManager.onVisibilityLost
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onVisibilityLost
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 55
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs when application is completely obscured by other content
+  example: []
+  syntax:
+    content: public event Action onVisibilityLost
+    return:
+      type: System.Action
+    content.vb: Public Event onVisibilityLost As Action
+- uid: YVR.Core.YVREventsManager.onUpdate
+  commentId: E:YVR.Core.YVREventsManager.onUpdate
+  id: onUpdate
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onUpdate
+  nameWithType: YVREventsManager.onUpdate
+  fullName: YVR.Core.YVREventsManager.onUpdate
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onUpdate
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 60
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Occurs at the update function of every frame
+  example: []
+  syntax:
+    content: public event Action onUpdate
+    return:
+      type: System.Action
+    content.vb: Public Event onUpdate As Action
+- uid: YVR.Core.YVREventsManager.onInputDeviceChange
+  commentId: E:YVR.Core.YVREventsManager.onInputDeviceChange
+  id: onInputDeviceChange
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: onInputDeviceChange
+  nameWithType: YVREventsManager.onInputDeviceChange
+  fullName: YVR.Core.YVREventsManager.onInputDeviceChange
+  type: Event
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: onInputDeviceChange
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 62
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public event Action<ActiveInputDevice> onInputDeviceChange
+    return:
+      type: System.Action{YVR.Core.ActiveInputDevice}
+    content.vb: Public Event onInputDeviceChange As Action(Of ActiveInputDevice)
+- uid: YVR.Core.YVREventsManager.Initialize
+  commentId: M:YVR.Core.YVREventsManager.Initialize
+  id: Initialize
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: YVREventsManager.Initialize()
+  fullName: YVR.Core.YVREventsManager.Initialize()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Initialize
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 70
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
+  overload: YVR.Core.YVREventsManager.Initialize*
+- uid: YVR.Core.YVREventsManager.Update
+  commentId: M:YVR.Core.YVREventsManager.Update
+  id: Update
+  parent: YVR.Core.YVREventsManager
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: YVREventsManager.Update()
+  fullName: YVR.Core.YVREventsManager.Update()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Update
+    path: ../com.yvr.core/Scripts/Runtime/YVREventsManager.cs
+    startLine: 76
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public void Update()
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Sub Update()
+  overload: YVR.Core.YVREventsManager.Update*
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{YVR.Core.ActiveInputDevice}
+  commentId: T:System.Action{YVR.Core.ActiveInputDevice}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ActiveInputDevice>
+  nameWithType: Action<ActiveInputDevice>
+  fullName: System.Action<YVR.Core.ActiveInputDevice>
+  nameWithType.vb: Action(Of ActiveInputDevice)
+  fullName.vb: System.Action(Of YVR.Core.ActiveInputDevice)
+  name.vb: Action(Of ActiveInputDevice)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: YVR.Core.ActiveInputDevice
+    name: ActiveInputDevice
+    href: YVR.Core.ActiveInputDevice.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.ActiveInputDevice
+    name: ActiveInputDevice
+    href: YVR.Core.ActiveInputDevice.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Core.YVREventsManager.Initialize*
+  commentId: Overload:YVR.Core.YVREventsManager.Initialize
+  href: YVR.Core.YVREventsManager.Initialize.html#YVR_Core_YVREventsManager_Initialize
+  name: Initialize
+  nameWithType: YVREventsManager.Initialize
+  fullName: YVR.Core.YVREventsManager.Initialize
+- uid: YVR.Core.YVREventsManager.Update*
+  commentId: Overload:YVR.Core.YVREventsManager.Update
+  href: YVR.Core.YVREventsManager.Update.html#YVR_Core_YVREventsManager_Update
+  name: Update
+  nameWithType: YVREventsManager.Update
+  fullName: YVR.Core.YVREventsManager.Update
+memberLayout: SeparatePages

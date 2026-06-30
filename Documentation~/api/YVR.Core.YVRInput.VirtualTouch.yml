@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.VirtualTouch
+  commentId: T:YVR.Core.YVRInput.VirtualTouch
+  id: YVRInput.VirtualTouch
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.VirtualTouch.Any
+  - YVR.Core.YVRInput.VirtualTouch.IndexTrigger
+  - YVR.Core.YVRInput.VirtualTouch.None
+  - YVR.Core.YVRInput.VirtualTouch.One
+  - YVR.Core.YVRInput.VirtualTouch.Thumbstick
+  - YVR.Core.YVRInput.VirtualTouch.Two
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.VirtualTouch
+  nameWithType: YVRInput.VirtualTouch
+  fullName: YVR.Core.YVRInput.VirtualTouch
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VirtualTouch
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 296
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Virtual touch mapping for controllers
+  example: []
+  syntax:
+    content: 'public enum YVRInput.VirtualTouch : uint'
+    content.vb: Public Enum YVRInput.VirtualTouch As UInteger
+- uid: YVR.Core.YVRInput.VirtualTouch.None
+  commentId: F:YVR.Core.YVRInput.VirtualTouch.None
+  id: None
+  parent: YVR.Core.YVRInput.VirtualTouch
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.VirtualTouch.None
+  fullName: YVR.Core.YVRInput.VirtualTouch.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 301
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a touch
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.VirtualTouch
+- uid: YVR.Core.YVRInput.VirtualTouch.One
+  commentId: F:YVR.Core.YVRInput.VirtualTouch.One
+  id: One
+  parent: YVR.Core.YVRInput.VirtualTouch
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: YVRInput.VirtualTouch.One
+  fullName: YVR.Core.YVRInput.VirtualTouch.One
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: One
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 305
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: One Touch
+  example: []
+  syntax:
+    content: One = 1
+    return:
+      type: YVR.Core.YVRInput.VirtualTouch
+- uid: YVR.Core.YVRInput.VirtualTouch.Two
+  commentId: F:YVR.Core.YVRInput.VirtualTouch.Two
+  id: Two
+  parent: YVR.Core.YVRInput.VirtualTouch
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: YVRInput.VirtualTouch.Two
+  fullName: YVR.Core.YVRInput.VirtualTouch.Two
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Two
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 309
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Two Touch
+  example: []
+  syntax:
+    content: Two = 2
+    return:
+      type: YVR.Core.YVRInput.VirtualTouch
+- uid: YVR.Core.YVRInput.VirtualTouch.IndexTrigger
+  commentId: F:YVR.Core.YVRInput.VirtualTouch.IndexTrigger
+  id: IndexTrigger
+  parent: YVR.Core.YVRInput.VirtualTouch
+  langs:
+  - csharp
+  - vb
+  name: IndexTrigger
+  nameWithType: YVRInput.VirtualTouch.IndexTrigger
+  fullName: YVR.Core.YVRInput.VirtualTouch.IndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 313
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger Touch
+  example: []
+  syntax:
+    content: IndexTrigger = 8
+    return:
+      type: YVR.Core.YVRInput.VirtualTouch
+- uid: YVR.Core.YVRInput.VirtualTouch.Thumbstick
+  commentId: F:YVR.Core.YVRInput.VirtualTouch.Thumbstick
+  id: Thumbstick
+  parent: YVR.Core.YVRInput.VirtualTouch
+  langs:
+  - csharp
+  - vb
+  name: Thumbstick
+  nameWithType: YVRInput.VirtualTouch.Thumbstick
+  fullName: YVR.Core.YVRInput.VirtualTouch.Thumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Thumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 317
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Touch
+  example: []
+  syntax:
+    content: Thumbstick = 32
+    return:
+      type: YVR.Core.YVRInput.VirtualTouch
+- uid: YVR.Core.YVRInput.VirtualTouch.Any
+  commentId: F:YVR.Core.YVRInput.VirtualTouch.Any
+  id: Any
+  parent: YVR.Core.YVRInput.VirtualTouch
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: YVRInput.VirtualTouch.Any
+  fullName: YVR.Core.YVRInput.VirtualTouch.Any
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Any
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 321
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Any Touch
+  example: []
+  syntax:
+    content: Any = 4294967295
+    return:
+      type: YVR.Core.YVRInput.VirtualTouch
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.VirtualTouch
+  commentId: T:YVR.Core.YVRInput.VirtualTouch
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualTouch
+  nameWithType: YVRInput.VirtualTouch
+  fullName: YVR.Core.YVRInput.VirtualTouch
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: VirtualTouch
+    href: YVR.Core.YVRInput.VirtualTouch.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: VirtualTouch
+    href: YVR.Core.YVRInput.VirtualTouch.html
+memberLayout: SeparatePages

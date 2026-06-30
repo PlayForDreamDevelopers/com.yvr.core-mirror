@@ -1,0 +1,1739 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput
+  commentId: T:YVR.Core.YVRInput
+  id: YVRInput
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.ClearActiveController
+  - YVR.Core.YVRInput.ClearClickedController
+  - YVR.Core.YVRInput.ClearTouchedController
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis1D,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis2D,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis1D,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis2D,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetActiveController
+  - YVR.Core.YVRInput.GetClickedController
+  - YVR.Core.YVRInput.GetControllerBatteryPercentRemaining(YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetControllerIsCharging(YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetPrimaryController
+  - YVR.Core.YVRInput.GetTouchedController
+  - YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.IsControllerConnected(YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.SetControllerVibration(System.Single,System.Single,System.Single,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.SetControllerVibration(System.Single,System.Single,YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.SetPrimaryController(YVR.Core.ControllerType)
+  - YVR.Core.YVRInput.Update
+  langs:
+  - csharp
+  - vb
+  name: YVRInput
+  nameWithType: YVRInput
+  fullName: YVR.Core.YVRInput
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRInput
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Implements all controllers input state related functions
+  example: []
+  syntax:
+    content: public static class YVRInput
+    content.vb: Public Module YVRInput
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRInput.IsControllerConnected(YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.IsControllerConnected(YVR.Core.ControllerType)
+  id: IsControllerConnected(YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: IsControllerConnected(ControllerType)
+  nameWithType: YVRInput.IsControllerConnected(ControllerType)
+  fullName: YVR.Core.YVRInput.IsControllerConnected(YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IsControllerConnected
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 34
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Is controller connected or not
+  example: []
+  syntax:
+    content: public static bool IsControllerConnected(ControllerType controller)
+    parameters:
+    - id: controller
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true when the controller is connected
+    content.vb: Public Shared Function IsControllerConnected(controller As ControllerType) As Boolean
+  overload: YVR.Core.YVRInput.IsControllerConnected*
+- uid: YVR.Core.YVRInput.GetActiveController
+  commentId: M:YVR.Core.YVRInput.GetActiveController
+  id: GetActiveController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetActiveController()
+  nameWithType: YVRInput.GetActiveController()
+  fullName: YVR.Core.YVRInput.GetActiveController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetActiveController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 50
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the active controller in current frame.
+  remarks: >-
+    If any button of one controller is pressed or touched during the frame,
+        then this controller will be marked as active.
+        <p></p>If either left or right controller are marked as active during the frame,
+        and both controllers are connect, then the Controller will be marked as active
+  example: []
+  syntax:
+    content: public static ControllerType GetActiveController()
+    return:
+      type: YVR.Core.ControllerType
+      description: The @YVR.Core.ControllerType of active controller
+    content.vb: Public Shared Function GetActiveController() As ControllerType
+  overload: YVR.Core.YVRInput.GetActiveController*
+- uid: YVR.Core.YVRInput.ClearActiveController
+  commentId: M:YVR.Core.YVRInput.ClearActiveController
+  id: ClearActiveController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: ClearActiveController()
+  nameWithType: YVRInput.ClearActiveController()
+  fullName: YVR.Core.YVRInput.ClearActiveController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ClearActiveController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 55
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set the existing active controller flag to None and start recording it again.
+  example: []
+  syntax:
+    content: public static void ClearActiveController()
+    content.vb: Public Shared Sub ClearActiveController()
+  overload: YVR.Core.YVRInput.ClearActiveController*
+- uid: YVR.Core.YVRInput.GetClickedController
+  commentId: M:YVR.Core.YVRInput.GetClickedController
+  id: GetClickedController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetClickedController()
+  nameWithType: YVRInput.GetClickedController()
+  fullName: YVR.Core.YVRInput.GetClickedController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetClickedController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 61
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get last clicked controller
+  example: []
+  syntax:
+    content: public static ControllerType GetClickedController()
+    return:
+      type: YVR.Core.ControllerType
+      description: ''
+    content.vb: Public Shared Function GetClickedController() As ControllerType
+  overload: YVR.Core.YVRInput.GetClickedController*
+- uid: YVR.Core.YVRInput.ClearClickedController
+  commentId: M:YVR.Core.YVRInput.ClearClickedController
+  id: ClearClickedController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: ClearClickedController()
+  nameWithType: YVRInput.ClearClickedController()
+  fullName: YVR.Core.YVRInput.ClearClickedController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ClearClickedController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 66
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set the existing clicked controller flag to None and start recording it again.
+  example: []
+  syntax:
+    content: public static void ClearClickedController()
+    content.vb: Public Shared Sub ClearClickedController()
+  overload: YVR.Core.YVRInput.ClearClickedController*
+- uid: YVR.Core.YVRInput.GetTouchedController
+  commentId: M:YVR.Core.YVRInput.GetTouchedController
+  id: GetTouchedController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetTouchedController()
+  nameWithType: YVRInput.GetTouchedController()
+  fullName: YVR.Core.YVRInput.GetTouchedController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetTouchedController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 72
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get last touched controller
+  example: []
+  syntax:
+    content: public static ControllerType GetTouchedController()
+    return:
+      type: YVR.Core.ControllerType
+      description: ''
+    content.vb: Public Shared Function GetTouchedController() As ControllerType
+  overload: YVR.Core.YVRInput.GetTouchedController*
+- uid: YVR.Core.YVRInput.ClearTouchedController
+  commentId: M:YVR.Core.YVRInput.ClearTouchedController
+  id: ClearTouchedController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: ClearTouchedController()
+  nameWithType: YVRInput.ClearTouchedController()
+  fullName: YVR.Core.YVRInput.ClearTouchedController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ClearTouchedController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 77
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set the existing touched controller flag to None and start recording it again.
+  example: []
+  syntax:
+    content: public static void ClearTouchedController()
+    content.vb: Public Shared Sub ClearTouchedController()
+  overload: YVR.Core.YVRInput.ClearTouchedController*
+- uid: YVR.Core.YVRInput.Update
+  commentId: M:YVR.Core.YVRInput.Update
+  id: Update
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: YVRInput.Update()
+  fullName: YVR.Core.YVRInput.Update()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Update
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 88
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public static void Update()
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Shared Sub Update()
+  overload: YVR.Core.YVRInput.Update*
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRInput.GetControllerBatteryPercentRemaining(YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetControllerBatteryPercentRemaining(YVR.Core.ControllerType)
+  id: GetControllerBatteryPercentRemaining(YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetControllerBatteryPercentRemaining(ControllerType)
+  nameWithType: YVRInput.GetControllerBatteryPercentRemaining(ControllerType)
+  fullName: YVR.Core.YVRInput.GetControllerBatteryPercentRemaining(YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetControllerBatteryPercentRemaining
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 135
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the remaining battery of the controller in percent
+  example: []
+  syntax:
+    content: public static int GetControllerBatteryPercentRemaining(ControllerType controllerMask)
+    parameters:
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Int32
+      description: Remaining battery in percent
+    content.vb: Public Shared Function GetControllerBatteryPercentRemaining(controllerMask As ControllerType) As Integer
+  overload: YVR.Core.YVRInput.GetControllerBatteryPercentRemaining*
+- uid: YVR.Core.YVRInput.GetControllerIsCharging(YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetControllerIsCharging(YVR.Core.ControllerType)
+  id: GetControllerIsCharging(YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetControllerIsCharging(ControllerType)
+  nameWithType: YVRInput.GetControllerIsCharging(ControllerType)
+  fullName: YVR.Core.YVRInput.GetControllerIsCharging(YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetControllerIsCharging
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 138
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static bool GetControllerIsCharging(ControllerType controllerMask)
+    parameters:
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function GetControllerIsCharging(controllerMask As ControllerType) As Boolean
+  overload: YVR.Core.YVRInput.GetControllerIsCharging*
+- uid: YVR.Core.YVRInput.SetControllerVibration(System.Single,System.Single,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.SetControllerVibration(System.Single,System.Single,YVR.Core.ControllerType)
+  id: SetControllerVibration(System.Single,System.Single,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: SetControllerVibration(float, float, ControllerType)
+  nameWithType: YVRInput.SetControllerVibration(float, float, ControllerType)
+  fullName: YVR.Core.YVRInput.SetControllerVibration(float, float, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetControllerVibration
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 150
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Make specific controller vibrate at the set frequency and amplitude
+  example: []
+  syntax:
+    content: public static void SetControllerVibration(float frequency, float amplitude, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: frequency
+      type: System.Single
+      description: Vibration frequency
+    - id: amplitude
+      type: System.Single
+      description: Vibration amplitude
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    content.vb: Public Shared Sub SetControllerVibration(frequency As Single, amplitude As Single, controllerMask As ControllerType = ControllerType.Active)
+  overload: YVR.Core.YVRInput.SetControllerVibration*
+  nameWithType.vb: YVRInput.SetControllerVibration(Single, Single, ControllerType)
+  fullName.vb: YVR.Core.YVRInput.SetControllerVibration(Single, Single, YVR.Core.ControllerType)
+  name.vb: SetControllerVibration(Single, Single, ControllerType)
+- uid: YVR.Core.YVRInput.SetControllerVibration(System.Single,System.Single,System.Single,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.SetControllerVibration(System.Single,System.Single,System.Single,YVR.Core.ControllerType)
+  id: SetControllerVibration(System.Single,System.Single,System.Single,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: SetControllerVibration(float, float, float, ControllerType)
+  nameWithType: YVRInput.SetControllerVibration(float, float, float, ControllerType)
+  fullName: YVR.Core.YVRInput.SetControllerVibration(float, float, float, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetControllerVibration
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 166
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Make specific controller vibrate at the set frequency and amplitude
+  example: []
+  syntax:
+    content: public static void SetControllerVibration(float frequency, float amplitude, float duration, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: frequency
+      type: System.Single
+      description: Vibration frequency
+    - id: amplitude
+      type: System.Single
+      description: Vibration amplitude
+    - id: duration
+      type: System.Single
+      description: Vibration duration
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    content.vb: Public Shared Sub SetControllerVibration(frequency As Single, amplitude As Single, duration As Single, controllerMask As ControllerType = ControllerType.Active)
+  overload: YVR.Core.YVRInput.SetControllerVibration*
+  nameWithType.vb: YVRInput.SetControllerVibration(Single, Single, Single, ControllerType)
+  fullName.vb: YVR.Core.YVRInput.SetControllerVibration(Single, Single, Single, YVR.Core.ControllerType)
+  name.vb: SetControllerVibration(Single, Single, Single, ControllerType)
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(RawButton, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.RawButton, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawButton, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 184
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is holds down
+  example: []
+  syntax:
+    content: public static bool Get(YVRInput.RawButton rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawButton
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if user holds down the <code class="paramref">rawMask</code> button
+    content.vb: Public Shared Function [Get](rawMask As YVRInput.RawButton, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(VirtualButton, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.VirtualButton, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualButton, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 195
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is holds down
+  example: []
+  syntax:
+    content: public static bool Get(YVRInput.VirtualButton virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualButton
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if user holds down the <code class="paramref">virtualMask</code> button
+    content.vb: Public Shared Function [Get](virtualMask As YVRInput.VirtualButton, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(RawTouch, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.RawTouch, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawTouch, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 218
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is being touched
+  example: []
+  syntax:
+    content: public static bool Get(YVRInput.RawTouch rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawTouch
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if user is touching the <code class="paramref">rawMask</code> button
+    content.vb: Public Shared Function [Get](rawMask As YVRInput.RawTouch, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(VirtualTouch, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.VirtualTouch, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualTouch, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 229
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is being touched
+  example: []
+  syntax:
+    content: public static bool Get(YVRInput.VirtualTouch virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualTouch
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if user is touching the <code class="paramref">virtualMask</code> button
+    content.vb: Public Shared Function [Get](virtualMask As YVRInput.VirtualTouch, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis1D,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis1D,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.RawAxis1D,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(RawAxis1D, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.RawAxis1D, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis1D, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 251
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the trigger position
+  example: []
+  syntax:
+    content: public static float Get(YVRInput.RawAxis1D rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawAxis1D
+      description: Target trigger
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Single
+      description: position of the <code class="paramref">rawMask</code> trigger, values is in -1 ~ 1
+    content.vb: Public Shared Function [Get](rawMask As YVRInput.RawAxis1D, controllerMask As ControllerType = ControllerType.Active) As Single
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis1D,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis1D,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.VirtualAxis1D,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(VirtualAxis1D, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.VirtualAxis1D, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis1D, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 262
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the trigger position
+  example: []
+  syntax:
+    content: public static float Get(YVRInput.VirtualAxis1D virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualAxis1D
+      description: Target trigger
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Single
+      description: position of the <code class="paramref">rawMask</code> trigger, values is in -1 ~ 1
+    content.vb: Public Shared Function [Get](virtualMask As YVRInput.VirtualAxis1D, controllerMask As ControllerType = ControllerType.Active) As Single
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis2D,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis2D,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.RawAxis2D,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(RawAxis2D, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.RawAxis2D, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.RawAxis2D, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 300
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the thumbstick position
+  example: []
+  syntax:
+    content: public static Vector2 Get(YVRInput.RawAxis2D rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawAxis2D
+      description: Target thumbstick
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: UnityEngine.Vector2
+      description: position of <code class="paramref">rawMask</code> thumbstick, both x/y axis value is in -1 ~ 1
+    content.vb: Public Shared Function [Get](rawMask As YVRInput.RawAxis2D, controllerMask As ControllerType = ControllerType.Active) As Vector2
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis2D,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis2D,YVR.Core.ControllerType)
+  id: Get(YVR.Core.YVRInput.VirtualAxis2D,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: Get(VirtualAxis2D, ControllerType)
+  nameWithType: YVRInput.Get(YVRInput.VirtualAxis2D, ControllerType)
+  fullName: YVR.Core.YVRInput.Get(YVR.Core.YVRInput.VirtualAxis2D, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Get
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 311
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the thumbstick position
+  example: []
+  syntax:
+    content: public static Vector2 Get(YVRInput.VirtualAxis2D virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualAxis2D
+      description: Target thumbstick
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: UnityEngine.Vector2
+      description: position of <code class="paramref">virtualMask</code> thumbstick, both x/y axis value is in -1 ~ 1
+    content.vb: Public Shared Function [Get](virtualMask As YVRInput.VirtualAxis2D, controllerMask As ControllerType = ControllerType.Active) As Vector2
+  overload: YVR.Core.YVRInput.Get*
+- uid: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  id: GetDown(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetDown(RawButton, ControllerType)
+  nameWithType: YVRInput.GetDown(YVRInput.RawButton, ControllerType)
+  fullName: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawButton, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetDown
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 351
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is pressed down in this frame
+  example: []
+  syntax:
+    content: public static bool GetDown(YVRInput.RawButton rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawButton
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">rawMask</code> button is pressed down in this frame
+    content.vb: Public Shared Function GetDown(rawMask As YVRInput.RawButton, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetDown*
+- uid: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  id: GetDown(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetDown(VirtualButton, ControllerType)
+  nameWithType: YVRInput.GetDown(YVRInput.VirtualButton, ControllerType)
+  fullName: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualButton, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetDown
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 362
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is pressed down in this frame
+  example: []
+  syntax:
+    content: public static bool GetDown(YVRInput.VirtualButton virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualButton
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">virtualMask</code> button is pressed down in this frame
+    content.vb: Public Shared Function GetDown(virtualMask As YVRInput.VirtualButton, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetDown*
+- uid: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  id: GetDown(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetDown(RawTouch, ControllerType)
+  nameWithType: YVRInput.GetDown(YVRInput.RawTouch, ControllerType)
+  fullName: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.RawTouch, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetDown
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 394
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is touched down in this frame
+  example: []
+  syntax:
+    content: public static bool GetDown(YVRInput.RawTouch rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawTouch
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">rawMask</code> button is touched down in this frame
+    content.vb: Public Shared Function GetDown(rawMask As YVRInput.RawTouch, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetDown*
+- uid: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  id: GetDown(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetDown(VirtualTouch, ControllerType)
+  nameWithType: YVRInput.GetDown(YVRInput.VirtualTouch, ControllerType)
+  fullName: YVR.Core.YVRInput.GetDown(YVR.Core.YVRInput.VirtualTouch, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetDown
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 405
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is touched down in this frame
+  example: []
+  syntax:
+    content: public static bool GetDown(YVRInput.VirtualTouch virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualTouch
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">virtualMask</code> button is touched down in this frame
+    content.vb: Public Shared Function GetDown(virtualMask As YVRInput.VirtualTouch, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetDown*
+- uid: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  id: GetUp(YVR.Core.YVRInput.RawButton,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetUp(RawButton, ControllerType)
+  nameWithType: YVRInput.GetUp(YVRInput.RawButton, ControllerType)
+  fullName: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawButton, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetUp
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 440
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is pressed up in this frame
+  example: []
+  syntax:
+    content: public static bool GetUp(YVRInput.RawButton rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawButton
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">rawMask</code> button is pressed up in this frame
+    content.vb: Public Shared Function GetUp(rawMask As YVRInput.RawButton, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetUp*
+- uid: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  id: GetUp(YVR.Core.YVRInput.VirtualButton,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetUp(VirtualButton, ControllerType)
+  nameWithType: YVRInput.GetUp(YVRInput.VirtualButton, ControllerType)
+  fullName: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualButton, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetUp
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 451
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is pressed up in this frame
+  example: []
+  syntax:
+    content: public static bool GetUp(YVRInput.VirtualButton virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualButton
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">virtualMask</code> button is pressed up in this frame
+    content.vb: Public Shared Function GetUp(virtualMask As YVRInput.VirtualButton, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetUp*
+- uid: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  id: GetUp(YVR.Core.YVRInput.RawTouch,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetUp(RawTouch, ControllerType)
+  nameWithType: YVRInput.GetUp(YVRInput.RawTouch, ControllerType)
+  fullName: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.RawTouch, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetUp
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 482
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is touched up in this frame
+  example: []
+  syntax:
+    content: public static bool GetUp(YVRInput.RawTouch rawMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: rawMask
+      type: YVR.Core.YVRInput.RawTouch
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">rawMask</code> button is touched up in this frame
+    content.vb: Public Shared Function GetUp(rawMask As YVRInput.RawTouch, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetUp*
+- uid: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  id: GetUp(YVR.Core.YVRInput.VirtualTouch,YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetUp(VirtualTouch, ControllerType)
+  nameWithType: YVRInput.GetUp(YVRInput.VirtualTouch, ControllerType)
+  fullName: YVR.Core.YVRInput.GetUp(YVR.Core.YVRInput.VirtualTouch, YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetUp
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 493
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Whether the button is touched up in this frame
+  example: []
+  syntax:
+    content: public static bool GetUp(YVRInput.VirtualTouch virtualMask, ControllerType controllerMask = ControllerType.Active)
+    parameters:
+    - id: virtualMask
+      type: YVR.Core.YVRInput.VirtualTouch
+      description: Target button
+    - id: controllerMask
+      type: YVR.Core.ControllerType
+      description: Target controller
+    return:
+      type: System.Boolean
+      description: true if the <code class="paramref">virtualMask</code> button is touched up in this frame
+    content.vb: Public Shared Function GetUp(virtualMask As YVRInput.VirtualTouch, controllerMask As ControllerType = ControllerType.Active) As Boolean
+  overload: YVR.Core.YVRInput.GetUp*
+- uid: YVR.Core.YVRInput.GetPrimaryController
+  commentId: M:YVR.Core.YVRInput.GetPrimaryController
+  id: GetPrimaryController
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryController()
+  nameWithType: YVRInput.GetPrimaryController()
+  fullName: YVR.Core.YVRInput.GetPrimaryController()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetPrimaryController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 524
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the primary controller set in the global system
+  example: []
+  syntax:
+    content: public static ControllerType GetPrimaryController()
+    return:
+      type: YVR.Core.ControllerType
+      description: ''
+    content.vb: Public Shared Function GetPrimaryController() As ControllerType
+  overload: YVR.Core.YVRInput.GetPrimaryController*
+- uid: YVR.Core.YVRInput.SetPrimaryController(YVR.Core.ControllerType)
+  commentId: M:YVR.Core.YVRInput.SetPrimaryController(YVR.Core.ControllerType)
+  id: SetPrimaryController(YVR.Core.ControllerType)
+  parent: YVR.Core.YVRInput
+  langs:
+  - csharp
+  - vb
+  name: SetPrimaryController(ControllerType)
+  nameWithType: YVRInput.SetPrimaryController(ControllerType)
+  fullName: YVR.Core.YVRInput.SetPrimaryController(YVR.Core.ControllerType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRInput.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetPrimaryController
+    path: ../com.yvr.core/Scripts/Runtime/YVRInput.cs
+    startLine: 536
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Set the primary controller in global system
+  example: []
+  syntax:
+    content: public static void SetPrimaryController(ControllerType controllerType)
+    parameters:
+    - id: controllerType
+      type: YVR.Core.ControllerType
+      description: Primary controller
+    content.vb: Public Shared Sub SetPrimaryController(controllerType As ControllerType)
+  overload: YVR.Core.YVRInput.SetPrimaryController*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRInput.IsControllerConnected*
+  commentId: Overload:YVR.Core.YVRInput.IsControllerConnected
+  href: YVR.Core.YVRInput.IsControllerConnected.html#YVR_Core_YVRInput_IsControllerConnected_YVR_Core_ControllerType_
+  name: IsControllerConnected
+  nameWithType: YVRInput.IsControllerConnected
+  fullName: YVR.Core.YVRInput.IsControllerConnected
+- uid: YVR.Core.ControllerType
+  commentId: T:YVR.Core.ControllerType
+  parent: YVR.Core
+  href: YVR.Core.ControllerType.html
+  name: ControllerType
+  nameWithType: ControllerType
+  fullName: YVR.Core.ControllerType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRInput.GetActiveController*
+  commentId: Overload:YVR.Core.YVRInput.GetActiveController
+  href: YVR.Core.YVRInput.GetActiveController.html#YVR_Core_YVRInput_GetActiveController
+  name: GetActiveController
+  nameWithType: YVRInput.GetActiveController
+  fullName: YVR.Core.YVRInput.GetActiveController
+- uid: YVR.Core.YVRInput.ClearActiveController*
+  commentId: Overload:YVR.Core.YVRInput.ClearActiveController
+  href: YVR.Core.YVRInput.ClearActiveController.html#YVR_Core_YVRInput_ClearActiveController
+  name: ClearActiveController
+  nameWithType: YVRInput.ClearActiveController
+  fullName: YVR.Core.YVRInput.ClearActiveController
+- uid: YVR.Core.YVRInput.GetClickedController*
+  commentId: Overload:YVR.Core.YVRInput.GetClickedController
+  href: YVR.Core.YVRInput.GetClickedController.html#YVR_Core_YVRInput_GetClickedController
+  name: GetClickedController
+  nameWithType: YVRInput.GetClickedController
+  fullName: YVR.Core.YVRInput.GetClickedController
+- uid: YVR.Core.YVRInput.ClearClickedController*
+  commentId: Overload:YVR.Core.YVRInput.ClearClickedController
+  href: YVR.Core.YVRInput.ClearClickedController.html#YVR_Core_YVRInput_ClearClickedController
+  name: ClearClickedController
+  nameWithType: YVRInput.ClearClickedController
+  fullName: YVR.Core.YVRInput.ClearClickedController
+- uid: YVR.Core.YVRInput.GetTouchedController*
+  commentId: Overload:YVR.Core.YVRInput.GetTouchedController
+  href: YVR.Core.YVRInput.GetTouchedController.html#YVR_Core_YVRInput_GetTouchedController
+  name: GetTouchedController
+  nameWithType: YVRInput.GetTouchedController
+  fullName: YVR.Core.YVRInput.GetTouchedController
+- uid: YVR.Core.YVRInput.ClearTouchedController*
+  commentId: Overload:YVR.Core.YVRInput.ClearTouchedController
+  href: YVR.Core.YVRInput.ClearTouchedController.html#YVR_Core_YVRInput_ClearTouchedController
+  name: ClearTouchedController
+  nameWithType: YVRInput.ClearTouchedController
+  fullName: YVR.Core.YVRInput.ClearTouchedController
+- uid: YVR.Core.YVRInput.Update*
+  commentId: Overload:YVR.Core.YVRInput.Update
+  href: YVR.Core.YVRInput.Update.html#YVR_Core_YVRInput_Update
+  name: Update
+  nameWithType: YVRInput.Update
+  fullName: YVR.Core.YVRInput.Update
+- uid: YVR.Core.YVRInput.GetControllerBatteryPercentRemaining*
+  commentId: Overload:YVR.Core.YVRInput.GetControllerBatteryPercentRemaining
+  href: YVR.Core.YVRInput.GetControllerBatteryPercentRemaining.html#YVR_Core_YVRInput_GetControllerBatteryPercentRemaining_YVR_Core_ControllerType_
+  name: GetControllerBatteryPercentRemaining
+  nameWithType: YVRInput.GetControllerBatteryPercentRemaining
+  fullName: YVR.Core.YVRInput.GetControllerBatteryPercentRemaining
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: YVR.Core.YVRInput.GetControllerIsCharging*
+  commentId: Overload:YVR.Core.YVRInput.GetControllerIsCharging
+  href: YVR.Core.YVRInput.GetControllerIsCharging.html#YVR_Core_YVRInput_GetControllerIsCharging_YVR_Core_ControllerType_
+  name: GetControllerIsCharging
+  nameWithType: YVRInput.GetControllerIsCharging
+  fullName: YVR.Core.YVRInput.GetControllerIsCharging
+- uid: YVR.Core.YVRInput.SetControllerVibration*
+  commentId: Overload:YVR.Core.YVRInput.SetControllerVibration
+  href: YVR.Core.YVRInput.SetControllerVibration.html#YVR_Core_YVRInput_SetControllerVibration_System_Single_System_Single_YVR_Core_ControllerType_
+  name: SetControllerVibration
+  nameWithType: YVRInput.SetControllerVibration
+  fullName: YVR.Core.YVRInput.SetControllerVibration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.YVRInput.Get*
+  commentId: Overload:YVR.Core.YVRInput.Get
+  href: YVR.Core.YVRInput.Get.html#YVR_Core_YVRInput_Get_YVR_Core_YVRInput_RawButton_YVR_Core_ControllerType_
+  name: Get
+  nameWithType: YVRInput.Get
+  fullName: YVR.Core.YVRInput.Get
+- uid: YVR.Core.YVRInput.RawButton
+  commentId: T:YVR.Core.YVRInput.RawButton
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawButton
+  nameWithType: YVRInput.RawButton
+  fullName: YVR.Core.YVRInput.RawButton
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawButton
+    name: RawButton
+    href: YVR.Core.YVRInput.RawButton.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawButton
+    name: RawButton
+    href: YVR.Core.YVRInput.RawButton.html
+- uid: YVR.Core.YVRInput.VirtualButton
+  commentId: T:YVR.Core.YVRInput.VirtualButton
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualButton
+  nameWithType: YVRInput.VirtualButton
+  fullName: YVR.Core.YVRInput.VirtualButton
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: VirtualButton
+    href: YVR.Core.YVRInput.VirtualButton.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualButton
+    name: VirtualButton
+    href: YVR.Core.YVRInput.VirtualButton.html
+- uid: YVR.Core.YVRInput.RawTouch
+  commentId: T:YVR.Core.YVRInput.RawTouch
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawTouch
+  nameWithType: YVRInput.RawTouch
+  fullName: YVR.Core.YVRInput.RawTouch
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: RawTouch
+    href: YVR.Core.YVRInput.RawTouch.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawTouch
+    name: RawTouch
+    href: YVR.Core.YVRInput.RawTouch.html
+- uid: YVR.Core.YVRInput.VirtualTouch
+  commentId: T:YVR.Core.YVRInput.VirtualTouch
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualTouch
+  nameWithType: YVRInput.VirtualTouch
+  fullName: YVR.Core.YVRInput.VirtualTouch
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: VirtualTouch
+    href: YVR.Core.YVRInput.VirtualTouch.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualTouch
+    name: VirtualTouch
+    href: YVR.Core.YVRInput.VirtualTouch.html
+- uid: YVR.Core.YVRInput.RawAxis1D
+  commentId: T:YVR.Core.YVRInput.RawAxis1D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawAxis1D
+  nameWithType: YVRInput.RawAxis1D
+  fullName: YVR.Core.YVRInput.RawAxis1D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: RawAxis1D
+    href: YVR.Core.YVRInput.RawAxis1D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis1D
+    name: RawAxis1D
+    href: YVR.Core.YVRInput.RawAxis1D.html
+- uid: YVR.Core.YVRInput.VirtualAxis1D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis1D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualAxis1D
+  nameWithType: YVRInput.VirtualAxis1D
+  fullName: YVR.Core.YVRInput.VirtualAxis1D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: VirtualAxis1D
+    href: YVR.Core.YVRInput.VirtualAxis1D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: VirtualAxis1D
+    href: YVR.Core.YVRInput.VirtualAxis1D.html
+- uid: YVR.Core.YVRInput.RawAxis2D
+  commentId: T:YVR.Core.YVRInput.RawAxis2D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawAxis2D
+  nameWithType: YVRInput.RawAxis2D
+  fullName: YVR.Core.YVRInput.RawAxis2D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: RawAxis2D
+    href: YVR.Core.YVRInput.RawAxis2D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawAxis2D
+    name: RawAxis2D
+    href: YVR.Core.YVRInput.RawAxis2D.html
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRInput.VirtualAxis2D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis2D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualAxis2D
+  nameWithType: YVRInput.VirtualAxis2D
+  fullName: YVR.Core.YVRInput.VirtualAxis2D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: VirtualAxis2D
+    href: YVR.Core.YVRInput.VirtualAxis2D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis2D
+    name: VirtualAxis2D
+    href: YVR.Core.YVRInput.VirtualAxis2D.html
+- uid: YVR.Core.YVRInput.GetDown*
+  commentId: Overload:YVR.Core.YVRInput.GetDown
+  href: YVR.Core.YVRInput.GetDown.html#YVR_Core_YVRInput_GetDown_YVR_Core_YVRInput_RawButton_YVR_Core_ControllerType_
+  name: GetDown
+  nameWithType: YVRInput.GetDown
+  fullName: YVR.Core.YVRInput.GetDown
+- uid: YVR.Core.YVRInput.GetUp*
+  commentId: Overload:YVR.Core.YVRInput.GetUp
+  href: YVR.Core.YVRInput.GetUp.html#YVR_Core_YVRInput_GetUp_YVR_Core_YVRInput_RawButton_YVR_Core_ControllerType_
+  name: GetUp
+  nameWithType: YVRInput.GetUp
+  fullName: YVR.Core.YVRInput.GetUp
+- uid: YVR.Core.YVRInput.GetPrimaryController*
+  commentId: Overload:YVR.Core.YVRInput.GetPrimaryController
+  href: YVR.Core.YVRInput.GetPrimaryController.html#YVR_Core_YVRInput_GetPrimaryController
+  name: GetPrimaryController
+  nameWithType: YVRInput.GetPrimaryController
+  fullName: YVR.Core.YVRInput.GetPrimaryController
+- uid: YVR.Core.YVRInput.SetPrimaryController*
+  commentId: Overload:YVR.Core.YVRInput.SetPrimaryController
+  href: YVR.Core.YVRInput.SetPrimaryController.html#YVR_Core_YVRInput_SetPrimaryController_YVR_Core_ControllerType_
+  name: SetPrimaryController
+  nameWithType: YVRInput.SetPrimaryController
+  fullName: YVR.Core.YVRInput.SetPrimaryController
+memberLayout: SeparatePages

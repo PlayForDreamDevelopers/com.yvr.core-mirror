@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRMeshBlockChangeState
+  commentId: T:YVR.Core.YVRMeshBlockChangeState
+  id: YVRMeshBlockChangeState
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRMeshBlockChangeState.Added
+  - YVR.Core.YVRMeshBlockChangeState.Removed
+  - YVR.Core.YVRMeshBlockChangeState.Unchanged
+  - YVR.Core.YVRMeshBlockChangeState.Updated
+  langs:
+  - csharp
+  - vb
+  name: YVRMeshBlockChangeState
+  nameWithType: YVRMeshBlockChangeState
+  fullName: YVR.Core.YVRMeshBlockChangeState
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRMeshBlockChangeState
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRMeshBlockChangeState
+    content.vb: Public Enum YVRMeshBlockChangeState
+- uid: YVR.Core.YVRMeshBlockChangeState.Added
+  commentId: F:YVR.Core.YVRMeshBlockChangeState.Added
+  id: Added
+  parent: YVR.Core.YVRMeshBlockChangeState
+  langs:
+  - csharp
+  - vb
+  name: Added
+  nameWithType: YVRMeshBlockChangeState.Added
+  fullName: YVR.Core.YVRMeshBlockChangeState.Added
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Added
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Added = 0
+    return:
+      type: YVR.Core.YVRMeshBlockChangeState
+- uid: YVR.Core.YVRMeshBlockChangeState.Updated
+  commentId: F:YVR.Core.YVRMeshBlockChangeState.Updated
+  id: Updated
+  parent: YVR.Core.YVRMeshBlockChangeState
+  langs:
+  - csharp
+  - vb
+  name: Updated
+  nameWithType: YVRMeshBlockChangeState.Updated
+  fullName: YVR.Core.YVRMeshBlockChangeState.Updated
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Updated
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Updated = 1
+    return:
+      type: YVR.Core.YVRMeshBlockChangeState
+- uid: YVR.Core.YVRMeshBlockChangeState.Removed
+  commentId: F:YVR.Core.YVRMeshBlockChangeState.Removed
+  id: Removed
+  parent: YVR.Core.YVRMeshBlockChangeState
+  langs:
+  - csharp
+  - vb
+  name: Removed
+  nameWithType: YVRMeshBlockChangeState.Removed
+  fullName: YVR.Core.YVRMeshBlockChangeState.Removed
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Removed
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Removed = 2
+    return:
+      type: YVR.Core.YVRMeshBlockChangeState
+- uid: YVR.Core.YVRMeshBlockChangeState.Unchanged
+  commentId: F:YVR.Core.YVRMeshBlockChangeState.Unchanged
+  id: Unchanged
+  parent: YVR.Core.YVRMeshBlockChangeState
+  langs:
+  - csharp
+  - vb
+  name: Unchanged
+  nameWithType: YVRMeshBlockChangeState.Unchanged
+  fullName: YVR.Core.YVRMeshBlockChangeState.Unchanged
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Unchanged
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshBlockChangeState.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Unchanged = 3
+    return:
+      type: YVR.Core.YVRMeshBlockChangeState
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRMeshBlockChangeState
+  commentId: T:YVR.Core.YVRMeshBlockChangeState
+  parent: YVR.Core
+  href: YVR.Core.YVRMeshBlockChangeState.html
+  name: YVRMeshBlockChangeState
+  nameWithType: YVRMeshBlockChangeState
+  fullName: YVR.Core.YVRMeshBlockChangeState
+memberLayout: SeparatePages

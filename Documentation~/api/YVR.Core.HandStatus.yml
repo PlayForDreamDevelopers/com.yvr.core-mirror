@@ -1,0 +1,312 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.HandStatus
+  commentId: T:YVR.Core.HandStatus
+  id: HandStatus
+  parent: YVR.Core
+  children:
+  - YVR.Core.HandStatus.DominantHand
+  - YVR.Core.HandStatus.HandTracked
+  - YVR.Core.HandStatus.IndexPinching
+  - YVR.Core.HandStatus.InputStateValid
+  - YVR.Core.HandStatus.MenuPressed
+  - YVR.Core.HandStatus.MiddlePinching
+  - YVR.Core.HandStatus.PinkPinching
+  - YVR.Core.HandStatus.RingPinching
+  - YVR.Core.HandStatus.SystemGestureInProgress
+  langs:
+  - csharp
+  - vb
+  name: HandStatus
+  nameWithType: HandStatus
+  fullName: YVR.Core.HandStatus
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandStatus
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum HandStatus : ulong
+    content.vb: >-
+      <Flags>
+
+      Public Enum HandStatus As ULong
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.HandStatus.HandTracked
+  commentId: F:YVR.Core.HandStatus.HandTracked
+  id: HandTracked
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: HandTracked
+  nameWithType: HandStatus.HandTracked
+  fullName: YVR.Core.HandStatus.HandTracked
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandTracked
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HandTracked = 1
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.InputStateValid
+  commentId: F:YVR.Core.HandStatus.InputStateValid
+  id: InputStateValid
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: InputStateValid
+  nameWithType: HandStatus.InputStateValid
+  fullName: YVR.Core.HandStatus.InputStateValid
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: InputStateValid
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: InputStateValid = 2
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.IndexPinching
+  commentId: F:YVR.Core.HandStatus.IndexPinching
+  id: IndexPinching
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: IndexPinching
+  nameWithType: HandStatus.IndexPinching
+  fullName: YVR.Core.HandStatus.IndexPinching
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IndexPinching
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 25
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: IndexPinching = 4
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.MiddlePinching
+  commentId: F:YVR.Core.HandStatus.MiddlePinching
+  id: MiddlePinching
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: MiddlePinching
+  nameWithType: HandStatus.MiddlePinching
+  fullName: YVR.Core.HandStatus.MiddlePinching
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: MiddlePinching
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 26
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: MiddlePinching = 8
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.RingPinching
+  commentId: F:YVR.Core.HandStatus.RingPinching
+  id: RingPinching
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: RingPinching
+  nameWithType: HandStatus.RingPinching
+  fullName: YVR.Core.HandStatus.RingPinching
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RingPinching
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 27
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: RingPinching = 16
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.PinkPinching
+  commentId: F:YVR.Core.HandStatus.PinkPinching
+  id: PinkPinching
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: PinkPinching
+  nameWithType: HandStatus.PinkPinching
+  fullName: YVR.Core.HandStatus.PinkPinching
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PinkPinching
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 28
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: PinkPinching = 32
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.SystemGestureInProgress
+  commentId: F:YVR.Core.HandStatus.SystemGestureInProgress
+  id: SystemGestureInProgress
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: SystemGestureInProgress
+  nameWithType: HandStatus.SystemGestureInProgress
+  fullName: YVR.Core.HandStatus.SystemGestureInProgress
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SystemGestureInProgress
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: SystemGestureInProgress = 64
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.DominantHand
+  commentId: F:YVR.Core.HandStatus.DominantHand
+  id: DominantHand
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: DominantHand
+  nameWithType: HandStatus.DominantHand
+  fullName: YVR.Core.HandStatus.DominantHand
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DominantHand
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 30
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: DominantHand = 128
+    return:
+      type: YVR.Core.HandStatus
+- uid: YVR.Core.HandStatus.MenuPressed
+  commentId: F:YVR.Core.HandStatus.MenuPressed
+  id: MenuPressed
+  parent: YVR.Core.HandStatus
+  langs:
+  - csharp
+  - vb
+  name: MenuPressed
+  nameWithType: HandStatus.MenuPressed
+  fullName: YVR.Core.HandStatus.MenuPressed
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: MenuPressed
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 31
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: MenuPressed = 256
+    return:
+      type: YVR.Core.HandStatus
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.HandStatus
+  commentId: T:YVR.Core.HandStatus
+  parent: YVR.Core
+  href: YVR.Core.HandStatus.html
+  name: HandStatus
+  nameWithType: HandStatus
+  fullName: YVR.Core.HandStatus
+memberLayout: SeparatePages

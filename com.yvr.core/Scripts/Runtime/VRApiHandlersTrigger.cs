@@ -42,8 +42,11 @@ namespace YVR.Core
 
         private IEnumerator StartRecording(int recordingTime)
         {
+            // Cache WaitForSecondsRealtime to reduce GC allocations
+            var waitTime = new WaitForSecondsRealtime(recordingTime);
+
             yvrStartRecording();
-            yield return new WaitForSecondsRealtime(recordingTime);
+            yield return waitTime;
             yvrStopRecording();
             Application.Quit();
         }
@@ -51,10 +54,13 @@ namespace YVR.Core
 
         private IEnumerator StartReplay(int replayTime, string replayPath)
         {
+            // Cache WaitForSecondsRealtime to reduce GC allocations
+            var waitTime = new WaitForSecondsRealtime(replayTime);
+
             while (true)
             {
                 yvrStartReplay(replayPath);
-                yield return new WaitForSecondsRealtime(replayTime);
+                yield return waitTime;
             }
         }
     }

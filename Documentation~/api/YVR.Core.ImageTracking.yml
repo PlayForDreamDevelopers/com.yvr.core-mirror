@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ImageTracking
+  commentId: N:YVR.Core.ImageTracking
+  id: YVR.Core.ImageTracking
+  children:
+  - YVR.Core.ImageTracking.ImageTemplateInfo
+  - YVR.Core.ImageTracking.ImageTrackingMgr
+  - YVR.Core.ImageTracking.ToTrackImage
+  - YVR.Core.ImageTracking.ToTrackImagesCollectionSO
+  - YVR.Core.ImageTracking.TrackedImageInfo
+  langs:
+  - csharp
+  - vb
+  name: YVR.Core.ImageTracking
+  nameWithType: YVR.Core.ImageTracking
+  fullName: YVR.Core.ImageTracking
+  type: Namespace
+  assemblies:
+  - YVR.Core.Runtime
+references:
+- uid: YVR.Core.ImageTracking.ToTrackImage
+  commentId: T:YVR.Core.ImageTracking.ToTrackImage
+  parent: YVR.Core.ImageTracking
+  href: YVR.Core.ImageTracking.ToTrackImage.html
+  name: ToTrackImage
+  nameWithType: ToTrackImage
+  fullName: YVR.Core.ImageTracking.ToTrackImage
+- uid: YVR.Core.ImageTracking.ToTrackImagesCollectionSO
+  commentId: T:YVR.Core.ImageTracking.ToTrackImagesCollectionSO
+  parent: YVR.Core.ImageTracking
+  href: YVR.Core.ImageTracking.ToTrackImagesCollectionSO.html
+  name: ToTrackImagesCollectionSO
+  nameWithType: ToTrackImagesCollectionSO
+  fullName: YVR.Core.ImageTracking.ToTrackImagesCollectionSO
+- uid: YVR.Core.ImageTracking.TrackedImageInfo
+  commentId: T:YVR.Core.ImageTracking.TrackedImageInfo
+  href: YVR.Core.ImageTracking.TrackedImageInfo.html
+  name: TrackedImageInfo
+  nameWithType: TrackedImageInfo
+  fullName: YVR.Core.ImageTracking.TrackedImageInfo
+- uid: YVR.Core.ImageTracking.ImageTrackingMgr
+  commentId: T:YVR.Core.ImageTracking.ImageTrackingMgr
+  href: YVR.Core.ImageTracking.ImageTrackingMgr.html
+  name: ImageTrackingMgr
+  nameWithType: ImageTrackingMgr
+  fullName: YVR.Core.ImageTracking.ImageTrackingMgr
+- uid: YVR.Core.ImageTracking.ImageTemplateInfo
+  commentId: T:YVR.Core.ImageTracking.ImageTemplateInfo
+  parent: YVR.Core.ImageTracking
+  href: YVR.Core.ImageTracking.ImageTemplateInfo.html
+  name: ImageTemplateInfo
+  nameWithType: ImageTemplateInfo
+  fullName: YVR.Core.ImageTracking.ImageTemplateInfo
+- uid: YVR.Core.ImageTracking
+  commentId: N:YVR.Core.ImageTracking
+  href: YVR.html
+  name: YVR.Core.ImageTracking
+  nameWithType: YVR.Core.ImageTracking
+  fullName: YVR.Core.ImageTracking
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.ImageTracking
+    name: ImageTracking
+    href: YVR.Core.ImageTracking.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.ImageTracking
+    name: ImageTracking
+    href: YVR.Core.ImageTracking.html
+memberLayout: SeparatePages

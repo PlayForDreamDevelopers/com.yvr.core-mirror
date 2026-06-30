@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRBoundary.BoundaryNode
+  commentId: T:YVR.Core.YVRBoundary.BoundaryNode
+  id: YVRBoundary.BoundaryNode
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRBoundary.BoundaryNode.ControllerLeft
+  - YVR.Core.YVRBoundary.BoundaryNode.ControllerRight
+  - YVR.Core.YVRBoundary.BoundaryNode.Head
+  langs:
+  - csharp
+  - vb
+  name: YVRBoundary.BoundaryNode
+  nameWithType: YVRBoundary.BoundaryNode
+  fullName: YVR.Core.YVRBoundary.BoundaryNode
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: BoundaryNode
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Specifies a tracked node that can be queried through the boundary system.
+  example: []
+  syntax:
+    content: public enum YVRBoundary.BoundaryNode
+    content.vb: Public Enum YVRBoundary.BoundaryNode
+- uid: YVR.Core.YVRBoundary.BoundaryNode.ControllerLeft
+  commentId: F:YVR.Core.YVRBoundary.BoundaryNode.ControllerLeft
+  id: ControllerLeft
+  parent: YVR.Core.YVRBoundary.BoundaryNode
+  langs:
+  - csharp
+  - vb
+  name: ControllerLeft
+  nameWithType: YVRBoundary.BoundaryNode.ControllerLeft
+  fullName: YVR.Core.YVRBoundary.BoundaryNode.ControllerLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllerLeft
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Tracks the left controller node
+  example: []
+  syntax:
+    content: ControllerLeft = 0
+    return:
+      type: YVR.Core.YVRBoundary.BoundaryNode
+- uid: YVR.Core.YVRBoundary.BoundaryNode.ControllerRight
+  commentId: F:YVR.Core.YVRBoundary.BoundaryNode.ControllerRight
+  id: ControllerRight
+  parent: YVR.Core.YVRBoundary.BoundaryNode
+  langs:
+  - csharp
+  - vb
+  name: ControllerRight
+  nameWithType: YVRBoundary.BoundaryNode.ControllerRight
+  fullName: YVR.Core.YVRBoundary.BoundaryNode.ControllerRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllerRight
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Tracks the right controller node
+  example: []
+  syntax:
+    content: ControllerRight = 1
+    return:
+      type: YVR.Core.YVRBoundary.BoundaryNode
+- uid: YVR.Core.YVRBoundary.BoundaryNode.Head
+  commentId: F:YVR.Core.YVRBoundary.BoundaryNode.Head
+  id: Head
+  parent: YVR.Core.YVRBoundary.BoundaryNode
+  langs:
+  - csharp
+  - vb
+  name: Head
+  nameWithType: YVRBoundary.BoundaryNode.Head
+  fullName: YVR.Core.YVRBoundary.BoundaryNode.Head
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Head
+    path: ../com.yvr.core/Scripts/Runtime/YVRBoundary.cs
+    startLine: 28
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Tracks the hand node
+  example: []
+  syntax:
+    content: Head = 2
+    return:
+      type: YVR.Core.YVRBoundary.BoundaryNode
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRBoundary.BoundaryNode
+  commentId: T:YVR.Core.YVRBoundary.BoundaryNode
+  parent: YVR.Core
+  href: YVR.Core.YVRBoundary.html
+  name: YVRBoundary.BoundaryNode
+  nameWithType: YVRBoundary.BoundaryNode
+  fullName: YVR.Core.YVRBoundary.BoundaryNode
+  spec.csharp:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: BoundaryNode
+    href: YVR.Core.YVRBoundary.BoundaryNode.html
+  spec.vb:
+  - uid: YVR.Core.YVRBoundary
+    name: YVRBoundary
+    href: YVR.Core.YVRBoundary.html
+  - name: .
+  - uid: YVR.Core.YVRBoundary.BoundaryNode
+    name: BoundaryNode
+    href: YVR.Core.YVRBoundary.BoundaryNode.html
+memberLayout: SeparatePages

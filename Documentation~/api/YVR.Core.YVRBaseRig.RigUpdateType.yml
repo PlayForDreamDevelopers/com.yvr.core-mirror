@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRBaseRig.RigUpdateType
+  commentId: T:YVR.Core.YVRBaseRig.RigUpdateType
+  id: YVRBaseRig.RigUpdateType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRBaseRig.RigUpdateType.BeforeRender
+  - YVR.Core.YVRBaseRig.RigUpdateType.Dynamic
+  langs:
+  - csharp
+  - vb
+  name: YVRBaseRig.RigUpdateType
+  nameWithType: YVRBaseRig.RigUpdateType
+  fullName: YVR.Core.YVRBaseRig.RigUpdateType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RigUpdateType
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRBaseRig.RigUpdateType
+    content.vb: Public Enum YVRBaseRig.RigUpdateType
+- uid: YVR.Core.YVRBaseRig.RigUpdateType.Dynamic
+  commentId: F:YVR.Core.YVRBaseRig.RigUpdateType.Dynamic
+  id: Dynamic
+  parent: YVR.Core.YVRBaseRig.RigUpdateType
+  langs:
+  - csharp
+  - vb
+  name: Dynamic
+  nameWithType: YVRBaseRig.RigUpdateType.Dynamic
+  fullName: YVR.Core.YVRBaseRig.RigUpdateType.Dynamic
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Dynamic
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Dynamic = 0
+    return:
+      type: YVR.Core.YVRBaseRig.RigUpdateType
+- uid: YVR.Core.YVRBaseRig.RigUpdateType.BeforeRender
+  commentId: F:YVR.Core.YVRBaseRig.RigUpdateType.BeforeRender
+  id: BeforeRender
+  parent: YVR.Core.YVRBaseRig.RigUpdateType
+  langs:
+  - csharp
+  - vb
+  name: BeforeRender
+  nameWithType: YVRBaseRig.RigUpdateType.BeforeRender
+  fullName: YVR.Core.YVRBaseRig.RigUpdateType.BeforeRender
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: BeforeRender
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: BeforeRender = 1
+    return:
+      type: YVR.Core.YVRBaseRig.RigUpdateType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRBaseRig.RigUpdateType
+  commentId: T:YVR.Core.YVRBaseRig.RigUpdateType
+  parent: YVR.Core
+  href: YVR.Core.YVRBaseRig.html
+  name: YVRBaseRig.RigUpdateType
+  nameWithType: YVRBaseRig.RigUpdateType
+  fullName: YVR.Core.YVRBaseRig.RigUpdateType
+  spec.csharp:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.RigUpdateType
+    name: RigUpdateType
+    href: YVR.Core.YVRBaseRig.RigUpdateType.html
+  spec.vb:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.RigUpdateType
+    name: RigUpdateType
+    href: YVR.Core.YVRBaseRig.RigUpdateType.html
+memberLayout: SeparatePages

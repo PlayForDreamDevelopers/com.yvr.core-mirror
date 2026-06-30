@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPlaneDetectorOrientation
+  commentId: T:YVR.Core.YVRPlaneDetectorOrientation
+  id: YVRPlaneDetectorOrientation
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  - YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  - YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  - YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  - YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  langs:
+  - csharp
+  - vb
+  name: YVRPlaneDetectorOrientation
+  nameWithType: YVRPlaneDetectorOrientation
+  fullName: YVR.Core.YVRPlaneDetectorOrientation
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPlaneDetectorOrientation
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRPlaneDetectorOrientation
+    content.vb: Public Enum YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  id: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  parent: YVR.Core.YVRPlaneDetectorOrientation
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  nameWithType: YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  fullName: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_UPWARD_EXT = 0
+    return:
+      type: YVR.Core.YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  id: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  parent: YVR.Core.YVRPlaneDetectorOrientation
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  nameWithType: YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  fullName: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_ORIENTATION_HORIZONTAL_DOWNWARD_EXT = 1
+    return:
+      type: YVR.Core.YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  id: XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  parent: YVR.Core.YVRPlaneDetectorOrientation
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  nameWithType: YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  fullName: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_ORIENTATION_VERTICAL_EXT = 2
+    return:
+      type: YVR.Core.YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  id: XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  parent: YVR.Core.YVRPlaneDetectorOrientation
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  nameWithType: YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  fullName: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_ORIENTATION_ARBITRARY_EXT = 3
+    return:
+      type: YVR.Core.YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  commentId: F:YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  id: XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  parent: YVR.Core.YVRPlaneDetectorOrientation
+  langs:
+  - csharp
+  - vb
+  name: XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  nameWithType: YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  fullName: YVR.Core.YVRPlaneDetectorOrientation.XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorOrientation.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: XR_PLANE_DETECTOR_ORIENTATION_MAX_ENUM_EXT = 2147483647
+    return:
+      type: YVR.Core.YVRPlaneDetectorOrientation
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRPlaneDetectorOrientation
+  commentId: T:YVR.Core.YVRPlaneDetectorOrientation
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorOrientation.html
+  name: YVRPlaneDetectorOrientation
+  nameWithType: YVRPlaneDetectorOrientation
+  fullName: YVR.Core.YVRPlaneDetectorOrientation
+memberLayout: SeparatePages

@@ -1,0 +1,3260 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRLayerAndroidHandler
+  commentId: T:YVR.Core.YVRLayerAndroidHandler
+  id: YVRLayerAndroidHandler
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRLayerAndroidHandler.AddLayer(System.Int32)
+  - YVR.Core.YVRLayerAndroidHandler.AddLayerAsync(System.Int32,System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  - YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  - YVR.Core.YVRLayerAndroidHandler.DestroyLayer(System.Int32,System.Boolean)
+  - YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.Finalize
+  - YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle
+  - YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId
+  - YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(System.Int32)
+  - YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(System.Int32,System.Int32)
+  - YVR.Core.YVRLayerAndroidHandler.GetLayerSurface(System.Int32)
+  - YVR.Core.YVRLayerAndroidHandler.GetLayersCount
+  - YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer(System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync(System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync(System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer(System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible(System.Boolean,System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.RemoveLayer(System.Int32)
+  - YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync(System.Int32,System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback(System.Action)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  - YVR.Core.YVRLayerAndroidHandler.SetLayerVisible(System.Int32,System.Boolean)
+  - YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  - YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: YVRLayerAndroidHandler
+  nameWithType: YVRLayerAndroidHandler
+  fullName: YVR.Core.YVRLayerAndroidHandler
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRLayerAndroidHandler
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public class YVRLayerAndroidHandler : IYVRLayerHandle'
+    content.vb: Public Class YVRLayerAndroidHandler Implements IYVRLayerHandle
+  inheritance:
+  - System.Object
+  implements:
+  - YVR.Core.IYVRLayerHandle
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  id: CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateLayerAsync(YVRLayerCreateInfo, Action<int>)
+  nameWithType: YVRLayerAndroidHandler.CreateLayerAsync(YVRLayerCreateInfo, Action<int>)
+  fullName: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo, System.Action<int>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CreateLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 141
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void CreateLayerAsync(YVRLayerCreateInfo layerCreateInfo, Action<int> onLayerCreated = null)
+    parameters:
+    - id: layerCreateInfo
+      type: YVR.Core.YVRLayerCreateInfo
+    - id: onLayerCreated
+      type: System.Action{System.Int32}
+    content.vb: Public Sub CreateLayerAsync(layerCreateInfo As YVRLayerCreateInfo, onLayerCreated As Action(Of Integer) = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  nameWithType.vb: YVRLayerAndroidHandler.CreateLayerAsync(YVRLayerCreateInfo, Action(Of Integer))
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo, System.Action(Of Integer))
+  name.vb: CreateLayerAsync(YVRLayerCreateInfo, Action(Of Integer))
+- uid: YVR.Core.YVRLayerAndroidHandler.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  id: CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: CreateLayer(YVRLayerCreateInfo)
+  nameWithType: YVRLayerAndroidHandler.CreateLayer(YVRLayerCreateInfo)
+  fullName: YVR.Core.YVRLayerAndroidHandler.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CreateLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 148
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public int CreateLayer(YVRLayerCreateInfo layerCreateInfo)
+    parameters:
+    - id: layerCreateInfo
+      type: YVR.Core.YVRLayerCreateInfo
+    return:
+      type: System.Int32
+    content.vb: Public Function CreateLayer(layerCreateInfo As YVRLayerCreateInfo) As Integer
+  overload: YVR.Core.YVRLayerAndroidHandler.CreateLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync(System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync(System.Action)
+  id: PrepareCreateLayerAsync(System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: PrepareCreateLayerAsync(Action)
+  nameWithType: YVRLayerAndroidHandler.PrepareCreateLayerAsync(Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareCreateLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 153
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void PrepareCreateLayerAsync(Action onPrepareCreateLayer = null)
+    parameters:
+    - id: onPrepareCreateLayer
+      type: System.Action
+    content.vb: Public Sub PrepareCreateLayerAsync(onPrepareCreateLayer As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  id: DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: DestroyLayerAsync(int, bool, Action)
+  nameWithType: YVRLayerAndroidHandler.DestroyLayerAsync(int, bool, Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync(int, bool, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DestroyLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 160
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void DestroyLayerAsync(int layerId, bool destroyImmediate, Action onLayerDestroyed = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: destroyImmediate
+      type: System.Boolean
+    - id: onLayerDestroyed
+      type: System.Action
+    content.vb: Public Sub DestroyLayerAsync(layerId As Integer, destroyImmediate As Boolean, onLayerDestroyed As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  nameWithType.vb: YVRLayerAndroidHandler.DestroyLayerAsync(Integer, Boolean, Action)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync(Integer, Boolean, System.Action)
+  name.vb: DestroyLayerAsync(Integer, Boolean, Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.DestroyLayer(System.Int32,System.Boolean)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.DestroyLayer(System.Int32,System.Boolean)
+  id: DestroyLayer(System.Int32,System.Boolean)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: DestroyLayer(int, bool)
+  nameWithType: YVRLayerAndroidHandler.DestroyLayer(int, bool)
+  fullName: YVR.Core.YVRLayerAndroidHandler.DestroyLayer(int, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DestroyLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 166
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void DestroyLayer(int layer, bool destroyImmediate)
+    parameters:
+    - id: layer
+      type: System.Int32
+    - id: destroyImmediate
+      type: System.Boolean
+    content.vb: Public Sub DestroyLayer(layer As Integer, destroyImmediate As Boolean)
+  overload: YVR.Core.YVRLayerAndroidHandler.DestroyLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+  nameWithType.vb: YVRLayerAndroidHandler.DestroyLayer(Integer, Boolean)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.DestroyLayer(Integer, Boolean)
+  name.vb: DestroyLayer(Integer, Boolean)
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync(System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync(System.Action)
+  id: PrepareDestroyLayerAsync(System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: PrepareDestroyLayerAsync(Action)
+  nameWithType: YVRLayerAndroidHandler.PrepareDestroyLayerAsync(Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareDestroyLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 171
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void PrepareDestroyLayerAsync(Action onPrepareDestroyLayer = null)
+    parameters:
+    - id: onPrepareDestroyLayer
+      type: System.Action
+    content.vb: Public Sub PrepareDestroyLayerAsync(onPrepareDestroyLayer As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync(System.Int32,System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.AddLayerAsync(System.Int32,System.Action)
+  id: AddLayerAsync(System.Int32,System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: AddLayerAsync(int, Action)
+  nameWithType: YVRLayerAndroidHandler.AddLayerAsync(int, Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync(int, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: AddLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 177
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void AddLayerAsync(int layerId, Action onLayerAdded = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: onLayerAdded
+      type: System.Action
+    content.vb: Public Sub AddLayerAsync(layerId As Integer, onLayerAdded As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+  nameWithType.vb: YVRLayerAndroidHandler.AddLayerAsync(Integer, Action)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync(Integer, System.Action)
+  name.vb: AddLayerAsync(Integer, Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.AddLayer(System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.AddLayer(System.Int32)
+  id: AddLayer(System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: AddLayer(int)
+  nameWithType: YVRLayerAndroidHandler.AddLayer(int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.AddLayer(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: AddLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 183
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void AddLayer(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    content.vb: Public Sub AddLayer(layerId As Integer)
+  overload: YVR.Core.YVRLayerAndroidHandler.AddLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.AddLayer(Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.AddLayer(Integer)
+  name.vb: AddLayer(Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer(System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer(System.Action)
+  id: PrepareAddLayer(System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: PrepareAddLayer(Action)
+  nameWithType: YVRLayerAndroidHandler.PrepareAddLayer(Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareAddLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 188
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void PrepareAddLayer(Action onPrepareAddLayer = null)
+    parameters:
+    - id: onPrepareAddLayer
+      type: System.Action
+    content.vb: Public Sub PrepareAddLayer(onPrepareAddLayer As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync(System.Int32,System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync(System.Int32,System.Action)
+  id: RemoveLayerAsync(System.Int32,System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: RemoveLayerAsync(int, Action)
+  nameWithType: YVRLayerAndroidHandler.RemoveLayerAsync(int, Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync(int, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RemoveLayerAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 194
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void RemoveLayerAsync(int layerId, Action onLayerRemoved = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: onLayerRemoved
+      type: System.Action
+    content.vb: Public Sub RemoveLayerAsync(layerId As Integer, onLayerRemoved As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+  nameWithType.vb: YVRLayerAndroidHandler.RemoveLayerAsync(Integer, Action)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync(Integer, System.Action)
+  name.vb: RemoveLayerAsync(Integer, Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.RemoveLayer(System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.RemoveLayer(System.Int32)
+  id: RemoveLayer(System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: RemoveLayer(int)
+  nameWithType: YVRLayerAndroidHandler.RemoveLayer(int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.RemoveLayer(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RemoveLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 200
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void RemoveLayer(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    content.vb: Public Sub RemoveLayer(layerId As Integer)
+  overload: YVR.Core.YVRLayerAndroidHandler.RemoveLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.RemoveLayer(Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.RemoveLayer(Integer)
+  name.vb: RemoveLayer(Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer(System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer(System.Action)
+  id: PrepareRemoveLayer(System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: PrepareRemoveLayer(Action)
+  nameWithType: YVRLayerAndroidHandler.PrepareRemoveLayer(Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareRemoveLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 205
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void PrepareRemoveLayer(Action onPrepareRemoveLayer = null)
+    parameters:
+    - id: onPrepareRemoveLayer
+      type: System.Action
+    content.vb: Public Sub PrepareRemoveLayer(onPrepareRemoveLayer As Action = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible(System.Int32,System.Boolean)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerVisible(System.Int32,System.Boolean)
+  id: SetLayerVisible(System.Int32,System.Boolean)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerVisible(int, bool)
+  nameWithType: YVRLayerAndroidHandler.SetLayerVisible(int, bool)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible(int, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerVisible
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 211
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerVisible(int layerId, bool visible)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: visible
+      type: System.Boolean
+    content.vb: Public Sub SetLayerVisible(layerId As Integer, visible As Boolean)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerVisible(Integer, Boolean)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible(Integer, Boolean)
+  name.vb: SetLayerVisible(Integer, Boolean)
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible(System.Boolean,System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible(System.Boolean,System.Action)
+  id: PrepareSetLayerVisible(System.Boolean,System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: PrepareSetLayerVisible(bool, Action)
+  nameWithType: YVRLayerAndroidHandler.PrepareSetLayerVisible(bool, Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible(bool, System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PrepareSetLayerVisible
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 216
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void PrepareSetLayerVisible(bool visible, Action onPrepareSetLayerVisible)
+    parameters:
+    - id: visible
+      type: System.Boolean
+    - id: onPrepareSetLayerVisible
+      type: System.Action
+    content.vb: Public Sub PrepareSetLayerVisible(visible As Boolean, onPrepareSetLayerVisible As Action)
+  overload: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible*
+  implements:
+  - YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+  nameWithType.vb: YVRLayerAndroidHandler.PrepareSetLayerVisible(Boolean, Action)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible(Boolean, System.Action)
+  name.vb: PrepareSetLayerVisible(Boolean, Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback(System.Action)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback(System.Action)
+  id: SetLayerPreSubmitCallback(System.Action)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerPreSubmitCallback(Action)
+  nameWithType: YVRLayerAndroidHandler.SetLayerPreSubmitCallback(Action)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback(System.Action)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerPreSubmitCallback
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 222
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerPreSubmitCallback(Action onLayerPreSubmit)
+    parameters:
+    - id: onLayerPreSubmit
+      type: System.Action
+    content.vb: Public Sub SetLayerPreSubmitCallback(onLayerPreSubmit As Action)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  id: SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerPose(in int, in XRPose)
+  nameWithType: YVRLayerAndroidHandler.SetLayerPose(in int, in XRPose)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerPose(in int, in YVR.Core.XRPose)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 228
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerPose(in int layerId, in XRPose pose)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: pose
+      type: YVR.Core.XRPose
+    content.vb: Public Sub SetLayerPose(layerId As Integer, pose As XRPose)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerPose*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerPose(Integer, XRPose)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerPose(Integer, YVR.Core.XRPose)
+  name.vb: SetLayerPose(Integer, XRPose)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  id: SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerSize(in int, XRSize)
+  nameWithType: YVRLayerAndroidHandler.SetLayerSize(in int, XRSize)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerSize(in int, YVR.Core.XRSize)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerSize
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 229
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerSize(in int layerId, XRSize size)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: size
+      type: YVR.Core.XRSize
+    content.vb: Public Sub SetLayerSize(layerId As Integer, size As XRSize)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerSize*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerSize(Integer, XRSize)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerSize(Integer, YVR.Core.XRSize)
+  name.vb: SetLayerSize(Integer, XRSize)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  id: SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerCylinderParam(in int, in float, in float, in float)
+  nameWithType: YVRLayerAndroidHandler.SetLayerCylinderParam(in int, in float, in float, in float)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam(in int, in float, in float, in float)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerCylinderParam
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 231
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerCylinderParam(in int layerId, in float radius, in float centralAngle, in float aspectRatio)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: radius
+      type: System.Single
+    - id: centralAngle
+      type: System.Single
+    - id: aspectRatio
+      type: System.Single
+    content.vb: Public Sub SetLayerCylinderParam(layerId As Integer, radius As Single, centralAngle As Single, aspectRatio As Single)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerCylinderParam(Integer, Single, Single, Single)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam(Integer, Single, Single, Single)
+  name.vb: SetLayerCylinderParam(Integer, Single, Single, Single)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  id: SetLayerEquirectRadius(System.Int32@,System.Single@)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerEquirectRadius(in int, in float)
+  nameWithType: YVRLayerAndroidHandler.SetLayerEquirectRadius(in int, in float)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius(in int, in float)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerEquirectRadius
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 233
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerEquirectRadius(in int layerId, in float radius)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: radius
+      type: System.Single
+    content.vb: Public Sub SetLayerEquirectRadius(layerId As Integer, radius As Single)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerEquirectRadius(Integer, Single)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius(Integer, Single)
+  name.vb: SetLayerEquirectRadius(Integer, Single)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  id: SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerEquirectOffset(in int, in Rect)
+  nameWithType: YVRLayerAndroidHandler.SetLayerEquirectOffset(in int, in Rect)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset(in int, in UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerEquirectOffset
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 238
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerEquirectOffset(in int layerId, in Rect offset)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: offset
+      type: UnityEngine.Rect
+    content.vb: Public Sub SetLayerEquirectOffset(layerId As Integer, offset As Rect)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerEquirectOffset(Integer, Rect)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset(Integer, UnityEngine.Rect)
+  name.vb: SetLayerEquirectOffset(Integer, Rect)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  id: SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  nameWithType: YVRLayerAndroidHandler.SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerEquirect2Param
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 243
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerEquirect2Param(in int layerId, in float radius, in float centralHorizontalAngle, in float upperVerticalAngle, in float lowerVerticalAngle)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: radius
+      type: System.Single
+    - id: centralHorizontalAngle
+      type: System.Single
+    - id: upperVerticalAngle
+      type: System.Single
+    - id: lowerVerticalAngle
+      type: System.Single
+    content.vb: Public Sub SetLayerEquirect2Param(layerId As Integer, radius As Single, centralHorizontalAngle As Single, upperVerticalAngle As Single, lowerVerticalAngle As Single)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  name.vb: SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerSettings(int, bool, bool, bool, bool)
+  nameWithType: YVRLayerAndroidHandler.SetLayerSettings(int, bool, bool, bool, bool)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings(int, bool, bool, bool, bool)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerSettings
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 248
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerSettings(int layerId, bool enableSuperSample, bool expensiveSuperSample, bool enableSharpen, bool expensiveSharpen)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: enableSuperSample
+      type: System.Boolean
+    - id: expensiveSuperSample
+      type: System.Boolean
+    - id: enableSharpen
+      type: System.Boolean
+    - id: expensiveSharpen
+      type: System.Boolean
+    content.vb: Public Sub SetLayerSettings(layerId As Integer, enableSuperSample As Boolean, expensiveSuperSample As Boolean, enableSharpen As Boolean, expensiveSharpen As Boolean)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  name.vb: SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  id: SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerImageRect(int, Rect)
+  nameWithType: YVRLayerAndroidHandler.SetLayerImageRect(int, Rect)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect(int, UnityEngine.Rect)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerImageRect
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 250
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerImageRect(int layerId, Rect rect)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: rect
+      type: UnityEngine.Rect
+    content.vb: Public Sub SetLayerImageRect(layerId As Integer, rect As Rect)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerImageRect(Integer, Rect)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect(Integer, UnityEngine.Rect)
+  name.vb: SetLayerImageRect(Integer, Rect)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  id: SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetSurfaceDimensions(int, int, int)
+  nameWithType: YVRLayerAndroidHandler.SetSurfaceDimensions(int, int, int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetSurfaceDimensions
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 255
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetSurfaceDimensions(int layerId, int width, int height)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Public Sub SetSurfaceDimensions(layerId As Integer, width As Integer, height As Integer)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.SetSurfaceDimensions(Integer, Integer, Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions(Integer, Integer, Integer)
+  name.vb: SetSurfaceDimensions(Integer, Integer, Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  id: SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SetLayerDepthAsync(int, int, Action<bool>)
+  nameWithType: YVRLayerAndroidHandler.SetLayerDepthAsync(int, int, Action<bool>)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync(int, int, System.Action<bool>)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetLayerDepthAsync
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 260
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SetLayerDepthAsync(int layerId, int depth, Action<bool> onLayerDepthSet = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: depth
+      type: System.Int32
+    - id: onLayerDepthSet
+      type: System.Action{System.Boolean}
+    content.vb: Public Sub SetLayerDepthAsync(layerId As Integer, depth As Integer, onLayerDepthSet As Action(Of Boolean) = Nothing)
+  overload: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  nameWithType.vb: YVRLayerAndroidHandler.SetLayerDepthAsync(Integer, Integer, Action(Of Boolean))
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync(Integer, Integer, System.Action(Of Boolean))
+  name.vb: SetLayerDepthAsync(Integer, Integer, Action(Of Boolean))
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface(System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.GetLayerSurface(System.Int32)
+  id: GetLayerSurface(System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: GetLayerSurface(int)
+  nameWithType: YVRLayerAndroidHandler.GetLayerSurface(int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayerSurface
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 266
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public IntPtr GetLayerSurface(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Function GetLayerSurface(layerId As Integer) As IntPtr
+  overload: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface*
+  implements:
+  - YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.GetLayerSurface(Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface(Integer)
+  name.vb: GetLayerSurface(Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer(System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer(System.Int32)
+  id: SwapBufferLayer(System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: SwapBufferLayer(int)
+  nameWithType: YVRLayerAndroidHandler.SwapBufferLayer(int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SwapBufferLayer
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 272
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public void SwapBufferLayer(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    content.vb: Public Sub SwapBufferLayer(layerId As Integer)
+  overload: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer*
+  implements:
+  - YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.SwapBufferLayer(Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer(Integer)
+  name.vb: SwapBufferLayer(Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId
+  id: GetEyeBufferLayerId
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: GetEyeBufferLayerId()
+  nameWithType: YVRLayerAndroidHandler.GetEyeBufferLayerId()
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetEyeBufferLayerId
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 274
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public int GetEyeBufferLayerId()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetEyeBufferLayerId() As Integer
+  overload: YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId*
+  implements:
+  - YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(System.Int32,System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(System.Int32,System.Int32)
+  id: GetLayerColorHandle(System.Int32,System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: GetLayerColorHandle(int, int)
+  nameWithType: YVRLayerAndroidHandler.GetLayerColorHandle(int, int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(int, int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayerColorHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 276
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public int GetLayerColorHandle(int layerId, int index)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetLayerColorHandle(layerId As Integer, index As Integer) As Integer
+  overload: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle*
+  implements:
+  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.GetLayerColorHandle(Integer, Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(Integer, Integer)
+  name.vb: GetLayerColorHandle(Integer, Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(System.Int32)
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(System.Int32)
+  id: GetLayerColorHandle(System.Int32)
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: GetLayerColorHandle(int)
+  nameWithType: YVRLayerAndroidHandler.GetLayerColorHandle(int)
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(int)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayerColorHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 277
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public int GetLayerColorHandle(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetLayerColorHandle(layerId As Integer) As Integer
+  overload: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle*
+  implements:
+  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  nameWithType.vb: YVRLayerAndroidHandler.GetLayerColorHandle(Integer)
+  fullName.vb: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle(Integer)
+  name.vb: GetLayerColorHandle(Integer)
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayersCount
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.GetLayersCount
+  id: GetLayersCount
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: GetLayersCount()
+  nameWithType: YVRLayerAndroidHandler.GetLayersCount()
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayersCount()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetLayersCount
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 279
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public int GetLayersCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetLayersCount() As Integer
+  overload: YVR.Core.YVRLayerAndroidHandler.GetLayersCount*
+  implements:
+  - YVR.Core.IYVRLayerHandle.GetLayersCount
+- uid: YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle
+  id: GetAlLayersColorHandle
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: GetAlLayersColorHandle()
+  nameWithType: YVRLayerAndroidHandler.GetAlLayersColorHandle()
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetAlLayersColorHandle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 281
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public int[] GetAlLayersColorHandle()
+    return:
+      type: System.Int32[]
+    content.vb: Public Function GetAlLayersColorHandle() As Integer()
+  overload: YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle*
+  implements:
+  - YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+- uid: YVR.Core.YVRLayerAndroidHandler.Finalize
+  commentId: M:YVR.Core.YVRLayerAndroidHandler.Finalize
+  id: Finalize
+  parent: YVR.Core.YVRLayerAndroidHandler
+  langs:
+  - csharp
+  - vb
+  name: ~YVRLayerAndroidHandler()
+  nameWithType: YVRLayerAndroidHandler.~YVRLayerAndroidHandler()
+  fullName: YVR.Core.YVRLayerAndroidHandler.~YVRLayerAndroidHandler()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Finalize
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerAndroidHandler.cs
+    startLine: 477
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: protected ~YVRLayerAndroidHandler()
+    content.vb: 'Protected '
+  overload: YVR.Core.YVRLayerAndroidHandler.Finalize*
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YVR.Core.IYVRLayerHandle
+  commentId: T:YVR.Core.IYVRLayerHandle
+  parent: YVR.Core
+  href: YVR.Core.IYVRLayerHandle.html
+  name: IYVRLayerHandle
+  nameWithType: IYVRLayerHandle
+  fullName: YVR.Core.IYVRLayerHandle
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync
+  href: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync.html#YVR_Core_YVRLayerAndroidHandler_CreateLayerAsync_YVR_Core_YVRLayerCreateInfo_System_Action_System_Int32__
+  name: CreateLayerAsync
+  nameWithType: YVRLayerAndroidHandler.CreateLayerAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.CreateLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  commentId: M:YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.CreateLayerAsync.html#YVR_Core_IYVRLayerHandle_CreateLayerAsync_YVR_Core_YVRLayerCreateInfo_System_Action_System_Int32__
+  name: CreateLayerAsync(YVRLayerCreateInfo, Action<int>)
+  nameWithType: IYVRLayerHandle.CreateLayerAsync(YVRLayerCreateInfo, Action<int>)
+  fullName: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo, System.Action<int>)
+  nameWithType.vb: IYVRLayerHandle.CreateLayerAsync(YVRLayerCreateInfo, Action(Of Integer))
+  fullName.vb: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo, System.Action(Of Integer))
+  name.vb: CreateLayerAsync(YVRLayerCreateInfo, Action(Of Integer))
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+    name: CreateLayerAsync
+    href: YVR.Core.IYVRLayerHandle.CreateLayerAsync.html#YVR_Core_IYVRLayerHandle_CreateLayerAsync_YVR_Core_YVRLayerCreateInfo_System_Action_System_Int32__
+  - name: (
+  - uid: YVR.Core.YVRLayerCreateInfo
+    name: YVRLayerCreateInfo
+    href: YVR.Core.YVRLayerCreateInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.CreateLayerAsync(YVR.Core.YVRLayerCreateInfo,System.Action{System.Int32})
+    name: CreateLayerAsync
+    href: YVR.Core.IYVRLayerHandle.CreateLayerAsync.html#YVR_Core_IYVRLayerHandle_CreateLayerAsync_YVR_Core_YVRLayerCreateInfo_System_Action_System_Int32__
+  - name: (
+  - uid: YVR.Core.YVRLayerCreateInfo
+    name: YVRLayerCreateInfo
+    href: YVR.Core.YVRLayerCreateInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: YVR.Core.YVRLayerCreateInfo
+  commentId: T:YVR.Core.YVRLayerCreateInfo
+  parent: YVR.Core
+  href: YVR.Core.YVRLayerCreateInfo.html
+  name: YVRLayerCreateInfo
+  nameWithType: YVRLayerCreateInfo
+  fullName: YVR.Core.YVRLayerCreateInfo
+- uid: System.Action{System.Int32}
+  commentId: T:System.Action{System.Int32}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<int>
+  nameWithType: Action<int>
+  fullName: System.Action<int>
+  nameWithType.vb: Action(Of Integer)
+  fullName.vb: System.Action(Of Integer)
+  name.vb: Action(Of Integer)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.CreateLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.CreateLayer
+  href: YVR.Core.YVRLayerAndroidHandler.CreateLayer.html#YVR_Core_YVRLayerAndroidHandler_CreateLayer_YVR_Core_YVRLayerCreateInfo_
+  name: CreateLayer
+  nameWithType: YVRLayerAndroidHandler.CreateLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.CreateLayer
+- uid: YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  commentId: M:YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  parent: YVR.Core.IYVRLayerHandle
+  href: YVR.Core.IYVRLayerHandle.CreateLayer.html#YVR_Core_IYVRLayerHandle_CreateLayer_YVR_Core_YVRLayerCreateInfo_
+  name: CreateLayer(YVRLayerCreateInfo)
+  nameWithType: IYVRLayerHandle.CreateLayer(YVRLayerCreateInfo)
+  fullName: YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+    name: CreateLayer
+    href: YVR.Core.IYVRLayerHandle.CreateLayer.html#YVR_Core_IYVRLayerHandle_CreateLayer_YVR_Core_YVRLayerCreateInfo_
+  - name: (
+  - uid: YVR.Core.YVRLayerCreateInfo
+    name: YVRLayerCreateInfo
+    href: YVR.Core.YVRLayerCreateInfo.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.CreateLayer(YVR.Core.YVRLayerCreateInfo)
+    name: CreateLayer
+    href: YVR.Core.IYVRLayerHandle.CreateLayer.html#YVR_Core_IYVRLayerHandle_CreateLayer_YVR_Core_YVRLayerCreateInfo_
+  - name: (
+  - uid: YVR.Core.YVRLayerCreateInfo
+    name: YVRLayerCreateInfo
+    href: YVR.Core.YVRLayerCreateInfo.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync
+  href: YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync.html#YVR_Core_YVRLayerAndroidHandler_PrepareCreateLayerAsync_System_Action_
+  name: PrepareCreateLayerAsync
+  nameWithType: YVRLayerAndroidHandler.PrepareCreateLayerAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareCreateLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareCreateLayerAsync_System_Action_
+  name: PrepareCreateLayerAsync(Action)
+  nameWithType: IYVRLayerHandle.PrepareCreateLayerAsync(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+    name: PrepareCreateLayerAsync
+    href: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareCreateLayerAsync_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync(System.Action)
+    name: PrepareCreateLayerAsync
+    href: YVR.Core.IYVRLayerHandle.PrepareCreateLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareCreateLayerAsync_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync
+  href: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync.html#YVR_Core_YVRLayerAndroidHandler_DestroyLayerAsync_System_Int32_System_Boolean_System_Action_
+  name: DestroyLayerAsync
+  nameWithType: YVRLayerAndroidHandler.DestroyLayerAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.DestroyLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.DestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_DestroyLayerAsync_System_Int32_System_Boolean_System_Action_
+  name: DestroyLayerAsync(int, bool, Action)
+  nameWithType: IYVRLayerHandle.DestroyLayerAsync(int, bool, Action)
+  fullName: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(int, bool, System.Action)
+  nameWithType.vb: IYVRLayerHandle.DestroyLayerAsync(Integer, Boolean, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(Integer, Boolean, System.Action)
+  name.vb: DestroyLayerAsync(Integer, Boolean, Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+    name: DestroyLayerAsync
+    href: YVR.Core.IYVRLayerHandle.DestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_DestroyLayerAsync_System_Int32_System_Boolean_System_Action_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
+    name: DestroyLayerAsync
+    href: YVR.Core.IYVRLayerHandle.DestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_DestroyLayerAsync_System_Int32_System_Boolean_System_Action_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YVR.Core.YVRLayerAndroidHandler.DestroyLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.DestroyLayer
+  href: YVR.Core.YVRLayerAndroidHandler.DestroyLayer.html#YVR_Core_YVRLayerAndroidHandler_DestroyLayer_System_Int32_System_Boolean_
+  name: DestroyLayer
+  nameWithType: YVRLayerAndroidHandler.DestroyLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.DestroyLayer
+- uid: YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+  commentId: M:YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.DestroyLayer.html#YVR_Core_IYVRLayerHandle_DestroyLayer_System_Int32_System_Boolean_
+  name: DestroyLayer(int, bool)
+  nameWithType: IYVRLayerHandle.DestroyLayer(int, bool)
+  fullName: YVR.Core.IYVRLayerHandle.DestroyLayer(int, bool)
+  nameWithType.vb: IYVRLayerHandle.DestroyLayer(Integer, Boolean)
+  fullName.vb: YVR.Core.IYVRLayerHandle.DestroyLayer(Integer, Boolean)
+  name.vb: DestroyLayer(Integer, Boolean)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+    name: DestroyLayer
+    href: YVR.Core.IYVRLayerHandle.DestroyLayer.html#YVR_Core_IYVRLayerHandle_DestroyLayer_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.DestroyLayer(System.Int32,System.Boolean)
+    name: DestroyLayer
+    href: YVR.Core.IYVRLayerHandle.DestroyLayer.html#YVR_Core_IYVRLayerHandle_DestroyLayer_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync
+  href: YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync.html#YVR_Core_YVRLayerAndroidHandler_PrepareDestroyLayerAsync_System_Action_
+  name: PrepareDestroyLayerAsync
+  nameWithType: YVRLayerAndroidHandler.PrepareDestroyLayerAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareDestroyLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareDestroyLayerAsync_System_Action_
+  name: PrepareDestroyLayerAsync(Action)
+  nameWithType: IYVRLayerHandle.PrepareDestroyLayerAsync(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+    name: PrepareDestroyLayerAsync
+    href: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareDestroyLayerAsync_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync(System.Action)
+    name: PrepareDestroyLayerAsync
+    href: YVR.Core.IYVRLayerHandle.PrepareDestroyLayerAsync.html#YVR_Core_IYVRLayerHandle_PrepareDestroyLayerAsync_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.AddLayerAsync
+  href: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync.html#YVR_Core_YVRLayerAndroidHandler_AddLayerAsync_System_Int32_System_Action_
+  name: AddLayerAsync
+  nameWithType: YVRLayerAndroidHandler.AddLayerAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.AddLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.AddLayerAsync.html#YVR_Core_IYVRLayerHandle_AddLayerAsync_System_Int32_System_Action_
+  name: AddLayerAsync(int, Action)
+  nameWithType: IYVRLayerHandle.AddLayerAsync(int, Action)
+  fullName: YVR.Core.IYVRLayerHandle.AddLayerAsync(int, System.Action)
+  nameWithType.vb: IYVRLayerHandle.AddLayerAsync(Integer, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.AddLayerAsync(Integer, System.Action)
+  name.vb: AddLayerAsync(Integer, Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+    name: AddLayerAsync
+    href: YVR.Core.IYVRLayerHandle.AddLayerAsync.html#YVR_Core_IYVRLayerHandle_AddLayerAsync_System_Int32_System_Action_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.AddLayerAsync(System.Int32,System.Action)
+    name: AddLayerAsync
+    href: YVR.Core.IYVRLayerHandle.AddLayerAsync.html#YVR_Core_IYVRLayerHandle_AddLayerAsync_System_Int32_System_Action_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.AddLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.AddLayer
+  href: YVR.Core.YVRLayerAndroidHandler.AddLayer.html#YVR_Core_YVRLayerAndroidHandler_AddLayer_System_Int32_
+  name: AddLayer
+  nameWithType: YVRLayerAndroidHandler.AddLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.AddLayer
+- uid: YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.AddLayer.html#YVR_Core_IYVRLayerHandle_AddLayer_System_Int32_
+  name: AddLayer(int)
+  nameWithType: IYVRLayerHandle.AddLayer(int)
+  fullName: YVR.Core.IYVRLayerHandle.AddLayer(int)
+  nameWithType.vb: IYVRLayerHandle.AddLayer(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.AddLayer(Integer)
+  name.vb: AddLayer(Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+    name: AddLayer
+    href: YVR.Core.IYVRLayerHandle.AddLayer.html#YVR_Core_IYVRLayerHandle_AddLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.AddLayer(System.Int32)
+    name: AddLayer
+    href: YVR.Core.IYVRLayerHandle.AddLayer.html#YVR_Core_IYVRLayerHandle_AddLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer
+  href: YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer.html#YVR_Core_YVRLayerAndroidHandler_PrepareAddLayer_System_Action_
+  name: PrepareAddLayer
+  nameWithType: YVRLayerAndroidHandler.PrepareAddLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareAddLayer
+- uid: YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.PrepareAddLayer.html#YVR_Core_IYVRLayerHandle_PrepareAddLayer_System_Action_
+  name: PrepareAddLayer(Action)
+  nameWithType: IYVRLayerHandle.PrepareAddLayer(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+    name: PrepareAddLayer
+    href: YVR.Core.IYVRLayerHandle.PrepareAddLayer.html#YVR_Core_IYVRLayerHandle_PrepareAddLayer_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareAddLayer(System.Action)
+    name: PrepareAddLayer
+    href: YVR.Core.IYVRLayerHandle.PrepareAddLayer.html#YVR_Core_IYVRLayerHandle_PrepareAddLayer_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync
+  href: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync.html#YVR_Core_YVRLayerAndroidHandler_RemoveLayerAsync_System_Int32_System_Action_
+  name: RemoveLayerAsync
+  nameWithType: YVRLayerAndroidHandler.RemoveLayerAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.RemoveLayerAsync
+- uid: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.RemoveLayerAsync.html#YVR_Core_IYVRLayerHandle_RemoveLayerAsync_System_Int32_System_Action_
+  name: RemoveLayerAsync(int, Action)
+  nameWithType: IYVRLayerHandle.RemoveLayerAsync(int, Action)
+  fullName: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(int, System.Action)
+  nameWithType.vb: IYVRLayerHandle.RemoveLayerAsync(Integer, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(Integer, System.Action)
+  name.vb: RemoveLayerAsync(Integer, Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+    name: RemoveLayerAsync
+    href: YVR.Core.IYVRLayerHandle.RemoveLayerAsync.html#YVR_Core_IYVRLayerHandle_RemoveLayerAsync_System_Int32_System_Action_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.RemoveLayerAsync(System.Int32,System.Action)
+    name: RemoveLayerAsync
+    href: YVR.Core.IYVRLayerHandle.RemoveLayerAsync.html#YVR_Core_IYVRLayerHandle_RemoveLayerAsync_System_Int32_System_Action_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.RemoveLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.RemoveLayer
+  href: YVR.Core.YVRLayerAndroidHandler.RemoveLayer.html#YVR_Core_YVRLayerAndroidHandler_RemoveLayer_System_Int32_
+  name: RemoveLayer
+  nameWithType: YVRLayerAndroidHandler.RemoveLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.RemoveLayer
+- uid: YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.RemoveLayer.html#YVR_Core_IYVRLayerHandle_RemoveLayer_System_Int32_
+  name: RemoveLayer(int)
+  nameWithType: IYVRLayerHandle.RemoveLayer(int)
+  fullName: YVR.Core.IYVRLayerHandle.RemoveLayer(int)
+  nameWithType.vb: IYVRLayerHandle.RemoveLayer(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.RemoveLayer(Integer)
+  name.vb: RemoveLayer(Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+    name: RemoveLayer
+    href: YVR.Core.IYVRLayerHandle.RemoveLayer.html#YVR_Core_IYVRLayerHandle_RemoveLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.RemoveLayer(System.Int32)
+    name: RemoveLayer
+    href: YVR.Core.IYVRLayerHandle.RemoveLayer.html#YVR_Core_IYVRLayerHandle_RemoveLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer
+  href: YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer.html#YVR_Core_YVRLayerAndroidHandler_PrepareRemoveLayer_System_Action_
+  name: PrepareRemoveLayer
+  nameWithType: YVRLayerAndroidHandler.PrepareRemoveLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareRemoveLayer
+- uid: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer.html#YVR_Core_IYVRLayerHandle_PrepareRemoveLayer_System_Action_
+  name: PrepareRemoveLayer(Action)
+  nameWithType: IYVRLayerHandle.PrepareRemoveLayer(Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+    name: PrepareRemoveLayer
+    href: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer.html#YVR_Core_IYVRLayerHandle_PrepareRemoveLayer_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer(System.Action)
+    name: PrepareRemoveLayer
+    href: YVR.Core.IYVRLayerHandle.PrepareRemoveLayer.html#YVR_Core_IYVRLayerHandle_PrepareRemoveLayer_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerVisible
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible.html#YVR_Core_YVRLayerAndroidHandler_SetLayerVisible_System_Int32_System_Boolean_
+  name: SetLayerVisible
+  nameWithType: YVRLayerAndroidHandler.SetLayerVisible
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerVisible
+- uid: YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerVisible.html#YVR_Core_IYVRLayerHandle_SetLayerVisible_System_Int32_System_Boolean_
+  name: SetLayerVisible(int, bool)
+  nameWithType: IYVRLayerHandle.SetLayerVisible(int, bool)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerVisible(int, bool)
+  nameWithType.vb: IYVRLayerHandle.SetLayerVisible(Integer, Boolean)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerVisible(Integer, Boolean)
+  name.vb: SetLayerVisible(Integer, Boolean)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+    name: SetLayerVisible
+    href: YVR.Core.IYVRLayerHandle.SetLayerVisible.html#YVR_Core_IYVRLayerHandle_SetLayerVisible_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerVisible(System.Int32,System.Boolean)
+    name: SetLayerVisible
+    href: YVR.Core.IYVRLayerHandle.SetLayerVisible.html#YVR_Core_IYVRLayerHandle_SetLayerVisible_System_Int32_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible
+  href: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible.html#YVR_Core_YVRLayerAndroidHandler_PrepareSetLayerVisible_System_Boolean_System_Action_
+  name: PrepareSetLayerVisible
+  nameWithType: YVRLayerAndroidHandler.PrepareSetLayerVisible
+  fullName: YVR.Core.YVRLayerAndroidHandler.PrepareSetLayerVisible
+- uid: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible.html#YVR_Core_IYVRLayerHandle_PrepareSetLayerVisible_System_Boolean_System_Action_
+  name: PrepareSetLayerVisible(bool, Action)
+  nameWithType: IYVRLayerHandle.PrepareSetLayerVisible(bool, Action)
+  fullName: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(bool, System.Action)
+  nameWithType.vb: IYVRLayerHandle.PrepareSetLayerVisible(Boolean, Action)
+  fullName.vb: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(Boolean, System.Action)
+  name.vb: PrepareSetLayerVisible(Boolean, Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+    name: PrepareSetLayerVisible
+    href: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible.html#YVR_Core_IYVRLayerHandle_PrepareSetLayerVisible_System_Boolean_System_Action_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible(System.Boolean,System.Action)
+    name: PrepareSetLayerVisible
+    href: YVR.Core.IYVRLayerHandle.PrepareSetLayerVisible.html#YVR_Core_IYVRLayerHandle_PrepareSetLayerVisible_System_Boolean_System_Action_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback.html#YVR_Core_YVRLayerAndroidHandler_SetLayerPreSubmitCallback_System_Action_
+  name: SetLayerPreSubmitCallback
+  nameWithType: YVRLayerAndroidHandler.SetLayerPreSubmitCallback
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerPreSubmitCallback
+- uid: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback.html#YVR_Core_IYVRLayerHandle_SetLayerPreSubmitCallback_System_Action_
+  name: SetLayerPreSubmitCallback(Action)
+  nameWithType: IYVRLayerHandle.SetLayerPreSubmitCallback(Action)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+    name: SetLayerPreSubmitCallback
+    href: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback.html#YVR_Core_IYVRLayerHandle_SetLayerPreSubmitCallback_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback(System.Action)
+    name: SetLayerPreSubmitCallback
+    href: YVR.Core.IYVRLayerHandle.SetLayerPreSubmitCallback.html#YVR_Core_IYVRLayerHandle_SetLayerPreSubmitCallback_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerPose*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerPose
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerPose.html#YVR_Core_YVRLayerAndroidHandler_SetLayerPose_System_Int32__YVR_Core_XRPose__
+  name: SetLayerPose
+  nameWithType: YVRLayerAndroidHandler.SetLayerPose
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerPose
+- uid: YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerPose.html#YVR_Core_IYVRLayerHandle_SetLayerPose_System_Int32__YVR_Core_XRPose__
+  name: SetLayerPose(in int, in XRPose)
+  nameWithType: IYVRLayerHandle.SetLayerPose(in int, in XRPose)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerPose(in int, in YVR.Core.XRPose)
+  nameWithType.vb: IYVRLayerHandle.SetLayerPose(Integer, XRPose)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerPose(Integer, YVR.Core.XRPose)
+  name.vb: SetLayerPose(Integer, XRPose)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+    name: SetLayerPose
+    href: YVR.Core.IYVRLayerHandle.SetLayerPose.html#YVR_Core_IYVRLayerHandle_SetLayerPose_System_Int32__YVR_Core_XRPose__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: YVR.Core.XRPose
+    name: XRPose
+    href: YVR.Core.XRPose.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
+    name: SetLayerPose
+    href: YVR.Core.IYVRLayerHandle.SetLayerPose.html#YVR_Core_IYVRLayerHandle_SetLayerPose_System_Int32__YVR_Core_XRPose__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.XRPose
+    name: XRPose
+    href: YVR.Core.XRPose.html
+  - name: )
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  parent: YVR.Core
+  href: YVR.Core.XRPose.html
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerSize*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerSize
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerSize.html#YVR_Core_YVRLayerAndroidHandler_SetLayerSize_System_Int32__YVR_Core_XRSize_
+  name: SetLayerSize
+  nameWithType: YVRLayerAndroidHandler.SetLayerSize
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerSize
+- uid: YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerSize.html#YVR_Core_IYVRLayerHandle_SetLayerSize_System_Int32__YVR_Core_XRSize_
+  name: SetLayerSize(in int, XRSize)
+  nameWithType: IYVRLayerHandle.SetLayerSize(in int, XRSize)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerSize(in int, YVR.Core.XRSize)
+  nameWithType.vb: IYVRLayerHandle.SetLayerSize(Integer, XRSize)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerSize(Integer, YVR.Core.XRSize)
+  name.vb: SetLayerSize(Integer, XRSize)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+    name: SetLayerSize
+    href: YVR.Core.IYVRLayerHandle.SetLayerSize.html#YVR_Core_IYVRLayerHandle_SetLayerSize_System_Int32__YVR_Core_XRSize_
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.XRSize
+    name: XRSize
+    href: YVR.Core.XRSize.html
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerSize(System.Int32@,YVR.Core.XRSize)
+    name: SetLayerSize
+    href: YVR.Core.IYVRLayerHandle.SetLayerSize.html#YVR_Core_IYVRLayerHandle_SetLayerSize_System_Int32__YVR_Core_XRSize_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.XRSize
+    name: XRSize
+    href: YVR.Core.XRSize.html
+  - name: )
+- uid: YVR.Core.XRSize
+  commentId: T:YVR.Core.XRSize
+  parent: YVR.Core
+  href: YVR.Core.XRSize.html
+  name: XRSize
+  nameWithType: XRSize
+  fullName: YVR.Core.XRSize
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam.html#YVR_Core_YVRLayerAndroidHandler_SetLayerCylinderParam_System_Int32__System_Single__System_Single__System_Single__
+  name: SetLayerCylinderParam
+  nameWithType: YVRLayerAndroidHandler.SetLayerCylinderParam
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerCylinderParam
+- uid: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam.html#YVR_Core_IYVRLayerHandle_SetLayerCylinderParam_System_Int32__System_Single__System_Single__System_Single__
+  name: SetLayerCylinderParam(in int, in float, in float, in float)
+  nameWithType: IYVRLayerHandle.SetLayerCylinderParam(in int, in float, in float, in float)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(in int, in float, in float, in float)
+  nameWithType.vb: IYVRLayerHandle.SetLayerCylinderParam(Integer, Single, Single, Single)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(Integer, Single, Single, Single)
+  name.vb: SetLayerCylinderParam(Integer, Single, Single, Single)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+    name: SetLayerCylinderParam
+    href: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam.html#YVR_Core_IYVRLayerHandle_SetLayerCylinderParam_System_Int32__System_Single__System_Single__System_Single__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam(System.Int32@,System.Single@,System.Single@,System.Single@)
+    name: SetLayerCylinderParam
+    href: YVR.Core.IYVRLayerHandle.SetLayerCylinderParam.html#YVR_Core_IYVRLayerHandle_SetLayerCylinderParam_System_Int32__System_Single__System_Single__System_Single__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius.html#YVR_Core_YVRLayerAndroidHandler_SetLayerEquirectRadius_System_Int32__System_Single__
+  name: SetLayerEquirectRadius
+  nameWithType: YVRLayerAndroidHandler.SetLayerEquirectRadius
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectRadius
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectRadius_System_Int32__System_Single__
+  name: SetLayerEquirectRadius(in int, in float)
+  nameWithType: IYVRLayerHandle.SetLayerEquirectRadius(in int, in float)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(in int, in float)
+  nameWithType.vb: IYVRLayerHandle.SetLayerEquirectRadius(Integer, Single)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(Integer, Single)
+  name.vb: SetLayerEquirectRadius(Integer, Single)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+    name: SetLayerEquirectRadius
+    href: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectRadius_System_Int32__System_Single__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius(System.Int32@,System.Single@)
+    name: SetLayerEquirectRadius
+    href: YVR.Core.IYVRLayerHandle.SetLayerEquirectRadius.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectRadius_System_Int32__System_Single__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset.html#YVR_Core_YVRLayerAndroidHandler_SetLayerEquirectOffset_System_Int32__UnityEngine_Rect__
+  name: SetLayerEquirectOffset
+  nameWithType: YVRLayerAndroidHandler.SetLayerEquirectOffset
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirectOffset
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectOffset_System_Int32__UnityEngine_Rect__
+  name: SetLayerEquirectOffset(in int, in Rect)
+  nameWithType: IYVRLayerHandle.SetLayerEquirectOffset(in int, in Rect)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(in int, in UnityEngine.Rect)
+  nameWithType.vb: IYVRLayerHandle.SetLayerEquirectOffset(Integer, Rect)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(Integer, UnityEngine.Rect)
+  name.vb: SetLayerEquirectOffset(Integer, Rect)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+    name: SetLayerEquirectOffset
+    href: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectOffset_System_Int32__UnityEngine_Rect__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset(System.Int32@,UnityEngine.Rect@)
+    name: SetLayerEquirectOffset
+    href: YVR.Core.IYVRLayerHandle.SetLayerEquirectOffset.html#YVR_Core_IYVRLayerHandle_SetLayerEquirectOffset_System_Int32__UnityEngine_Rect__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param.html#YVR_Core_YVRLayerAndroidHandler_SetLayerEquirect2Param_System_Int32__System_Single__System_Single__System_Single__System_Single__
+  name: SetLayerEquirect2Param
+  nameWithType: YVRLayerAndroidHandler.SetLayerEquirect2Param
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerEquirect2Param
+- uid: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param.html#YVR_Core_IYVRLayerHandle_SetLayerEquirect2Param_System_Int32__System_Single__System_Single__System_Single__System_Single__
+  name: SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  nameWithType: IYVRLayerHandle.SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(in int, in float, in float, in float, in float)
+  nameWithType.vb: IYVRLayerHandle.SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  name.vb: SetLayerEquirect2Param(Integer, Single, Single, Single, Single)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+    name: SetLayerEquirect2Param
+    href: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param.html#YVR_Core_IYVRLayerHandle_SetLayerEquirect2Param_System_Int32__System_Single__System_Single__System_Single__System_Single__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param(System.Int32@,System.Single@,System.Single@,System.Single@,System.Single@)
+    name: SetLayerEquirect2Param
+    href: YVR.Core.IYVRLayerHandle.SetLayerEquirect2Param.html#YVR_Core_IYVRLayerHandle_SetLayerEquirect2Param_System_Int32__System_Single__System_Single__System_Single__System_Single__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerSettings
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings.html#YVR_Core_YVRLayerAndroidHandler_SetLayerSettings_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: SetLayerSettings
+  nameWithType: YVRLayerAndroidHandler.SetLayerSettings
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerSettings
+- uid: YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerSettings.html#YVR_Core_IYVRLayerHandle_SetLayerSettings_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: SetLayerSettings(int, bool, bool, bool, bool)
+  nameWithType: IYVRLayerHandle.SetLayerSettings(int, bool, bool, bool, bool)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerSettings(int, bool, bool, bool, bool)
+  nameWithType.vb: IYVRLayerHandle.SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  name.vb: SetLayerSettings(Integer, Boolean, Boolean, Boolean, Boolean)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+    name: SetLayerSettings
+    href: YVR.Core.IYVRLayerHandle.SetLayerSettings.html#YVR_Core_IYVRLayerHandle_SetLayerSettings_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerSettings(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+    name: SetLayerSettings
+    href: YVR.Core.IYVRLayerHandle.SetLayerSettings.html#YVR_Core_IYVRLayerHandle_SetLayerSettings_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect.html#YVR_Core_YVRLayerAndroidHandler_SetLayerImageRect_System_Int32_UnityEngine_Rect_
+  name: SetLayerImageRect
+  nameWithType: YVRLayerAndroidHandler.SetLayerImageRect
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerImageRect
+- uid: YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerImageRect.html#YVR_Core_IYVRLayerHandle_SetLayerImageRect_System_Int32_UnityEngine_Rect_
+  name: SetLayerImageRect(int, Rect)
+  nameWithType: IYVRLayerHandle.SetLayerImageRect(int, Rect)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerImageRect(int, UnityEngine.Rect)
+  nameWithType.vb: IYVRLayerHandle.SetLayerImageRect(Integer, Rect)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerImageRect(Integer, UnityEngine.Rect)
+  name.vb: SetLayerImageRect(Integer, Rect)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+    name: SetLayerImageRect
+    href: YVR.Core.IYVRLayerHandle.SetLayerImageRect.html#YVR_Core_IYVRLayerHandle_SetLayerImageRect_System_Int32_UnityEngine_Rect_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerImageRect(System.Int32,UnityEngine.Rect)
+    name: SetLayerImageRect
+    href: YVR.Core.IYVRLayerHandle.SetLayerImageRect.html#YVR_Core_IYVRLayerHandle_SetLayerImageRect_System_Int32_UnityEngine_Rect_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions
+  href: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions.html#YVR_Core_YVRLayerAndroidHandler_SetSurfaceDimensions_System_Int32_System_Int32_System_Int32_
+  name: SetSurfaceDimensions
+  nameWithType: YVRLayerAndroidHandler.SetSurfaceDimensions
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetSurfaceDimensions
+- uid: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions.html#YVR_Core_IYVRLayerHandle_SetSurfaceDimensions_System_Int32_System_Int32_System_Int32_
+  name: SetSurfaceDimensions(int, int, int)
+  nameWithType: IYVRLayerHandle.SetSurfaceDimensions(int, int, int)
+  fullName: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(int, int, int)
+  nameWithType.vb: IYVRLayerHandle.SetSurfaceDimensions(Integer, Integer, Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(Integer, Integer, Integer)
+  name.vb: SetSurfaceDimensions(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+    name: SetSurfaceDimensions
+    href: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions.html#YVR_Core_IYVRLayerHandle_SetSurfaceDimensions_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions(System.Int32,System.Int32,System.Int32)
+    name: SetSurfaceDimensions
+    href: YVR.Core.IYVRLayerHandle.SetSurfaceDimensions.html#YVR_Core_IYVRLayerHandle_SetSurfaceDimensions_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync
+  href: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync.html#YVR_Core_YVRLayerAndroidHandler_SetLayerDepthAsync_System_Int32_System_Int32_System_Action_System_Boolean__
+  name: SetLayerDepthAsync
+  nameWithType: YVRLayerAndroidHandler.SetLayerDepthAsync
+  fullName: YVR.Core.YVRLayerAndroidHandler.SetLayerDepthAsync
+- uid: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  commentId: M:YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync.html#YVR_Core_IYVRLayerHandle_SetLayerDepthAsync_System_Int32_System_Int32_System_Action_System_Boolean__
+  name: SetLayerDepthAsync(int, int, Action<bool>)
+  nameWithType: IYVRLayerHandle.SetLayerDepthAsync(int, int, Action<bool>)
+  fullName: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(int, int, System.Action<bool>)
+  nameWithType.vb: IYVRLayerHandle.SetLayerDepthAsync(Integer, Integer, Action(Of Boolean))
+  fullName.vb: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(Integer, Integer, System.Action(Of Boolean))
+  name.vb: SetLayerDepthAsync(Integer, Integer, Action(Of Boolean))
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+    name: SetLayerDepthAsync
+    href: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync.html#YVR_Core_IYVRLayerHandle_SetLayerDepthAsync_System_Int32_System_Int32_System_Action_System_Boolean__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync(System.Int32,System.Int32,System.Action{System.Boolean})
+    name: SetLayerDepthAsync
+    href: YVR.Core.IYVRLayerHandle.SetLayerDepthAsync.html#YVR_Core_IYVRLayerHandle_SetLayerDepthAsync_System_Int32_System_Int32_System_Action_System_Boolean__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Action{System.Boolean}
+  commentId: T:System.Action{System.Boolean}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<bool>
+  nameWithType: Action<bool>
+  fullName: System.Action<bool>
+  nameWithType.vb: Action(Of Boolean)
+  fullName.vb: System.Action(Of Boolean)
+  name.vb: Action(Of Boolean)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.GetLayerSurface
+  href: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface.html#YVR_Core_YVRLayerAndroidHandler_GetLayerSurface_System_Int32_
+  name: GetLayerSurface
+  nameWithType: YVRLayerAndroidHandler.GetLayerSurface
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayerSurface
+- uid: YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.GetLayerSurface.html#YVR_Core_IYVRLayerHandle_GetLayerSurface_System_Int32_
+  name: GetLayerSurface(int)
+  nameWithType: IYVRLayerHandle.GetLayerSurface(int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerSurface(int)
+  nameWithType.vb: IYVRLayerHandle.GetLayerSurface(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerSurface(Integer)
+  name.vb: GetLayerSurface(Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+    name: GetLayerSurface
+    href: YVR.Core.IYVRLayerHandle.GetLayerSurface.html#YVR_Core_IYVRLayerHandle_GetLayerSurface_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerSurface(System.Int32)
+    name: GetLayerSurface
+    href: YVR.Core.IYVRLayerHandle.GetLayerSurface.html#YVR_Core_IYVRLayerHandle_GetLayerSurface_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer
+  href: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer.html#YVR_Core_YVRLayerAndroidHandler_SwapBufferLayer_System_Int32_
+  name: SwapBufferLayer
+  nameWithType: YVRLayerAndroidHandler.SwapBufferLayer
+  fullName: YVR.Core.YVRLayerAndroidHandler.SwapBufferLayer
+- uid: YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.SwapBufferLayer.html#YVR_Core_IYVRLayerHandle_SwapBufferLayer_System_Int32_
+  name: SwapBufferLayer(int)
+  nameWithType: IYVRLayerHandle.SwapBufferLayer(int)
+  fullName: YVR.Core.IYVRLayerHandle.SwapBufferLayer(int)
+  nameWithType.vb: IYVRLayerHandle.SwapBufferLayer(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.SwapBufferLayer(Integer)
+  name.vb: SwapBufferLayer(Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+    name: SwapBufferLayer
+    href: YVR.Core.IYVRLayerHandle.SwapBufferLayer.html#YVR_Core_IYVRLayerHandle_SwapBufferLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.SwapBufferLayer(System.Int32)
+    name: SwapBufferLayer
+    href: YVR.Core.IYVRLayerHandle.SwapBufferLayer.html#YVR_Core_IYVRLayerHandle_SwapBufferLayer_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId
+  href: YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId.html#YVR_Core_YVRLayerAndroidHandler_GetEyeBufferLayerId
+  name: GetEyeBufferLayerId
+  nameWithType: YVRLayerAndroidHandler.GetEyeBufferLayerId
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetEyeBufferLayerId
+- uid: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+  commentId: M:YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+  parent: YVR.Core.IYVRLayerHandle
+  href: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId.html#YVR_Core_IYVRLayerHandle_GetEyeBufferLayerId
+  name: GetEyeBufferLayerId()
+  nameWithType: IYVRLayerHandle.GetEyeBufferLayerId()
+  fullName: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId()
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+    name: GetEyeBufferLayerId
+    href: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId.html#YVR_Core_IYVRLayerHandle_GetEyeBufferLayerId
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
+    name: GetEyeBufferLayerId
+    href: YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId.html#YVR_Core_IYVRLayerHandle_GetEyeBufferLayerId
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle
+  href: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle.html#YVR_Core_YVRLayerAndroidHandler_GetLayerColorHandle_System_Int32_System_Int32_
+  name: GetLayerColorHandle
+  nameWithType: YVRLayerAndroidHandler.GetLayerColorHandle
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayerColorHandle
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
+  name: GetLayerColorHandle(int, int)
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int, int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int, int)
+  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer, Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer, Integer)
+  name.vb: GetLayerColorHandle(Integer, Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+    name: GetLayerColorHandle
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+    name: GetLayerColorHandle
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  parent: YVR.Core.IYVRLayerHandle
+  isExternal: true
+  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_
+  name: GetLayerColorHandle(int)
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int)
+  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer)
+  name.vb: GetLayerColorHandle(Integer)
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+    name: GetLayerColorHandle
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+    name: GetLayerColorHandle
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.GetLayersCount*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.GetLayersCount
+  href: YVR.Core.YVRLayerAndroidHandler.GetLayersCount.html#YVR_Core_YVRLayerAndroidHandler_GetLayersCount
+  name: GetLayersCount
+  nameWithType: YVRLayerAndroidHandler.GetLayersCount
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetLayersCount
+- uid: YVR.Core.IYVRLayerHandle.GetLayersCount
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayersCount
+  parent: YVR.Core.IYVRLayerHandle
+  href: YVR.Core.IYVRLayerHandle.GetLayersCount.html#YVR_Core_IYVRLayerHandle_GetLayersCount
+  name: GetLayersCount()
+  nameWithType: IYVRLayerHandle.GetLayersCount()
+  fullName: YVR.Core.IYVRLayerHandle.GetLayersCount()
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayersCount
+    name: GetLayersCount
+    href: YVR.Core.IYVRLayerHandle.GetLayersCount.html#YVR_Core_IYVRLayerHandle_GetLayersCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.GetLayersCount
+    name: GetLayersCount
+    href: YVR.Core.IYVRLayerHandle.GetLayersCount.html#YVR_Core_IYVRLayerHandle_GetLayersCount
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle
+  href: YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle.html#YVR_Core_YVRLayerAndroidHandler_GetAlLayersColorHandle
+  name: GetAlLayersColorHandle
+  nameWithType: YVRLayerAndroidHandler.GetAlLayersColorHandle
+  fullName: YVR.Core.YVRLayerAndroidHandler.GetAlLayersColorHandle
+- uid: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+  commentId: M:YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+  parent: YVR.Core.IYVRLayerHandle
+  href: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle.html#YVR_Core_IYVRLayerHandle_GetAlLayersColorHandle
+  name: GetAlLayersColorHandle()
+  nameWithType: IYVRLayerHandle.GetAlLayersColorHandle()
+  fullName: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle()
+  spec.csharp:
+  - uid: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+    name: GetAlLayersColorHandle
+    href: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle.html#YVR_Core_IYVRLayerHandle_GetAlLayersColorHandle
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle
+    name: GetAlLayersColorHandle
+    href: YVR.Core.IYVRLayerHandle.GetAlLayersColorHandle.html#YVR_Core_IYVRLayerHandle_GetAlLayersColorHandle
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRLayerAndroidHandler.Finalize*
+  commentId: Overload:YVR.Core.YVRLayerAndroidHandler.Finalize
+  href: YVR.Core.YVRLayerAndroidHandler.Finalize.html#YVR_Core_YVRLayerAndroidHandler_Finalize
+  name: ~YVRLayerAndroidHandler
+  nameWithType: YVRLayerAndroidHandler.~YVRLayerAndroidHandler
+  fullName: YVR.Core.YVRLayerAndroidHandler.~YVRLayerAndroidHandler
+  spec.csharp:
+  - name: "~"
+  - uid: YVR.Core.YVRLayerAndroidHandler.Finalize*
+    name: YVRLayerAndroidHandler
+    href: YVR.Core.YVRLayerAndroidHandler.Finalize.html#YVR_Core_YVRLayerAndroidHandler_Finalize
+memberLayout: SeparatePages

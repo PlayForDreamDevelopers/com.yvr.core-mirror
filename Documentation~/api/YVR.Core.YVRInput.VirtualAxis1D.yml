@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.VirtualAxis1D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis1D
+  id: YVRInput.VirtualAxis1D
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.VirtualAxis1D.Any
+  - YVR.Core.YVRInput.VirtualAxis1D.IndexTrigger
+  - YVR.Core.YVRInput.VirtualAxis1D.None
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.VirtualAxis1D
+  nameWithType: YVRInput.VirtualAxis1D
+  fullName: YVR.Core.YVRInput.VirtualAxis1D
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VirtualAxis1D
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 401
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Virtual 1D Axis mapping for controller
+  example: []
+  syntax:
+    content: public enum YVRInput.VirtualAxis1D
+    content.vb: Public Enum YVRInput.VirtualAxis1D
+- uid: YVR.Core.YVRInput.VirtualAxis1D.None
+  commentId: F:YVR.Core.YVRInput.VirtualAxis1D.None
+  id: None
+  parent: YVR.Core.YVRInput.VirtualAxis1D
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.VirtualAxis1D.None
+  fullName: YVR.Core.YVRInput.VirtualAxis1D.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 406
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a 1D Axis
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.VirtualAxis1D
+- uid: YVR.Core.YVRInput.VirtualAxis1D.IndexTrigger
+  commentId: F:YVR.Core.YVRInput.VirtualAxis1D.IndexTrigger
+  id: IndexTrigger
+  parent: YVR.Core.YVRInput.VirtualAxis1D
+  langs:
+  - csharp
+  - vb
+  name: IndexTrigger
+  nameWithType: YVRInput.VirtualAxis1D.IndexTrigger
+  fullName: YVR.Core.YVRInput.VirtualAxis1D.IndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: IndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 410
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger 1D Axis
+  example: []
+  syntax:
+    content: IndexTrigger = 1
+    return:
+      type: YVR.Core.YVRInput.VirtualAxis1D
+- uid: YVR.Core.YVRInput.VirtualAxis1D.Any
+  commentId: F:YVR.Core.YVRInput.VirtualAxis1D.Any
+  id: Any
+  parent: YVR.Core.YVRInput.VirtualAxis1D
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: YVRInput.VirtualAxis1D.Any
+  fullName: YVR.Core.YVRInput.VirtualAxis1D.Any
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Any
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 414
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Any 1D Axis
+  example: []
+  syntax:
+    content: Any = -1
+    return:
+      type: YVR.Core.YVRInput.VirtualAxis1D
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.VirtualAxis1D
+  commentId: T:YVR.Core.YVRInput.VirtualAxis1D
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.VirtualAxis1D
+  nameWithType: YVRInput.VirtualAxis1D
+  fullName: YVR.Core.YVRInput.VirtualAxis1D
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: VirtualAxis1D
+    href: YVR.Core.YVRInput.VirtualAxis1D.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.VirtualAxis1D
+    name: VirtualAxis1D
+    href: YVR.Core.YVRInput.VirtualAxis1D.html
+memberLayout: SeparatePages

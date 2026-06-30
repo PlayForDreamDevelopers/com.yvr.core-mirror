@@ -230,8 +230,7 @@ namespace YVR.Core
                 mainCamera.depthTextureMode |= DepthTextureMode.Depth | DepthTextureMode.MotionVectors;
                 if (mainCamera.transform.parent == null)
                 {
-                    m_AppSpaceTransform.position = Vector3.zero;
-                    m_AppSpaceTransform.rotation = Quaternion.identity;
+                    m_AppSpaceTransform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
                 }
                 else
                 {

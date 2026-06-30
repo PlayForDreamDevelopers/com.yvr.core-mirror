@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVREventTracking
+  commentId: T:YVR.Core.YVREventTracking
+  id: YVREventTracking
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVREventTracking.CurrentActivity
+  - YVR.Core.YVREventTracking.NativeCoreSdkClass
+  - YVR.Core.YVREventTracking.UploadSDKInfo
+  langs:
+  - csharp
+  - vb
+  name: YVREventTracking
+  nameWithType: YVREventTracking
+  fullName: YVR.Core.YVREventTracking
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVREventTracking
+    path: ../com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public class YVREventTracking : Singleton<YVREventTracking>'
+    content.vb: Public Class YVREventTracking Inherits Singleton(Of YVREventTracking)
+  inheritance:
+  - System.Object
+  - YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  inheritedMembers:
+  - YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.instance
+  - YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.createdInstance
+  - YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.OnInit
+  - YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.Reset
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVREventTracking.CurrentActivity
+  commentId: P:YVR.Core.YVREventTracking.CurrentActivity
+  id: CurrentActivity
+  parent: YVR.Core.YVREventTracking
+  langs:
+  - csharp
+  - vb
+  name: CurrentActivity
+  nameWithType: YVREventTracking.CurrentActivity
+  fullName: YVR.Core.YVREventTracking.CurrentActivity
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CurrentActivity
+    path: ../com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public AndroidJavaObject CurrentActivity { get; }
+    parameters: []
+    return:
+      type: UnityEngine.AndroidJavaObject
+    content.vb: Public ReadOnly Property CurrentActivity As AndroidJavaObject
+  overload: YVR.Core.YVREventTracking.CurrentActivity*
+- uid: YVR.Core.YVREventTracking.NativeCoreSdkClass
+  commentId: P:YVR.Core.YVREventTracking.NativeCoreSdkClass
+  id: NativeCoreSdkClass
+  parent: YVR.Core.YVREventTracking
+  langs:
+  - csharp
+  - vb
+  name: NativeCoreSdkClass
+  nameWithType: YVREventTracking.NativeCoreSdkClass
+  fullName: YVR.Core.YVREventTracking.NativeCoreSdkClass
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: NativeCoreSdkClass
+    path: ../com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+    startLine: 35
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public AndroidJavaClass NativeCoreSdkClass { get; }
+    parameters: []
+    return:
+      type: UnityEngine.AndroidJavaClass
+    content.vb: Public ReadOnly Property NativeCoreSdkClass As AndroidJavaClass
+  overload: YVR.Core.YVREventTracking.NativeCoreSdkClass*
+- uid: YVR.Core.YVREventTracking.UploadSDKInfo
+  commentId: M:YVR.Core.YVREventTracking.UploadSDKInfo
+  id: UploadSDKInfo
+  parent: YVR.Core.YVREventTracking
+  langs:
+  - csharp
+  - vb
+  name: UploadSDKInfo()
+  nameWithType: YVREventTracking.UploadSDKInfo()
+  fullName: YVR.Core.YVREventTracking.UploadSDKInfo()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UploadSDKInfo
+    path: ../com.yvr.core/Scripts/Runtime/YVREventTracking.cs
+    startLine: 48
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public void UploadSDKInfo()
+    content.vb: Public Sub UploadSDKInfo()
+  overload: YVR.Core.YVREventTracking.UploadSDKInfo*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  commentId: T:YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  parent: YVR.Utilities
+  definition: YVR.Utilities.Singleton`1
+  href: YVR.Core.YVREventTracking.html
+  name: Singleton<YVREventTracking>
+  nameWithType: Singleton<YVREventTracking>
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVREventTracking>
+  nameWithType.vb: Singleton(Of YVREventTracking)
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVREventTracking)
+  name.vb: Singleton(Of YVREventTracking)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - uid: YVR.Core.YVREventTracking
+    name: YVREventTracking
+    href: YVR.Core.YVREventTracking.html
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVREventTracking
+    name: YVREventTracking
+    href: YVR.Core.YVREventTracking.html
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.instance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.instance
+  parent: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  definition: YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<YVREventTracking>.instance
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVREventTracking>.instance
+  nameWithType.vb: Singleton(Of YVREventTracking).instance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVREventTracking).instance
+- uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.createdInstance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.createdInstance
+  parent: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  definition: YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<YVREventTracking>.createdInstance
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVREventTracking>.createdInstance
+  nameWithType.vb: Singleton(Of YVREventTracking).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVREventTracking).createdInstance
+- uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.OnInit
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.OnInit
+  parent: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  definition: YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<YVREventTracking>.OnInit()
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVREventTracking>.OnInit()
+  nameWithType.vb: Singleton(Of YVREventTracking).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVREventTracking).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.Reset
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.Reset
+  parent: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}
+  definition: YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<YVREventTracking>.Reset()
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVREventTracking>.Reset()
+  nameWithType.vb: Singleton(Of YVREventTracking).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVREventTracking).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVREventTracking}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Utilities.Singleton`1
+  commentId: T:YVR.Utilities.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: YVR.Utilities.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: YVR.Utilities.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Utilities
+  commentId: N:YVR.Utilities
+  name: YVR.Utilities
+  nameWithType: YVR.Utilities
+  fullName: YVR.Utilities
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+  spec.vb:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+- uid: YVR.Utilities.Singleton`1.instance
+  commentId: P:YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<T>.instance
+  fullName: YVR.Utilities.Singleton<T>.instance
+  nameWithType.vb: Singleton(Of T).instance
+  fullName.vb: YVR.Utilities.Singleton(Of T).instance
+- uid: YVR.Utilities.Singleton`1.createdInstance
+  commentId: P:YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<T>.createdInstance
+  fullName: YVR.Utilities.Singleton<T>.createdInstance
+  nameWithType.vb: Singleton(Of T).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of T).createdInstance
+- uid: YVR.Utilities.Singleton`1.OnInit
+  commentId: M:YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<T>.OnInit()
+  fullName: YVR.Utilities.Singleton<T>.OnInit()
+  nameWithType.vb: Singleton(Of T).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of T).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Utilities.Singleton`1.Reset
+  commentId: M:YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<T>.Reset()
+  fullName: YVR.Utilities.Singleton<T>.Reset()
+  nameWithType.vb: Singleton(Of T).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of T).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: YVR.Core.YVREventTracking.CurrentActivity*
+  commentId: Overload:YVR.Core.YVREventTracking.CurrentActivity
+  href: YVR.Core.YVREventTracking.CurrentActivity.html#YVR_Core_YVREventTracking_CurrentActivity
+  name: CurrentActivity
+  nameWithType: YVREventTracking.CurrentActivity
+  fullName: YVR.Core.YVREventTracking.CurrentActivity
+- uid: UnityEngine.AndroidJavaObject
+  commentId: T:UnityEngine.AndroidJavaObject
+  parent: UnityEngine
+  isExternal: true
+  name: AndroidJavaObject
+  nameWithType: AndroidJavaObject
+  fullName: UnityEngine.AndroidJavaObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVREventTracking.NativeCoreSdkClass*
+  commentId: Overload:YVR.Core.YVREventTracking.NativeCoreSdkClass
+  href: YVR.Core.YVREventTracking.NativeCoreSdkClass.html#YVR_Core_YVREventTracking_NativeCoreSdkClass
+  name: NativeCoreSdkClass
+  nameWithType: YVREventTracking.NativeCoreSdkClass
+  fullName: YVR.Core.YVREventTracking.NativeCoreSdkClass
+- uid: UnityEngine.AndroidJavaClass
+  commentId: T:UnityEngine.AndroidJavaClass
+  parent: UnityEngine
+  isExternal: true
+  name: AndroidJavaClass
+  nameWithType: AndroidJavaClass
+  fullName: UnityEngine.AndroidJavaClass
+- uid: YVR.Core.YVREventTracking.UploadSDKInfo*
+  commentId: Overload:YVR.Core.YVREventTracking.UploadSDKInfo
+  href: YVR.Core.YVREventTracking.UploadSDKInfo.html#YVR_Core_YVREventTracking_UploadSDKInfo
+  name: UploadSDKInfo
+  nameWithType: YVREventTracking.UploadSDKInfo
+  fullName: YVR.Core.YVREventTracking.UploadSDKInfo
+memberLayout: SeparatePages

@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.Packing
+  commentId: N:YVR.Core.Editor.Packing
+  id: YVR.Core.Editor.Packing
+  children:
+  - YVR.Core.Editor.Packing.AndroidManifestHandler
+  - YVR.Core.Editor.Packing.EyeTrackingManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.HandTrackingManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.ImageTrackingAssetInfoProvider
+  - YVR.Core.Editor.Packing.LargeSpaceManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.ManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.OpenXRLoaderManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.PackagesVersionManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.PackingAssetHandler
+  - YVR.Core.Editor.Packing.PackingAssetsInfoProvider
+  - YVR.Core.Editor.Packing.RenderingModeManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.ScreenSplashAssetsInfoProvider
+  - YVR.Core.Editor.Packing.ScreenSplashManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.SpatialAnchorManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.SpatialSceneManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.XRDofManifestElementInfoProvider
+  - YVR.Core.Editor.Packing.XRModeManifestElementInfoProvider
+  langs:
+  - csharp
+  - vb
+  name: YVR.Core.Editor.Packing
+  nameWithType: YVR.Core.Editor.Packing
+  fullName: YVR.Core.Editor.Packing
+  type: Namespace
+  assemblies:
+  - YVR.Core.Editor
+references:
+- uid: YVR.Core.Editor.Packing.XRModeManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.XRModeManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.XRModeManifestElementInfoProvider.html
+  name: XRModeManifestElementInfoProvider
+  nameWithType: XRModeManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.XRModeManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.PackingAssetsInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.PackingAssetsInfoProvider
+  parent: YVR.Core.Editor.Packing
+  href: YVR.Core.Editor.Packing.PackingAssetsInfoProvider.html
+  name: PackingAssetsInfoProvider
+  nameWithType: PackingAssetsInfoProvider
+  fullName: YVR.Core.Editor.Packing.PackingAssetsInfoProvider
+- uid: YVR.Core.Editor.Packing.ImageTrackingAssetInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.ImageTrackingAssetInfoProvider
+  href: YVR.Core.Editor.Packing.ImageTrackingAssetInfoProvider.html
+  name: ImageTrackingAssetInfoProvider
+  nameWithType: ImageTrackingAssetInfoProvider
+  fullName: YVR.Core.Editor.Packing.ImageTrackingAssetInfoProvider
+- uid: YVR.Core.Editor.Packing.SpatialAnchorManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.SpatialAnchorManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.SpatialAnchorManifestElementInfoProvider.html
+  name: SpatialAnchorManifestElementInfoProvider
+  nameWithType: SpatialAnchorManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.SpatialAnchorManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.PackagesVersionManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.PackagesVersionManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.PackagesVersionManifestElementInfoProvider.html
+  name: PackagesVersionManifestElementInfoProvider
+  nameWithType: PackagesVersionManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.PackagesVersionManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.OpenXRLoaderManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.OpenXRLoaderManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.OpenXRLoaderManifestElementInfoProvider.html
+  name: OpenXRLoaderManifestElementInfoProvider
+  nameWithType: OpenXRLoaderManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.OpenXRLoaderManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.ScreenSplashManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.ScreenSplashManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.ScreenSplashManifestElementInfoProvider.html
+  name: ScreenSplashManifestElementInfoProvider
+  nameWithType: ScreenSplashManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.ScreenSplashManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.XRDofManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.XRDofManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.XRDofManifestElementInfoProvider.html
+  name: XRDofManifestElementInfoProvider
+  nameWithType: XRDofManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.XRDofManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.SpatialSceneManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.SpatialSceneManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.SpatialSceneManifestElementInfoProvider.html
+  name: SpatialSceneManifestElementInfoProvider
+  nameWithType: SpatialSceneManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.SpatialSceneManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.HandTrackingManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.HandTrackingManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.HandTrackingManifestElementInfoProvider.html
+  name: HandTrackingManifestElementInfoProvider
+  nameWithType: HandTrackingManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.HandTrackingManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.ScreenSplashAssetsInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.ScreenSplashAssetsInfoProvider
+  href: YVR.Core.Editor.Packing.ScreenSplashAssetsInfoProvider.html
+  name: ScreenSplashAssetsInfoProvider
+  nameWithType: ScreenSplashAssetsInfoProvider
+  fullName: YVR.Core.Editor.Packing.ScreenSplashAssetsInfoProvider
+- uid: YVR.Core.Editor.Packing.EyeTrackingManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.EyeTrackingManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.EyeTrackingManifestElementInfoProvider.html
+  name: EyeTrackingManifestElementInfoProvider
+  nameWithType: EyeTrackingManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.EyeTrackingManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.ManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.ManifestElementInfoProvider
+  parent: YVR.Core.Editor.Packing
+  href: YVR.Core.Editor.Packing.ManifestElementInfoProvider.html
+  name: ManifestElementInfoProvider
+  nameWithType: ManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.ManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.RenderingModeManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.RenderingModeManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.RenderingModeManifestElementInfoProvider.html
+  name: RenderingModeManifestElementInfoProvider
+  nameWithType: RenderingModeManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.RenderingModeManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing.AndroidManifestHandler
+  commentId: T:YVR.Core.Editor.Packing.AndroidManifestHandler
+  href: YVR.Core.Editor.Packing.AndroidManifestHandler.html
+  name: AndroidManifestHandler
+  nameWithType: AndroidManifestHandler
+  fullName: YVR.Core.Editor.Packing.AndroidManifestHandler
+- uid: YVR.Core.Editor.Packing.PackingAssetHandler
+  commentId: T:YVR.Core.Editor.Packing.PackingAssetHandler
+  href: YVR.Core.Editor.Packing.PackingAssetHandler.html
+  name: PackingAssetHandler
+  nameWithType: PackingAssetHandler
+  fullName: YVR.Core.Editor.Packing.PackingAssetHandler
+- uid: YVR.Core.Editor.Packing.LargeSpaceManifestElementInfoProvider
+  commentId: T:YVR.Core.Editor.Packing.LargeSpaceManifestElementInfoProvider
+  href: YVR.Core.Editor.Packing.LargeSpaceManifestElementInfoProvider.html
+  name: LargeSpaceManifestElementInfoProvider
+  nameWithType: LargeSpaceManifestElementInfoProvider
+  fullName: YVR.Core.Editor.Packing.LargeSpaceManifestElementInfoProvider
+- uid: YVR.Core.Editor.Packing
+  commentId: N:YVR.Core.Editor.Packing
+  href: YVR.html
+  name: YVR.Core.Editor.Packing
+  nameWithType: YVR.Core.Editor.Packing
+  fullName: YVR.Core.Editor.Packing
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  - name: .
+  - uid: YVR.Core.Editor.Packing
+    name: Packing
+    href: YVR.Core.Editor.Packing.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  - name: .
+  - uid: YVR.Core.Editor.Packing
+    name: Packing
+    href: YVR.Core.Editor.Packing.html
+memberLayout: SeparatePages

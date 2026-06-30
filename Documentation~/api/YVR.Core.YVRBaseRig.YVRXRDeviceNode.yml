@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  commentId: T:YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  id: YVRBaseRig.YVRXRDeviceNode
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRBaseRig.YVRXRDeviceNode.Headset
+  - YVR.Core.YVRBaseRig.YVRXRDeviceNode.LeftController
+  - YVR.Core.YVRBaseRig.YVRXRDeviceNode.RightController
+  langs:
+  - csharp
+  - vb
+  name: YVRBaseRig.YVRXRDeviceNode
+  nameWithType: YVRBaseRig.YVRXRDeviceNode
+  fullName: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRXRDeviceNode
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      protected enum YVRBaseRig.YVRXRDeviceNode
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Protected Enum YVRBaseRig.YVRXRDeviceNode
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode.Headset
+  commentId: F:YVR.Core.YVRBaseRig.YVRXRDeviceNode.Headset
+  id: Headset
+  parent: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  langs:
+  - csharp
+  - vb
+  name: Headset
+  nameWithType: YVRBaseRig.YVRXRDeviceNode.Headset
+  fullName: YVR.Core.YVRBaseRig.YVRXRDeviceNode.Headset
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Headset
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Headset = 0
+    return:
+      type: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+- uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode.LeftController
+  commentId: F:YVR.Core.YVRBaseRig.YVRXRDeviceNode.LeftController
+  id: LeftController
+  parent: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  langs:
+  - csharp
+  - vb
+  name: LeftController
+  nameWithType: YVRBaseRig.YVRXRDeviceNode.LeftController
+  fullName: YVR.Core.YVRBaseRig.YVRXRDeviceNode.LeftController
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LeftController
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: LeftController = 1
+    return:
+      type: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+- uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode.RightController
+  commentId: F:YVR.Core.YVRBaseRig.YVRXRDeviceNode.RightController
+  id: RightController
+  parent: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  langs:
+  - csharp
+  - vb
+  name: RightController
+  nameWithType: YVRBaseRig.YVRXRDeviceNode.RightController
+  fullName: YVR.Core.YVRBaseRig.YVRXRDeviceNode.RightController
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RightController
+    path: ../com.yvr.core/Scripts/Runtime/YVRBaseRig.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: RightController = 2
+    return:
+      type: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  commentId: T:YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  parent: YVR.Core
+  href: YVR.Core.YVRBaseRig.html
+  name: YVRBaseRig.YVRXRDeviceNode
+  nameWithType: YVRBaseRig.YVRXRDeviceNode
+  fullName: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+  spec.csharp:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+    name: YVRXRDeviceNode
+    href: YVR.Core.YVRBaseRig.YVRXRDeviceNode.html
+  spec.vb:
+  - uid: YVR.Core.YVRBaseRig
+    name: YVRBaseRig
+    href: YVR.Core.YVRBaseRig.html
+  - name: .
+  - uid: YVR.Core.YVRBaseRig.YVRXRDeviceNode
+    name: YVRXRDeviceNode
+    href: YVR.Core.YVRBaseRig.YVRXRDeviceNode.html
+memberLayout: SeparatePages

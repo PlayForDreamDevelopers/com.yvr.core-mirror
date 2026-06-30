@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  commentId: T:YVR.Core.YVRTrackingStateManager.TrackingSpace
+  id: YVRTrackingStateManager.TrackingSpace
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRTrackingStateManager.TrackingSpace.EyeLevel
+  - YVR.Core.YVRTrackingStateManager.TrackingSpace.FloorLevel
+  - YVR.Core.YVRTrackingStateManager.TrackingSpace.Stage
+  langs:
+  - csharp
+  - vb
+  name: YVRTrackingStateManager.TrackingSpace
+  nameWithType: YVRTrackingStateManager.TrackingSpace
+  fullName: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TrackingSpace
+    path: ../com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Initial camera height
+  example: []
+  syntax:
+    content: public enum YVRTrackingStateManager.TrackingSpace
+    content.vb: Public Enum YVRTrackingStateManager.TrackingSpace
+- uid: YVR.Core.YVRTrackingStateManager.TrackingSpace.EyeLevel
+  commentId: F:YVR.Core.YVRTrackingStateManager.TrackingSpace.EyeLevel
+  id: EyeLevel
+  parent: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  langs:
+  - csharp
+  - vb
+  name: EyeLevel
+  nameWithType: YVRTrackingStateManager.TrackingSpace.EyeLevel
+  fullName: YVR.Core.YVRTrackingStateManager.TrackingSpace.EyeLevel
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EyeLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: camera default high is 0.
+  example: []
+  syntax:
+    content: EyeLevel = 2
+    return:
+      type: YVR.Core.YVRTrackingStateManager.TrackingSpace
+- uid: YVR.Core.YVRTrackingStateManager.TrackingSpace.FloorLevel
+  commentId: F:YVR.Core.YVRTrackingStateManager.TrackingSpace.FloorLevel
+  id: FloorLevel
+  parent: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  langs:
+  - csharp
+  - vb
+  name: FloorLevel
+  nameWithType: YVRTrackingStateManager.TrackingSpace.FloorLevel
+  fullName: YVR.Core.YVRTrackingStateManager.TrackingSpace.FloorLevel
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: FloorLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The default height of the camera is the height of the boundary setting.
+  example: []
+  syntax:
+    content: FloorLevel = 1000426000
+    return:
+      type: YVR.Core.YVRTrackingStateManager.TrackingSpace
+- uid: YVR.Core.YVRTrackingStateManager.TrackingSpace.Stage
+  commentId: F:YVR.Core.YVRTrackingStateManager.TrackingSpace.Stage
+  id: Stage
+  parent: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  langs:
+  - csharp
+  - vb
+  name: Stage
+  nameWithType: YVRTrackingStateManager.TrackingSpace.Stage
+  fullName: YVR.Core.YVRTrackingStateManager.TrackingSpace.Stage
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Stage
+    path: ../com.yvr.core/Scripts/Runtime/YVRTrackingStateData.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not affected by Recenter
+  example: []
+  syntax:
+    content: Stage = 3
+    return:
+      type: YVR.Core.YVRTrackingStateManager.TrackingSpace
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  commentId: T:YVR.Core.YVRTrackingStateManager.TrackingSpace
+  parent: YVR.Core
+  href: YVR.Core.YVRTrackingStateManager.html
+  name: YVRTrackingStateManager.TrackingSpace
+  nameWithType: YVRTrackingStateManager.TrackingSpace
+  fullName: YVR.Core.YVRTrackingStateManager.TrackingSpace
+  spec.csharp:
+  - uid: YVR.Core.YVRTrackingStateManager
+    name: YVRTrackingStateManager
+    href: YVR.Core.YVRTrackingStateManager.html
+  - name: .
+  - uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+    name: TrackingSpace
+    href: YVR.Core.YVRTrackingStateManager.TrackingSpace.html
+  spec.vb:
+  - uid: YVR.Core.YVRTrackingStateManager
+    name: YVRTrackingStateManager
+    href: YVR.Core.YVRTrackingStateManager.html
+  - name: .
+  - uid: YVR.Core.YVRTrackingStateManager.TrackingSpace
+    name: TrackingSpace
+    href: YVR.Core.YVRTrackingStateManager.TrackingSpace.html
+memberLayout: SeparatePages

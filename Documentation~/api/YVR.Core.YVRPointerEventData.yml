@@ -1,0 +1,776 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPointerEventData
+  commentId: T:YVR.Core.YVRPointerEventData
+  id: YVRPointerEventData
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)
+  - YVR.Core.YVRPointerEventData.worldSpaceRay
+  langs:
+  - csharp
+  - vb
+  name: YVRPointerEventData
+  nameWithType: YVRPointerEventData
+  fullName: YVR.Core.YVRPointerEventData
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRPointerEventData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPointerEventData
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRPointerEventData.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: >-
+    Almost the same with UnityEngin.EventSystems.PointerEventData,
+
+    expects that a new Ray fields indicates the ray used for interacting
+  example: []
+  syntax:
+    content: 'public class YVRPointerEventData : PointerEventData'
+    content.vb: Public Class YVRPointerEventData Inherits PointerEventData
+  inheritance:
+  - System.Object
+  - UnityEngine.EventSystems.AbstractEventData
+  - UnityEngine.EventSystems.BaseEventData
+  - UnityEngine.EventSystems.PointerEventData
+  inheritedMembers:
+  - UnityEngine.EventSystems.PointerEventData.pointerEnter
+  - UnityEngine.EventSystems.PointerEventData.lastPress
+  - UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  - UnityEngine.EventSystems.PointerEventData.pointerDrag
+  - UnityEngine.EventSystems.PointerEventData.pointerClick
+  - UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  - UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  - UnityEngine.EventSystems.PointerEventData.hovered
+  - UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  - UnityEngine.EventSystems.PointerEventData.displayIndex
+  - UnityEngine.EventSystems.PointerEventData.pointerId
+  - UnityEngine.EventSystems.PointerEventData.position
+  - UnityEngine.EventSystems.PointerEventData.delta
+  - UnityEngine.EventSystems.PointerEventData.pressPosition
+  - UnityEngine.EventSystems.PointerEventData.worldPosition
+  - UnityEngine.EventSystems.PointerEventData.worldNormal
+  - UnityEngine.EventSystems.PointerEventData.clickTime
+  - UnityEngine.EventSystems.PointerEventData.clickCount
+  - UnityEngine.EventSystems.PointerEventData.scrollDelta
+  - UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  - UnityEngine.EventSystems.PointerEventData.dragging
+  - UnityEngine.EventSystems.PointerEventData.button
+  - UnityEngine.EventSystems.PointerEventData.pressure
+  - UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  - UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  - UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  - UnityEngine.EventSystems.PointerEventData.twist
+  - UnityEngine.EventSystems.PointerEventData.tilt
+  - UnityEngine.EventSystems.PointerEventData.penStatus
+  - UnityEngine.EventSystems.PointerEventData.radius
+  - UnityEngine.EventSystems.PointerEventData.radiusVariance
+  - UnityEngine.EventSystems.PointerEventData.fullyExited
+  - UnityEngine.EventSystems.PointerEventData.reentered
+  - UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  - UnityEngine.EventSystems.PointerEventData.IsScrolling
+  - UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  - UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  - UnityEngine.EventSystems.PointerEventData.pointerPress
+  - UnityEngine.EventSystems.PointerEventData.ToString
+  - UnityEngine.EventSystems.BaseEventData.currentInputModule
+  - UnityEngine.EventSystems.BaseEventData.selectedObject
+  - UnityEngine.EventSystems.AbstractEventData.m_Used
+  - UnityEngine.EventSystems.AbstractEventData.Reset
+  - UnityEngine.EventSystems.AbstractEventData.Use
+  - UnityEngine.EventSystems.AbstractEventData.used
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.YVRPointerEventData.worldSpaceRay
+  commentId: F:YVR.Core.YVRPointerEventData.worldSpaceRay
+  id: worldSpaceRay
+  parent: YVR.Core.YVRPointerEventData
+  langs:
+  - csharp
+  - vb
+  name: worldSpaceRay
+  nameWithType: YVRPointerEventData.worldSpaceRay
+  fullName: YVR.Core.YVRPointerEventData.worldSpaceRay
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRPointerEventData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: worldSpaceRay
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRPointerEventData.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Indicating the ray used for interaction
+  example: []
+  syntax:
+    content: public Ray worldSpaceRay
+    return:
+      type: UnityEngine.Ray
+    content.vb: Public worldSpaceRay As Ray
+- uid: YVR.Core.YVRPointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)
+  commentId: M:YVR.Core.YVRPointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)
+  id: '#ctor(UnityEngine.EventSystems.EventSystem)'
+  parent: YVR.Core.YVRPointerEventData
+  langs:
+  - csharp
+  - vb
+  name: YVRPointerEventData(EventSystem)
+  nameWithType: YVRPointerEventData.YVRPointerEventData(EventSystem)
+  fullName: YVR.Core.YVRPointerEventData.YVRPointerEventData(UnityEngine.EventSystems.EventSystem)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/UIEvent/YVRPointerEventData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRPointerEventData.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Default Constructor
+  example: []
+  syntax:
+    content: public YVRPointerEventData(EventSystem eventSystem)
+    parameters:
+    - id: eventSystem
+      type: UnityEngine.EventSystems.EventSystem
+      description: eventSystem in PointerEventData
+    content.vb: Public Sub New(eventSystem As EventSystem)
+  overload: YVR.Core.YVRPointerEventData.#ctor*
+  nameWithType.vb: YVRPointerEventData.New(EventSystem)
+  fullName.vb: YVR.Core.YVRPointerEventData.New(UnityEngine.EventSystems.EventSystem)
+  name.vb: New(EventSystem)
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.EventSystems.AbstractEventData
+  commentId: T:UnityEngine.EventSystems.AbstractEventData
+  parent: UnityEngine.EventSystems
+  name: AbstractEventData
+  nameWithType: AbstractEventData
+  fullName: UnityEngine.EventSystems.AbstractEventData
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems.PointerEventData.pointerEnter
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerEnter
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerEnter
+  nameWithType: PointerEventData.pointerEnter
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerEnter
+- uid: UnityEngine.EventSystems.PointerEventData.lastPress
+  commentId: P:UnityEngine.EventSystems.PointerEventData.lastPress
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: lastPress
+  nameWithType: PointerEventData.lastPress
+  fullName: UnityEngine.EventSystems.PointerEventData.lastPress
+- uid: UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  commentId: P:UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: rawPointerPress
+  nameWithType: PointerEventData.rawPointerPress
+  fullName: UnityEngine.EventSystems.PointerEventData.rawPointerPress
+- uid: UnityEngine.EventSystems.PointerEventData.pointerDrag
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerDrag
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerDrag
+  nameWithType: PointerEventData.pointerDrag
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerDrag
+- uid: UnityEngine.EventSystems.PointerEventData.pointerClick
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerClick
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerClick
+  nameWithType: PointerEventData.pointerClick
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerClick
+- uid: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerCurrentRaycast
+  nameWithType: PointerEventData.pointerCurrentRaycast
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+- uid: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerPressRaycast
+  nameWithType: PointerEventData.pointerPressRaycast
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+- uid: UnityEngine.EventSystems.PointerEventData.hovered
+  commentId: F:UnityEngine.EventSystems.PointerEventData.hovered
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: hovered
+  nameWithType: PointerEventData.hovered
+  fullName: UnityEngine.EventSystems.PointerEventData.hovered
+- uid: UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  commentId: P:UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: eligibleForClick
+  nameWithType: PointerEventData.eligibleForClick
+  fullName: UnityEngine.EventSystems.PointerEventData.eligibleForClick
+- uid: UnityEngine.EventSystems.PointerEventData.displayIndex
+  commentId: P:UnityEngine.EventSystems.PointerEventData.displayIndex
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: displayIndex
+  nameWithType: PointerEventData.displayIndex
+  fullName: UnityEngine.EventSystems.PointerEventData.displayIndex
+- uid: UnityEngine.EventSystems.PointerEventData.pointerId
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerId
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerId
+  nameWithType: PointerEventData.pointerId
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerId
+- uid: UnityEngine.EventSystems.PointerEventData.position
+  commentId: P:UnityEngine.EventSystems.PointerEventData.position
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: position
+  nameWithType: PointerEventData.position
+  fullName: UnityEngine.EventSystems.PointerEventData.position
+- uid: UnityEngine.EventSystems.PointerEventData.delta
+  commentId: P:UnityEngine.EventSystems.PointerEventData.delta
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: delta
+  nameWithType: PointerEventData.delta
+  fullName: UnityEngine.EventSystems.PointerEventData.delta
+- uid: UnityEngine.EventSystems.PointerEventData.pressPosition
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pressPosition
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pressPosition
+  nameWithType: PointerEventData.pressPosition
+  fullName: UnityEngine.EventSystems.PointerEventData.pressPosition
+- uid: UnityEngine.EventSystems.PointerEventData.worldPosition
+  commentId: P:UnityEngine.EventSystems.PointerEventData.worldPosition
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: worldPosition
+  nameWithType: PointerEventData.worldPosition
+  fullName: UnityEngine.EventSystems.PointerEventData.worldPosition
+- uid: UnityEngine.EventSystems.PointerEventData.worldNormal
+  commentId: P:UnityEngine.EventSystems.PointerEventData.worldNormal
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: worldNormal
+  nameWithType: PointerEventData.worldNormal
+  fullName: UnityEngine.EventSystems.PointerEventData.worldNormal
+- uid: UnityEngine.EventSystems.PointerEventData.clickTime
+  commentId: P:UnityEngine.EventSystems.PointerEventData.clickTime
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: clickTime
+  nameWithType: PointerEventData.clickTime
+  fullName: UnityEngine.EventSystems.PointerEventData.clickTime
+- uid: UnityEngine.EventSystems.PointerEventData.clickCount
+  commentId: P:UnityEngine.EventSystems.PointerEventData.clickCount
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: clickCount
+  nameWithType: PointerEventData.clickCount
+  fullName: UnityEngine.EventSystems.PointerEventData.clickCount
+- uid: UnityEngine.EventSystems.PointerEventData.scrollDelta
+  commentId: P:UnityEngine.EventSystems.PointerEventData.scrollDelta
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: scrollDelta
+  nameWithType: PointerEventData.scrollDelta
+  fullName: UnityEngine.EventSystems.PointerEventData.scrollDelta
+- uid: UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  commentId: P:UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: useDragThreshold
+  nameWithType: PointerEventData.useDragThreshold
+  fullName: UnityEngine.EventSystems.PointerEventData.useDragThreshold
+- uid: UnityEngine.EventSystems.PointerEventData.dragging
+  commentId: P:UnityEngine.EventSystems.PointerEventData.dragging
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: dragging
+  nameWithType: PointerEventData.dragging
+  fullName: UnityEngine.EventSystems.PointerEventData.dragging
+- uid: UnityEngine.EventSystems.PointerEventData.button
+  commentId: P:UnityEngine.EventSystems.PointerEventData.button
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: button
+  nameWithType: PointerEventData.button
+  fullName: UnityEngine.EventSystems.PointerEventData.button
+- uid: UnityEngine.EventSystems.PointerEventData.pressure
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pressure
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pressure
+  nameWithType: PointerEventData.pressure
+  fullName: UnityEngine.EventSystems.PointerEventData.pressure
+- uid: UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  commentId: P:UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: tangentialPressure
+  nameWithType: PointerEventData.tangentialPressure
+  fullName: UnityEngine.EventSystems.PointerEventData.tangentialPressure
+- uid: UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  commentId: P:UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: altitudeAngle
+  nameWithType: PointerEventData.altitudeAngle
+  fullName: UnityEngine.EventSystems.PointerEventData.altitudeAngle
+- uid: UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  commentId: P:UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: azimuthAngle
+  nameWithType: PointerEventData.azimuthAngle
+  fullName: UnityEngine.EventSystems.PointerEventData.azimuthAngle
+- uid: UnityEngine.EventSystems.PointerEventData.twist
+  commentId: P:UnityEngine.EventSystems.PointerEventData.twist
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: twist
+  nameWithType: PointerEventData.twist
+  fullName: UnityEngine.EventSystems.PointerEventData.twist
+- uid: UnityEngine.EventSystems.PointerEventData.tilt
+  commentId: P:UnityEngine.EventSystems.PointerEventData.tilt
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: tilt
+  nameWithType: PointerEventData.tilt
+  fullName: UnityEngine.EventSystems.PointerEventData.tilt
+- uid: UnityEngine.EventSystems.PointerEventData.penStatus
+  commentId: P:UnityEngine.EventSystems.PointerEventData.penStatus
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: penStatus
+  nameWithType: PointerEventData.penStatus
+  fullName: UnityEngine.EventSystems.PointerEventData.penStatus
+- uid: UnityEngine.EventSystems.PointerEventData.radius
+  commentId: P:UnityEngine.EventSystems.PointerEventData.radius
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: radius
+  nameWithType: PointerEventData.radius
+  fullName: UnityEngine.EventSystems.PointerEventData.radius
+- uid: UnityEngine.EventSystems.PointerEventData.radiusVariance
+  commentId: P:UnityEngine.EventSystems.PointerEventData.radiusVariance
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: radiusVariance
+  nameWithType: PointerEventData.radiusVariance
+  fullName: UnityEngine.EventSystems.PointerEventData.radiusVariance
+- uid: UnityEngine.EventSystems.PointerEventData.fullyExited
+  commentId: P:UnityEngine.EventSystems.PointerEventData.fullyExited
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: fullyExited
+  nameWithType: PointerEventData.fullyExited
+  fullName: UnityEngine.EventSystems.PointerEventData.fullyExited
+- uid: UnityEngine.EventSystems.PointerEventData.reentered
+  commentId: P:UnityEngine.EventSystems.PointerEventData.reentered
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: reentered
+  nameWithType: PointerEventData.reentered
+  fullName: UnityEngine.EventSystems.PointerEventData.reentered
+- uid: UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  commentId: M:UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: IsPointerMoving()
+  nameWithType: PointerEventData.IsPointerMoving()
+  fullName: UnityEngine.EventSystems.PointerEventData.IsPointerMoving()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+    name: IsPointerMoving
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+    name: IsPointerMoving
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.PointerEventData.IsScrolling
+  commentId: M:UnityEngine.EventSystems.PointerEventData.IsScrolling
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: IsScrolling()
+  nameWithType: PointerEventData.IsScrolling()
+  fullName: UnityEngine.EventSystems.PointerEventData.IsScrolling()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData.IsScrolling
+    name: IsScrolling
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData.IsScrolling
+    name: IsScrolling
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  commentId: P:UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: enterEventCamera
+  nameWithType: PointerEventData.enterEventCamera
+  fullName: UnityEngine.EventSystems.PointerEventData.enterEventCamera
+- uid: UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pressEventCamera
+  nameWithType: PointerEventData.pressEventCamera
+  fullName: UnityEngine.EventSystems.PointerEventData.pressEventCamera
+- uid: UnityEngine.EventSystems.PointerEventData.pointerPress
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerPress
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: pointerPress
+  nameWithType: PointerEventData.pointerPress
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerPress
+- uid: UnityEngine.EventSystems.PointerEventData.ToString
+  commentId: M:UnityEngine.EventSystems.PointerEventData.ToString
+  parent: UnityEngine.EventSystems.PointerEventData
+  name: ToString()
+  nameWithType: PointerEventData.ToString()
+  fullName: UnityEngine.EventSystems.PointerEventData.ToString()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData.ToString
+    name: ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData.ToString
+    name: ToString
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.BaseEventData.currentInputModule
+  commentId: P:UnityEngine.EventSystems.BaseEventData.currentInputModule
+  parent: UnityEngine.EventSystems.BaseEventData
+  name: currentInputModule
+  nameWithType: BaseEventData.currentInputModule
+  fullName: UnityEngine.EventSystems.BaseEventData.currentInputModule
+- uid: UnityEngine.EventSystems.BaseEventData.selectedObject
+  commentId: P:UnityEngine.EventSystems.BaseEventData.selectedObject
+  parent: UnityEngine.EventSystems.BaseEventData
+  name: selectedObject
+  nameWithType: BaseEventData.selectedObject
+  fullName: UnityEngine.EventSystems.BaseEventData.selectedObject
+- uid: UnityEngine.EventSystems.AbstractEventData.m_Used
+  commentId: F:UnityEngine.EventSystems.AbstractEventData.m_Used
+  parent: UnityEngine.EventSystems.AbstractEventData
+  name: m_Used
+  nameWithType: AbstractEventData.m_Used
+  fullName: UnityEngine.EventSystems.AbstractEventData.m_Used
+- uid: UnityEngine.EventSystems.AbstractEventData.Reset
+  commentId: M:UnityEngine.EventSystems.AbstractEventData.Reset
+  parent: UnityEngine.EventSystems.AbstractEventData
+  name: Reset()
+  nameWithType: AbstractEventData.Reset()
+  fullName: UnityEngine.EventSystems.AbstractEventData.Reset()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.AbstractEventData.Use
+  commentId: M:UnityEngine.EventSystems.AbstractEventData.Use
+  parent: UnityEngine.EventSystems.AbstractEventData
+  name: Use()
+  nameWithType: AbstractEventData.Use()
+  fullName: UnityEngine.EventSystems.AbstractEventData.Use()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Use
+    name: Use
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Use
+    name: Use
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.AbstractEventData.used
+  commentId: P:UnityEngine.EventSystems.AbstractEventData.used
+  parent: UnityEngine.EventSystems.AbstractEventData
+  name: used
+  nameWithType: AbstractEventData.used
+  fullName: UnityEngine.EventSystems.AbstractEventData.used
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+- uid: UnityEngine.Ray
+  commentId: T:UnityEngine.Ray
+  parent: UnityEngine
+  isExternal: true
+  name: Ray
+  nameWithType: Ray
+  fullName: UnityEngine.Ray
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRPointerEventData.#ctor*
+  commentId: Overload:YVR.Core.YVRPointerEventData.#ctor
+  href: YVR.Core.YVRPointerEventData.-ctor.html#YVR_Core_YVRPointerEventData__ctor_UnityEngine_EventSystems_EventSystem_
+  name: YVRPointerEventData
+  nameWithType: YVRPointerEventData.YVRPointerEventData
+  fullName: YVR.Core.YVRPointerEventData.YVRPointerEventData
+  nameWithType.vb: YVRPointerEventData.New
+  fullName.vb: YVR.Core.YVRPointerEventData.New
+  name.vb: New
+- uid: UnityEngine.EventSystems.EventSystem
+  commentId: T:UnityEngine.EventSystems.EventSystem
+  parent: UnityEngine.EventSystems
+  name: EventSystem
+  nameWithType: EventSystem
+  fullName: UnityEngine.EventSystems.EventSystem
+memberLayout: SeparatePages

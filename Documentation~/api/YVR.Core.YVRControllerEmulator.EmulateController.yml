@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRControllerEmulator.EmulateController
+  commentId: T:YVR.Core.YVRControllerEmulator.EmulateController
+  id: YVRControllerEmulator.EmulateController
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRControllerEmulator.EmulateController.LeftController
+  - YVR.Core.YVRControllerEmulator.EmulateController.RightController
+  langs:
+  - csharp
+  - vb
+  name: YVRControllerEmulator.EmulateController
+  nameWithType: YVRControllerEmulator.EmulateController
+  fullName: YVR.Core.YVRControllerEmulator.EmulateController
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: EmulateController
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 91
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      [Serializable]
+
+      public enum YVRControllerEmulator.EmulateController
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      <Serializable>
+
+      Public Enum YVRControllerEmulator.EmulateController
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRControllerEmulator.EmulateController.LeftController
+  commentId: F:YVR.Core.YVRControllerEmulator.EmulateController.LeftController
+  id: LeftController
+  parent: YVR.Core.YVRControllerEmulator.EmulateController
+  langs:
+  - csharp
+  - vb
+  name: LeftController
+  nameWithType: YVRControllerEmulator.EmulateController.LeftController
+  fullName: YVR.Core.YVRControllerEmulator.EmulateController.LeftController
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LeftController
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 95
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: LeftController = 0
+    return:
+      type: YVR.Core.YVRControllerEmulator.EmulateController
+- uid: YVR.Core.YVRControllerEmulator.EmulateController.RightController
+  commentId: F:YVR.Core.YVRControllerEmulator.EmulateController.RightController
+  id: RightController
+  parent: YVR.Core.YVRControllerEmulator.EmulateController
+  langs:
+  - csharp
+  - vb
+  name: RightController
+  nameWithType: YVRControllerEmulator.EmulateController.RightController
+  fullName: YVR.Core.YVRControllerEmulator.EmulateController.RightController
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RightController
+    path: ../com.yvr.core/Scripts/Runtime/Emulator/YVREmulatorData.cs
+    startLine: 96
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: RightController = 1
+    return:
+      type: YVR.Core.YVRControllerEmulator.EmulateController
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRControllerEmulator.EmulateController
+  commentId: T:YVR.Core.YVRControllerEmulator.EmulateController
+  parent: YVR.Core
+  href: YVR.Core.YVRControllerEmulator.html
+  name: YVRControllerEmulator.EmulateController
+  nameWithType: YVRControllerEmulator.EmulateController
+  fullName: YVR.Core.YVRControllerEmulator.EmulateController
+  spec.csharp:
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    href: YVR.Core.YVRControllerEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRControllerEmulator.EmulateController
+    name: EmulateController
+    href: YVR.Core.YVRControllerEmulator.EmulateController.html
+  spec.vb:
+  - uid: YVR.Core.YVRControllerEmulator
+    name: YVRControllerEmulator
+    href: YVR.Core.YVRControllerEmulator.html
+  - name: .
+  - uid: YVR.Core.YVRControllerEmulator.EmulateController
+    name: EmulateController
+    href: YVR.Core.YVRControllerEmulator.EmulateController.html
+memberLayout: SeparatePages

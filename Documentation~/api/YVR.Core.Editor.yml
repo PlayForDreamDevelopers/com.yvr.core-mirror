@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  id: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.CorePackageVersionEditor
+  - YVR.Core.Editor.YVRConfigurationSummary
+  - YVR.Core.Editor.YVRConfigurationTask
+  - YVR.Core.Editor.YVRConfigurationTaskProcessor
+  - YVR.Core.Editor.YVRConfigurationTaskRegistry
+  - YVR.Core.Editor.YVRProjectSetup
+  - YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  - YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  - YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  - YVR.Core.Editor.YVRProjectSetupCompatibilityTasks
+  - YVR.Core.Editor.YVRProjectSetupEditorWindow
+  - YVR.Core.Editor.YVRProjectSetupItem
+  - YVR.Core.Editor.YVRProjectSetupItemPool
+  - YVR.Core.Editor.YVRProjectSetupPhysicsTasks
+  - YVR.Core.Editor.YVRProjectSetupPortingTasks
+  - YVR.Core.Editor.YVRProjectSetupQualityTasks
+  - YVR.Core.Editor.YVRProjectSetupRenderingTasks
+  - YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  - YVR.Core.Editor.YVRProjectSetupRuntimeTasks
+  - YVR.Core.Editor.YVRProjectSetupSceneTasks
+  - YVR.Core.Editor.YVRProjectSetupStatusIcon
+  langs:
+  - csharp
+  - vb
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  type: Namespace
+  assemblies:
+  - YVR.Core.Editor
+references:
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry
+  commentId: T:YVR.Core.Editor.YVRConfigurationTaskRegistry
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRConfigurationTaskRegistry.html
+  name: YVRConfigurationTaskRegistry
+  nameWithType: YVRConfigurationTaskRegistry
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry
+- uid: YVR.Core.Editor.YVRProjectSetupPhysicsTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupPhysicsTasks
+  href: YVR.Core.Editor.YVRProjectSetupPhysicsTasks.html
+  name: YVRProjectSetupPhysicsTasks
+  nameWithType: YVRProjectSetupPhysicsTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupPhysicsTasks
+- uid: YVR.Core.Editor.YVRConfigurationTask
+  commentId: T:YVR.Core.Editor.YVRConfigurationTask
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRConfigurationTask.html
+  name: YVRConfigurationTask
+  nameWithType: YVRConfigurationTask
+  fullName: YVR.Core.Editor.YVRConfigurationTask
+- uid: YVR.Core.Editor.YVRProjectSetupRenderingTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupRenderingTasks
+  href: YVR.Core.Editor.YVRProjectSetupRenderingTasks.html
+  name: YVRProjectSetupRenderingTasks
+  nameWithType: YVRProjectSetupRenderingTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupRenderingTasks
+- uid: YVR.Core.Editor.YVRProjectSetupRuntimeTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupRuntimeTasks
+  href: YVR.Core.Editor.YVRProjectSetupRuntimeTasks.html
+  name: YVRProjectSetupRuntimeTasks
+  nameWithType: YVRProjectSetupRuntimeTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupRuntimeTasks
+- uid: YVR.Core.Editor.YVRProjectSetupEditorWindow
+  commentId: T:YVR.Core.Editor.YVRProjectSetupEditorWindow
+  href: YVR.Core.Editor.YVRProjectSetupEditorWindow.html
+  name: YVRProjectSetupEditorWindow
+  nameWithType: YVRProjectSetupEditorWindow
+  fullName: YVR.Core.Editor.YVRProjectSetupEditorWindow
+- uid: YVR.Core.Editor.YVRProjectSetupPortingTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupPortingTasks
+  href: YVR.Core.Editor.YVRProjectSetupPortingTasks.html
+  name: YVRProjectSetupPortingTasks
+  nameWithType: YVRProjectSetupPortingTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupPortingTasks
+- uid: YVR.Core.Editor.YVRConfigurationSummary
+  commentId: T:YVR.Core.Editor.YVRConfigurationSummary
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRConfigurationSummary.html
+  name: YVRConfigurationSummary
+  nameWithType: YVRConfigurationSummary
+  fullName: YVR.Core.Editor.YVRConfigurationSummary
+- uid: YVR.Core.Editor.YVRProjectSetupStatusIcon
+  commentId: T:YVR.Core.Editor.YVRProjectSetupStatusIcon
+  href: YVR.Core.Editor.YVRProjectSetupStatusIcon.html
+  name: YVRProjectSetupStatusIcon
+  nameWithType: YVRProjectSetupStatusIcon
+  fullName: YVR.Core.Editor.YVRProjectSetupStatusIcon
+- uid: YVR.Core.Editor.CorePackageVersionEditor
+  commentId: T:YVR.Core.Editor.CorePackageVersionEditor
+  href: YVR.Core.Editor.CorePackageVersionEditor.html
+  name: CorePackageVersionEditor
+  nameWithType: CorePackageVersionEditor
+  fullName: YVR.Core.Editor.CorePackageVersionEditor
+- uid: YVR.Core.Editor.YVRProjectSetupQualityTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupQualityTasks
+  href: YVR.Core.Editor.YVRProjectSetupQualityTasks.html
+  name: YVRProjectSetupQualityTasks
+  nameWithType: YVRProjectSetupQualityTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupQualityTasks
+- uid: YVR.Core.Editor.YVRConfigurationTaskProcessor
+  commentId: T:YVR.Core.Editor.YVRConfigurationTaskProcessor
+  href: YVR.Core.Editor.YVRConfigurationTaskProcessor.html
+  name: YVRConfigurationTaskProcessor
+  nameWithType: YVRConfigurationTaskProcessor
+  fullName: YVR.Core.Editor.YVRConfigurationTaskProcessor
+- uid: YVR.Core.Editor.YVRProjectSetupItem
+  commentId: T:YVR.Core.Editor.YVRProjectSetupItem
+  href: YVR.Core.Editor.YVRProjectSetupItem.html
+  name: YVRProjectSetupItem
+  nameWithType: YVRProjectSetupItem
+  fullName: YVR.Core.Editor.YVRProjectSetupItem
+- uid: YVR.Core.Editor.YVRProjectSetupItemPool
+  commentId: T:YVR.Core.Editor.YVRProjectSetupItemPool
+  href: YVR.Core.Editor.YVRProjectSetupItemPool.html
+  name: YVRProjectSetupItemPool
+  nameWithType: YVRProjectSetupItemPool
+  fullName: YVR.Core.Editor.YVRProjectSetupItemPool
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  commentId: T:YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.html
+  name: YVRProjectSetupResourcesLoader
+  nameWithType: YVRProjectSetupResourcesLoader
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+- uid: YVR.Core.Editor.YVRProjectSetupCompatibilityTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupCompatibilityTasks
+  href: YVR.Core.Editor.YVRProjectSetupCompatibilityTasks.html
+  name: YVRProjectSetupCompatibilityTasks
+  nameWithType: YVRProjectSetupCompatibilityTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupCompatibilityTasks
+- uid: YVR.Core.Editor.YVRProjectSetupSceneTasks
+  commentId: T:YVR.Core.Editor.YVRProjectSetupSceneTasks
+  href: YVR.Core.Editor.YVRProjectSetupSceneTasks.html
+  name: YVRProjectSetupSceneTasks
+  nameWithType: YVRProjectSetupSceneTasks
+  fullName: YVR.Core.Editor.YVRProjectSetupSceneTasks
+- uid: YVR.Core.Editor.YVRProjectSetup
+  commentId: T:YVR.Core.Editor.YVRProjectSetup
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup
+  nameWithType: YVRProjectSetup
+  fullName: YVR.Core.Editor.YVRProjectSetup
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskLevel
+  nameWithType: YVRProjectSetup.TaskLevel
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: TaskLevel
+    href: YVR.Core.Editor.YVRProjectSetup.TaskLevel.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskLevel
+    name: TaskLevel
+    href: YVR.Core.Editor.YVRProjectSetup.TaskLevel.html
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskGroup
+  nameWithType: YVRProjectSetup.TaskGroup
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: TaskGroup
+    href: YVR.Core.Editor.YVRProjectSetup.TaskGroup.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskGroup
+    name: TaskGroup
+    href: YVR.Core.Editor.YVRProjectSetup.TaskGroup.html
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskCategory
+  nameWithType: YVRProjectSetup.TaskCategory
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: TaskCategory
+    href: YVR.Core.Editor.YVRProjectSetup.TaskCategory.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: TaskCategory
+    href: YVR.Core.Editor.YVRProjectSetup.TaskCategory.html
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+memberLayout: SeparatePages

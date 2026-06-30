@@ -1,0 +1,515 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.HandJointLocations
+  commentId: T:YVR.Core.HandJointLocations
+  id: HandJointLocations
+  parent: YVR.Core
+  children:
+  - YVR.Core.HandJointLocations.aimState
+  - YVR.Core.HandJointLocations.handScale
+  - YVR.Core.HandJointLocations.isActive
+  - YVR.Core.HandJointLocations.jointCount
+  - YVR.Core.HandJointLocations.jointLocations
+  - YVR.Core.HandJointLocations.jointVelocities
+  langs:
+  - csharp
+  - vb
+  name: HandJointLocations
+  nameWithType: HandJointLocations
+  fullName: YVR.Core.HandJointLocations
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HandJointLocations
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 127
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public struct HandJointLocations
+    content.vb: Public Structure HandJointLocations
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.HandJointLocations.isActive
+  commentId: F:YVR.Core.HandJointLocations.isActive
+  id: isActive
+  parent: YVR.Core.HandJointLocations
+  langs:
+  - csharp
+  - vb
+  name: isActive
+  nameWithType: HandJointLocations.isActive
+  fullName: YVR.Core.HandJointLocations.isActive
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isActive
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 129
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public uint isActive
+    return:
+      type: System.UInt32
+    content.vb: Public isActive As UInteger
+- uid: YVR.Core.HandJointLocations.jointCount
+  commentId: F:YVR.Core.HandJointLocations.jointCount
+  id: jointCount
+  parent: YVR.Core.HandJointLocations
+  langs:
+  - csharp
+  - vb
+  name: jointCount
+  nameWithType: HandJointLocations.jointCount
+  fullName: YVR.Core.HandJointLocations.jointCount
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: jointCount
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 130
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public uint jointCount
+    return:
+      type: System.UInt32
+    content.vb: Public jointCount As UInteger
+- uid: YVR.Core.HandJointLocations.handScale
+  commentId: F:YVR.Core.HandJointLocations.handScale
+  id: handScale
+  parent: YVR.Core.HandJointLocations
+  langs:
+  - csharp
+  - vb
+  name: handScale
+  nameWithType: HandJointLocations.handScale
+  fullName: YVR.Core.HandJointLocations.handScale
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: handScale
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 131
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float handScale
+    return:
+      type: System.Single
+    content.vb: Public handScale As Single
+- uid: YVR.Core.HandJointLocations.jointLocations
+  commentId: F:YVR.Core.HandJointLocations.jointLocations
+  id: jointLocations
+  parent: YVR.Core.HandJointLocations
+  langs:
+  - csharp
+  - vb
+  name: jointLocations
+  nameWithType: HandJointLocations.jointLocations
+  fullName: YVR.Core.HandJointLocations.jointLocations
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: jointLocations
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 134
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public HandJointLocation[] jointLocations
+    return:
+      type: YVR.Core.HandJointLocation[]
+    content.vb: Public jointLocations As HandJointLocation()
+- uid: YVR.Core.HandJointLocations.aimState
+  commentId: F:YVR.Core.HandJointLocations.aimState
+  id: aimState
+  parent: YVR.Core.HandJointLocations
+  langs:
+  - csharp
+  - vb
+  name: aimState
+  nameWithType: HandJointLocations.aimState
+  fullName: YVR.Core.HandJointLocations.aimState
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: aimState
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 136
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public HandTrackingAimState aimState
+    return:
+      type: YVR.Core.HandTrackingAimState
+    content.vb: Public aimState As HandTrackingAimState
+- uid: YVR.Core.HandJointLocations.jointVelocities
+  commentId: F:YVR.Core.HandJointLocations.jointVelocities
+  id: jointVelocities
+  parent: YVR.Core.HandJointLocations
+  langs:
+  - csharp
+  - vb
+  name: jointVelocities
+  nameWithType: HandJointLocations.jointVelocities
+  fullName: YVR.Core.HandJointLocations.jointVelocities
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: jointVelocities
+    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+    startLine: 139
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public HandJointVelocity[] jointVelocities
+    return:
+      type: YVR.Core.HandJointVelocity[]
+    content.vb: Public jointVelocities As HandJointVelocity()
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.HandJointLocation[]
+  isExternal: true
+  href: YVR.Core.HandJointLocation.html
+  name: HandJointLocation[]
+  nameWithType: HandJointLocation[]
+  fullName: YVR.Core.HandJointLocation[]
+  nameWithType.vb: HandJointLocation()
+  fullName.vb: YVR.Core.HandJointLocation()
+  name.vb: HandJointLocation()
+  spec.csharp:
+  - uid: YVR.Core.HandJointLocation
+    name: HandJointLocation
+    href: YVR.Core.HandJointLocation.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: YVR.Core.HandJointLocation
+    name: HandJointLocation
+    href: YVR.Core.HandJointLocation.html
+  - name: (
+  - name: )
+- uid: YVR.Core.HandTrackingAimState
+  commentId: T:YVR.Core.HandTrackingAimState
+  parent: YVR.Core
+  href: YVR.Core.HandTrackingAimState.html
+  name: HandTrackingAimState
+  nameWithType: HandTrackingAimState
+  fullName: YVR.Core.HandTrackingAimState
+- uid: YVR.Core.HandJointVelocity[]
+  isExternal: true
+  href: YVR.Core.HandJointVelocity.html
+  name: HandJointVelocity[]
+  nameWithType: HandJointVelocity[]
+  fullName: YVR.Core.HandJointVelocity[]
+  nameWithType.vb: HandJointVelocity()
+  fullName.vb: YVR.Core.HandJointVelocity()
+  name.vb: HandJointVelocity()
+  spec.csharp:
+  - uid: YVR.Core.HandJointVelocity
+    name: HandJointVelocity
+    href: YVR.Core.HandJointVelocity.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: YVR.Core.HandJointVelocity
+    name: HandJointVelocity
+    href: YVR.Core.HandJointVelocity.html
+  - name: (
+  - name: )
+memberLayout: SeparatePages

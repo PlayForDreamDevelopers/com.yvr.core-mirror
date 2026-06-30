@@ -1,0 +1,721 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  commentId: T:YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  id: YVRProjectSetupResourcesLoader
+  parent: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement``1(System.String)
+  - YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon(System.String)
+  - YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource``1(System.String)
+  - YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture``1(System.String)
+  - YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource
+  langs:
+  - csharp
+  - vb
+  name: YVRProjectSetupResourcesLoader
+  nameWithType: YVRProjectSetupResourcesLoader
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRProjectSetupResourcesLoader
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: 'public class YVRProjectSetupResourcesLoader : Singleton<YVRProjectSetupResourcesLoader>'
+    content.vb: Public Class YVRProjectSetupResourcesLoader Inherits Singleton(Of YVRProjectSetupResourcesLoader)
+  inheritance:
+  - System.Object
+  - YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  inheritedMembers:
+  - YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.instance
+  - YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.createdInstance
+  - YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.OnInit
+  - YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.Reset
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource``1(System.String)
+  commentId: M:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource``1(System.String)
+  id: LoadResource``1(System.String)
+  parent: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadResource<T>(string)
+  nameWithType: YVRProjectSetupResourcesLoader.LoadResource<T>(string)
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource<T>(string)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LoadResource
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+    startLine: 42
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: 'public T LoadResource<T>(string resourceName) where T : Object'
+    parameters:
+    - id: resourceName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function LoadResource(Of T As [Object])(resourceName As String) As T
+  overload: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource*
+  nameWithType.vb: YVRProjectSetupResourcesLoader.LoadResource(Of T)(String)
+  fullName.vb: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource(Of T)(String)
+  name.vb: LoadResource(Of T)(String)
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement``1(System.String)
+  commentId: M:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement``1(System.String)
+  id: LoadElement``1(System.String)
+  parent: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadElement<T>(string)
+  nameWithType: YVRProjectSetupResourcesLoader.LoadElement<T>(string)
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement<T>(string)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LoadElement
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+    startLine: 55
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: 'public T LoadElement<T>(string elementName) where T : Object'
+    parameters:
+    - id: elementName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function LoadElement(Of T As [Object])(elementName As String) As T
+  overload: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement*
+  nameWithType.vb: YVRProjectSetupResourcesLoader.LoadElement(Of T)(String)
+  fullName.vb: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement(Of T)(String)
+  name.vb: LoadElement(Of T)(String)
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture``1(System.String)
+  commentId: M:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture``1(System.String)
+  id: LoadTexture``1(System.String)
+  parent: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadTexture<T>(string)
+  nameWithType: YVRProjectSetupResourcesLoader.LoadTexture<T>(string)
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture<T>(string)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LoadTexture
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+    startLine: 62
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: 'public T LoadTexture<T>(string textureName) where T : Object'
+    parameters:
+    - id: textureName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function LoadTexture(Of T As [Object])(textureName As String) As T
+  overload: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture*
+  nameWithType.vb: YVRProjectSetupResourcesLoader.LoadTexture(Of T)(String)
+  fullName.vb: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture(Of T)(String)
+  name.vb: LoadTexture(Of T)(String)
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon(System.String)
+  commentId: M:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon(System.String)
+  id: LoadIcon(System.String)
+  parent: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadIcon(string)
+  nameWithType: YVRProjectSetupResourcesLoader.LoadIcon(string)
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon(string)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LoadIcon
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+    startLine: 68
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public GUIContent LoadIcon(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.GUIContent
+    content.vb: Public Function LoadIcon(name As String) As GUIContent
+  overload: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon*
+  nameWithType.vb: YVRProjectSetupResourcesLoader.LoadIcon(String)
+  fullName.vb: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon(String)
+  name.vb: LoadIcon(String)
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource
+  commentId: M:YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource
+  id: UnloadAllResource
+  parent: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+  langs:
+  - csharp
+  - vb
+  name: UnloadAllResource()
+  nameWithType: YVRProjectSetupResourcesLoader.UnloadAllResource()
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: UnloadAllResource
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetupResourcesLoader.cs
+    startLine: 75
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public void UnloadAllResource()
+    content.vb: Public Sub UnloadAllResource()
+  overload: YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource*
+references:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  commentId: T:YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  parent: YVR.Utilities
+  definition: YVR.Utilities.Singleton`1
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.html
+  name: Singleton<YVRProjectSetupResourcesLoader>
+  nameWithType: Singleton<YVRProjectSetupResourcesLoader>
+  fullName: YVR.Utilities.Singleton<YVR.Core.Editor.YVRProjectSetupResourcesLoader>
+  nameWithType.vb: Singleton(Of YVRProjectSetupResourcesLoader)
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.Editor.YVRProjectSetupResourcesLoader)
+  name.vb: Singleton(Of YVRProjectSetupResourcesLoader)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+    name: YVRProjectSetupResourcesLoader
+    href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.html
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader
+    name: YVRProjectSetupResourcesLoader
+    href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.html
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.instance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.instance
+  parent: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  definition: YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<YVRProjectSetupResourcesLoader>.instance
+  fullName: YVR.Utilities.Singleton<YVR.Core.Editor.YVRProjectSetupResourcesLoader>.instance
+  nameWithType.vb: Singleton(Of YVRProjectSetupResourcesLoader).instance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.Editor.YVRProjectSetupResourcesLoader).instance
+- uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.createdInstance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.createdInstance
+  parent: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  definition: YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<YVRProjectSetupResourcesLoader>.createdInstance
+  fullName: YVR.Utilities.Singleton<YVR.Core.Editor.YVRProjectSetupResourcesLoader>.createdInstance
+  nameWithType.vb: Singleton(Of YVRProjectSetupResourcesLoader).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.Editor.YVRProjectSetupResourcesLoader).createdInstance
+- uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.OnInit
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.OnInit
+  parent: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  definition: YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<YVRProjectSetupResourcesLoader>.OnInit()
+  fullName: YVR.Utilities.Singleton<YVR.Core.Editor.YVRProjectSetupResourcesLoader>.OnInit()
+  nameWithType.vb: Singleton(Of YVRProjectSetupResourcesLoader).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.Editor.YVRProjectSetupResourcesLoader).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.Reset
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.Reset
+  parent: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}
+  definition: YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<YVRProjectSetupResourcesLoader>.Reset()
+  fullName: YVR.Utilities.Singleton<YVR.Core.Editor.YVRProjectSetupResourcesLoader>.Reset()
+  nameWithType.vb: Singleton(Of YVRProjectSetupResourcesLoader).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.Editor.YVRProjectSetupResourcesLoader).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.Editor.YVRProjectSetupResourcesLoader}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Utilities.Singleton`1
+  commentId: T:YVR.Utilities.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: YVR.Utilities.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: YVR.Utilities.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Utilities
+  commentId: N:YVR.Utilities
+  name: YVR.Utilities
+  nameWithType: YVR.Utilities
+  fullName: YVR.Utilities
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+  spec.vb:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+- uid: YVR.Utilities.Singleton`1.instance
+  commentId: P:YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<T>.instance
+  fullName: YVR.Utilities.Singleton<T>.instance
+  nameWithType.vb: Singleton(Of T).instance
+  fullName.vb: YVR.Utilities.Singleton(Of T).instance
+- uid: YVR.Utilities.Singleton`1.createdInstance
+  commentId: P:YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<T>.createdInstance
+  fullName: YVR.Utilities.Singleton<T>.createdInstance
+  nameWithType.vb: Singleton(Of T).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of T).createdInstance
+- uid: YVR.Utilities.Singleton`1.OnInit
+  commentId: M:YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<T>.OnInit()
+  fullName: YVR.Utilities.Singleton<T>.OnInit()
+  nameWithType.vb: Singleton(Of T).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of T).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Utilities.Singleton`1.Reset
+  commentId: M:YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<T>.Reset()
+  fullName: YVR.Utilities.Singleton<T>.Reset()
+  nameWithType.vb: Singleton(Of T).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of T).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource*
+  commentId: Overload:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource.html#YVR_Core_Editor_YVRProjectSetupResourcesLoader_LoadResource__1_System_String_
+  name: LoadResource
+  nameWithType: YVRProjectSetupResourcesLoader.LoadResource
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement*
+  commentId: Overload:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement.html#YVR_Core_Editor_YVRProjectSetupResourcesLoader_LoadElement__1_System_String_
+  name: LoadElement
+  nameWithType: YVRProjectSetupResourcesLoader.LoadElement
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadElement
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture*
+  commentId: Overload:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture.html#YVR_Core_Editor_YVRProjectSetupResourcesLoader_LoadTexture__1_System_String_
+  name: LoadTexture
+  nameWithType: YVRProjectSetupResourcesLoader.LoadTexture
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadTexture
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon*
+  commentId: Overload:YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon.html#YVR_Core_Editor_YVRProjectSetupResourcesLoader_LoadIcon_System_String_
+  name: LoadIcon
+  nameWithType: YVRProjectSetupResourcesLoader.LoadIcon
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.LoadIcon
+- uid: UnityEngine.GUIContent
+  commentId: T:UnityEngine.GUIContent
+  parent: UnityEngine
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource*
+  commentId: Overload:YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource
+  href: YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource.html#YVR_Core_Editor_YVRProjectSetupResourcesLoader_UnloadAllResource
+  name: UnloadAllResource
+  nameWithType: YVRProjectSetupResourcesLoader.UnloadAllResource
+  fullName: YVR.Core.Editor.YVRProjectSetupResourcesLoader.UnloadAllResource
+memberLayout: SeparatePages

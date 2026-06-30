@@ -45,17 +45,17 @@ namespace YVR.Core.ARFoundation.Anchor
 
             foreach (var pair in m_HandleToXRAnchorMap)
             {
-                var pose = new Pose();
+                Pose pose;
                 XRAnchor xrAnchor;
                 if (m_SpatialAnchor.GetSpatialAnchorPose(pair.Key, out var position, out var rotation,
                         out var locationFlags))
                 {
-                    pose.position = position;
-                    pose.rotation = rotation;
+                    pose = new Pose(position, rotation);
                     xrAnchor = CreateXRAnchor(pair.Value.trackableId, pose, pair.Key, TrackingState.Tracking);
                 }
                 else
                 {
+                    pose = new Pose();
                     xrAnchor = CreateXRAnchor(pair.Value.trackableId, pose, pair.Key, TrackingState.None);
                 }
 

@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  id: YVRQualityManager.FixedFoveatedRenderingDynamic
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Disabled
+  - YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Enabled
+  langs:
+  - csharp
+  - vb
+  name: YVRQualityManager.FixedFoveatedRenderingDynamic
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingDynamic
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: FixedFoveatedRenderingDynamic
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 48
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRQualityManager.FixedFoveatedRenderingDynamic
+    content.vb: Public Enum YVRQualityManager.FixedFoveatedRenderingDynamic
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Disabled
+  commentId: F:YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Disabled
+  id: Disabled
+  parent: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingDynamic.Disabled
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Disabled
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Disabled
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 53
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Disable dynamic level
+  example: []
+  syntax:
+    content: Disabled = 0
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Enabled
+  commentId: F:YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Enabled
+  id: Enabled
+  parent: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingDynamic.Enabled
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.Enabled
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Enabled
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 57
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Enable dynamic level
+  example: []
+  syntax:
+    content: Enabled = 1
+    return:
+      type: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  commentId: T:YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.FixedFoveatedRenderingDynamic
+  nameWithType: YVRQualityManager.FixedFoveatedRenderingDynamic
+  fullName: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: FixedFoveatedRenderingDynamic
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic
+    name: FixedFoveatedRenderingDynamic
+    href: YVR.Core.YVRQualityManager.FixedFoveatedRenderingDynamic.html
+memberLayout: SeparatePages

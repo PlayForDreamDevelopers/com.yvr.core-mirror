@@ -48,7 +48,13 @@ namespace YVR.Core
             get
             {
                 if (s_Instance == null)
+                {
+#if UNITY_2023_1_OR_NEWER
+                    s_Instance = Object.FindAnyObjectByType<YVRInputModule>();
+#else
                     s_Instance = FindObjectOfType<YVRInputModule>();
+#endif
+                }
 
                 return s_Instance;
             }

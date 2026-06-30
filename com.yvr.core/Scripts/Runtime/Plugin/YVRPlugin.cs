@@ -22,8 +22,13 @@ namespace YVR.Core
                 {
                     if (!Application.isEditor && Application.platform == RuntimePlatform.Android)
                         s_Instance = YVRPluginAndroid.Create();
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
                     else
                         s_Instance = YVRPluginWin.Create();
+#else
+                    else
+                        s_Instance = YVRPluginStub.Create();
+#endif
                 }
 
                 return s_Instance;

@@ -337,7 +337,8 @@ namespace YVR.Core.XRCompositionLayers
                 isExternalTexture,
                 m_Shape,
                 YVRRenderLayerEyeMask.kEyeMaskBoth,
-                -1
+                -1,
+                0
             );
 
             if (width == 0 || height == 0) return;

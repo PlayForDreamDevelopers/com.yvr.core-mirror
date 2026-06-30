@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRSpatialAnchorQueryType
+  commentId: T:YVR.Core.YVRSpatialAnchorQueryType
+  id: YVRSpatialAnchorQueryType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRSpatialAnchorQueryType.Action
+  langs:
+  - csharp
+  - vb
+  name: YVRSpatialAnchorQueryType
+  nameWithType: YVRSpatialAnchorQueryType
+  fullName: YVR.Core.YVRSpatialAnchorQueryType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorQueryType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRSpatialAnchorQueryType
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorQueryType.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRSpatialAnchorQueryType
+    content.vb: Public Enum YVRSpatialAnchorQueryType
+- uid: YVR.Core.YVRSpatialAnchorQueryType.Action
+  commentId: F:YVR.Core.YVRSpatialAnchorQueryType.Action
+  id: Action
+  parent: YVR.Core.YVRSpatialAnchorQueryType
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: YVRSpatialAnchorQueryType.Action
+  fullName: YVR.Core.YVRSpatialAnchorQueryType.Action
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorQueryType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Action
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorQueryType.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Action = 0
+    return:
+      type: YVR.Core.YVRSpatialAnchorQueryType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRSpatialAnchorQueryType
+  commentId: T:YVR.Core.YVRSpatialAnchorQueryType
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorQueryType.html
+  name: YVRSpatialAnchorQueryType
+  nameWithType: YVRSpatialAnchorQueryType
+  fullName: YVR.Core.YVRSpatialAnchorQueryType
+memberLayout: SeparatePages

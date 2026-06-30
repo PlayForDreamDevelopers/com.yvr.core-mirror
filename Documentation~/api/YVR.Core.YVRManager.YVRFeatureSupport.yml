@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRManager.YVRFeatureSupport
+  commentId: T:YVR.Core.YVRManager.YVRFeatureSupport
+  id: YVRManager.YVRFeatureSupport
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRManager.YVRFeatureSupport.None
+  - YVR.Core.YVRManager.YVRFeatureSupport.Required
+  - YVR.Core.YVRManager.YVRFeatureSupport.Supported
+  langs:
+  - csharp
+  - vb
+  name: YVRManager.YVRFeatureSupport
+  nameWithType: YVRManager.YVRFeatureSupport
+  fullName: YVR.Core.YVRManager.YVRFeatureSupport
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRFeatureSupport
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 18
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRManager.YVRFeatureSupport
+    content.vb: Public Enum YVRManager.YVRFeatureSupport
+- uid: YVR.Core.YVRManager.YVRFeatureSupport.None
+  commentId: F:YVR.Core.YVRManager.YVRFeatureSupport.None
+  id: None
+  parent: YVR.Core.YVRManager.YVRFeatureSupport
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRManager.YVRFeatureSupport.None
+  fullName: YVR.Core.YVRManager.YVRFeatureSupport.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRManager.YVRFeatureSupport
+- uid: YVR.Core.YVRManager.YVRFeatureSupport.Supported
+  commentId: F:YVR.Core.YVRManager.YVRFeatureSupport.Supported
+  id: Supported
+  parent: YVR.Core.YVRManager.YVRFeatureSupport
+  langs:
+  - csharp
+  - vb
+  name: Supported
+  nameWithType: YVRManager.YVRFeatureSupport.Supported
+  fullName: YVR.Core.YVRManager.YVRFeatureSupport.Supported
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Supported
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 21
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Supported = 1
+    return:
+      type: YVR.Core.YVRManager.YVRFeatureSupport
+- uid: YVR.Core.YVRManager.YVRFeatureSupport.Required
+  commentId: F:YVR.Core.YVRManager.YVRFeatureSupport.Required
+  id: Required
+  parent: YVR.Core.YVRManager.YVRFeatureSupport
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: YVRManager.YVRFeatureSupport.Required
+  fullName: YVR.Core.YVRManager.YVRFeatureSupport.Required
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Required
+    path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
+    startLine: 22
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Required = 2
+    return:
+      type: YVR.Core.YVRManager.YVRFeatureSupport
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRManager.YVRFeatureSupport
+  commentId: T:YVR.Core.YVRManager.YVRFeatureSupport
+  parent: YVR.Core
+  href: YVR.Core.YVRManager.html
+  name: YVRManager.YVRFeatureSupport
+  nameWithType: YVRManager.YVRFeatureSupport
+  fullName: YVR.Core.YVRManager.YVRFeatureSupport
+  spec.csharp:
+  - uid: YVR.Core.YVRManager
+    name: YVRManager
+    href: YVR.Core.YVRManager.html
+  - name: .
+  - uid: YVR.Core.YVRManager.YVRFeatureSupport
+    name: YVRFeatureSupport
+    href: YVR.Core.YVRManager.YVRFeatureSupport.html
+  spec.vb:
+  - uid: YVR.Core.YVRManager
+    name: YVRManager
+    href: YVR.Core.YVRManager.html
+  - name: .
+  - uid: YVR.Core.YVRManager.YVRFeatureSupport
+    name: YVRFeatureSupport
+    href: YVR.Core.YVRManager.YVRFeatureSupport.html
+memberLayout: SeparatePages

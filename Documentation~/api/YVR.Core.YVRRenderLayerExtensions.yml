@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRRenderLayerExtensions
+  commentId: T:YVR.Core.YVRRenderLayerExtensions
+  id: YVRRenderLayerExtensions
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera)
+  - YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera,YVR.Core.XRPose)
+  - YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform)
+  - YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform,YVR.Core.XRPose)
+  langs:
+  - csharp
+  - vb
+  name: YVRRenderLayerExtensions
+  nameWithType: YVRRenderLayerExtensions
+  fullName: YVR.Core.YVRRenderLayerExtensions
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRRenderLayerExtensions
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static class YVRRenderLayerExtensions
+    content.vb: Public Module YVRRenderLayerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera)
+  commentId: M:YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera)
+  id: ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera)
+  isExtensionMethod: true
+  parent: YVR.Core.YVRRenderLayerExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToXRTrackingSpacePose(Transform, Camera)
+  nameWithType: YVRRenderLayerExtensions.ToXRTrackingSpacePose(Transform, Camera)
+  fullName: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform, UnityEngine.Camera)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ToXRTrackingSpacePose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static XRPose ToXRTrackingSpacePose(this Transform transform, Camera camera)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: camera
+      type: UnityEngine.Camera
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Shared Function ToXRTrackingSpacePose(transform As Transform, camera As Camera) As XRPose
+  overload: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose*
+- uid: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera,YVR.Core.XRPose)
+  commentId: M:YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera,YVR.Core.XRPose)
+  id: ToXRTrackingSpacePose(UnityEngine.Transform,UnityEngine.Camera,YVR.Core.XRPose)
+  isExtensionMethod: true
+  parent: YVR.Core.YVRRenderLayerExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToXRTrackingSpacePose(Transform, Camera, XRPose)
+  nameWithType: YVRRenderLayerExtensions.ToXRTrackingSpacePose(Transform, Camera, XRPose)
+  fullName: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose(UnityEngine.Transform, UnityEngine.Camera, YVR.Core.XRPose)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ToXRTrackingSpacePose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static XRPose ToXRTrackingSpacePose(this Transform transform, Camera camera, XRPose offset)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: camera
+      type: UnityEngine.Camera
+    - id: offset
+      type: YVR.Core.XRPose
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Shared Function ToXRTrackingSpacePose(transform As Transform, camera As Camera, offset As XRPose) As XRPose
+  overload: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose*
+- uid: YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform)
+  commentId: M:YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform)
+  id: ToYVRPose(UnityEngine.Transform)
+  isExtensionMethod: true
+  parent: YVR.Core.YVRRenderLayerExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToYVRPose(Transform)
+  nameWithType: YVRRenderLayerExtensions.ToYVRPose(Transform)
+  fullName: YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ToYVRPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+    startLine: 37
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static XRPose ToYVRPose(this Transform transform)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Shared Function ToYVRPose(transform As Transform) As XRPose
+  overload: YVR.Core.YVRRenderLayerExtensions.ToYVRPose*
+- uid: YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform,YVR.Core.XRPose)
+  commentId: M:YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform,YVR.Core.XRPose)
+  id: ToYVRPose(UnityEngine.Transform,YVR.Core.XRPose)
+  isExtensionMethod: true
+  parent: YVR.Core.YVRRenderLayerExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToYVRPose(Transform, XRPose)
+  nameWithType: YVRRenderLayerExtensions.ToYVRPose(Transform, XRPose)
+  fullName: YVR.Core.YVRRenderLayerExtensions.ToYVRPose(UnityEngine.Transform, YVR.Core.XRPose)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ToYVRPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRRenderLayerExtensions.cs
+    startLine: 42
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static XRPose ToYVRPose(this Transform transform, XRPose offset)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+    - id: offset
+      type: YVR.Core.XRPose
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Shared Function ToYVRPose(transform As Transform, offset As XRPose) As XRPose
+  overload: YVR.Core.YVRRenderLayerExtensions.ToYVRPose*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose*
+  commentId: Overload:YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose
+  href: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose.html#YVR_Core_YVRRenderLayerExtensions_ToXRTrackingSpacePose_UnityEngine_Transform_UnityEngine_Camera_
+  name: ToXRTrackingSpacePose
+  nameWithType: YVRRenderLayerExtensions.ToXRTrackingSpacePose
+  fullName: YVR.Core.YVRRenderLayerExtensions.ToXRTrackingSpacePose
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  parent: YVR.Core
+  href: YVR.Core.XRPose.html
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRRenderLayerExtensions.ToYVRPose*
+  commentId: Overload:YVR.Core.YVRRenderLayerExtensions.ToYVRPose
+  href: YVR.Core.YVRRenderLayerExtensions.ToYVRPose.html#YVR_Core_YVRRenderLayerExtensions_ToYVRPose_UnityEngine_Transform_
+  name: ToYVRPose
+  nameWithType: YVRRenderLayerExtensions.ToYVRPose
+  fullName: YVR.Core.YVRRenderLayerExtensions.ToYVRPose
+memberLayout: SeparatePages

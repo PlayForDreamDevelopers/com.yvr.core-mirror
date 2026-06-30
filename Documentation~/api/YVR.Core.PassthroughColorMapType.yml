@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.PassthroughColorMapType
+  commentId: T:YVR.Core.PassthroughColorMapType
+  id: PassthroughColorMapType
+  parent: YVR.Core
+  children:
+  - YVR.Core.PassthroughColorMapType.ColorLut
+  - YVR.Core.PassthroughColorMapType.None
+  langs:
+  - csharp
+  - vb
+  name: PassthroughColorMapType
+  nameWithType: PassthroughColorMapType
+  fullName: YVR.Core.PassthroughColorMapType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorMapType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PassthroughColorMapType
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorMapType.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum PassthroughColorMapType
+    content.vb: Public Enum PassthroughColorMapType
+- uid: YVR.Core.PassthroughColorMapType.None
+  commentId: F:YVR.Core.PassthroughColorMapType.None
+  id: None
+  parent: YVR.Core.PassthroughColorMapType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PassthroughColorMapType.None
+  fullName: YVR.Core.PassthroughColorMapType.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorMapType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorMapType.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.PassthroughColorMapType
+- uid: YVR.Core.PassthroughColorMapType.ColorLut
+  commentId: F:YVR.Core.PassthroughColorMapType.ColorLut
+  id: ColorLut
+  parent: YVR.Core.PassthroughColorMapType
+  langs:
+  - csharp
+  - vb
+  name: ColorLut
+  nameWithType: PassthroughColorMapType.ColorLut
+  fullName: YVR.Core.PassthroughColorMapType.ColorLut
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorMapType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ColorLut
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorMapType.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: ColorLut = 4
+    return:
+      type: YVR.Core.PassthroughColorMapType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.PassthroughColorMapType
+  commentId: T:YVR.Core.PassthroughColorMapType
+  parent: YVR.Core
+  href: YVR.Core.PassthroughColorMapType.html
+  name: PassthroughColorMapType
+  nameWithType: PassthroughColorMapType
+  fullName: YVR.Core.PassthroughColorMapType
+memberLayout: SeparatePages

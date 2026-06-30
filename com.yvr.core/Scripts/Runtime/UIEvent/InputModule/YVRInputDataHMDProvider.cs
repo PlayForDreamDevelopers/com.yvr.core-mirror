@@ -55,13 +55,17 @@ namespace YVR.Core
 
             private IEnumerator AutoClick(float clickInterval = 2.0f, float pressDuration = 0.5f)
             {
+                // Cache WaitForSecondsRealtime to reduce GC allocations
+                var waitClickInterval = new WaitForSecondsRealtime(clickInterval);
+                var waitPressDuration = new WaitForSecondsRealtime(pressDuration);
+
                 // To set isPresenting for one frame every clickInterval
                 while (true)
                 {
-                    yield return new WaitForSecondsRealtime(clickInterval);
+                    yield return waitClickInterval;
                     isPressing = true;
 
-                    yield return new WaitForSecondsRealtime(pressDuration);
+                    yield return waitPressDuration;
                     wasPressing = true;
                     isPressing = false;
 

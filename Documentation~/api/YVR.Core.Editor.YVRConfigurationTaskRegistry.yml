@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry
+  commentId: T:YVR.Core.Editor.YVRConfigurationTaskRegistry
+  id: YVRConfigurationTaskRegistry
+  parent: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask(YVR.Core.Editor.YVRConfigurationTask)
+  - YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask(UnityEngine.Hash128)
+  - YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks
+  langs:
+  - csharp
+  - vb
+  name: YVRConfigurationTaskRegistry
+  nameWithType: YVRConfigurationTaskRegistry
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRConfigurationTaskRegistry
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public class YVRConfigurationTaskRegistry
+    content.vb: Public Class YVRConfigurationTaskRegistry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask(YVR.Core.Editor.YVRConfigurationTask)
+  commentId: M:YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask(YVR.Core.Editor.YVRConfigurationTask)
+  id: AddTask(YVR.Core.Editor.YVRConfigurationTask)
+  parent: YVR.Core.Editor.YVRConfigurationTaskRegistry
+  langs:
+  - csharp
+  - vb
+  name: AddTask(YVRConfigurationTask)
+  nameWithType: YVRConfigurationTaskRegistry.AddTask(YVRConfigurationTask)
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask(YVR.Core.Editor.YVRConfigurationTask)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: AddTask
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public void AddTask(YVRConfigurationTask task)
+    parameters:
+    - id: task
+      type: YVR.Core.Editor.YVRConfigurationTask
+    content.vb: Public Sub AddTask(task As YVRConfigurationTask)
+  overload: YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask*
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask(UnityEngine.Hash128)
+  commentId: M:YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask(UnityEngine.Hash128)
+  id: GetTask(UnityEngine.Hash128)
+  parent: YVR.Core.Editor.YVRConfigurationTaskRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetTask(Hash128)
+  nameWithType: YVRConfigurationTaskRegistry.GetTask(Hash128)
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask(UnityEngine.Hash128)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetTask
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+    startLine: 23
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public YVRConfigurationTask GetTask(Hash128 uid)
+    parameters:
+    - id: uid
+      type: UnityEngine.Hash128
+    return:
+      type: YVR.Core.Editor.YVRConfigurationTask
+    content.vb: Public Function GetTask(uid As Hash128) As YVRConfigurationTask
+  overload: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask*
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks
+  commentId: M:YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks
+  id: GetTasks
+  parent: YVR.Core.Editor.YVRConfigurationTaskRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetTasks()
+  nameWithType: YVRConfigurationTaskRegistry.GetTasks()
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetTasks
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRConfigurationTaskRegistry.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public IEnumerable<YVRConfigurationTask> GetTasks()
+    return:
+      type: System.Collections.Generic.IEnumerable{YVR.Core.Editor.YVRConfigurationTask}
+    content.vb: Public Function GetTasks() As IEnumerable(Of YVRConfigurationTask)
+  overload: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks*
+references:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask
+  href: YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask.html#YVR_Core_Editor_YVRConfigurationTaskRegistry_AddTask_YVR_Core_Editor_YVRConfigurationTask_
+  name: AddTask
+  nameWithType: YVRConfigurationTaskRegistry.AddTask
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry.AddTask
+- uid: YVR.Core.Editor.YVRConfigurationTask
+  commentId: T:YVR.Core.Editor.YVRConfigurationTask
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRConfigurationTask.html
+  name: YVRConfigurationTask
+  nameWithType: YVRConfigurationTask
+  fullName: YVR.Core.Editor.YVRConfigurationTask
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask
+  href: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask.html#YVR_Core_Editor_YVRConfigurationTaskRegistry_GetTask_UnityEngine_Hash128_
+  name: GetTask
+  nameWithType: YVRConfigurationTaskRegistry.GetTask
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTask
+- uid: UnityEngine.Hash128
+  commentId: T:UnityEngine.Hash128
+  parent: UnityEngine
+  isExternal: true
+  name: Hash128
+  nameWithType: Hash128
+  fullName: UnityEngine.Hash128
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks*
+  commentId: Overload:YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks
+  href: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks.html#YVR_Core_Editor_YVRConfigurationTaskRegistry_GetTasks
+  name: GetTasks
+  nameWithType: YVRConfigurationTaskRegistry.GetTasks
+  fullName: YVR.Core.Editor.YVRConfigurationTaskRegistry.GetTasks
+- uid: System.Collections.Generic.IEnumerable{YVR.Core.Editor.YVRConfigurationTask}
+  commentId: T:System.Collections.Generic.IEnumerable{YVR.Core.Editor.YVRConfigurationTask}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<YVRConfigurationTask>
+  nameWithType: IEnumerable<YVRConfigurationTask>
+  fullName: System.Collections.Generic.IEnumerable<YVR.Core.Editor.YVRConfigurationTask>
+  nameWithType.vb: IEnumerable(Of YVRConfigurationTask)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of YVR.Core.Editor.YVRConfigurationTask)
+  name.vb: IEnumerable(Of YVRConfigurationTask)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: YVR.Core.Editor.YVRConfigurationTask
+    name: YVRConfigurationTask
+    href: YVR.Core.Editor.YVRConfigurationTask.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.Editor.YVRConfigurationTask
+    name: YVRConfigurationTask
+    href: YVR.Core.Editor.YVRConfigurationTask.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+memberLayout: SeparatePages

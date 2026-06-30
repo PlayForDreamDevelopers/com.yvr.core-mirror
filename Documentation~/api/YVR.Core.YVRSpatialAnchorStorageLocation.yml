@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation
+  commentId: T:YVR.Core.YVRSpatialAnchorStorageLocation
+  id: YVRSpatialAnchorStorageLocation
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRSpatialAnchorStorageLocation.Cloud
+  - YVR.Core.YVRSpatialAnchorStorageLocation.Invalid
+  - YVR.Core.YVRSpatialAnchorStorageLocation.Local
+  langs:
+  - csharp
+  - vb
+  name: YVRSpatialAnchorStorageLocation
+  nameWithType: YVRSpatialAnchorStorageLocation
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRSpatialAnchorStorageLocation
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRSpatialAnchorStorageLocation
+    content.vb: Public Enum YVRSpatialAnchorStorageLocation
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation.Invalid
+  commentId: F:YVR.Core.YVRSpatialAnchorStorageLocation.Invalid
+  id: Invalid
+  parent: YVR.Core.YVRSpatialAnchorStorageLocation
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: YVRSpatialAnchorStorageLocation.Invalid
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation.Invalid
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Invalid
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Invalid = 0
+    return:
+      type: YVR.Core.YVRSpatialAnchorStorageLocation
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation.Local
+  commentId: F:YVR.Core.YVRSpatialAnchorStorageLocation.Local
+  id: Local
+  parent: YVR.Core.YVRSpatialAnchorStorageLocation
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: YVRSpatialAnchorStorageLocation.Local
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation.Local
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Local
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Local = 1
+    return:
+      type: YVR.Core.YVRSpatialAnchorStorageLocation
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation.Cloud
+  commentId: F:YVR.Core.YVRSpatialAnchorStorageLocation.Cloud
+  id: Cloud
+  parent: YVR.Core.YVRSpatialAnchorStorageLocation
+  langs:
+  - csharp
+  - vb
+  name: Cloud
+  nameWithType: YVRSpatialAnchorStorageLocation.Cloud
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation.Cloud
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Cloud
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorStorageLocation.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Cloud = 2
+    return:
+      type: YVR.Core.YVRSpatialAnchorStorageLocation
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRSpatialAnchorStorageLocation
+  commentId: T:YVR.Core.YVRSpatialAnchorStorageLocation
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorStorageLocation.html
+  name: YVRSpatialAnchorStorageLocation
+  nameWithType: YVRSpatialAnchorStorageLocation
+  fullName: YVR.Core.YVRSpatialAnchorStorageLocation
+memberLayout: SeparatePages

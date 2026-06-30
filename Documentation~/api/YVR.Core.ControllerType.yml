@@ -1,0 +1,304 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ControllerType
+  commentId: T:YVR.Core.ControllerType
+  id: ControllerType
+  parent: YVR.Core
+  children:
+  - YVR.Core.ControllerType.Active
+  - YVR.Core.ControllerType.All
+  - YVR.Core.ControllerType.LeftHand
+  - YVR.Core.ControllerType.LeftTouch
+  - YVR.Core.ControllerType.None
+  - YVR.Core.ControllerType.RightHand
+  - YVR.Core.ControllerType.RightTouch
+  - YVR.Core.ControllerType.Touch
+  langs:
+  - csharp
+  - vb
+  name: ControllerType
+  nameWithType: ControllerType
+  fullName: YVR.Core.ControllerType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ControllerType
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Flags identifying controller type
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum ControllerType
+    content.vb: >-
+      <Flags>
+
+      Public Enum ControllerType
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.ControllerType.None
+  commentId: F:YVR.Core.ControllerType.None
+  id: None
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ControllerType.None
+  fullName: YVR.Core.ControllerType.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 19
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a controller
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.ControllerType
+- uid: YVR.Core.ControllerType.LeftTouch
+  commentId: F:YVR.Core.ControllerType.LeftTouch
+  id: LeftTouch
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: LeftTouch
+  nameWithType: ControllerType.LeftTouch
+  fullName: YVR.Core.ControllerType.LeftTouch
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LeftTouch
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Left Controller
+  example: []
+  syntax:
+    content: LeftTouch = 1
+    return:
+      type: YVR.Core.ControllerType
+- uid: YVR.Core.ControllerType.RightTouch
+  commentId: F:YVR.Core.ControllerType.RightTouch
+  id: RightTouch
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: RightTouch
+  nameWithType: ControllerType.RightTouch
+  fullName: YVR.Core.ControllerType.RightTouch
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RightTouch
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Right Controller
+  example: []
+  syntax:
+    content: RightTouch = 2
+    return:
+      type: YVR.Core.ControllerType
+- uid: YVR.Core.ControllerType.Touch
+  commentId: F:YVR.Core.ControllerType.Touch
+  id: Touch
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: Touch
+  nameWithType: ControllerType.Touch
+  fullName: YVR.Core.ControllerType.Touch
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Touch
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 34
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Both left and right controllers
+  example: []
+  syntax:
+    content: Touch = LeftTouch | RightTouch
+    return:
+      type: YVR.Core.ControllerType
+    content.vb: Touch = LeftTouch Or RightTouch
+- uid: YVR.Core.ControllerType.LeftHand
+  commentId: F:YVR.Core.ControllerType.LeftHand
+  id: LeftHand
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: LeftHand
+  nameWithType: ControllerType.LeftHand
+  fullName: YVR.Core.ControllerType.LeftHand
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LeftHand
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 39
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Left hand
+  example: []
+  syntax:
+    content: LeftHand = 8
+    return:
+      type: YVR.Core.ControllerType
+- uid: YVR.Core.ControllerType.RightHand
+  commentId: F:YVR.Core.ControllerType.RightHand
+  id: RightHand
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: RightHand
+  nameWithType: ControllerType.RightHand
+  fullName: YVR.Core.ControllerType.RightHand
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RightHand
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 44
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Right hand
+  example: []
+  syntax:
+    content: RightHand = 16
+    return:
+      type: YVR.Core.ControllerType
+- uid: YVR.Core.ControllerType.Active
+  commentId: F:YVR.Core.ControllerType.Active
+  id: Active
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: ControllerType.Active
+  fullName: YVR.Core.ControllerType.Active
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Active
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 49
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The active controller
+  example: []
+  syntax:
+    content: Active = -2147483648
+    return:
+      type: YVR.Core.ControllerType
+- uid: YVR.Core.ControllerType.All
+  commentId: F:YVR.Core.ControllerType.All
+  id: All
+  parent: YVR.Core.ControllerType
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: ControllerType.All
+  fullName: YVR.Core.ControllerType.All
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: All
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 54
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: All controllers, currently equals to @YVR.Core.ControllerType.Touch
+  example: []
+  syntax:
+    content: All = -1
+    return:
+      type: YVR.Core.ControllerType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.ControllerType
+  commentId: T:YVR.Core.ControllerType
+  parent: YVR.Core
+  href: YVR.Core.ControllerType.html
+  name: ControllerType
+  nameWithType: ControllerType
+  fullName: YVR.Core.ControllerType
+memberLayout: SeparatePages

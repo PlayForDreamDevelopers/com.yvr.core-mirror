@@ -1,0 +1,725 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRInput.RawButton
+  commentId: T:YVR.Core.YVRInput.RawButton
+  id: YVRInput.RawButton
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRInput.RawButton.A
+  - YVR.Core.YVRInput.RawButton.All
+  - YVR.Core.YVRInput.RawButton.B
+  - YVR.Core.YVRInput.RawButton.LHandTrigger
+  - YVR.Core.YVRInput.RawButton.LIndexTrigger
+  - YVR.Core.YVRInput.RawButton.LThumbstick
+  - YVR.Core.YVRInput.RawButton.LThumbstickDown
+  - YVR.Core.YVRInput.RawButton.LThumbstickLeft
+  - YVR.Core.YVRInput.RawButton.LThumbstickRight
+  - YVR.Core.YVRInput.RawButton.LThumbstickUp
+  - YVR.Core.YVRInput.RawButton.None
+  - YVR.Core.YVRInput.RawButton.RHandTrigger
+  - YVR.Core.YVRInput.RawButton.RIndexTrigger
+  - YVR.Core.YVRInput.RawButton.RThumbstick
+  - YVR.Core.YVRInput.RawButton.RThumbstickDown
+  - YVR.Core.YVRInput.RawButton.RThumbstickLeft
+  - YVR.Core.YVRInput.RawButton.RThumbstickRight
+  - YVR.Core.YVRInput.RawButton.RThumbstickUp
+  - YVR.Core.YVRInput.RawButton.Reserved
+  - YVR.Core.YVRInput.RawButton.Start
+  - YVR.Core.YVRInput.RawButton.X
+  - YVR.Core.YVRInput.RawButton.Y
+  langs:
+  - csharp
+  - vb
+  name: YVRInput.RawButton
+  nameWithType: YVRInput.RawButton
+  fullName: YVR.Core.YVRInput.RawButton
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RawButton
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 154
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Raw button mapping for controller
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum YVRInput.RawButton : uint
+    content.vb: >-
+      <Flags>
+
+      Public Enum YVRInput.RawButton As UInteger
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVRInput.RawButton.None
+  commentId: F:YVR.Core.YVRInput.RawButton.None
+  id: None
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRInput.RawButton.None
+  fullName: YVR.Core.YVRInput.RawButton.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 160
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Not a Button
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.A
+  commentId: F:YVR.Core.YVRInput.RawButton.A
+  id: A
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: YVRInput.RawButton.A
+  fullName: YVR.Core.YVRInput.RawButton.A
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: A
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 164
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: A Button on right controller
+  example: []
+  syntax:
+    content: A = 1
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.B
+  commentId: F:YVR.Core.YVRInput.RawButton.B
+  id: B
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: YVRInput.RawButton.B
+  fullName: YVR.Core.YVRInput.RawButton.B
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: B
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 168
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: B Button on right controller
+  example: []
+  syntax:
+    content: B = 2
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.X
+  commentId: F:YVR.Core.YVRInput.RawButton.X
+  id: X
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: YVRInput.RawButton.X
+  fullName: YVR.Core.YVRInput.RawButton.X
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: X
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 172
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: X Button on left controller
+  example: []
+  syntax:
+    content: X = 4
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.Y
+  commentId: F:YVR.Core.YVRInput.RawButton.Y
+  id: Y
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: YVRInput.RawButton.Y
+  fullName: YVR.Core.YVRInput.RawButton.Y
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Y
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 176
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Y Button on left controller
+  example: []
+  syntax:
+    content: Y = 8
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.Start
+  commentId: F:YVR.Core.YVRInput.RawButton.Start
+  id: Start
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: YVRInput.RawButton.Start
+  fullName: YVR.Core.YVRInput.RawButton.Start
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Start
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 180
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Start Button on left controller
+  example: []
+  syntax:
+    content: Start = 16
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.Reserved
+  commentId: F:YVR.Core.YVRInput.RawButton.Reserved
+  id: Reserved
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: Reserved
+  nameWithType: YVRInput.RawButton.Reserved
+  fullName: YVR.Core.YVRInput.RawButton.Reserved
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Reserved
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 184
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Reserved key flag
+  example: []
+  syntax:
+    content: Reserved = 32
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LIndexTrigger
+  commentId: F:YVR.Core.YVRInput.RawButton.LIndexTrigger
+  id: LIndexTrigger
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LIndexTrigger
+  nameWithType: YVRInput.RawButton.LIndexTrigger
+  fullName: YVR.Core.YVRInput.RawButton.LIndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LIndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 188
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger Button on left controller
+  example: []
+  syntax:
+    content: LIndexTrigger = 64
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RIndexTrigger
+  commentId: F:YVR.Core.YVRInput.RawButton.RIndexTrigger
+  id: RIndexTrigger
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RIndexTrigger
+  nameWithType: YVRInput.RawButton.RIndexTrigger
+  fullName: YVR.Core.YVRInput.RawButton.RIndexTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RIndexTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 192
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Trigger Button on right controller
+  example: []
+  syntax:
+    content: RIndexTrigger = 128
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LHandTrigger
+  commentId: F:YVR.Core.YVRInput.RawButton.LHandTrigger
+  id: LHandTrigger
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LHandTrigger
+  nameWithType: YVRInput.RawButton.LHandTrigger
+  fullName: YVR.Core.YVRInput.RawButton.LHandTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LHandTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 196
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Hand Button on left controller
+  example: []
+  syntax:
+    content: LHandTrigger = 256
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RHandTrigger
+  commentId: F:YVR.Core.YVRInput.RawButton.RHandTrigger
+  id: RHandTrigger
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RHandTrigger
+  nameWithType: YVRInput.RawButton.RHandTrigger
+  fullName: YVR.Core.YVRInput.RawButton.RHandTrigger
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RHandTrigger
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 200
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Index Hand Button on right controller
+  example: []
+  syntax:
+    content: RHandTrigger = 512
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LThumbstick
+  commentId: F:YVR.Core.YVRInput.RawButton.LThumbstick
+  id: LThumbstick
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LThumbstick
+  nameWithType: YVRInput.RawButton.LThumbstick
+  fullName: YVR.Core.YVRInput.RawButton.LThumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 204
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Button on left controller (Pressed or not)
+  example: []
+  syntax:
+    content: LThumbstick = 1024
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RThumbstick
+  commentId: F:YVR.Core.YVRInput.RawButton.RThumbstick
+  id: RThumbstick
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RThumbstick
+  nameWithType: YVRInput.RawButton.RThumbstick
+  fullName: YVR.Core.YVRInput.RawButton.RThumbstick
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstick
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 208
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Button on right controller (Pressed or not)
+  example: []
+  syntax:
+    content: RThumbstick = 2048
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LThumbstickUp
+  commentId: F:YVR.Core.YVRInput.RawButton.LThumbstickUp
+  id: LThumbstickUp
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LThumbstickUp
+  nameWithType: YVRInput.RawButton.LThumbstickUp
+  fullName: YVR.Core.YVRInput.RawButton.LThumbstickUp
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstickUp
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 212
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Up Button on left controller
+  example: []
+  syntax:
+    content: LThumbstickUp = 4096
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LThumbstickDown
+  commentId: F:YVR.Core.YVRInput.RawButton.LThumbstickDown
+  id: LThumbstickDown
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LThumbstickDown
+  nameWithType: YVRInput.RawButton.LThumbstickDown
+  fullName: YVR.Core.YVRInput.RawButton.LThumbstickDown
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstickDown
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 216
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Down Button on left controller
+  example: []
+  syntax:
+    content: LThumbstickDown = 8192
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LThumbstickLeft
+  commentId: F:YVR.Core.YVRInput.RawButton.LThumbstickLeft
+  id: LThumbstickLeft
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LThumbstickLeft
+  nameWithType: YVRInput.RawButton.LThumbstickLeft
+  fullName: YVR.Core.YVRInput.RawButton.LThumbstickLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstickLeft
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 220
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Left Button on left controller
+  example: []
+  syntax:
+    content: LThumbstickLeft = 16384
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.LThumbstickRight
+  commentId: F:YVR.Core.YVRInput.RawButton.LThumbstickRight
+  id: LThumbstickRight
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: LThumbstickRight
+  nameWithType: YVRInput.RawButton.LThumbstickRight
+  fullName: YVR.Core.YVRInput.RawButton.LThumbstickRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LThumbstickRight
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 224
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Right Button on left controller
+  example: []
+  syntax:
+    content: LThumbstickRight = 32768
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RThumbstickUp
+  commentId: F:YVR.Core.YVRInput.RawButton.RThumbstickUp
+  id: RThumbstickUp
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RThumbstickUp
+  nameWithType: YVRInput.RawButton.RThumbstickUp
+  fullName: YVR.Core.YVRInput.RawButton.RThumbstickUp
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstickUp
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 228
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Up Button on right controller
+  example: []
+  syntax:
+    content: RThumbstickUp = 65536
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RThumbstickDown
+  commentId: F:YVR.Core.YVRInput.RawButton.RThumbstickDown
+  id: RThumbstickDown
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RThumbstickDown
+  nameWithType: YVRInput.RawButton.RThumbstickDown
+  fullName: YVR.Core.YVRInput.RawButton.RThumbstickDown
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstickDown
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 232
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Down Button on right controller
+  example: []
+  syntax:
+    content: RThumbstickDown = 131072
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RThumbstickLeft
+  commentId: F:YVR.Core.YVRInput.RawButton.RThumbstickLeft
+  id: RThumbstickLeft
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RThumbstickLeft
+  nameWithType: YVRInput.RawButton.RThumbstickLeft
+  fullName: YVR.Core.YVRInput.RawButton.RThumbstickLeft
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstickLeft
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 236
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Left Button on right controller
+  example: []
+  syntax:
+    content: RThumbstickLeft = 262144
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.RThumbstickRight
+  commentId: F:YVR.Core.YVRInput.RawButton.RThumbstickRight
+  id: RThumbstickRight
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: RThumbstickRight
+  nameWithType: YVRInput.RawButton.RThumbstickRight
+  fullName: YVR.Core.YVRInput.RawButton.RThumbstickRight
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RThumbstickRight
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 240
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Thumb Stick Right Button on right controller
+  example: []
+  syntax:
+    content: RThumbstickRight = 524288
+    return:
+      type: YVR.Core.YVRInput.RawButton
+- uid: YVR.Core.YVRInput.RawButton.All
+  commentId: F:YVR.Core.YVRInput.RawButton.All
+  id: All
+  parent: YVR.Core.YVRInput.RawButton
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: YVRInput.RawButton.All
+  fullName: YVR.Core.YVRInput.RawButton.All
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: All
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 244
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: All buttons on both controllers
+  example: []
+  syntax:
+    content: All = 4294967295
+    return:
+      type: YVR.Core.YVRInput.RawButton
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRInput.RawButton
+  commentId: T:YVR.Core.YVRInput.RawButton
+  parent: YVR.Core
+  href: YVR.Core.YVRInput.html
+  name: YVRInput.RawButton
+  nameWithType: YVRInput.RawButton
+  fullName: YVR.Core.YVRInput.RawButton
+  spec.csharp:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawButton
+    name: RawButton
+    href: YVR.Core.YVRInput.RawButton.html
+  spec.vb:
+  - uid: YVR.Core.YVRInput
+    name: YVRInput
+    href: YVR.Core.YVRInput.html
+  - name: .
+  - uid: YVR.Core.YVRInput.RawButton
+    name: RawButton
+    href: YVR.Core.YVRInput.RawButton.html
+memberLayout: SeparatePages

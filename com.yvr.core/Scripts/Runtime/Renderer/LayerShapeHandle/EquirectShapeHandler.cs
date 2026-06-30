@@ -15,14 +15,19 @@ namespace YVR.Core
             YVRManager yvrManager = data.yvrManager;
             XRPose pose = new XRPose();
 #if XR_CORE_UTILS
-        if (GameObject.FindObjectOfType<XROrigin>() != null)
-        {
-            pose = transform.ToXRTrackingSpacePose(GameObject.FindObjectOfType<XROrigin>().Camera);
-        }
-        else
-        {
-            pose = transform.ToXRTrackingSpacePose(yvrManager.cameraRenderer.centerEyeCamera);
-        }
+#if UNITY_2023_1_OR_NEWER
+            XROrigin xrOrigin = Object.FindAnyObjectByType<XROrigin>();
+#else
+            XROrigin xrOrigin = Object.FindObjectOfType<XROrigin>();
+#endif
+            if (xrOrigin != null)
+            {
+                pose = transform.ToXRTrackingSpacePose(xrOrigin.Camera);
+            }
+            else
+            {
+                pose = transform.ToXRTrackingSpacePose(yvrManager.cameraRenderer.centerEyeCamera);
+            }
 #else
             pose = transform.ToXRTrackingSpacePose(yvrManager.cameraRenderer.centerEyeCamera);
 #endif

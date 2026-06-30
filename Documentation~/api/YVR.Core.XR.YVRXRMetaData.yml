@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.XR.YVRXRMetaData
+  commentId: T:YVR.Core.XR.YVRXRMetaData
+  id: YVRXRMetaData
+  parent: YVR.Core.XR
+  children:
+  - YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  - YVR.Core.XR.YVRXRMetaData.metadata
+  langs:
+  - csharp
+  - vb
+  name: YVRXRMetaData
+  nameWithType: YVRXRMetaData
+  fullName: YVR.Core.XR.YVRXRMetaData
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/YVRXRMetaData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRXRMetaData
+    path: ../com.yvr.core/Scripts/Editor/YVRXRMetaData.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.XR
+  syntax:
+    content: 'public class YVRXRMetaData : IXRPackage'
+    content.vb: Public Class YVRXRMetaData Implements IXRPackage
+  inheritance:
+  - System.Object
+  implements:
+  - UnityEditor.XR.Management.Metadata.IXRPackage
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  commentId: M:YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  id: PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  parent: YVR.Core.XR.YVRXRMetaData
+  langs:
+  - csharp
+  - vb
+  name: PopulateNewSettingsInstance(ScriptableObject)
+  nameWithType: YVRXRMetaData.PopulateNewSettingsInstance(ScriptableObject)
+  fullName: YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/YVRXRMetaData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PopulateNewSettingsInstance
+    path: ../com.yvr.core/Scripts/Editor/YVRXRMetaData.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.XR
+  summary: >-
+    Allows the package to configure new settings and/or port old settings to the instance passed
+
+    in.
+  example: []
+  syntax:
+    content: public bool PopulateNewSettingsInstance(ScriptableObject obj)
+    parameters:
+    - id: obj
+      type: UnityEngine.ScriptableObject
+      description: >-
+        ScriptableObject instance representing an instance of the settings
+             type provided by <xref href="UnityEditor.XR.Management.Metadata.IXRPackageMetadata.settingsType" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: True if the operation succeeded, false if not. If implementation is empty, just return true.
+    content.vb: Public Function PopulateNewSettingsInstance(obj As ScriptableObject) As Boolean
+  overload: YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance*
+  implements:
+  - UnityEditor.XR.Management.Metadata.IXRPackage.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+- uid: YVR.Core.XR.YVRXRMetaData.metadata
+  commentId: P:YVR.Core.XR.YVRXRMetaData.metadata
+  id: metadata
+  parent: YVR.Core.XR.YVRXRMetaData
+  langs:
+  - csharp
+  - vb
+  name: metadata
+  nameWithType: YVRXRMetaData.metadata
+  fullName: YVR.Core.XR.YVRXRMetaData.metadata
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/YVRXRMetaData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: metadata
+    path: ../com.yvr.core/Scripts/Editor/YVRXRMetaData.cs
+    startLine: 38
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.XR
+  summary: >-
+    Returns an instance of <xref href="UnityEditor.XR.Management.Metadata.IXRPackageMetadata" data-throw-if-not-resolved="false"></xref>. Information will be used
+
+    to allow the XR Plug-in Management to provide settings and loaders through the settings UI.
+  example: []
+  syntax:
+    content: public IXRPackageMetadata metadata { get; }
+    parameters: []
+    return:
+      type: UnityEditor.XR.Management.Metadata.IXRPackageMetadata
+    content.vb: Public ReadOnly Property metadata As IXRPackageMetadata
+  overload: YVR.Core.XR.YVRXRMetaData.metadata*
+  implements:
+  - UnityEditor.XR.Management.Metadata.IXRPackage.metadata
+references:
+- uid: YVR.Core.XR
+  commentId: N:YVR.Core.XR
+  href: YVR.html
+  name: YVR.Core.XR
+  nameWithType: YVR.Core.XR
+  fullName: YVR.Core.XR
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.XR
+    name: XR
+    href: YVR.Core.XR.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.XR
+    name: XR
+    href: YVR.Core.XR.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEditor.XR.Management.Metadata.IXRPackage
+  commentId: T:UnityEditor.XR.Management.Metadata.IXRPackage
+  parent: UnityEditor.XR.Management.Metadata
+  name: IXRPackage
+  nameWithType: IXRPackage
+  fullName: UnityEditor.XR.Management.Metadata.IXRPackage
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor.XR.Management.Metadata
+  commentId: N:UnityEditor.XR.Management.Metadata
+  name: UnityEditor.XR.Management.Metadata
+  nameWithType: UnityEditor.XR.Management.Metadata
+  fullName: UnityEditor.XR.Management.Metadata
+  spec.csharp:
+  - uid: UnityEditor
+    name: UnityEditor
+  - name: .
+  - uid: UnityEditor.XR
+    name: XR
+  - name: .
+  - uid: UnityEditor.XR.Management
+    name: Management
+  - name: .
+  - uid: UnityEditor.XR.Management.Metadata
+    name: Metadata
+  spec.vb:
+  - uid: UnityEditor
+    name: UnityEditor
+  - name: .
+  - uid: UnityEditor.XR
+    name: XR
+  - name: .
+  - uid: UnityEditor.XR.Management
+    name: Management
+  - name: .
+  - uid: UnityEditor.XR.Management.Metadata
+    name: Metadata
+- uid: UnityEditor.XR.Management.Metadata.IXRPackageMetadata.settingsType
+  commentId: P:UnityEditor.XR.Management.Metadata.IXRPackageMetadata.settingsType
+  name: settingsType
+  nameWithType: IXRPackageMetadata.settingsType
+  fullName: UnityEditor.XR.Management.Metadata.IXRPackageMetadata.settingsType
+- uid: YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance*
+  commentId: Overload:YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance
+  href: YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance.html#YVR_Core_XR_YVRXRMetaData_PopulateNewSettingsInstance_UnityEngine_ScriptableObject_
+  name: PopulateNewSettingsInstance
+  nameWithType: YVRXRMetaData.PopulateNewSettingsInstance
+  fullName: YVR.Core.XR.YVRXRMetaData.PopulateNewSettingsInstance
+- uid: UnityEditor.XR.Management.Metadata.IXRPackage.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  commentId: M:UnityEditor.XR.Management.Metadata.IXRPackage.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  parent: UnityEditor.XR.Management.Metadata.IXRPackage
+  isExternal: true
+  name: PopulateNewSettingsInstance(ScriptableObject)
+  nameWithType: IXRPackage.PopulateNewSettingsInstance(ScriptableObject)
+  fullName: UnityEditor.XR.Management.Metadata.IXRPackage.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+  spec.csharp:
+  - uid: UnityEditor.XR.Management.Metadata.IXRPackage.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+    name: PopulateNewSettingsInstance
+  - name: (
+  - uid: UnityEngine.ScriptableObject
+    name: ScriptableObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.XR.Management.Metadata.IXRPackage.PopulateNewSettingsInstance(UnityEngine.ScriptableObject)
+    name: PopulateNewSettingsInstance
+  - name: (
+  - uid: UnityEngine.ScriptableObject
+    name: ScriptableObject
+    isExternal: true
+  - name: )
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor.XR.Management.Metadata.IXRPackageMetadata
+  commentId: T:UnityEditor.XR.Management.Metadata.IXRPackageMetadata
+  parent: UnityEditor.XR.Management.Metadata
+  name: IXRPackageMetadata
+  nameWithType: IXRPackageMetadata
+  fullName: UnityEditor.XR.Management.Metadata.IXRPackageMetadata
+- uid: YVR.Core.XR.YVRXRMetaData.metadata*
+  commentId: Overload:YVR.Core.XR.YVRXRMetaData.metadata
+  href: YVR.Core.XR.YVRXRMetaData.metadata.html#YVR_Core_XR_YVRXRMetaData_metadata
+  name: metadata
+  nameWithType: YVRXRMetaData.metadata
+  fullName: YVR.Core.XR.YVRXRMetaData.metadata
+- uid: UnityEditor.XR.Management.Metadata.IXRPackage.metadata
+  commentId: P:UnityEditor.XR.Management.Metadata.IXRPackage.metadata
+  parent: UnityEditor.XR.Management.Metadata.IXRPackage
+  name: metadata
+  nameWithType: IXRPackage.metadata
+  fullName: UnityEditor.XR.Management.Metadata.IXRPackage.metadata
+memberLayout: SeparatePages

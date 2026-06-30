@@ -1,0 +1,683 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRMeshTracking
+  commentId: T:YVR.Core.YVRMeshTracking
+  id: YVRMeshTracking
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRMeshTracking.CreateMeshDetector
+  - YVR.Core.YVRMeshTracking.DestroyMeshDetector
+  - YVR.Core.YVRMeshTracking.OnInit
+  - YVR.Core.YVRMeshTracking.updateMeshBlockAction
+  langs:
+  - csharp
+  - vb
+  name: YVRMeshTracking
+  nameWithType: YVRMeshTracking
+  fullName: YVR.Core.YVRMeshTracking
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRMeshTracking
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: 'public class YVRMeshTracking : Singleton<YVRMeshTracking>'
+    content.vb: Public Class YVRMeshTracking Inherits Singleton(Of YVRMeshTracking)
+  inheritance:
+  - System.Object
+  - YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  inheritedMembers:
+  - YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.instance
+  - YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.createdInstance
+  - YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.Reset
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRMeshTracking.updateMeshBlockAction
+  commentId: F:YVR.Core.YVRMeshTracking.updateMeshBlockAction
+  id: updateMeshBlockAction
+  parent: YVR.Core.YVRMeshTracking
+  langs:
+  - csharp
+  - vb
+  name: updateMeshBlockAction
+  nameWithType: YVRMeshTracking.updateMeshBlockAction
+  fullName: YVR.Core.YVRMeshTracking.updateMeshBlockAction
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: updateMeshBlockAction
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static Action<ulong, YVRMeshBlockChangeState> updateMeshBlockAction
+    return:
+      type: System.Action{System.UInt64,YVR.Core.YVRMeshBlockChangeState}
+    content.vb: Public Shared updateMeshBlockAction As Action(Of ULong, YVRMeshBlockChangeState)
+- uid: YVR.Core.YVRMeshTracking.OnInit
+  commentId: M:YVR.Core.YVRMeshTracking.OnInit
+  id: OnInit
+  parent: YVR.Core.YVRMeshTracking
+  langs:
+  - csharp
+  - vb
+  name: OnInit()
+  nameWithType: YVRMeshTracking.OnInit()
+  fullName: YVR.Core.YVRMeshTracking.OnInit()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: OnInit
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: protected override void OnInit()
+    content.vb: Protected Overrides Sub OnInit()
+  overridden: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.OnInit
+  overload: YVR.Core.YVRMeshTracking.OnInit*
+- uid: YVR.Core.YVRMeshTracking.CreateMeshDetector
+  commentId: M:YVR.Core.YVRMeshTracking.CreateMeshDetector
+  id: CreateMeshDetector
+  parent: YVR.Core.YVRMeshTracking
+  langs:
+  - csharp
+  - vb
+  name: CreateMeshDetector()
+  nameWithType: YVRMeshTracking.CreateMeshDetector()
+  fullName: YVR.Core.YVRMeshTracking.CreateMeshDetector()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CreateMeshDetector
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public void CreateMeshDetector()
+    content.vb: Public Sub CreateMeshDetector()
+  overload: YVR.Core.YVRMeshTracking.CreateMeshDetector*
+- uid: YVR.Core.YVRMeshTracking.DestroyMeshDetector
+  commentId: M:YVR.Core.YVRMeshTracking.DestroyMeshDetector
+  id: DestroyMeshDetector
+  parent: YVR.Core.YVRMeshTracking
+  langs:
+  - csharp
+  - vb
+  name: DestroyMeshDetector()
+  nameWithType: YVRMeshTracking.DestroyMeshDetector()
+  fullName: YVR.Core.YVRMeshTracking.DestroyMeshDetector()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DestroyMeshDetector
+    path: ../com.yvr.core/Scripts/Runtime/Mesh/YVRMeshTracking.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public void DestroyMeshDetector()
+    content.vb: Public Sub DestroyMeshDetector()
+  overload: YVR.Core.YVRMeshTracking.DestroyMeshDetector*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  commentId: T:YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  parent: YVR.Utilities
+  definition: YVR.Utilities.Singleton`1
+  href: YVR.Core.YVRMeshTracking.html
+  name: Singleton<YVRMeshTracking>
+  nameWithType: Singleton<YVRMeshTracking>
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRMeshTracking>
+  nameWithType.vb: Singleton(Of YVRMeshTracking)
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRMeshTracking)
+  name.vb: Singleton(Of YVRMeshTracking)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - uid: YVR.Core.YVRMeshTracking
+    name: YVRMeshTracking
+    href: YVR.Core.YVRMeshTracking.html
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YVR.Core.YVRMeshTracking
+    name: YVRMeshTracking
+    href: YVR.Core.YVRMeshTracking.html
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.instance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.instance
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  definition: YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<YVRMeshTracking>.instance
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRMeshTracking>.instance
+  nameWithType.vb: Singleton(Of YVRMeshTracking).instance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRMeshTracking).instance
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.createdInstance
+  commentId: P:YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.createdInstance
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  definition: YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<YVRMeshTracking>.createdInstance
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRMeshTracking>.createdInstance
+  nameWithType.vb: Singleton(Of YVRMeshTracking).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRMeshTracking).createdInstance
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.Reset
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.Reset
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  definition: YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<YVRMeshTracking>.Reset()
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRMeshTracking>.Reset()
+  nameWithType.vb: Singleton(Of YVRMeshTracking).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRMeshTracking).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Utilities.Singleton`1
+  commentId: T:YVR.Utilities.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: YVR.Utilities.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: YVR.Utilities.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YVR.Utilities
+  commentId: N:YVR.Utilities
+  name: YVR.Utilities
+  nameWithType: YVR.Utilities
+  fullName: YVR.Utilities
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+  spec.vb:
+  - uid: YVR
+    name: YVR
+  - name: .
+  - uid: YVR.Utilities
+    name: Utilities
+- uid: YVR.Utilities.Singleton`1.instance
+  commentId: P:YVR.Utilities.Singleton`1.instance
+  name: instance
+  nameWithType: Singleton<T>.instance
+  fullName: YVR.Utilities.Singleton<T>.instance
+  nameWithType.vb: Singleton(Of T).instance
+  fullName.vb: YVR.Utilities.Singleton(Of T).instance
+- uid: YVR.Utilities.Singleton`1.createdInstance
+  commentId: P:YVR.Utilities.Singleton`1.createdInstance
+  name: createdInstance
+  nameWithType: Singleton<T>.createdInstance
+  fullName: YVR.Utilities.Singleton<T>.createdInstance
+  nameWithType.vb: Singleton(Of T).createdInstance
+  fullName.vb: YVR.Utilities.Singleton(Of T).createdInstance
+- uid: YVR.Utilities.Singleton`1.Reset
+  commentId: M:YVR.Utilities.Singleton`1.Reset
+  name: Reset()
+  nameWithType: Singleton<T>.Reset()
+  fullName: YVR.Utilities.Singleton<T>.Reset()
+  nameWithType.vb: Singleton(Of T).Reset()
+  fullName.vb: YVR.Utilities.Singleton(Of T).Reset()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.Reset
+    name: Reset
+  - name: (
+  - name: )
+- uid: System.Action{System.UInt64,YVR.Core.YVRMeshBlockChangeState}
+  commentId: T:System.Action{System.UInt64,YVR.Core.YVRMeshBlockChangeState}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<ulong, YVRMeshBlockChangeState>
+  nameWithType: Action<ulong, YVRMeshBlockChangeState>
+  fullName: System.Action<ulong, YVR.Core.YVRMeshBlockChangeState>
+  nameWithType.vb: Action(Of ULong, YVRMeshBlockChangeState)
+  fullName.vb: System.Action(Of ULong, YVR.Core.YVRMeshBlockChangeState)
+  name.vb: Action(Of ULong, YVRMeshBlockChangeState)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRMeshBlockChangeState
+    name: YVRMeshBlockChangeState
+    href: YVR.Core.YVRMeshBlockChangeState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRMeshBlockChangeState
+    name: YVRMeshBlockChangeState
+    href: YVR.Core.YVRMeshBlockChangeState.html
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.OnInit
+  commentId: M:YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.OnInit
+  parent: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}
+  definition: YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<YVRMeshTracking>.OnInit()
+  fullName: YVR.Utilities.Singleton<YVR.Core.YVRMeshTracking>.OnInit()
+  nameWithType.vb: Singleton(Of YVRMeshTracking).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of YVR.Core.YVRMeshTracking).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton{YVR.Core.YVRMeshTracking}.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRMeshTracking.OnInit*
+  commentId: Overload:YVR.Core.YVRMeshTracking.OnInit
+  href: YVR.Core.YVRMeshTracking.OnInit.html#YVR_Core_YVRMeshTracking_OnInit
+  name: OnInit
+  nameWithType: YVRMeshTracking.OnInit
+  fullName: YVR.Core.YVRMeshTracking.OnInit
+- uid: YVR.Utilities.Singleton`1.OnInit
+  commentId: M:YVR.Utilities.Singleton`1.OnInit
+  name: OnInit()
+  nameWithType: Singleton<T>.OnInit()
+  fullName: YVR.Utilities.Singleton<T>.OnInit()
+  nameWithType.vb: Singleton(Of T).OnInit()
+  fullName.vb: YVR.Utilities.Singleton(Of T).OnInit()
+  spec.csharp:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Utilities.Singleton`1.OnInit
+    name: OnInit
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRMeshTracking.CreateMeshDetector*
+  commentId: Overload:YVR.Core.YVRMeshTracking.CreateMeshDetector
+  href: YVR.Core.YVRMeshTracking.CreateMeshDetector.html#YVR_Core_YVRMeshTracking_CreateMeshDetector
+  name: CreateMeshDetector
+  nameWithType: YVRMeshTracking.CreateMeshDetector
+  fullName: YVR.Core.YVRMeshTracking.CreateMeshDetector
+- uid: YVR.Core.YVRMeshTracking.DestroyMeshDetector*
+  commentId: Overload:YVR.Core.YVRMeshTracking.DestroyMeshDetector
+  href: YVR.Core.YVRMeshTracking.DestroyMeshDetector.html#YVR_Core_YVRMeshTracking_DestroyMeshDetector
+  name: DestroyMeshDetector
+  nameWithType: YVRMeshTracking.DestroyMeshDetector
+  fullName: YVR.Core.YVRMeshTracking.DestroyMeshDetector
+memberLayout: SeparatePages

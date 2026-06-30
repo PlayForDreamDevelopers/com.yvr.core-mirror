@@ -1,0 +1,617 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPlaneDetectorLocation
+  commentId: T:YVR.Core.YVRPlaneDetectorLocation
+  id: YVRPlaneDetectorLocation
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPlaneDetectorLocation.ToString
+  - YVR.Core.YVRPlaneDetectorLocation.changeState
+  - YVR.Core.YVRPlaneDetectorLocation.extents
+  - YVR.Core.YVRPlaneDetectorLocation.locationFlags
+  - YVR.Core.YVRPlaneDetectorLocation.orientation
+  - YVR.Core.YVRPlaneDetectorLocation.planeId
+  - YVR.Core.YVRPlaneDetectorLocation.polygonBufferCount
+  - YVR.Core.YVRPlaneDetectorLocation.pose
+  - YVR.Core.YVRPlaneDetectorLocation.semanticType
+  langs:
+  - csharp
+  - vb
+  name: YVRPlaneDetectorLocation
+  nameWithType: YVRPlaneDetectorLocation
+  fullName: YVR.Core.YVRPlaneDetectorLocation
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPlaneDetectorLocation
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public struct YVRPlaneDetectorLocation
+    content.vb: Public Structure YVRPlaneDetectorLocation
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.YVRPlaneDetectorLocation.planeId
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.planeId
+  id: planeId
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: planeId
+  nameWithType: YVRPlaneDetectorLocation.planeId
+  fullName: YVR.Core.YVRPlaneDetectorLocation.planeId
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: planeId
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public ulong planeId
+    return:
+      type: System.UInt64
+    content.vb: Public planeId As ULong
+- uid: YVR.Core.YVRPlaneDetectorLocation.locationFlags
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.locationFlags
+  id: locationFlags
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: locationFlags
+  nameWithType: YVRPlaneDetectorLocation.locationFlags
+  fullName: YVR.Core.YVRPlaneDetectorLocation.locationFlags
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: locationFlags
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public YVRSpaceLocationFlags locationFlags
+    return:
+      type: YVR.Core.YVRSpaceLocationFlags
+    content.vb: Public locationFlags As YVRSpaceLocationFlags
+- uid: YVR.Core.YVRPlaneDetectorLocation.pose
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.pose
+  id: pose
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: pose
+  nameWithType: YVRPlaneDetectorLocation.pose
+  fullName: YVR.Core.YVRPlaneDetectorLocation.pose
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: pose
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public PoseData pose
+    return:
+      type: YVR.Core.PoseData
+    content.vb: Public pose As PoseData
+- uid: YVR.Core.YVRPlaneDetectorLocation.extents
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.extents
+  id: extents
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: extents
+  nameWithType: YVRPlaneDetectorLocation.extents
+  fullName: YVR.Core.YVRPlaneDetectorLocation.extents
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: extents
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public Vector2 extents
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public extents As Vector2
+- uid: YVR.Core.YVRPlaneDetectorLocation.orientation
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.orientation
+  id: orientation
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: orientation
+  nameWithType: YVRPlaneDetectorLocation.orientation
+  fullName: YVR.Core.YVRPlaneDetectorLocation.orientation
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: orientation
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public YVRPlaneDetectorOrientation orientation
+    return:
+      type: YVR.Core.YVRPlaneDetectorOrientation
+    content.vb: Public orientation As YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorLocation.semanticType
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.semanticType
+  id: semanticType
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: semanticType
+  nameWithType: YVRPlaneDetectorLocation.semanticType
+  fullName: YVR.Core.YVRPlaneDetectorLocation.semanticType
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: semanticType
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public YVRPlaneDetectorSemanticType semanticType
+    return:
+      type: YVR.Core.YVRPlaneDetectorSemanticType
+    content.vb: Public semanticType As YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneDetectorLocation.changeState
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.changeState
+  id: changeState
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: changeState
+  nameWithType: YVRPlaneDetectorLocation.changeState
+  fullName: YVR.Core.YVRPlaneDetectorLocation.changeState
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: changeState
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public YVRPlaneChangeState changeState
+    return:
+      type: YVR.Core.YVRPlaneChangeState
+    content.vb: Public changeState As YVRPlaneChangeState
+- uid: YVR.Core.YVRPlaneDetectorLocation.polygonBufferCount
+  commentId: F:YVR.Core.YVRPlaneDetectorLocation.polygonBufferCount
+  id: polygonBufferCount
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: polygonBufferCount
+  nameWithType: YVRPlaneDetectorLocation.polygonBufferCount
+  fullName: YVR.Core.YVRPlaneDetectorLocation.polygonBufferCount
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: polygonBufferCount
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public uint polygonBufferCount
+    return:
+      type: System.UInt32
+    content.vb: Public polygonBufferCount As UInteger
+- uid: YVR.Core.YVRPlaneDetectorLocation.ToString
+  commentId: M:YVR.Core.YVRPlaneDetectorLocation.ToString
+  id: ToString
+  parent: YVR.Core.YVRPlaneDetectorLocation
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: YVRPlaneDetectorLocation.ToString()
+  fullName: YVR.Core.YVRPlaneDetectorLocation.ToString()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ToString
+    path: ../com.yvr.core/Scripts/Runtime/PlaneDetection/YVRPlaneDetectorLocation.cs
+    startLine: 17
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: YVR.Core.YVRPlaneDetectorLocation.ToString*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: YVR.Core.YVRSpaceLocationFlags
+  commentId: T:YVR.Core.YVRSpaceLocationFlags
+  parent: YVR.Core
+  href: YVR.Core.YVRSpaceLocationFlags.html
+  name: YVRSpaceLocationFlags
+  nameWithType: YVRSpaceLocationFlags
+  fullName: YVR.Core.YVRSpaceLocationFlags
+- uid: YVR.Core.PoseData
+  commentId: T:YVR.Core.PoseData
+  parent: YVR.Core
+  href: YVR.Core.PoseData.html
+  name: PoseData
+  nameWithType: PoseData
+  fullName: YVR.Core.PoseData
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRPlaneDetectorOrientation
+  commentId: T:YVR.Core.YVRPlaneDetectorOrientation
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorOrientation.html
+  name: YVRPlaneDetectorOrientation
+  nameWithType: YVRPlaneDetectorOrientation
+  fullName: YVR.Core.YVRPlaneDetectorOrientation
+- uid: YVR.Core.YVRPlaneDetectorSemanticType
+  commentId: T:YVR.Core.YVRPlaneDetectorSemanticType
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneDetectorSemanticType.html
+  name: YVRPlaneDetectorSemanticType
+  nameWithType: YVRPlaneDetectorSemanticType
+  fullName: YVR.Core.YVRPlaneDetectorSemanticType
+- uid: YVR.Core.YVRPlaneChangeState
+  commentId: T:YVR.Core.YVRPlaneChangeState
+  parent: YVR.Core
+  href: YVR.Core.YVRPlaneChangeState.html
+  name: YVRPlaneChangeState
+  nameWithType: YVRPlaneChangeState
+  fullName: YVR.Core.YVRPlaneChangeState
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRPlaneDetectorLocation.ToString*
+  commentId: Overload:YVR.Core.YVRPlaneDetectorLocation.ToString
+  href: YVR.Core.YVRPlaneDetectorLocation.ToString.html#YVR_Core_YVRPlaneDetectorLocation_ToString
+  name: ToString
+  nameWithType: YVRPlaneDetectorLocation.ToString
+  fullName: YVR.Core.YVRPlaneDetectorLocation.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+memberLayout: SeparatePages

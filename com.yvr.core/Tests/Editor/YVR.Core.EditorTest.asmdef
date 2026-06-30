@@ -1,0 +1,23 @@
+{
+    "name": "YVR.Core.EditorTest",
+    "rootNamespace": "YVR.Core.Test",
+    "references": [
+        "YVR.Core",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "YVR.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

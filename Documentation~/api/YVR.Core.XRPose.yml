@@ -1,0 +1,530 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  id: XRPose
+  parent: YVR.Core
+  children:
+  - YVR.Core.XRPose.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion)
+  - YVR.Core.XRPose.Inverse
+  - YVR.Core.XRPose.identity
+  - YVR.Core.XRPose.op_Multiply(YVR.Core.XRPose,YVR.Core.XRPose)
+  - YVR.Core.XRPose.orientation
+  - YVR.Core.XRPose.position
+  langs:
+  - csharp
+  - vb
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+  type: Struct
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: XRPose
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 19
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public struct XRPose
+    content.vb: Public Structure XRPose
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: YVR.Core.XRPose.orientation
+  commentId: F:YVR.Core.XRPose.orientation
+  id: orientation
+  parent: YVR.Core.XRPose
+  langs:
+  - csharp
+  - vb
+  name: orientation
+  nameWithType: XRPose.orientation
+  fullName: YVR.Core.XRPose.orientation
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: orientation
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 24
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The orientation
+  example: []
+  syntax:
+    content: public Quaternion orientation
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public orientation As Quaternion
+- uid: YVR.Core.XRPose.position
+  commentId: F:YVR.Core.XRPose.position
+  id: position
+  parent: YVR.Core.XRPose
+  langs:
+  - csharp
+  - vb
+  name: position
+  nameWithType: XRPose.position
+  fullName: YVR.Core.XRPose.position
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: position
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The position
+  example: []
+  syntax:
+    content: public Vector3 position
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public position As Vector3
+- uid: YVR.Core.XRPose.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:YVR.Core.XRPose.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: '#ctor(UnityEngine.Vector3,UnityEngine.Quaternion)'
+  parent: YVR.Core.XRPose
+  langs:
+  - csharp
+  - vb
+  name: XRPose(Vector3, Quaternion)
+  nameWithType: XRPose.XRPose(Vector3, Quaternion)
+  fullName: YVR.Core.XRPose.XRPose(UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Constructor
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: .ctor
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 31
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public XRPose(Vector3 position, Quaternion orientation)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+    - id: orientation
+      type: UnityEngine.Quaternion
+    content.vb: Public Sub New(position As Vector3, orientation As Quaternion)
+  overload: YVR.Core.XRPose.#ctor*
+  nameWithType.vb: XRPose.New(Vector3, Quaternion)
+  fullName.vb: YVR.Core.XRPose.New(UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: New(Vector3, Quaternion)
+- uid: YVR.Core.XRPose.identity
+  commentId: P:YVR.Core.XRPose.identity
+  id: identity
+  parent: YVR.Core.XRPose
+  langs:
+  - csharp
+  - vb
+  name: identity
+  nameWithType: XRPose.identity
+  fullName: YVR.Core.XRPose.identity
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: identity
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 37
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static XRPose identity { get; }
+    parameters: []
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Shared ReadOnly Property identity As XRPose
+  overload: YVR.Core.XRPose.identity*
+- uid: YVR.Core.XRPose.op_Multiply(YVR.Core.XRPose,YVR.Core.XRPose)
+  commentId: M:YVR.Core.XRPose.op_Multiply(YVR.Core.XRPose,YVR.Core.XRPose)
+  id: op_Multiply(YVR.Core.XRPose,YVR.Core.XRPose)
+  parent: YVR.Core.XRPose
+  langs:
+  - csharp
+  - vb
+  name: operator *(XRPose, XRPose)
+  nameWithType: XRPose.operator *(XRPose, XRPose)
+  fullName: YVR.Core.XRPose.operator *(YVR.Core.XRPose, YVR.Core.XRPose)
+  type: Operator
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: op_Multiply
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 39
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public static XRPose operator *(XRPose lhs, XRPose rhs)
+    parameters:
+    - id: lhs
+      type: YVR.Core.XRPose
+    - id: rhs
+      type: YVR.Core.XRPose
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Shared Operator *(lhs As XRPose, rhs As XRPose) As XRPose
+  overload: YVR.Core.XRPose.op_Multiply*
+  nameWithType.vb: XRPose.*(XRPose, XRPose)
+  fullName.vb: YVR.Core.XRPose.*(YVR.Core.XRPose, YVR.Core.XRPose)
+  name.vb: '*(XRPose, XRPose)'
+- uid: YVR.Core.XRPose.Inverse
+  commentId: M:YVR.Core.XRPose.Inverse
+  id: Inverse
+  parent: YVR.Core.XRPose
+  langs:
+  - csharp
+  - vb
+  name: Inverse()
+  nameWithType: XRPose.Inverse()
+  fullName: YVR.Core.XRPose.Inverse()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Inverse
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/IYVRLayerHandler.cs
+    startLine: 47
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public XRPose Inverse()
+    return:
+      type: YVR.Core.XRPose
+    content.vb: Public Function Inverse() As XRPose
+  overload: YVR.Core.XRPose.Inverse*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: YVR.Core.XRPose.#ctor*
+  commentId: Overload:YVR.Core.XRPose.#ctor
+  href: YVR.Core.XRPose.-ctor.html#YVR_Core_XRPose__ctor_UnityEngine_Vector3_UnityEngine_Quaternion_
+  name: XRPose
+  nameWithType: XRPose.XRPose
+  fullName: YVR.Core.XRPose.XRPose
+  nameWithType.vb: XRPose.New
+  fullName.vb: YVR.Core.XRPose.New
+  name.vb: New
+- uid: YVR.Core.XRPose.identity*
+  commentId: Overload:YVR.Core.XRPose.identity
+  href: YVR.Core.XRPose.identity.html#YVR_Core_XRPose_identity
+  name: identity
+  nameWithType: XRPose.identity
+  fullName: YVR.Core.XRPose.identity
+- uid: YVR.Core.XRPose
+  commentId: T:YVR.Core.XRPose
+  parent: YVR.Core
+  href: YVR.Core.XRPose.html
+  name: XRPose
+  nameWithType: XRPose
+  fullName: YVR.Core.XRPose
+- uid: YVR.Core.XRPose.op_Multiply*
+  commentId: Overload:YVR.Core.XRPose.op_Multiply
+  href: YVR.Core.XRPose.op_Multiply.html#YVR_Core_XRPose_op_Multiply_YVR_Core_XRPose_YVR_Core_XRPose_
+  name: operator *
+  nameWithType: XRPose.operator *
+  fullName: YVR.Core.XRPose.operator *
+  nameWithType.vb: XRPose.*
+  fullName.vb: YVR.Core.XRPose.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: YVR.Core.XRPose.op_Multiply*
+    name: '*'
+    href: YVR.Core.XRPose.op_Multiply.html#YVR_Core_XRPose_op_Multiply_YVR_Core_XRPose_YVR_Core_XRPose_
+- uid: YVR.Core.XRPose.Inverse*
+  commentId: Overload:YVR.Core.XRPose.Inverse
+  href: YVR.Core.XRPose.Inverse.html#YVR_Core_XRPose_Inverse
+  name: Inverse
+  nameWithType: XRPose.Inverse
+  fullName: YVR.Core.XRPose.Inverse
+memberLayout: SeparatePages

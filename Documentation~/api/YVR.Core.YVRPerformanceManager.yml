@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRPerformanceManager
+  commentId: T:YVR.Core.YVRPerformanceManager
+  id: YVRPerformanceManager
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRPerformanceManager.cpuLevel
+  - YVR.Core.YVRPerformanceManager.cpuUtilLevel
+  - YVR.Core.YVRPerformanceManager.gpuLevel
+  - YVR.Core.YVRPerformanceManager.gpuUtilLevel
+  langs:
+  - csharp
+  - vb
+  name: YVRPerformanceManager
+  nameWithType: YVRPerformanceManager
+  fullName: YVR.Core.YVRPerformanceManager
+  type: Class
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRPerformanceManager
+    path: ../com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The manager for device performance
+  example: []
+  syntax:
+    content: public static class YVRPerformanceManager
+    content.vb: Public Module YVRPerformanceManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: YVR.Core.YVRPerformanceManager.cpuLevel
+  commentId: P:YVR.Core.YVRPerformanceManager.cpuLevel
+  id: cpuLevel
+  parent: YVR.Core.YVRPerformanceManager
+  langs:
+  - csharp
+  - vb
+  name: cpuLevel
+  nameWithType: YVRPerformanceManager.cpuLevel
+  fullName: YVR.Core.YVRPerformanceManager.cpuLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: cpuLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Gets or sets the current CPU performance level (0-4). Lower performance levels save more power.
+  example: []
+  syntax:
+    content: public static int cpuLevel { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property cpuLevel As Integer
+  overload: YVR.Core.YVRPerformanceManager.cpuLevel*
+- uid: YVR.Core.YVRPerformanceManager.gpuLevel
+  commentId: P:YVR.Core.YVRPerformanceManager.gpuLevel
+  id: gpuLevel
+  parent: YVR.Core.YVRPerformanceManager
+  langs:
+  - csharp
+  - vb
+  name: gpuLevel
+  nameWithType: YVRPerformanceManager.gpuLevel
+  fullName: YVR.Core.YVRPerformanceManager.gpuLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: gpuLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+    startLine: 19
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Gets or sets the current GPU performance level (0-5). Lower performance levels save more power.
+  example: []
+  syntax:
+    content: public static int gpuLevel { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared Property gpuLevel As Integer
+  overload: YVR.Core.YVRPerformanceManager.gpuLevel*
+- uid: YVR.Core.YVRPerformanceManager.gpuUtilLevel
+  commentId: P:YVR.Core.YVRPerformanceManager.gpuUtilLevel
+  id: gpuUtilLevel
+  parent: YVR.Core.YVRPerformanceManager
+  langs:
+  - csharp
+  - vb
+  name: gpuUtilLevel
+  nameWithType: YVRPerformanceManager.gpuUtilLevel
+  fullName: YVR.Core.YVRPerformanceManager.gpuUtilLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: gpuUtilLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+    startLine: 28
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the gpu utilize level(0.0-1.0)
+  example: []
+  syntax:
+    content: public static float gpuUtilLevel { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly Property gpuUtilLevel As Single
+  overload: YVR.Core.YVRPerformanceManager.gpuUtilLevel*
+- uid: YVR.Core.YVRPerformanceManager.cpuUtilLevel
+  commentId: P:YVR.Core.YVRPerformanceManager.cpuUtilLevel
+  id: cpuUtilLevel
+  parent: YVR.Core.YVRPerformanceManager
+  langs:
+  - csharp
+  - vb
+  name: cpuUtilLevel
+  nameWithType: YVRPerformanceManager.cpuUtilLevel
+  fullName: YVR.Core.YVRPerformanceManager.cpuUtilLevel
+  type: Property
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: cpuUtilLevel
+    path: ../com.yvr.core/Scripts/Runtime/YVRPerformanceManager.cs
+    startLine: 33
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Get the cpu utilize level(0.0-1.0)
+  example: []
+  syntax:
+    content: public static float cpuUtilLevel { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly Property cpuUtilLevel As Single
+  overload: YVR.Core.YVRPerformanceManager.cpuUtilLevel*
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YVR.Core.YVRPerformanceManager.cpuLevel*
+  commentId: Overload:YVR.Core.YVRPerformanceManager.cpuLevel
+  href: YVR.Core.YVRPerformanceManager.cpuLevel.html#YVR_Core_YVRPerformanceManager_cpuLevel
+  name: cpuLevel
+  nameWithType: YVRPerformanceManager.cpuLevel
+  fullName: YVR.Core.YVRPerformanceManager.cpuLevel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: YVR.Core.YVRPerformanceManager.gpuLevel*
+  commentId: Overload:YVR.Core.YVRPerformanceManager.gpuLevel
+  href: YVR.Core.YVRPerformanceManager.gpuLevel.html#YVR_Core_YVRPerformanceManager_gpuLevel
+  name: gpuLevel
+  nameWithType: YVRPerformanceManager.gpuLevel
+  fullName: YVR.Core.YVRPerformanceManager.gpuLevel
+- uid: YVR.Core.YVRPerformanceManager.gpuUtilLevel*
+  commentId: Overload:YVR.Core.YVRPerformanceManager.gpuUtilLevel
+  href: YVR.Core.YVRPerformanceManager.gpuUtilLevel.html#YVR_Core_YVRPerformanceManager_gpuUtilLevel
+  name: gpuUtilLevel
+  nameWithType: YVRPerformanceManager.gpuUtilLevel
+  fullName: YVR.Core.YVRPerformanceManager.gpuUtilLevel
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YVR.Core.YVRPerformanceManager.cpuUtilLevel*
+  commentId: Overload:YVR.Core.YVRPerformanceManager.cpuUtilLevel
+  href: YVR.Core.YVRPerformanceManager.cpuUtilLevel.html#YVR_Core_YVRPerformanceManager_cpuUtilLevel
+  name: cpuUtilLevel
+  nameWithType: YVRPerformanceManager.cpuUtilLevel
+  fullName: YVR.Core.YVRPerformanceManager.cpuUtilLevel
+memberLayout: SeparatePages

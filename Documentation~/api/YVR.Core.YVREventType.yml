@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVREventType
+  commentId: T:YVR.Core.YVREventType
+  id: YVREventType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVREventType.FocusGained
+  - YVR.Core.YVREventType.FocusLost
+  - YVR.Core.YVREventType.None
+  - YVR.Core.YVREventType.Recenter
+  - YVR.Core.YVREventType.RefreshRate
+  - YVR.Core.YVREventType.VisibilityGained
+  - YVR.Core.YVREventType.VisibilityLost
+  langs:
+  - csharp
+  - vb
+  name: YVREventType
+  nameWithType: YVREventType
+  fullName: YVR.Core.YVREventType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVREventType
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 57
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public enum YVREventType
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Enum YVREventType
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.YVREventType.None
+  commentId: F:YVR.Core.YVREventType.None
+  id: None
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVREventType.None
+  fullName: YVR.Core.YVREventType.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 63
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: No event
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVREventType
+- uid: YVR.Core.YVREventType.VisibilityGained
+  commentId: F:YVR.Core.YVREventType.VisibilityGained
+  id: VisibilityGained
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: VisibilityGained
+  nameWithType: YVREventType.VisibilityGained
+  fullName: YVR.Core.YVREventType.VisibilityGained
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VisibilityGained
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 68
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The application's frames are visible to the user.
+  example: []
+  syntax:
+    content: VisibilityGained = 2
+    return:
+      type: YVR.Core.YVREventType
+- uid: YVR.Core.YVREventType.VisibilityLost
+  commentId: F:YVR.Core.YVREventType.VisibilityLost
+  id: VisibilityLost
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: VisibilityLost
+  nameWithType: YVREventType.VisibilityLost
+  fullName: YVR.Core.YVREventType.VisibilityLost
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: VisibilityLost
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The application's frames are no longer visible to the user.
+  example: []
+  syntax:
+    content: VisibilityLost = 3
+    return:
+      type: YVR.Core.YVREventType
+- uid: YVR.Core.YVREventType.FocusGained
+  commentId: F:YVR.Core.YVREventType.FocusGained
+  id: FocusGained
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: FocusGained
+  nameWithType: YVREventType.FocusGained
+  fullName: YVR.Core.YVREventType.FocusGained
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: FocusGained
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 78
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The current activity is in the foreground and has input focus.
+  example: []
+  syntax:
+    content: FocusGained = 4
+    return:
+      type: YVR.Core.YVREventType
+- uid: YVR.Core.YVREventType.FocusLost
+  commentId: F:YVR.Core.YVREventType.FocusLost
+  id: FocusLost
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: FocusLost
+  nameWithType: YVREventType.FocusLost
+  fullName: YVR.Core.YVREventType.FocusLost
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: FocusLost
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 83
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The current activity is in the background (but possibly still visible) and has lost input focus.
+  example: []
+  syntax:
+    content: FocusLost = 5
+    return:
+      type: YVR.Core.YVREventType
+- uid: YVR.Core.YVREventType.RefreshRate
+  commentId: F:YVR.Core.YVREventType.RefreshRate
+  id: RefreshRate
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: RefreshRate
+  nameWithType: YVREventType.RefreshRate
+  fullName: YVR.Core.YVREventType.RefreshRate
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RefreshRate
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 88
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: The display refresh rate has changed
+  example: []
+  syntax:
+    content: RefreshRate = 6
+    return:
+      type: YVR.Core.YVREventType
+- uid: YVR.Core.YVREventType.Recenter
+  commentId: F:YVR.Core.YVREventType.Recenter
+  id: Recenter
+  parent: YVR.Core.YVREventType
+  langs:
+  - csharp
+  - vb
+  name: Recenter
+  nameWithType: YVREventType.Recenter
+  fullName: YVR.Core.YVREventType.Recenter
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Recenter
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 93
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: recenter occurred
+  example: []
+  syntax:
+    content: Recenter = 20
+    return:
+      type: YVR.Core.YVREventType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVREventType
+  commentId: T:YVR.Core.YVREventType
+  parent: YVR.Core
+  href: YVR.Core.YVREventType.html
+  name: YVREventType
+  nameWithType: YVREventType
+  fullName: YVR.Core.YVREventType
+memberLayout: SeparatePages

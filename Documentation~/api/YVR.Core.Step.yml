@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Step
+  commentId: T:YVR.Core.Step
+  id: Step
+  parent: YVR.Core
+  children:
+  - YVR.Core.Step.Physics
+  - YVR.Core.Step.Render
+  langs:
+  - csharp
+  - vb
+  name: Step
+  nameWithType: Step
+  fullName: YVR.Core.Step
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Step
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 41
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: >-
+      [ExcludeFromDocs]
+
+      public enum Step
+    content.vb: >-
+      <ExcludeFromDocs>
+
+      Public Enum [Step]
+  attributes:
+  - type: UnityEngine.Internal.ExcludeFromDocsAttribute
+    ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
+    arguments: []
+- uid: YVR.Core.Step.Render
+  commentId: F:YVR.Core.Step.Render
+  id: Render
+  parent: YVR.Core.Step
+  langs:
+  - csharp
+  - vb
+  name: Render
+  nameWithType: Step.Render
+  fullName: YVR.Core.Step.Render
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Render
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 44
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Render = -1
+    return:
+      type: YVR.Core.Step
+- uid: YVR.Core.Step.Physics
+  commentId: F:YVR.Core.Step.Physics
+  id: Physics
+  parent: YVR.Core.Step
+  langs:
+  - csharp
+  - vb
+  name: Physics
+  nameWithType: Step.Physics
+  fullName: YVR.Core.Step.Physics
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Physics
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRRigidData.cs
+    startLine: 45
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Physics = 0
+    return:
+      type: YVR.Core.Step
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.Step
+  commentId: T:YVR.Core.Step
+  parent: YVR.Core
+  href: YVR.Core.Step.html
+  name: Step
+  nameWithType: Step
+  fullName: YVR.Core.Step
+memberLayout: SeparatePages

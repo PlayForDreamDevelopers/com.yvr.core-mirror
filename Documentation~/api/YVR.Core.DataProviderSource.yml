@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.DataProviderSource
+  commentId: T:YVR.Core.DataProviderSource
+  id: DataProviderSource
+  parent: YVR.Core
+  children:
+  - YVR.Core.DataProviderSource.Custom
+  - YVR.Core.DataProviderSource.HMD
+  - YVR.Core.DataProviderSource.LeftController
+  - YVR.Core.DataProviderSource.LeftHand
+  - YVR.Core.DataProviderSource.None
+  - YVR.Core.DataProviderSource.RightController
+  - YVR.Core.DataProviderSource.RightHand
+  langs:
+  - csharp
+  - vb
+  name: DataProviderSource
+  nameWithType: DataProviderSource
+  fullName: YVR.Core.DataProviderSource
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: DataProviderSource
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 60
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Enums for input data provider
+  example: []
+  syntax:
+    content: public enum DataProviderSource
+    content.vb: Public Enum DataProviderSource
+- uid: YVR.Core.DataProviderSource.HMD
+  commentId: F:YVR.Core.DataProviderSource.HMD
+  id: HMD
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: HMD
+  nameWithType: DataProviderSource.HMD
+  fullName: YVR.Core.DataProviderSource.HMD
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HMD
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 65
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: HMD data provider
+  example: []
+  syntax:
+    content: HMD = 0
+    return:
+      type: YVR.Core.DataProviderSource
+- uid: YVR.Core.DataProviderSource.LeftController
+  commentId: F:YVR.Core.DataProviderSource.LeftController
+  id: LeftController
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: LeftController
+  nameWithType: DataProviderSource.LeftController
+  fullName: YVR.Core.DataProviderSource.LeftController
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LeftController
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 69
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Left controller data provider
+  example: []
+  syntax:
+    content: LeftController = 1
+    return:
+      type: YVR.Core.DataProviderSource
+- uid: YVR.Core.DataProviderSource.RightController
+  commentId: F:YVR.Core.DataProviderSource.RightController
+  id: RightController
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: RightController
+  nameWithType: DataProviderSource.RightController
+  fullName: YVR.Core.DataProviderSource.RightController
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RightController
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Right controller data provider
+  example: []
+  syntax:
+    content: RightController = 2
+    return:
+      type: YVR.Core.DataProviderSource
+- uid: YVR.Core.DataProviderSource.Custom
+  commentId: F:YVR.Core.DataProviderSource.Custom
+  id: Custom
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: DataProviderSource.Custom
+  fullName: YVR.Core.DataProviderSource.Custom
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Custom
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 77
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Customized data provider
+  example: []
+  syntax:
+    content: Custom = 3
+    return:
+      type: YVR.Core.DataProviderSource
+- uid: YVR.Core.DataProviderSource.LeftHand
+  commentId: F:YVR.Core.DataProviderSource.LeftHand
+  id: LeftHand
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: LeftHand
+  nameWithType: DataProviderSource.LeftHand
+  fullName: YVR.Core.DataProviderSource.LeftHand
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LeftHand
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 81
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Left hand tracking data provider
+  example: []
+  syntax:
+    content: LeftHand = 4
+    return:
+      type: YVR.Core.DataProviderSource
+- uid: YVR.Core.DataProviderSource.RightHand
+  commentId: F:YVR.Core.DataProviderSource.RightHand
+  id: RightHand
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: RightHand
+  nameWithType: DataProviderSource.RightHand
+  fullName: YVR.Core.DataProviderSource.RightHand
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RightHand
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 85
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: Right hand tracking data provider
+  example: []
+  syntax:
+    content: RightHand = 5
+    return:
+      type: YVR.Core.DataProviderSource
+- uid: YVR.Core.DataProviderSource.None
+  commentId: F:YVR.Core.DataProviderSource.None
+  id: None
+  parent: YVR.Core.DataProviderSource
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DataProviderSource.None
+  fullName: YVR.Core.DataProviderSource.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/Controller/YVRControllerData.cs
+    startLine: 89
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: None data provider
+  example: []
+  syntax:
+    content: None = -1
+    return:
+      type: YVR.Core.DataProviderSource
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.DataProviderSource
+  commentId: T:YVR.Core.DataProviderSource
+  parent: YVR.Core
+  href: YVR.Core.DataProviderSource.html
+  name: DataProviderSource
+  nameWithType: DataProviderSource
+  fullName: YVR.Core.DataProviderSource
+memberLayout: SeparatePages

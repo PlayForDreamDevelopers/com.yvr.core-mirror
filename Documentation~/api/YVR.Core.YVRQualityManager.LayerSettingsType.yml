@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType
+  commentId: T:YVR.Core.YVRQualityManager.LayerSettingsType
+  id: YVRQualityManager.LayerSettingsType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRQualityManager.LayerSettingsType.None
+  - YVR.Core.YVRQualityManager.LayerSettingsType.Normal
+  - YVR.Core.YVRQualityManager.LayerSettingsType.Quality
+  langs:
+  - csharp
+  - vb
+  name: YVRQualityManager.LayerSettingsType
+  nameWithType: YVRQualityManager.LayerSettingsType
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: LayerSettingsType
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 60
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRQualityManager.LayerSettingsType
+    content.vb: Public Enum YVRQualityManager.LayerSettingsType
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType.None
+  commentId: F:YVR.Core.YVRQualityManager.LayerSettingsType.None
+  id: None
+  parent: YVR.Core.YVRQualityManager.LayerSettingsType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRQualityManager.LayerSettingsType.None
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 65
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: no super sampling or sharpen
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: YVR.Core.YVRQualityManager.LayerSettingsType
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType.Normal
+  commentId: F:YVR.Core.YVRQualityManager.LayerSettingsType.Normal
+  id: Normal
+  parent: YVR.Core.YVRQualityManager.LayerSettingsType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: YVRQualityManager.LayerSettingsType.Normal
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType.Normal
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Normal
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 69
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: normal super sampling or sharpen
+  example: []
+  syntax:
+    content: Normal = 1
+    return:
+      type: YVR.Core.YVRQualityManager.LayerSettingsType
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType.Quality
+  commentId: F:YVR.Core.YVRQualityManager.LayerSettingsType.Quality
+  id: Quality
+  parent: YVR.Core.YVRQualityManager.LayerSettingsType
+  langs:
+  - csharp
+  - vb
+  name: Quality
+  nameWithType: YVRQualityManager.LayerSettingsType.Quality
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType.Quality
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Quality
+    path: ../com.yvr.core/Scripts/Runtime/YVRQualityData.cs
+    startLine: 73
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  summary: expensive cost super sampling or sharpen
+  example: []
+  syntax:
+    content: Quality = 2
+    return:
+      type: YVR.Core.YVRQualityManager.LayerSettingsType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRQualityManager.LayerSettingsType
+  commentId: T:YVR.Core.YVRQualityManager.LayerSettingsType
+  parent: YVR.Core
+  href: YVR.Core.YVRQualityManager.html
+  name: YVRQualityManager.LayerSettingsType
+  nameWithType: YVRQualityManager.LayerSettingsType
+  fullName: YVR.Core.YVRQualityManager.LayerSettingsType
+  spec.csharp:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+  spec.vb:
+  - uid: YVR.Core.YVRQualityManager
+    name: YVRQualityManager
+    href: YVR.Core.YVRQualityManager.html
+  - name: .
+  - uid: YVR.Core.YVRQualityManager.LayerSettingsType
+    name: LayerSettingsType
+    href: YVR.Core.YVRQualityManager.LayerSettingsType.html
+memberLayout: SeparatePages

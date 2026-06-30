@@ -23,7 +23,18 @@ namespace YVR.Core
 
         private YVRInputModule inputModule
         {
-            get { return _inputModule ?? (_inputModule = FindObjectOfType<YVRInputModule>()); }
+            get
+            {
+                if (_inputModule == null)
+                {
+#if UNITY_2023_1_OR_NEWER
+                    _inputModule = Object.FindAnyObjectByType<YVRInputModule>();
+#else
+                    _inputModule = Object.FindObjectOfType<YVRInputModule>();
+#endif
+                }
+                return _inputModule;
+            }
         }
 
         /// <summary>
@@ -133,14 +144,15 @@ namespace YVR.Core
             else if (inputModule.inputDataProvider.released)
                 cursorMaterial.color = Color.white;
 
+            Vector3 newPosition = hitPosition - inputModule.inputDataProvider.rayDirection * 0.1f;
+            Quaternion newRotation = cursorTransform.rotation;
+
             if (hitNormal != Vector3.zero)
             {
-                Quaternion rotation = cursorTransform.rotation;
-                rotation.SetLookRotation(hitNormal, cursorTransform.forward);
-                cursorTransform.rotation = rotation;
+                newRotation.SetLookRotation(hitNormal, cursorTransform.forward);
             }
 
-            cursorTransform.position = hitPosition - inputModule.inputDataProvider.rayDirection * 0.1f;
+            cursorTransform.SetPositionAndRotation(newPosition, newRotation);
         }
 
         /// <summary>

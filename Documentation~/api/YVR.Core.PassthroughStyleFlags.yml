@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.PassthroughStyleFlags
+  commentId: T:YVR.Core.PassthroughStyleFlags
+  id: PassthroughStyleFlags
+  parent: YVR.Core
+  children:
+  - YVR.Core.PassthroughStyleFlags.HasEdgeColor
+  - YVR.Core.PassthroughStyleFlags.HasTextureColorMap
+  - YVR.Core.PassthroughStyleFlags.HasTextureOpacityFactor
+  langs:
+  - csharp
+  - vb
+  name: PassthroughStyleFlags
+  nameWithType: PassthroughStyleFlags
+  fullName: YVR.Core.PassthroughStyleFlags
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: PassthroughStyleFlags
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum PassthroughStyleFlags
+    content.vb: Public Enum PassthroughStyleFlags
+- uid: YVR.Core.PassthroughStyleFlags.HasTextureOpacityFactor
+  commentId: F:YVR.Core.PassthroughStyleFlags.HasTextureOpacityFactor
+  id: HasTextureOpacityFactor
+  parent: YVR.Core.PassthroughStyleFlags
+  langs:
+  - csharp
+  - vb
+  name: HasTextureOpacityFactor
+  nameWithType: PassthroughStyleFlags.HasTextureOpacityFactor
+  fullName: YVR.Core.PassthroughStyleFlags.HasTextureOpacityFactor
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HasTextureOpacityFactor
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HasTextureOpacityFactor = 1
+    return:
+      type: YVR.Core.PassthroughStyleFlags
+- uid: YVR.Core.PassthroughStyleFlags.HasEdgeColor
+  commentId: F:YVR.Core.PassthroughStyleFlags.HasEdgeColor
+  id: HasEdgeColor
+  parent: YVR.Core.PassthroughStyleFlags
+  langs:
+  - csharp
+  - vb
+  name: HasEdgeColor
+  nameWithType: PassthroughStyleFlags.HasEdgeColor
+  fullName: YVR.Core.PassthroughStyleFlags.HasEdgeColor
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HasEdgeColor
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HasEdgeColor = 2
+    return:
+      type: YVR.Core.PassthroughStyleFlags
+- uid: YVR.Core.PassthroughStyleFlags.HasTextureColorMap
+  commentId: F:YVR.Core.PassthroughStyleFlags.HasTextureColorMap
+  id: HasTextureColorMap
+  parent: YVR.Core.PassthroughStyleFlags
+  langs:
+  - csharp
+  - vb
+  name: HasTextureColorMap
+  nameWithType: PassthroughStyleFlags.HasTextureColorMap
+  fullName: YVR.Core.PassthroughStyleFlags.HasTextureColorMap
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: HasTextureColorMap
+    path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughStyleFlags.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: HasTextureColorMap = 4
+    return:
+      type: YVR.Core.PassthroughStyleFlags
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.PassthroughStyleFlags
+  commentId: T:YVR.Core.PassthroughStyleFlags
+  parent: YVR.Core
+  href: YVR.Core.PassthroughStyleFlags.html
+  name: PassthroughStyleFlags
+  nameWithType: PassthroughStyleFlags
+  fullName: YVR.Core.PassthroughStyleFlags
+memberLayout: SeparatePages

@@ -1,0 +1,302 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.YVRSpatialAnchorComponentType
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentType
+  id: YVRSpatialAnchorComponentType
+  parent: YVR.Core
+  children:
+  - YVR.Core.YVRSpatialAnchorComponentType.Bounded2D
+  - YVR.Core.YVRSpatialAnchorComponentType.Bounded3D
+  - YVR.Core.YVRSpatialAnchorComponentType.Locatable
+  - YVR.Core.YVRSpatialAnchorComponentType.None
+  - YVR.Core.YVRSpatialAnchorComponentType.RoomLayout
+  - YVR.Core.YVRSpatialAnchorComponentType.SemanticLabels
+  - YVR.Core.YVRSpatialAnchorComponentType.Sharable
+  - YVR.Core.YVRSpatialAnchorComponentType.SpaceContainer
+  - YVR.Core.YVRSpatialAnchorComponentType.Storable
+  langs:
+  - csharp
+  - vb
+  name: YVRSpatialAnchorComponentType
+  nameWithType: YVRSpatialAnchorComponentType
+  fullName: YVR.Core.YVRSpatialAnchorComponentType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: YVRSpatialAnchorComponentType
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum YVRSpatialAnchorComponentType
+    content.vb: Public Enum YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.None
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.None
+  id: None
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: YVRSpatialAnchorComponentType.None
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.None
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: None
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: None = -1
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.Locatable
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.Locatable
+  id: Locatable
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: Locatable
+  nameWithType: YVRSpatialAnchorComponentType.Locatable
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.Locatable
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Locatable
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Locatable = 0
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.Storable
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.Storable
+  id: Storable
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: Storable
+  nameWithType: YVRSpatialAnchorComponentType.Storable
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.Storable
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Storable
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Storable = 1
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.Sharable
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.Sharable
+  id: Sharable
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: Sharable
+  nameWithType: YVRSpatialAnchorComponentType.Sharable
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.Sharable
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Sharable
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Sharable = 2
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.Bounded2D
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.Bounded2D
+  id: Bounded2D
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: Bounded2D
+  nameWithType: YVRSpatialAnchorComponentType.Bounded2D
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.Bounded2D
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Bounded2D
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Bounded2D = 3
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.Bounded3D
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.Bounded3D
+  id: Bounded3D
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: Bounded3D
+  nameWithType: YVRSpatialAnchorComponentType.Bounded3D
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.Bounded3D
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Bounded3D
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Bounded3D = 4
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.SemanticLabels
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.SemanticLabels
+  id: SemanticLabels
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: SemanticLabels
+  nameWithType: YVRSpatialAnchorComponentType.SemanticLabels
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.SemanticLabels
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SemanticLabels
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: SemanticLabels = 5
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.RoomLayout
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.RoomLayout
+  id: RoomLayout
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: RoomLayout
+  nameWithType: YVRSpatialAnchorComponentType.RoomLayout
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.RoomLayout
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: RoomLayout
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: RoomLayout = 6
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+- uid: YVR.Core.YVRSpatialAnchorComponentType.SpaceContainer
+  commentId: F:YVR.Core.YVRSpatialAnchorComponentType.SpaceContainer
+  id: SpaceContainer
+  parent: YVR.Core.YVRSpatialAnchorComponentType
+  langs:
+  - csharp
+  - vb
+  name: SpaceContainer
+  nameWithType: YVRSpatialAnchorComponentType.SpaceContainer
+  fullName: YVR.Core.YVRSpatialAnchorComponentType.SpaceContainer
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SpaceContainer
+    path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchorComponentType.cs
+    startLine: 12
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: SpaceContainer = 7
+    return:
+      type: YVR.Core.YVRSpatialAnchorComponentType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.YVRSpatialAnchorComponentType
+  commentId: T:YVR.Core.YVRSpatialAnchorComponentType
+  parent: YVR.Core
+  href: YVR.Core.YVRSpatialAnchorComponentType.html
+  name: YVRSpatialAnchorComponentType
+  nameWithType: YVRSpatialAnchorComponentType
+  fullName: YVR.Core.YVRSpatialAnchorComponentType
+memberLayout: SeparatePages

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  id: YVRProjectSetup.TaskCategory
+  parent: YVR.Core.Editor
+  children:
+  - YVR.Core.Editor.YVRProjectSetup.TaskCategory.Performance
+  - YVR.Core.Editor.YVRProjectSetup.TaskCategory.Porting
+  - YVR.Core.Editor.YVRProjectSetup.TaskCategory.ProjectSetup
+  langs:
+  - csharp
+  - vb
+  name: YVRProjectSetup.TaskCategory
+  nameWithType: YVRProjectSetup.TaskCategory
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: TaskCategory
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 29
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: public enum YVRProjectSetup.TaskCategory
+    content.vb: Public Enum YVRProjectSetup.TaskCategory
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory.ProjectSetup
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskCategory.ProjectSetup
+  id: ProjectSetup
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  langs:
+  - csharp
+  - vb
+  name: ProjectSetup
+  nameWithType: YVRProjectSetup.TaskCategory.ProjectSetup
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory.ProjectSetup
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ProjectSetup
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 31
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: ProjectSetup = 0
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory.Performance
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskCategory.Performance
+  id: Performance
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  langs:
+  - csharp
+  - vb
+  name: Performance
+  nameWithType: YVRProjectSetup.TaskCategory.Performance
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory.Performance
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Performance
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 32
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Performance = 1
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory.Porting
+  commentId: F:YVR.Core.Editor.YVRProjectSetup.TaskCategory.Porting
+  id: Porting
+  parent: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  langs:
+  - csharp
+  - vb
+  name: Porting
+  nameWithType: YVRProjectSetup.TaskCategory.Porting
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory.Porting
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Porting
+    path: ../com.yvr.core/Scripts/Editor/ProjectSetup/YVRProjectSetup.cs
+    startLine: 33
+  assemblies:
+  - YVR.Core.Editor
+  namespace: YVR.Core.Editor
+  syntax:
+    content: Porting = 2
+    return:
+      type: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+references:
+- uid: YVR.Core.Editor
+  commentId: N:YVR.Core.Editor
+  href: YVR.html
+  name: YVR.Core.Editor
+  nameWithType: YVR.Core.Editor
+  fullName: YVR.Core.Editor
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  - name: .
+  - uid: YVR.Core.Editor
+    name: Editor
+    href: YVR.Core.Editor.html
+- uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  commentId: T:YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  parent: YVR.Core.Editor
+  href: YVR.Core.Editor.YVRProjectSetup.html
+  name: YVRProjectSetup.TaskCategory
+  nameWithType: YVRProjectSetup.TaskCategory
+  fullName: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+  spec.csharp:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: TaskCategory
+    href: YVR.Core.Editor.YVRProjectSetup.TaskCategory.html
+  spec.vb:
+  - uid: YVR.Core.Editor.YVRProjectSetup
+    name: YVRProjectSetup
+    href: YVR.Core.Editor.YVRProjectSetup.html
+  - name: .
+  - uid: YVR.Core.Editor.YVRProjectSetup.TaskCategory
+    name: TaskCategory
+    href: YVR.Core.Editor.YVRProjectSetup.TaskCategory.html
+memberLayout: SeparatePages

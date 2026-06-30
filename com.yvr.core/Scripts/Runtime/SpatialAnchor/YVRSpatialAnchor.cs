@@ -212,11 +212,6 @@ namespace YVR.Core
             rotation = default;
 
             bool result = YVRPlugin.Instance.GetSpatialAnchorPose(anchorHandle, ref position, ref rotation, ref locationFlags);
-            GetSpatialAnchorComponentStatus(anchorHandle, YVRSpatialAnchorComponentType.SemanticLabels, out YVRSpatialAnchorComponentStatus status);
-            if (status.enable)
-            {
-                rotation = rotation * YVRSceneAnchor.k_RotateY180;
-            }
             return result;
         }
 
