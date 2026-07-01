@@ -5,8 +5,10 @@ items:
   id: YVR.Core
   children:
   - YVR.Core.ActiveInputDevice
+  - YVR.Core.ColorSpaceType
   - YVR.Core.Colorf
   - YVR.Core.ControllerType
+  - YVR.Core.CubeShapeHandler
   - YVR.Core.CylinderShapeHandler
   - YVR.Core.DataProviderSource
   - YVR.Core.DeviceNode
@@ -33,6 +35,7 @@ items:
   - YVR.Core.ILayerShapeHandler
   - YVR.Core.IYVRLayerHandle
   - YVR.Core.InputDeviceTest
+  - YVR.Core.LayerShapeData
   - YVR.Core.PassthroughColorLut
   - YVR.Core.PassthroughColorLutChannels
   - YVR.Core.PassthroughColorLutData
@@ -42,6 +45,7 @@ items:
   - YVR.Core.PassthroughStyleFlags
   - YVR.Core.PoseData
   - YVR.Core.Posef
+  - YVR.Core.ProjectionHandler
   - YVR.Core.QuadShapeHandler
   - YVR.Core.StereoRenderingMode
   - YVR.Core.VRApiHandlersTrigger
@@ -124,6 +128,7 @@ items:
   - YVR.Core.YVRPlugin
   - YVR.Core.YVRPlugin.ControllerState
   - YVR.Core.YVRPluginAndroid
+  - YVR.Core.YVRPluginStub
   - YVR.Core.YVRPluginWin
   - YVR.Core.YVRPointerEventData
   - YVR.Core.YVRQualityManager
@@ -738,6 +743,13 @@ references:
   name: YVRHMDManager
   nameWithType: YVRHMDManager
   fullName: YVR.Core.YVRHMDManager
+- uid: YVR.Core.LayerShapeData
+  commentId: T:YVR.Core.LayerShapeData
+  parent: YVR.Core
+  href: YVR.Core.LayerShapeData.html
+  name: LayerShapeData
+  nameWithType: LayerShapeData
+  fullName: YVR.Core.LayerShapeData
 - uid: YVR.Core.YVRRoomLayout
   commentId: T:YVR.Core.YVRRoomLayout
   parent: YVR.Core
@@ -794,6 +806,12 @@ references:
   - uid: YVR.Core.YVRHMDEmulator.TranslationKeys
     name: TranslationKeys
     href: YVR.Core.YVRHMDEmulator.TranslationKeys.html
+- uid: YVR.Core.ProjectionHandler
+  commentId: T:YVR.Core.ProjectionHandler
+  href: YVR.Core.ProjectionHandler.html
+  name: ProjectionHandler
+  nameWithType: ProjectionHandler
+  fullName: YVR.Core.ProjectionHandler
 - uid: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
   commentId: T:YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo
   href: YVR.Core.YVRSpatialAnchorSetStatusCompleteInfo.html
@@ -1470,6 +1488,13 @@ references:
   name: YVRSemanticClassification
   nameWithType: YVRSemanticClassification
   fullName: YVR.Core.YVRSemanticClassification
+- uid: YVR.Core.ColorSpaceType
+  commentId: T:YVR.Core.ColorSpaceType
+  parent: YVR.Core
+  href: YVR.Core.ColorSpaceType.html
+  name: ColorSpaceType
+  nameWithType: ColorSpaceType
+  fullName: YVR.Core.ColorSpaceType
 - uid: YVR.Core.YVRSpatialAnchorQueryInfo
   commentId: T:YVR.Core.YVRSpatialAnchorQueryInfo
   parent: YVR.Core
@@ -1477,6 +1502,13 @@ references:
   name: YVRSpatialAnchorQueryInfo
   nameWithType: YVRSpatialAnchorQueryInfo
   fullName: YVR.Core.YVRSpatialAnchorQueryInfo
+- uid: YVR.Core.YVRPluginStub
+  commentId: T:YVR.Core.YVRPluginStub
+  parent: YVR.Core
+  href: YVR.Core.YVRPluginStub.html
+  name: YVRPluginStub
+  nameWithType: YVRPluginStub
+  fullName: YVR.Core.YVRPluginStub
 - uid: YVR.Core.YVRBaseRig
   commentId: T:YVR.Core.YVRBaseRig
   parent: YVR.Core
@@ -1609,6 +1641,12 @@ references:
   - uid: YVR.Core.YVRCameraRenderer.EyeRenderDescription
     name: EyeRenderDescription
     href: YVR.Core.YVRCameraRenderer.EyeRenderDescription.html
+- uid: YVR.Core.CubeShapeHandler
+  commentId: T:YVR.Core.CubeShapeHandler
+  href: YVR.Core.CubeShapeHandler.html
+  name: CubeShapeHandler
+  nameWithType: CubeShapeHandler
+  fullName: YVR.Core.CubeShapeHandler
 - uid: YVR.Core.PassthroughColorLut
   commentId: T:YVR.Core.PassthroughColorLut
   parent: YVR.Core

@@ -592,7 +592,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Finalize
     path: ../com.yvr.core/Scripts/Runtime/Passthrough/PassthroughColorLut.cs
-    startLine: 444
+    startLine: 437
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

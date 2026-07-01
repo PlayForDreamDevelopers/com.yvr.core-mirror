@@ -5,8 +5,8 @@ items:
   id: ILayerShapeHandler
   parent: YVR.Core
   children:
-  - YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
-  - YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+  - YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  - YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   langs:
   - csharp
   - vb
@@ -28,16 +28,16 @@ items:
   syntax:
     content: public interface ILayerShapeHandler
     content.vb: Public Interface ILayerShapeHandler
-- uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
-  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
-  id: HandleLayerPose(YVR.Core.IYVRLayerHandle,System.Object[])
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  id: HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   parent: YVR.Core.ILayerShapeHandler
   langs:
   - csharp
   - vb
-  name: HandleLayerPose(IYVRLayerHandle, params object[])
-  nameWithType: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, params object[])
-  fullName: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, params object[])
+  name: HandleLayerPose(IYVRLayerHandle, LayerShapeData)
+  nameWithType: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, LayerShapeData)
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, YVR.Core.LayerShapeData)
   type: Method
   source:
     remote:
@@ -51,27 +51,24 @@ items:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: void HandleLayerPose(IYVRLayerHandle layerHandle, params object[] data)
+    content: void HandleLayerPose(IYVRLayerHandle layerHandle, LayerShapeData data)
     parameters:
     - id: layerHandle
       type: YVR.Core.IYVRLayerHandle
     - id: data
-      type: System.Object[]
-    content.vb: Sub HandleLayerPose(layerHandle As IYVRLayerHandle, ParamArray data As Object())
+      type: YVR.Core.LayerShapeData
+    content.vb: Sub HandleLayerPose(layerHandle As IYVRLayerHandle, data As LayerShapeData)
   overload: YVR.Core.ILayerShapeHandler.HandleLayerPose*
-  nameWithType.vb: ILayerShapeHandler.HandleLayerPose(IYVRLayerHandle, ParamArray Object())
-  fullName.vb: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, ParamArray Object())
-  name.vb: HandleLayerPose(IYVRLayerHandle, ParamArray Object())
-- uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
-  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
-  id: HandleLayerShape(YVR.Core.IYVRLayerHandle,System.Object[])
+- uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  id: HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   parent: YVR.Core.ILayerShapeHandler
   langs:
   - csharp
   - vb
-  name: HandleLayerShape(IYVRLayerHandle, params object[])
-  nameWithType: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, params object[])
-  fullName: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, params object[])
+  name: HandleLayerShape(IYVRLayerHandle, LayerShapeData)
+  nameWithType: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, LayerShapeData)
+  fullName: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, YVR.Core.LayerShapeData)
   type: Method
   source:
     remote:
@@ -85,17 +82,14 @@ items:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: void HandleLayerShape(IYVRLayerHandle layerHandle, params object[] data)
+    content: void HandleLayerShape(IYVRLayerHandle layerHandle, LayerShapeData data)
     parameters:
     - id: layerHandle
       type: YVR.Core.IYVRLayerHandle
     - id: data
-      type: System.Object[]
-    content.vb: Sub HandleLayerShape(layerHandle As IYVRLayerHandle, ParamArray data As Object())
+      type: YVR.Core.LayerShapeData
+    content.vb: Sub HandleLayerShape(layerHandle As IYVRLayerHandle, data As LayerShapeData)
   overload: YVR.Core.ILayerShapeHandler.HandleLayerShape*
-  nameWithType.vb: ILayerShapeHandler.HandleLayerShape(IYVRLayerHandle, ParamArray Object())
-  fullName.vb: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, ParamArray Object())
-  name.vb: HandleLayerShape(IYVRLayerHandle, ParamArray Object())
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core
@@ -121,7 +115,7 @@ references:
     href: YVR.Core.html
 - uid: YVR.Core.ILayerShapeHandler.HandleLayerPose*
   commentId: Overload:YVR.Core.ILayerShapeHandler.HandleLayerPose
-  href: YVR.Core.ILayerShapeHandler.HandleLayerPose.html#YVR_Core_ILayerShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_System_Object___
+  href: YVR.Core.ILayerShapeHandler.HandleLayerPose.html#YVR_Core_ILayerShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_YVR_Core_LayerShapeData_
   name: HandleLayerPose
   nameWithType: ILayerShapeHandler.HandleLayerPose
   fullName: YVR.Core.ILayerShapeHandler.HandleLayerPose
@@ -132,32 +126,16 @@ references:
   name: IYVRLayerHandle
   nameWithType: IYVRLayerHandle
   fullName: YVR.Core.IYVRLayerHandle
-- uid: System.Object[]
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object[]
-  nameWithType: object[]
-  fullName: object[]
-  nameWithType.vb: Object()
-  fullName.vb: Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: (
-  - name: )
+- uid: YVR.Core.LayerShapeData
+  commentId: T:YVR.Core.LayerShapeData
+  parent: YVR.Core
+  href: YVR.Core.LayerShapeData.html
+  name: LayerShapeData
+  nameWithType: LayerShapeData
+  fullName: YVR.Core.LayerShapeData
 - uid: YVR.Core.ILayerShapeHandler.HandleLayerShape*
   commentId: Overload:YVR.Core.ILayerShapeHandler.HandleLayerShape
-  href: YVR.Core.ILayerShapeHandler.HandleLayerShape.html#YVR_Core_ILayerShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_System_Object___
+  href: YVR.Core.ILayerShapeHandler.HandleLayerShape.html#YVR_Core_ILayerShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_YVR_Core_LayerShapeData_
   name: HandleLayerShape
   nameWithType: ILayerShapeHandler.HandleLayerShape
   fullName: YVR.Core.ILayerShapeHandler.HandleLayerShape

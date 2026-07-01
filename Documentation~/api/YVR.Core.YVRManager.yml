@@ -1085,7 +1085,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetAppSWEnable
     path: ../com.yvr.core/Scripts/Runtime/YVRManager.cs
-    startLine: 247
+    startLine: 246
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

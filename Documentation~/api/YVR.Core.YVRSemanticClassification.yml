@@ -11,8 +11,10 @@ items:
   - YVR.Core.YVRSemanticClassification.k_DoorFrame
   - YVR.Core.YVRSemanticClassification.k_Floor
   - YVR.Core.YVRSemanticClassification.k_Lamp
+  - YVR.Core.YVRSemanticClassification.k_MeshBoundary
   - YVR.Core.YVRSemanticClassification.k_Other
   - YVR.Core.YVRSemanticClassification.k_Plant
+  - YVR.Core.YVRSemanticClassification.k_SafetyBoundary
   - YVR.Core.YVRSemanticClassification.k_Screen
   - YVR.Core.YVRSemanticClassification.k_Storage
   - YVR.Core.YVRSemanticClassification.k_Table
@@ -400,6 +402,60 @@ items:
     return:
       type: System.String
     content.vb: Public Const k_Table As String = "TABLE"
+- uid: YVR.Core.YVRSemanticClassification.k_MeshBoundary
+  commentId: F:YVR.Core.YVRSemanticClassification.k_MeshBoundary
+  id: k_MeshBoundary
+  parent: YVR.Core.YVRSemanticClassification
+  langs:
+  - csharp
+  - vb
+  name: k_MeshBoundary
+  nameWithType: YVRSemanticClassification.k_MeshBoundary
+  fullName: YVR.Core.YVRSemanticClassification.k_MeshBoundary
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRSemanticClassification.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: k_MeshBoundary
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRSemanticClassification.cs
+    startLine: 34
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public const string k_MeshBoundary = "MESH_BOUNDARY"
+    return:
+      type: System.String
+    content.vb: Public Const k_MeshBoundary As String = "MESH_BOUNDARY"
+- uid: YVR.Core.YVRSemanticClassification.k_SafetyBoundary
+  commentId: F:YVR.Core.YVRSemanticClassification.k_SafetyBoundary
+  id: k_SafetyBoundary
+  parent: YVR.Core.YVRSemanticClassification
+  langs:
+  - csharp
+  - vb
+  name: k_SafetyBoundary
+  nameWithType: YVRSemanticClassification.k_SafetyBoundary
+  fullName: YVR.Core.YVRSemanticClassification.k_SafetyBoundary
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/SceneAnchor/YVRSemanticClassification.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: k_SafetyBoundary
+    path: ../com.yvr.core/Scripts/Runtime/SceneAnchor/YVRSemanticClassification.cs
+    startLine: 36
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public const string k_SafetyBoundary = "SAFETY_BOUNDARY"
+    return:
+      type: System.String
+    content.vb: Public Const k_SafetyBoundary As String = "SAFETY_BOUNDARY"
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core

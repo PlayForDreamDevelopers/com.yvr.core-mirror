@@ -55,6 +55,8 @@
               href: ./AdvancedFeatures/FocusAwareness.md
             - name: Display Refresh Rate
               href: ./AdvancedFeatures/DisplayRefreshRate.md
+            - name: Display and Rendering Configuration
+              href: ./AdvancedFeatures/DisplayRenderingConfig.md
             - name: Compositor Layers
               href: ./AdvancedFeatures/CompositorLayers.md
             - name: Supersampling And Sharpening

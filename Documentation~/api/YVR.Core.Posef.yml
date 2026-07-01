@@ -5,7 +5,6 @@ items:
   id: Posef
   parent: YVR.Core
   children:
-  - YVR.Core.Posef.ToJointPosef(YVR.Core.HandType)
   - YVR.Core.Posef.ToString
   - YVR.Core.Posef.orientation
   - YVR.Core.Posef.position
@@ -120,35 +119,6 @@ items:
     content.vb: Public Overrides Function ToString() As String
   overridden: System.ValueType.ToString
   overload: YVR.Core.Posef.ToString*
-- uid: YVR.Core.Posef.ToJointPosef(YVR.Core.HandType)
-  commentId: M:YVR.Core.Posef.ToJointPosef(YVR.Core.HandType)
-  id: ToJointPosef(YVR.Core.HandType)
-  parent: YVR.Core.Posef
-  langs:
-  - csharp
-  - vb
-  name: ToJointPosef(HandType)
-  nameWithType: Posef.ToJointPosef(HandType)
-  fullName: YVR.Core.Posef.ToJointPosef(YVR.Core.HandType)
-  type: Method
-  source:
-    remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-      branch: master
-      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: ToJointPosef
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 105
-  assemblies:
-  - YVR.Core.Runtime
-  namespace: YVR.Core
-  syntax:
-    content: public void ToJointPosef(HandType hand)
-    parameters:
-    - id: hand
-      type: YVR.Core.HandType
-    content.vb: Public Sub ToJointPosef(hand As HandType)
-  overload: YVR.Core.Posef.ToJointPosef*
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core
@@ -426,17 +396,4 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: YVR.Core.Posef.ToJointPosef*
-  commentId: Overload:YVR.Core.Posef.ToJointPosef
-  href: YVR.Core.Posef.ToJointPosef.html#YVR_Core_Posef_ToJointPosef_YVR_Core_HandType_
-  name: ToJointPosef
-  nameWithType: Posef.ToJointPosef
-  fullName: YVR.Core.Posef.ToJointPosef
-- uid: YVR.Core.HandType
-  commentId: T:YVR.Core.HandType
-  parent: YVR.Core
-  href: YVR.Core.HandType.html
-  name: HandType
-  nameWithType: HandType
-  fullName: YVR.Core.HandType
 memberLayout: SeparatePages

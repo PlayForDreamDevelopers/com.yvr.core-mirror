@@ -51,12 +51,17 @@ void YVRDisplayProvider::initializeUnityGfxThreadLifecycle(UnityXRDisplayGraphic
 UnitySubsystemErrorCode YVRDisplayProvider::initialize()
 {
     AnnounceCallingFunc();
-
     // Register Unity Graphic related called
     UnityXRDisplayGraphicsThreadProvider unityGfxThreadProvider{};
     unityGfxThreadProvider.userData = &m_Context;
     initializeUnityGfxThreadLifecycle(unityGfxThreadProvider);
-    m_Context.displayInterface->RegisterProviderForGraphicsThread(m_SystemHandle, &unityGfxThreadProvider);
+    const UnitySubsystemErrorCode registerResult =
+        m_Context.displayInterface->RegisterProviderForGraphicsThread(m_SystemHandle, &unityGfxThreadProvider);
+    if (registerResult != kUnitySubsystemErrorCodeSuccess)
+    {
+        YError("Failed to register Unity graphics thread provider result=%d", registerResult);
+        return registerResult;
+    }
 
     CreateMarker(&populateNextFrameDescMarker, "NativeCore-PopulateNextFrameDescMarker");
     CreateMarker(&submitCurrentFrameMarker, "NativeCore-SubmitCurrentFrameMarker");
@@ -87,10 +92,13 @@ bool textureInitialize = false;
 UnitySubsystemErrorCode YVRDisplayProvider::onGfxThreadStart(UnityXRRenderingCapabilities* renderingCaps)
 {
     AnnounceCallingFunc();
-
     if (startNeverCalled)
     {
-        plugin.lifecycleMgr->onUnityXRGfxStart();
+        if (!plugin.lifecycleMgr->onUnityXRGfxStart())
+        {
+            YError("Failed to start Unity graphics thread because OpenXR session creation failed");
+            return kUnitySubsystemErrorCodeFailure;
+        }
         startNeverCalled = false;
     }
 
@@ -102,12 +110,15 @@ UnitySubsystemErrorCode YVRDisplayProvider::onGfxThreadStart(UnityXRRenderingCap
     renderingCaps->invalidateRenderStateAfterEachCallback = true; // Invalid Unity set render state, as the native plugin will modify some state
     // Let Unity not call swap chain while not in development build mode to save performance
     renderingCaps->skipPresentToMainScreen = !plugin.developmentBuildMode;
-
     if (plugin.renderMgr->configsMgr->passthroughProviderEnable())
     {
         plugin.passThroughProviderMgr->createPassthroughProvider();
         plugin.passThroughProviderMgr->allocSwapChain();
         plugin.passThroughProviderMgr->startPassthroughProvider();
+        if (!plugin.passThroughProviderMgr->isPassthroughInitialized())
+        {
+            YWarn("Passthrough provider is unavailable; continuing without passthrough swapchain");
+        }
     }
 
     return kUnitySubsystemErrorCodeSuccess;
@@ -178,7 +189,11 @@ UnitySubsystemErrorCode YVRDisplayProvider::onGfxThreadPopulateNextFrameDesc(con
             OpenXRAPI(xrSetColorSpaceFB(plugin.openxrMgr->program->session,XrColorSpaceFB::XR_COLOR_SPACE_P3_FB));
         }
 
-        initializeUnityTexture();
+        if (!initializeUnityTexture())
+        {
+            YError("Failed to initialize Unity textures because projection swapchain creation failed");
+            return kUnitySubsystemErrorCodeFailure;
+        }
         textureInitialize = true;
         plugin.gfxTasksMgr->PushOnPreSubmitTask(
             new SetFoveationDataEventTask(plugin.renderMgr->configsMgr->getFFRLevel(), plugin.renderMgr->configsMgr->getFFRDynamic()));
@@ -238,7 +253,7 @@ void YVRDisplayProvider::DestroyUnityTexture()
 }
 
 
-void YVRDisplayProvider::initializeRenderLayer()
+bool YVRDisplayProvider::initializeRenderLayer()
 {
     AnnounceCallingFunc();
     const xrTextureType textureType = plugin.renderMgr->configsMgr->isUsingSinglePass() || plugin.renderMgr->configsMgr->isUsingQuadViews()
@@ -250,8 +265,14 @@ void YVRDisplayProvider::initializeRenderLayer()
         !plugin.renderMgr->configsMgr->isUsingSinglePass(), true,
         false, Projection, kEyeMaskBoth};
 
-    const int layerId = plugin.renderMgr->renderLayersMgr->createLayer(layerCreateInfo);
-    plugin.renderMgr->renderLayersMgr->addActiveLayer(layerId);
+    plugin.renderMgr->renderLayersMgr->createLayer(layerCreateInfo);
+    YVRProjectionRenderLayer* eyeBufferLayer = plugin.renderMgr->renderLayersMgr->getEyeBufferLayer();
+    if (eyeBufferLayer == nullptr || !eyeBufferLayer->isSwapchainReady())
+    {
+        YError("Eye buffer projection swapchain initialization failed");
+        plugin.renderMgr->renderLayersMgr->deleteEyeBufferLayer(true);
+        return false;
+    }
 
     if (plugin.renderMgr->configsMgr->hasExtraRenderPass())
     {
@@ -261,16 +282,25 @@ void YVRDisplayProvider::initializeRenderLayer()
                                                          SWAP_BUFFER_NUM, textureType, kLayerFlagOpaque,
                                                          -1, !plugin.renderMgr->configsMgr->isUsingSinglePass(),
                                                          true, false, Projection, kEyeMaskBoth};
-        int environmentLayerId = plugin.renderMgr->renderLayersMgr->createLayer(environmentLayerCreateInfo);
-        plugin.renderMgr->renderLayersMgr->addActiveLayer(environmentLayerId);
+        plugin.renderMgr->renderLayersMgr->createLayer(environmentLayerCreateInfo);
+        YVRProjectionRenderLayer* environmentLayer = plugin.renderMgr->renderLayersMgr->getEnvironmentLayer();
+        if (environmentLayer == nullptr || !environmentLayer->isSwapchainReady())
+        {
+            YError("Environment projection swapchain initialization failed");
+            plugin.renderMgr->renderLayersMgr->deleteEnvironmentBufferLayer(true);
+            plugin.renderMgr->renderLayersMgr->deleteEyeBufferLayer(true);
+            return false;
+        }
     }
+
+    return true;
 }
 
-void YVRDisplayProvider::initializeUnityTexture()
+bool YVRDisplayProvider::initializeUnityTexture()
 {
     AnnounceCallingFunc();
 
-    initializeRenderLayer();
+    if (!initializeRenderLayer()) return false;
 
     // If use single pass, only unityTextureDescArray[0] will be used
     for (int i = 0; i != EYE_NUM; ++i)
@@ -376,6 +406,8 @@ void YVRDisplayProvider::initializeUnityTexture()
             UnityXRAPI(m_Context.displayInterface->CreateTexture(m_SystemHandle, &unityMotionVectorTextureDesc, &unityMotionVectorTextureIDArray[i]));
         }
     }
+
+    return true;
 }
 
 void YVRDisplayProvider::destroyTextures()

@@ -13,8 +13,8 @@ items:
   - YVR.Core.YVRLayerEditorHandle.DestroyLayerAsync(System.Int32,System.Boolean,System.Action)
   - YVR.Core.YVRLayerEditorHandle.GetAlLayersColorHandle
   - YVR.Core.YVRLayerEditorHandle.GetEyeBufferLayerId
-  - YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32)
-  - YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  - YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
+  - YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
   - YVR.Core.YVRLayerEditorHandle.GetLayerSurface(System.Int32)
   - YVR.Core.YVRLayerEditorHandle.GetLayersCount
   - YVR.Core.YVRLayerEditorHandle.PrepareAddLayer(System.Action)
@@ -629,16 +629,16 @@ items:
   overload: YVR.Core.YVRLayerEditorHandle.GetEyeBufferLayerId*
   implements:
   - YVR.Core.IYVRLayerHandle.GetEyeBufferLayerId
-- uid: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,System.Int32)
-  commentId: M:YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,System.Int32)
-  id: GetLayerColorHandle(System.Int32,System.Int32)
+- uid: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
+  commentId: M:YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
+  id: GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
   parent: YVR.Core.YVRLayerEditorHandle
   langs:
   - csharp
   - vb
-  name: GetLayerColorHandle(int, int)
-  nameWithType: YVRLayerEditorHandle.GetLayerColorHandle(int, int)
-  fullName: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(int, int)
+  name: GetLayerColorHandle(int, YVRRenderLayerEyeMask, int)
+  nameWithType: YVRLayerEditorHandle.GetLayerColorHandle(int, YVRRenderLayerEyeMask, int)
+  fullName: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(int, YVR.Core.YVRRenderLayerEyeMask, int)
   type: Method
   source:
     remote:
@@ -653,31 +653,33 @@ items:
   namespace: YVR.Core
   example: []
   syntax:
-    content: public int GetLayerColorHandle(int layerId, int index)
+    content: public int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask, int index)
     parameters:
     - id: layerId
       type: System.Int32
+    - id: eyeMask
+      type: YVR.Core.YVRRenderLayerEyeMask
     - id: index
       type: System.Int32
     return:
       type: System.Int32
-    content.vb: Public Function GetLayerColorHandle(layerId As Integer, index As Integer) As Integer
+    content.vb: Public Function GetLayerColorHandle(layerId As Integer, eyeMask As YVRRenderLayerEyeMask, index As Integer) As Integer
   overload: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle*
   implements:
-  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
-  nameWithType.vb: YVRLayerEditorHandle.GetLayerColorHandle(Integer, Integer)
-  fullName.vb: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(Integer, Integer)
-  name.vb: GetLayerColorHandle(Integer, Integer)
-- uid: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32)
-  commentId: M:YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32)
-  id: GetLayerColorHandle(System.Int32)
+  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
+  nameWithType.vb: YVRLayerEditorHandle.GetLayerColorHandle(Integer, YVRRenderLayerEyeMask, Integer)
+  fullName.vb: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(Integer, YVR.Core.YVRRenderLayerEyeMask, Integer)
+  name.vb: GetLayerColorHandle(Integer, YVRRenderLayerEyeMask, Integer)
+- uid: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
+  commentId: M:YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
+  id: GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
   parent: YVR.Core.YVRLayerEditorHandle
   langs:
   - csharp
   - vb
-  name: GetLayerColorHandle(int)
-  nameWithType: YVRLayerEditorHandle.GetLayerColorHandle(int)
-  fullName: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(int)
+  name: GetLayerColorHandle(int, YVRRenderLayerEyeMask)
+  nameWithType: YVRLayerEditorHandle.GetLayerColorHandle(int, YVRRenderLayerEyeMask)
+  fullName: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(int, YVR.Core.YVRRenderLayerEyeMask)
   type: Method
   source:
     remote:
@@ -692,19 +694,21 @@ items:
   namespace: YVR.Core
   example: []
   syntax:
-    content: public int GetLayerColorHandle(int layerId)
+    content: public int GetLayerColorHandle(int layerId, YVRRenderLayerEyeMask eyeMask)
     parameters:
     - id: layerId
       type: System.Int32
+    - id: eyeMask
+      type: YVR.Core.YVRRenderLayerEyeMask
     return:
       type: System.Int32
-    content.vb: Public Function GetLayerColorHandle(layerId As Integer) As Integer
+    content.vb: Public Function GetLayerColorHandle(layerId As Integer, eyeMask As YVRRenderLayerEyeMask) As Integer
   overload: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle*
   implements:
-  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
-  nameWithType.vb: YVRLayerEditorHandle.GetLayerColorHandle(Integer)
-  fullName.vb: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(Integer)
-  name.vb: GetLayerColorHandle(Integer)
+  - YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
+  nameWithType.vb: YVRLayerEditorHandle.GetLayerColorHandle(Integer, YVRRenderLayerEyeMask)
+  fullName.vb: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle(Integer, YVR.Core.YVRRenderLayerEyeMask)
+  name.vb: GetLayerColorHandle(Integer, YVRRenderLayerEyeMask)
 - uid: YVR.Core.YVRLayerEditorHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
   commentId: M:YVR.Core.YVRLayerEditorHandle.SetLayerPose(System.Int32@,YVR.Core.XRPose@)
   id: SetLayerPose(System.Int32@,YVR.Core.XRPose@)
@@ -2265,30 +2269,35 @@ references:
   - name: )
 - uid: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle*
   commentId: Overload:YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle
-  href: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle.html#YVR_Core_YVRLayerEditorHandle_GetLayerColorHandle_System_Int32_System_Int32_
+  href: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle.html#YVR_Core_YVRLayerEditorHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_System_Int32_
   name: GetLayerColorHandle
   nameWithType: YVRLayerEditorHandle.GetLayerColorHandle
   fullName: YVR.Core.YVRLayerEditorHandle.GetLayerColorHandle
-- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
-  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
   parent: YVR.Core.IYVRLayerHandle
   isExternal: true
-  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
-  name: GetLayerColorHandle(int, int)
-  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int, int)
-  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int, int)
-  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer, Integer)
-  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer, Integer)
-  name.vb: GetLayerColorHandle(Integer, Integer)
+  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_System_Int32_
+  name: GetLayerColorHandle(int, YVRRenderLayerEyeMask, int)
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int, YVRRenderLayerEyeMask, int)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int, YVR.Core.YVRRenderLayerEyeMask, int)
+  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer, YVRRenderLayerEyeMask, Integer)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer, YVR.Core.YVRRenderLayerEyeMask, Integer)
+  name.vb: GetLayerColorHandle(Integer, YVRRenderLayerEyeMask, Integer)
   spec.csharp:
-  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
     name: GetLayerColorHandle
-    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_System_Int32_
   - name: (
   - uid: System.Int32
     name: int
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRRenderLayerEyeMask
+    name: YVRRenderLayerEyeMask
+    href: YVR.Core.YVRRenderLayerEyeMask.html
   - name: ','
   - name: " "
   - uid: System.Int32
@@ -2297,9 +2306,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
-  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,System.Int32)
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
     name: GetLayerColorHandle
-    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_System_Int32_
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_System_Int32_
   - name: (
   - uid: System.Int32
     name: Integer
@@ -2307,41 +2316,63 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: ','
   - name: " "
+  - uid: YVR.Core.YVRRenderLayerEyeMask
+    name: YVRRenderLayerEyeMask
+    href: YVR.Core.YVRRenderLayerEyeMask.html
+  - name: ','
+  - name: " "
   - uid: System.Int32
     name: Integer
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
-  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+- uid: YVR.Core.YVRRenderLayerEyeMask
+  commentId: T:YVR.Core.YVRRenderLayerEyeMask
+  parent: YVR.Core
+  href: YVR.Core.YVRRenderLayerEyeMask.html
+  name: YVRRenderLayerEyeMask
+  nameWithType: YVRRenderLayerEyeMask
+  fullName: YVR.Core.YVRRenderLayerEyeMask
+- uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
+  commentId: M:YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
   parent: YVR.Core.IYVRLayerHandle
   isExternal: true
-  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_
-  name: GetLayerColorHandle(int)
-  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int)
-  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int)
-  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer)
-  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer)
-  name.vb: GetLayerColorHandle(Integer)
+  href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_
+  name: GetLayerColorHandle(int, YVRRenderLayerEyeMask)
+  nameWithType: IYVRLayerHandle.GetLayerColorHandle(int, YVRRenderLayerEyeMask)
+  fullName: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(int, YVR.Core.YVRRenderLayerEyeMask)
+  nameWithType.vb: IYVRLayerHandle.GetLayerColorHandle(Integer, YVRRenderLayerEyeMask)
+  fullName.vb: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(Integer, YVR.Core.YVRRenderLayerEyeMask)
+  name.vb: GetLayerColorHandle(Integer, YVRRenderLayerEyeMask)
   spec.csharp:
-  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
     name: GetLayerColorHandle
-    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_
   - name: (
   - uid: System.Int32
     name: int
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRRenderLayerEyeMask
+    name: YVRRenderLayerEyeMask
+    href: YVR.Core.YVRRenderLayerEyeMask.html
   - name: )
   spec.vb:
-  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32)
+  - uid: YVR.Core.IYVRLayerHandle.GetLayerColorHandle(System.Int32,YVR.Core.YVRRenderLayerEyeMask)
     name: GetLayerColorHandle
-    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_
+    href: YVR.Core.IYVRLayerHandle.GetLayerColorHandle.html#YVR_Core_IYVRLayerHandle_GetLayerColorHandle_System_Int32_YVR_Core_YVRRenderLayerEyeMask_
   - name: (
   - uid: System.Int32
     name: Integer
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: YVR.Core.YVRRenderLayerEyeMask
+    name: YVRRenderLayerEyeMask
+    href: YVR.Core.YVRRenderLayerEyeMask.html
   - name: )
 - uid: YVR.Core.YVRLayerEditorHandle.SetLayerPose*
   commentId: Overload:YVR.Core.YVRLayerEditorHandle.SetLayerPose

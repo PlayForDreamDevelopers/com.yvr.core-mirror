@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.30.5] - 2026-07-01
+
+### Fixed
+
+- 修复 Vulkan 模式下 Unity 图形设备回调晚于插件加载时 XR Provider 未初始化，以及投影 Swapchain 创建失败后继续使用无效资源的问题
+- 修复可选 OpenXR 扩展函数不可用或 Passthrough Provider 初始化失败时可能发生空函数调用和无效资源访问的问题
+
 ## [1.30.4] - 2026-05-18
 
 ### Fixed

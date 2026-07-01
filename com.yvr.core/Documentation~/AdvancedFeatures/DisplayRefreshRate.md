@@ -15,3 +15,5 @@ YVRManager.instance.cameraRenderer.displayFrequency = 90;
 ```
 
 You can set the screen refresh rate at the application startup or dynamically adjust the screen refresh rate as needed during the application runtime. If you do not set the screen refresh rate, the default screen refresh rate is 90 Hz.
+
+For more display and rendering settings, see [Display and Rendering Configuration](./DisplayRenderingConfig.md).

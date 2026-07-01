@@ -38,6 +38,7 @@ items:
   - YVR.Core.YVRPlugin.GetHandAutoActivateTime
   - YVR.Core.YVRPlugin.GetHandEnable
   - YVR.Core.YVRPlugin.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
+  - YVR.Core.YVRPlugin.GetIPD
   - YVR.Core.YVRPlugin.GetPassthroughImageDiffRotation(System.Int32)
   - YVR.Core.YVRPlugin.GetPassthroughSwapchainImageIndex
   - YVR.Core.YVRPlugin.GetPassthroughSwapchainImageValid
@@ -60,7 +61,6 @@ items:
   - YVR.Core.YVRPlugin.GetVolumeLevel
   - YVR.Core.YVRPlugin.Instance
   - YVR.Core.YVRPlugin.IsFocusing
-  - YVR.Core.YVRPlugin.IsPassthroughInitialized
   - YVR.Core.YVRPlugin.IsUserPresent
   - YVR.Core.YVRPlugin.IsVisible
   - YVR.Core.YVRPlugin.PollEvent
@@ -80,6 +80,7 @@ items:
   - YVR.Core.YVRPlugin.SetBlockInteractionData(System.Boolean)
   - YVR.Core.YVRPlugin.SetBoundaryDetectionEnable(System.Boolean)
   - YVR.Core.YVRPlugin.SetBoundaryVisible(System.Boolean)
+  - YVR.Core.YVRPlugin.SetColorSpace(YVR.Core.ColorSpaceType)
   - YVR.Core.YVRPlugin.SetControllerVibration(System.UInt32,System.Single,System.Single)
   - YVR.Core.YVRPlugin.SetControllerVibration(System.UInt32,System.Single,System.Single,System.Single)
   - YVR.Core.YVRPlugin.SetCreateSpatialAnchorCallback(System.Action{YVR.Core.YVRSpatialAnchorResult,System.Boolean})
@@ -143,6 +144,7 @@ items:
   - System.Object
   derivedClasses:
   - YVR.Core.YVRPluginAndroid
+  - YVR.Core.YVRPluginStub
   - YVR.Core.YVRPluginWin
   inheritedMembers:
   - System.Object.Equals(System.Object)
@@ -203,7 +205,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetTrackingSpace
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 54
+    startLine: 59
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -232,7 +234,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetVSyncCount
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 55
+    startLine: 60
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -261,7 +263,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: RecenterTracking
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 56
+    startLine: 61
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -287,7 +289,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetControllerVibration
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 58
+    startLine: 63
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -323,7 +325,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetControllerVibration
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 60
+    startLine: 65
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -361,7 +363,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBatteryLevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -389,7 +391,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBatteryTemperature
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 65
+    startLine: 70
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -417,7 +419,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBatteryStatus
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 67
+    startLine: 72
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -445,7 +447,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetVolumeLevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 69
+    startLine: 74
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -473,7 +475,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetGPUUtilLevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 71
+    startLine: 76
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -501,7 +503,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetCPUUtilLevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 73
+    startLine: 78
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -529,7 +531,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetCPULevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 75
+    startLine: 80
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -557,7 +559,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetGPULevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -585,7 +587,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetPerformanceLevel
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 79
+    startLine: 84
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -619,7 +621,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsUserPresent
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 81
+    startLine: 86
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -647,7 +649,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetPassthrough
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 83
+    startLine: 88
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -679,7 +681,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetPassthroughProviderEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 85
+    startLine: 90
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -711,7 +713,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsFocusing
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 87
+    startLine: 92
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -739,7 +741,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsVisible
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 89
+    startLine: 94
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -767,7 +769,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetEventCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 91
+    startLine: 96
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -799,7 +801,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetEyeResolution
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 92
+    startLine: 97
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -831,7 +833,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetEyeFov
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 93
+    startLine: 98
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -865,7 +867,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetDisplayFrequency
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 95
+    startLine: 100
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -893,7 +895,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetStereoRenderingMode
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 97
+    startLine: 102
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -921,7 +923,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetDisplayFrequency
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 99
+    startLine: 104
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -953,7 +955,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetDisplayFrequenciesAvailable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 101
+    startLine: 106
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -981,7 +983,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBoundaryConfigured
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 103
+    startLine: 108
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1009,7 +1011,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: TestBoundaryNode
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 105
+    startLine: 110
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1043,7 +1045,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: TestBoundaryPoint
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 108
+    startLine: 113
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1077,7 +1079,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBoundaryDimensions
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 110
+    startLine: 115
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1105,7 +1107,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBoundaryVisible
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 112
+    startLine: 117
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1133,7 +1135,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetBoundaryVisible
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 114
+    startLine: 119
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1165,7 +1167,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetBoundaryDetectionEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 116
+    startLine: 121
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1197,7 +1199,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBoundaryGeometry
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 118
+    startLine: 123
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1225,7 +1227,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetFoveation
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 120
+    startLine: 125
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1259,7 +1261,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAppSWEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 122
+    startLine: 127
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1291,7 +1293,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetAppSWEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 124
+    startLine: 129
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1319,7 +1321,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAppSWSwitch
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 126
+    startLine: 131
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1351,7 +1353,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetAppSWSwitch
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 128
+    startLine: 133
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1379,7 +1381,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetEyeBufferLayerSettings
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 130
+    startLine: 135
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1417,7 +1419,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPrimaryController
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 133
+    startLine: 138
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1449,7 +1451,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetPrimaryController
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 135
+    startLine: 140
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1481,7 +1483,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetHandJointLocations
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 137
+    startLine: 142
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1515,7 +1517,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetCurrentInputDevice
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 139
+    startLine: 144
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1547,7 +1549,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetHandEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 141
+    startLine: 146
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1575,7 +1577,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetHandAutoActivateTime
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 143
+    startLine: 148
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1603,7 +1605,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAPPHandEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 145
+    startLine: 150
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1635,7 +1637,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAPPControllerEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 147
+    startLine: 152
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1667,7 +1669,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAppSpacePosition
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 149
+    startLine: 154
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1703,7 +1705,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAppSpaceRotation
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 151
+    startLine: 156
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1741,7 +1743,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: CreateSpatialAnchor
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 153
+    startLine: 158
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1777,7 +1779,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SaveSpatialAnchor
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 158
+    startLine: 163
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1811,7 +1813,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: QuerySpatialAnchor
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 160
+    startLine: 165
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1845,7 +1847,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: DestroySpatialAnchor
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 162
+    startLine: 167
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1881,7 +1883,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorPose
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 165
+    startLine: 170
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1921,7 +1923,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetCreateSpatialAnchorCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 171
+    startLine: 176
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1953,7 +1955,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetQuerySpatialAnchorCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 173
+    startLine: 178
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1985,7 +1987,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetEraseSpatialAnchorCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 175
+    startLine: 180
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2017,7 +2019,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorEnumerateSupported
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 177
+    startLine: 182
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2051,7 +2053,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSpatialAnchorComponentStatus
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 180
+    startLine: 185
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2089,7 +2091,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorComponentStatus
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 187
+    startLine: 192
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2125,7 +2127,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: CreateSpatialAnchorUserHandle
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 190
+    startLine: 195
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2159,7 +2161,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ShareSpatialAnchor
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 192
+    startLine: 197
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2193,7 +2195,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorUserId
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 194
+    startLine: 199
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2227,7 +2229,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSpatialAnchorShareCompleteCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 196
+    startLine: 201
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2259,7 +2261,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSpatialAnchorSaveCompleteCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 198
+    startLine: 203
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2291,7 +2293,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSpatialAnchorSaveListCompleteCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 201
+    startLine: 206
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2323,7 +2325,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSpatialAnchorStatusCompleteCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 203
+    startLine: 208
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2355,7 +2357,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SaveSpatialAnchorList
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 206
+    startLine: 211
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2389,7 +2391,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorUUID
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 208
+    startLine: 213
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2423,7 +2425,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: CreatePlaneDetection
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 210
+    startLine: 215
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2449,7 +2451,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetPlaneDetectionsCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 212
+    startLine: 217
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2481,7 +2483,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPolygonBuffer
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 214
+    startLine: 219
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2517,7 +2519,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: EndPlaneDetection
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 216
+    startLine: 221
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2543,7 +2545,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetEyeTrackingSupportes
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 218
+    startLine: 223
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2571,7 +2573,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetEyeTrackingEnable
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 220
+    startLine: 225
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2599,7 +2601,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceBoundingBox2D
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 222
+    startLine: 227
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2635,7 +2637,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceBoundingBox3D
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 224
+    startLine: 229
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2671,7 +2673,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceBoundary2D
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 226
+    startLine: 231
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2707,7 +2709,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceSemanticLabels
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 228
+    startLine: 233
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2743,7 +2745,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceRoomLayout
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 233
+    startLine: 238
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2779,7 +2781,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceContainer
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 235
+    startLine: 240
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2815,7 +2817,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: RequestSceneCapture
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 240
+    startLine: 245
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2851,7 +2853,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSceneCaptureCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 245
+    startLine: 250
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2883,7 +2885,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpaceTriangleMesh
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 247
+    startLine: 252
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2919,7 +2921,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetRecommendedResolution
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 253
+    startLine: 258
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2953,7 +2955,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetAdapterResolutionPolicy
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 255
+    startLine: 260
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2982,7 +2984,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: CreateMeshDetector
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 258
+    startLine: 263
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3008,7 +3010,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: DestroyMeshDetector
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 260
+    startLine: 265
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3034,7 +3036,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetMeshBlockUpdateCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 262
+    startLine: 267
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3066,7 +3068,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPassthroughSwapchainImageIndex
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 264
+    startLine: 269
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3094,7 +3096,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPassthroughSwapchainImageValid
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 266
+    startLine: 271
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3122,7 +3124,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPassthroughImageDiffRotation
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 268
+    startLine: 273
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3156,7 +3158,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetBlockInteractionData
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 270
+    startLine: 275
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3188,7 +3190,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetBlockInteractionData
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 272
+    startLine: 277
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3216,7 +3218,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSessionStateChangeCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 274
+    startLine: 279
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3248,7 +3250,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: PollEvent
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 276
+    startLine: 281
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3274,7 +3276,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SwitchImageTracking
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 278
+    startLine: 283
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3306,7 +3308,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: RegisterImageTemplate
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 279
+    startLine: 284
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3335,7 +3337,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UnRegisterImageTemplate
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 280
+    startLine: 285
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3367,7 +3369,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetImageTrackingUpdateCallback
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 281
+    startLine: 286
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3381,34 +3383,6 @@ items:
   nameWithType.vb: YVRPlugin.SetImageTrackingUpdateCallback(Action(Of TrackedImageInfo))
   fullName.vb: YVR.Core.YVRPlugin.SetImageTrackingUpdateCallback(System.Action(Of YVR.Core.ImageTracking.TrackedImageInfo))
   name.vb: SetImageTrackingUpdateCallback(Action(Of TrackedImageInfo))
-- uid: YVR.Core.YVRPlugin.IsPassthroughInitialized
-  commentId: M:YVR.Core.YVRPlugin.IsPassthroughInitialized
-  id: IsPassthroughInitialized
-  parent: YVR.Core.YVRPlugin
-  langs:
-  - csharp
-  - vb
-  name: IsPassthroughInitialized()
-  nameWithType: YVRPlugin.IsPassthroughInitialized()
-  fullName: YVR.Core.YVRPlugin.IsPassthroughInitialized()
-  type: Method
-  source:
-    remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-      branch: master
-      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: IsPassthroughInitialized
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 283
-  assemblies:
-  - YVR.Core.Runtime
-  namespace: YVR.Core
-  syntax:
-    content: public virtual bool IsPassthroughInitialized()
-    return:
-      type: System.Boolean
-    content.vb: Public Overridable Function IsPassthroughInitialized() As Boolean
-  overload: YVR.Core.YVRPlugin.IsPassthroughInitialized*
 - uid: YVR.Core.YVRPlugin.SetPassthroughStyle(YVR.Core.PassthroughStyle)
   commentId: M:YVR.Core.YVRPlugin.SetPassthroughStyle(YVR.Core.PassthroughStyle)
   id: SetPassthroughStyle(YVR.Core.PassthroughStyle)
@@ -3458,7 +3432,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: CreatePassthroughColorLut
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 293
+    startLine: 290
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3498,7 +3472,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: DestroyPassthroughColorLut
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 300
+    startLine: 297
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3532,7 +3506,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UpdatePassthroughColorLut
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 305
+    startLine: 299
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -3550,6 +3524,63 @@ items:
   nameWithType.vb: YVRPlugin.UpdatePassthroughColorLut(ULong, PassthroughColorLutData)
   fullName.vb: YVR.Core.YVRPlugin.UpdatePassthroughColorLut(ULong, YVR.Core.PassthroughColorLutData)
   name.vb: UpdatePassthroughColorLut(ULong, PassthroughColorLutData)
+- uid: YVR.Core.YVRPlugin.GetIPD
+  commentId: M:YVR.Core.YVRPlugin.GetIPD
+  id: GetIPD
+  parent: YVR.Core.YVRPlugin
+  langs:
+  - csharp
+  - vb
+  name: GetIPD()
+  nameWithType: YVRPlugin.GetIPD()
+  fullName: YVR.Core.YVRPlugin.GetIPD()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetIPD
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
+    startLine: 301
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public virtual float GetIPD()
+    return:
+      type: System.Single
+    content.vb: Public Overridable Function GetIPD() As Single
+  overload: YVR.Core.YVRPlugin.GetIPD*
+- uid: YVR.Core.YVRPlugin.SetColorSpace(YVR.Core.ColorSpaceType)
+  commentId: M:YVR.Core.YVRPlugin.SetColorSpace(YVR.Core.ColorSpaceType)
+  id: SetColorSpace(YVR.Core.ColorSpaceType)
+  parent: YVR.Core.YVRPlugin
+  langs:
+  - csharp
+  - vb
+  name: SetColorSpace(ColorSpaceType)
+  nameWithType: YVRPlugin.SetColorSpace(ColorSpaceType)
+  fullName: YVR.Core.YVRPlugin.SetColorSpace(YVR.Core.ColorSpaceType)
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: SetColorSpace
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
+    startLine: 303
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public virtual void SetColorSpace(ColorSpaceType colorSpaceType)
+    parameters:
+    - id: colorSpaceType
+      type: YVR.Core.ColorSpaceType
+    content.vb: Public Overridable Sub SetColorSpace(colorSpaceType As ColorSpaceType)
+  overload: YVR.Core.YVRPlugin.SetColorSpace*
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core
@@ -5392,12 +5423,6 @@ references:
     name: TrackedImageInfo
     href: YVR.Core.ImageTracking.TrackedImageInfo.html
   - name: )
-- uid: YVR.Core.YVRPlugin.IsPassthroughInitialized*
-  commentId: Overload:YVR.Core.YVRPlugin.IsPassthroughInitialized
-  href: YVR.Core.YVRPlugin.IsPassthroughInitialized.html#YVR_Core_YVRPlugin_IsPassthroughInitialized
-  name: IsPassthroughInitialized
-  nameWithType: YVRPlugin.IsPassthroughInitialized
-  fullName: YVR.Core.YVRPlugin.IsPassthroughInitialized
 - uid: YVR.Core.YVRPlugin.SetPassthroughStyle*
   commentId: Overload:YVR.Core.YVRPlugin.SetPassthroughStyle
   href: YVR.Core.YVRPlugin.SetPassthroughStyle.html#YVR_Core_YVRPlugin_SetPassthroughStyle_YVR_Core_PassthroughStyle_
@@ -5443,4 +5468,23 @@ references:
   name: UpdatePassthroughColorLut
   nameWithType: YVRPlugin.UpdatePassthroughColorLut
   fullName: YVR.Core.YVRPlugin.UpdatePassthroughColorLut
+- uid: YVR.Core.YVRPlugin.GetIPD*
+  commentId: Overload:YVR.Core.YVRPlugin.GetIPD
+  href: YVR.Core.YVRPlugin.GetIPD.html#YVR_Core_YVRPlugin_GetIPD
+  name: GetIPD
+  nameWithType: YVRPlugin.GetIPD
+  fullName: YVR.Core.YVRPlugin.GetIPD
+- uid: YVR.Core.YVRPlugin.SetColorSpace*
+  commentId: Overload:YVR.Core.YVRPlugin.SetColorSpace
+  href: YVR.Core.YVRPlugin.SetColorSpace.html#YVR_Core_YVRPlugin_SetColorSpace_YVR_Core_ColorSpaceType_
+  name: SetColorSpace
+  nameWithType: YVRPlugin.SetColorSpace
+  fullName: YVR.Core.YVRPlugin.SetColorSpace
+- uid: YVR.Core.ColorSpaceType
+  commentId: T:YVR.Core.ColorSpaceType
+  parent: YVR.Core
+  href: YVR.Core.ColorSpaceType.html
+  name: ColorSpaceType
+  nameWithType: ColorSpaceType
+  fullName: YVR.Core.ColorSpaceType
 memberLayout: SeparatePages

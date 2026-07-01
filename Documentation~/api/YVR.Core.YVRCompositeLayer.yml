@@ -61,6 +61,7 @@ items:
   - YVR.Core.YVRCompositeLayer.onLayerDestroyedGfx
   - YVR.Core.YVRCompositeLayer.onLayerRemovedGfx
   - YVR.Core.YVRCompositeLayer.onRegenerateHole
+  - YVR.Core.YVRCompositeLayer.protectedContent
   - YVR.Core.YVRCompositeLayer.radius
   - YVR.Core.YVRCompositeLayer.renderLayerId
   - YVR.Core.YVRCompositeLayer.renderScale
@@ -236,7 +237,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onRegenerateHole
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -263,7 +264,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: m_Shape
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -300,7 +301,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: shape
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -329,7 +330,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: m_CircleSegments
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 38
+    startLine: 40
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -366,7 +367,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: circleSegments
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -395,7 +396,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: m_CylinderAngle
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 42
+    startLine: 44
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -443,7 +444,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: cylinderAngle
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 44
+    startLine: 46
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -472,7 +473,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: m_Radius
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 50
+    startLine: 52
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -509,7 +510,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: radius
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -538,7 +539,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: m_SuperSamplingType
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 57
+    startLine: 59
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -575,7 +576,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SuperSamplingType
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -604,7 +605,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: m_SharpenType
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 70
+    startLine: 72
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -641,7 +642,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SharpenType
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 72
+    startLine: 74
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -670,7 +671,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: isExternalTexture
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 83
+    startLine: 85
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -679,6 +680,33 @@ items:
     return:
       type: System.Boolean
     content.vb: Public isExternalTexture As Boolean
+- uid: YVR.Core.YVRCompositeLayer.protectedContent
+  commentId: F:YVR.Core.YVRCompositeLayer.protectedContent
+  id: protectedContent
+  parent: YVR.Core.YVRCompositeLayer
+  langs:
+  - csharp
+  - vb
+  name: protectedContent
+  nameWithType: YVRCompositeLayer.protectedContent
+  fullName: YVR.Core.YVRCompositeLayer.protectedContent
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: protectedContent
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
+    startLine: 86
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool protectedContent
+    return:
+      type: System.Boolean
+    content.vb: Public protectedContent As Boolean
 - uid: YVR.Core.YVRCompositeLayer.texture
   commentId: F:YVR.Core.YVRCompositeLayer.texture
   id: texture
@@ -697,7 +725,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: texture
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 88
+    startLine: 90
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -726,7 +754,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: sourceRectLeft
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 90
+    startLine: 92
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -763,7 +791,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SourceRectLeft
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 91
+    startLine: 93
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -792,7 +820,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: destRectLeft
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 113
+    startLine: 115
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -829,7 +857,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: DestRectLeft
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 114
+    startLine: 116
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -858,7 +886,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: rightEyeTexture
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 139
+    startLine: 141
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -887,7 +915,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: sourceRectRight
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 141
+    startLine: 143
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -924,7 +952,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SourceRectRight
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 142
+    startLine: 144
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -953,7 +981,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: destRectRight
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 164
+    startLine: 166
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -990,7 +1018,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: DestRectRight
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 165
+    startLine: 167
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1019,7 +1047,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: alpha
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 189
+    startLine: 191
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1048,7 +1076,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: compositionDepth
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 198
+    startLine: 200
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1090,7 +1118,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: renderScale
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 204
+    startLine: 206
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1132,7 +1160,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: isDynamic
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 211
+    startLine: 213
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1176,7 +1204,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: autoInitLayer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 221
+    startLine: 223
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1215,7 +1243,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: layerHandler
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 229
+    startLine: 231
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1242,7 +1270,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: depth
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 237
+    startLine: 239
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1271,7 +1299,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: textureHandle
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 242
+    startLine: 244
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1302,7 +1330,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: rightEyeTextureHandle
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 253
+    startLine: 255
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1331,7 +1359,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetTexture
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 265
+    startLine: 267
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1365,7 +1393,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetTexture
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 277
+    startLine: 279
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1401,7 +1429,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: renderLayerId
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 299
+    startLine: 301
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1432,7 +1460,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: rightEyeRenderLayerId
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 301
+    startLine: 303
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1461,7 +1489,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: width
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 326
+    startLine: 328
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1497,7 +1525,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: height
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 334
+    startLine: 336
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1533,7 +1561,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: swapChainBufferCount
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 337
+    startLine: 339
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1562,7 +1590,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onLayerCreatedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 339
+    startLine: 341
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1589,7 +1617,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onLayerDestroyedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 340
+    startLine: 342
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1616,7 +1644,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onLayerAddedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 341
+    startLine: 343
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1643,7 +1671,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onLayerRemovedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 342
+    startLine: 344
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1670,7 +1698,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onLayerDepthSetGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 343
+    startLine: 345
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1697,7 +1725,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnEnable
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 345
+    startLine: 347
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1733,7 +1761,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: LateUpdate
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 365
+    startLine: 367
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1759,7 +1787,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: InitCompositeLayer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 375
+    startLine: 377
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1794,7 +1822,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Show
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 401
+    startLine: 428
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1822,7 +1850,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Hide
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 420
+    startLine: 447
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1850,7 +1878,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: RecreateLayer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 436
+    startLine: 463
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1876,7 +1904,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: RecreateLayer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 441
+    startLine: 468
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1908,7 +1936,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: RecreateLayer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 446
+    startLine: 473
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1942,7 +1970,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetLayerDepth
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 470
+    startLine: 497
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1977,7 +2005,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnLayerCreatedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 483
+    startLine: 510
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2011,7 +2039,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnLayerDestroyedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 490
+    startLine: 517
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2037,7 +2065,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnLayerAddedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 497
+    startLine: 524
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2063,7 +2091,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnLayerDepthSetGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 525
+    startLine: 552
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2095,7 +2123,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnLayerRemovedGfx
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 531
+    startLine: 558
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2121,7 +2149,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UpdateCompositeLayerContent
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 581
+    startLine: 623
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2147,7 +2175,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetExternalAndroidSurface
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 591
+    startLine: 633
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2175,7 +2203,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UpdateCommandBufferMainThread
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 597
+    startLine: 639
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2204,7 +2232,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SwapBufferLayer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 616
+    startLine: 658
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2230,7 +2258,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UpdateCommandBuffer
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 626
+    startLine: 668
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2256,7 +2284,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSurfaceDimensions
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 632
+    startLine: 674
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2290,7 +2318,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: CopyTextureToColorHandle
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 641
+    startLine: 683
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2316,7 +2344,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ApplyLayerSettings
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 662
+    startLine: 737
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2342,7 +2370,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnDisable
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 688
+    startLine: 763
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -2368,7 +2396,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnDestroy
     path: ../com.yvr.core/Scripts/Runtime/Renderer/YVRCompositeLayer.cs
-    startLine: 690
+    startLine: 765
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

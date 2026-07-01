@@ -81,7 +81,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onVSyncCountChanged
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -110,7 +110,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onFFRChanged
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -139,7 +139,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: onSharpenTypeChanged
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -168,7 +168,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: vSyncCount
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 58
+    startLine: 61
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -199,7 +199,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: fixedFoveatedRenderingLevel
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 73
+    startLine: 76
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -230,7 +230,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: fixedFoveatedRenderingDynamic
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 88
+    startLine: 91
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -261,7 +261,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: sharpenType
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 103
+    startLine: 106
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -292,7 +292,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: recommendAntiAlisingLevel
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 117
+    startLine: 120
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -323,7 +323,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: useRecommendedMSAALevel
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 122
+    startLine: 125
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -352,7 +352,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: enableDynamicResolution
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 124
+    startLine: 127
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -381,7 +381,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: minDynamicResolutionScale
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 134
+    startLine: 137
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -410,7 +410,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: maxDynamicResolutionScale
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 144
+    startLine: 147
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -439,7 +439,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: powerSetting
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 154
+    startLine: 157
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -468,7 +468,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Initialize
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 170
+    startLine: 173
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -496,7 +496,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Update
     path: ../com.yvr.core/Scripts/Runtime/YVRQualityManager.cs
-    startLine: 179
+    startLine: 182
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

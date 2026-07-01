@@ -23,7 +23,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandData
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 142
+    startLine: 135
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -55,7 +55,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: isActive
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 144
+    startLine: 137
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -82,7 +82,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: jointCount
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 145
+    startLine: 138
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -109,7 +109,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: handScale
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 146
+    startLine: 139
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -136,7 +136,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: aimState
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 147
+    startLine: 140
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

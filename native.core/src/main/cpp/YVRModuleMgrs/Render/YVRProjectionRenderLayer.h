@@ -11,6 +11,7 @@ public:
     std::uintptr_t getMotionVectorDepthHandle(xrEyeSide eyeSide, int bufferIndex);
     uint32_t getMotionVectorImageRectWidth();
     uint32_t getMotionVectorImageRectHeight();
+    bool isSwapchainReady() const { return swapchainReady; }
     void swapChain() override;
     void setFoveationLevel(XrFoveationLevelFB level, XrFoveationDynamicFB dynamic);
     void setCurrentPosePosition(float x, float y, float z);
@@ -24,26 +25,30 @@ protected:
     void destroySwapChain() override;
     void tick() override;
 private:
+    bool createSwapchain(XrSwapchainCreateInfo& createInfo, OpenXRSwapchain& swapchain,
+                         XrSwapchainImageBaseHeader* images);
+
+    bool swapchainReady{false};
     XrPosef prevPose;
     XrPosef currentPose;
 
     std::vector<XrCompositionLayerProjectionView> projectionLayerViews{};
 
-    OpenXRSwapchain secondarySwapchain;
+    OpenXRSwapchain secondarySwapchain{};
     bool secondarySwapchainImageAcquired = false;
-    XrSwapchainImageBaseHeader* secondarySwapchainImages;
+    XrSwapchainImageBaseHeader* secondarySwapchainImages{nullptr};
     uint32_t secondarySwapchainIndex;
 
     XrSwapchainCreateInfo depthSwapChainCreateInfo{};
     std::vector<XrCompositionLayerDepthInfoKHR> depthInfo{};
-    OpenXRSwapchain depthSwapchain;
+    OpenXRSwapchain depthSwapchain{};
     bool depthImageAcquired = false;
-    XrSwapchainImageBaseHeader* depthSwapchainImages;
+    XrSwapchainImageBaseHeader* depthSwapchainImages{nullptr};
     uint32_t depthSwapchainIndex;
 
-    OpenXRSwapchain depthSecondarySwapchain;
+    OpenXRSwapchain depthSecondarySwapchain{};
     bool depthSecondarySwapchainImageAllocated = false;
-    XrSwapchainImageBaseHeader* depthSecondarySwapchainImages;
+    XrSwapchainImageBaseHeader* depthSecondarySwapchainImages{nullptr};
     uint32_t depthSecondarySwapchainIndex;
 
     XrSwapchainCreateInfo motionVectorColorSwapChainCreateInfo{};
@@ -54,23 +59,23 @@ private:
     uint32_t recommendedMotionVectorImageRectWidth;
     uint32_t recommendedMotionVectorImageRectHeight;
 
-    OpenXRSwapchain motionVectorPrimarySwapChain;
+    OpenXRSwapchain motionVectorPrimarySwapChain{};
     bool motionVectorPrimaryImageAcquired = false;
-    XrSwapchainImageBaseHeader* motionVectorPrimaryImages;
+    XrSwapchainImageBaseHeader* motionVectorPrimaryImages{nullptr};
     uint32_t motionVectorPrimarySwapchainIndex;
 
-    OpenXRSwapchain motionVectorPrimaryDepthSwapChain;
+    OpenXRSwapchain motionVectorPrimaryDepthSwapChain{};
     bool motionVectorPrimaryDepthImageAcquired = false;
-    XrSwapchainImageBaseHeader* motionVectorPrimaryDepthImages;
+    XrSwapchainImageBaseHeader* motionVectorPrimaryDepthImages{nullptr};
     uint32_t motionVectorPrimaryDepthSwapchainIndex;
 
-    OpenXRSwapchain motionVectorSecondarySwapChain;
+    OpenXRSwapchain motionVectorSecondarySwapChain{};
     bool motionVectorSecondaryImageAcquired = false;
-    XrSwapchainImageBaseHeader* motionVectorSecondaryImages;
+    XrSwapchainImageBaseHeader* motionVectorSecondaryImages{nullptr};
     uint32_t motionVectorSecondarySwapchainIndex;
 
-    OpenXRSwapchain motionVectorSecondaryDepthSwapChain;
+    OpenXRSwapchain motionVectorSecondaryDepthSwapChain{};
     bool motionVectorSecondaryDepthImageAcquired = false;
-    XrSwapchainImageBaseHeader* motionVectorSecondaryDepthImages;
+    XrSwapchainImageBaseHeader* motionVectorSecondaryDepthImages{nullptr};
     uint32_t motionVectorSecondaryDepthSwapchainIndex;
 };

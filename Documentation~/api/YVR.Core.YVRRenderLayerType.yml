@@ -5,8 +5,10 @@ items:
   id: YVRRenderLayerType
   parent: YVR.Core
   children:
+  - YVR.Core.YVRRenderLayerType.CubeProjection
   - YVR.Core.YVRRenderLayerType.Cylinder
   - YVR.Core.YVRRenderLayerType.Equirect
+  - YVR.Core.YVRRenderLayerType.Projection
   - YVR.Core.YVRRenderLayerType.Quad
   langs:
   - csharp
@@ -39,6 +41,32 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
+- uid: YVR.Core.YVRRenderLayerType.Projection
+  commentId: F:YVR.Core.YVRRenderLayerType.Projection
+  id: Projection
+  parent: YVR.Core.YVRRenderLayerType
+  langs:
+  - csharp
+  - vb
+  name: Projection
+  nameWithType: YVRRenderLayerType.Projection
+  fullName: YVR.Core.YVRRenderLayerType.Projection
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Projection
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Projection = 0
+    return:
+      type: YVR.Core.YVRRenderLayerType
 - uid: YVR.Core.YVRRenderLayerType.Quad
   commentId: F:YVR.Core.YVRRenderLayerType.Quad
   id: Quad
@@ -57,7 +85,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Quad
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -83,7 +111,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Cylinder
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -109,12 +137,38 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Equirect
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
     content: Equirect = 3
+    return:
+      type: YVR.Core.YVRRenderLayerType
+- uid: YVR.Core.YVRRenderLayerType.CubeProjection
+  commentId: F:YVR.Core.YVRRenderLayerType.CubeProjection
+  id: CubeProjection
+  parent: YVR.Core.YVRRenderLayerType
+  langs:
+  - csharp
+  - vb
+  name: CubeProjection
+  nameWithType: YVRRenderLayerType.CubeProjection
+  fullName: YVR.Core.YVRRenderLayerType.CubeProjection
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: CubeProjection
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 20
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: CubeProjection = 4
     return:
       type: YVR.Core.YVRRenderLayerType
 references:

@@ -360,7 +360,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SendLeftHapticImpulse
     path: ../com.yvr.core/Scripts/Runtime/Debug/XRRig/InputDeviceTest.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -386,7 +386,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ClearText
     path: ../com.yvr.core/Scripts/Runtime/Debug/XRRig/InputDeviceTest.cs
-    startLine: 110
+    startLine: 112
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -412,7 +412,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: StopLeftControllerHaptic
     path: ../com.yvr.core/Scripts/Runtime/Debug/XRRig/InputDeviceTest.cs
-    startLine: 115
+    startLine: 117
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -438,7 +438,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: StopRightControllerHaptic
     path: ../com.yvr.core/Scripts/Runtime/Debug/XRRig/InputDeviceTest.cs
-    startLine: 120
+    startLine: 122
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

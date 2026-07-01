@@ -26,7 +26,6 @@ jint YVRLifecycleMgr::onJniLoaded(JavaVM* vm, void* reserved)
     const jclass unityPlayerClass = (*javaEnv).FindClass("com/unity3d/player/UnityPlayer");
     const jfieldID fieldId = javaEnv->GetStaticFieldID(unityPlayerClass, "currentActivity", "Landroid/app/Activity;");
     const jobject unityPlayerActivity = javaEnv->GetStaticObjectField(unityPlayerClass, fieldId);
-
     plugin.javaVm = vm;
     plugin.activity = javaEnv->NewGlobalRef(unityPlayerActivity);
 
@@ -85,15 +84,32 @@ void YVRLifecycleMgr::setVisible(bool isVisible)
 void YVRLifecycleMgr::shutDown()
 {
     AnnounceCallingFunc();
+    unityXRProviderInitialized = false;
 }
 
 void YVRLifecycleMgr::onUnityGraphicsDeviceEvent(UnityGfxDeviceEventType event_type)
 {
-    YDebug("Graphics event is %d, and renderer is %d ", event_type, unityInterfaces->Get<IUnityGraphics>()->GetRenderer());
+    if (event_type == kUnityGfxDeviceEventShutdown)
+    {
+        plugin.lifecycleMgr->unityXRProviderInitialized = false;
+        return;
+    }
+
+    IUnityGraphics* unityGraphics = unityInterfaces != nullptr ? unityInterfaces->Get<IUnityGraphics>() : nullptr;
+    if (unityGraphics == nullptr)
+    {
+        YError("Unity graphics interface is null for device event=%d", event_type);
+        return;
+    }
+
+    const auto renderer = unityGraphics->GetRenderer();
+    YDebug("Graphics event is %d, and renderer is %d ", event_type, renderer);
     if (event_type != kUnityGfxDeviceEventInitialize) return;
-    if (unityInterfaces->Get<IUnityGraphics>()->GetRenderer() == kUnityGfxRendererNull) return;
+    if (renderer == kUnityGfxRendererNull) return;
+    if (plugin.lifecycleMgr->unityXRProviderInitialized) return;
 
     plugin.unityXRProviderMgr->initialize(unityInterfaces);
+    plugin.lifecycleMgr->unityXRProviderInitialized = true;
 }
 
 void YVRLifecycleMgr::onUnityPluginLoaded(IUnityInterfaces* unityInterfaces)
@@ -105,9 +121,20 @@ void YVRLifecycleMgr::onUnityPluginLoaded(IUnityInterfaces* unityInterfaces)
         plugin.developmentBuildMode = plugin.unityProfiler->IsAvailable() != 0;
     }
     YVRLifecycleMgr::unityInterfaces = unityInterfaces;
-    YVRLifecycleMgr::unityInterfaces->Get<IUnityGraphics>()->RegisterDeviceEventCallback(onUnityGraphicsDeviceEvent);
+    IUnityGraphics* unityGraphics = YVRLifecycleMgr::unityInterfaces->Get<IUnityGraphics>();
+    if (unityGraphics == nullptr)
+    {
+        YError("Unity graphics interface is null during plugin load");
+        return;
+    }
+    unityGraphics->RegisterDeviceEventCallback(onUnityGraphicsDeviceEvent);
 
     GraphicsPluginBase::setUnityInterface(unityInterfaces);
+    if (unityGraphics->GetRenderer() != kUnityGfxRendererNull)
+    {
+        onUnityGraphicsDeviceEvent(kUnityGfxDeviceEventInitialize);
+    }
+
     plugin.openxrMgr->initialize();
 }
 
@@ -145,17 +172,22 @@ void YVRLifecycleMgr::onUnityBeforeRenderTick() {}
 
 #pragma endregion "Unity Main Thread Event"
 
-void YVRLifecycleMgr::onUnityXRGfxStart()
+bool YVRLifecycleMgr::onUnityXRGfxStart()
 {
     AnnounceCallingFunc();
     plugin.openxrMgr->selectGraphicPlugin(unityInterfaces);
     plugin.openxrMgr->program->InitializeGfxDevice();
 
-    plugin.openxrMgr->program->createSession();
+    if (!plugin.openxrMgr->program->createSession())
+    {
+        YError("Failed to create OpenXR session");
+        return false;
+    }
     plugin.inputMgr->createAppSpace();
     plugin.inputMgr->createViewSpace();
     plugin.inputMgr->createLocalSpace();
     plugin.inputMgr->createStageSpace();
+    return true;
 }
 
 void YVRLifecycleMgr::onUnityXRGfxStop()

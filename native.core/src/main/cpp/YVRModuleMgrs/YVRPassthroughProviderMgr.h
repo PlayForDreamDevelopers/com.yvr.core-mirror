@@ -45,16 +45,20 @@ class YVRPassthroughProviderMgr
     XrPassthroughProviderYVR largeXRPassthroughProvider = XR_NULL_HANDLE;
 
   private:
-    XrSwapchainImageBaseHeader* swapchainImages;
-    XrSwapchainImageBaseHeader* largeSwapchainImages;
+    XrSwapchainImageBaseHeader* swapchainImages{nullptr};
+    XrSwapchainImageBaseHeader* largeSwapchainImages{nullptr};
     bool passThroughProviderCreated = false;
     bool passThroughProviderStarted = false;
     bool swapchainImagesCreated = false;
     bool swapchainAllocated = false;
+    bool largePassThroughProviderStarted = false;
+    bool largeSwapchainImagesCreated = false;
+    bool largeSwapchainAllocated = false;
     int passThroughLayerId = -1;
-    uint32_t length;
-    XrResult imageAccquireResult;
-    XrResult largeImageAccquireResult;
+    uint32_t length{0};
+    uint32_t largeLength{0};
+    XrResult imageAccquireResult{XR_ERROR_RUNTIME_FAILURE};
+    XrResult largeImageAccquireResult{XR_ERROR_RUNTIME_FAILURE};
     XrPassthroughProviderYVR xrPassthroughProvider = XR_NULL_HANDLE;
     XrPassthroughSwapchainYVR xrPassthroughSwapchain = XR_NULL_HANDLE;
 

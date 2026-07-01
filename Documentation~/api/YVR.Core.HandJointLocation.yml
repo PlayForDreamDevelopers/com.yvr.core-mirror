@@ -22,7 +22,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandJointLocation
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 113
+    startLine: 106
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -54,7 +54,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: locationFlags
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 115
+    startLine: 108
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -81,7 +81,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: pose
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 116
+    startLine: 109
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -108,7 +108,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: radius
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 117
+    startLine: 110
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

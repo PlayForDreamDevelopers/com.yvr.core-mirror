@@ -21,7 +21,7 @@
  
 ## 合成层形状 
 
-合成层的形状决定了合成层的展示效果。合成层的形状有三种：Quad、Cylinder 和 Equirect：
+合成层的形状决定了合成层的展示效果。合成层的形状包括 Quad、Cylinder、Equirect、CubeProjection 和 Projection：
 
 - **Quad**：具有四个顶点的四边形平面纹理，通常用来显示场景中的文本或信息。
 - **Cylinder**：具有柱面弧度的圆柱形纹理，通常用于显示曲面 UI 界面。若使用 Cylinder，则：
@@ -30,6 +30,8 @@
 - **Equirect**：球体纹理，通常用于显示 360/180 全景纹理。
   - Radius 参数用于指定圆柱的半径，当设置为 0 或者正无限大（1.0f/0.0f）时，表示无限大的半径。球面半径无限大时，其展示效果如同空场景中的天空盒。
   - Destination Rects 下的 X 参数无用；W 参数映射到中心角，关于中心点坐标 (0, 0) 对称。
+- **CubeProjection**：立方体贴图纹理，通常用于显示 Cubemap 内容。使用该形状时，传入的纹理应为 `Cubemap`，SDK 会将 Cubemap 拷贝到合成层的原生纹理中。
+- **Projection**：投影层，使用左右眼对应的眼缓冲尺寸，适合需要直接控制双眼投影图层的场景。
 
 
 ## 纹理类型
@@ -53,6 +55,16 @@
 ### 透明度
 
 `alpha` 参数用于设置纹理的透明度，取值范围为 $[0,1]$。
+
+### 单层超采样与锐化
+
+合成层可以分别设置 `SuperSamplingType` 和 `SharpenType`：
+
+- **None**：不启用对应处理。
+- **Normal**：启用普通质量处理。
+- **Quality**：启用更高质量处理，通常会带来更高的 GPU 开销。
+
+这些设置会应用在当前合成层对应的原生图层上，适合需要提高清晰度的 UI、文本、图像或 Cubemap 内容。若要设置 Eye Buffer 的锐化，请参考[超采样与锐化](./SupersamplingAndSharpening.md)。
 
 
 ## 示例

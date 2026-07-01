@@ -18,7 +18,7 @@ public:
     void InitializeGfxDevice();
     void getViewConfigurations();
 
-    void createSession();
+    bool createSession();
     void destroySession();
 
     void BeginSession();

@@ -1,37 +1,42 @@
 ### YamlMime:ManagedReference
 items:
-- uid: YVR.Core.HandJointLocations
-  commentId: T:YVR.Core.HandJointLocations
-  id: HandJointLocations
+- uid: YVR.Core.LayerShapeData
+  commentId: T:YVR.Core.LayerShapeData
+  id: LayerShapeData
   parent: YVR.Core
   children:
-  - YVR.Core.HandJointLocations.aimState
-  - YVR.Core.HandJointLocations.handScale
-  - YVR.Core.HandJointLocations.isActive
-  - YVR.Core.HandJointLocations.jointCount
-  - YVR.Core.HandJointLocations.jointLocations
-  - YVR.Core.HandJointLocations.jointVelocities
+  - YVR.Core.LayerShapeData.centralAngle
+  - YVR.Core.LayerShapeData.centralHorizontalAngle
+  - YVR.Core.LayerShapeData.destRect
+  - YVR.Core.LayerShapeData.isXRCompositionLayers
+  - YVR.Core.LayerShapeData.layerTransform
+  - YVR.Core.LayerShapeData.lowerVerticalAngle
+  - YVR.Core.LayerShapeData.radius
+  - YVR.Core.LayerShapeData.ratio
+  - YVR.Core.LayerShapeData.renderLayerId
+  - YVR.Core.LayerShapeData.upperVerticalAngle
+  - YVR.Core.LayerShapeData.yvrManager
   langs:
   - csharp
   - vb
-  name: HandJointLocations
-  nameWithType: HandJointLocations
-  fullName: YVR.Core.HandJointLocations
+  name: LayerShapeData
+  nameWithType: LayerShapeData
+  fullName: YVR.Core.LayerShapeData
   type: Struct
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: HandJointLocations
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 120
+    id: LayerShapeData
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 4
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public struct HandJointLocations
-    content.vb: Public Structure HandJointLocations
+    content: public struct LayerShapeData
+    content.vb: Public Structure LayerShapeData
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -39,168 +44,303 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-- uid: YVR.Core.HandJointLocations.isActive
-  commentId: F:YVR.Core.HandJointLocations.isActive
-  id: isActive
-  parent: YVR.Core.HandJointLocations
+- uid: YVR.Core.LayerShapeData.renderLayerId
+  commentId: F:YVR.Core.LayerShapeData.renderLayerId
+  id: renderLayerId
+  parent: YVR.Core.LayerShapeData
   langs:
   - csharp
   - vb
-  name: isActive
-  nameWithType: HandJointLocations.isActive
-  fullName: YVR.Core.HandJointLocations.isActive
+  name: renderLayerId
+  nameWithType: LayerShapeData.renderLayerId
+  fullName: YVR.Core.LayerShapeData.renderLayerId
   type: Field
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: isActive
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 122
+    id: renderLayerId
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 6
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public uint isActive
+    content: public int renderLayerId
     return:
-      type: System.UInt32
-    content.vb: Public isActive As UInteger
-- uid: YVR.Core.HandJointLocations.jointCount
-  commentId: F:YVR.Core.HandJointLocations.jointCount
-  id: jointCount
-  parent: YVR.Core.HandJointLocations
+      type: System.Int32
+    content.vb: Public renderLayerId As Integer
+- uid: YVR.Core.LayerShapeData.layerTransform
+  commentId: F:YVR.Core.LayerShapeData.layerTransform
+  id: layerTransform
+  parent: YVR.Core.LayerShapeData
   langs:
   - csharp
   - vb
-  name: jointCount
-  nameWithType: HandJointLocations.jointCount
-  fullName: YVR.Core.HandJointLocations.jointCount
+  name: layerTransform
+  nameWithType: LayerShapeData.layerTransform
+  fullName: YVR.Core.LayerShapeData.layerTransform
   type: Field
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: jointCount
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 123
+    id: layerTransform
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 7
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public uint jointCount
+    content: public Transform layerTransform
     return:
-      type: System.UInt32
-    content.vb: Public jointCount As UInteger
-- uid: YVR.Core.HandJointLocations.handScale
-  commentId: F:YVR.Core.HandJointLocations.handScale
-  id: handScale
-  parent: YVR.Core.HandJointLocations
+      type: UnityEngine.Transform
+    content.vb: Public layerTransform As Transform
+- uid: YVR.Core.LayerShapeData.yvrManager
+  commentId: F:YVR.Core.LayerShapeData.yvrManager
+  id: yvrManager
+  parent: YVR.Core.LayerShapeData
   langs:
   - csharp
   - vb
-  name: handScale
-  nameWithType: HandJointLocations.handScale
-  fullName: YVR.Core.HandJointLocations.handScale
+  name: yvrManager
+  nameWithType: LayerShapeData.yvrManager
+  fullName: YVR.Core.LayerShapeData.yvrManager
   type: Field
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: handScale
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 124
+    id: yvrManager
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 8
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public float handScale
+    content: public YVRManager yvrManager
+    return:
+      type: YVR.Core.YVRManager
+    content.vb: Public yvrManager As YVRManager
+- uid: YVR.Core.LayerShapeData.centralAngle
+  commentId: F:YVR.Core.LayerShapeData.centralAngle
+  id: centralAngle
+  parent: YVR.Core.LayerShapeData
+  langs:
+  - csharp
+  - vb
+  name: centralAngle
+  nameWithType: LayerShapeData.centralAngle
+  fullName: YVR.Core.LayerShapeData.centralAngle
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: centralAngle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float centralAngle
     return:
       type: System.Single
-    content.vb: Public handScale As Single
-- uid: YVR.Core.HandJointLocations.jointLocations
-  commentId: F:YVR.Core.HandJointLocations.jointLocations
-  id: jointLocations
-  parent: YVR.Core.HandJointLocations
+    content.vb: Public centralAngle As Single
+- uid: YVR.Core.LayerShapeData.radius
+  commentId: F:YVR.Core.LayerShapeData.radius
+  id: radius
+  parent: YVR.Core.LayerShapeData
   langs:
   - csharp
   - vb
-  name: jointLocations
-  nameWithType: HandJointLocations.jointLocations
-  fullName: YVR.Core.HandJointLocations.jointLocations
+  name: radius
+  nameWithType: LayerShapeData.radius
+  fullName: YVR.Core.LayerShapeData.radius
   type: Field
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: jointLocations
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 127
+    id: radius
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 10
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public HandJointLocation[] jointLocations
+    content: public float radius
     return:
-      type: YVR.Core.HandJointLocation[]
-    content.vb: Public jointLocations As HandJointLocation()
-- uid: YVR.Core.HandJointLocations.aimState
-  commentId: F:YVR.Core.HandJointLocations.aimState
-  id: aimState
-  parent: YVR.Core.HandJointLocations
+      type: System.Single
+    content.vb: Public radius As Single
+- uid: YVR.Core.LayerShapeData.ratio
+  commentId: F:YVR.Core.LayerShapeData.ratio
+  id: ratio
+  parent: YVR.Core.LayerShapeData
   langs:
   - csharp
   - vb
-  name: aimState
-  nameWithType: HandJointLocations.aimState
-  fullName: YVR.Core.HandJointLocations.aimState
+  name: ratio
+  nameWithType: LayerShapeData.ratio
+  fullName: YVR.Core.LayerShapeData.ratio
   type: Field
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: aimState
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 129
+    id: ratio
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 11
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public HandTrackingAimState aimState
+    content: public float ratio
     return:
-      type: YVR.Core.HandTrackingAimState
-    content.vb: Public aimState As HandTrackingAimState
-- uid: YVR.Core.HandJointLocations.jointVelocities
-  commentId: F:YVR.Core.HandJointLocations.jointVelocities
-  id: jointVelocities
-  parent: YVR.Core.HandJointLocations
+      type: System.Single
+    content.vb: Public ratio As Single
+- uid: YVR.Core.LayerShapeData.destRect
+  commentId: F:YVR.Core.LayerShapeData.destRect
+  id: destRect
+  parent: YVR.Core.LayerShapeData
   langs:
   - csharp
   - vb
-  name: jointVelocities
-  nameWithType: HandJointLocations.jointVelocities
-  fullName: YVR.Core.HandJointLocations.jointVelocities
+  name: destRect
+  nameWithType: LayerShapeData.destRect
+  fullName: YVR.Core.LayerShapeData.destRect
   type: Field
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: jointVelocities
-    path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 132
+    id: destRect
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 12
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public HandJointVelocity[] jointVelocities
+    content: public Rect destRect
     return:
-      type: YVR.Core.HandJointVelocity[]
-    content.vb: Public jointVelocities As HandJointVelocity()
+      type: UnityEngine.Rect
+    content.vb: Public destRect As Rect
+- uid: YVR.Core.LayerShapeData.isXRCompositionLayers
+  commentId: F:YVR.Core.LayerShapeData.isXRCompositionLayers
+  id: isXRCompositionLayers
+  parent: YVR.Core.LayerShapeData
+  langs:
+  - csharp
+  - vb
+  name: isXRCompositionLayers
+  nameWithType: LayerShapeData.isXRCompositionLayers
+  fullName: YVR.Core.LayerShapeData.isXRCompositionLayers
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: isXRCompositionLayers
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 13
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public bool isXRCompositionLayers
+    return:
+      type: System.Boolean
+    content.vb: Public isXRCompositionLayers As Boolean
+- uid: YVR.Core.LayerShapeData.centralHorizontalAngle
+  commentId: F:YVR.Core.LayerShapeData.centralHorizontalAngle
+  id: centralHorizontalAngle
+  parent: YVR.Core.LayerShapeData
+  langs:
+  - csharp
+  - vb
+  name: centralHorizontalAngle
+  nameWithType: LayerShapeData.centralHorizontalAngle
+  fullName: YVR.Core.LayerShapeData.centralHorizontalAngle
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: centralHorizontalAngle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 14
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float centralHorizontalAngle
+    return:
+      type: System.Single
+    content.vb: Public centralHorizontalAngle As Single
+- uid: YVR.Core.LayerShapeData.upperVerticalAngle
+  commentId: F:YVR.Core.LayerShapeData.upperVerticalAngle
+  id: upperVerticalAngle
+  parent: YVR.Core.LayerShapeData
+  langs:
+  - csharp
+  - vb
+  name: upperVerticalAngle
+  nameWithType: LayerShapeData.upperVerticalAngle
+  fullName: YVR.Core.LayerShapeData.upperVerticalAngle
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: upperVerticalAngle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 15
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float upperVerticalAngle
+    return:
+      type: System.Single
+    content.vb: Public upperVerticalAngle As Single
+- uid: YVR.Core.LayerShapeData.lowerVerticalAngle
+  commentId: F:YVR.Core.LayerShapeData.lowerVerticalAngle
+  id: lowerVerticalAngle
+  parent: YVR.Core.LayerShapeData
+  langs:
+  - csharp
+  - vb
+  name: lowerVerticalAngle
+  nameWithType: LayerShapeData.lowerVerticalAngle
+  fullName: YVR.Core.LayerShapeData.lowerVerticalAngle
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: lowerVerticalAngle
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeData.cs
+    startLine: 16
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public float lowerVerticalAngle
+    return:
+      type: System.Single
+    content.vb: Public lowerVerticalAngle As Single
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core
@@ -441,17 +581,37 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.UInt32
-  commentId: T:System.UInt32
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.uint32
-  name: uint
-  nameWithType: uint
-  fullName: uint
-  nameWithType.vb: UInteger
-  fullName.vb: UInteger
-  name.vb: UInteger
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YVR.Core.YVRManager
+  commentId: T:YVR.Core.YVRManager
+  parent: YVR.Core
+  href: YVR.Core.YVRManager.html
+  name: YVRManager
+  nameWithType: YVRManager
+  fullName: YVR.Core.YVRManager
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -463,53 +623,22 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
-- uid: YVR.Core.HandJointLocation[]
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
   isExternal: true
-  href: YVR.Core.HandJointLocation.html
-  name: HandJointLocation[]
-  nameWithType: HandJointLocation[]
-  fullName: YVR.Core.HandJointLocation[]
-  nameWithType.vb: HandJointLocation()
-  fullName.vb: YVR.Core.HandJointLocation()
-  name.vb: HandJointLocation()
-  spec.csharp:
-  - uid: YVR.Core.HandJointLocation
-    name: HandJointLocation
-    href: YVR.Core.HandJointLocation.html
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: YVR.Core.HandJointLocation
-    name: HandJointLocation
-    href: YVR.Core.HandJointLocation.html
-  - name: (
-  - name: )
-- uid: YVR.Core.HandTrackingAimState
-  commentId: T:YVR.Core.HandTrackingAimState
-  parent: YVR.Core
-  href: YVR.Core.HandTrackingAimState.html
-  name: HandTrackingAimState
-  nameWithType: HandTrackingAimState
-  fullName: YVR.Core.HandTrackingAimState
-- uid: YVR.Core.HandJointVelocity[]
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  href: YVR.Core.HandJointVelocity.html
-  name: HandJointVelocity[]
-  nameWithType: HandJointVelocity[]
-  fullName: YVR.Core.HandJointVelocity[]
-  nameWithType.vb: HandJointVelocity()
-  fullName.vb: YVR.Core.HandJointVelocity()
-  name.vb: HandJointVelocity()
-  spec.csharp:
-  - uid: YVR.Core.HandJointVelocity
-    name: HandJointVelocity
-    href: YVR.Core.HandJointVelocity.html
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: YVR.Core.HandJointVelocity
-    name: HandJointVelocity
-    href: YVR.Core.HandJointVelocity.html
-  - name: (
-  - name: )
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 memberLayout: SeparatePages

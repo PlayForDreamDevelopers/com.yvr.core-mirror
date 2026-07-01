@@ -128,7 +128,8 @@ void OpenXRProgram::createInstanceInternal()
     createInfo.applicationInfo.engineVersion = XR_MAKE_VERSION_INT32(1, 25, 1);
     createInfo.applicationInfo.apiVersion = XR_API_VERSION_1_0;
 
-    xrCreateInstance(&createInfo, &instance);
+    const XrResult createInstanceResult = xrCreateInstance(&createInfo, &instance);
+    OpenXRResult(createInstanceResult, "xrCreateInstance");
     AnnounceCalledFunc();
 }
 
@@ -143,13 +144,16 @@ void OpenXRProgram::LogInstanceInfo()
           GetXrVersionString(instanceProperties.runtimeVersion).c_str());
 }
 
-void OpenXRProgram::createSession()
+bool OpenXRProgram::createSession()
 {
     AnnounceCallingFunc();
     XrSessionCreateInfo createInfo{XR_TYPE_SESSION_CREATE_INFO};
     createInfo.next = plugin.openxrMgr->graphicsPlugin->GetGraphicsBinding();
     createInfo.systemId = systemId;
-    OpenXRAPI(xrCreateSession(instance,&createInfo,&session));
+    session = XR_NULL_HANDLE;
+    const XrResult createSessionResult = xrCreateSession(instance, &createInfo, &session);
+    OpenXRResult(createSessionResult, "xrCreateSession");
+    return XR_SUCCEEDED(createSessionResult) && session != XR_NULL_HANDLE;
 }
 
 void OpenXRProgram::destroySession()

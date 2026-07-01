@@ -25,7 +25,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandTrackingAimState
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 150
+    startLine: 143
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -57,7 +57,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: status
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 152
+    startLine: 145
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -84,7 +84,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: aimPose
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 153
+    startLine: 146
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -111,7 +111,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: pinchStrengthIndex
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 154
+    startLine: 147
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -138,7 +138,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: pinchStrengthMiddle
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 155
+    startLine: 148
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -165,7 +165,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: pinchStrengthRing
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 156
+    startLine: 149
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -192,7 +192,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: pinchStrengthLittle
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 157
+    startLine: 150
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

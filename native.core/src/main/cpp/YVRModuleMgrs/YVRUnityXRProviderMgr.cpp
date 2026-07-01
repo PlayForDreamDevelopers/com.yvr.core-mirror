@@ -10,9 +10,23 @@
 void YVRUnityXRProviderMgr::initialize(IUnityInterfaces* unityInterfaces)
 {
     this->unityInterfaces = unityInterfaces;
-    UnityXRAPI(plugin.unityXRProviderMgr->loadDisplaySubsystem());
-    UnityXRAPI(plugin.unityXRProviderMgr->loadTrackingSubsystem());
-    UnityXRAPI(plugin.unityXRProviderMgr->loadMeshSubsystem());
+    const UnitySubsystemErrorCode displayResult = plugin.unityXRProviderMgr->loadDisplaySubsystem();
+    if (displayResult != kUnitySubsystemErrorCodeSuccess)
+    {
+        YError("Failed to load display subsystem result=%d", displayResult);
+    }
+
+    const UnitySubsystemErrorCode trackingResult = plugin.unityXRProviderMgr->loadTrackingSubsystem();
+    if (trackingResult != kUnitySubsystemErrorCodeSuccess)
+    {
+        YError("Failed to load tracking subsystem result=%d", trackingResult);
+    }
+
+    const UnitySubsystemErrorCode meshResult = plugin.unityXRProviderMgr->loadMeshSubsystem();
+    if (meshResult != kUnitySubsystemErrorCodeSuccess)
+    {
+        YError("Failed to load mesh subsystem result=%d", meshResult);
+    }
 }
 
 void YVRUnityXRProviderMgr::initializeDisplaySubsystemLifecycle(UnityLifecycleProvider& displayLifecycleProvider)
@@ -110,7 +124,11 @@ UnitySubsystemErrorCode YVRUnityXRProviderMgr::loadDisplaySubsystem()
 {
     AnnounceCallingFunc();
     this->displayInterface = this->unityInterfaces->Get<IUnityXRDisplayInterface>();
-    if (this->displayInterface == nullptr) return kUnitySubsystemErrorCodeFailure;
+    if (this->displayInterface == nullptr)
+    {
+        YError("Failed to load display subsystem because display interface is null");
+        return kUnitySubsystemErrorCodeFailure;
+    }
 
     UnityLifecycleProvider displayLifeCycleProvider{};
     displayLifeCycleProvider.userData = this;
@@ -123,7 +141,11 @@ UnitySubsystemErrorCode YVRUnityXRProviderMgr::loadTrackingSubsystem()
 {
     AnnounceCallingFunc();
     this->inputInterface = this->unityInterfaces->Get<IUnityXRInputInterface>();
-    if (this->inputInterface == nullptr) return kUnitySubsystemErrorCodeFailure;
+    if (this->inputInterface == nullptr)
+    {
+        YError("Failed to load tracking subsystem because input interface is null");
+        return kUnitySubsystemErrorCodeFailure;
+    }
 
     UnityLifecycleProvider trackingLifeCycleProvider{};
     trackingLifeCycleProvider.userData = this;

@@ -36,6 +36,7 @@ Scene Anchors need components to describe the calibrated environment. Therefore,
 - Bounded2D: Locating point information for 2D plane data, including the width and height of the plane and the offset on the x and y axes relative to the anchor (or the indexed triangular mesh of a non-rectangular plane).
 - Bounded3D: 3D cuboid data, including length, width, height, and the offset on the x, y, z axes relative to the anchor.
 - SemanticLabels: Semantic labels of the anchor, which can classify the anchor into multiple categories. For more details, refer to the following section.
+- TriangleMesh: Triangle mesh data used to describe boundaries or irregular spatial regions.
 
 ## Common Scene Anchors
 
@@ -65,6 +66,8 @@ Semantic classification categorizes Scene Anchors into a predefined list of syst
 | OTHER             | Other           | 3D  |
 | TABLE             | Table           | 3D  |
 | BED               | Bed             | 3D  |
+| MESH_BOUNDARY     | Mesh Boundary   | Mesh |
+| SAFETY_BOUNDARY   | Safety Boundary | Mesh |
 
 > [!Note]
 > This list of labels is constantly evolving as we regularly add support for more 2D and 3D objects.
@@ -231,6 +234,28 @@ The YVRSceneAnchor.instance.GetAnchorSemanticLabels interface returns the semant
 public bool GetAnchorSemanticLabels(ulong anchorHandle, out string labels)
 ```
 
+### Get Triangle Mesh of the Anchor
+
+When an anchor supports the **TriangleMesh** component, use `YVRSceneAnchor.instance.GetAnchorTriangleMesh` to get its triangle mesh data. The returned vertex and index lists can be used to create a Unity Mesh for boundary visualization, collision, occlusion, or other spatial logic.
+
+```Csharp
+/// <summary>
+/// Get triangle mesh information of the anchor.
+/// </summary>
+/// <param name="anchorHandle">Handle of the spatial anchor</param>
+/// <param name="triangleMesh">Returned triangle mesh data</param>
+/// <returns>True if the triangle mesh information is successfully obtained; otherwise, false</returns>
+public bool GetAnchorTriangleMesh(ulong anchorHandle, out YVRTriangleMesh triangleMesh)
+```
+
+```Csharp
+public struct YVRTriangleMesh
+{
+    public List<Vector3> vertices;
+    public List<int> indices;
+}
+```
+
 > [!Note]
 > When the component type supported by the anchor is **Bounded2D**, you can use the **GetAnchorBoundingBox2D** interface to obtain rectangular plane data, or use **GetAnchorBoundary2D** to obtain the plane's vertex data. (If the calibrated plane is non-rectangular, using GetAnchorBoundingBox2D will return the corresponding minimum bounding rectangle based on the plane vertex information.)
 
@@ -247,6 +272,7 @@ You can retrieve the content of room calibration data through the following proc
 3. Use UUIDs to loop through all sub-anchors queried through the YVRSpatialAnchor.instance.QuerySpatialAnchor interface.
 4. For the queried sub-anchors, call YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus to check whether they support the corresponding component types.
 5. If you want to know the dimensions, call GetAnchorBoundingBox2D, GetAnchorBoundary2D, or GetAnchorBoundingBox3D to return the corresponding information and scale the Unity objects accordingly.
+6. If an anchor supports the TriangleMesh component, call GetAnchorTriangleMesh to get its full triangle mesh data.
 
 ## Code Example
 
@@ -335,17 +361,31 @@ private void GetAnchorSemanticLabelsData(YVRSpatialAnchorResult anchor)  
     {  
         YVRSceneAnchor.instance.GetAnchorSemanticLabels(anchor.anchorHandle, out string semanticLabels);  
         Debug.Log($"semanticLabel anchor uuid:{new string(anchor.uuid)} semanticLabels:{semanticLabels}");  
-    }  
+    }  
+}
+// Get triangle mesh information of the anchor
+private void GetAnchorTriangleMeshData(YVRSpatialAnchorResult anchor)
+{
+    YVRSpatialAnchor.instance.GetSpatialAnchorComponentStatus(anchor.anchorHandle, YVRSpatialAnchorComponentType.TriangleMesh, out YVRSpatialAnchorComponentStatus status);
+    if (status.enable)
+    {
+        bool result = YVRSceneAnchor.instance.GetAnchorTriangleMesh(anchor.anchorHandle, out YVRTriangleMesh triangleMesh);
+        if (result)
+        {
+            Debug.Log($"triangle mesh anchor uuid:{new string(anchor.uuid)} vertices:{triangleMesh.vertices.Count}, indices:{triangleMesh.indices.Count}");
+        }
+    }
 }
 private void GetAnchorComponentData()  
 {  
     foreach (var anchor in m_ContainerAnchors)  
-    {  
+    {  
         GetAnchorBoundary2DData(anchor);  
         GetAnchorBoundingBox2DData(anchor);  
         GetAnchorBoundingBox3DData(anchor);  
         GetAnchorSemanticLabelsData(anchor);  
-    }  
+        GetAnchorTriangleMeshData(anchor);
+    }  
 }
 ```
 

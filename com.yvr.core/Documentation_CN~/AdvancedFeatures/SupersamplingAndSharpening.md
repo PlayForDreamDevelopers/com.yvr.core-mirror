@@ -16,6 +16,17 @@
         - **Normal**
         - **Quality**
 
+运行时可以通过 `YVRCompositeLayer.SuperSamplingType` 设置单个合成层的超采样类型：
+
+```csharp
+public YVRCompositeLayer layer;
+
+public void SetLayerSuperSampling()
+{
+    layer.SuperSamplingType = YVRQualityManager.LayerSettingsType.Quality;
+}
+```
+
 
 ## 开启锐化功能
 
@@ -29,6 +40,23 @@
         - **None**
         - **Normal**
         - **Quality**
+
+运行时可以通过 `YVRManager.instance.EyeBufferSharpenType` 设置 Eye Buffer 的锐化类型：
+
+```csharp
+YVRManager.instance.EyeBufferSharpenType = YVRQualityManager.LayerSettingsType.Normal;
+```
+
+也可以通过 `YVRCompositeLayer.SharpenType` 设置单个合成层的锐化类型：
+
+```csharp
+public YVRCompositeLayer layer;
+
+public void SetLayerSharpen()
+{
+    layer.SharpenType = YVRQualityManager.LayerSettingsType.Quality;
+}
+```
 
 
 ## 注意事项

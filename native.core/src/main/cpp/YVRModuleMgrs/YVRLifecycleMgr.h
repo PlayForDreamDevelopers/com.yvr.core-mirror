@@ -23,7 +23,7 @@ public:
     jint onJniLoaded(JavaVM* vm, void* reserved);
     void onUnityPluginLoaded(IUnityInterfaces* unityInterfaces);
     void onUnityPluginUnLoaded();
-    void onUnityXRGfxStart();
+    bool onUnityXRGfxStart();
     void onUnityMainThreadStart();
     void onUnityMainThreadStop();
     void onUnityXRGfxStop();
@@ -54,6 +54,7 @@ private:
     bool inVrMode;
     bool focusing{true};
     bool visible{true};
+    bool unityXRProviderInitialized{false};
     int frameCount;
     int submittedFrameCount;
 

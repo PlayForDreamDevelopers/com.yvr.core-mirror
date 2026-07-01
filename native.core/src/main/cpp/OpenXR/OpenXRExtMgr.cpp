@@ -2,6 +2,49 @@
 
 #include "../YVRUnityPlugin.h"
 
+namespace
+{
+template <typename XrFunction>
+struct UnsupportedXrFunction;
+
+template <typename Ret, typename... Args>
+struct UnsupportedXrFunction<Ret (XRAPI_PTR *)(Args...)>
+{
+    static XRAPI_ATTR Ret XRAPI_CALL Call(Args...)
+    {
+        return static_cast<Ret>(XR_ERROR_FUNCTION_UNSUPPORTED);
+    }
+};
+
+template <typename... Args>
+struct UnsupportedXrFunction<void (XRAPI_PTR *)(Args...)>
+{
+    static XRAPI_ATTR void XRAPI_CALL Call(Args...)
+    {
+    }
+};
+
+template <typename XrFunction>
+XrFunction GetUnsupportedXrFunction()
+{
+    return &UnsupportedXrFunction<XrFunction>::Call;
+}
+
+template <typename XrFunction>
+void LoadOptionalXrFunction(XrInstance instance, const char* functionName, XrFunction& function)
+{
+    function = nullptr;
+    const XrResult result =
+        xrGetInstanceProcAddr(instance, functionName, reinterpret_cast<PFN_xrVoidFunction*>(&function));
+
+    if (XR_FAILED(result) || function == nullptr)
+    {
+        YWarn("OpenXR optional function unavailable: %s, result=%d", functionName, result);
+        function = GetUnsupportedXrFunction<XrFunction>();
+    }
+}
+}
+
 PFN_xrGetSystemPropertyIntYVR xrGetSystemPropertyIntYVR = nullptr;
 PFN_xrGetSystemPropertyFloatYVR xrGetSystemPropertyFloatYVR = nullptr;
 PFN_xrGetSystemPropertyFloatArrayYVR xrGetSystemPropertyFloatArrayYVR = nullptr;
@@ -198,206 +241,198 @@ void OpenXRExtMgr::initExtensions()
 {
     const XrInstance& instance = plugin.openxrMgr->program->instance;
 
-    xrGetInstanceProcAddr(instance, "xrSetColorSpaceFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetColorSpaceFB));
-    xrGetInstanceProcAddr(instance, "xrSetColorSpaceYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetColorSpaceYVR));
-    xrGetInstanceProcAddr(instance, "xrGetSystemPropertyIntYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSystemPropertyIntYVR));
-    xrGetInstanceProcAddr(instance, "xrGetSystemPropertyFloatYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSystemPropertyFloatYVR));
-    xrGetInstanceProcAddr(instance, "xrGetSystemPropertyFloatArrayYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSystemPropertyFloatArrayYVR));
-    xrGetInstanceProcAddr(instance, "xrGetSystemPropertyCharArrayYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSystemPropertyCharArrayYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSystemPropertyIntYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSystemPropertyIntYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSystemPropertyFloatYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSystemPropertyFloatYVR));
-    xrGetInstanceProcAddr(instance, "xrSetForceHeadModeYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetForceHeadModeYVR));
+    LoadOptionalXrFunction(instance, "xrSetColorSpaceFB", xrSetColorSpaceFB);
+    LoadOptionalXrFunction(instance, "xrSetColorSpaceYVR", xrSetColorSpaceYVR);
+    LoadOptionalXrFunction(instance, "xrGetSystemPropertyIntYVR", xrGetSystemPropertyIntYVR);
+    LoadOptionalXrFunction(instance, "xrGetSystemPropertyFloatYVR", xrGetSystemPropertyFloatYVR);
+    LoadOptionalXrFunction(instance, "xrGetSystemPropertyFloatArrayYVR", xrGetSystemPropertyFloatArrayYVR);
+    LoadOptionalXrFunction(instance, "xrGetSystemPropertyCharArrayYVR", xrGetSystemPropertyCharArrayYVR);
+    LoadOptionalXrFunction(instance, "xrSetSystemPropertyIntYVR", xrSetSystemPropertyIntYVR);
+    LoadOptionalXrFunction(instance, "xrSetSystemPropertyFloatYVR", xrSetSystemPropertyFloatYVR);
+    LoadOptionalXrFunction(instance, "xrSetForceHeadModeYVR", xrSetForceHeadModeYVR);
 
-    xrGetInstanceProcAddr(instance, "xrStartControllerPairingYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStartControllerPairingYVR));
-    xrGetInstanceProcAddr(instance, "xrStopControllerPairingYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStopControllerPairingYVR));
-    xrGetInstanceProcAddr(instance, "xrRemoveControllerPairingYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrRemoveControllerPairingYVR));
-    xrGetInstanceProcAddr(instance, "xrQueryControllerPairingStateYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrQueryControllerPairingStateYVR));
-    xrGetInstanceProcAddr(instance, "xrGetControllerSerialNumberYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetControllerSerialNumberYVR));
-    xrGetInstanceProcAddr(instance, "xrSetPrimaryControllerHandleYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetPrimaryControllerHandleYVR));
-    xrGetInstanceProcAddr(instance, "xrGetPrimaryControllerHandleYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPrimaryControllerHandleYVR));
-    xrGetInstanceProcAddr(instance, "xrGetControllerChargeStatusYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetControllerChargeStatusYVR));
+    LoadOptionalXrFunction(instance, "xrStartControllerPairingYVR", xrStartControllerPairingYVR);
+    LoadOptionalXrFunction(instance, "xrStopControllerPairingYVR", xrStopControllerPairingYVR);
+    LoadOptionalXrFunction(instance, "xrRemoveControllerPairingYVR", xrRemoveControllerPairingYVR);
+    LoadOptionalXrFunction(instance, "xrQueryControllerPairingStateYVR", xrQueryControllerPairingStateYVR);
+    LoadOptionalXrFunction(instance, "xrGetControllerSerialNumberYVR", xrGetControllerSerialNumberYVR);
+    LoadOptionalXrFunction(instance, "xrSetPrimaryControllerHandleYVR", xrSetPrimaryControllerHandleYVR);
+    LoadOptionalXrFunction(instance, "xrGetPrimaryControllerHandleYVR", xrGetPrimaryControllerHandleYVR);
+    LoadOptionalXrFunction(instance, "xrGetControllerChargeStatusYVR", xrGetControllerChargeStatusYVR);
 
-    xrGetInstanceProcAddr(instance, "xrPassthroughStartYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughStartYVR));
-    xrGetInstanceProcAddr(instance, "xrPassthroughStopYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughStopYVR));
+    LoadOptionalXrFunction(instance, "xrPassthroughStartYVR", xrPassthroughStartYVR);
+    LoadOptionalXrFunction(instance, "xrPassthroughStopYVR", xrPassthroughStopYVR);
 
-    xrGetInstanceProcAddr(instance, "xrTestBoundaryNodeYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrTestBoundaryNodeYVR));
-    xrGetInstanceProcAddr(instance, "xrTestBoundaryPointYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrTestBoundaryPointYVR));
-    xrGetInstanceProcAddr(instance, "xrGetBoundaryDimensionsYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetBoundaryDimensionsYVR));
-    xrGetInstanceProcAddr(instance, "xrGetBoundaryVisibleYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetBoundaryVisibleYVR));
-    xrGetInstanceProcAddr(instance, "xrGetBoundaryGeometryPointsCountYVR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrGetBoundaryGeometryPointsCountYVR));
-    xrGetInstanceProcAddr(instance, "xrGetBoundaryGeometryYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetBoundaryGeometryYVR));
-    xrGetInstanceProcAddr(instance, "xrGetGroundDistanceYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetGroundDistanceYVR));
-    xrGetInstanceProcAddr(instance, "xrGetBoundaryConfiguredYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetBoundaryConfiguredYVR));
-    xrGetInstanceProcAddr(instance, "xrSetBoundaryControlYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetBoundaryControlYVR));
-    xrGetInstanceProcAddr(instance, "xrGetBoundaryStatusYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetBoundaryStatusYVR));
+    LoadOptionalXrFunction(instance, "xrTestBoundaryNodeYVR", xrTestBoundaryNodeYVR);
+    LoadOptionalXrFunction(instance, "xrTestBoundaryPointYVR", xrTestBoundaryPointYVR);
+    LoadOptionalXrFunction(instance, "xrGetBoundaryDimensionsYVR", xrGetBoundaryDimensionsYVR);
+    LoadOptionalXrFunction(instance, "xrGetBoundaryVisibleYVR", xrGetBoundaryVisibleYVR);
+    LoadOptionalXrFunction(instance, "xrGetBoundaryGeometryPointsCountYVR", xrGetBoundaryGeometryPointsCountYVR);
+    LoadOptionalXrFunction(instance, "xrGetBoundaryGeometryYVR", xrGetBoundaryGeometryYVR);
+    LoadOptionalXrFunction(instance, "xrGetGroundDistanceYVR", xrGetGroundDistanceYVR);
+    LoadOptionalXrFunction(instance, "xrGetBoundaryConfiguredYVR", xrGetBoundaryConfiguredYVR);
+    LoadOptionalXrFunction(instance, "xrSetBoundaryControlYVR", xrSetBoundaryControlYVR);
+    LoadOptionalXrFunction(instance, "xrGetBoundaryStatusYVR", xrGetBoundaryStatusYVR);
 
-    xrGetInstanceProcAddr(instance, "xrGetOpenGLESGraphicsRequirementsKHR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrGetOpenGLESGraphicsRequirementsKHR));
-    xrGetInstanceProcAddr(instance, "xrGetVulkanGraphicsRequirements2KHR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrGetVulkanGraphicsRequirements2KHR));
-    xrGetInstanceProcAddr(instance, "xrSetAndroidApplicationThreadKHR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetAndroidApplicationThreadKHR));
+    LoadOptionalXrFunction(instance, "xrGetOpenGLESGraphicsRequirementsKHR", xrGetOpenGLESGraphicsRequirementsKHR);
+    LoadOptionalXrFunction(instance, "xrGetVulkanGraphicsRequirements2KHR", xrGetVulkanGraphicsRequirements2KHR);
+    LoadOptionalXrFunction(instance, "xrSetAndroidApplicationThreadKHR", xrSetAndroidApplicationThreadKHR);
 
-    xrGetInstanceProcAddr(instance, "xrEnumerateDisplayRefreshRatesFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrEnumerateDisplayRefreshRatesFB));
-    xrGetInstanceProcAddr(instance, "xrGetDisplayRefreshRateFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetDisplayRefreshRateFB));
-    xrGetInstanceProcAddr(instance, "xrRequestDisplayRefreshRateFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrRequestDisplayRefreshRateFB));
+    LoadOptionalXrFunction(instance, "xrEnumerateDisplayRefreshRatesFB", xrEnumerateDisplayRefreshRatesFB);
+    LoadOptionalXrFunction(instance, "xrGetDisplayRefreshRateFB", xrGetDisplayRefreshRateFB);
+    LoadOptionalXrFunction(instance, "xrRequestDisplayRefreshRateFB", xrRequestDisplayRefreshRateFB);
 
-    xrGetInstanceProcAddr(instance, "xrCreateFoveationProfileFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateFoveationProfileFB));
-    xrGetInstanceProcAddr(instance, "xrDestroyFoveationProfileFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyFoveationProfileFB));
-    xrGetInstanceProcAddr(instance, "xrUpdateSwapchainFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrUpdateSwapchainFB));
-    xrGetInstanceProcAddr(instance, "xrGetSwapchainStateFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSwapchainStateFB));
+    LoadOptionalXrFunction(instance, "xrCreateFoveationProfileFB", xrCreateFoveationProfileFB);
+    LoadOptionalXrFunction(instance, "xrDestroyFoveationProfileFB", xrDestroyFoveationProfileFB);
+    LoadOptionalXrFunction(instance, "xrUpdateSwapchainFB", xrUpdateSwapchainFB);
+    LoadOptionalXrFunction(instance, "xrGetSwapchainStateFB", xrGetSwapchainStateFB);
 
-    xrGetInstanceProcAddr(instance, "xrGetVulkanGraphicsDevice2KHR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetVulkanGraphicsDevice2KHR));
-    xrGetInstanceProcAddr(instance, "xrGetVulkanGraphicsDeviceKHR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetVulkanGraphicsDeviceKHR));
-    xrGetInstanceProcAddr(instance, "xrCreateVulkanInstanceKHR", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateVulkanInstanceKHR));
-    xrGetInstanceProcAddr(instance, "xrCreateVulkanDeviceKHR", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateVulkanDeviceKHR));
+    LoadOptionalXrFunction(instance, "xrGetVulkanGraphicsDevice2KHR", xrGetVulkanGraphicsDevice2KHR);
+    LoadOptionalXrFunction(instance, "xrGetVulkanGraphicsDeviceKHR", xrGetVulkanGraphicsDeviceKHR);
+    LoadOptionalXrFunction(instance, "xrCreateVulkanInstanceKHR", xrCreateVulkanInstanceKHR);
+    LoadOptionalXrFunction(instance, "xrCreateVulkanDeviceKHR", xrCreateVulkanDeviceKHR);
 
-    xrGetInstanceProcAddr(instance, "xrCreateHandTrackerEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateHandTrackerEXT));
-    xrGetInstanceProcAddr(instance, "xrDestroyHandTrackerEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyHandTrackerEXT));
-    xrGetInstanceProcAddr(instance, "xrLocateHandJointsEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrLocateHandJointsEXT));
-    xrGetInstanceProcAddr(instance, "xrGetHandMeshFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetHandMeshFB));
-    xrGetInstanceProcAddr(instance, "xrSetCurrentInputDeviceYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetCurrentInputDeviceYVR));
-    xrGetInstanceProcAddr(instance, "xrGetCurrentInputDeviceYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetCurrentInputDeviceYVR));
+    LoadOptionalXrFunction(instance, "xrCreateHandTrackerEXT", xrCreateHandTrackerEXT);
+    LoadOptionalXrFunction(instance, "xrDestroyHandTrackerEXT", xrDestroyHandTrackerEXT);
+    LoadOptionalXrFunction(instance, "xrLocateHandJointsEXT", xrLocateHandJointsEXT);
+    LoadOptionalXrFunction(instance, "xrGetHandMeshFB", xrGetHandMeshFB);
+    LoadOptionalXrFunction(instance, "xrSetCurrentInputDeviceYVR", xrSetCurrentInputDeviceYVR);
+    LoadOptionalXrFunction(instance, "xrGetCurrentInputDeviceYVR", xrGetCurrentInputDeviceYVR);
 
-    xrGetInstanceProcAddr(instance, "xrCreateSpatialAnchorFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateSpatialAnchorFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceUuidFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceUuidFB));
-    xrGetInstanceProcAddr(instance, "xrEnumerateSpaceSupportedComponentsFB",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrEnumerateSpaceSupportedComponentsFB));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceComponentStatusFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceComponentStatusFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceComponentStatusFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceComponentStatusFB));
+    LoadOptionalXrFunction(instance, "xrCreateSpatialAnchorFB", xrCreateSpatialAnchorFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceUuidFB", xrGetSpaceUuidFB);
+    LoadOptionalXrFunction(instance, "xrEnumerateSpaceSupportedComponentsFB", xrEnumerateSpaceSupportedComponentsFB);
+    LoadOptionalXrFunction(instance, "xrSetSpaceComponentStatusFB", xrSetSpaceComponentStatusFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceComponentStatusFB", xrGetSpaceComponentStatusFB);
 
-    xrGetInstanceProcAddr(instance, "xrQuerySpacesFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrQuerySpacesFB));
-    xrGetInstanceProcAddr(instance, "xrRetrieveSpaceQueryResultsFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrRetrieveSpaceQueryResultsFB));
+    LoadOptionalXrFunction(instance, "xrQuerySpacesFB", xrQuerySpacesFB);
+    LoadOptionalXrFunction(instance, "xrRetrieveSpaceQueryResultsFB", xrRetrieveSpaceQueryResultsFB);
 
-    xrGetInstanceProcAddr(instance, "xrSaveSpaceFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrSaveSpaceFB));
-    xrGetInstanceProcAddr(instance, "xrEraseSpaceFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrEraseSpaceFB));
+    LoadOptionalXrFunction(instance, "xrSaveSpaceFB", xrSaveSpaceFB);
+    LoadOptionalXrFunction(instance, "xrEraseSpaceFB", xrEraseSpaceFB);
 
-    xrGetInstanceProcAddr(instance, "xrCreateSpaceUserFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateSpaceUserFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceUserIdFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceUserIdFB));
-    xrGetInstanceProcAddr(instance, "xrDestroySpaceUserFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroySpaceUserFB));
+    LoadOptionalXrFunction(instance, "xrCreateSpaceUserFB", xrCreateSpaceUserFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceUserIdFB", xrGetSpaceUserIdFB);
+    LoadOptionalXrFunction(instance, "xrDestroySpaceUserFB", xrDestroySpaceUserFB);
 
-    xrGetInstanceProcAddr(instance, "xrShareSpacesFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrShareSpacesFB));
+    LoadOptionalXrFunction(instance, "xrShareSpacesFB", xrShareSpacesFB);
 
-    xrGetInstanceProcAddr(instance, "xrSaveSpaceListFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrSaveSpaceListFB));
+    LoadOptionalXrFunction(instance, "xrSaveSpaceListFB", xrSaveSpaceListFB);
 
-    xrGetInstanceProcAddr(instance, "xrCreatePlaneDetectorEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePlaneDetectorEXT));
-    xrGetInstanceProcAddr(instance, "xrDestroyPlaneDetectorEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyPlaneDetectorEXT));
-    xrGetInstanceProcAddr(instance, "xrBeginPlaneDetectionEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrBeginPlaneDetectionEXT));
-    xrGetInstanceProcAddr(instance, "xrGetPlaneDetectionStateEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPlaneDetectionStateEXT));
-    xrGetInstanceProcAddr(instance, "xrGetPlaneDetectionsEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPlaneDetectionsEXT));
-    xrGetInstanceProcAddr(instance, "xrGetPlanePolygonBufferEXT", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPlanePolygonBufferEXT));
+    LoadOptionalXrFunction(instance, "xrCreatePlaneDetectorEXT", xrCreatePlaneDetectorEXT);
+    LoadOptionalXrFunction(instance, "xrDestroyPlaneDetectorEXT", xrDestroyPlaneDetectorEXT);
+    LoadOptionalXrFunction(instance, "xrBeginPlaneDetectionEXT", xrBeginPlaneDetectionEXT);
+    LoadOptionalXrFunction(instance, "xrGetPlaneDetectionStateEXT", xrGetPlaneDetectionStateEXT);
+    LoadOptionalXrFunction(instance, "xrGetPlaneDetectionsEXT", xrGetPlaneDetectionsEXT);
+    LoadOptionalXrFunction(instance, "xrGetPlanePolygonBufferEXT", xrGetPlanePolygonBufferEXT);
 
-    xrGetInstanceProcAddr(instance, "xrCreateEyeTrackerFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateEyeTrackerFB));
-    xrGetInstanceProcAddr(instance, "xrDestroyEyeTrackerFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyEyeTrackerFB));
-    xrGetInstanceProcAddr(instance, "xrGetEyeGazesFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetEyeGazesFB));
+    LoadOptionalXrFunction(instance, "xrCreateEyeTrackerFB", xrCreateEyeTrackerFB);
+    LoadOptionalXrFunction(instance, "xrDestroyEyeTrackerFB", xrDestroyEyeTrackerFB);
+    LoadOptionalXrFunction(instance, "xrGetEyeGazesFB", xrGetEyeGazesFB);
 
-    xrGetInstanceProcAddr(instance, "xrGetSpaceBoundingBox2DFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceBoundingBox2DFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceBoundingBox3DFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceBoundingBox3DFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceSemanticLabelsFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceSemanticLabelsFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceBoundary2DFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceBoundary2DFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceRoomLayoutFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceRoomLayoutFB));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceContainerFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceContainerFB));
-    xrGetInstanceProcAddr(instance, "xrRequestSceneCaptureFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrRequestSceneCaptureFB));
+    LoadOptionalXrFunction(instance, "xrGetSpaceBoundingBox2DFB", xrGetSpaceBoundingBox2DFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceBoundingBox3DFB", xrGetSpaceBoundingBox3DFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceSemanticLabelsFB", xrGetSpaceSemanticLabelsFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceBoundary2DFB", xrGetSpaceBoundary2DFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceRoomLayoutFB", xrGetSpaceRoomLayoutFB);
+    LoadOptionalXrFunction(instance, "xrGetSpaceContainerFB", xrGetSpaceContainerFB);
+    LoadOptionalXrFunction(instance, "xrRequestSceneCaptureFB", xrRequestSceneCaptureFB);
 
-    xrGetInstanceProcAddr(instance, "xrSetSpaceBoundingBox2DYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceBoundingBox2DYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceBoundingBox3DYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceBoundingBox3DYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceSemanticLabelsYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceSemanticLabelsYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceBoundary2DYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceBoundary2DYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceRoomLayoutYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceRoomLayoutYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceContainerYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceContainerYVR));
-    xrGetInstanceProcAddr(instance, "xrResetSceneYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrResetSceneYVR));
-    xrGetInstanceProcAddr(instance, "xrGetSceneStatusYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSceneStatusYVR));
-    xrGetInstanceProcAddr(instance, "xrSetLocateRoomYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetLocateRoomYVR));
-    xrGetInstanceProcAddr(instance, "xrGetLocateRoomYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetLocateRoomYVR));
-    xrGetInstanceProcAddr(instance, "xrGetSpaceTriangleMeshMETA", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetSpaceTriangleMeshMETA));
+    LoadOptionalXrFunction(instance, "xrSetSpaceBoundingBox2DYVR", xrSetSpaceBoundingBox2DYVR);
+    LoadOptionalXrFunction(instance, "xrSetSpaceBoundingBox3DYVR", xrSetSpaceBoundingBox3DYVR);
+    LoadOptionalXrFunction(instance, "xrSetSpaceSemanticLabelsYVR", xrSetSpaceSemanticLabelsYVR);
+    LoadOptionalXrFunction(instance, "xrSetSpaceBoundary2DYVR", xrSetSpaceBoundary2DYVR);
+    LoadOptionalXrFunction(instance, "xrSetSpaceRoomLayoutYVR", xrSetSpaceRoomLayoutYVR);
+    LoadOptionalXrFunction(instance, "xrSetSpaceContainerYVR", xrSetSpaceContainerYVR);
+    LoadOptionalXrFunction(instance, "xrResetSceneYVR", xrResetSceneYVR);
+    LoadOptionalXrFunction(instance, "xrGetSceneStatusYVR", xrGetSceneStatusYVR);
+    LoadOptionalXrFunction(instance, "xrSetLocateRoomYVR", xrSetLocateRoomYVR);
+    LoadOptionalXrFunction(instance, "xrGetLocateRoomYVR", xrGetLocateRoomYVR);
+    LoadOptionalXrFunction(instance, "xrGetSpaceTriangleMeshMETA", xrGetSpaceTriangleMeshMETA);
 
-    xrGetInstanceProcAddr(instance, "xrGetRecommendedResolution", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetRecommendedResolution));
+    LoadOptionalXrFunction(instance, "xrGetRecommendedResolution", xrGetRecommendedResolution);
 
-    xrGetInstanceProcAddr(instance, "xrCreateSwapchainAndroidSurfaceKHR", (PFN_xrVoidFunction*)(&xrCreateSwapchainAndroidSurfaceKhr));
+    LoadOptionalXrFunction(instance, "xrCreateSwapchainAndroidSurfaceKHR", xrCreateSwapchainAndroidSurfaceKhr);
 
-    xrGetInstanceProcAddr(instance, "xrCreateMeshDetectorYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateMeshDetectorYVR));
-    xrGetInstanceProcAddr(instance, "xrDestroyMeshDetectorYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyMeshDetectorYVR));
-    xrGetInstanceProcAddr(instance, "xrBeginRoomSetupYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrBeginRoomSetupYVR));
-    xrGetInstanceProcAddr(instance, "xrEndRoomSetupYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrEndRoomSetupYVR));
-    xrGetInstanceProcAddr(instance, "xrSetSpaceTriangleMeshYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSpaceTriangleMeshYVR));
+    LoadOptionalXrFunction(instance, "xrCreateMeshDetectorYVR", xrCreateMeshDetectorYVR);
+    LoadOptionalXrFunction(instance, "xrDestroyMeshDetectorYVR", xrDestroyMeshDetectorYVR);
+    LoadOptionalXrFunction(instance, "xrBeginRoomSetupYVR", xrBeginRoomSetupYVR);
+    LoadOptionalXrFunction(instance, "xrEndRoomSetupYVR", xrEndRoomSetupYVR);
+    LoadOptionalXrFunction(instance, "xrSetSpaceTriangleMeshYVR", xrSetSpaceTriangleMeshYVR);
 
-    xrGetInstanceProcAddr(instance, "xrCreatePassthroughProviderYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePassthroughProviderYVR));
-    xrGetInstanceProcAddr(instance, "xrDestroyPassthroughProviderYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyPassthroughProviderYVR));
-    xrGetInstanceProcAddr(instance, "xrStartPassthroughProviderYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStartPassthroughProviderYVR));
-    xrGetInstanceProcAddr(instance, "xrStopPassthroughProviderYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStopPassthroughProviderYVR));
-    xrGetInstanceProcAddr(instance, "xrCreatePassthroughSwapchainYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePassthroughSwapchainYVR));
-    xrGetInstanceProcAddr(instance, "xrDestroyPassthroughSwapchainYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyPassthroughSwapchainYVR));
-    xrGetInstanceProcAddr(instance, "xrEnumeratePassthroughSwapchainImagesYVR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrEnumeratePassthroughSwapchainImagesYVR));
-    xrGetInstanceProcAddr(instance, "xrAcquirePassthroughImageYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrAcquirePassthroughImageYVR));
-    xrGetInstanceProcAddr(instance, "xrBeginBoundaryDetectYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrBeginBoundaryDetectYVR));
-    xrGetInstanceProcAddr(instance, "xrEndBoundaryDetectYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrEndBoundaryDetectYVR));
+    LoadOptionalXrFunction(instance, "xrCreatePassthroughProviderYVR", xrCreatePassthroughProviderYVR);
+    LoadOptionalXrFunction(instance, "xrDestroyPassthroughProviderYVR", xrDestroyPassthroughProviderYVR);
+    LoadOptionalXrFunction(instance, "xrStartPassthroughProviderYVR", xrStartPassthroughProviderYVR);
+    LoadOptionalXrFunction(instance, "xrStopPassthroughProviderYVR", xrStopPassthroughProviderYVR);
+    LoadOptionalXrFunction(instance, "xrCreatePassthroughSwapchainYVR", xrCreatePassthroughSwapchainYVR);
+    LoadOptionalXrFunction(instance, "xrDestroyPassthroughSwapchainYVR", xrDestroyPassthroughSwapchainYVR);
+    LoadOptionalXrFunction(instance, "xrEnumeratePassthroughSwapchainImagesYVR", xrEnumeratePassthroughSwapchainImagesYVR);
+    LoadOptionalXrFunction(instance, "xrAcquirePassthroughImageYVR", xrAcquirePassthroughImageYVR);
+    LoadOptionalXrFunction(instance, "xrBeginBoundaryDetectYVR", xrBeginBoundaryDetectYVR);
+    LoadOptionalXrFunction(instance, "xrEndBoundaryDetectYVR", xrEndBoundaryDetectYVR);
 
-    xrGetInstanceProcAddr(instance, "xrSetLargeSpaceMapRecordEnableYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetLargeSpaceMapRecordEnableYVR));
-    xrGetInstanceProcAddr(instance, "xrSetMarkerDetectionEnableYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetMarkerDetectionEnableYVR));
-    xrGetInstanceProcAddr(instance, "xrClearAllMarkersYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrClearAllMarkersYVR));
-    xrGetInstanceProcAddr(instance, "xrSetLargeSpaceOriginPoseYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetLargeSpaceOriginPoseYVR));
-    xrGetInstanceProcAddr(instance, "xrExportLargeSpaceMapYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrExportLargeSpaceMapYVR));
-    xrGetInstanceProcAddr(instance, "xrSetRecenterEnableYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetRecenterEnableYVR));
-    xrGetInstanceProcAddr(instance, "xrGetRecenterEnableYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetRecenterEnableYVR));
-    xrGetInstanceProcAddr(instance, "xrSetLargeSpaceMapAssemblingEnableYVR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrSetLargeSpaceMapAssemblingEnableYVR));
-    xrGetInstanceProcAddr(instance, "xrGetLargeSpacePointsCalibParamsYVR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrGetLargeSpacePointsCalibParamsYVR));
-    xrGetInstanceProcAddr(instance, "xrQueryCurrentConnectedControllerTypeYVR",
-                          reinterpret_cast<PFN_xrVoidFunction*>(&xrQueryCurrentConnectedControllerTypeYVR));
+    LoadOptionalXrFunction(instance, "xrSetLargeSpaceMapRecordEnableYVR", xrSetLargeSpaceMapRecordEnableYVR);
+    LoadOptionalXrFunction(instance, "xrSetMarkerDetectionEnableYVR", xrSetMarkerDetectionEnableYVR);
+    LoadOptionalXrFunction(instance, "xrClearAllMarkersYVR", xrClearAllMarkersYVR);
+    LoadOptionalXrFunction(instance, "xrSetLargeSpaceOriginPoseYVR", xrSetLargeSpaceOriginPoseYVR);
+    LoadOptionalXrFunction(instance, "xrExportLargeSpaceMapYVR", xrExportLargeSpaceMapYVR);
+    LoadOptionalXrFunction(instance, "xrSetRecenterEnableYVR", xrSetRecenterEnableYVR);
+    LoadOptionalXrFunction(instance, "xrGetRecenterEnableYVR", xrGetRecenterEnableYVR);
+    LoadOptionalXrFunction(instance, "xrSetLargeSpaceMapAssemblingEnableYVR", xrSetLargeSpaceMapAssemblingEnableYVR);
+    LoadOptionalXrFunction(instance, "xrGetLargeSpacePointsCalibParamsYVR", xrGetLargeSpacePointsCalibParamsYVR);
+    LoadOptionalXrFunction(instance, "xrQueryCurrentConnectedControllerTypeYVR", xrQueryCurrentConnectedControllerTypeYVR);
 
-    xrGetInstanceProcAddr(instance, "xrStartHandCalibrationYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStartHandCalibrationYVR));
-    xrGetInstanceProcAddr(instance, "xrRegisterHandEventCallbackYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrRegisterHandEventCallbackYVR));
-    xrGetInstanceProcAddr(instance, "xrUnregisterHandEventCallbackYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrUnregisterHandEventCallbackYVR));
-    xrGetInstanceProcAddr(instance, "xrStopHandCalibrationYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStopHandCalibrationYVR));
+    LoadOptionalXrFunction(instance, "xrStartHandCalibrationYVR", xrStartHandCalibrationYVR);
+    LoadOptionalXrFunction(instance, "xrRegisterHandEventCallbackYVR", xrRegisterHandEventCallbackYVR);
+    LoadOptionalXrFunction(instance, "xrUnregisterHandEventCallbackYVR", xrUnregisterHandEventCallbackYVR);
+    LoadOptionalXrFunction(instance, "xrStopHandCalibrationYVR", xrStopHandCalibrationYVR);
 
 
-    xrGetInstanceProcAddr(instance, "xrSetSlamCalibrationEnableYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetSlamCalibrationEnableYVR));
+    LoadOptionalXrFunction(instance, "xrSetSlamCalibrationEnableYVR", xrSetSlamCalibrationEnableYVR);
 
-    xrGetInstanceProcAddr(instance, "xrGetPlaneDetectionsYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPlaneDetectionsYVR));
-    xrGetInstanceProcAddr(instance, "xrGetPlanePolygonBufferYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPlanePolygonBufferYVR));
+    LoadOptionalXrFunction(instance, "xrGetPlaneDetectionsYVR", xrGetPlaneDetectionsYVR);
+    LoadOptionalXrFunction(instance, "xrGetPlanePolygonBufferYVR", xrGetPlanePolygonBufferYVR);
 
-    xrGetInstanceProcAddr(instance, "xrGetRenderScaleYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetRenderScaleYVR));
-    xrGetInstanceProcAddr(instance, "xrSetRenderScaleYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetRenderScaleYVR));
-    xrGetInstanceProcAddr(instance, "xrGetRenderSharpenYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetRenderSharpenYVR));
-    xrGetInstanceProcAddr(instance, "xrSetRenderSharpenYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetRenderSharpenYVR));
-    xrGetInstanceProcAddr(instance, "xrGetRenderFovYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetRenderFovYVR));
-    xrGetInstanceProcAddr(instance, "xrSetRenderFovYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetRenderFovYVR));
-    xrGetInstanceProcAddr(instance, "xrResetRenderFovYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrResetRenderFovYVR));
-    xrGetInstanceProcAddr(instance, "xrGetColorSpaceConfigYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetColorSpaceConfigYVR));
-    xrGetInstanceProcAddr(instance, "xrSetColorSpaceConfigYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetColorSpaceConfigYVR));
+    LoadOptionalXrFunction(instance, "xrGetRenderScaleYVR", xrGetRenderScaleYVR);
+    LoadOptionalXrFunction(instance, "xrSetRenderScaleYVR", xrSetRenderScaleYVR);
+    LoadOptionalXrFunction(instance, "xrGetRenderSharpenYVR", xrGetRenderSharpenYVR);
+    LoadOptionalXrFunction(instance, "xrSetRenderSharpenYVR", xrSetRenderSharpenYVR);
+    LoadOptionalXrFunction(instance, "xrGetRenderFovYVR", xrGetRenderFovYVR);
+    LoadOptionalXrFunction(instance, "xrSetRenderFovYVR", xrSetRenderFovYVR);
+    LoadOptionalXrFunction(instance, "xrResetRenderFovYVR", xrResetRenderFovYVR);
+    LoadOptionalXrFunction(instance, "xrGetColorSpaceConfigYVR", xrGetColorSpaceConfigYVR);
+    LoadOptionalXrFunction(instance, "xrSetColorSpaceConfigYVR", xrSetColorSpaceConfigYVR);
 
-    xrGetInstanceProcAddr(instance, "xrConvertTimespecTimeToTimeKHR", reinterpret_cast<PFN_xrVoidFunction*>(&xrConvertTimespecTimeToTimeKHR));
+    LoadOptionalXrFunction(instance, "xrConvertTimespecTimeToTimeKHR", xrConvertTimespecTimeToTimeKHR);
 
-    xrGetInstanceProcAddr(instance, "xrSetImageTrackingYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetImageTrackingYVR));
-    xrGetInstanceProcAddr(instance, "xrRegisterImageTemplateYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrRegisterImageTemplateYVR));
-    xrGetInstanceProcAddr(instance, "xrUnRegisterImageTemplateYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrUnRegisterImageTemplateYVR));
-    xrGetInstanceProcAddr(instance, "xrCreateImageSpaceYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreateImageSpaceYVR));
+    LoadOptionalXrFunction(instance, "xrSetImageTrackingYVR", xrSetImageTrackingYVR);
+    LoadOptionalXrFunction(instance, "xrRegisterImageTemplateYVR", xrRegisterImageTemplateYVR);
+    LoadOptionalXrFunction(instance, "xrUnRegisterImageTemplateYVR", xrUnRegisterImageTemplateYVR);
+    LoadOptionalXrFunction(instance, "xrCreateImageSpaceYVR", xrCreateImageSpaceYVR);
 
-    xrGetInstanceProcAddr(instance, "xrCreatePassthroughFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePassthroughFB));
-    xrGetInstanceProcAddr(instance, "xrDestroyPassthroughFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyPassthroughFB));
-    xrGetInstanceProcAddr(instance, "xrPassthroughStartFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughStartFB));
-    xrGetInstanceProcAddr(instance, "xrPassthroughPauseFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughPauseFB));
-    xrGetInstanceProcAddr(instance, "xrCreatePassthroughLayerFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePassthroughLayerFB));
-    xrGetInstanceProcAddr(instance, "xrDestroyPassthroughLayerFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyPassthroughLayerFB));
-    xrGetInstanceProcAddr(instance, "xrPassthroughLayerPauseFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughLayerPauseFB));
-    xrGetInstanceProcAddr(instance, "xrPassthroughLayerResumeFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughLayerResumeFB));
-    xrGetInstanceProcAddr(instance, "xrPassthroughLayerSetStyleFB", reinterpret_cast<PFN_xrVoidFunction*>(&xrPassthroughLayerSetStyleFB));
-    xrGetInstanceProcAddr(instance, "xrCreatePassthroughColorLutMETA", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePassthroughColorLutMETA));
-    xrGetInstanceProcAddr(instance, "xrDestroyPassthroughColorLutMETA", reinterpret_cast<PFN_xrVoidFunction*>(&xrDestroyPassthroughColorLutMETA));
-    xrGetInstanceProcAddr(instance, "xrUpdatePassthroughColorLutMETA", reinterpret_cast<PFN_xrVoidFunction*>(&xrUpdatePassthroughColorLutMETA));
-    xrGetInstanceProcAddr(instance, "xrCreatePassthroughSwapchainYVR2", reinterpret_cast<PFN_xrVoidFunction*>(&xrCreatePassthroughSwapchainYVR2));
+    LoadOptionalXrFunction(instance, "xrCreatePassthroughFB", xrCreatePassthroughFB);
+    LoadOptionalXrFunction(instance, "xrDestroyPassthroughFB", xrDestroyPassthroughFB);
+    LoadOptionalXrFunction(instance, "xrPassthroughStartFB", xrPassthroughStartFB);
+    LoadOptionalXrFunction(instance, "xrPassthroughPauseFB", xrPassthroughPauseFB);
+    LoadOptionalXrFunction(instance, "xrCreatePassthroughLayerFB", xrCreatePassthroughLayerFB);
+    LoadOptionalXrFunction(instance, "xrDestroyPassthroughLayerFB", xrDestroyPassthroughLayerFB);
+    LoadOptionalXrFunction(instance, "xrPassthroughLayerPauseFB", xrPassthroughLayerPauseFB);
+    LoadOptionalXrFunction(instance, "xrPassthroughLayerResumeFB", xrPassthroughLayerResumeFB);
+    LoadOptionalXrFunction(instance, "xrPassthroughLayerSetStyleFB", xrPassthroughLayerSetStyleFB);
+    LoadOptionalXrFunction(instance, "xrCreatePassthroughColorLutMETA", xrCreatePassthroughColorLutMETA);
+    LoadOptionalXrFunction(instance, "xrDestroyPassthroughColorLutMETA", xrDestroyPassthroughColorLutMETA);
+    LoadOptionalXrFunction(instance, "xrUpdatePassthroughColorLutMETA", xrUpdatePassthroughColorLutMETA);
+    LoadOptionalXrFunction(instance, "xrCreatePassthroughSwapchainYVR2", xrCreatePassthroughSwapchainYVR2);
 
-    xrGetInstanceProcAddr(instance, "xrGetDPCompostionStateYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetDPCompositionStateYVR));
+    LoadOptionalXrFunction(instance, "xrGetDPCompostionStateYVR", xrGetDPCompositionStateYVR);
     YInfo("Obtained xrGetDPCompostionStateYVR address: %p", (void*)xrGetDPCompositionStateYVR);
-    xrGetInstanceProcAddr(instance, "xrStartDPCompostionYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStartDPCompositionYVR));
-    xrGetInstanceProcAddr(instance, "xrStopDPCompostionYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrStopDPCompositionYVR));
+    LoadOptionalXrFunction(instance, "xrStartDPCompostionYVR", xrStartDPCompositionYVR);
+    LoadOptionalXrFunction(instance, "xrStopDPCompostionYVR", xrStopDPCompositionYVR);
 
-    xrGetInstanceProcAddr(instance, "xrSetPersistentPassthroughMeshModeInfoYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetPersistentPassthroughMeshModeInfoYVR));
-    xrGetInstanceProcAddr(instance, "xrGetPersistentPassthroughMeshModeInfoYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrGetPersistentPassthroughMeshModeInfoYVR));
-    xrGetInstanceProcAddr(instance, "xrSetPersistentPassthroughMeshYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetPersistentPassthroughMeshYVR));
-    xrGetInstanceProcAddr(instance, "xrSetPersistentPassthroughMeshTransformYVR", reinterpret_cast<PFN_xrVoidFunction*>(&xrSetPersistentPassthroughMeshTransformYVR));
+    LoadOptionalXrFunction(instance, "xrSetPersistentPassthroughMeshModeInfoYVR", xrSetPersistentPassthroughMeshModeInfoYVR);
+    LoadOptionalXrFunction(instance, "xrGetPersistentPassthroughMeshModeInfoYVR", xrGetPersistentPassthroughMeshModeInfoYVR);
+    LoadOptionalXrFunction(instance, "xrSetPersistentPassthroughMeshYVR", xrSetPersistentPassthroughMeshYVR);
+    LoadOptionalXrFunction(instance, "xrSetPersistentPassthroughMeshTransformYVR", xrSetPersistentPassthroughMeshTransformYVR);
 
 }
 
@@ -472,8 +507,9 @@ std::vector<std::string> OpenXRExtMgr::getInstanceExtensions()
 
 float OpenXRExtMgr::getFloatProperty(const xrGetSystemPropertyYVR& property)
 {
-    float ret;
-    OpenXRAPI(xrGetSystemPropertyFloatYVR(plugin.openxrMgr->program->session, property, &ret));
+    float ret = 0.0f;
+    const XrResult result = OpenXRAPI(xrGetSystemPropertyFloatYVR(plugin.openxrMgr->program->session, property, &ret));
+    if (XR_FAILED(result)) return 0.0f;
     return ret;
 }
 
@@ -484,21 +520,28 @@ void OpenXRExtMgr::setFloatProperty(const xrSetSystemPropertyYVR& property, floa
 
 int OpenXRExtMgr::getIntProperty(const xrGetSystemPropertyYVR& property)
 {
-    int ret;
-    OpenXRAPI(xrGetSystemPropertyIntYVR(plugin.openxrMgr->program->session, property, &ret));
+    int ret = 0;
+    const XrResult result = OpenXRAPI(xrGetSystemPropertyIntYVR(plugin.openxrMgr->program->session, property, &ret));
+    if (XR_FAILED(result)) return 0;
     return ret;
 }
 
 void OpenXRExtMgr::getFloatArrayProperty(const xrGetSystemPropertyYVR& property, float* array, int dataLength)
 {
+    if (array == nullptr || dataLength <= 0) return;
+
+    std::fill(array, array + dataLength, 0.0f);
     int outputDataLength = 0;
-    xrGetSystemPropertyFloatArrayYVR(plugin.openxrMgr->program->session, property, array, &outputDataLength);
+    OpenXRAPI(xrGetSystemPropertyFloatArrayYVR(plugin.openxrMgr->program->session, property, array, &outputDataLength));
 }
 
 void OpenXRExtMgr::getCharArrayProperty(const xrGetSystemPropertyYVR& property, char* array, int dataLength)
 {
+    if (array == nullptr || dataLength <= 0) return;
+
+    array[0] = '\0';
     int outputDataLength = 0;
-    xrGetSystemPropertyCharArrayYVR(plugin.openxrMgr->program->session, property, array, &outputDataLength);
+    OpenXRAPI(xrGetSystemPropertyCharArrayYVR(plugin.openxrMgr->program->session, property, array, &outputDataLength));
 }
 
 bool OpenXRExtMgr::isEnableTargetExt(string ext)

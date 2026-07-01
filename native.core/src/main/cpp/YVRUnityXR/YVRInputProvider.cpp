@@ -25,7 +25,6 @@ YVRInputProvider::YVRInputProvider(YVRUnityXRProviderMgr& context, UnitySubsyste
 UnitySubsystemErrorCode YVRInputProvider::initialize()
 {
     AnnounceCallingFunc();
-
     CreateMarker(&dynamicTickMarker, "NativeCore-DynamicTick");
     CreateMarker(&beforeRenderTickMarker, "NativeCore-BeforeRenderTick");
     CreateMarker(&dynamicDeviceUpdateStateMarker, "NativeCore-DynamicDeviceUpdateState");
@@ -34,7 +33,12 @@ UnitySubsystemErrorCode YVRInputProvider::initialize()
     UnityXRInputProvider unityTrackingProvider{&m_Context};
     initializeUnityTrackingLifecycle(unityTrackingProvider);
 
-    UnityXRAPI(m_Context.inputInterface->RegisterInputProvider(m_SystemHandle, &unityTrackingProvider));
+    const UnitySubsystemErrorCode registerResult = m_Context.inputInterface->RegisterInputProvider(m_SystemHandle, &unityTrackingProvider);
+    if (registerResult != kUnitySubsystemErrorCodeSuccess)
+    {
+        YError("Failed to register Unity input provider result=%d", registerResult);
+        return registerResult;
+    }
 
     return kUnitySubsystemErrorCodeSuccess;
 }
@@ -129,7 +133,6 @@ void YVRInputProvider::initializeUnityTrackingLifecycle(UnityXRInputProvider& un
 UnitySubsystemErrorCode YVRInputProvider::start()
 {
     AnnounceCallingFunc();
-
     if (startNeverCalled)
     {
         startNeverCalled = false;

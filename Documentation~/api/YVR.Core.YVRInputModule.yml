@@ -492,7 +492,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: raycastResult
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 59
+    startLine: 65
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -523,7 +523,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: raycastGameObject
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 64
+    startLine: 70
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -554,7 +554,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: inputDataProviderSource
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 69
+    startLine: 75
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -585,7 +585,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: eventData
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 76
+    startLine: 82
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -616,7 +616,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: inputDataProvider
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 110
+    startLine: 116
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -647,7 +647,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Start
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 121
+    startLine: 127
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -685,7 +685,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetInputDataProvider
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 141
+    startLine: 147
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -717,7 +717,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Process
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 175
+    startLine: 181
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -746,7 +746,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSimulatedMouseState
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 203
+    startLine: 209
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -777,7 +777,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetFirstRaycast
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 240
+    startLine: 246
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -824,7 +824,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ProcessMouseState
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 258
+    startLine: 264
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -856,7 +856,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSimulatedButtonState
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 274
+    startLine: 280
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -887,7 +887,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ProcessMousePress
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 293
+    startLine: 299
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -919,7 +919,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ProcessDrag
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 374
+    startLine: 380
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -951,7 +951,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ProcessScroll
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 403
+    startLine: 409
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -983,7 +983,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ProcessMove
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 417
+    startLine: 423
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -1016,7 +1016,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnDestroy
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/InputModule/YVRInputModule.cs
-    startLine: 434
+    startLine: 440
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

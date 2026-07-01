@@ -308,7 +308,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorEnumerateSupported
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 227
+    startLine: 222
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -346,7 +346,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetSpatialAnchorComponentStatus
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 240
+    startLine: 235
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -390,7 +390,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorComponentStatus
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 259
+    startLine: 254
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -431,7 +431,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ShareSpatialAnchor
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 270
+    startLine: 265
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -469,7 +469,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SaveToCloudThenShare
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 320
+    startLine: 315
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -507,7 +507,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SaveSpatialAnchorList
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 355
+    startLine: 350
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -548,7 +548,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetSpatialAnchorUUIDForHandle
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 391
+    startLine: 386
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -586,7 +586,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsPositionValid
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 402
+    startLine: 397
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -621,7 +621,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsOrientationValid
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 410
+    startLine: 405
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -656,17 +656,21 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsPositionTracked
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 418
+    startLine: 413
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
+  summary: Checks if the position is tracked based on the specified location flags.
+  example: []
   syntax:
     content: public bool IsPositionTracked(YVRAnchorLocationFlags value)
     parameters:
     - id: value
       type: YVR.Core.YVRAnchorLocationFlags
+      description: The anchor location flags to be evaluated
     return:
       type: System.Boolean
+      description: True if the position is tracked; otherwise, false
     content.vb: Public Function IsPositionTracked(value As YVRAnchorLocationFlags) As Boolean
   overload: YVR.Core.YVRSpatialAnchor.IsPositionTracked*
 - uid: YVR.Core.YVRSpatialAnchor.IsOrientationTracked(YVR.Core.YVRAnchorLocationFlags)
@@ -687,7 +691,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IsOrientationTracked
     path: ../com.yvr.core/Scripts/Runtime/SpatialAnchor/YVRSpatialAnchor.cs
-    startLine: 426
+    startLine: 421
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

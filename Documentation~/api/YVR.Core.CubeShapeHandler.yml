@@ -1,34 +1,33 @@
 ### YamlMime:ManagedReference
 items:
-- uid: YVR.Core.Equirect2ShapeHandler
-  commentId: T:YVR.Core.Equirect2ShapeHandler
-  id: Equirect2ShapeHandler
+- uid: YVR.Core.CubeShapeHandler
+  commentId: T:YVR.Core.CubeShapeHandler
+  id: CubeShapeHandler
   parent: YVR.Core
   children:
-  - YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-  - YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-  - YVR.Core.Equirect2ShapeHandler.centerEyeDevice
+  - YVR.Core.CubeShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  - YVR.Core.CubeShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   langs:
   - csharp
   - vb
-  name: Equirect2ShapeHandler
-  nameWithType: Equirect2ShapeHandler
-  fullName: YVR.Core.Equirect2ShapeHandler
+  name: CubeShapeHandler
+  nameWithType: CubeShapeHandler
+  fullName: YVR.Core.CubeShapeHandler
   type: Class
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/CubeShapeHandler.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: Equirect2ShapeHandler
-    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
-    startLine: 8
+    id: CubeShapeHandler
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/CubeShapeHandler.cs
+    startLine: 2
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: 'public class Equirect2ShapeHandler : ILayerShapeHandler'
-    content.vb: Public Class Equirect2ShapeHandler Implements ILayerShapeHandler
+    content: 'public class CubeShapeHandler : ILayerShapeHandler'
+    content.vb: Public Class CubeShapeHandler Implements ILayerShapeHandler
   inheritance:
   - System.Object
   implements:
@@ -41,54 +40,25 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: YVR.Core.Equirect2ShapeHandler.centerEyeDevice
-  commentId: P:YVR.Core.Equirect2ShapeHandler.centerEyeDevice
-  id: centerEyeDevice
-  parent: YVR.Core.Equirect2ShapeHandler
-  langs:
-  - csharp
-  - vb
-  name: centerEyeDevice
-  nameWithType: Equirect2ShapeHandler.centerEyeDevice
-  fullName: YVR.Core.Equirect2ShapeHandler.centerEyeDevice
-  type: Property
-  source:
-    remote:
-      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
-      branch: master
-      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: centerEyeDevice
-    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
-    startLine: 11
-  assemblies:
-  - YVR.Core.Runtime
-  namespace: YVR.Core
-  syntax:
-    content: public static InputDevice centerEyeDevice { get; }
-    parameters: []
-    return:
-      type: UnityEngine.XR.InputDevice
-    content.vb: Public Shared ReadOnly Property centerEyeDevice As InputDevice
-  overload: YVR.Core.Equirect2ShapeHandler.centerEyeDevice*
-- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-  commentId: M:YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+- uid: YVR.Core.CubeShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  commentId: M:YVR.Core.CubeShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   id: HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-  parent: YVR.Core.Equirect2ShapeHandler
+  parent: YVR.Core.CubeShapeHandler
   langs:
   - csharp
   - vb
   name: HandleLayerPose(IYVRLayerHandle, LayerShapeData)
-  nameWithType: Equirect2ShapeHandler.HandleLayerPose(IYVRLayerHandle, LayerShapeData)
-  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, YVR.Core.LayerShapeData)
+  nameWithType: CubeShapeHandler.HandleLayerPose(IYVRLayerHandle, LayerShapeData)
+  fullName: YVR.Core.CubeShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle, YVR.Core.LayerShapeData)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/CubeShapeHandler.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandleLayerPose
-    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
-    startLine: 13
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/CubeShapeHandler.cs
+    startLine: 4
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -101,28 +71,28 @@ items:
     - id: data
       type: YVR.Core.LayerShapeData
     content.vb: Public Sub HandleLayerPose(layerHandle As IYVRLayerHandle, data As LayerShapeData)
-  overload: YVR.Core.Equirect2ShapeHandler.HandleLayerPose*
+  overload: YVR.Core.CubeShapeHandler.HandleLayerPose*
   implements:
   - YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-  commentId: M:YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+- uid: YVR.Core.CubeShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
+  commentId: M:YVR.Core.CubeShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   id: HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
-  parent: YVR.Core.Equirect2ShapeHandler
+  parent: YVR.Core.CubeShapeHandler
   langs:
   - csharp
   - vb
   name: HandleLayerShape(IYVRLayerHandle, LayerShapeData)
-  nameWithType: Equirect2ShapeHandler.HandleLayerShape(IYVRLayerHandle, LayerShapeData)
-  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, YVR.Core.LayerShapeData)
+  nameWithType: CubeShapeHandler.HandleLayerShape(IYVRLayerHandle, LayerShapeData)
+  fullName: YVR.Core.CubeShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle, YVR.Core.LayerShapeData)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/CubeShapeHandler.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandleLayerShape
-    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/Equirect2ShapeHandler.cs
-    startLine: 27
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerShapeHandle/CubeShapeHandler.cs
+    startLine: 13
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -135,7 +105,7 @@ items:
     - id: data
       type: YVR.Core.LayerShapeData
     content.vb: Public Sub HandleLayerShape(layerHandle As IYVRLayerHandle, data As LayerShapeData)
-  overload: YVR.Core.Equirect2ShapeHandler.HandleLayerShape*
+  overload: YVR.Core.CubeShapeHandler.HandleLayerShape*
   implements:
   - YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
 references:
@@ -405,47 +375,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: YVR.Core.Equirect2ShapeHandler.centerEyeDevice*
-  commentId: Overload:YVR.Core.Equirect2ShapeHandler.centerEyeDevice
-  href: YVR.Core.Equirect2ShapeHandler.centerEyeDevice.html#YVR_Core_Equirect2ShapeHandler_centerEyeDevice
-  name: centerEyeDevice
-  nameWithType: Equirect2ShapeHandler.centerEyeDevice
-  fullName: YVR.Core.Equirect2ShapeHandler.centerEyeDevice
-- uid: UnityEngine.XR.InputDevice
-  commentId: T:UnityEngine.XR.InputDevice
-  parent: UnityEngine.XR
-  isExternal: true
-  name: InputDevice
-  nameWithType: InputDevice
-  fullName: UnityEngine.XR.InputDevice
-- uid: UnityEngine.XR
-  commentId: N:UnityEngine.XR
-  isExternal: true
-  name: UnityEngine.XR
-  nameWithType: UnityEngine.XR
-  fullName: UnityEngine.XR
-  spec.csharp:
-  - uid: UnityEngine
-    name: UnityEngine
-    isExternal: true
-  - name: .
-  - uid: UnityEngine.XR
-    name: XR
-    isExternal: true
-  spec.vb:
-  - uid: UnityEngine
-    name: UnityEngine
-    isExternal: true
-  - name: .
-  - uid: UnityEngine.XR
-    name: XR
-    isExternal: true
-- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerPose*
-  commentId: Overload:YVR.Core.Equirect2ShapeHandler.HandleLayerPose
-  href: YVR.Core.Equirect2ShapeHandler.HandleLayerPose.html#YVR_Core_Equirect2ShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_YVR_Core_LayerShapeData_
+- uid: YVR.Core.CubeShapeHandler.HandleLayerPose*
+  commentId: Overload:YVR.Core.CubeShapeHandler.HandleLayerPose
+  href: YVR.Core.CubeShapeHandler.HandleLayerPose.html#YVR_Core_CubeShapeHandler_HandleLayerPose_YVR_Core_IYVRLayerHandle_YVR_Core_LayerShapeData_
   name: HandleLayerPose
-  nameWithType: Equirect2ShapeHandler.HandleLayerPose
-  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerPose
+  nameWithType: CubeShapeHandler.HandleLayerPose
+  fullName: YVR.Core.CubeShapeHandler.HandleLayerPose
 - uid: YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerPose(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   parent: YVR.Core.ILayerShapeHandler
@@ -495,12 +430,12 @@ references:
   name: LayerShapeData
   nameWithType: LayerShapeData
   fullName: YVR.Core.LayerShapeData
-- uid: YVR.Core.Equirect2ShapeHandler.HandleLayerShape*
-  commentId: Overload:YVR.Core.Equirect2ShapeHandler.HandleLayerShape
-  href: YVR.Core.Equirect2ShapeHandler.HandleLayerShape.html#YVR_Core_Equirect2ShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_YVR_Core_LayerShapeData_
+- uid: YVR.Core.CubeShapeHandler.HandleLayerShape*
+  commentId: Overload:YVR.Core.CubeShapeHandler.HandleLayerShape
+  href: YVR.Core.CubeShapeHandler.HandleLayerShape.html#YVR_Core_CubeShapeHandler_HandleLayerShape_YVR_Core_IYVRLayerHandle_YVR_Core_LayerShapeData_
   name: HandleLayerShape
-  nameWithType: Equirect2ShapeHandler.HandleLayerShape
-  fullName: YVR.Core.Equirect2ShapeHandler.HandleLayerShape
+  nameWithType: CubeShapeHandler.HandleLayerShape
+  fullName: YVR.Core.CubeShapeHandler.HandleLayerShape
 - uid: YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   commentId: M:YVR.Core.ILayerShapeHandler.HandleLayerShape(YVR.Core.IYVRLayerHandle,YVR.Core.LayerShapeData)
   parent: YVR.Core.ILayerShapeHandler

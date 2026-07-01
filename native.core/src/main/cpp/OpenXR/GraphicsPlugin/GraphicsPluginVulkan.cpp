@@ -137,12 +137,43 @@ void GraphicsPluginVulkan::InitializeDevice(XrInstance instance, XrSystemId syst
 {
     AnnounceCallingFunc();
 
+    if (!LoadOpenXRVulkanFunction(instance, "xrGetVulkanGraphicsRequirements2KHR",
+                                  reinterpret_cast<PFN_xrVoidFunction*>(&xrGetVulkanGraphicsRequirements2KHR)) ||
+        !LoadOpenXRVulkanFunction(instance, "xrGetVulkanGraphicsDevice2KHR",
+                                  reinterpret_cast<PFN_xrVoidFunction*>(&xrGetVulkanGraphicsDevice2KHR)))
+    {
+        YError("GraphicsPluginVulkan::InitializeDevice failed to load required OpenXR Vulkan functions");
+        return;
+    }
+
+    XrGraphicsRequirementsVulkan2KHR graphicsRequirements{XR_TYPE_GRAPHICS_REQUIREMENTS_VULKAN_KHR};
+    const XrResult requirementsResult = xrGetVulkanGraphicsRequirements2KHR(instance, systemId, &graphicsRequirements);
+    OpenXRResult(requirementsResult, "xrGetVulkanGraphicsRequirements2KHR");
+    if (XR_FAILED(requirementsResult))
+    {
+        YError("GraphicsPluginVulkan::InitializeDevice graphics requirements failed result=%s(%d)",
+               to_string(requirementsResult), requirementsResult);
+        return;
+    }
+    YInfo("GraphicsPluginVulkan::InitializeDevice graphics requirements min=%s max=%s",
+          GetXrVersionString(graphicsRequirements.minApiVersionSupported).c_str(),
+          GetXrVersionString(graphicsRequirements.maxApiVersionSupported).c_str());
+
     const UnityVulkanInstance& vulkanInstance = vulkanUnityInterfaces->Instance();
 
     XrVulkanGraphicsDeviceGetInfoKHR deviceGetInfo{XR_TYPE_VULKAN_GRAPHICS_DEVICE_GET_INFO_KHR};
     deviceGetInfo.systemId = systemId;
     deviceGetInfo.vulkanInstance = vulkanInstance.instance;
-    OpenXRAPI(xrGetVulkanGraphicsDevice2KHR(instance, &deviceGetInfo, &device));
+    const XrResult deviceResult = xrGetVulkanGraphicsDevice2KHR(instance, &deviceGetInfo, &device);
+    OpenXRResult(deviceResult, "xrGetVulkanGraphicsDevice2KHR");
+    if (XR_FAILED(deviceResult))
+    {
+        YError("GraphicsPluginVulkan::InitializeDevice graphics device query failed result=%s(%d)",
+               to_string(deviceResult), deviceResult);
+        return;
+    }
+    YInfo("GraphicsPluginVulkan::InitializeDevice unityPhysicalDevice=%p runtimePhysicalDevice=%p device=%p",
+          vulkanInstance.physicalDevice, device, vulkanInstance.device);
 
     graphicsBinding.instance = vulkanInstance.instance;
     graphicsBinding.physicalDevice = vulkanInstance.physicalDevice;

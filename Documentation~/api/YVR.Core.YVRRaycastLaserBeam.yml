@@ -208,7 +208,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: lineRenderer
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 31
+    startLine: 42
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -237,7 +237,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: cursorGameObject
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 36
+    startLine: 47
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -266,7 +266,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: cursorTransform
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 41
+    startLine: 52
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -295,7 +295,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: cursorMaterial
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 46
+    startLine: 57
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -324,7 +324,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Start
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 51
+    startLine: 62
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -352,7 +352,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GenerateLaserBeamLineRender
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 76
+    startLine: 87
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -380,7 +380,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GenerateCursor
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 84
+    startLine: 95
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -408,7 +408,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UpdateLaserBeam
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 100
+    startLine: 111
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -437,7 +437,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: UpdateCursor
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 121
+    startLine: 132
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -475,7 +475,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: OnDestroy
     path: ../com.yvr.core/Scripts/Runtime/UIEvent/YVRRaycastLaserBeam.cs
-    startLine: 148
+    startLine: 160
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

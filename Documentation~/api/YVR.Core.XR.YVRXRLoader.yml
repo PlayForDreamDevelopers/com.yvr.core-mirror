@@ -24,7 +24,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: YVRXRLoader
     path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRLoader.cs
-    startLine: 28
+    startLine: 33
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core.XR
@@ -119,7 +119,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: xrUserDefinedSettings
     path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRLoader.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core.XR
@@ -146,7 +146,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Initialize
     path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRLoader.cs
-    startLine: 56
+    startLine: 61
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core.XR
@@ -193,7 +193,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Start
     path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRLoader.cs
-    startLine: 103
+    startLine: 110
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core.XR
@@ -225,7 +225,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Stop
     path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRLoader.cs
-    startLine: 123
+    startLine: 130
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core.XR
@@ -257,7 +257,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Deinitialize
     path: ../com.yvr.core/Scripts/Runtime/XR/YVRXRLoader.cs
-    startLine: 142
+    startLine: 149
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core.XR

@@ -356,7 +356,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetFingerPinchStrength
     path: ../com.yvr.core/Scripts/Runtime/YVRHandManager.cs
-    startLine: 50
+    startLine: 56
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -394,7 +394,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPinch
     path: ../com.yvr.core/Scripts/Runtime/YVRHandManager.cs
-    startLine: 73
+    startLine: 79
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -427,7 +427,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPinchDown
     path: ../com.yvr.core/Scripts/Runtime/YVRHandManager.cs
-    startLine: 92
+    startLine: 98
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -460,7 +460,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetPinchUp
     path: ../com.yvr.core/Scripts/Runtime/YVRHandManager.cs
-    startLine: 115
+    startLine: 121
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -493,7 +493,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetInputDevice
     path: ../com.yvr.core/Scripts/Runtime/YVRHandManager.cs
-    startLine: 162
+    startLine: 173
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

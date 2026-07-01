@@ -16,6 +16,17 @@ Use Compositor Layer to select supersampling type:
         - **Normal**
         - **Quality**
 
+At runtime, use `YVRCompositeLayer.SuperSamplingType` to set supersampling for a single composition layer:
+
+```csharp
+public YVRCompositeLayer layer;
+
+public void SetLayerSuperSampling()
+{
+    layer.SuperSamplingType = YVRQualityManager.LayerSettingsType.Quality;
+}
+```
+
 
 ## Enable Sharpening Feature
 
@@ -29,6 +40,23 @@ Use YVR Manager or Compositor Layer to select sharpen type:
         - **None**
         - **Normal**
         - **Quality**
+
+At runtime, use `YVRManager.instance.EyeBufferSharpenType` to set Eye Buffer sharpening:
+
+```csharp
+YVRManager.instance.EyeBufferSharpenType = YVRQualityManager.LayerSettingsType.Normal;
+```
+
+You can also use `YVRCompositeLayer.SharpenType` to set sharpening for a single composition layer:
+
+```csharp
+public YVRCompositeLayer layer;
+
+public void SetLayerSharpen()
+{
+    layer.SharpenType = YVRQualityManager.LayerSettingsType.Quality;
+}
+```
 
 
 ## Note
@@ -54,4 +82,4 @@ View the sample project for your reference.
 
 6. Select **Build** and name the file. 
 
-7. Install the exported APK fie. 
+7. Install the exported APK fie.

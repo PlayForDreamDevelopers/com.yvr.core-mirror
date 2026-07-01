@@ -15,3 +15,5 @@ YVRManager.instance.cameraRenderer.displayFrequency = 90;
 ```
 
 你可以在应用启动时设置屏幕刷新率，也可以在应用运行时根据需要动态调整屏幕刷新率，当你未设置屏幕刷新率时，屏幕刷新率默认为 90 Hz。
+
+更多显示和渲染相关配置，请参考[显示与渲染配置](./DisplayRenderingConfig.md)。

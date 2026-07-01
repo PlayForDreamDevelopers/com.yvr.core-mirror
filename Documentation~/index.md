@@ -2,10 +2,18 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+# YVR Core Documentation
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+YVR Core provides Unity runtime, editor, rendering, input, spatial sensing, and Android packaging support for YVR applications.
 
-## Quick Start Notes:
+## Documentation
 
-1. Add images to the *images* folder if the file is referencing an image.
+- [中文手册](../com.yvr.core/Documentation_CN~/Core.md)
+- [English Manual](../com.yvr.core/Documentation~/Core.md)
+- [API Reference](xref:YVR.Core)
+- [Internal Notes](Internal/AndroidPacking.md)
+
+## Package
+
+- Package name: `com.yvr.core`
+- Current package version: `1.30.4`

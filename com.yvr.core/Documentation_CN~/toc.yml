@@ -55,6 +55,8 @@
               href: ./AdvancedFeatures/FocusAwareness.md
             - name: 屏幕刷新率
               href: ./AdvancedFeatures/DisplayRefreshRate.md
+            - name: 显示与渲染配置
+              href: ./AdvancedFeatures/DisplayRenderingConfig.md
             - name: 合成层
               href: ./AdvancedFeatures/CompositorLayers.md
             - name: 超采样和锐化

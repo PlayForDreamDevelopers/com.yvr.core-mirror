@@ -28,8 +28,8 @@ class YVRDisplayProvider : YVRProviderBase
     std::array<UnityXRRenderTextureId, EYE_NUM * SWAP_BUFFER_NUM> unityMotionVectorTextureIDArray;
 
     void initializeUnityGfxThreadLifecycle(UnityXRDisplayGraphicsThreadProvider &unityGfxThreadProvider);
-    void initializeRenderLayer();
-    void initializeUnityTexture();
+    bool initializeRenderLayer();
+    bool initializeUnityTexture();
     void destroyTextures();
     void swapUnityRenderBuffer(UnityXRNextFrameDesc *nextFrameDesc);
     void updateRenderPasses(UnityXRNextFrameDesc *nextFrameDesc);

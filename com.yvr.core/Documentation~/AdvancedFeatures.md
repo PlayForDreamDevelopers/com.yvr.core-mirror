@@ -13,4 +13,5 @@ So far, advanced features includes:
 8. [Focus Awareness](./AdvancedFeatures/FocusAwareness.md): System UI to be displayed as an overlay on top of a scene.
 9. [Display Refresh Rate](./AdvancedFeatures/DisplayRefreshRate.md): It affects the quality of the image displayed to users.
 10. [Compositor Layers](./AdvancedFeatures/CompositorLayers.md): Can be used to display the object in focus in the scene.
-11. [Supersampling And Sharpening](./AdvancedFeatures/SupersamplingAndSharpening.md):
+11. [Supersampling And Sharpening](./AdvancedFeatures/SupersamplingAndSharpening.md): Improves image quality through per-layer supersampling and sharpening.
+12. [Display and Rendering Configuration](./AdvancedFeatures/DisplayRenderingConfig.md): Display frequencies, eye rendering data, dynamic resolution, IPD, and color space.

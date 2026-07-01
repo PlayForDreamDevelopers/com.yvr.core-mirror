@@ -1,43 +1,51 @@
 ### YamlMime:ManagedReference
 items:
-- uid: YVR.Core.YVRPluginWin
-  commentId: T:YVR.Core.YVRPluginWin
-  id: YVRPluginWin
+- uid: YVR.Core.YVRPluginStub
+  commentId: T:YVR.Core.YVRPluginStub
+  id: YVRPluginStub
   parent: YVR.Core
   children:
-  - YVR.Core.YVRPluginWin.Create
-  - YVR.Core.YVRPluginWin.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
-  - YVR.Core.YVRPluginWin.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
-  - YVR.Core.YVRPluginWin.GetEyeResolution(UnityEngine.Vector2@)
-  - YVR.Core.YVRPluginWin.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
-  - YVR.Core.YVRPluginWin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
+  - YVR.Core.YVRPluginStub.Create
+  - YVR.Core.YVRPluginStub.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
+  - YVR.Core.YVRPluginStub.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
+  - YVR.Core.YVRPluginStub.GetEyeResolution(UnityEngine.Vector2@)
+  - YVR.Core.YVRPluginStub.GetHandEnable
+  - YVR.Core.YVRPluginStub.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
+  - YVR.Core.YVRPluginStub.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
   langs:
   - csharp
   - vb
-  name: YVRPluginWin
-  nameWithType: YVRPluginWin
-  fullName: YVR.Core.YVRPluginWin
+  name: YVRPluginStub
+  nameWithType: YVRPluginStub
+  fullName: YVR.Core.YVRPluginStub
   type: Class
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
-    id: YVRPluginWin
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 7
+    id: YVRPluginStub
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 12
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
+  summary: >-
+    Stub implementation of YVRPlugin for unsupported editor platforms (Linux, macOS).
+
+    This prevents DllNotFoundException errors when developing on non-Windows platforms.
+
+    All methods return default values and do not perform any native operations.
+  example: []
   syntax:
     content: >-
       [ExcludeFromDocs]
 
-      public class YVRPluginWin : YVRPlugin
+      public class YVRPluginStub : YVRPlugin
     content.vb: >-
       <ExcludeFromDocs>
 
-      Public Class YVRPluginWin Inherits YVRPlugin
+      Public Class YVRPluginStub Inherits YVRPlugin
   inheritance:
   - System.Object
   - YVR.Core.YVRPlugin
@@ -82,7 +90,6 @@ items:
   - YVR.Core.YVRPlugin.SetEyeBufferLayerSettings(System.Boolean,System.Boolean,System.Boolean,System.Boolean)
   - YVR.Core.YVRPlugin.GetPrimaryController(System.UInt32@)
   - YVR.Core.YVRPlugin.SetPrimaryController(System.UInt32)
-  - YVR.Core.YVRPlugin.GetHandEnable
   - YVR.Core.YVRPlugin.GetHandAutoActivateTime
   - YVR.Core.YVRPlugin.SetAPPHandEnable(System.Boolean)
   - YVR.Core.YVRPlugin.SetAPPControllerEnable(System.Boolean)
@@ -156,53 +163,53 @@ items:
   - type: UnityEngine.Internal.ExcludeFromDocsAttribute
     ctor: UnityEngine.Internal.ExcludeFromDocsAttribute.#ctor
     arguments: []
-- uid: YVR.Core.YVRPluginWin.Create
-  commentId: M:YVR.Core.YVRPluginWin.Create
+- uid: YVR.Core.YVRPluginStub.Create
+  commentId: M:YVR.Core.YVRPluginStub.Create
   id: Create
-  parent: YVR.Core.YVRPluginWin
+  parent: YVR.Core.YVRPluginStub
   langs:
   - csharp
   - vb
   name: Create()
-  nameWithType: YVRPluginWin.Create()
-  fullName: YVR.Core.YVRPluginWin.Create()
+  nameWithType: YVRPluginStub.Create()
+  fullName: YVR.Core.YVRPluginStub.Create()
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Create
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 12
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 17
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public static YVRPluginWin Create()
+    content: public static YVRPluginStub Create()
     return:
-      type: YVR.Core.YVRPluginWin
-    content.vb: Public Shared Function Create() As YVRPluginWin
-  overload: YVR.Core.YVRPluginWin.Create*
-- uid: YVR.Core.YVRPluginWin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
-  commentId: M:YVR.Core.YVRPluginWin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
+      type: YVR.Core.YVRPluginStub
+    content.vb: Public Shared Function Create() As YVRPluginStub
+  overload: YVR.Core.YVRPluginStub.Create*
+- uid: YVR.Core.YVRPluginStub.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
+  commentId: M:YVR.Core.YVRPluginStub.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
   id: SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
-  parent: YVR.Core.YVRPluginWin
+  parent: YVR.Core.YVRPluginStub
   langs:
   - csharp
   - vb
   name: SetVSyncCount(VSyncCount)
-  nameWithType: YVRPluginWin.SetVSyncCount(YVRQualityManager.VSyncCount)
-  fullName: YVR.Core.YVRPluginWin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
+  nameWithType: YVRPluginStub.SetVSyncCount(YVRQualityManager.VSyncCount)
+  fullName: YVR.Core.YVRPluginStub.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: SetVSyncCount
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 17
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 28
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -214,26 +221,26 @@ items:
       type: YVR.Core.YVRQualityManager.VSyncCount
     content.vb: Public Overrides Sub SetVSyncCount(vSyncCount As YVRQualityManager.VSyncCount)
   overridden: YVR.Core.YVRPlugin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
-  overload: YVR.Core.YVRPluginWin.SetVSyncCount*
-- uid: YVR.Core.YVRPluginWin.GetEyeResolution(UnityEngine.Vector2@)
-  commentId: M:YVR.Core.YVRPluginWin.GetEyeResolution(UnityEngine.Vector2@)
+  overload: YVR.Core.YVRPluginStub.SetVSyncCount*
+- uid: YVR.Core.YVRPluginStub.GetEyeResolution(UnityEngine.Vector2@)
+  commentId: M:YVR.Core.YVRPluginStub.GetEyeResolution(UnityEngine.Vector2@)
   id: GetEyeResolution(UnityEngine.Vector2@)
-  parent: YVR.Core.YVRPluginWin
+  parent: YVR.Core.YVRPluginStub
   langs:
   - csharp
   - vb
   name: GetEyeResolution(ref Vector2)
-  nameWithType: YVRPluginWin.GetEyeResolution(ref Vector2)
-  fullName: YVR.Core.YVRPluginWin.GetEyeResolution(ref UnityEngine.Vector2)
+  nameWithType: YVRPluginStub.GetEyeResolution(ref Vector2)
+  fullName: YVR.Core.YVRPluginStub.GetEyeResolution(ref UnityEngine.Vector2)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetEyeResolution
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 22
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 33
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -245,29 +252,29 @@ items:
       type: UnityEngine.Vector2
     content.vb: Public Overrides Sub GetEyeResolution(resolution As Vector2)
   overridden: YVR.Core.YVRPlugin.GetEyeResolution(UnityEngine.Vector2@)
-  overload: YVR.Core.YVRPluginWin.GetEyeResolution*
-  nameWithType.vb: YVRPluginWin.GetEyeResolution(Vector2)
-  fullName.vb: YVR.Core.YVRPluginWin.GetEyeResolution(UnityEngine.Vector2)
+  overload: YVR.Core.YVRPluginStub.GetEyeResolution*
+  nameWithType.vb: YVRPluginStub.GetEyeResolution(Vector2)
+  fullName.vb: YVR.Core.YVRPluginStub.GetEyeResolution(UnityEngine.Vector2)
   name.vb: GetEyeResolution(Vector2)
-- uid: YVR.Core.YVRPluginWin.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
-  commentId: M:YVR.Core.YVRPluginWin.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
+- uid: YVR.Core.YVRPluginStub.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
+  commentId: M:YVR.Core.YVRPluginStub.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
   id: GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
-  parent: YVR.Core.YVRPluginWin
+  parent: YVR.Core.YVRPluginStub
   langs:
   - csharp
   - vb
   name: GetEyeFov(int, ref EyeFov)
-  nameWithType: YVRPluginWin.GetEyeFov(int, ref YVRCameraRenderer.EyeFov)
-  fullName: YVR.Core.YVRPluginWin.GetEyeFov(int, ref YVR.Core.YVRCameraRenderer.EyeFov)
+  nameWithType: YVRPluginStub.GetEyeFov(int, ref YVRCameraRenderer.EyeFov)
+  fullName: YVR.Core.YVRPluginStub.GetEyeFov(int, ref YVR.Core.YVRCameraRenderer.EyeFov)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetEyeFov
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 28
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 39
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -281,29 +288,29 @@ items:
       type: YVR.Core.YVRCameraRenderer.EyeFov
     content.vb: Public Overrides Sub GetEyeFov(eyeSide As Integer, eyeFov As YVRCameraRenderer.EyeFov)
   overridden: YVR.Core.YVRPlugin.GetEyeFov(System.Int32,YVR.Core.YVRCameraRenderer.EyeFov@)
-  overload: YVR.Core.YVRPluginWin.GetEyeFov*
-  nameWithType.vb: YVRPluginWin.GetEyeFov(Integer, YVRCameraRenderer.EyeFov)
-  fullName.vb: YVR.Core.YVRPluginWin.GetEyeFov(Integer, YVR.Core.YVRCameraRenderer.EyeFov)
+  overload: YVR.Core.YVRPluginStub.GetEyeFov*
+  nameWithType.vb: YVRPluginStub.GetEyeFov(Integer, YVRCameraRenderer.EyeFov)
+  fullName.vb: YVR.Core.YVRPluginStub.GetEyeFov(Integer, YVR.Core.YVRCameraRenderer.EyeFov)
   name.vb: GetEyeFov(Integer, EyeFov)
-- uid: YVR.Core.YVRPluginWin.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
-  commentId: M:YVR.Core.YVRPluginWin.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
+- uid: YVR.Core.YVRPluginStub.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
+  commentId: M:YVR.Core.YVRPluginStub.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
   id: GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
-  parent: YVR.Core.YVRPluginWin
+  parent: YVR.Core.YVRPluginStub
   langs:
   - csharp
   - vb
   name: GetCurrentInputDevice(ref ActiveInputDevice)
-  nameWithType: YVRPluginWin.GetCurrentInputDevice(ref ActiveInputDevice)
-  fullName: YVR.Core.YVRPluginWin.GetCurrentInputDevice(ref YVR.Core.ActiveInputDevice)
+  nameWithType: YVRPluginStub.GetCurrentInputDevice(ref ActiveInputDevice)
+  fullName: YVR.Core.YVRPluginStub.GetCurrentInputDevice(ref YVR.Core.ActiveInputDevice)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetCurrentInputDevice
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 33
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 44
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -315,29 +322,29 @@ items:
       type: YVR.Core.ActiveInputDevice
     content.vb: Public Overrides Sub GetCurrentInputDevice(inputDevice As ActiveInputDevice)
   overridden: YVR.Core.YVRPlugin.GetCurrentInputDevice(YVR.Core.ActiveInputDevice@)
-  overload: YVR.Core.YVRPluginWin.GetCurrentInputDevice*
-  nameWithType.vb: YVRPluginWin.GetCurrentInputDevice(ActiveInputDevice)
-  fullName.vb: YVR.Core.YVRPluginWin.GetCurrentInputDevice(YVR.Core.ActiveInputDevice)
+  overload: YVR.Core.YVRPluginStub.GetCurrentInputDevice*
+  nameWithType.vb: YVRPluginStub.GetCurrentInputDevice(ActiveInputDevice)
+  fullName.vb: YVR.Core.YVRPluginStub.GetCurrentInputDevice(YVR.Core.ActiveInputDevice)
   name.vb: GetCurrentInputDevice(ActiveInputDevice)
-- uid: YVR.Core.YVRPluginWin.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
-  commentId: M:YVR.Core.YVRPluginWin.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
+- uid: YVR.Core.YVRPluginStub.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
+  commentId: M:YVR.Core.YVRPluginStub.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
   id: GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
-  parent: YVR.Core.YVRPluginWin
+  parent: YVR.Core.YVRPluginStub
   langs:
   - csharp
   - vb
   name: GetHandJointLocations(HandType, ref HandJointLocations)
-  nameWithType: YVRPluginWin.GetHandJointLocations(HandType, ref HandJointLocations)
-  fullName: YVR.Core.YVRPluginWin.GetHandJointLocations(YVR.Core.HandType, ref YVR.Core.HandJointLocations)
+  nameWithType: YVRPluginStub.GetHandJointLocations(HandType, ref HandJointLocations)
+  fullName: YVR.Core.YVRPluginStub.GetHandJointLocations(YVR.Core.HandType, ref YVR.Core.HandJointLocations)
   type: Method
   source:
     remote:
-      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
       branch: master
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: GetHandJointLocations
-    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginWin.cs
-    startLine: 51
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 49
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -351,10 +358,40 @@ items:
       type: YVR.Core.HandJointLocations
     content.vb: Public Overrides Sub GetHandJointLocations(handType As HandType, jointLocations As HandJointLocations)
   overridden: YVR.Core.YVRPlugin.GetHandJointLocations(YVR.Core.HandType,YVR.Core.HandJointLocations@)
-  overload: YVR.Core.YVRPluginWin.GetHandJointLocations*
-  nameWithType.vb: YVRPluginWin.GetHandJointLocations(HandType, HandJointLocations)
-  fullName.vb: YVR.Core.YVRPluginWin.GetHandJointLocations(YVR.Core.HandType, YVR.Core.HandJointLocations)
+  overload: YVR.Core.YVRPluginStub.GetHandJointLocations*
+  nameWithType.vb: YVRPluginStub.GetHandJointLocations(HandType, HandJointLocations)
+  fullName.vb: YVR.Core.YVRPluginStub.GetHandJointLocations(YVR.Core.HandType, YVR.Core.HandJointLocations)
   name.vb: GetHandJointLocations(HandType, HandJointLocations)
+- uid: YVR.Core.YVRPluginStub.GetHandEnable
+  commentId: M:YVR.Core.YVRPluginStub.GetHandEnable
+  id: GetHandEnable
+  parent: YVR.Core.YVRPluginStub
+  langs:
+  - csharp
+  - vb
+  name: GetHandEnable()
+  nameWithType: YVRPluginStub.GetHandEnable()
+  fullName: YVR.Core.YVRPluginStub.GetHandEnable()
+  type: Method
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: GetHandEnable
+    path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPluginStub.cs
+    startLine: 61
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  example: []
+  syntax:
+    content: public override bool GetHandEnable()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function GetHandEnable() As Boolean
+  overridden: YVR.Core.YVRPlugin.GetHandEnable
+  overload: YVR.Core.YVRPluginStub.GetHandEnable*
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core
@@ -1508,25 +1545,6 @@ references:
     name: UInteger
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.uint32
-  - name: )
-- uid: YVR.Core.YVRPlugin.GetHandEnable
-  commentId: M:YVR.Core.YVRPlugin.GetHandEnable
-  parent: YVR.Core.YVRPlugin
-  href: YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable
-  name: GetHandEnable()
-  nameWithType: YVRPlugin.GetHandEnable()
-  fullName: YVR.Core.YVRPlugin.GetHandEnable()
-  spec.csharp:
-  - uid: YVR.Core.YVRPlugin.GetHandEnable
-    name: GetHandEnable
-    href: YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: YVR.Core.YVRPlugin.GetHandEnable
-    name: GetHandEnable
-    href: YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable
-  - name: (
   - name: )
 - uid: YVR.Core.YVRPlugin.GetHandAutoActivateTime
   commentId: M:YVR.Core.YVRPlugin.GetHandAutoActivateTime
@@ -4209,19 +4227,19 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: YVR.Core.YVRPluginWin.Create*
-  commentId: Overload:YVR.Core.YVRPluginWin.Create
-  href: YVR.Core.YVRPluginWin.Create.html#YVR_Core_YVRPluginWin_Create
+- uid: YVR.Core.YVRPluginStub.Create*
+  commentId: Overload:YVR.Core.YVRPluginStub.Create
+  href: YVR.Core.YVRPluginStub.Create.html#YVR_Core_YVRPluginStub_Create
   name: Create
-  nameWithType: YVRPluginWin.Create
-  fullName: YVR.Core.YVRPluginWin.Create
-- uid: YVR.Core.YVRPluginWin
-  commentId: T:YVR.Core.YVRPluginWin
+  nameWithType: YVRPluginStub.Create
+  fullName: YVR.Core.YVRPluginStub.Create
+- uid: YVR.Core.YVRPluginStub
+  commentId: T:YVR.Core.YVRPluginStub
   parent: YVR.Core
-  href: YVR.Core.YVRPluginWin.html
-  name: YVRPluginWin
-  nameWithType: YVRPluginWin
-  fullName: YVR.Core.YVRPluginWin
+  href: YVR.Core.YVRPluginStub.html
+  name: YVRPluginStub
+  nameWithType: YVRPluginStub
+  fullName: YVR.Core.YVRPluginStub
 - uid: YVR.Core.YVRPlugin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
   commentId: M:YVR.Core.YVRPlugin.SetVSyncCount(YVR.Core.YVRQualityManager.VSyncCount)
   parent: YVR.Core.YVRPlugin
@@ -4247,12 +4265,12 @@ references:
     name: VSyncCount
     href: YVR.Core.YVRQualityManager.VSyncCount.html
   - name: )
-- uid: YVR.Core.YVRPluginWin.SetVSyncCount*
-  commentId: Overload:YVR.Core.YVRPluginWin.SetVSyncCount
-  href: YVR.Core.YVRPluginWin.SetVSyncCount.html#YVR_Core_YVRPluginWin_SetVSyncCount_YVR_Core_YVRQualityManager_VSyncCount_
+- uid: YVR.Core.YVRPluginStub.SetVSyncCount*
+  commentId: Overload:YVR.Core.YVRPluginStub.SetVSyncCount
+  href: YVR.Core.YVRPluginStub.SetVSyncCount.html#YVR_Core_YVRPluginStub_SetVSyncCount_YVR_Core_YVRQualityManager_VSyncCount_
   name: SetVSyncCount
-  nameWithType: YVRPluginWin.SetVSyncCount
-  fullName: YVR.Core.YVRPluginWin.SetVSyncCount
+  nameWithType: YVRPluginStub.SetVSyncCount
+  fullName: YVR.Core.YVRPluginStub.SetVSyncCount
 - uid: YVR.Core.YVRQualityManager.VSyncCount
   commentId: T:YVR.Core.YVRQualityManager.VSyncCount
   parent: YVR.Core
@@ -4307,12 +4325,12 @@ references:
     name: Vector2
     isExternal: true
   - name: )
-- uid: YVR.Core.YVRPluginWin.GetEyeResolution*
-  commentId: Overload:YVR.Core.YVRPluginWin.GetEyeResolution
-  href: YVR.Core.YVRPluginWin.GetEyeResolution.html#YVR_Core_YVRPluginWin_GetEyeResolution_UnityEngine_Vector2__
+- uid: YVR.Core.YVRPluginStub.GetEyeResolution*
+  commentId: Overload:YVR.Core.YVRPluginStub.GetEyeResolution
+  href: YVR.Core.YVRPluginStub.GetEyeResolution.html#YVR_Core_YVRPluginStub_GetEyeResolution_UnityEngine_Vector2__
   name: GetEyeResolution
-  nameWithType: YVRPluginWin.GetEyeResolution
-  fullName: YVR.Core.YVRPluginWin.GetEyeResolution
+  nameWithType: YVRPluginStub.GetEyeResolution
+  fullName: YVR.Core.YVRPluginStub.GetEyeResolution
 - uid: UnityEngine.Vector2
   commentId: T:UnityEngine.Vector2
   parent: UnityEngine
@@ -4369,12 +4387,12 @@ references:
     name: EyeFov
     href: YVR.Core.YVRCameraRenderer.EyeFov.html
   - name: )
-- uid: YVR.Core.YVRPluginWin.GetEyeFov*
-  commentId: Overload:YVR.Core.YVRPluginWin.GetEyeFov
-  href: YVR.Core.YVRPluginWin.GetEyeFov.html#YVR_Core_YVRPluginWin_GetEyeFov_System_Int32_YVR_Core_YVRCameraRenderer_EyeFov__
+- uid: YVR.Core.YVRPluginStub.GetEyeFov*
+  commentId: Overload:YVR.Core.YVRPluginStub.GetEyeFov
+  href: YVR.Core.YVRPluginStub.GetEyeFov.html#YVR_Core_YVRPluginStub_GetEyeFov_System_Int32_YVR_Core_YVRCameraRenderer_EyeFov__
   name: GetEyeFov
-  nameWithType: YVRPluginWin.GetEyeFov
-  fullName: YVR.Core.YVRPluginWin.GetEyeFov
+  nameWithType: YVRPluginStub.GetEyeFov
+  fullName: YVR.Core.YVRPluginStub.GetEyeFov
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -4439,12 +4457,12 @@ references:
     name: ActiveInputDevice
     href: YVR.Core.ActiveInputDevice.html
   - name: )
-- uid: YVR.Core.YVRPluginWin.GetCurrentInputDevice*
-  commentId: Overload:YVR.Core.YVRPluginWin.GetCurrentInputDevice
-  href: YVR.Core.YVRPluginWin.GetCurrentInputDevice.html#YVR_Core_YVRPluginWin_GetCurrentInputDevice_YVR_Core_ActiveInputDevice__
+- uid: YVR.Core.YVRPluginStub.GetCurrentInputDevice*
+  commentId: Overload:YVR.Core.YVRPluginStub.GetCurrentInputDevice
+  href: YVR.Core.YVRPluginStub.GetCurrentInputDevice.html#YVR_Core_YVRPluginStub_GetCurrentInputDevice_YVR_Core_ActiveInputDevice__
   name: GetCurrentInputDevice
-  nameWithType: YVRPluginWin.GetCurrentInputDevice
-  fullName: YVR.Core.YVRPluginWin.GetCurrentInputDevice
+  nameWithType: YVRPluginStub.GetCurrentInputDevice
+  fullName: YVR.Core.YVRPluginStub.GetCurrentInputDevice
 - uid: YVR.Core.ActiveInputDevice
   commentId: T:YVR.Core.ActiveInputDevice
   parent: YVR.Core
@@ -4492,12 +4510,12 @@ references:
     name: HandJointLocations
     href: YVR.Core.HandJointLocations.html
   - name: )
-- uid: YVR.Core.YVRPluginWin.GetHandJointLocations*
-  commentId: Overload:YVR.Core.YVRPluginWin.GetHandJointLocations
-  href: YVR.Core.YVRPluginWin.GetHandJointLocations.html#YVR_Core_YVRPluginWin_GetHandJointLocations_YVR_Core_HandType_YVR_Core_HandJointLocations__
+- uid: YVR.Core.YVRPluginStub.GetHandJointLocations*
+  commentId: Overload:YVR.Core.YVRPluginStub.GetHandJointLocations
+  href: YVR.Core.YVRPluginStub.GetHandJointLocations.html#YVR_Core_YVRPluginStub_GetHandJointLocations_YVR_Core_HandType_YVR_Core_HandJointLocations__
   name: GetHandJointLocations
-  nameWithType: YVRPluginWin.GetHandJointLocations
-  fullName: YVR.Core.YVRPluginWin.GetHandJointLocations
+  nameWithType: YVRPluginStub.GetHandJointLocations
+  fullName: YVR.Core.YVRPluginStub.GetHandJointLocations
 - uid: YVR.Core.HandType
   commentId: T:YVR.Core.HandType
   parent: YVR.Core
@@ -4512,4 +4530,40 @@ references:
   name: HandJointLocations
   nameWithType: HandJointLocations
   fullName: YVR.Core.HandJointLocations
+- uid: YVR.Core.YVRPlugin.GetHandEnable
+  commentId: M:YVR.Core.YVRPlugin.GetHandEnable
+  parent: YVR.Core.YVRPlugin
+  href: YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable
+  name: GetHandEnable()
+  nameWithType: YVRPlugin.GetHandEnable()
+  fullName: YVR.Core.YVRPlugin.GetHandEnable()
+  spec.csharp:
+  - uid: YVR.Core.YVRPlugin.GetHandEnable
+    name: GetHandEnable
+    href: YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YVR.Core.YVRPlugin.GetHandEnable
+    name: GetHandEnable
+    href: YVR.Core.YVRPlugin.GetHandEnable.html#YVR_Core_YVRPlugin_GetHandEnable
+  - name: (
+  - name: )
+- uid: YVR.Core.YVRPluginStub.GetHandEnable*
+  commentId: Overload:YVR.Core.YVRPluginStub.GetHandEnable
+  href: YVR.Core.YVRPluginStub.GetHandEnable.html#YVR_Core_YVRPluginStub_GetHandEnable
+  name: GetHandEnable
+  nameWithType: YVRPluginStub.GetHandEnable
+  fullName: YVR.Core.YVRPluginStub.GetHandEnable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 memberLayout: SeparatePages

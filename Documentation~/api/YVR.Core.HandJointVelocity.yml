@@ -22,7 +22,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandJointVelocity
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 120
+    startLine: 113
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -54,7 +54,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: velocityFlags
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 122
+    startLine: 115
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -81,7 +81,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: linearVelocity
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 123
+    startLine: 116
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -108,7 +108,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: angularVelocity
     path: ../com.yvr.core/Scripts/Runtime/Hand/YVRHandData.cs
-    startLine: 124
+    startLine: 117
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

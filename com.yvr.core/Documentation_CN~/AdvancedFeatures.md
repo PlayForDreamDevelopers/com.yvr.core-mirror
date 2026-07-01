@@ -15,3 +15,4 @@
 9. [屏幕刷新率](./AdvancedFeatures/DisplayRefreshRate.md)：它会影响向用户显示的图像质量。
 10. [合成层](./AdvancedFeatures/CompositorLayers.md)：可以用来展示场景中的焦点对象。
 11. [超采样与锐化](./AdvancedFeatures/SupersamplingAndSharpening.md)：可以提高图像质量。
+12. [显示与渲染配置](./AdvancedFeatures/DisplayRenderingConfig.md)：介绍显示刷新率、眼缓冲信息、动态分辨率、IPD 和色彩空间。

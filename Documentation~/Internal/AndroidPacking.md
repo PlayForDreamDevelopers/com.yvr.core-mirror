@@ -46,6 +46,15 @@ Manifest Info 由类 [ManifestTagInfo](http://192.168.9.237:8081/sdk-utilities/D
 
 ![AndroidManifestHandler Sequence](assets/AndroidPacking/AndroidManifestHandlerSequence.excalidraw.svg)
 
+### 当前 Manifest 处理项
+
+当前 Core 的 Manifest 处理包含以下几类：
+
+- OpenXR 运行时权限、查询项和 `org.khronos.openxr.intent.category.IMMERSIVE_HMD` category。
+- `com.yvr.application.mode` 默认写入 `vr_only`。
+- 根据 XR Plugin Management 中 YVR 面板的设置写入手势、眼动、大空间、空间锚点、Scene、6Dof、QuadViews、Splash 等权限、feature 或 meta-data。
+- 打包时写入 `yvr.sdk.version`，用于记录当前工程中 YVR 相关 Unity package 版本。
+
 ## PackingAssetHandler
 
 对于 Packing Asset 的处理与 ManifestInfo 的处理类似，其信息由类 [PackingAssetInfo](http://192.168.9.237:8081/sdk-utilities/Documentation~/CoreModules/PackingProcessor/PackingAssetInfo.html) 进行描述，处理的方式也与 ManifestInfo 类似：对于每一个 `PackingAssetInfo` 对象都应当建立一个对应的 [PackingAssetInfoProvider](xref:YVR.Core.Editor.Packing.PackingAssetsInfoProvider) 对象来进行处理，其与 [ManifestElementInfoProvider](xref:YVR.Core.Editor.Packing.ManifestElementInfoProvider) 逻辑基本类似，此不赘述。
@@ -53,3 +62,11 @@ Manifest Info 由类 [ManifestTagInfo](http://192.168.9.237:8081/sdk-utilities/D
 实现示例可参考 [ScreenSplashAssetsInfoProvider](http://192.168.9.247:8001/unity/sdk-core/-/blob/master/com.yvr.core/Scripts/Editor/AndroidPackingHandlers/PackingAssetsProvider/ScreenSplashAssetsInfoProvider.cs?ref_type=heads)，整体的调用顺序如下
 
 ![](assets/AndroidPacking/2025-04-10-16-55-08.excalidraw.svg)
+
+### 当前 Packing Asset 处理项
+
+当前 Core 的资源打包处理包含以下几类：
+
+- Splash 资源：当 `YVRXRSettings.instance.OSSplashScreen` 存在时，将对应 Unity 资源写入 Gradle 工程的 `src/main/assets/vr_splash.png`。
+- Image Tracking 资源：在构建前将 `ToTrackImagesCollectionSO` 加入 Preloaded Assets，并在生成 Gradle 工程后把待跟踪图片写入 `src/main/assets`，文件名使用 `it_` 前缀。
+- 清理资源：当 Splash 或 Image Tracking 配置移除时，将历史 `PackingAssetInfo.apkAssetPath` 加入待删除列表，避免旧资源继续留在 APK 中。

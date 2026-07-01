@@ -209,8 +209,61 @@ void YVRProjectionRenderLayer::setAppSWProjectionLayerViewNext()
     }
 }
 
+bool YVRProjectionRenderLayer::createSwapchain(XrSwapchainCreateInfo& createInfo, OpenXRSwapchain& swapchain,
+                                                XrSwapchainImageBaseHeader* images)
+{
+    swapchain.handle = XR_NULL_HANDLE;
+    swapchain.swapchainAllocated = false;
+
+    if (images == nullptr || bufferCount <= 0)
+    {
+        YError("Invalid swapchain image storage images=%p bufferCount=%d", images, bufferCount);
+        return false;
+    }
+
+    const XrResult createResult = xrCreateSwapchain(plugin.openxrMgr->program->session, &createInfo, &swapchain.handle);
+    OpenXRResult(createResult, "xrCreateSwapchain");
+    if (XR_FAILED(createResult) || swapchain.handle == XR_NULL_HANDLE)
+    {
+        YError("Failed to create projection swapchain result=%d size=%ux%u format=%lld",
+               createResult, createInfo.width, createInfo.height, static_cast<long long>(createInfo.format));
+        swapchain.handle = XR_NULL_HANDLE;
+        return false;
+    }
+
+    uint32_t runtimeImageCount = 0;
+    const XrResult countResult = xrEnumerateSwapchainImages(swapchain.handle, 0, &runtimeImageCount, nullptr);
+    OpenXRResult(countResult, "xrEnumerateSwapchainImages(count)");
+    if (XR_FAILED(countResult) || runtimeImageCount != static_cast<uint32_t>(bufferCount))
+    {
+        YError("Projection swapchain image count mismatch result=%d runtime=%u expected=%d",
+               countResult, runtimeImageCount, bufferCount);
+        OpenXRAPI(xrDestroySwapchain(swapchain.handle));
+        swapchain.handle = XR_NULL_HANDLE;
+        return false;
+    }
+
+    uint32_t enumeratedImageCount = 0;
+    const XrResult enumerateResult =
+        xrEnumerateSwapchainImages(swapchain.handle, runtimeImageCount, &enumeratedImageCount, images);
+    OpenXRResult(enumerateResult, "xrEnumerateSwapchainImages(images)");
+    if (XR_FAILED(enumerateResult) || enumeratedImageCount != runtimeImageCount)
+    {
+        YError("Failed to enumerate projection swapchain images result=%d enumerated=%u expected=%u",
+               enumerateResult, enumeratedImageCount, runtimeImageCount);
+        OpenXRAPI(xrDestroySwapchain(swapchain.handle));
+        swapchain.handle = XR_NULL_HANDLE;
+        return false;
+    }
+
+    swapchain.swapchainAllocated = true;
+    return true;
+}
+
 void YVRProjectionRenderLayer::allocSwapChain()
 {
+    swapchainReady = false;
+
     // Enable Foveation
     XrSwapchainCreateInfoFoveationFB swapChainFoveationCreateInfo{XR_TYPE_SWAPCHAIN_CREATE_INFO_FOVEATION_FB};
     swapChainFoveationCreateInfo.flags = plugin.openxrMgr->renderer == kUnityGfxRendererVulkan
@@ -223,45 +276,55 @@ void YVRProjectionRenderLayer::allocSwapChain()
     {
         if (!motionVectorPrimarySwapChain.swapchainAllocated)
         {
-            OpenXRAPI(
-                xrCreateSwapchain(plugin.openxrMgr->program->session, &motionVectorColorSwapChainCreateInfo, &motionVectorPrimarySwapChain.handle));
-            OpenXRAPI(xrEnumerateSwapchainImages(motionVectorPrimarySwapChain.handle, bufferCount, nullptr, motionVectorPrimaryImages));
-            motionVectorPrimarySwapChain.swapchainAllocated = true;
+            if (!createSwapchain(motionVectorColorSwapChainCreateInfo, motionVectorPrimarySwapChain, motionVectorPrimaryImages))
+            {
+                destroySwapChain();
+                return;
+            }
         }
         if (!motionVectorPrimaryDepthSwapChain.swapchainAllocated)
         {
-            OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &motionVectorDepthSwapChainCreateInfo,
-                &motionVectorPrimaryDepthSwapChain.handle));
-            OpenXRAPI(xrEnumerateSwapchainImages(motionVectorPrimaryDepthSwapChain.handle, bufferCount, nullptr, motionVectorPrimaryDepthImages));
-            motionVectorPrimaryDepthSwapChain.swapchainAllocated = true;
+            if (!createSwapchain(motionVectorDepthSwapChainCreateInfo, motionVectorPrimaryDepthSwapChain,
+                                 motionVectorPrimaryDepthImages))
+            {
+                destroySwapChain();
+                return;
+            }
         }
 
         if (separateSwapChain)
         {
             if (!motionVectorSecondarySwapChain.swapchainAllocated)
             {
-                OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &motionVectorColorSwapChainCreateInfo,
-                    &motionVectorSecondarySwapChain.handle));
-                OpenXRAPI(xrEnumerateSwapchainImages(motionVectorSecondarySwapChain.handle, bufferCount, nullptr, motionVectorSecondaryImages));
-                motionVectorSecondarySwapChain.swapchainAllocated = true;
+                if (!createSwapchain(motionVectorColorSwapChainCreateInfo, motionVectorSecondarySwapChain,
+                                     motionVectorSecondaryImages))
+                {
+                    destroySwapChain();
+                    return;
+                }
             }
 
             if (!motionVectorSecondaryDepthSwapChain.swapchainAllocated)
             {
-                OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &motionVectorDepthSwapChainCreateInfo,
-                    &motionVectorSecondaryDepthSwapChain.handle));
-                OpenXRAPI(
-                    xrEnumerateSwapchainImages(motionVectorSecondaryDepthSwapChain.handle, bufferCount, nullptr, motionVectorSecondaryDepthImages));
-                motionVectorSecondaryDepthSwapChain.swapchainAllocated = true;
+                if (!createSwapchain(motionVectorDepthSwapChainCreateInfo, motionVectorSecondaryDepthSwapChain,
+                                     motionVectorSecondaryDepthImages))
+                {
+                    destroySwapChain();
+                    return;
+                }
             }
         }
     }
 
     if (!primarySwapchain.swapchainAllocated)
     {
-        OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &xrSwapchainCreateInfo, &primarySwapchain.handle));
-        OpenXRAPI(xrEnumerateSwapchainImages(primarySwapchain.handle, bufferCount, nullptr, primarySwapchainImages));
-        primarySwapchain.swapchainAllocated = true;
+        xrSwapchainCreateInfo.width = primarySwapchain.width;
+        xrSwapchainCreateInfo.height = primarySwapchain.height;
+        if (!createSwapchain(xrSwapchainCreateInfo, primarySwapchain, primarySwapchainImages))
+        {
+            destroySwapChain();
+            return;
+        }
     }
 
     if (separateSwapChain && !secondarySwapchain.swapchainAllocated)
@@ -274,23 +337,29 @@ void YVRProjectionRenderLayer::allocSwapChain()
 
         xrSwapchainCreateInfo.width = static_cast<int>(secondRes.x * separateRenderScale);
         xrSwapchainCreateInfo.height = static_cast<int>(secondRes.y * separateRenderScale);
-        OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &xrSwapchainCreateInfo, &secondarySwapchain.handle));
-        OpenXRAPI(xrEnumerateSwapchainImages(secondarySwapchain.handle, bufferCount, nullptr, secondarySwapchainImages));
-        secondarySwapchain.swapchainAllocated = true;
+        if (!createSwapchain(xrSwapchainCreateInfo, secondarySwapchain, secondarySwapchainImages))
+        {
+            destroySwapChain();
+            return;
+        }
     }
 
     if (plugin.renderMgr->configsMgr->isUsingNativeDepthBuffer())
     {
-        OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &depthSwapChainCreateInfo, &depthSwapchain.handle))
-        OpenXRAPI(xrEnumerateSwapchainImages(depthSwapchain.handle, bufferCount, nullptr, depthSwapchainImages))
+        if (!createSwapchain(depthSwapChainCreateInfo, depthSwapchain, depthSwapchainImages))
+        {
+            destroySwapChain();
+            return;
+        }
 
         if (separateSwapChain)
         {
-            OpenXRAPI(xrCreateSwapchain(plugin.openxrMgr->program->session, &depthSwapChainCreateInfo, &depthSecondarySwapchain.handle))
-            OpenXRAPI(xrEnumerateSwapchainImages(depthSecondarySwapchain.handle, bufferCount, nullptr,
-                depthSecondarySwapchainImages))
+            if (!createSwapchain(depthSwapChainCreateInfo, depthSecondarySwapchain, depthSecondarySwapchainImages))
+            {
+                destroySwapChain();
+                return;
+            }
         }
-        depthSwapchain.swapchainAllocated = true;
     }
 
     for (int i = 0; i != plugin.renderMgr->configsMgr->getViewsCount(); ++i)
@@ -359,15 +428,19 @@ void YVRProjectionRenderLayer::allocSwapChain()
 
     setAppSWProjectionLayerViewNext();
 
+    swapchainReady = true;
     swapChain();
 }
 
 void YVRProjectionRenderLayer::destroySwapChain()
 {
+    swapchainReady = false;
+
     // YVRRenderLayer::destroySwapChain();
     if (primarySwapchain.swapchainAllocated)
     {
         OpenXRAPI(xrDestroySwapchain(primarySwapchain.handle));
+        primarySwapchain.handle = XR_NULL_HANDLE;
         primarySwapchain.swapchainAllocated = false;
         swapchainImageAcquired = false;
     }
@@ -377,39 +450,59 @@ void YVRProjectionRenderLayer::destroySwapChain()
         if (motionVectorPrimarySwapChain.swapchainAllocated)
         {
             OpenXRAPI(xrDestroySwapchain(motionVectorPrimarySwapChain.handle));
+            motionVectorPrimarySwapChain.handle = XR_NULL_HANDLE;
             motionVectorPrimarySwapChain.swapchainAllocated = false;
+            motionVectorPrimaryImageAcquired = false;
         }
 
         if (motionVectorPrimaryDepthSwapChain.swapchainAllocated)
         {
             OpenXRAPI(xrDestroySwapchain(motionVectorPrimaryDepthSwapChain.handle));
+            motionVectorPrimaryDepthSwapChain.handle = XR_NULL_HANDLE;
             motionVectorPrimaryDepthSwapChain.swapchainAllocated = false;
+            motionVectorPrimaryDepthImageAcquired = false;
         }
 
         if (motionVectorSecondarySwapChain.swapchainAllocated)
         {
             OpenXRAPI(xrDestroySwapchain(motionVectorSecondarySwapChain.handle));
+            motionVectorSecondarySwapChain.handle = XR_NULL_HANDLE;
             motionVectorSecondarySwapChain.swapchainAllocated = false;
+            motionVectorSecondaryImageAcquired = false;
         }
 
         if (motionVectorSecondaryDepthSwapChain.swapchainAllocated)
         {
             OpenXRAPI(xrDestroySwapchain(motionVectorSecondaryDepthSwapChain.handle));
+            motionVectorSecondaryDepthSwapChain.handle = XR_NULL_HANDLE;
             motionVectorSecondaryDepthSwapChain.swapchainAllocated = false;
+            motionVectorSecondaryDepthImageAcquired = false;
         }
     }
 
     if (separateSwapChain && secondarySwapchain.swapchainAllocated)
     {
         OpenXRAPI(xrDestroySwapchain(secondarySwapchain.handle));
+        secondarySwapchain.handle = XR_NULL_HANDLE;
         secondarySwapchain.swapchainAllocated = false;
         secondarySwapchainImageAcquired = false;
     }
 
     if (plugin.renderMgr->configsMgr->isUsingNativeDepthBuffer())
     {
-        OpenXRAPI(xrDestroySwapchain(depthSwapchain.handle));
-        OpenXRAPI(xrDestroySwapchain(depthSecondarySwapchain.handle));
+        if (depthSwapchain.swapchainAllocated)
+        {
+            OpenXRAPI(xrDestroySwapchain(depthSwapchain.handle));
+            depthSwapchain.handle = XR_NULL_HANDLE;
+            depthSwapchain.swapchainAllocated = false;
+        }
+        if (depthSecondarySwapchain.swapchainAllocated)
+        {
+            OpenXRAPI(xrDestroySwapchain(depthSecondarySwapchain.handle));
+            depthSecondarySwapchain.handle = XR_NULL_HANDLE;
+            depthSecondarySwapchain.swapchainAllocated = false;
+        }
+        depthImageAcquired = false;
     }
 }
 

@@ -88,7 +88,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: HandleManifestElementInfo
     path: ../com.yvr.core/Scripts/Editor/AndroidPackingHandlers/ManifestElementInfoProvider/XRModeManifestElementInfoProvider.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - YVR.Core.Editor
   namespace: YVR.Core.Editor.Packing

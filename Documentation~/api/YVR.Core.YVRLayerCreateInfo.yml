@@ -5,14 +5,15 @@ items:
   id: YVRLayerCreateInfo
   parent: YVR.Core
   children:
-  - YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
-  - YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean)
+  - YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32,System.Int32)
+  - YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean,System.Int32)
   - YVR.Core.YVRLayerCreateInfo.autoShowAfterCreated
   - YVR.Core.YVRLayerCreateInfo.batchedLayerId
   - YVR.Core.YVRLayerCreateInfo.depth
   - YVR.Core.YVRLayerCreateInfo.height
   - YVR.Core.YVRLayerCreateInfo.isSurfaceSwapChain
   - YVR.Core.YVRLayerCreateInfo.layerFlags
+  - YVR.Core.YVRLayerCreateInfo.protectedContent
   - YVR.Core.YVRLayerCreateInfo.renderLayerEyeMask
   - YVR.Core.YVRLayerCreateInfo.renderLayerType
   - YVR.Core.YVRLayerCreateInfo.separateSwapChain
@@ -33,7 +34,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: YVRLayerCreateInfo
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -65,7 +66,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: depth
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -92,7 +93,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: width
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -119,7 +120,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: height
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 25
+    startLine: 27
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -146,7 +147,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: swapChainBufferCount
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -173,7 +174,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: textureType
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -200,7 +201,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: layerFlags
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -227,7 +228,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: batchedLayerId
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -254,7 +255,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: separateSwapChain
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -281,7 +282,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: autoShowAfterCreated
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -308,7 +309,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: isSurfaceSwapChain
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -335,7 +336,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: renderLayerType
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -362,7 +363,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: renderLayerEyeMask
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 34
+    startLine: 36
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -371,16 +372,43 @@ items:
     return:
       type: YVR.Core.YVRRenderLayerEyeMask
     content.vb: Public renderLayerEyeMask As YVRRenderLayerEyeMask
-- uid: YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean)
-  commentId: M:YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean)
-  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean)'
+- uid: YVR.Core.YVRLayerCreateInfo.protectedContent
+  commentId: F:YVR.Core.YVRLayerCreateInfo.protectedContent
+  id: protectedContent
   parent: YVR.Core.YVRLayerCreateInfo
   langs:
   - csharp
   - vb
-  name: YVRLayerCreateInfo(int, int, int, int, YVRRenderLayerType, int, YVRRenderLayerEyeMask, bool, bool)
-  nameWithType: YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, YVRRenderLayerType, int, YVRRenderLayerEyeMask, bool, bool)
-  fullName: YVR.Core.YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, YVR.Core.YVRRenderLayerType, int, YVR.Core.YVRRenderLayerEyeMask, bool, bool)
+  name: protectedContent
+  nameWithType: YVRLayerCreateInfo.protectedContent
+  fullName: YVR.Core.YVRLayerCreateInfo.protectedContent
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: protectedContent
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
+    startLine: 37
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public int protectedContent
+    return:
+      type: System.Int32
+    content.vb: Public protectedContent As Integer
+- uid: YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean,System.Int32)
+  commentId: M:YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,YVR.Core.YVRRenderLayerType,System.Int32,YVR.Core.YVRRenderLayerEyeMask,System.Boolean,System.Boolean,System.Int32)'
+  parent: YVR.Core.YVRLayerCreateInfo
+  langs:
+  - csharp
+  - vb
+  name: YVRLayerCreateInfo(int, int, int, int, YVRRenderLayerType, int, YVRRenderLayerEyeMask, bool, bool, int)
+  nameWithType: YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, YVRRenderLayerType, int, YVRRenderLayerEyeMask, bool, bool, int)
+  fullName: YVR.Core.YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, YVR.Core.YVRRenderLayerType, int, YVR.Core.YVRRenderLayerEyeMask, bool, bool, int)
   type: Constructor
   source:
     remote:
@@ -389,12 +417,12 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: .ctor
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public YVRLayerCreateInfo(int depth, int width, int height, int swapChainBufferCount, YVRRenderLayerType renderLayerType, int batchedLayerId = -1, YVRRenderLayerEyeMask renderLayerEyeMask = YVRRenderLayerEyeMask.kEyeMaskBoth, bool isSurfaceSwapChain = false, bool autoShowAfterCreated = true)
+    content: public YVRLayerCreateInfo(int depth, int width, int height, int swapChainBufferCount, YVRRenderLayerType renderLayerType, int batchedLayerId = -1, YVRRenderLayerEyeMask renderLayerEyeMask = YVRRenderLayerEyeMask.kEyeMaskBoth, bool isSurfaceSwapChain = false, bool autoShowAfterCreated = true, int protectedContent = 0)
     parameters:
     - id: depth
       type: System.Int32
@@ -414,21 +442,23 @@ items:
       type: System.Boolean
     - id: autoShowAfterCreated
       type: System.Boolean
-    content.vb: Public Sub New(depth As Integer, width As Integer, height As Integer, swapChainBufferCount As Integer, renderLayerType As YVRRenderLayerType, batchedLayerId As Integer = -1, renderLayerEyeMask As YVRRenderLayerEyeMask = YVRRenderLayerEyeMask.kEyeMaskBoth, isSurfaceSwapChain As Boolean = False, autoShowAfterCreated As Boolean = True)
+    - id: protectedContent
+      type: System.Int32
+    content.vb: Public Sub New(depth As Integer, width As Integer, height As Integer, swapChainBufferCount As Integer, renderLayerType As YVRRenderLayerType, batchedLayerId As Integer = -1, renderLayerEyeMask As YVRRenderLayerEyeMask = YVRRenderLayerEyeMask.kEyeMaskBoth, isSurfaceSwapChain As Boolean = False, autoShowAfterCreated As Boolean = True, protectedContent As Integer = 0)
   overload: YVR.Core.YVRLayerCreateInfo.#ctor*
-  nameWithType.vb: YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, YVRRenderLayerType, Integer, YVRRenderLayerEyeMask, Boolean, Boolean)
-  fullName.vb: YVR.Core.YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, YVR.Core.YVRRenderLayerType, Integer, YVR.Core.YVRRenderLayerEyeMask, Boolean, Boolean)
-  name.vb: New(Integer, Integer, Integer, Integer, YVRRenderLayerType, Integer, YVRRenderLayerEyeMask, Boolean, Boolean)
-- uid: YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
-  commentId: M:YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32)
-  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32)'
+  nameWithType.vb: YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, YVRRenderLayerType, Integer, YVRRenderLayerEyeMask, Boolean, Boolean, Integer)
+  fullName.vb: YVR.Core.YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, YVR.Core.YVRRenderLayerType, Integer, YVR.Core.YVRRenderLayerEyeMask, Boolean, Boolean, Integer)
+  name.vb: New(Integer, Integer, Integer, Integer, YVRRenderLayerType, Integer, YVRRenderLayerEyeMask, Boolean, Boolean, Integer)
+- uid: YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32,System.Int32)
+  commentId: M:YVR.Core.YVRLayerCreateInfo.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,YVR.Core.YVRRenderLayerType,YVR.Core.YVRRenderLayerEyeMask,System.Int32,System.Int32)'
   parent: YVR.Core.YVRLayerCreateInfo
   langs:
   - csharp
   - vb
-  name: YVRLayerCreateInfo(int, int, int, int, int, int, bool, bool, bool, YVRRenderLayerType, YVRRenderLayerEyeMask, int)
-  nameWithType: YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, int, int, bool, bool, bool, YVRRenderLayerType, YVRRenderLayerEyeMask, int)
-  fullName: YVR.Core.YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, int, int, bool, bool, bool, YVR.Core.YVRRenderLayerType, YVR.Core.YVRRenderLayerEyeMask, int)
+  name: YVRLayerCreateInfo(int, int, int, int, int, int, bool, bool, bool, YVRRenderLayerType, YVRRenderLayerEyeMask, int, int)
+  nameWithType: YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, int, int, bool, bool, bool, YVRRenderLayerType, YVRRenderLayerEyeMask, int, int)
+  fullName: YVR.Core.YVRLayerCreateInfo.YVRLayerCreateInfo(int, int, int, int, int, int, bool, bool, bool, YVR.Core.YVRRenderLayerType, YVR.Core.YVRRenderLayerEyeMask, int, int)
   type: Constructor
   source:
     remote:
@@ -437,12 +467,12 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: .ctor
     path: ../com.yvr.core/Scripts/Runtime/Renderer/LayerHandle/YVRLayerCreateInfo.cs
-    startLine: 40
+    startLine: 48
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
   syntax:
-    content: public YVRLayerCreateInfo(int depth, int width, int height, int swapChainBufferCount, int textureType, int layerFlags, bool separateSwapChain, bool autoShowAfterCreated, bool isSurfaceSwapChain, YVRRenderLayerType renderLayerType, YVRRenderLayerEyeMask renderLayerEyeMask, int batchedLayerId)
+    content: public YVRLayerCreateInfo(int depth, int width, int height, int swapChainBufferCount, int textureType, int layerFlags, bool separateSwapChain, bool autoShowAfterCreated, bool isSurfaceSwapChain, YVRRenderLayerType renderLayerType, YVRRenderLayerEyeMask renderLayerEyeMask, int batchedLayerId, int protectedContent)
     parameters:
     - id: depth
       type: System.Int32
@@ -468,11 +498,13 @@ items:
       type: YVR.Core.YVRRenderLayerEyeMask
     - id: batchedLayerId
       type: System.Int32
-    content.vb: Public Sub New(depth As Integer, width As Integer, height As Integer, swapChainBufferCount As Integer, textureType As Integer, layerFlags As Integer, separateSwapChain As Boolean, autoShowAfterCreated As Boolean, isSurfaceSwapChain As Boolean, renderLayerType As YVRRenderLayerType, renderLayerEyeMask As YVRRenderLayerEyeMask, batchedLayerId As Integer)
+    - id: protectedContent
+      type: System.Int32
+    content.vb: Public Sub New(depth As Integer, width As Integer, height As Integer, swapChainBufferCount As Integer, textureType As Integer, layerFlags As Integer, separateSwapChain As Boolean, autoShowAfterCreated As Boolean, isSurfaceSwapChain As Boolean, renderLayerType As YVRRenderLayerType, renderLayerEyeMask As YVRRenderLayerEyeMask, batchedLayerId As Integer, protectedContent As Integer)
   overload: YVR.Core.YVRLayerCreateInfo.#ctor*
-  nameWithType.vb: YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Boolean, YVRRenderLayerType, YVRRenderLayerEyeMask, Integer)
-  fullName.vb: YVR.Core.YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Boolean, YVR.Core.YVRRenderLayerType, YVR.Core.YVRRenderLayerEyeMask, Integer)
-  name.vb: New(Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Boolean, YVRRenderLayerType, YVRRenderLayerEyeMask, Integer)
+  nameWithType.vb: YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Boolean, YVRRenderLayerType, YVRRenderLayerEyeMask, Integer, Integer)
+  fullName.vb: YVR.Core.YVRLayerCreateInfo.New(Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Boolean, YVR.Core.YVRRenderLayerType, YVR.Core.YVRRenderLayerEyeMask, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer, Integer, Integer, Integer, Boolean, Boolean, Boolean, YVRRenderLayerType, YVRRenderLayerEyeMask, Integer, Integer)
 references:
 - uid: YVR.Core
   commentId: N:YVR.Core
@@ -751,7 +783,7 @@ references:
   fullName: YVR.Core.YVRRenderLayerEyeMask
 - uid: YVR.Core.YVRLayerCreateInfo.#ctor*
   commentId: Overload:YVR.Core.YVRLayerCreateInfo.#ctor
-  href: YVR.Core.YVRLayerCreateInfo.-ctor.html#YVR_Core_YVRLayerCreateInfo__ctor_System_Int32_System_Int32_System_Int32_System_Int32_YVR_Core_YVRRenderLayerType_System_Int32_YVR_Core_YVRRenderLayerEyeMask_System_Boolean_System_Boolean_
+  href: YVR.Core.YVRLayerCreateInfo.-ctor.html#YVR_Core_YVRLayerCreateInfo__ctor_System_Int32_System_Int32_System_Int32_System_Int32_YVR_Core_YVRRenderLayerType_System_Int32_YVR_Core_YVRRenderLayerEyeMask_System_Boolean_System_Boolean_System_Int32_
   name: YVRLayerCreateInfo
   nameWithType: YVRLayerCreateInfo.YVRLayerCreateInfo
   fullName: YVR.Core.YVRLayerCreateInfo.YVRLayerCreateInfo

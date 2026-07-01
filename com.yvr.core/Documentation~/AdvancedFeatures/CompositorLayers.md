@@ -20,7 +20,7 @@ The `composition depth` can be used to distinguish between Overlay and Underlay 
 
 ## Shapes of Composition Layers
 
-The shape of the composition layer determines the display effect of the composition layer. There are three shapes of composition layers: Quad, Cylinder, and Equirect:
+The shape of the composition layer determines the display effect of the composition layer. Composition layer shapes include Quad, Cylinder, Equirect, CubeProjection, and Projection:
 
 - **Quad**: A quadrilateral plane texture with four vertices, usually used to display text or information in the scene.
 - **Cylinder**: A cylindrical texture with a cylindrical arc, usually used to display curved UI interfaces. If using Cylinder:
@@ -29,6 +29,8 @@ The shape of the composition layer determines the display effect of the composit
 - **Equirect**: A spherical texture, usually used to display 360/180 panoramic textures.
     - The Radius parameter is used to specify the radius of the cylinder. When set to 0 or positive infinity (1.0f/0.0f), it indicates an infinitely large radius. When the spherical radius is infinitely large, its display effect is like a skybox in an empty scene.
     - The X parameter under Destination Rects is useless; the W parameter maps to the central angle, symmetrical about the central point coordinates (0, 0).
+- **CubeProjection**: A cubemap texture, usually used to display Cubemap content. When using this shape, the source texture should be a `Cubemap`; the SDK copies it into the native texture used by the composition layer.
+- **Projection**: A projection layer using the eye buffer size for the left and right eyes, suitable for scenarios that need direct control over stereo projection layers.
 
 ## Texture Types
 
@@ -50,6 +52,16 @@ If you choose to customize Source Rects and Destination Rects (i.e., select the 
 ### Transparency
 
 The `alpha` parameter is used to set the transparency of the texture, with a value range of $[0,1]$.
+
+### Per-Layer Supersampling and Sharpening
+
+Composition layers can set `SuperSamplingType` and `SharpenType` independently:
+
+- **None**: Disable the corresponding processing.
+- **Normal**: Enable normal quality processing.
+- **Quality**: Enable higher quality processing, usually with higher GPU cost.
+
+These settings apply to the native layer backing the current composition layer. They are useful for UI, text, images, or Cubemap content that needs higher clarity. To configure Eye Buffer sharpening, see [Supersampling and Sharpening](./SupersamplingAndSharpening.md).
 
 ## Examples
 

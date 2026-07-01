@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: YVR.Core.ColorSpaceType
+  commentId: T:YVR.Core.ColorSpaceType
+  id: ColorSpaceType
+  parent: YVR.Core
+  children:
+  - YVR.Core.ColorSpaceType.Adobe_RGB
+  - YVR.Core.ColorSpaceType.P3
+  - YVR.Core.ColorSpaceType.Quest
+  - YVR.Core.ColorSpaceType.Rec2020
+  - YVR.Core.ColorSpaceType.Rec709
+  - YVR.Core.ColorSpaceType.Rift_CV1
+  - YVR.Core.ColorSpaceType.Rift_S
+  - YVR.Core.ColorSpaceType.Unmanaged
+  langs:
+  - csharp
+  - vb
+  name: ColorSpaceType
+  nameWithType: ColorSpaceType
+  fullName: YVR.Core.ColorSpaceType
+  type: Enum
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: ColorSpaceType
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 2
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: public enum ColorSpaceType
+    content.vb: Public Enum ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Unmanaged
+  commentId: F:YVR.Core.ColorSpaceType.Unmanaged
+  id: Unmanaged
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Unmanaged
+  nameWithType: ColorSpaceType.Unmanaged
+  fullName: YVR.Core.ColorSpaceType.Unmanaged
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Unmanaged
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 4
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Unmanaged = 0
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Rec2020
+  commentId: F:YVR.Core.ColorSpaceType.Rec2020
+  id: Rec2020
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Rec2020
+  nameWithType: ColorSpaceType.Rec2020
+  fullName: YVR.Core.ColorSpaceType.Rec2020
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rec2020
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 5
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Rec2020 = 1
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Rec709
+  commentId: F:YVR.Core.ColorSpaceType.Rec709
+  id: Rec709
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Rec709
+  nameWithType: ColorSpaceType.Rec709
+  fullName: YVR.Core.ColorSpaceType.Rec709
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rec709
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 6
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Rec709 = 2
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Rift_CV1
+  commentId: F:YVR.Core.ColorSpaceType.Rift_CV1
+  id: Rift_CV1
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Rift_CV1
+  nameWithType: ColorSpaceType.Rift_CV1
+  fullName: YVR.Core.ColorSpaceType.Rift_CV1
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rift_CV1
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 7
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Rift_CV1 = 3
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Rift_S
+  commentId: F:YVR.Core.ColorSpaceType.Rift_S
+  id: Rift_S
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Rift_S
+  nameWithType: ColorSpaceType.Rift_S
+  fullName: YVR.Core.ColorSpaceType.Rift_S
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Rift_S
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 8
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Rift_S = 4
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Quest
+  commentId: F:YVR.Core.ColorSpaceType.Quest
+  id: Quest
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Quest
+  nameWithType: ColorSpaceType.Quest
+  fullName: YVR.Core.ColorSpaceType.Quest
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Quest
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 9
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Quest = 5
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.P3
+  commentId: F:YVR.Core.ColorSpaceType.P3
+  id: P3
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: P3
+  nameWithType: ColorSpaceType.P3
+  fullName: YVR.Core.ColorSpaceType.P3
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: P3
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 10
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: P3 = 6
+    return:
+      type: YVR.Core.ColorSpaceType
+- uid: YVR.Core.ColorSpaceType.Adobe_RGB
+  commentId: F:YVR.Core.ColorSpaceType.Adobe_RGB
+  id: Adobe_RGB
+  parent: YVR.Core.ColorSpaceType
+  langs:
+  - csharp
+  - vb
+  name: Adobe_RGB
+  nameWithType: ColorSpaceType.Adobe_RGB
+  fullName: YVR.Core.ColorSpaceType.Adobe_RGB
+  type: Field
+  source:
+    remote:
+      path: com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+      branch: master
+      repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
+    id: Adobe_RGB
+    path: ../com.yvr.core/Scripts/Runtime/Renderer/ColorSpaceType.cs
+    startLine: 11
+  assemblies:
+  - YVR.Core.Runtime
+  namespace: YVR.Core
+  syntax:
+    content: Adobe_RGB = 7
+    return:
+      type: YVR.Core.ColorSpaceType
+references:
+- uid: YVR.Core
+  commentId: N:YVR.Core
+  href: YVR.html
+  name: YVR.Core
+  nameWithType: YVR.Core
+  fullName: YVR.Core
+  spec.csharp:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+  spec.vb:
+  - uid: YVR
+    name: YVR
+    href: YVR.html
+  - name: .
+  - uid: YVR.Core
+    name: Core
+    href: YVR.Core.html
+- uid: YVR.Core.ColorSpaceType
+  commentId: T:YVR.Core.ColorSpaceType
+  parent: YVR.Core
+  href: YVR.Core.ColorSpaceType.html
+  name: ColorSpaceType
+  nameWithType: ColorSpaceType
+  fullName: YVR.Core.ColorSpaceType
+memberLayout: SeparatePages

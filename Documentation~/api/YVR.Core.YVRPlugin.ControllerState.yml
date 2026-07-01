@@ -26,7 +26,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: ControllerState
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -58,7 +58,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Buttons
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 36
+    startLine: 41
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -85,7 +85,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Touches
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 37
+    startLine: 42
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -112,7 +112,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: IndexTrigger
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 38
+    startLine: 43
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -139,7 +139,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Thumbstick
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 39
+    startLine: 44
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -166,7 +166,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: BatteryPercentRemaining
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 40
+    startLine: 45
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -193,7 +193,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: isCharging
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core
@@ -220,7 +220,7 @@ items:
       repo: ssh://git@192.168.9.247:2201/unity/sdk-core.git
     id: Clear
     path: ../com.yvr.core/Scripts/Runtime/Plugin/YVRPlugin.cs
-    startLine: 43
+    startLine: 48
   assemblies:
   - YVR.Core.Runtime
   namespace: YVR.Core

@@ -410,7 +410,7 @@ namespace YVR.Core
         /// Checks if the position is tracked based on the specified location flags.
         /// </summary>
         /// <param name="value">The anchor location flags to be evaluated</param>
-        /// <returns>True if the position is tracked; otherwise, false</returns
+        /// <returns>True if the position is tracked; otherwise, false</returns>
         public bool IsPositionTracked(YVRAnchorLocationFlags value) =>
             (value & YVRAnchorLocationFlags.LocationPositionTracked) != 0;
 

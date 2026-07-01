@@ -7,12 +7,18 @@ items:
   - uid: YVR.Core.ActiveInputDevice
     name: ActiveInputDevice
     type: Enum
+  - uid: YVR.Core.ColorSpaceType
+    name: ColorSpaceType
+    type: Enum
   - uid: YVR.Core.Colorf
     name: Colorf
     type: Struct
   - uid: YVR.Core.ControllerType
     name: ControllerType
     type: Enum
+  - uid: YVR.Core.CubeShapeHandler
+    name: CubeShapeHandler
+    type: Class
   - uid: YVR.Core.CylinderShapeHandler
     name: CylinderShapeHandler
     type: Class
@@ -91,6 +97,9 @@ items:
   - uid: YVR.Core.InputDeviceTest
     name: InputDeviceTest
     type: Class
+  - uid: YVR.Core.LayerShapeData
+    name: LayerShapeData
+    type: Struct
   - uid: YVR.Core.PassthroughColorLut
     name: PassthroughColorLut
     type: Class
@@ -118,6 +127,9 @@ items:
   - uid: YVR.Core.Posef
     name: Posef
     type: Struct
+  - uid: YVR.Core.ProjectionHandler
+    name: ProjectionHandler
+    type: Class
   - uid: YVR.Core.QuadShapeHandler
     name: QuadShapeHandler
     type: Class
@@ -363,6 +375,9 @@ items:
     type: Struct
   - uid: YVR.Core.YVRPluginAndroid
     name: YVRPluginAndroid
+    type: Class
+  - uid: YVR.Core.YVRPluginStub
+    name: YVRPluginStub
     type: Class
   - uid: YVR.Core.YVRPluginWin
     name: YVRPluginWin
