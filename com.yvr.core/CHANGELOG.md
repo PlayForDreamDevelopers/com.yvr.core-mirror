@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.30.6] - 2026-07-01
+
+### Fixed
+
+- 更新 libyvrplugin.aar，应用 Vulkan 启动稳定性与可选 OpenXR 扩展调用保护修复
+
 ## [1.30.5] - 2026-07-01
 
 ### Fixed
